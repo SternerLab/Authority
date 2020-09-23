@@ -51,4 +51,24 @@ Example: if x1_m.json contains
 ```
 it implies that in the matching set, there are 10 pairs with x1 = 3; 2 pairs with x1 = 1; 4 pairs with x1 = 0.
 
+# Computing r(x)
+r(x) is calculated by individually computing r(x1), r(x2) and r(xa).
+```r(x) = r(x1) * r(x2) * r(xa)```
 
+More details in the paper.
+
+## Usage
+To compute relative frequency r on all precomputed similarity profiles x, run the command:
+```bash
+python .\compute_r.py
+```
+
+## output files
+The following output files are generated.
+```
+1. r_x1.json
+2. r_x2.json
+3. r_xa.json
+```
+
+These files are similar to output files generated for compute_similarity code.
