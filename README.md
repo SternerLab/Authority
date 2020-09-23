@@ -12,36 +12,36 @@ pip install -r requirements.txt
 3. This code requires **Matlab R2020a** setup. 
 
 ## Execution
-1. To compute the entire look up table from xml files, run the command
+1. To compute the entire look up table from xml files (steps a-e), run the command
 ```bash
 cd r_table
 .\script.sh
 ```
 
-2. To parse xml files and store them to the database, run the command
+a. To parse xml files and store them to the database, run the command
 ```bash
 cd r_table\parser
 python main.py --zip_file <zip_file_path_to_be_processed>
 ```
 
-3. To generate match and non match sets, run the command
+b. To generate match and non match sets, run the command
 ```bash
 cd r_table\reference_sets
 python create_sets.py
 ```
 
-4. To compute similarities between pairs of the sets, run the command
+c. To compute similarities between pairs of the sets, run the command
 ```bash
 cd r_table\compute_r
 python compute_similarity.py --update <true, if updating exisiting similarity profiles. false, otherwise>
 ```
 
-5. To compute r_table from the similarity profiles, run the command
+d. To compute r_table from the similarity profiles, run the command
 ```bash
 cd r_table\compute_r
 python compute_r.py
 ```
 
-6. To smoothen r_table, run the command
+e. To smoothen r_table, run the command
 ```bash
 ```
