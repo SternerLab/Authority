@@ -47,6 +47,6 @@ e. To smoothen r_table, run the command
 ```
 
 ## TODO
-- [] add matlab commands.
-- [] write script to execute steps from a-e.
-- [] automate preprocessing r values before smoothing in matlab.
+- [ ] add matlab commands.
+- [ ] write script to execute steps from a-e.
+- [ ] automate preprocessing r values before smoothing in matlab.
