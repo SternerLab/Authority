@@ -50,3 +50,4 @@ e. To smoothen r_table, run the command
 - [ ] add matlab commands.
 - [ ] write script to execute steps from a-e.
 - [ ] automate preprocessing r values before smoothing in matlab.
+- [ ] implement scalable code for computing similarity profiles.
