@@ -1,5 +1,5 @@
 # Authority model
-Python code for the paper [Author name disambiguation in MEDLINE](https://dl.acm.org/doi/pdf/10.1145/1552303.1552304). Inroductory slides are available [here](https://github.com/SternerLab/Authority/blob/initial/r_table/slides/Authority%20look%20up%20table.pptx).
+Python code for the paper [Author name disambiguation in MEDLINE](https://dl.acm.org/doi/pdf/10.1145/1552303.1552304) (r-table). Inroductory slides are available [here](https://github.com/SternerLab/Authority/blob/initial/r_table/slides/Authority%20look%20up%20table.pptx).
 
 ## Software requirements
 1. The code requires **Python 3** and please install the Python dependencies with the command:
