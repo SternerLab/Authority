@@ -39,7 +39,7 @@ python compute_similarity.py --update <true, if updating exisiting similarity pr
 d. To compute r_table from the similarity profiles, run the command
 ```bash
 cd r_table\compute_r
-python compute_r.py --output <path to store the results>
+python compute_r.py
 ```
 
 e. To smoothen r_table, run the command
