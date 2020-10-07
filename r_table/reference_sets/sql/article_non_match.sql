@@ -4,7 +4,7 @@ tb1.suffix as suffix1, tb1.title as title1, tb1.journal_name as journal_name1, t
 tb2.id as id2, tb2.position as position2, tb2.last_name as last_name2, tb2.first_initial as first_initial2, tb2.middle_initial as middle_initial2, 
 tb2.suffix as suffix2, tb2.title as title2, tb2.journal_name as journal_name2, tb2.first_name as first_name2, tb2.middle_name as middle_name2, tb2.fullname as fullname2, tb2.authors as authors2 ,tb2.language as language2,
 'False' as iscomputed 
-from articles as tb1 INNER JOIN articles as tb2
+from articles_2 as tb1 INNER JOIN articles_2 as tb2
 on tb1.id != tb2.id and tb1.id < tb2.id and tb1.last_name != tb2.last_name 
 where not tb1.first_initial = '' and not tb1.middle_initial = '' and not tb2.first_initial = '' and not tb2.middle_initial = ''
 -- and not tb1.suffix = '' and not tb2.suffix = ''

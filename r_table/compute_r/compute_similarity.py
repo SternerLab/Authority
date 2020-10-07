@@ -119,18 +119,23 @@ def compute_xa(match, is_match_set= True):
     
     x5 = coauth_intersection
 
-    langa = match[rowheadings['language1']]
-    langb = match[rowheadings['language2']]
-    if(langa == langb and langa != 'eng'):
-        x7 = 3
-    if(langa == langb and langa == 'eng'):
-        x7 = 2
-    if(langa != langb and (langa == 'eng' or langb == 'eng')):
-        x7 = 1
-    else:
-        x7 = 0
+    mesh1 = match[rowheadings['mesh_terms1']].split(',')
+    mesh2 = match[rowheadings['mesh_terms2']].split(',')
+
+    x6 = len(list(set(mesh1) & set(mesh2)))
+
+    # langa = match[rowheadings['language1']]
+    # langb = match[rowheadings['language2']]
+    # if(langa == langb and langa != 'eng'):
+    #     x7 = 3
+    # if(langa == langb and langa == 'eng'):
+    #     x7 = 2
+    # if(langa != langb and (langa == 'eng' or langb == 'eng')):
+    #     x7 = 1
+    # else:
+    #     x7 = 0
     
-    value = str([x3, x4, x5, x7])
+    value = str([x3, x4, x5, x6])
     if(is_match_set):
         if(value in xa_m):
             xa_m[value] += 1
@@ -145,49 +150,63 @@ def compute_xa(match, is_match_set= True):
 
 #todo: mark view row as completed after compute_xa(match)
 def compute_xa_allmatches():
-    # article_match_set = sql_client.execute_and_fetch('select * from article_match')
-    article_match_set = sql_client.execute_and_fetch('select * from article_match where '+
-    '(journal_name1 like \'%taxon%\' or journal_name2 like \'%taxon%\')' +
-    'limit 1000000')
-    for match in article_match_set:
-        try:
-            compute_xa(match, True)
-            # mark_as_done(match, 'article_match')
-        except Exception as e:
-            print(e)
+    count = get_article_match_set_pair_count()
+    offset = 0
+    while(offset < count):
+        # article_match_set = sql_client.execute_and_fetch('select * from article_match')
+        article_match_set = sql_client.execute_and_fetch('select * from article_match'+
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+
+        for match in article_match_set:
+            try:
+                compute_xa(match, True)
+                # mark_as_done(match, 'article_match')
+            except Exception as e:
+                print(e)
+
 
     with open('xa_m.json', 'w') as fp:
         json.dump(xa_m, fp)
 
 
 def compute_xa_allnonmatches():
-    article_non_match_set = sql_client.execute_and_fetch('select * from article_non_match where ' +
-    '(journal_name1 like \'%taxon%\' or journal_name2 like \'%taxon%\')'+
-    'limit 1000000')
-    
-    for match in article_non_match_set:
-        try:
-            compute_xa(match, False)
-            # mark_as_done(match, 'article_non_match')
-        except Exception as e:
-            print(e)
+    count = get_article_non_match_set_pair_count()
+    offset = 0
+    while(offset < count):
+        query = 'select * from article_non_match'
+        # print(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
+        article_non_match_set = sql_client.execute_and_fetch(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
+        
+        for match in article_non_match_set:
+            try:
+                compute_xa(match, False)
+                # mark_as_done(match, 'article_non_match')
+            except Exception as e:
+                print(e)
+        offset += limit
+
 
     with open('xa_nm.json', 'w') as fp:
         json.dump(xa_nm, fp)
     
 
-def compute_x1_all():
-    name_set = sql_client.execute_and_fetch('select * from name_set where ' +
-    '(journal_name1 like \'%taxon%\' or journal_name2 like \'%taxon%\')'+
-    'limit 1000000')
+def compute_x1_x2_all():
+    count = get_name_set_pair_count()
+    offset = 0
+    while(offset < count):
+        name_set = sql_client.execute_and_fetch('select * from name_set' +
+        ' limit ' + str(limit) + ' offset ' + str(offset))
 
-    for match in name_set:
-        try:
-            compute_x1(match)
-            compute_x2(match)
-            # mark_as_done(match, 'name_set')
-        except Exception as e:
-            print(e)
+        for match in name_set:
+            try:
+                compute_x1(match)
+                compute_x2(match)
+                # mark_as_done(match, 'name_set')
+            except Exception as e:
+                print(e)
+        offset+=limit
+
+    
 
     with open('x1_m.json', 'w') as fp:
         json.dump(x1_m, fp)
@@ -208,9 +227,34 @@ def mark_as_done(record, table):
 def parse_arguments():
     parser = argparse.ArgumentParser()
     parser.add_argument("--update", help="True if updating existing similarity scores. False otherwise", required=True)
+    parser.add_argument("--limit", help="no. of pairs to process", required=True)
+    parser.add_argument("--offset", help="process from pair number", required=True)
     args = parser.parse_args()
     update = args.update
-    return update
+    limit = args.limit
+    offset = args.offset
+    return update, limit, offset
+
+
+def get_name_set_pair_count():
+    query = 'select count(*) from name_set'
+    count = sql_client.execute_and_fetch(query)
+    print("name set pair count: "+str(count))
+    return count
+
+
+def get_article_match_set_pair_count():
+    query = 'select count(*) from article_match'
+    count = sql_client.execute_and_fetch(query)
+    print("article match set pair count: "+str(count))
+    return count
+
+
+def get_article_non_match_set_pair_count():
+    query = 'select count(*) from article_non_match'
+    count = sql_client.execute_and_fetch(query)
+    print("article non match set pair count: "+str(count))
+    return count
 
 
 sql_client = SQLClient()
@@ -231,22 +275,28 @@ rowheadings['middle_name1'] = 9
 rowheadings['fullname1'] = 10
 rowheadings['authors1'] = 11
 rowheadings['language1'] = 12
-rowheadings['id2'] = 13
-rowheadings['position2'] = 14
-rowheadings['last_name2'] = 15
-rowheadings['first_initial2'] = 16
-rowheadings['middle_initial2'] = 17
-rowheadings['suffix2'] = 18
-rowheadings['title2'] = 19
-rowheadings['journal_name2'] = 20
-rowheadings['first_name2'] = 21
-rowheadings['middle_name2'] = 22
-rowheadings['fullname2'] = 23
-rowheadings['authors2'] = 24
-rowheadings['language2'] = 25
-rowheadings['iscomputed'] = 26
+rowheadings['mesh_terms1'] = 13
+rowheadings['affiliation1'] = 14
+rowheadings['id2'] = 15
+rowheadings['position2'] = 16
+rowheadings['last_name2'] = 17
+rowheadings['first_initial2'] = 18
+rowheadings['middle_initial2'] = 19
+rowheadings['suffix2'] = 20
+rowheadings['title2'] = 21
+rowheadings['journal_name2'] = 22
+rowheadings['first_name2'] = 23
+rowheadings['middle_name2'] = 24
+rowheadings['fullname2'] = 25
+rowheadings['authors2'] = 26
+rowheadings['language2'] = 27
+rowheadings['mesh_terms2'] = 28
+rowheadings['affiliation2'] = 29
 
-update = parse_arguments()
+
+# update, limit, offset = parse_arguments()
+update = 'false'
+limit = 9000000
 
 if update.lower() == 'true':
     with open('x1_m.json') as json_file: 
@@ -272,6 +322,10 @@ else:
     xa_m = {}
     xa_nm = {}
 
-compute_xa_allmatches()
-compute_xa_allnonmatches()
-compute_x1_all()
+get_name_set_pair_count()
+get_article_match_set_pair_count()
+get_article_non_match_set_pair_count()
+
+# # compute_xa_allmatches()
+# compute_xa_allnonmatches()
+# # compute_x1_x2_all()

@@ -1,0 +1,668 @@
+C:\Users\manuh\Documents\sterner lab\AuthorDisambiguation\r_table\results\mesh\recoauckmuse\input.txt
+42905831|Philadelphia|C0031525|14444|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|345^12^0
+42905831|London|C0023973|12971|MH|RtM via: London;Forced Leaf Node Lookup:london|TI|MM|316^6^0
+42905831|Berlin|C0005125|11759|MH|RtM via: City of Berlin;Forced Leaf Node Lookup:berlin|TI|MM|324^6^0
+42905831|New Zealand|C0027978|7013|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|141^11^0
+42905831|*Museums|C0026863|3188|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|305^7^0
+42905831|*Wetlands|C1721088|2057|MH|RtM via: Swamp;Forced Leaf Node Lookup:swamps|TI|MM|40^5^0
+42905831|*Bays|C3203003|2000|MH|Forced Leaf Node Lookup:bay|TI|MM|543^3^0
+42905831|Europe|C0015176|3198|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|162^6^0
+42905831|*Record|C0034869|2745|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|368^8^0;239^8^0
+42905831|*Data Collection|C0010995|1167|MH|RtM via: Analytical Procedure Range|TI|MM|506^5^0
+42905831|*Consumer Behavior|C0680967|813|MH|RtM via: Purchase|TI|MM|183^9^0
+42905832|Female|C0086287|46535|CT|CT Text Lookup: woman|TI|MM;RC|875^5^0
+42905832|Humans|C0086418|46535|CT|RtM via: Human, Female adult;CT Text Lookup: woman|TI|MM;RC|875^5^0
+42905832|*Museums|C0026863|8940|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|881^6^0;565^6^0;498^6^0;382^6^0;208^6^0;30^6^0
+42905832|New Zealand|C0027978|2499|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|855^13^0
+42905832|Pyogenic arthritis, pyoderma gangrenosum, and acne|C1858361|45535|NM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|508^4^0
+42905832|*Pyoderma Gangrenosum|C0085652|45534|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|508^4^0
+42905832|*Acne Vulgaris|C0001144|32688|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|508^4^0
+42905832|*Arthritis, Infectious|C0003869|31917|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|508^4^0
+42905833|Animals|C0003062|36268|CT|Mollusk;CT Treecode Lookup: B01.050.500.644 (Mollusk);Gastropod;CT Treecode Lookup: B01.050.500.644 (Gastropod)||MM;RC
+42905833|*Gastropod|C0324023|33052|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;RtM via: Haliotis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM;RC|38^9^0;57^8^0
+42905833|*Fossils|C0016614|16249|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|282^6^0
+42905833|New Zealand|C0027978|3685|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|313^11^0;202^11^0
+42905833|Australia|C0004340|3330|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM;RC|407^10^0
+42905833|Antarctic Regions|C0454691|3262|MH|RtM via: Antarctica;RtM via: Antarctic (geographic area);Forced Leaf Node Lookup:antarctic|TI|MM|479^9^0
+42905833|*Mollusk|C0026391|35268|ET|Entry Term Replacement for "Mollusca";RtM via: Mollusca;Forced Non-Leaf Node Lookup:molluscs|TI|MM;RC|48^7^0
+42905833|Phylogeny|C0031797|202|MH|||RC
+42905833|*Food|C0016452|96|MH|RtM via: Mollusk (substance)|TI|MM|48^7^0
+42905833|*Physical Phenomena|C2350446|33|MH|RtM via: Affinity|TI|MM|379^10^0
+42905834|Animals|C0003062|148171|CT|Sea Lions;CT Treecode Lookup: B01.050.150.900.649.313.750 (Sea Lions);Seals, Earless;CT Treecode Lookup: B01.050.150.900.649.313.750 (Seals, Earless);Caniformia;CT Treecode Lookup: B01.050.150.900.649.313.750 (Caniformia)||MM;RC
+42905834|*Sea Lions|C0036486|147171|MH|RtM via: Sea Lion;Forced Leaf Node Lookup:sea lions;checkForceMH Boosted|TI|MM;RC|568^8^0;377^9^0;289^9^0;155^9^0
+42905834|*Sand|C4759711|19088|MH|Forced New Lookup:sand;checkForceMH Boosted|TI|MM|61^4^0
+42905834|*Fossils|C0016614|12190|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|561^6^0;30^6^0
+42905834|New Zealand|C0027978|10241|MH|Forced Leaf Node Lookup:new zealand|TI|MM;RC|143^11^0
+42905834|*Bays|C3203003|9544|MH|Forced Leaf Node Lookup:bay|TI|MM|324^3^0
+42905834|*Seals, Earless|C0325125|92811|MH|RtM via: Phocidae|TI|MM;RC|46^5^0
+42905834|*Caniformia|C0031944|13932|MH|RtM via: Seals (Animal)|TI|MM|46^5^0
+42905834|*Breeding|C0006159|1293|MH|RtM via: Breeding;Forced Non-Leaf Node Lookup:breedings|TI|MM|451^8^0;387^8^0;304^4^0
+42905834|*Environment|C0014406|708|MH|RtM via: Sand dunes|TI|MM|61^10^0
+42905837|Humans|C0086418|14096|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+42905837|*Military Personnel|C0026126|13096|MH|RtM via: Military Personnel;RtM via: army;Forced Leaf Node Lookup:military|TI|MM;RC|552^19^0;29^4^0
+42905837|*Farmers|C0221460|5026|MH|RtM via: Farmers;Forced Leaf Node Lookup:farmers|TI|MM|212^7^0
+42905837|*Archeology|C0003733|3930|ET|Entry Term Replacement for "Archaeology";RtM via: Archaeology|TI|MM;RC|634^14^0
+42905837|*Colonialism|C0009372|3690|MH|RtM via: Colonialism|TI|MM|38^8^0
+42905837|*Ethnic Groups|C0015031|2382|MH|RtM via: british|TI|MM;RC|21^7^0
+42905837|*Goals|C0018017|597|MH|RtM via: Clinical Trial Objective|TI|MM|340^9^0
+42905837|Occupations|C0028811|1000|MH|Forced Non-Leaf Node Lookup:occupations||MM|561^10^0
+42905838|Animals|C0003062|69418|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);CT Text Lookup: vertebrates|TI|MM;RC|26^11^0
+42905838|Humans|C0086418|69418|CT|CT Text Lookup: staff|TI|MM;RC|1185^5^0
+42905838|*Museums|C0026863|50726|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|1169^6^0;829^7^0;645^8^0;575^7^0;418^6^0;167^6^0;273^7^0;101^6^0;129^8^0
+42905838|*Natural History|C0175860|68418|MH|RtM via: Natural History|TI|MM;RC|837^15^0;243^15^0
+42905838|*Birds|C0005595|40110|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|877^4^0;50^5^0
+42905838|*Vertebrates|C0042567|13629|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|1110^11^0;681^11^0;479^11^0;26^11^0
+42905838|*Habitats|C0871648|5967|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat|TI|MM|777^7^0;717^8^0
+42905838|*Western World|C0376556|4032|MH|RtM via: Western World;Forced Non-Leaf Node Lookup:western world|TI|MM|313^13^0
+42905838|*Attention|C0004268|141|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|1465^9^0
+42905838|*Longitudinal Studies|C0023981|162|MH|RtM via: Continuous|TI|MM|912^12^0
+42905839|Animals|C0003062|137316|CT|Brachyura;CT Treecode Lookup: B01.050.500.131 (Brachyura);Mussels;CT Treecode Lookup: B01.050.500.644 (Mussels);Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior)||MM;RC
+42905839|*Zosteraceae|C1001393|136316|MH|RtM via: Zostera;Forced Leaf Node Lookup:zosteras;checkForceMH Boosted|TI|MM|1462^7^0
+42905839|*Brachyura|C0010260|100778|MH|RtM via: Crabs;RtM via: Macrophthalmus hirtipes;RtM via: Scylla serrata;Forced Leaf Node Lookup:crab;checkForceMH Boosted|TI|MM;RC|2958^4^0;2834^4^0;2762^23^0;517^23^0;2753^8^0;507^8^0;511^4^0;2757^4^0;3015^4^0
+42905839|*Seasons|C0036497|64226|MH|RtM via: Seasonal Variation;RtM via: spring (season);RtM via: Summer;Forced Leaf Node Lookup:seasonal variations|TI|MM|1576^18^0;2315^6^0;2367^6^0;2237^6^0;2068^8^0
+42905839|*Sand|C4759711|44525|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|820^5^0;675^4^0
+42905839|*Longevity|C0023980|25411|MH|RtM via: Longevity;Forced Leaf Node Lookup:longevity|TI|MM|2214^9^0;2270^9^0
+42905839|*Bays|C3203003|22159|MH|Forced Leaf Node Lookup:bay|TI|MM|1936^3^0
+42905839|*Mussels|C0026871|100365|ET|Entry Term Replacement for "Bivalvia";RtM via: Mussels;RtM via: Class Bivalvia;RtM via: Atrina zelandica;RtM via: Theora lubrica|TI|MM;RC|728^6^0;365^7^0;182^7^0;2887^8^0;1874^7^0;259^8^0;984^16^0;2809^14^0;2500^14^0;1882^14^0;2979^6^0
+42905839|*Habitat|C0871648|60213|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat|TI|MM;RC|1918^7^0
+42905839|*Predatory Behavior|C0032942|55044|MH|RtM via: Predatory Behavior|TI|MM;RC|3020^9^0;1306^9^0
+42905839|*Carrying Capacity|C0007296|53814|ET|Entry Term Replacement for "Conservation of Natural Resources";RtM via: Carrying Capacity|TI|MM;RC|1320^17^0
+42905839|*Nutrient|C0678695|3684|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|306^8^0
+42905839|*Disease Outbreaks|C0012652|1161|MH|RtM via: Disease Outbreaks;Forced Non-Leaf Node Lookup:outbreaks|TI|MM|1715^8^0
+42905840|Animals|C0003062|219268|CT|Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora);Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods);Mollusk;CT Treecode Lookup: B01.050.500.644 (Mollusk);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves);Cephalopod;CT Treecode Lookup: B01.050.500.644 (Cephalopod);Crassostrea;CT Treecode Lookup: B01.050.500.644 (Crassostrea);Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates)||MM;RC
+42905840|*Polyplacophora|C0998200|218268|MH|RtM via: Chiton;RtM via: Polyplacophora;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM|217^7^0
+42905840|*Gastropods|C0324023|192144|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;RtM via: Microtralia occidentalis;RtM via: Terebra;RtM via: Natica;RtM via: Phenacovolva;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM;RC|978^9^0;670^10^0;188^10^0;989^24^0;682^7^0;732^6^0;704^12^0
+42905840|*Cephalopod|C0324027|97533|ET|Entry Term Replacement for "Cephalopoda";RtM via: Cephalopoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cephalopods|TI|MM|253^10^0
+42905840|*Islands|C0022130|61173|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|869^7^0;562^7^0;32^7^0
+42905840|*Crassostrea|C0998142|43239|MH|RtM via: Crassostrea gigas;Forced Leaf Node Lookup:crassostrea gigas|TI|MM|893^17^0
+42905840|*Bays|C3203003|34120|MH|Forced Leaf Node Lookup:bay|TI|MM;RC|25^3^0;555^3^0;862^3^0;1261^3^0
+42905840|New Zealand|C0027978|33420|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|613^11^0;140^11^0
+42905840|*Habitats|C0871648|30507|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat|TI|MM;RC|411^8^0
+42905840|*Surveys|C0038951|5886|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys;Forced Non-Leaf Node Lookup:surveys|TI|MM|1314^7^0
+42905841|Animals|C0003062|36283|CT|Bivalve;CT Treecode Lookup: B01.050.500.644 (Bivalve);Arcidae;CT Treecode Lookup: B01.050.500.644 (Arcidae)||MM;RC
+42905841|Male|C0086582|36283|CT|Prostate;CT Treecode Lookup: A05.360.444 (Prostate)||MM;RC
+42905841|*Fossils|C0016614|35283|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|775^6^0;29^6^0
+42905841|*Phylogeny|C0031797|10017|MH|RtM via: Phylogeny;Forced Lookup:phylogenetic|TI|MM;RC|831^12^0
+42905841|New Zealand|C0027978|3162|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1034^11^0;763^11^0
+42905841|*Bays|C3203003|2907|MH|Forced Leaf Node Lookup:bay|TI|MM|390^3^0
+42905841|*Bivalve|C0542270|24336|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;RtM via: Donax <Mollusca>;RtM via: Euciroa;RtM via: Chama;RtM via: Paphies;RtM via: Austrovenus;Forced Non-Leaf Node Lookup:bivalves|TI|MM;RC|36^7^0;732^5^0;596^5^0;285^7^0;940^5^0;473^5^0;799^7^0;449^7^0;910^11^0;505^11^0
+42905841|*Arcidae|C0998133|3051|MH|RtM via: Bentharca|TI|MM|718^9^0;250^9^0
+42905841|*Marantaceae|C0997213|1986|MH|RtM via: Donax <angiosperm>|TI|MM|732^5^0;596^5^0
+42905841|*Prostate|C0033572|3|MH|RtM via: Structure of median lobe of prostate|TI|MM|427^6^0
+42905844|Humans|C0086418|18241|CT|CT Text Lookup: staff|TI|MM;RC|1088^5^0
+42905844|*Museums|C0026863|3878|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|193^6^0
+42905844|*Commodification|C0751096|2903|MH|RtM via: Commodification;Forced Leaf Node Lookup:commodification|TI|MM|789^15^0
+42905844|*Iron|C0302583|2603|MH|RtM via: Iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|566^4^0
+42905844|*Records|C0034869|7095|MH|RtM via: Records|TI|MM|839^7^0
+42905844|*Surveys|C0038951|5913|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|32^7^0
+42905844|*Symbolism|C0039034|4512|MH|RtM via: Symbolism;Forced Non-Leaf Node Lookup:symbolisms|TI|MM|213^9^0
+42905844|*Christianity|C0008532|4338|MH|RtM via: Christianity;Forced Non-Leaf Node Lookup:christianity|TI|MM|768^12^0
+42905844|Anthropology, Cultural|C0003185|1000|MH|Forced Non-Leaf Node Lookup:material cultures||MM|815^16^0
+42905844|Melanesia|C0025195|54|MH|RtM via: Melanesian (ethnic group)|TI|MM|1061^10^0;719^10^0;337^10^0
+42905845|Animals|C0003062|409793|CT|Anomura;CT Treecode Lookup: B01.050.500.131 (Anomura);Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora);Amphipoda;CT Treecode Lookup: B01.050.500.131 (Amphipoda);Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods);Molluscs;CT Treecode Lookup: B01.050.500.644 (Molluscs);Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica);Isopoda;CT Treecode Lookup: B01.050.500.131 (Isopoda);Conus Snail;CT Treecode Lookup: B01.050.500.644 (Conus Snail);Cephalopods;CT Treecode Lookup: B01.050.500.644 (Cephalopods);Brachyura;CT Treecode Lookup: B01.050.500.131 (Brachyura);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves);Crustacea;CT Treecode Lookup: B01.050.500.131 (Crustacea);CT Text Lookup: fish|TI|MM;RC|344^4^0
+42905845|*Zosteraceae|C1001393|408793|MH|RtM via: Zostera;Forced Leaf Node Lookup:zosteras;checkForceMH Boosted|TI|MM;RC|1496^7^0;1199^7^0
+42905845|*Anomura|C0998251|378337|MH|RtM via: Anomura;RtM via: Pagurus;Forced Leaf Node Lookup:hermit crabs;checkForceMH Boosted|TI|MM|747^12^0
+42905845|*Polyplacophora|C0998200|344071|MH|RtM via: Chiton;RtM via: Polyplacophora;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM|178^7^0
+42905845|*Amphipoda|C0598804|310803|MH|RtM via: Amphipoda;Forced Leaf Node Lookup:amphipods;checkForceMH Boosted|TI|MM|1134^9^0;824^8^0;283^9^0
+42905845|*Gastropods|C0324023|302402|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;RtM via: Bullina lineata;RtM via: Cabestana spengleri;RtM via: Charonia lampas;RtM via: Hydatina physis;RtM via: Ranella australasia;RtM via: Sassia parkinsonia;RtM via: Cominella adspersa;RtM via: Cominella quoyana;RtM via: nudibranch;RtM via: Cymatium;RtM via: Natica;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|1712^10^0;191^10^0;1968^15^0;1891^19^0;1791^15^0;1988^15^0;1870^19^0;1850^18^0;1007^18^0;771^17^0;2029^11^0;1808^8^0;1949^6^0
+42905845|*Thoracica|C0004757|249766|MH|RtM via: Thoracica;Forced Leaf Node Lookup:barnacles;checkForceMH Boosted|TI|MM|308^9^0
+42905845|*Isopoda|C0598806|225805|MH|RtM via: Isopoda;Forced Leaf Node Lookup:isopods;checkForceMH Boosted|TI|MM|297^7^0
+42905845|*Wetlands|C1721088|219598|MH|RtM via: Mangrove Swamps;RtM via: Marshes;Forced Leaf Node Lookup:mangrove forests;Forced Leaf Node Lookup:marsh|TI|MM|1349^15^0;1409^5^0
+42905845|*Conus Snail|C0598489|181351|MH|RtM via: Conus lischkeanus;Forced Leaf Node Lookup:conus;checkForceMH Boosted|TI|MM|1912^17^0
+42905845|*Cephalopods|C0324027|178280|ET|Entry Term Replacement for "Cephalopoda";RtM via: Cephalopoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cephalopods|TI|MM|218^11^0
+42905845|*Quartz|C0034387|177571|MH|RtM via: Quartz;Forced Leaf Node Lookup:quartz;checkForceMH Boosted|TI|MM|1512^6^0;1251^6^0
+42905845|*Sand|C4759711|171325|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|1755^4^0;1519^4^0;1258^4^0
+42905845|*Grassland|C0442534|171214|MH|Forced Leaf Node Lookup:meadows|TI|MM|1216^7^0;1430^6^0
+42905845|*Salinity|C1956027|100745|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|492^8^0
+42905845|*Water|C0043047|90806|MH|RtM via: Water;checkForceMH Boosted|TI|MM|1552^5^0
+42905845|New Zealand|C0027978|85625|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1658^11^0;104^13^0
+42905845|*Brachyura|C0010260|154311|MH|RtM via: Crabs;RtM via: Halicarcinus varius|TI|MM;RC|1055^4^0;261^5^0;1060^19^0
+42905845|*Bivalves|C0542270|150876|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;RtM via: Austrovenus stutchburyi;RtM via: Paphies australis;RtM via: Tawera spissa;RtM via: Gari (invertebrate);RtM via: Myadora;RtM via: Nucula;Forced Non-Leaf Node Lookup:bivalves|TI|MM|925^8^0;667^8^0;206^8^0;955^23^0;980^17^0;677^13^0;731^4^0;714^7^0;935^6^0
+42905846|Animals|C0003062|34724|CT|Echinodermata;CT Treecode Lookup: B01.050.500.408 (Echinodermata)||RC
+42905846|*Fossils|C0016614|33724|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|658^6^0
+42905846|Pacific Ocean|C0030171|8932|MH|RtM via: Pacific Ocean;Forced Leaf Node Lookup:pacific ocean|TI|MM;RC|581^13^0
+42905846|New Zealand|C0027978|2245|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|690^11^0;234^11^0;202^11^0
+42905846|*Bays|C3203003|2227|MH|Forced Leaf Node Lookup:bay|TI|MM|161^3^0;608^3^0
+42905846|*Species Extinctions|C1720993|11970|ET|Entry Term Replacement for "Extinction, Biological";RtM via: Extinction, Species|TI|MM|499^15^0
+42905846|Echinodermata|C0013507|2245|MH|||RC
+42905846|*Stalking|C0935572|60|MH|RtM via: Stalking (behavior)|TI|MM|429^7^0;280^7^0
+42905847|Animals|C0003062|4268|CT|Seastar;CT Treecode Lookup: B01.050.500.408 (Seastar);Dinosaurs;CT Treecode Lookup: B01.050.150.900.833 (Dinosaurs)||MM;RC
+42905847|*Seastar|C0038185|3268|ET|Entry Term Replacement for "Starfish";RtM via: Starfish;RtM via: Goniasteridae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sea stars|TI|MM;RC|276^8^0;65^13^0
+42905847|New Zealand|C0027978|586|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|655^11^0;472^13^0;244^11^0
+42905847|Dinosaurs|C0949681|1944|MH|||RC
+42905847|Paleontology|C0030224|1308|MH|||RC
+42905847|*Preservation, Biological|C0033085|678|MH|RtM via: Biologic Preservation|TI|MM|118^9^0
+42905848|*Museums|C0026863|16586|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|657^8^0;445^6^0;306^6^0;34^6^0
+42905848|*Archive|C0003738|21102|ET|Entry Term Replacement for "Archives";RtM via: archive|TI|MM;RC|327^7^0
+42905848|*Academies and Institutes|C0000877|1008|MH|RtM via: Institutes|TI|MM|292^9^0
+42905848|*Publications|C0034036|906|MH|RtM via: Publications|TI|MM|351^12^0
+42905848|*Health Facilities|C0018704|201|MH|RtM via: Health care facility|TI|MM|217^13^0
+42905849|Animals|C0003062|28890|CT|Egg Shell;CT Treecode Lookup: A13.316 (Egg Shell);Palaeognathae;CT Treecode Lookup: B01.050.150.900.248 (Palaeognathae)||MM;RC
+42905849|*Egg Shell|C0013702|27890|MH|RtM via: Egg Shell;Forced Leaf Node Lookup:eggshells|TI|MM;RC|704^8^0;456^3^1;461^5^1
+42905849|*Museums|C0026863|4127|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|70^6^0
+42905849|*Fossils|C0016614|3884|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|43^6^0
+42905849|New Zealand|C0027978|1943|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|166^11^0
+42905849|*Eggs|C0013710|6138|MH|RtM via: Eggshell (substance)|TI|MM;RC|704^8^0;456^3^1;461^5^1
+42905849|*Palaeognathae|C1093031|5406|MH|RtM via: Dinornithiformes|TI|MM|213^16^0
+42905849|*Weight Gain|C0043094|432|MH|RtM via: Excessive body weight gain|TI|MM|663^16^0
+42905850|Humans|C0086418|5674|CT|Contraceptives, Oral;CT Treecode Lookup: D27.505.696.875.360.276 (Contraceptives, Oral);Contraceptives, Oral;CT Treecode Lookup: D27.505.954.705.360.276 (Contraceptives, Oral)||MM;RC
+42905850|Female|C0086287|5674|CT|Contraceptives, Oral;CT Treecode Lookup: D27.505.696.875.360.276 (Contraceptives, Oral);Contraceptives, Oral;CT Treecode Lookup: D27.505.954.705.360.276 (Contraceptives, Oral)||MM;RC
+42905850|New Zealand|C0027978|843|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|95^11^0
+42905850|*Islands|C0022130|4674|MH|RtM via: Islands|TI|MM;RC|310^6^0
+42905850|*Contraceptives, Oral|C0009905|258|MH|RtM via: Contraceptives, Oral|TI|MM|656^6^0
+42905856|Animals|C0003062|50343|CT|Gastropoda;CT Treecode Lookup: B01.050.500.644 (Gastropoda)||MM;RC
+42905856|*Fossils|C0016614|49343|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|503^6^0;560^7^0;404^6^0;127^6^0
+42905856|Australia|C0004340|12616|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM;RC|573^9^0;683^10^0
+42905856|New Zealand|C0027978|11293|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|940^11^0;610^11^0;491^11^0;392^11^0;115^11^0;824^11^0;1029^11^0
+42905856|*Incidence|C0021149|5035|MH|RtM via: Incidence;Forced Leaf Node Lookup:incidences|TI|MM|597^9^0
+42905856|Antarctic Regions|C0454691|3079|MH|RtM via: Antarctica;RtM via: Antarctic (geographic area);Forced Leaf Node Lookup:antarctic|TI|MM|883^9^0
+42905856|*Gastropoda|C0324023|1608|MH|RtM via: Haliotis|TI|MM|952^8^0;411^8^0;257^8^0;34^8^0
+42905856|Phylogeny|C0031797|1472|MH|||RC
+42905856|*DNA|C0012854|966|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM|916^3^0
+42905856|Oceans and Seas|C0028815|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|1131^5^0
+42905857|Animals|C0003062|54649|CT|Chiroptera;CT Treecode Lookup: B01.050.150.900.649.313.937 (Chiroptera)||MM;RC
+42905857|*Chiroptera|C0008139|53649|MH|RtM via: Chiroptera;RtM via: Chalinolobus tuberculatus;RtM via: Mystacina tuberculata;Forced Leaf Node Lookup:bats;checkForceMH Boosted|TI|MM;RC|230^3^0;56^4^0;365^25^0;327^21^0
+42905857|*Fossils|C0016614|52563|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|234^7^0;38^6^0
+42905857|*Radius|C0034627|26565|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|106^6^0
+42905857|*Sand|C4759711|13185|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|132^4^0
+42905857|New Zealand|C0027978|6972|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|490^11^0
+42905857|*Humerus|C0020164|44358|MH|RtM via: Bone structure of humerus;Forced Non-Leaf Node Lookup:humerus|TI|MM;RC|80^7^0
+42905857|*Sympatry|C3179134|6807|MH|RtM via: Sympatry|TI|MM|425^9^0
+42905858|Animals|C0003062|29414|CT|Ducks;CT Treecode Lookup: B01.050.150.900.248 (Ducks)||MM;RC
+42905858|*Islands|C0022130|28414|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|449^7^0
+42905858|*Fossils|C0016614|27124|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|499^6^0;551^6^0
+42905858|*Lakes|C0337049|9043|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM;RC|124^4^0
+42905858|*Ducks|C0013268|8918|MH|RtM via: Malacorhynchus membranaceus;RtM via: Genus Malacorhynchus;Forced Leaf Node Lookup:duck;checkForceMH Boosted|TI|MM;RC|206^15^0;328^14^0;222^14^0;217^4^0
+42905858|New Zealand|C0027978|3238|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|194^11^0
+42905858|*Bays|C3203003|2824|MH|Forced Leaf Node Lookup:bay|TI|MM|146^3^0
+42905858|*Aquatic Organisms|C0596121|3210|MH|RtM via: Malacorhynchus membranaceus;RtM via: Genus Malacorhynchus|TI|MM|206^15^0;328^14^0;222^14^0
+42905858|*Humerus|C0020164|567|MH|RtM via: Left humerus;Forced Non-Leaf Node Lookup:humerus|TI|MM|23^12^0;28^7^0
+42905858|*Record|C0034869|333|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|506^6^0
+42905861|Humans|C0086418|4498|CT|Population Groups;CT Treecode Lookup: M01.686 (Population Groups);Population Groups;CT Treecode Lookup: N01.224.708 (Population Groups);Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups);European Continental Ancestry Group;CT Treecode Lookup: M01.686 (European Continental Ancestry Group)||MM;RC
+42905861|New Zealand|C0027978|1037|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|680^11^0;488^11^0
+42905861|*Ethnic Groups|C0015031|2412|MH|RtM via: british|TI|MM;RC|321^7^0
+42905861|*European Continental Ancestry Group|C1257905|1635|MH|RtM via: british|TI|MM;RC|321^7^0
+42905861|*Military Personnel|C0026126|441|MH|RtM via: army|TI|MM|329^4^0
+42905861|Anthropology, Cultural|C0003185|1000|MH|Forced Non-Leaf Node Lookup:material cultures||MM|149^16^0
+42905862|Animals|C0003062|17425|CT|Palaeognathae;CT Treecode Lookup: B01.050.150.900.248 (Palaeognathae);Gills;CT Treecode Lookup: A13.421 (Gills)||MM;RC
+42905862|*Museums|C0026863|14293|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|302^7^0;43^6^0
+42905862|*Wetlands|C1721088|8183|MH|RtM via: Swamp;Forced Leaf Node Lookup:swamps|TI|MM|82^5^0
+42905862|*Gills|C0017558|2168|MH|RtM via: Gill structure;Forced Leaf Node Lookup:gill|TI|MM|851^4^0
+42905862|*Palaeognathae|C1093031|16425|MH|RtM via: Anomalopteryx didiformis;RtM via: Dinornis struthoides;RtM via: Emeus crassus;RtM via: Pachyornis mappini|TI|MM;RC|447^24^0;504^20^0;653^13^0;477^18^0
+42905862|*Forest|C0086312|6546|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|556^6^0
+42905862|*Archives|C0003738|6171|MH|RtM via: archive|TI|MM|242^8^0
+42905862|*Bones|C0262950|744|ET|Entry Term Replacement for "Bone and Bones";RtM via: Skeletal bone|TI|MM;RC|606^5^0;396^5^0;61^5^0
+42905863|Animals|C0003062|3505|CT|Struthioniformes;CT Treecode Lookup: B01.050.150.900.248 (Struthioniformes);Palaeognathae;CT Treecode Lookup: B01.050.150.900.248 (Palaeognathae);Ctenophora;CT Treecode Lookup: B01.050.500.325 (Ctenophora)||MM;RC
+42905863|*Struthioniformes|C0600541|2505|MH|RtM via: Apteryx rowi;RtM via: Apteryx australis|TI|MM|258^12^0;48^10^0
+42905863|Palaeognathae|C1093031|1573|MH|||RC
+42905863|*Ctenophora|C0999736|1068|MH|RtM via: Nuda|TI|MM|350^4^0
+42905863|*Name|C0027365|1053|ET|Entry Term Replacement for "Names";RtM via: Name;RtM via: Person Name;RtM via: Scientific Name|TI|MM|239^4^0;382^15^0
+42905866|Animals|C0003062|17081|CT|Echinodermata;CT Treecode Lookup: B01.050.500.408 (Echinodermata);Bivalvia;CT Treecode Lookup: B01.050.500.644 (Bivalvia)||MM;RC
+42905866|*Fossils|C0016614|16081|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|200^6^0
+42905866|New Zealand|C0027978|1450|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|382^11^0
+42905866|*Islands|C0022130|6861|MH|RtM via: Islands|TI|MM|152^6^0
+42905866|*Echinodermata|C0013507|5094|MH|RtM via: Saracrinus|TI|MM|356^10^0;217^10^0;55^10^0
+42905866|*Bivalvia|C0542270|459|MH|RtM via: Ensis (genus)|TI|MM|79^5^0
+42905867|Male|C0086582|61642|CT|CT Text Lookup: he|TI|MM;RC|391^2^0
+42905867|Animals|C0003062|61642|CT|Mammals;CT Treecode Lookup: B01.050.150.900.649 (Mammals);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);CT Text Lookup: mammal|TI|MM;RC|811^6^0
+42905867|United States|C0041703|61642|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM;RC|967^6^0;837^2^1;844^1^1;56^8^0
+42905867|*Museums|C0026863|51187|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|941^6^0;696^7^0;406^8^0;257^6^0;340^8^0;118^6^0
+42905867|Malaysia|C0024552|23746|MH|RtM via: Malaysia;RtM via: Sabah;Forced Leaf Node Lookup:malaysia;Forced Leaf Node Lookup:sabah|TI|MM|781^8^0;774^5^0
+42905867|New York|C0027976|20810|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|216^8^0
+42905867|Borneo|C0006026|17564|MH|RtM via: Borneo;Forced Leaf Node Lookup:borneo|TI|MM|762^6^0
+42905867|New Zealand|C0027978|14597|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|591^11^0
+42905867|*Cities|C0008848|11186|MH|RtM via: Cities;Forced Leaf Node Lookup:cities|TI|MM|603^6^0
+42905867|*Natural History|C0175860|60642|MH|RtM via: Natural History|TI|MM;RC|421^15^0;75^15^0
+42905867|*Mammals|C0024660|39669|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM;RC|908^7^0;811^6^0
+42905867|*Birds|C0005595|31572|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|673^4^0;310^5^0
+42905867|Illinois|C0020898|12066|MH|RtM via: Illinois (geographic location);Forced Non-Leaf Node Lookup:illinois|TI|MM|882^8^0
+42905867|Australia|C0004340|8007|MH|RtM via: Australia|TI|MM|735^9^0
+42905868|||||||
+42905869|Male|C0086582|1963|CT|CT Text Lookup: men|TI|MM;RC|489^3^0
+42905869|Humans|C0086418|1963|CT|CT Text Lookup: men|TI|MM;RC|489^3^0
+42905869|*Names|C0027365|810|MH|RtM via: Name;RtM via: Person Name|TI|MM|457^5^0;163^5^0
+42905869|*Reproduction|C0035150|141|MH|RtM via: Reproduction|TI|MM|136^10^0
+42905869|*Publications|C0034036|111|MH|RtM via: Scientific Publication|TI|MM|252^9^0
+42905870|Humans|C0086418|7817|CT|CT Text Lookup: student;CT Text Lookup: students|TI|MM;RC|590^8^0
+42905870|*Museums|C0026863|6817|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|222^6^0
+42905870|*Intention|C0162425|3382|MH|RtM via: Intention - mental process;Forced Leaf Node Lookup:intentions|TI|MM|534^9^0
+42905870|*Standing Position|C0231472|2394|MH|RtM via: Standing position|TI|MM|197^8^0
+42905870|*Names|C0027365|2076|MH|RtM via: Person Name|TI|MM|66^16^0
+42905870|*Recognition, Psychology|C0524637|2028|MH|RtM via: Recognition, Psychology|TI|MM|473^10^0
+42905870|*Students|C0038492|1275|MH|RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM|590^8^0
+42905874|Animals|C0003062|274024|CT|Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora);Brachyura;CT Treecode Lookup: B01.050.500.131 (Brachyura);Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica);Slug;CT Treecode Lookup: B01.050.500.644 (Slug);Snails;CT Treecode Lookup: B01.050.500.644 (Snails);Starfish;CT Treecode Lookup: B01.050.500.408 (Starfish);Mytilus;CT Treecode Lookup: B01.050.500.644 (Mytilus);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|66^7^0
+42905874|*Polyplacophora|C0998200|273024|MH|RtM via: Chiton;RtM via: Polyplacophora;RtM via: Ischnochiton;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM|1949^6^0;995^7^0;1956^12^0
+42905874|*Brachyura|C0010260|181971|MH|RtM via: Crabs;RtM via: Halicarcinus;Forced Leaf Node Lookup:crabs;checkForceMH Boosted|TI|MM|1847^4^0;915^5^0;1852^12^0
+42905874|*Ulva|C0750899|160729|MH|RtM via: Ulva;Forced Leaf Node Lookup:ulva;checkForceMH Boosted|TI|MM;RC|1446^4^0
+42905874|*Vinca|C0331123|160633|MH|RtM via: Vinca;Forced Leaf Node Lookup:periwinkles;checkForceMH Boosted|TI|MM|926^11^0
+42905874|*Thoracica|C0004757|146455|MH|RtM via: Thoracica;Forced Leaf Node Lookup:barnacles;checkForceMH Boosted|TI|MM|860^8^0
+42905874|*Macrocystis|C1005453|138646|MH|RtM via: Kelp, Giant;Forced Leaf Node Lookup:macrocystis pyriferas;checkForceMH Boosted|TI|MM|2128^5^1;2143^4^1;2148^20^0
+42905874|*Islands|C0022130|134219|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|773^6^0;661^6^0;403^7^0;381^7^0;244^6^0;190^7^0
+42905874|*Seaweed|C0036500|129362|MH|RtM via: Seaweed;checkForceMH Boosted;Forced Non-Leaf Node Lookup:seaweed|TI|MM;RC|2221^8^0;1668^7^0;1376^8^0;1236^8^0;1024^7^0
+42905874|*Anemone|C0330254|118906|MH|RtM via: Anemone;Forced Leaf Node Lookup:anemones;checkForceMH Boosted|TI|MM|2467^8^0
+42905874|*Fragaria|C1080863|109915|MH|RtM via: Strawberries;RtM via: Fragaria x ananassa;Forced Leaf Node Lookup:strawberry;checkForceMH Boosted|TI|MM|2292^10^0
+42905874|*Sand|C4759711|105232|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|2595^4^0
+42905874|*Kelp|C0751493|105064|MH|Forced Leaf Node Lookup:kelp;checkForceMH Boosted|TI|MM|2143^4^0
+42905874|*Porphyra|C0996258|105064|MH|Forced Leaf Node Lookup:porphyras;checkForceMH Boosted|TI|MM|1277^8^0
+42905874|*Starfish|C0038185|77114|MH|RtM via: Starfish;RtM via: Anasterias;checkForceMH Boosted;Forced Non-Leaf Node Lookup:starfish|TI|MM|1891^8^0;1900^10^0
+42905874|*Mytilus|C0027144|57686|MH|RtM via: Mytilus galloprovincialis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mussel mytilus|TI|MM|1740^25^0;1733^14^0
+42905874|*Neptune|C0242760|54050|MH|RtM via: Neptune;Forced Leaf Node Lookup:neptune|TI|MM|1004^9^0
+42905874|*Orange|C0440277|52946|ET|Entry Term Replacement for "Citrus sinensis";RtM via: Orange (fruit);checkForceMH Boosted|TI|MM|1942^6^0
+42905874|New Zealand|C0027978|52541|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|831^11^0;523^11^0;308^11^0;354^13^0
+42905875|Animals|C0003062|42076|CT|Echinodermata;CT Treecode Lookup: B01.050.500.408 (Echinodermata)||MM;RC
+42905875|Pacific Ocean|C0030171|41076|MH|RtM via: Pacific Ocean;Forced Leaf Node Lookup:pacific ocean|TI|MM;RC|854^13^0
+42905875|*Fossils|C0016614|27690|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|439^6^0;182^6^0
+42905875|*Refugium|C4042836|16494|MH|RtM via: Refugium;Forced Leaf Node Lookup:refugia|TI|MM|705^7^0
+42905875|New Zealand|C0027978|10089|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|222^11^0;152^11^0
+42905875|*Islands|C0022130|32160|MH|RtM via: Islands|TI|MM;RC|745^6^0;144^6^0
+42905875|*Seas|C0036493|8478|ET|Entry Term Replacement for "Oceans and Seas";RtM via: Sea|TI|MM;RC|559^4^0
+42905875|*Echinodermata|C0013507|5742|MH|RtM via: Sclerocrinidae|TI|MM|292^14^0
+42905875|Europe|C0015176|4935|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|567^6^0
+42905876|*Cultural Evolution|C0010451|1149|MH|RtM via: Cultural Evolution|TI|MM|652^17^0
+42905876|*Individual Differences|C0021228|201|ET|Entry Term Replacement for "Individuality";RtM via: Individuality|TI|MM|446^20^0
+42905876|*Records|C0034869|186|MH|RtM via: Records|TI|MM|247^7^0
+42905877|Animals|C0003062|134845|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird);Columbidae;CT Treecode Lookup: B01.050.150.900.248 (Columbidae);Spheniscidae;CT Treecode Lookup: B01.050.150.900.248 (Spheniscidae);Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);CT Text Lookup: vertebrates|TI|MM;RC|364^11^0
+42905877|*Columbidae|C0325912|73445|MH|RtM via: Columba livia;RtM via: Columbidae;RtM via: Genus Hemiphaga;Forced Leaf Node Lookup:pigeons;checkForceMH Boosted|TI|MM|195^6^0;213^9^0
+42905877|*Spheniscidae|C0325331|61553|MH|RtM via: Spheniscidae;Forced Leaf Node Lookup:penguins;checkForceMH Boosted|TI|MM;RC|294^7^0;281^7^0
+42905877|*Islands|C0022130|29158|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|105^6^0;121^7^0
+42905877|*Bays|C3203003|11242|MH|Forced Leaf Node Lookup:bay|TI|MM|95^3^0
+42905877|*Vertebrates|C0042567|23046|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM;RC|364^11^0
+42905877|*Femur|C0015811|5706|MH|RtM via: Femur;RtM via: Left femur|TI|MM;RC|302^5^0;238^10^0
+42905877|*Ulna|C0041600|4005|MH|RtM via: Left ulna;Forced Non-Leaf Node Lookup:ulna|TI|MM;RC|174^9^0;179^4^0
+42905877|*Flower|C0330090|1272|ET|Entry Term Replacement for "Flowers";RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|84^6^0
+42905878|Animals|C0003062|53925|CT|Geese;CT Treecode Lookup: B01.050.150.900.248 (Geese);Aves;CT Treecode Lookup: B01.050.150.900.248 (Aves)||MM;RC
+42905878|*Fossils|C0016614|52925|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|42^6^0
+42905878|*Geese|C0017225|49719|MH|RtM via: Geese;Forced Leaf Node Lookup:gooses;Forced Leaf Node Lookup:geese;checkForceMH Boosted|TI|MM;RC|492^5^0;149^5^0
+42905878|*Sand|C4759711|12577|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|221^4^0
+42905878|New Zealand|C0027978|7118|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|273^11^0
+42905878|*Bays|C3203003|6284|MH|Forced Leaf Node Lookup:bay|TI|MM|254^3^0
+42905878|Oxygen-17|C4546908|15664|NM|RtM via: Oxygen-17|TI|MM|70^6^1;91^2^1
+42905878|*Oxygen Isotopes|C0030061|15663|MH|RtM via: Oxygen-17;Forced Non-Leaf Node Lookup:oxygen isotopes|TI|MM|70^6^1;91^2^1
+42905879|Humans|C0086418|9034|CT|CT Text Lookup: men|TI|MM;RC|801^3^0
+42905879|Male|C0086582|9034|CT|CT Text Lookup: men|TI|MM;RC|801^3^0
+42905879|New Zealand|C0027978|1846|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|767^11^0
+42905879|*Names|C0027365|4419|MH|RtM via: Name;RtM via: Person Name|TI|MM|789^5^0;408^5^0
+42905879|*Record|C0034869|3768|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|691^6^0
+42905879|*Death|C0011065|1695|MH|RtM via: Cessation of life;RtM via: Death (finding)|TI|MM|824^4^0
+42905883|Animals|C0003062|159173|CT|Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora);Gastropod;CT Treecode Lookup: B01.050.500.644 (Gastropod);Mollusk;CT Treecode Lookup: B01.050.500.644 (Mollusk);Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica);Brachyura;CT Treecode Lookup: B01.050.500.131 (Brachyura);Larvae;CT Treecode Lookup: B05.500 (Larvae);Larvae;CT Treecode Lookup: G07.345.500.550.500 (Larvae);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves)||MM;RC
+42905883|*Polyplacophora|C0998200|158173|MH|RtM via: Chiton;RtM via: Polyplacophora;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM|206^7^0
+42905883|*Gastropod|C0324023|102746|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM;RC|430^9^0;230^9^0
+42905883|*Thoracica|C0004757|84610|MH|RtM via: Thoracica;Forced Leaf Node Lookup:barnacles;checkForceMH Boosted|TI|MM|311^9^0
+42905883|*Brachyura|C0010260|78943|MH|RtM via: Crabs;Forced Leaf Node Lookup:crabs;checkForceMH Boosted|TI|MM;RC|270^5^0
+42905883|*Larvae|C0023047|32939|ET|Entry Term Replacement for "Larva";RtM via: Larva;checkForceMH Boosted|TI|MM;RC|1242^6^0
+42905883|Pacific Ocean|C0030171|26774|MH|RtM via: Pacific Ocean;Forced Leaf Node Lookup:pacific ocean|TI|MM|678^13^0
+42905883|New Zealand|C0027978|22904|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|908^13^0;175^11^0
+42905883|*Poverty|C0032854|22889|MH|RtM via: Poverty;Forced Leaf Node Lookup:poverty|TI|MM|768^7^0
+42905883|*Bays|C3203003|22706|MH|Forced Leaf Node Lookup:bay|TI|MM;RC|776^3^0;791^3^0;1455^3^0
+42905883|*Bipolar Disorder|C0005586|22574|MH|RtM via: Manic;Forced Leaf Node Lookup:manias|TI|MM|1276^6^0;1012^6^0
+42905883|*Biodiversity|C0282469|37833|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|633^12^0
+42905883|*Biota|C1253910|32064|MH|RtM via: Biological Community;Forced Non-Leaf Node Lookup:biota|TI|MM;RC|101^5^0
+42905883|*Bivalves|C0542270|29691|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|244^8^0
+42905883|*Seaweed|C0036500|4662|MH|RtM via: Seaweed;Forced Non-Leaf Node Lookup:seaweed|TI|MM|257^8^0
+42905884|Animals|C0003062|8695|CT|Sparus;CT Treecode Lookup: B01.050.150.900.493 (Sparus)||MM;RC
+42905884|*Ships|C0036971|5387|MH|RtM via: Ships;Forced Leaf Node Lookup:ship|TI|MM|427^4^0
+42905884|*Museums|C0026863|2393|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|245^6^0
+42905884|New Zealand|C0027978|2222|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|454^11^0;120^11^0
+42905884|Australia|C0004340|1190|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM;RC|25^10^0
+42905884|*Sparus|C0037762|7695|ET|Entry Term Replacement for "Perciformes";RtM via: Sparus;RtM via: Acanthopagrus butcheri;RtM via: Acanthopagrus australis|TI|MM;RC|469^6^0;516^13^1;531^8^1;51^23^0
+42905884|*Tank|C4760575|2478|ET|Entry Term Replacement for "Motor Vehicles";RtM via: Armored Vehicles|TI|MM|213^4^0
+42905884|*Records|C0034869|1260|MH|RtM via: Records|TI|MM|442^7^0;87^8^0
+42905884|*Movement|C0026649|1182|MH|RtM via: Movement|TI|MM|267^8^0
+42905884|Oceans and Seas|C0028815|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|352^5^0
+42905885|Animals|C0003062|44581|CT|Palaeognathae;CT Treecode Lookup: B01.050.150.900.248 (Palaeognathae)||MM;RC
+42905885|Humans|C0086418|44581|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human|TI|MM;RC|711^5^0
+42905885|United States|C0041703|44581|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|234^13^0
+42905885|Infant, Newborn|C0021289|1000|CT|Forced Age Group: 000 years old||MM|580^13^0
+42905885|*Museums|C0026863|6106|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|169^7^0
+42905885|New Zealand|C0027978|2770|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|180^11^0
+42905885|*Palaeognathae|C1093031|43581|MH|RtM via: Anomalopteryx didiformis;RtM via: Dinornis robustus;RtM via: Euryapteryx curtus;RtM via: Megalapteryx didinus|TI|MM;RC|1587^24^0;1369^17^0;1472^18^0;1670^20^0
+42905885|*Archeology|C0003733|6855|ET|Entry Term Replacement for "Archaeology";RtM via: Archaeology|TI|MM|618^14^0
+42905885|*Skeleton|C0816871|6444|MH|RtM via: Skeleton|TI|MM|1218^8^0
+42905885|United Kingdom|C0041700|6|MH|RtM via: United Kingdom|TI|MM|204^14^0
+42905886|Animals|C0003062|66136|CT|Seastar;CT Treecode Lookup: B01.050.500.408 (Seastar);Corals;CT Treecode Lookup: B01.050.500.308 (Corals);Molluscs;CT Treecode Lookup: B01.050.500.644 (Molluscs)||MM;RC
+42905886|*Climate Change|C2718051|53030|MH|RtM via: Climate Change;Forced Lookup:climate change|TI|MM;RC|1189^14^0
+42905886|*Fossils|C0016614|42962|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|1906^6^0;1430^6^0
+42905886|*Seastar|C0038185|27281|ET|Entry Term Replacement for "Starfish";RtM via: Starfish;RtM via: Zoroaster;RtM via: Zoroasteridae;RtM via: Zoroaster fulgens;checkForceMH Boosted;Forced Non-Leaf Node Lookup:seastars|TI|MM|1070^8^0;376^7^0;1609^9^0;1367^9^0;885^9^0;788^9^0;458^9^0;74^9^0;50^13^0;498^9^1;513^7^1
+42905886|*Corals|C0324034|27218|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted|TI|MM|701^6^0
+42905886|*Facies|C0282631|14846|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|1793^6^0
+42905886|New Zealand|C0027978|9812|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1813^11^0;1404^11^0;405^11^0;266^11^0
+42905886|Antarctic Regions|C0454691|9764|MH|RtM via: Antarctica;RtM via: Antarctic (geographic area);Forced Leaf Node Lookup:antarctic|TI|MM;RC|1293^9^0;476^9^0
+42905886|*Bays|C3203003|9512|MH|Forced Leaf Node Lookup:bay|TI|MM|231^3^0
+42905886|Pacific Ocean|C0030171|65136|MH|RtM via: Pacific Ocean|TI|MM;RC|1535^15^0
+42905886|*Niche, Ecological|C4704926|24150|ET|Entry Term Replacement for "Ecosystem";RtM via: Niche, Ecological|TI|MM;RC|824^16^0
+42905886|*Molluscs|C0026391|11802|ET|Entry Term Replacement for "Mollusca";RtM via: Mollusca;Forced Non-Leaf Node Lookup:molluscs|TI|MM|651^8^0
+42905886|*Names|C0027365|5568|MH|RtM via: Name|TI|MM|1339^5^0
+42905886|Decapoda|C0323856|1000|MH|Forced Non-Leaf Node Lookup:decapod crustaceans||MM|667^19^0
+42905887|*Language|C0023008|10421|MH|RtM via: Dialect;RtM via: Fijian language;Forced Leaf Node Lookup:languages;Forced Leaf Node Lookup:dialects|TI|MM;RC|69^7^0;84^15^0;91^8^0
+42905887|*Ethnobotany|C0376619|56529|MH|RtM via: Ethnobotany|TI|MM;RC|176^14^0
+42905887|*Plant|C0032098|16524|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|44^5^0
+42905887|*Names|C0027365|12078|MH|RtM via: Name;RtM via: Person Name|TI|MM|217^5^0;50^5^0
+42905887|*Tracheophyta|C0682475|6291|MH|RtM via: Tracheophyta|TI|MM|156^12^0
+42905888|Male|C0086582|4873|CT|CT Text Lookup: he|TI|MM;RC|142^2^0
+42905888|Humans|C0086418|1000|CT|Forced Humans: Dentists||MM
+42905888|*Museums|C0026863|3873|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|328^6^0
+42905888|*Artifacts|C0085089|441|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artefacts|TI|MM|175^9^0
+42905888|United Kingdom|C0041700|390|MH|Forced Lookup:britain|TI|MM;RC|128^7^0
+42905888|*Group Processes|C0018265|1284|MH|RtM via: Collective behavior|TI|MM|453^20^0
+42905888|*Family Members|C0086282|1134|ET|Entry Term Replacement for "Family";RtM via: Family member|TI|MM|248^14^0
+42905888|*Interpersonal Relations|C0021797|840|MH|RtM via: Collective behavior|TI|MM|453^20^0
+42905888|*Diagnostic Tests, Routine|C0011930|36|MH|RtM via: Examination|TI|MM|32^8^0
+42905888|Dentists|C0011441|1000|MH|Forced Non-Leaf Node Lookup:dentists||MM|98^7^0
+42905891|Animals|C0003062|96742|CT|Hymenoptera;CT Treecode Lookup: B01.050.500.131 (Hymenoptera);Hemiptera;CT Treecode Lookup: B01.050.500.131 (Hemiptera);Wasps;CT Treecode Lookup: B01.050.500.131 (Wasps)||MM;RC
+42905891|*Hemiptera|C0018992|16886|MH|RtM via: Hemiptera;RtM via: Flatidae;RtM via: Siphanta acuta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hemipteras|TI|MM|345^9^0;356^8^0;329^14^0
+42905891|New Zealand|C0027978|4754|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|545^11^0;281^11^0;222^11^0;54^11^0
+42905891|Australia|C0004340|4745|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM|419^10^0
+42905891|Wasps|C0043041|6647|MH|||RC
+42905891|*Record|C0034869|870|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|208^8^0
+42905892|Animals|C0003062|21909|CT|Ostracoda;CT Treecode Lookup: B01.050.500.131 (Ostracoda)||MM;RC
+42905892|*Wetlands|C1721088|20909|MH|RtM via: Mangrove Swamps;Forced Leaf Node Lookup:mangrove forests|TI|MM;RC|926^15^0
+42905892|*Sand|C4759711|4090|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|203^4^0
+42905892|*Bays|C3203003|2125|MH|Forced Leaf Node Lookup:bay|TI|MM;RC|795^3^0
+42905892|New Zealand|C0027978|2111|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|110^11^0
+42905892|*Islands|C0022130|13002|MH|RtM via: Islands|TI|MM;RC|952^6^0;809^6^0
+42905892|*Ostracoda|C0598247|7593|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda;RtM via: Keijia demissa;RtM via: Leptocythere|TI|MM|992^8^0;93^9^0;544^14^0;1139^12^0
+42905892|*Pollen|C0032385|996|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|945^6^0;802^6^0
+42905892|*Cluster Analysis|C0009085|837|MH|RtM via: statistical cluster;Forced Non-Leaf Node Lookup:cluster analysis|TI|MM;RC|301^16^0
+42905893|Animals|C0003062|24286|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);Insect;CT Treecode Lookup: B01.050.500.131 (Insect);Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes);CT Text Lookup: fish|TI|MM;RC|121^4^0
+42905893|Male|C0086582|24286|CT|CT Text Lookup: he|TI|MM;RC|185^2^0
+42905893|*Museums|C0026863|15096|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|726^6^0;865^6^0;551^6^0;627^8^0;177^6^0
+42905893|New Zealand|C0027978|2370|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|853^11^0;455^11^0
+42905893|*Birds|C0005595|23286|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|840^5^0;524^5^0;273^5^0;114^5^0
+42905893|*Insect|C0021585|9783|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM;RC|199^6^0
+42905893|*Fishes|C0016163|7527|MH|RtM via: Fishes|TI|MM|121^4^0
+42905893|*Seasons|C0036497|621|MH|RtM via: Winter|TI|MM|392^6^0
+42905894|Tonga|C0040407|45469|MH|RtM via: Tonga (Geographic Area);Forced Leaf Node Lookup:tonga|TI|MM;RC|761^5^0;95^5^0
+42905894|*Islands|C0022130|29494|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|934^6^0;697^7^0
+42905894|Philippines|C0031529|15346|MH|RtM via: Philippines;Forced Leaf Node Lookup:philippines|TI|MM|669^11^0
+42905894|Fiji|C0016080|12526|MH|RtM via: Fiji;Forced Leaf Node Lookup:fiji|TI|MM;RC|499^4^0;431^4^0;89^4^0
+42905894|*Grasses|C0018210|12355|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;RtM via: Garnotia;RtM via: Schizachyrium;RtM via: Sporobolus tenuissimus;RtM via: Isachne;RtM via: Leptaspis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grasses|TI|MM|894^7^0;470^7^0;51^7^0;487^8^0;738^13^0;806^22^0;404^7^0;377^9^0
+42905894|*Language|C0023008|9619|MH|RtM via: Languages;Forced Leaf Node Lookup:languages|TI|MM|909^9^0
+42905894|Cook Islands|C0009956|52392|ET|Entry Term Replacement for "Polynesia";RtM via: Cook Islands;RtM via: Niue|TI|MM;RC|787^12^0;512^12^0;122^12^0;109^4^0
+42905894|Samoa|C0242537|35079|MH|RtM via: Samoa;Forced Non-Leaf Node Lookup:samoa|TI|MM;RC|102^5^0
+42905894|*Names|C0027365|13167|MH|RtM via: Name;RtM via: Person Name|TI|MM|884^5^0
+42905894|Oceania|C0282279|7968|MH|RtM via: Oceania;Forced Non-Leaf Node Lookup:oceania|TI|MM|959^7^0
+42905895|Animals|C0003062|48166|CT|Echinodermata;CT Treecode Lookup: B01.050.500.408 (Echinodermata)||MM;RC
+42905895|*Fossils|C0016614|29882|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|709^6^0;525^6^0
+42905895|*Facies|C0282631|8747|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|587^6^0
+42905895|*Limestone|C0205688|5534|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted|TI|MM|386^10^0;229^9^0
+42905895|New Zealand|C0027978|3761|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|748^11^0
+42905895|*Echinodermata|C0013507|47166|MH|RtM via: Antedonidae;RtM via: Thalassometridae;RtM via: Stenometra|TI|MM;RC|160^11^0;101^16^0;89^10^0
+42905895|*Face|C0015450|2706|MH|RtM via: Face|TI|MM|587^6^0
+42905895|*Record|C0034869|285|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|699^6^0
+42905898|Humans|C0086418|4042|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+42905898|New Zealand|C0027978|461|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|586^11^0
+42905898|*Ethnic Groups|C0015031|2163|MH|RtM via: New Zealand European|TI|MM;RC|31^6^0
+42905898|*Politics|C0032382|672|MH|RtM via: Politics;Forced Non-Leaf Node Lookup:politics|TI|MM|38^8^0
+42905898|*Physical Phenomena|C2350446|441|MH|RtM via: Force|TI|MM|293^6^0
+42905898|*Archeology|C0003733|420|ET|Entry Term Replacement for "Archaeology";RtM via: Archaeology|TI|MM|399^14^0
+42905899|Humans|C0086418|2355|CT|Oceanic Ancestry Group;CT Treecode Lookup: M01.686 (Oceanic Ancestry Group)||RC
+42905899|New Zealand|C0027978|1355|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|120^11^0
+42905899|*Museums|C0026863|236|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|307^7^0
+42905899|*Artifacts|C0085089|161|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artefacts|TI|MM|259^9^0
+42905899|*Immigrant|C0282163|552|ET|Entry Term Replacement for "Emigrants and Immigrants";RtM via: Immigrant (person)|TI|MM|107^9^0
+42905899|Oceanic Ancestry Group|C1257908|177|MH|||RC
+42905899|*Diagnostic Tests, Routine|C0011930|33|MH|RtM via: Examination|TI|MM|32^8^0
+42905900|Animals|C0003062|98216|CT|Bivalve;CT Treecode Lookup: B01.050.500.644 (Bivalve);Molluscs;CT Treecode Lookup: B01.050.500.644 (Molluscs)||MM;RC
+42905900|*Lakes|C0337049|97216|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM;RC|2952^4^0;609^4^0;515^4^0
+42905900|*Foraminifera|C0599385|78479|MH|RtM via: Foraminifera;RtM via: Elphidium advenum;RtM via: Haynesina;Forced Leaf Node Lookup:foraminifera;checkForceMH Boosted|TI|MM|1897^13^0;1522^13^0;1229^12^0;1014^12^0;1350^17^0;1325^9^0;1312^12^0
+42905900|*Rivers|C0337050|74378|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|709^7^0;557^6^0
+42905900|*Wetlands|C1721088|66592|MH|RtM via: Swamp;Forced Leaf Node Lookup:swamps|TI|MM;RC|902^5^0
+42905900|*Diatoms|C0162769|49514|MH|RtM via: Diatoms;Forced Leaf Node Lookup:diatoms;checkForceMH Boosted|TI|MM|565^6^0
+42905900|basalt|C0052991|44745|NM|RtM via: basalt;Forced SCR Leaf Node Lookup:basalt|TI|MM|50^6^0
+42905900|*Ammonia|C0002607|42260|MH|RtM via: Ammonia;Forced Leaf Node Lookup:ammonia;checkForceMH Boosted|TI|MM|2453^7^0;1242^7^0
+42905900|*Drowning|C0013142|31570|MH|RtM via: Drowning;Forced Leaf Node Lookup:drownings|TI|MM|931^8^0
+42905900|*Fossils|C0016614|25453|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|986^6^0
+42905900|*Sea Level Rise|C5197751|18178|MH|RtM via: Sea Level Rise;Forced New Lookup:rising sea level|TI|MM|943^16^0;653^16^0;159^16^0
+42905900|*Silicates|C0086983|44744|HM|RtM via: basalt|TI|MM|50^6^0
+42905900|*Bivalve|C0542270|31584|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;RtM via: Austrovenus stutchburyi;RtM via: Nucula;Forced Non-Leaf Node Lookup:bivalves|TI|MM|2517^7^0;2525^23^0;1409^6^0
+42905900|*Ostracods|C0598247|20730|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda;Forced Non-Leaf Node Lookup:ostracods|TI|MM|1540^8^0;1259^8^0;1003^9^0;1450^8^0
+42905901|Animals|C0003062|47401|CT|Echinodermata;CT Treecode Lookup: B01.050.500.408 (Echinodermata)||MM;RC
+42905901|*Fossils|C0016614|26586|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|958^6^0;776^6^0
+42905901|*Facies|C0282631|8553|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|655^6^0
+42905901|*Limestone|C0205688|5232|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted|TI|MM|369^9^0
+42905901|New Zealand|C0027978|3888|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|815^11^0;558^11^0
+42905901|*Echinodermata|C0013507|46401|MH|RtM via: Comatulidae;RtM via: Notocrinidae;RtM via: Comaster|TI|MM;RC|159^12^0;273^12^0;149^8^0
+42905901|*Face|C0015450|2439|MH|RtM via: Face|TI|MM|655^6^0
+42905901|*Record|C0034869|285|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|766^6^0
+42905902|Tonga|C0040407|45981|MH|RtM via: Tonga (Geographic Area);Forced Leaf Node Lookup:tonga|TI|MM;RC|138^5^0
+42905902|*Grasses|C0018210|7188|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grasses|TI|MM|237^7^0;47^7^0
+42905902|Fiji|C0016080|6282|MH|RtM via: Fiji;Forced Leaf Node Lookup:fiji|TI|MM;RC|132^4^0
+42905902|Cook Islands|C0009956|70203|ET|Entry Term Replacement for "Polynesia";RtM via: Cook Islands;RtM via: Niue;RtM via: Wallis and Futuna Islands|TI|MM;RC|166^12^0;152^4^0;105^25^0
+42905902|Samoa|C0242537|39384|MH|RtM via: Samoa;Forced Non-Leaf Node Lookup:samoa|TI|MM;RC|145^5^0
+42905902|*Kava|C0521083|516|MH|RtM via: Kava|TI|MM|138^5^0
+42905905|Animals|C0003062|53420|CT|Sea Squirts;CT Treecode Lookup: B01.050.150.200 (Sea Squirts);Sea Squirts;CT Treecode Lookup: B01.050.500.272 (Sea Squirts);Larvae;CT Treecode Lookup: B05.500 (Larvae);Larvae;CT Treecode Lookup: G07.345.500.550.500 (Larvae)||MM;RC
+42905905|*Sea Squirts|C4553793|52420|ET|Entry Term Replacement for "Urochordata";RtM via: Ascidiacea;RtM via: Sea Squirts;RtM via: Urochordata;RtM via: Pyura praeputialis;RtM via: Styela clava;checkForceMH Boosted|TI|MM;RC|60^11^0;1381^8^0;768^10^0;118^8^0;911^18^0;128^12^0
+42905905|*Ships|C0036971|14840|MH|RtM via: Boat (physical object);Forced Leaf Node Lookup:boats|TI|MM;RC|1365^5^0;707^4^0
+42905905|*Larvae|C0023047|13504|ET|Entry Term Replacement for "Larva";RtM via: Larva;checkForceMH Boosted;Forced Non-Leaf Node Lookup:larvae|TI|MM;RC|619^6^0
+42905905|New Zealand|C0027978|13156|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1661^11^0;1481^11^0;1330^11^0;1252^11^0;987^11^0;84^11^0
+42905905|*Plankton|C0032071|9781|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|599^10^0
+42905905|*Longevity|C0023980|8434|MH|RtM via: Life Span;RtM via: Longevity;Forced Leaf Node Lookup:life spans|TI|MM|635^9^0
+42905905|Australia|C0004340|8475|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|936^9^0
+42905905|*Aquiculture|C0206225|4140|ET|Entry Term Replacement for "Aquaculture";RtM via: Aquaculture;Forced Non-Leaf Node Lookup:aquacultures|TI|MM|1466^11^0
+42905905|*Breeding|C0006159|3636|MH|RtM via: Breeding;Forced Non-Leaf Node Lookup:breedings|TI|MM|580^8^0
+42905905|*Record|C0034869|3156|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|954^8^0;840^8^0;733^8^0;311^8^0
+42905905|Pacific Northwest|C0030170|21|ET|Entry Term Replacement for "Northwestern United States";RtM via: Pacific Northwest|TI|MM|151^17^0
+42905906|Animals|C0003062|388845|CT|Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora);Bryozoa;CT Treecode Lookup: B01.050.500.217 (Bryozoa);Mollusca;CT Treecode Lookup: B01.050.500.644 (Mollusca);Cephalopods;CT Treecode Lookup: B01.050.500.644 (Cephalopods);Corals;CT Treecode Lookup: B01.050.500.308 (Corals);Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves);Brachiopoda;CT Treecode Lookup: B01.050.500 (Brachiopoda)||MM;RC
+42905906|*Polyplacophora|C0998200|387845|MH|RtM via: Chiton;RtM via: Polyplacophora;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM;RC|75^7^0
+42905906|*Bryozoa|C0006328|141749|MH|RtM via: Bryozoa;Forced Leaf Node Lookup:bryozoas;checkForceMH Boosted|TI|MM;RC|1511^7^0
+42905906|*Cephalopods|C0324027|92449|ET|Entry Term Replacement for "Cephalopoda";RtM via: Cephalopoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cephalopods|TI|MM|138^11^0
+42905906|*Corals|C0324034|79780|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted|TI|MM;RC|1532^6^0
+42905906|*Gastropods|C0324023|77449|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|88^10^0
+42905906|New Zealand|C0027978|38983|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1355^11^0;1012^11^0;668^11^0;347^11^0
+42905906|*Bivalves|C0542270|74712|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM;RC|104^8^0
+42905906|*Islands|C0022130|61806|MH|RtM via: Islands|TI|MM;RC|1644^6^0;1252^6^0;933^6^0;911^6^0;189^6^0
+42905906|*Habitats|C0871648|39018|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|482^8^0
+42905906|*Echinoidea|C0036488|13647|ET|Entry Term Replacement for "Sea Urchins";RtM via: Sea urchin (invertebrate);Forced Non-Leaf Node Lookup:echinoideas|TI|MM|1520^10^0
+42905906|*Surveys|C0038951|11451|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys;Forced Non-Leaf Node Lookup:surveys|TI|MM;RC|1700^7^0
+42905906|*Breeding|C0006159|1593|MH|RtM via: Breeding;Forced Non-Leaf Node Lookup:breedings|TI|MM|763^8^0
+42905908|Male|C0086582|14229|CT|CT Text Lookup: he|TI|MM;RC|208^2^0
+42905908|Humans|C0086418|14229|CT|CT Text Lookup: volunteer|TI|MM;RC|518^9^0
+42905908|*Museums|C0026863|13229|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|1226^6^0;1107^6^0;617^8^0;751^7^0;555^6^0
+42905908|*Committee Membership|C0376347|4780|MH|RtM via: Committee Members;Forced Leaf Node Lookup:committee members|TI|MM|1013^16^0
+42905908|*Artifacts|C0085089|3401|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artefacts|TI|MM|1334^8^0;1175^8^0;869^8^0;482^9^0;246^9^0;1458^8^0
+42905908|*Volunteer|C0042960|4224|ET|Entry Term Replacement for "Volunteers";RtM via: Voluntary Workers;Forced Non-Leaf Node Lookup:volunteers|TI|MM|518^9^0
+42905908|*Ethnography|C0162319|3762|ET|Entry Term Replacement for "Anthropology, Cultural";RtM via: Ethnography|TI|MM;RC|845^14^0;99^12^0
+42905908|*Books|C0006002|3690|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|1274^5^0;496^5^0
+42905908|*Publications|C0034036|2607|MH|RtM via: Scientific Publication|TI|MM|778^9^0
+42905908|England|C0014282|573|MH|RtM via: England|TI|MM|1481^7^0
+42905908|Polynesia|C0032540|9|MH|RtM via: Polynesia|TI|MM|1428^9^0
+42905911|*Rubus|C1001240|62564|MH|RtM via: Rubus;Forced Leaf Node Lookup:rubus;checkForceMH Boosted|TI|MM|592^5^0
+42905911|*Sapindaceae|C0949975|60541|MH|RtM via: Sapindaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sapindaceae|TI|MM|650^11^0
+42905911|*Meliaceae|C0971876|60106|MH|RtM via: Meliaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:meliaceae|TI|MM|623^9^0
+42905911|*Melicope|C1085798|58660|ET|Entry Term Replacement for "Rutaceae";RtM via: Melicope;checkForceMH Boosted|TI|MM|554^8^0
+42905911|*Plants, Food|C0032099|56278|ET|Entry Term Replacement for "Plants, Edible";RtM via: Plants, Edible;checkForceMH Boosted;Forced Non-Leaf Node Lookup:food plants|TI|MM;RC|222^11^0
+42905911|*Cordyline|C1008237|44732|MH|RtM via: Cordyline;Forced Leaf Node Lookup:cordyline;checkForceMH Boosted|TI|MM|486^9^0
+42905911|*Lauraceae|C0524954|43234|MH|RtM via: Lauraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lauraceae|TI|MM|612^9^0
+42905911|*Prunus|C0330654|40225|MH|RtM via: Prunus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:prunus|TI|MM|584^6^0
+42905911|*Monimiaceae|C0949950|33052|MH|RtM via: Monimiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:monimiaceae|TI|MM|634^11^0
+42905911|*Piper|C0330232|32029|MH|RtM via: Piper;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pipers|TI|MM|564^5^0
+42905911|*Ceremonial Behavior|C0007825|19051|MH|RtM via: Ritual;Forced Leaf Node Lookup:rituals|TI|MM|257^6^0
+42905911|Papua New Guinea|C0030375|18343|MH|RtM via: Papua New Guinea;Forced Leaf Node Lookup:papua new guinea|TI|MM|150^16^0
+42905911|*Ethnobotany|C0376619|143487|MH|RtM via: Ethnobotany|TI|MM;RC|781^14^0
+42905911|*Pandanaceae|C0997268|9528|MH|RtM via: Freycinetia|TI|MM|509^11^0
+42905912|Animals|C0003062|30631|CT|Ostracods;CT Treecode Lookup: B01.050.500.131 (Ostracods);Mollusk;CT Treecode Lookup: B01.050.500.644 (Mollusk);Animal Shells;CT Treecode Lookup: A13.080 (Animal Shells)||MM;RC
+42905912|*Animal Shells|C3178905|10554|MH|RtM via: Animal Shells;Forced Leaf Node Lookup:carapaces|TI|MM|1369^9^0;263^9^0
+42905912|*Sand|C4759711|9762|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|62^4^0
+42905912|*Censuses|C0007663|7674|MH|RtM via: Censuses;Forced Leaf Node Lookup:census|TI|MM|228^6^0
+42905912|*Seasons|C0036497|4419|MH|Forced Leaf Node Lookup:seasonal|TI|MM|1487^8^0
+42905912|*Ostracods|C0598247|29631|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda|TI|MM;RC|1407^8^0;1119^9^0;759^9^0;500^8^0;392^8^0;287^9^0
+42905912|*Habitats|C0871648|26973|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat|TI|MM;RC|1307^8^0
+42905912|*Mollusk|C0026391|18081|ET|Entry Term Replacement for "Mollusca";RtM via: Mollusca;Forced Non-Leaf Node Lookup:molluscs|TI|MM|741^8^0;516^7^0;443^7^0
+42905912|*Environment|C0014406|11586|MH|RtM via: Environmental pool|TI|MM;RC|1004^5^0;108^5^0
+42905913|Animals|C0003062|49423|CT|Feathers;CT Treecode Lookup: A13.370 (Feathers);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
+42905913|Humans|C0086418|1000|CT|Forced Humans: Farmers||MM
+42905913|Pacific Ocean|C0030171|36912|MH|RtM via: Pacific Ocean;Forced Leaf Node Lookup:pacific ocean|TI|MM;RC|436^13^0
+42905913|*Museums|C0026863|27363|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|137^6^0
+42905913|*Feathers|C0015731|25497|MH|RtM via: Feathers;RtM via: Entire feather;Forced Leaf Node Lookup:feathers|TI|MM|192^7^0
+42905913|New Zealand|C0027978|19794|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|670^11^0;330^11^0;104^11^0
+42905913|*Islands|C0022130|18243|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|699^7^0;419^7^0;742^7^0
+42905913|Queensland|C0034391|16914|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|708^10^0
+42905913|*Farmers|C0221460|9324|MH|RtM via: Farmers;Forced Leaf Node Lookup:farmers|TI|MM|79^6^0
+42905913|*Poverty|C0032854|8991|MH|RtM via: Poverty;Forced Leaf Node Lookup:poverty|TI|MM|91^7^0
+42905913|*Bays|C3203003|8334|MH|Forced Leaf Node Lookup:bay|TI|MM|99^3^0
+42905913|United Kingdom|C0041700|8334|MH|Forced Lookup:britain|TI|MM|364^7^0
+42905913|*Natural History|C0175860|48423|MH|RtM via: Natural History|TI|MM;RC|923^15^0
+42905913|Australia|C0004340|34764|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|393^9^0
+42905913|*Birds|C0005595|12915|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|620^5^0;265^5^0
+42905913|Europe|C0015176|4800|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|385^6^0
+42905913|*Breeding|C0006159|4587|MH|RtM via: Breeding;Forced Non-Leaf Node Lookup:breedings|TI|MM;RC|600^8^0
+42905915|Humans|C0086418|3835|CT|Continental Population Groups;CT Treecode Lookup: M01.686 (Continental Population Groups);Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+42905915|*Numismatics|C0028646|302|MH|RtM via: Coins;Forced Leaf Node Lookup:coins|TI|MM|343^5^0
+42905915|*Imitative Behavior|C0020936|300|MH|Forced Leaf Node Lookup:imitation|TI|MM;RC|205^9^0;405^9^0
+42905915|Australia|C0004340|297|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM;RC|332^10^0
+42905915|*Arm|C0446516|296|MH|Forced Leaf Node Lookup:arm|TI|MM|116^3^0
+42905915|*Continental Population Groups|C1257911|2835|MH|RtM via: Australian|TI|MM|332^10^0
+42905915|*Ethnic Groups|C0015031|1578|MH|RtM via: british|TI|MM|320^7^0
+42905915|Solomon Islands|C0037623|963|ET|Entry Term Replacement for "Melanesia";RtM via: Solomon Islands|TI|MM;RC|73^15^0
+42905915|*Ceramics|C0007742|126|MH|RtM via: Ceramics;Forced Non-Leaf Node Lookup:ceramics|TI|MM|397^7^0;229^8^0
+42905916|Child|C0008059|71071|CT|Forced Lookup:childhood; Forced Age Group: childhood|TI|MM|352^9^0;352^9^0
+42905916|Female|C0086287|71071|CT|CT Text Lookup: her;CT Text Lookup: she;CT Text Lookup: woman|TI|MM;RC|256^3^0;203^3^0;694^5^0
+42905916|Humans|C0086418|71071|CT|RtM via: Human, Female adult;Forced Lookup:childhood;CT Text Lookup: woman|TI|MM;RC|694^5^0;352^9^0
+42905916|Adult|C0001675|1000|CT|Forced Age Group: She was approximately 32 years of age||MM|203^37^0
+42905916|*Abscess|C0000833|21041|MH|RtM via: Abscess;Forced Leaf Node Lookup:abscesses|TI|MM|656^9^0
+42905916|*Influenza, Human|C0021400|13832|MH|RtM via: Influenza;Forced Leaf Node Lookup:influenza|TI|MM|565^9^0
+42905916|*Non-Hodgkin Lymphoma|C0024305|70071|ET|Entry Term Replacement for "Lymphoma, Non-Hodgkin";RtM via: Lymphoma, Non-Hodgkin;RtM via: Lymphoma, Non-Hodgkin, Familial;RtM via: Adult Non-Hodgkin Lymphoma;RtM via: Childhood Non-Hodgkin Lymphoma|TI|MM;RC|479^11^1;492^8^1
+42905916|*Paranasal Sinuses|C0030471|36480|MH|RtM via: Nasal sinus;Forced Non-Leaf Node Lookup:paranasal sinuses|TI|MM;RC|535^17^0
+42905916|*Leukemia-Lymphoma, Adult T-Cell|C0023493|35760|MH|RtM via: Adult T-Cell Lymphoma/Leukemia|TI|MM;RC|282^4^0
+42905916|*Tomography, X-Ray Computed|C0040405|8418|MH|RtM via: X-Ray Computed Tomography;Forced Non-Leaf Node Lookup:ct|TI|MM;RC|125^7^0
+42905916|*Arteries|C0003842|4275|MH|RtM via: Arteries;Forced Non-Leaf Node Lookup:arteries|TI|MM|381^8^0
+42905916|*Mucous Membranes|C0026724|1101|ET|Entry Term Replacement for "Mucous Membrane";RtM via: Mucous Membrane;Forced Non-Leaf Node Lookup:mucous membranes|TI|MM;RC|511^16^0
+42905917|basalt|C0052991|16227|NM|RtM via: basalt;Forced SCR Leaf Node Lookup:basalt|TI|MM|156^6^0
+42905917|Pitcairn Island|C0031995|4006|MH|RtM via: Pitcairn Island;Forced Leaf Node Lookup:pitcairn island|TI|MM;RC|814^8^0;590^8^0;37^15^0
+42905917|*Islands|C0022130|3475|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|577^7^0;176^6^0
+42905917|*Wood|C0043217|2581|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|823^4^0
+42905917|*Museums|C0026863|2227|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|90^6^0
+42905917|*Artifacts|C0085089|1102|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artefacts|TI|MM|700^8^0
+42905917|*Silicates|C0086983|16226|HM|RtM via: basalt|TI|MM;RC|156^6^0
+42905917|*Ships|C0036971|957|MH|RtM via: Canoe|TI|MM;RC|726^5^0
+42905917|*Microsurgery|C0026035|498|MH|RtM via: Scissors (device);RtM via: Chisel|TI|MM|232^7^0;461^7^0
+42905917|*Resource|C0035201|264|ET|Entry Term Replacement for "Health Resources";RtM via: Resources|TI|MM|633^8^0
+42905918|Humans|C0086418|22105|CT|CT Text Lookup: man|TI|MM;RC|141^3^0
+42905918|Male|C0086582|22105|CT|CT Text Lookup: he;CT Text Lookup: man|TI|MM;RC|313^2^0;141^3^0
+42905918|Female|C0086287|22105|CT|Parturition;CT Treecode Lookup: G08.686.784.769.490 (Parturition)||MM;RC
+42905918|Pregnancy|C0032961|22105|CT|Parturition;CT Treecode Lookup: G08.686.784.769.490 (Parturition)||MM
+42905918|United Kingdom|C0041700|21105|MH|RtM via: Great Britain;Forced Lookup:britain|TI|MM|285^13^0;291^7^0
+42905918|New Zealand|C0027978|6183|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|78^11^0
+42905918|Papua New Guinea|C0030375|2307|MH|RtM via: Papua New Guinea;Forced Leaf Node Lookup:papua new guinea|TI|MM;RC|859^16^0;646^16^0;440^16^0
+42905918|*Museums|C0026863|2031|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|586^6^0
+42905918|*Artifacts|C0085089|1491|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artifacts|TI|MM|514^9^0;419^9^0
+42905918|Nigeria|C0028075|1467|MH|RtM via: Nigeria;Forced Leaf Node Lookup:nigeria|TI|MM|354^7^0
+42905918|*Bicycling|C0005377|1458|MH|Forced Leaf Node Lookup:bicycle|TI|MM|188^7^0
+42905918|Europe|C0015176|5181|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|274^6^0
+42905918|*Colonialism|C0009372|1638|MH|RtM via: Colonialism|TI|MM|470^8^0;328^8^0
+42905918|*Administrator|C0085751|750|ET|Entry Term Replacement for "Administrative Personnel";RtM via: Administrators|TI|MM|337^13^0
+42905918|*Parturition|C0005615|456|MH|RtM via: Childbirth|TI|MM|70^4^0
+42905918|Far East|C0015631|6|MH|RtM via: Far East|TI|MM|264^8^0
+42905919|*Museums|C0026863|599|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|83^6^0
+42905919|*Weapon|C0336663|2709|ET|Entry Term Replacement for "Weapons";RtM via: Weapons|TI|MM;RC|198^6^0
+42905919|*Surgical Instruments|C0038928|792|MH|RtM via: Burs - medical device;RtM via: Blades (device)|TI|MM;RC|278^7^0;480^6^0;351^5^0;63^5^0
+42905919|*Plant Structures|C2713306|183|MH|RtM via: Burr - plant|TI|MM|278^7^0
+42905919|*Face|C0015450|171|MH|RtM via: Face|TI|MM|444^4^0
+42905923|New Zealand|C0027978|542|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|644^11^0
+42905923|*Islands|C0022130|533|MH|Forced Leaf Node Lookup:islands|TI|MM|399^7^0
+42905923|*Photographies|C0031749|5703|ET|Entry Term Replacement for "Photography";RtM via: Photography|TI|MM;RC|515^12^0
+42905923|*Record|C0034869|4455|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|528^6^0
+42905923|*Data Collection|C0010995|1620|MH|RtM via: Analytical Procedure Range|TI|MM|239^5^0
+42905923|England|C0014282|180|MH|RtM via: England;Forced Non-Leaf Node Lookup:england|TI|MM|594^7^0
+42905923|Curacao|C0454665|9|MH|RtM via: Curacao (geographic location)|TI|MM|91^7^0
+42905924|Animals|C0003062|268651|CT|Charadriiformes;CT Treecode Lookup: B01.050.150.900.248 (Charadriiformes);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);Passeriformes;CT Treecode Lookup: B01.050.150.900.248 (Passeriformes);CT Text Lookup: charadriiformes;CT Text Lookup: passeriformes;CT Text Lookup: vertebrates|TI|MM;RC|979^15^0;1162^13^0;114^11^0
+42905924|Male|C0086582|268651|CT|CT Text Lookup: he|TI|MM;RC|802^2^0
+42905924|*Charadriiformes|C0325773|267651|MH|RtM via: Charadriiformes;RtM via: Laridae;RtM via: Tern (organism);Forced Leaf Node Lookup:charadriiformes;Forced Leaf Node Lookup:gulls;Forced Leaf Node Lookup:terns;checkForceMH Boosted|TI|MM;RC|979^15^0;962^5^0;972^5^0
+42905924|*Passeriformes|C0600537|63108|MH|RtM via: Order Passeriformes (organism);checkForceMH Boosted;Forced Non-Leaf Node Lookup:passeriformes|TI|MM|1162^13^0;1146^14^0
+42905924|Pacific Ocean|C0030171|53115|MH|RtM via: Pacific Ocean;Forced Leaf Node Lookup:pacific ocean|TI|MM;RC|334^13^0
+42905924|*Museums|C0026863|34098|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|881^6^0;146^6^0
+42905924|*Expeditions|C0015315|29121|MH|RtM via: Expeditions;Forced Leaf Node Lookup:expeditions|TI|MM|942^10^0
+42905924|New Zealand|C0027978|28953|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|1348^11^0;910^11^0;660^11^0;244^11^0;782^11^0
+42905924|Weyers acrofacial dysostosis|C0457013|31696|NM|RtM via: Weyers acrofacial dysostosis|TI|MM|954^6^0
+42905924|*Limb Deformities, Congenital|C0206762|31695|HM|RtM via: Weyers acrofacial dysostosis|TI|MM|954^6^0
+42905924|*Tooth Abnormalities|C0040427|28713|HM|RtM via: Weyers acrofacial dysostosis|TI|MM|954^6^0
+42905924|*Abnormalities, Multiple|C0000772|22200|HM|RtM via: Weyers acrofacial dysostosis|TI|MM|954^6^0
+42905924|*Breeding|C0006159|14118|MH|RtM via: Breeding;Forced Non-Leaf Node Lookup:breedings|TI|MM;RC|1234^8^0
+42905924|*Islands|C0022130|16224|MH|RtM via: Islands|TI|MM|1283^6^0;1337^7^0;820^6^0;767^7^0;282^6^0
+42905924|Kiribati|C0017550|3081|ET|Entry Term Replacement for "Micronesia";RtM via: Kiribati|TI|MM|315^8^0
+42905926|Animals|C0003062|62726|CT|Ostracods;CT Treecode Lookup: B01.050.500.131 (Ostracods)||MM;RC
+42905926|*Estuaries|C3494468|61726|MH|RtM via: Estuaries;Forced Leaf Node Lookup:estuaries;Forced Leaf Node Lookup:estuary|TI|MM;RC|1859^7^0;1171^7^0;933^9^0;1716^7^0
+42905926|*Bays|C3203003|25871|MH|RtM via: Bay (geographic);Forced Leaf Node Lookup:bays|TI|MM|1630^4^0
+42905926|*Islands|C0022130|20957|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|1671^7^0
+42905926|*Wetlands|C1721088|20237|MH|RtM via: Marshes;Forced Leaf Node Lookup:marsh|TI|MM|1290^5^0
+42905926|*Salinity|C1956027|14294|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1120^8^0
+42905926|*Fossils|C0016614|11933|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|475^6^0
+42905926|*Censuses|C0007663|10820|MH|RtM via: Censuses;Forced Leaf Node Lookup:census|TI|MM|745^6^0
+42905926|Taiwan|C0039260|9896|MH|RtM via: Taiwan;Forced Leaf Node Lookup:formosa|TI|MM|2200^7^0
+42905926|*Water|C0043047|9803|MH|RtM via: Water;checkForceMH Boosted|TI|MM|1000^5^0;129^5^0
+42905926|New Zealand|C0027978|7121|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|266^11^0;234^11^0;482^11^0
+42905926|Australia|C0004340|7103|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM|294^10^0
+42905926|*Ostracods|C0598247|39945|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda;RtM via: Leptocythere;RtM via: Xestoleberis;RtM via: Cytherella;RtM via: Kotoracythere|TI|MM;RC|75^9^0;1076^12^0;1957^12^0;2210^10^0;2186^13^0
+42905926|*Names|C0027365|11247|MH|RtM via: Name|TI|MM|678^5^0
+42905926|*Transportation Facilities|C4277699|1896|MH|RtM via: Harbor|TI|MM;RC|1840^7^0;1197^7^0;1352^8^0;1506^8^0
+42905927|Animals|C0003062|68401|CT|Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates);Mollusca;CT Treecode Lookup: B01.050.500.644 (Mollusca);Gastropoda;CT Treecode Lookup: B01.050.500.644 (Gastropoda)||MM;RC
+42905927|*Islands|C0022130|67401|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|526^7^0;277^7^0
+42905927|*Bays|C3203003|8382|MH|Forced Leaf Node Lookup:bay|TI|MM;RC|519^3^0
+42905927|*Mollusca|C0026391|43581|MH|RtM via: Mollusca;Forced Non-Leaf Node Lookup:molluscas|TI|MM;RC|182^8^0
+42905927|*Biodiversity|C0282469|21699|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|438^12^0
+42905927|*Gastropoda|C0324023|15948|MH|RtM via: Notoacmea scopulina;RtM via: Williamia|TI|MM;RC|744^19^0;791^9^0
+42905927|*Sea Urchin|C0036488|9777|ET|Entry Term Replacement for "Sea Urchins";RtM via: Sea urchin (invertebrate);RtM via: Centrostephanus rodgersii;Forced Non-Leaf Node Lookup:sea urchins|TI|MM;RC|647^10^0;658^25^0
+42905928|Female|C0086287|26644|CT|CT Text Lookup: female|TI|MM;RC|366^6^0
+42905928|Animals|C0003062|26644|CT|Odonata;CT Treecode Lookup: B01.050.500.131 (Odonata)||MM;RC
+42905928|Tonga|C0040407|25644|MH|RtM via: Tonga (Geographic Area);Forced Leaf Node Lookup:tonga|TI|MM;RC|355^5^0;172^5^0
+42905928|Fiji|C0016080|15840|MH|RtM via: Fiji;Forced Leaf Node Lookup:fiji|TI|MM;RC|339^4^0;110^4^0;166^4^0
+42905928|New Caledonia|C0027964|15813|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|279^13^0;182^13^0
+42905928|*Museums|C0026863|4986|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|66^6^0
+42905928|Cook Islands|C0009956|25440|ET|Entry Term Replacement for "Polynesia";RtM via: Cook Islands|TI|MM;RC|93^12^0
+42905928|Samoa|C0242537|21369|MH|RtM via: Samoa;Forced Non-Leaf Node Lookup:samoa|TI|MM;RC|345^5^0
+42905928|*Kava|C0521083|525|MH|RtM via: Kava|TI|MM|355^5^0;172^5^0
+42905928|*Odonata|C0998370|369|MH|RtM via: Hemicordulia|TI|MM|27^12^0
+43264617|New Zealand|C0027978|1419|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|44^11^0
+43264618|Animals|C0003062|13041|CT|Diptera;CT Treecode Lookup: B01.050.500.131 (Diptera)||MM;RC
+43264618|*Diptera|C0012578|12041|MH|RtM via: Diptera;RtM via: Family Stratiomyidae;RtM via: Inopus rubriceps;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dipteras|TI|MM|258^7^0;267^13^0;240^16^0
+43264618|Australia|C0004340|9695|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australians|TI;AB|MM;RC|305^9^0;25^10^0
+43264618|New Zealand|C0027978|5195|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|159^11^0
+43264618|Animal Distribution|C3494412|512|MH|||RC
+43264618|*Interior Design and Furnishings|C0021751|186|MH|RtM via: Table - furniture|TI|MM|336^5^0
+43264619|Animals|C0003062|99583|CT|Reptiles;CT Treecode Lookup: B01.050.150.900.833 (Reptiles);Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);CT Text Lookup: vertebrates|TI|MM;RC|179^11^0
+43264619|*Fossils|C0016614|50448|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|405^7^0
+43264619|*Museums|C0026863|15675|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|661^6^0;582^6^0;167^6^0;708^6^0
+43264619|New Zealand|C0027978|7086|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|34^11^0
+43264619|*Bays|C3203003|7080|MH|Forced Leaf Node Lookup:bay|TI|MM|327^3^0
+43264619|*Reptiles|C0035161|98583|MH|RtM via: Reptiles;Forced Non-Leaf Node Lookup:reptiles|TI|MM;RC|87^8^0
+43264619|*Vertebrates|C0042567|19482|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|179^11^0
+43264619|*Vertebra|C0549207|393|ET|Entry Term Replacement for "Spine";RtM via: Bone structure of spine|TI|MM|761^8^0
+43264620|Animals|C0003062|143575|CT|Reptiles;CT Treecode Lookup: B01.050.150.900.833 (Reptiles);Amphibians;CT Treecode Lookup: B01.050.150.900.090 (Amphibians);Lizards;CT Treecode Lookup: B01.050.150.900.833 (Lizards);CT Text Lookup: vertebrates|TI|MM;RC|30^11^0
+43264620|Male|C0086582|143575|CT|CT Text Lookup: he|TI|MM;RC|202^2^0
+43264620|India|C0021201|68748|MH|RtM via: India;Geo Lookup:maharashtras;Forced Non-Leaf Node Lookup:india|TI;AB|MM;RC|220^5^0
+43264620|*Lizards|C0023916|67019|MH|RtM via: Lizards;RtM via: Agamidae;RtM via: Family Gekkonidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lizards|TI|MM;RC|542^7^0;573^8^0;558^10^0
+43264620|*Museums|C0026863|49511|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM;RC|310^6^0;65^6^0
+43264620|New Zealand|C0027978|24134|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|762^11^0;320^11^0;229^11^0;837^11^0
+43264620|*Amphibians|C0002668|131229|MH|RtM via: Amphibians;Forced Non-Leaf Node Lookup:amphibians|TI|MM;RC|447^10^0;105^10^0
+43264620|*Natural History|C0175860|53808|MH|RtM via: Natural History|TI|MM;RC|912^15^0
+43264620|Pyogenic arthritis, pyoderma gangrenosum, and acne|C1858361|45610|NM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|335^4^0
+43264620|*Acne Vulgaris|C0001144|32883|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|335^4^0
+43264620|*Arthritis, Infectious|C0003869|32493|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|335^4^0
+43264620|*Pyoderma Gangrenosum|C0085652|45609|HM|RtM via: Pyogenic Arthritis, Pyoderma Gangrenosum and Acne|TI|MM|335^4^0
+43264621|Animals|C0003062|213704|CT|Laticauda;CT Treecode Lookup: B01.050.150.900.833 (Laticauda);Bungarus;CT Treecode Lookup: B01.050.150.900.833 (Bungarus);Snakes;CT Treecode Lookup: B01.050.150.900.833 (Snakes);Elapidae;CT Treecode Lookup: B01.050.150.900.833 (Elapidae)||MM;RC
+43264621|*Laticauda|C0999122|212704|MH|RtM via: Laticauda;Forced Leaf Node Lookup:laticauda;checkForceMH Boosted|TI|MM;RC|63^9^0;51^10^0
+43264621|*Colubrina|C1049796|21343|MH|RtM via: Colubrina;Forced Leaf Node Lookup:colubrinas;checkForceMH Boosted|TI|MM|198^9^0
+43264621|*Bungarus|C0206316|17666|MH|Forced Leaf Node Lookup:kraits;checkForceMH Boosted|TI|MM;RC|55^6^0
+43264621|New Zealand|C0027978|8696|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|572^11^0;369^13^0;82^11^0
+43264621|Elapidae|C0206288|2455|MH|||RC
+43264621|*Records|C0034869|78|MH|RtM via: Records|TI|MM|291^6^0;255^6^0;223^7^0;145^7^0;40^7^0
+43264622|*Diatoms|C0162769|54387|MH|RtM via: Diatoms;RtM via: Carinasigma;RtM via: Donkinia;Forced Leaf Node Lookup:diatoms;checkForceMH Boosted|TI|MM;RC|417^6^0;55^7^0;527^11^0;468^11^0;514^8^0;497^8^0
+43264622|*Rectum|C0034896|4897|MH|RtM via: Rectum;Forced Leaf Node Lookup:rectums|TI|MM|506^5^0;480^6^0
+43264622|New Zealand|C0027978|4864|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|589^11^0;400^11^0
+43264622|*Freshwater|C0016710|41076|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM;RC|186^10^0
+43264622|*Habitats|C0871648|23469|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat|TI|MM;RC|791^8^0;327^8^0
+43264622|*Salinity|C1956027|6000|MH|RtM via: Salinity|TI|MM|776^10^0
+43264623|Animals|C0003062|100556|CT|Mollusca;CT Treecode Lookup: B01.050.500.644 (Mollusca);Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves);Ostracod;CT Treecode Lookup: B01.050.500.131 (Ostracod)||MM;RC
+43264623|*Foraminifera|C0599385|99556|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:foraminifera;checkForceMH Boosted|TI|MM;RC|1978^12^0;1930^12^0;1724^13^0;959^12^0;646^12^0;94^12^0
+43264623|*Bays|C3203003|92231|MH|RtM via: Bay (geographic);Forced Leaf Node Lookup:bay|TI|MM;RC|2031^3^0;1869^5^0;1657^5^0;1229^3^0;238^3^0
+43264623|*Gastropods|C0324023|39506|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|321^10^0;146^10^0
+43264623|*Sand|C4759711|29344|MH|RtM via: Sand;Forced New Lookup:sand;checkForceMH Boosted|TI|MM|1841^4^0;1702^4^0;1801^4^0
+43264623|*Seaweed|C0036500|28193|MH|RtM via: Seaweed;checkForceMH Boosted;Forced Non-Leaf Node Lookup:seaweed|TI|MM;RC|1553^7^0
+43264623|*Water|C0043047|23771|MH|RtM via: Water;checkForceMH Boosted|TI|MM;RC|1314^5^0;216^5^0
+43264623|New Zealand|C0027978|17684|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|844^11^0;676^11^0;457^11^0;254^11^0
+43264623|*Censuses|C0007663|17069|MH|RtM via: Censuses;Forced Leaf Node Lookup:census|TI|MM|994^6^0
+43264623|*Bivalves|C0542270|28209|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|336^8^0;161^8^0
+43264623|*Ostracod|C0598247|20685|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda;RtM via: Cytheropteron;RtM via: Paradoxostoma|TI|MM|2047^9^0;944^9^0;418^8^0;60^9^0;585^13^0;536^13^0
+43264623|*Acclimatization|C0000934|5607|MH|RtM via: Acclimatization|TI|MM|1475^11^0
+43264623|*Cluster Analysis|C0009085|1599|MH|RtM via: statistical cluster;Forced Non-Leaf Node Lookup:cluster analysis|TI|MM;RC|1120^16^0
+43264623|Australia|C0004340|3948|MH|RtM via: Australia|TI|MM|524^9^0

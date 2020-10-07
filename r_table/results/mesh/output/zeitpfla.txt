@@ -1,0 +1,5 @@
+C:\Users\manuh\Documents\sterner lab\AuthorDisambiguation\r_table\results\mesh\zeitpfla\input.txt
+43319177|*Acer|C0330996|12161|MH|RtM via: Acer pseudoplatanus;RtM via: Acer campestre;Forced Leaf Node Lookup:acer;checkForceMH Boosted|TI|MM|215^19^0;301^14^0
+43319177|*Quercus|C0330302|11933|MH|RtM via: Quercus;Forced Leaf Node Lookup:quercus;checkForceMH Boosted|TI|MM|395^7^0
+43319177|*Populus|C0522458|7229|MH|RtM via: Populus;RtM via: Populus tremula;Forced Leaf Node Lookup:populus;checkForceMH Boosted|TI|MM|375^7^0
+43319177|*Chlorophyll|C0008260|3700|MH|RtM via: Chlorophyll;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chlorophyll|TI|MM|458^11^0;103^12^0

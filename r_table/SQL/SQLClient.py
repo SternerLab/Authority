@@ -13,12 +13,11 @@ class SQLClient:
     def get_connection(self):
         config = configparser.ConfigParser()
         config.read(config_file)
-
         return mysql.connector.connect(
         user = 'root', 
         password = 'password', 
-        host = config['default']['host'],
-        port = int(config['default']['port']),
+        host = 'localhost', #todo
+        port = 3306,
         ssl_disabled = True)
 
 

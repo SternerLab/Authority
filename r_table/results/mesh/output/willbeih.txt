@@ -1,0 +1,103 @@
+C:\Users\manuh\Documents\sterner lab\AuthorDisambiguation\r_table\results\mesh\willbeih\input.txt
+4603616|*Hamamelis|C0949935|21369|MH|RtM via: Hamamelis;RtM via: Hamamelis virginica;Forced Leaf Node Lookup:hamamelis virginianas;checkForceMH Boosted|TI|MM|884^9^0;402^20^0
+4603616|*Museums|C0026863|9808|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|1490^6^0
+4603616|Berlin|C0005125|3964|MH|RtM via: City of Berlin;Forced Leaf Node Lookup:berlin|TI|MM|1500^6^0
+4603616|*Drug Hypersensitivity|C0013182|12477|MH|RtM via: Witch Hazel|TI|MM|884^9^0;402^20^0
+4603616|*Hamamelidaceae|C0949911|5070|MH|RtM via: Corylopsis|TI|MM|943^10^0
+4603616|*Antipruritics|C0003417|4605|MH|RtM via: Witch Hazel|TI|MM|884^9^0;402^20^0
+4603619|Female|C0086287|213769|CT|Placentation;CT Treecode Lookup: G08.686.784.769.491 (Placentation);Ovary;CT Treecode Lookup: A05.360.319 (Ovary)|TI|MM
+4603619|Humans|C0086418|1000|CT|Forced Humans: Nuns||MM
+4603619|Pregnancy|C0032961|1000|CT|Forced Treecode Turn Back On: G08.686.784.769.491 (Placentation)||MM
+4603619|*Ovule|C2718098|212769|MH|RtM via: Plant Ovule;Forced Leaf Node Lookup:ovules|TI|MM|12492^6^0
+4603619|*Orchidaceae|C0949956|184626|MH|RtM via: Orchidaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:orchidaceae|TI|MM|16402^11^0
+4603619|*Endosperm|C2717855|183849|MH|RtM via: Endosperm;Forced Leaf Node Lookup:endosperms|TI|MM|13477^9^0;9806^9^0;5242^9^0;1266^10^0
+4603619|*Bromeliaceae|C0997210|171456|MH|RtM via: Bromeliaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bromeliaceae|TI|MM|16336^12^0
+4603619|*Inflorescence|C2697680|161961|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|11057^14^0;10759^13^0;8810^14^0
+4603619|*Commelinaceae|C0997278|156147|MH|RtM via: Commelinaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:commelinaceae|TI|MM|16387^13^0
+4603619|*Fruit|C0016767|151503|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|12320^5^0;8829^6^0
+4603619|*Pontederiaceae|C1001017|144996|MH|RtM via: Pontederiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pontederiaceae|TI|MM|16593^14^0;16317^14^0
+4603619|*Pollination|C1522786|132063|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|8857^11^0
+4603619|*Cotyledon|C0242769|127497|MH|RtM via: Cotyledon plant;Forced Leaf Node Lookup:cotyledons|TI|MM|15329^9^0
+4603619|*Spices|C0037910|127485|MH|RtM via: Spices;Forced Leaf Node Lookup:spices|TI|MM|10938^5^0;10897^6^0
+4603619|*Zygote|C0043544|96084|MH|RtM via: Structure of zygote;RtM via: Zygote form of protozoa;Forced Leaf Node Lookup:zygotes|TI|MM|14128^6^0;5591^6^0
+4603619|*Placentation|C0032058|74748|MH|RtM via: Placentation;Forced Leaf Node Lookup:placentation|TI|MM|12124^12^0;3738^12^0
+4603619|*Hypoxidaceae|C1080694|70629|MH|RtM via: Hypoxidaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hypoxidaceae|TI|MM|16647^12^0
+4603619|*Haploidy|C0018590|68793|MH|RtM via: Haploidy;Forced Leaf Node Lookup:haploids|TI|MM|15782^7^0
+4603619|*Ovary|C0029939|64314|MH|RtM via: Ovary;RtM via: Both ovaries;Forced Leaf Node Lookup:ovary|TI|MM|12075^5^0;12110^5^0
+4603619|*Phylogeny|C0031797|59571|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|9113^9^0
+4603619|*Sporangia|C0521047|57165|MH|RtM via: Sporangia;Forced Leaf Node Lookup:sporangia|TI|MM|11926^9^0
+4603622|turmeric extract|C0077524|261886|NM|RtM via: Turmeric extract|TI|MM|2201^13^0;889^13^0
+4603622|*Curcuma|C0950100|261885|MH|RtM via: Tumeric;RtM via: Curcuma longa;RtM via: Turmeric extract;Forced Leaf Node Lookup:curcuma longas;Forced Leaf Node Lookup:turmerics|TI|MM|2219^8^0;2201^13^0;889^13^0
+4603622|Hawaii|C0018619|122244|MH|RtM via: Hawaii;RtM via: Hawaiian population;Forced Leaf Node Lookup:hawaiian|TI|MM|2658^6^0;2491^6^0;1388^6^0;1321^6^0;1161^6^0;2671^8^0;1191^6^0;2508^6^0
+4603622|*Eugenia|C1186984|120117|MH|RtM via: Eugenia;Forced Leaf Node Lookup:eugenias;checkForceMH Boosted|TI|MM|2560^7^0;1221^7^0
+4603622|*Morinda|C1010821|113517|MH|RtM via: Morinda citrifolia;Forced Leaf Node Lookup:morinda citrifolias;checkForceMH Boosted|TI|MM|2279^18^0;954^18^0
+4603622|*Cordia|C1033661|62973|MH|RtM via: Cordia subcordata;Forced Leaf Node Lookup:cordias;checkForceMH Boosted|TI|MM|2074^17^0;763^17^0
+4603622|*Vegetables|C0042440|60333|MH|RtM via: Vegetables;Forced Leaf Node Lookup:vegetables;checkForceMH Boosted|TI|MM|1421^9^0
+4603622|*Ficus|C0969754|59370|MH|RtM via: Ficus tinctoria;Forced Leaf Node Lookup:ficus;checkForceMH Boosted|TI|MM|2027^15^0;716^15^0
+4603622|*Aleurites|C0330603|57042|MH|RtM via: Aleurites moluccanus;Forced Leaf Node Lookup:aleurites;checkForceMH Boosted|TI|MM|2230^19^0;1001^19^0;918^19^0
+4603622|*Soot|C0037684|55803|MH|RtM via: Soot;Forced Leaf Node Lookup:soot;checkForceMH Boosted|TI|MM|2301^4^0
+4603622|Tonga|C0040407|50784|MH|RtM via: Tonga (Geographic Area);Forced Leaf Node Lookup:tonga|TI|MM|1958^5^0;648^5^0
+4603622|*Tattooing|C0039343|41382|MH|RtM via: Tattooing;Forced Leaf Node Lookup:tattooing|TI|MM|2364^9^0;1440^9^0
+4603622|New Zealand|C0027978|37059|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|2584^11^0;2475^11^0
+4603622|*Color|C0009393|32307|MH|RtM via: Yellow color;RtM via: Black color;RtM via: Blue color;Forced Leaf Node Lookup:colors|TI|MM|2421^6^0;2407^12^0;2550^4^0;2456^4^0
+4603622|*Dyes|C0013343|31185|ET|Entry Term Replacement for "Coloring Agents";RtM via: Dyes;checkForceMH Boosted|TI|MM|2728^3^0;2555^3^0;1803^3^0;1570^4^0;1431^4^0
+4603622|*Vocabulary|C0042926|28308|MH|RtM via: Vocabulary;Forced Leaf Node Lookup:vocabulary|TI|MM|1728^10^0
+4603622|*Plant Bark|C0949119|26826|MH|Forced Leaf Node Lookup:bark|TI|MM|1466^4^0
+4603622|Polynesia|C0032540|67131|MH|RtM via: Cook Islands;RtM via: Polynesia;RtM via: Tahiti;Forced Non-Leaf Node Lookup:cook islands|TI|MM|2107^12^0;2190^9^0;2099^6^0;788^6^0
+4603625|*Geology|C0017448|12492|MH|RtM via: Geology;Forced Leaf Node Lookup:geology|TI|MM|6129^7^0
+4603625|Radiography|C1962945|45982|MH|||RC
+4603625|Radiology|C0034599|28912|MH|||RC
+4603625|*Record|C0034869|11793|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|4956^6^0;4481^8^0
+4603625|*Survey|C0038951|6606|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|5544^6^0;4728^8^0
+4603625|*Geography|C0017447|5307|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|6118^9^0
+4603625|*Forest|C0086312|4086|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|5982^6^0;3817^6^0
+4603625|Germany|C0017480|4188|MH|RtM via: Germany|TI|MM|5588^7^0;5390^7^0;3854^7^0
+4603627|potassium hydroxide|C0071767|155133|NM|RtM via: Potassium Hydroxide;Forced SCR Leaf Node Lookup:potassium hydroxide|TI|MM|6782^19^0
+4603627|*Trees|C0040811|118619|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|5937^5^0
+4603627|*Aphyllophorales|C0600456|94165|ET|Entry Term Replacement for "Polyporales";RtM via: Aphyllophorales;checkForceMH Boosted;Forced Non-Leaf Node Lookup:aphyllophorales|TI|MM|5387^15^0
+4603627|*Gymnosperms|C0598230|78157|ET|Entry Term Replacement for "Cycadopsida";RtM via: Cycadopsida;checkForceMH Boosted|TI|MM|5894^13^0
+4603627|*Wood|C0043217|72652|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|5908^4^0;5916^4^0
+4603627|Absent breasts and nipples|C2930933|65891|NM|RtM via: Congenital absent nipple;Forced SCR Leaf Node Lookup:athelia|TI|MM|6106^7^0;4734^7^0;3924^7^0;1772^7^0
+4603627|*Hyphae|C0521057|63283|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM|6749^6^0;5261^6^0;4931^6^0;4954^6^0
+4603627|*Color|C0009393|60859|MH|RtM via: Color;RtM via: Green color;Forced Leaf Node Lookup:colours|TI|MM|5220^6^0;6452^8^0
+4603627|*Fruit|C0016767|58666|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|6169^5^0;5234^5^0;5022^5^0;4647^5^0;4315^5^0;4062^5^0;3636^5^0;6206^5^0;6510^5^0;6556^5^0;6840^5^0;6993^5^0
+4603627|*Waxes|C0043076|58090|MH|RtM via: Waxes;checkForceMH Boosted|TI|MM|6583^4^0
+4603627|*Hyalin|C0020191|57625|MH|RtM via: Hyalin;Forced Leaf Node Lookup:hyaline|TI|MM|6928^7^0
+4603627|Sweden|C0038995|56059|MH|RtM via: Sweden;Forced Leaf Node Lookup:sweden|TI|MM|5536^6^0
+4603627|Austria|C0004348|56056|MH|RtM via: Austria;Forced Leaf Node Lookup:austria|TI|MM|5544^7^0
+4603627|*Plant Bark|C0949119|56050|MH|Forced Leaf Node Lookup:bark|TI|MM|6033^4^0
+4603627|Spores, Fungal|C0038029|60580|MH|Spores Specifics:Spores||MM
+4603627|Oligodendroglioma|C0028945|305584|MH|||RC
+4603627|Glioma|C0017638|246749|MH|||RC
+4603627|*Potassium Compounds|C0206140|155132|HM|RtM via: Potassium Hydroxide|TI|MM|6782^19^0
+4603629|United States|C0041703|122225|CT|Forced Leaf Node Lookup:american|TI|MM|1956^8^0;2188^8^0
+4603629|*Tetraploidy|C0333694|41996|MH|RtM via: Tetraploidy;Forced Leaf Node Lookup:tetraploids|TI|MM|3689^10^0
+4603629|*Diploidy|C0012568|37775|MH|RtM via: Diploidy;Forced Leaf Node Lookup:diploids|TI|MM|3607^7^0
+4603629|Brazil|C0006137|28526|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|3325^6^0
+4603629|Ileostomy|C0020883|121225|MH|||RC
+4603629|Colectomy|C0009274|104148|MH|||RC
+4603629|*Chromosomes|C0008633|795|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM|3359^18^0
+4603635|*Juniperus|C0330152|214756|MH|RtM via: Juniper;Forced Leaf Node Lookup:junipers;checkForceMH Boosted|TI|MM|547^8^0
+4603635|*Cupressus|C0330150|176349|MH|RtM via: Cypress;Forced Leaf Node Lookup:cupressus;Forced Leaf Node Lookup:cypress;checkForceMH Boosted|TI|MM|1069^7^0;1077^9^0;4143^9^0
+4603635|*Trees|C0040811|162996|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|2247^4^0;1948^4^0;1456^5^0;542^4^0;727^5^0;750^5^0;2016^4^0
+4603635|*Alnus|C0330318|155829|MH|RtM via: Alder plant;Forced Leaf Node Lookup:alder;Forced Leaf Node Lookup:alnus;checkForceMH Boosted|TI|MM|4738^5^0;1645^5^0;1651^5^0
+4603635|*Quercus|C0330302|152752|MH|RtM via: Quercus;Forced Leaf Node Lookup:oaks;checkForceMH Boosted|TI|MM|895^4^0;525^4^0
+4603635|*Senecio|C0036642|132067|MH|RtM via: Senecio;Forced Leaf Node Lookup:senecios;checkForceMH Boosted|TI|MM|5481^7^0;4770^7^0;2495^7^0;1679^7^0
+4603635|*Bombacaceae|C1136054|128254|MH|RtM via: Bombacaceae;Forced Leaf Node Lookup:bombacaceae;checkForceMH Boosted|TI|MM|798^11^0
+4603635|*Pinus|C0330186|126971|MH|RtM via: Pinus <genus>;RtM via: Pinus ayacahuite;RtM via: Pinus montezumae;RtM via: Pinus teocote;RtM via: Pinus pseudostrobus;RtM via: Pinus hartwegii;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM|1966^4^0;4178^5^1;4207^10^1;1139^16^0;4691^5^1;4714^10^1;1623^16^0;1605^13^0;1115^19^0;5046^15^0;1971^15^0;4201^5^0;4708^5^0
+4603635|*Gnaphalium|C1021514|120424|MH|RtM via: Gnaphalium;Forced Leaf Node Lookup:gnaphaliums;checkForceMH Boosted|TI|MM|5493^10^0;2474^10^0
+4603635|*Cirsium|C1009560|119851|MH|RtM via: Cirsium;Forced Leaf Node Lookup:cirsiums;checkForceMH Boosted|TI|MM|5516^7^0;2465^7^0
+4603635|*Grass|C0018210|115547|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;RtM via: Calamagrostis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grasses|TI|MM|3807^7^0;2388^7^0;2092^7^0;1718^5^0;1483^7^0;5455^13^0;2424^13^0
+4603635|*Festuca|C0331508|111844|MH|RtM via: Festuca;Forced Leaf Node Lookup:festucas;checkForceMH Boosted|TI|MM|5444^7^0;2412^7^0
+4603635|*Lupinus|C0330813|110347|MH|RtM via: Lupinus;Forced Leaf Node Lookup:lupinus;checkForceMH Boosted|TI|MM|5505^7^0;2486^7^0
+4603635|*Abies|C0330195|96115|MH|RtM via: Abies religiosa;Forced Leaf Node Lookup:abies;checkForceMH Boosted|TI|MM|4114^15^0;1048^15^0
+4603635|Profil|C2744903|94904|NM|RtM via: Profil;Forced SCR Leaf Node Lookup:profil|TI|MM|3159^6^0
+4603635|gramine|C0061860|94487|NM|RtM via: gramine;Forced SCR Leaf Node Lookup:gramine|TI|MM|4799^7^0;4497^7^0;5195^7^0;5381^7^0
+4603635|*Burseraceae|C0949933|86681|MH|RtM via: Burseraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:burseraceae|TI|MM|814^11^0
+4603635|*Conifers|C0682475|85418|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted|TI|MM|1911^10^0;1818^10^0;1008^10^0
+4603632|Animals|C0003062|245459|CT|Salmonella Infections, Animal;CT Treecode Lookup: C22 (Salmonella Infections, Animal);Bird Diseases;CT Treecode Lookup: C22 (Bird Diseases)||RC
+4603632|*Chrysosporium|C0008724|89352|MH|RtM via: Chrysosporium;Forced Leaf Node Lookup:chrysosporiums;checkForceMH Boosted|TI|MM|1777^13^0
+4603632|*Phialophora|C0031519|87828|MH|RtM via: Phialophora;Forced Leaf Node Lookup:phialophoras;checkForceMH Boosted|TI|MM|1798^11^0
+4603632|Montana|C0026506|34416|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|1622^7^0
+4603632|Salmonella Infections, Animal|C0036118|244459|MH|||RC
+4603632|Bird Diseases|C0005591|98429|MH|||RC

@@ -11,7 +11,7 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import mysql.connector
 import re
-
+import requests
 
 from models.Article import Article
 from models.Author import Author
@@ -59,17 +59,23 @@ def get_authors(article_meta):
     return author_list, author_name_list
 
 
-def parse(xmlfile):
+def parse(xmlfile, mesh_file):
     tree = ET.parse(xmlfile)
     article = tree.getroot()
     article_meta = article.find('./front/article-meta')
-    unique_id = article_meta.find('./article-id').text
 
     article_title = article_meta.find('./title-group/article-title').text
-    article_title = preprocess_article_title(article_title)
+    abstract = article_meta.find('./abstract/p')
+    unique_id = article_meta.find('./article-id').text
+
+    add_to_mesh_input_file(unique_id,abstract, mesh_file)
+    
+    article_title = remove_stop_words(article_title, 'title')
 
     journal_meta = article.find('./front/journal-meta')
     journal_name = journal_meta.find('./journal-title-group/journal-title').text
+
+    # unique_id = article_meta.find('./article-id').text+'_'+journal_meta.find('./journal-id')
 
     language = ''
     custom_meta_group = article_meta.find('./custom-meta-group')
@@ -118,9 +124,17 @@ def parse_name(name):
             return name_split[0], middle, name_split[name_size-1], '' 
 
 
-def preprocess_article_title(text):
+def remove_stop_words(text, field):
     text = text.lower()
-    stop_words = set(stopwords.words('english'))
+    stop_words = []
+    #todo: consider other languages too
+    if field == 'title':
+        stop_words = set(stopwords.words('english'))
+    elif field == 'mesh':
+        stop_words = ["human","male","female","animal","adult","support non-u.s. gov’t","middle age","aged","english abstract","support u.s. gov’t p.h.s.","case report","rats","comparative study","adolescence","child","mice","time factors","child preschool","pregnancy","united states","infant","molecular sequencedata","kinetics","support u.s. gov’t non-p.h.s.","infant newborn"]
+    elif field == "affiliation":
+        affiliation_stop_words = ["university","medicine","medical","usa","hospital","school","institute","center","research","science","college","health","new","laboratory","division","national"]
+        stop_words = set.union(set(stopwords.words('english')), set(affiliation_stop_words))
     word_tokens = word_tokenize(text) 
     filtered_sentence = []
     for word in word_tokens:
@@ -131,3 +145,41 @@ def preprocess_article_title(text):
     for w in filtered_sentence: 
         final_sentence += w + " "
     return final_sentence
+
+
+
+def get_mesh_and_affiliation_terms(title):
+    api = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1000&term={}&field=title'
+    mesh_api = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={}"
+    doi_api 
+
+    title = title.replace(' ', '%20')
+    api_with_title = api.format(title)
+    # print("api ", api_with_title)
+    response = requests.get(api_with_title).json()
+    # print(response)
+    search_result = response["esearchresult"]
+    mesh_terms_str = ""
+    affiliation_terms_dict = {}
+    if search_result is not None and int(search_result["count"]) > 0:
+        pmid = search_result["idlist"][0]
+        print("pmid: " + pmid)
+        mesh_api_with_pmid = mesh_api.format(pmid)
+        response = requests.get(mesh_api_with_pmid).text
+        mesh_pattern = re.compile('.*term \"([A-Z a-z]*)\".*', re.MULTILINE)
+        mesh_terms = re.findall(mesh_pattern, response)
+        mesh_terms_str = ' '.join(mesh_terms)
+        print("terms "+ mesh_terms_str)
+        affiliation_pattern = re.compile('.*name ml \"([A-Z a-z.]*)\",\n.*affil str.\"([^\"]*)\"\n[ ]*}')
+        affiliation_terms = re.findall(affiliation_pattern, response) #format: [(author1, affiliation1),(author2, affiliation2)]. example: [('Vogler A', 'Department of Entomology, The Natural History Museum,\n London SW7 5BD, United Kingdom. a.vogler@nhm.ac.uk')]
+        affiliation_terms_dict = dict((y, x) for x, y in affiliation_terms)
+    return mesh_terms_str, affiliation_terms_dict
+    
+
+def add_to_mesh_input_file(unique_id, abstract, mesh_file):
+    if(abstract is not None):
+        abstract_text = abstract.text
+        if abstract_text != "":
+            value = (abstract_text.encode("ascii", "ignore")).decode("utf-8")
+            mesh_file.write(unique_id+'|'+value)
+            mesh_file.write('\n')

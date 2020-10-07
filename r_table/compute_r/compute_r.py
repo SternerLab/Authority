@@ -1,4 +1,7 @@
 import json
+import sorting_util as sorting_util
+import bisect
+
 
 def compute_r_x1():
     #x1 = 0,1,2,3
@@ -45,7 +48,6 @@ def compute_r_xa():
     intersection = list(set(m_keys) & set(nm_keys))
     total_m = 0
     total_nm = 0
-    r_xa = {}
     for key in intersection:
         total_m += xa_m[key]
         total_nm += xa_nm[key]
@@ -55,6 +57,12 @@ def compute_r_xa():
     
     with open('r_xa.json', 'w') as f:
         json.dump(r_xa, f)
+
+    print(len(r_xa.keys()))
+
+
+def sort_r_xa():
+    return sorting_util.monotonic_sort(r_xa.keys())
 
 
 with open('x1_m.json') as json_file: 
@@ -70,6 +78,23 @@ with open('xa_nm.json') as json_file:
 with open('x2_nm.json') as json_file: 
     x2_nm = json.load(json_file) 
 
+
+r_xa = {}
 compute_r_xa()
 compute_r_x1()
 compute_r_x2()
+r_xa_sorted_keys = sort_r_xa()
+r_xa_sorted = {}
+
+for value in r_xa_sorted_keys:
+    r_xa_sorted[value] = r_xa[value]
+
+with open('r_xa_sorted.json', 'w+') as json_file:
+    json.dump(r_xa_sorted, json_file)
+
+# print((r_xa_sorted_keys))
+
+# r_xa_smoothen = smoothen(r_xa_sorted)
+
+# r_xa_interpolated = interpolate(r_xa_smoothen)
+# print((r_xa_interpolated))
