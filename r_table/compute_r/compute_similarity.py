@@ -4,7 +4,9 @@ import argparse
 
 import sys
 sys.path.append('../')
-from SQL.SQLClient import SQLClient
+# from SQL.SQLClient import SQLClient
+from SQL.sqlite_client import sqlite_client
+
 
 def compute_x1(match):
     fullname1 = match[rowheadings['fullname1']]
@@ -257,8 +259,8 @@ def get_article_non_match_set_pair_count():
     return count
 
 
-sql_client = SQLClient()
-sql_client.connect_to_db('test1')
+sql_client = sqlite_client()
+# sql_client.connect_to_db('test1')
 
 
 rowheadings = {}

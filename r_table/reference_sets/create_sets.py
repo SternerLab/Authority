@@ -1,11 +1,12 @@
 import sys
 sys.path.append('../')
 # from . import SQLClient
-from SQL.SQLClient import SQLClient
+# from SQL.SQLClient import SQLClient
+from SQL.sqlite_client import sqlite_client
 
 
-sql_client = SQLClient()
-sql_client.connect_to_db("test1")
+sql_client = sqlite_client()
+# sql_client.connect_to_db("test1")
 
 article_match_sql_file = './sql/article_match.sql'
 sql_client.execute_sql_file(article_match_sql_file)

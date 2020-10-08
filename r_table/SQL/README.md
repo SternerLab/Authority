@@ -7,3 +7,7 @@ SQLClient.py file is used to connect to db. The database configuration can be fo
 ```bash
 sql_client = SQLClient()
 ```
+or to connect to sqlite use
+```bash
+sql_client = sqlite_client()
+```

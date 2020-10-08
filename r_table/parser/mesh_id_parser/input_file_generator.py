@@ -1,6 +1,3 @@
-import sys
-sys.path.append('../../')
-from SQL.SQLClient import SQLClient
 import argparse
 from zipfile import ZipFile
 import os
@@ -32,9 +29,6 @@ def parse(xmlfile):
     # replace('<p>', '').replace('</p>', '')
     return unique_id,""
 
-
-# sql_client = SQLClient()
-# sql_client.connect_to_db("test1")
 
 zip_file = parse_arguments()
 output_dir = '../../results/mesh/input/{}'

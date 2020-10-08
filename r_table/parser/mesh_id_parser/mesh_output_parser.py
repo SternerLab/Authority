@@ -1,7 +1,8 @@
 import argparse
 import sys
 sys.path.append('../../')
-from SQL.SQLClient import SQLClient
+# from SQL.SQLClient import SQLClient
+from SQL.sqlite_client import sqlite_client
 import json
 
 def parse_arguments():
@@ -50,8 +51,8 @@ def store_to_db(sql_client, output_file):
 
 folder = parse_arguments()
 
-sql_client = SQLClient()
-sql_client.connect_to_db('test1')
+sql_client = sqlite_client()
+# sql_client.connect_to_db('test1')
 
 for subdir, dirs, files in os.walk(folder):
         for file in files:
