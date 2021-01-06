@@ -3,7 +3,7 @@ import sqlite3
 from scholarly import ProxyGenerator
 import time
 import sys
-
+import os.path
 
 
 def insert_record(records, name, name_id):
@@ -89,9 +89,16 @@ def get_top_ten_authors_with_name_match(query, name):
                 f.write('\n')
     return authors
 
-index_from = "200343"
-index_to = "250000"
-filename_log = index_from+'_'+index_to+'.txt'
+index_from = sys.argv[0]
+index_to = sys.argv[1]
+filename_log = 'scholarlog.txt'
+if os.path.exists(filename_log):
+    log_lines = []
+    with open(filename_log, 'r') as f:
+        log_lines = f.readlines()
+        last_read = log_lines[len(log_lines)-1]
+        last_read_index = last_read.split(':')[1]
+        index_from = last_read_index
 
 database_path = "test3.db"
 cnx = sqlite3.connect(database_path)
