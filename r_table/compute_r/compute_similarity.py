@@ -1,4 +1,4 @@
-import mysql.connector
+# import mysql.connector
 import json
 import argparse
 
@@ -8,93 +8,350 @@ sys.path.append('../')
 from SQL.sqlite_client import sqlite_client
 
 
-def compute_x1(match):
+def reset_coauth_analysis():
+    total_coauth_intersections = {}
+    total_coauth_intersections["coauth_intersections_full"] = 0
+    total_coauth_intersections["coauth_intersections_firstname_lastname"] = 0
+    write_to_json(total_coauth_intersections, "results/coauth_analysis.json")
+    
+
+def write_to_json(json_val,filepath):
+    with open(filepath, "w") as f:
+        json.dump(json_val, f)
+        
+        
+def append_to_json(json_val,filepath):
+    with open(filepath, "a+") as f:
+        json.dump(json_val, f)
+        
+
+def add_total_profiles_to_score_files():
+    key = "total_profiles"
+    x1_m[key] = sum(x1_m.values())
+    x1_nm[key] = sum(x1_nm.values())
+    x2_m[key] = sum(x2_m.values())
+    x2_nm[key] = sum(x2_nm.values())
+    xa_m[key] = sum(xa_m.values())
+    xa_nm[key] = sum(xa_nm.values())
+#     x10_m[key] = sum(x10_m.values())
+#     x10_nm[key] = sum(x10_nm.values())
+    
+    write_to_json(x1_m,"results/x1_m.json")
+    write_to_json(x1_nm,"results/x1_nm.json")
+    write_to_json(x2_m,"results/x2_m.json")
+    write_to_json(x2_nm,"results/x2_nm.json")
+    write_to_json(xa_m,"results/xa_m.json")
+    write_to_json(xa_nm,"results/xa_nm.json")
+#     write_to_json(x10_m,"results/x10_m.json")
+#     write_to_json(x10_nm,"results/x10_nm.json")
+
+
+def is_match(match):
+    is_match_set = None
     fullname1 = match[rowheadings['fullname1']]
     fullname2 = match[rowheadings['fullname2']]
     coautha = match[rowheadings['authors1']]
     coauthb = match[rowheadings['authors2']]
     coauth1 = coautha.split(',')
     coauth2 = coauthb.split(',')
-
-    if(coauth1 is not None and coauth2 is not None and fullname1 != fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))
-    if(coauth1 is not None and coauth2 is not None and fullname1 == fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))-1
-    else:
-        coauth_intersection = 0
-    if(coauth_intersection < 2):
-        is_match_set = False
-        # print(fullname1+" "+fullname2)
-        # print(str(coauth1)+"   "+str(coauth2))
-    else:
-        is_match_set = True
-
-    init2a = match[rowheadings['middle_initial1']]
-    init2b = match[rowheadings['middle_initial2']]
     
-    if(init2a is None and init2b is None):
-        value = 2
-    if(init2a is not None and init2b is not None):
-        if(init2a == init2b): #todo: mid1 O mid2 Ø fullname1 Arne O. Mooers fullname2 Arne Ø. Mooers
-            value = 3
-        else:
-            value = 0
-    if(init2a is None or init2b is None):
-        value = 1
-
-    if(value == 0):
-        print(str(value)+" value "+ " mid1 "+ init2a+" mid2 "+ init2b +" fullname1 "+ fullname1 + " fullname2 "+ fullname2)
-    if(is_match_set):
-        if(value in x1_m):
-            x1_m[value] += 1
-        else:
-            x1_m[value] = 1
+    mesh_terms1 = match[rowheadings['mesh_terms1']].lower()
+    mesh_terms2 = match[rowheadings['mesh_terms2']].lower()
+    mesh1 = mesh_terms1.split(',')
+    mesh2 = mesh_terms2.split(',')
+    
+    if(mesh1 is not None and mesh2 is not None):
+        mesh_intersection = len(list(set(mesh1) & set(mesh2)))
     else:
-        if(value in x1_nm):
-            x1_nm[value] += 1
+        mesh_intersection = 0
+
+    coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
+    
+    if(coauth_intersection >= 1 and mesh_intersection > 1):
+        is_match_set = True
+    elif (coauth_intersection ==0 and mesh_intersection==0):
+        is_match_set = False
+#     print("coauth_intersection: ", coauth_intersection)
+#     print("mesh_intersection: ", mesh_intersection)
+    return is_match_set
+    
+            
+def load_nicknames():
+    # with open('nick_names.txt', 'r') as f:
+    #     lines = f.readlines()
+    nicknames = {}
+    # for line in lines:
+    #     split_line = line.split("  ")
+    #     try:
+    #         if '/' not in split_line:
+    #             nicknames[split_line[0].strip().lower()] = [x.strip().lower() for x in split_line[1].split(',')]
+    #     except Exception as e:
+    #         pass
+    # with open('nicknames.json', 'w') as fp:
+    #     json.dump(nicknames, fp)
+    # print(len(nicknames.keys()))
+    with open('nicknames.json','r') as f:
+        nicknames = json.load(f)
+    return nicknames        
+
+
+def oneeditdistance(s1,s2):
+	# Find lengths of given strings 
+	m = len(s1) 
+	n = len(s2) 
+
+	# If difference between lengths is more than 1, 
+	# then strings can't be at one distance 
+	if abs(m - n) > 1: 
+		return False 
+
+	count = 0 # Count of isEditDistanceOne 
+
+	i = 0
+	j = 0
+	while i < m and j < n: 
+		# If current characters dont match 
+		if s1[i] != s2[j]: 
+			if count == 1: 
+				return False 
+
+			# If length of one string is 
+			# more, then only possible edit 
+			# is to remove a character 
+			if m > n: 
+				i+=1
+			elif m < n: 
+				j+=1
+			else: # If lengths of both strings is same 
+				i+=1
+				j+=1
+			# Increment count of edits 
+			count+=1
+		else: # if current characters match 
+			i+=1
+			j+=1
+	# if last character is extra in any string 
+	if i < m or j < n: 
+		count+=1
+
+	return count == 1
+
+
+def nickname_match(firstname1, firstname2):
+    if (firstname1 in nicknames and firstname2 in nicknames[firstname1]) or \
+        (firstname2 in nicknames and firstname1 in nicknames[firstname2]):
+        return True
+    return False
+
+
+def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
+    coauth_intersection = 0
+    
+#     with open("results/coauth_analysis.json","r") as f:
+#         total_coauth_intersections = json.load(f)
+    
+    coauth1 = [x.replace(".","").lower() for x in coauth1]
+    coauth2 = [x.replace(".","").lower() for x in coauth2]
+    fullname1 = fullname1.replace(".","").lower()
+    fullname2 = fullname2.replace(".","").lower()
+    
+
+    for auth1 in coauth1:
+        if auth1 in coauth2:
+#             total_coauth_intersections["coauth_intersections_full"]+=1
+            coauth_intersection+=1
+        elif (auth1.split(" ")[0] in [x.split(" ")[0] for x in coauth2] and \
+            auth1.split(" ")[len(auth1.split(" "))-1] in [x.split(" ")[len(x.split(" "))-1] for x in coauth2]):
+#             total_coauth_intersections["coauth_intersections_firstname_lastname"]+=1
+            coauth_intersection+=1
+    
+#     with open("results/coauth_analysis.json","w") as f:
+#         json.dump(total_coauth_intersections,f)
+        
+    if(fullname1 == fullname2):
+        return coauth_intersection-1
+    else:
+        return coauth_intersection
+
+
+    
+def compute_x10_(match):
+    is_match_set = is_match(match)
+    compute_x10(match, is_match_set)
+    
+    
+def compute_x10(match, is_match_set):
+    if is_match_set is not None:
+        print("is match?", is_match_set)
+        firstname1 = match[rowheadings['first_name1']]
+        firstname2 = match[rowheadings['first_name2']]
+        firstname1 = firstname1.replace(".","").lower()
+        firstname2 = firstname2.replace(".","").lower()
+        print(firstname1)
+        print(firstname2)
+
+        score = 0
+        hyphen='-'
+        firstname1_withoutspace_hyphen = firstname1.replace(" ","")
+        firstname1_withoutspace_hyphen = firstname1_withoutspace_hyphen.replace(hyphen,"")
+        firstname2_withoutspace_hyphen = firstname2.replace(" ","")
+        firstname2_withoutspace_hyphen = firstname2_withoutspace_hyphen.replace(hyphen,"")
+
+        # 11: exact match,
+        if(firstname1 == firstname2):
+            score = 11
+
+        # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
+        # francois vs. jean francois),
+
+        elif(firstname1_withoutspace_hyphen == firstname2_withoutspace_hyphen):
+            score = 10
+
+        # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
+        # jean-f),
+        elif(hyphen in firstname1 and hyphen in firstname2):
+            if(len(firstname1.split(hyphen)[1]) or len(firstname2.split(hyphen)[1])):
+                if (firstname1.split(hyphen)[1][0] == firstname2.split(hyphen)[1][0]):
+                    score = 9
+        # 8: hyphenated name with initial vs. name (jean-f vs. jean),
+        elif((hyphen in firstname1 and len(firstname1.split(hyphen)[1])==1) or (hyphen in firstname2 and len(firstname2.split(hyphen)[1])==1)):
+            if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
+                score = 8
+        # 7: hyphenated name vs. first name only (jean-francois vs. jean)
+        elif(hyphen in firstname1 or hyphen in firstname2):
+            if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
+                score = 7
+        # 6: nickname match (dave vs. david)
+        elif nickname_match(firstname1, firstname2):
+            score = 6
+        # 5: oneeditdistance(deletion:bjoernvs.bjorn,replacement:bjoernvs.bjaern,
+        # or flip order of two characters: bjoern vs. bjeorn)
+        elif oneeditdistance(firstname1,firstname2):
+            score = 5
+        # 4: name matches first part of other name and length > 2 (zak vs. zakaria) 
+        elif (len(firstname1)>2 and len(firstname2)>2 and (firstname1 in firstname2 or firstname2 in firstname1)):
+            score = 4
+        # 3: name matches first part of other name and length = 2 (th vs. thomas) 
+        elif ((len(firstname1)==2 or len(firstname2)==2) and (firstname1 in firstname2 or firstname2 in firstname1)):
+            score = 3
+        # 2: 3-letter initials match (e.g., jean francois g vs. jfg)
+        elif (firstname1==''.join([_name[0] for _name in firstname2.split(' ')]) or firstname2==''.join([_name[0] for _name in firstname1.split(' ')])):
+            score = 2
+        # 1: one or both names are missing,
+        elif (len(firstname1)==0 or len(firstname2)==0):
+            score = 1
+        # 0: otherwise.
         else:
-            x1_nm[value] = 1
+            score = 0
+
+    #     with open('similarity1.txt', 'a+') as f:
+    #         f.write("x10 score "+str(score))
+    # #         print("x10 score "+str(score))
+    #         f.write('\n')
+
+        if(is_match_set):
+            if score not in x10_m:
+                x10_m[score] = 0
+            x10_m[score]+=1
+        else:
+            if score not in x10_nm:
+                x10_nm[score] = 0
+            x10_nm[score]+=1
+
+        with open('results/x10_m.json', 'w') as fp:
+            json.dump(x10_m, fp)
+        with open('results/x10_nm.json', 'w') as fp:
+            json.dump(x10_nm, fp)
+
+
+def compute_x1(match):
+    is_match_set = is_match(match)
+    if (is_match_set is not None):
+        print("is match?", is_match_set)
+        init2a = match[rowheadings['middle_initial1']].lower().replace('.','')
+        init2b = match[rowheadings['middle_initial2']].lower().replace('.','')
+        
+        
+    #     with open('similarity1.txt', 'a+') as f:
+    #         f.write("middle initials ")
+    #         f.write(init2a+"-"+init2b)
+    #         print(init2a+"-"+init2b)
+    #         f.write('\n')
+            
+            
+        if((init2a == "" and init2b == "")):
+            value = 2
+        elif((init2a != "" and init2b !="")):
+            if(init2a == init2b): #todo: mid1 O mid2 Ø fullname1 Arne O. Mooers fullname2 Arne Ø. Mooers
+                print(match[rowheadings['middle_initial1']])
+                print(match[rowheadings['middle_initial2']])
+                value = 3
+            else:
+                value = 0
+        elif(init2a=="" or init2b == ""):
+            value = 1
+            
+    #     with open('similarity1.txt', 'a+') as f:
+    #         f.write("authors: "+match[rowheadings['authors1']]+"---"+match[rowheadings['authors2']]+"\n")
+    #         f.write("mesh: "+match[rowheadings['mesh_terms1']]+"---"+match[rowheadings['mesh_terms2']]+"\n")
+    #         f.write(match[rowheadings['fullname1']]+"---"+match[rowheadings['fullname2']]+"---"+str(is_match_set)+"\n")
+    #         f.write("x1 score "+str(value))
+    # #         print("x1 score "+str(value))
+    #         f.write('\n')
+            
+    #     if(value == 0):
+    #         print(str(value)+" value "+ " mid1 "+ init2a+" mid2 "+ init2b +" fullname1 "+ fullname1 + " fullname2 "+ fullname2)
+        if(is_match_set):
+            if(value in x1_m):
+                x1_m[value] += 1
+            else:
+                x1_m[value] = 1
+        else:
+            if(value in x1_nm):
+                x1_nm[value] += 1
+            else:
+                x1_nm[value] = 1
+    #     print(x1_m)
+    #     print(x1_nm)
+
+        with open('results/x1_m.json', 'w') as fp:
+            json.dump(x1_m, fp)
+        with open('results/x1_nm.json', 'w') as fp:
+            json.dump(x1_nm, fp)
+    #     with open('x2_m.json', 'w') as fp:
+    #         json.dump(x2_m, fp)
+    #     with open('x2_nm.json', 'w') as fp:
+    #         json.dump(x2_nm, fp)
 
 
 def compute_x2(match):
-    fullname1 = match[rowheadings['fullname1']]
-    fullname2 = match[rowheadings['fullname2']]
-    coautha = match[rowheadings['authors1']]
-    coauthb = match[rowheadings['authors2']]
-    coauth1 = coautha.split(',')
-    coauth2 = coauthb.split(',')
+    is_match_set = is_match(match)
+    if is_match_set is not None:
+        print("is match?", is_match_set)
+        suffa = match[rowheadings['suffix1']].lower()
+        suffb = match[rowheadings['suffix2']].lower()
 
-    if(coauth1 is not None and coauth2 is not None and fullname1 != fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))
-    if(coauth1 is not None and coauth2 is not None and fullname1 == fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))-1
-    else:
-        coauth_intersection = 0
-
-    if(coauth_intersection < 2):
-        is_match_set = False
-    else:
-        is_match_set = True
-
-    suffa = match[rowheadings['suffix1']]
-    suffb = match[rowheadings['suffix2']]
-
-    if(suffa is not None and suffb is not None and suffa == suffb):
-        value = 1
-    else:
-        value = 0
-    if(is_match_set):
-        if(value in x2_m):
-            x2_m[value] += 1
+        if((suffa !="" and suffb !="" and suffa == suffb)):
+            value = 1
         else:
-            x2_m[value] = 1
-    else:
-        if(value in x2_nm):
-            x2_nm[value] += 1
+            value = 0
+        if(is_match_set):
+            if(value in x2_m):
+                x2_m[value] += 1
+            else:
+                x2_m[value] = 1
         else:
-            x2_nm[value] = 1
+            if(value in x2_nm):
+                x2_nm[value] += 1
+            else:
+                x2_nm[value] = 1
 
+        with open('results/x2_m.json', 'w') as fp:
+            json.dump(x2_m, fp)
+        with open('results/x2_nm.json', 'w') as fp:
+            json.dump(x2_nm, fp)
 
+        
 def compute_xa(match, is_match_set= True):
     fullname1 = match[rowheadings['fullname1']]
     fullname2 = match[rowheadings['fullname2']]
@@ -103,41 +360,36 @@ def compute_xa(match, is_match_set= True):
     coauth1 = coautha.split(',')
     coauth2 = coauthb.split(',')
   
-    if(coauth1 is not None and coauth2 is not None and fullname1 != fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))
-    if(coauth1 is not None and coauth2 is not None and fullname1 == fullname2):
-        coauth_intersection = len(list(set(coauth1) & set(coauth2)))-1
-    else:
-        coauth_intersection = 0
+    coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
     
-    title1 = match[rowheadings['title1']]
-    title2 = match[rowheadings['title2']]
+    title1 = match[rowheadings['title1']].lower()
+    title2 = match[rowheadings['title2']].lower()
     x3 = len(set(title1.split(' ')) & set(title2.split(' ')))
 
-    if(match[rowheadings['journal_name1']] == match[rowheadings['journal_name2']]):
+    if(match[rowheadings['journal_name1']].lower() == match[rowheadings['journal_name2']].lower()):
         x4 = 1
     else:
         x4 = 0
     
     x5 = coauth_intersection
 
-    mesh1 = match[rowheadings['mesh_terms1']].split(',')
-    mesh2 = match[rowheadings['mesh_terms2']].split(',')
+    mesh1 = match[rowheadings['mesh_terms1']].lower().split(',')
+    mesh2 = match[rowheadings['mesh_terms2']].lower().split(',')
 
     x6 = len(list(set(mesh1) & set(mesh2)))
 
-    # langa = match[rowheadings['language1']]
-    # langb = match[rowheadings['language2']]
-    # if(langa == langb and langa != 'eng'):
-    #     x7 = 3
-    # if(langa == langb and langa == 'eng'):
-    #     x7 = 2
-    # if(langa != langb and (langa == 'eng' or langb == 'eng')):
-    #     x7 = 1
-    # else:
-    #     x7 = 0
+    langa = match[rowheadings['language1']].lower()
+    langb = match[rowheadings['language2']].lower()
+    if(langa == langb and langa != 'eng'):
+        x7 = 3
+    elif(langa == langb and langa == 'eng'):
+        x7 = 2
+    elif(langa != langb and (langa == 'eng' or langb == 'eng')):
+        x7 = 1
+    else:
+        x7 = 0
     
-    value = str([x3, x4, x5, x6])
+    value = str([x3, x4, x5, x6, x7])
     if(is_match_set):
         if(value in xa_m):
             xa_m[value] += 1
@@ -152,12 +404,14 @@ def compute_xa(match, is_match_set= True):
 
 #todo: mark view row as completed after compute_xa(match)
 def compute_xa_allmatches():
-    count = get_article_match_set_pair_count()
+    #count = get_article_match_set_pair_count()
     offset = 0
-    while(offset < count):
+    computed_count = 0
+    while(1):
         # article_match_set = sql_client.execute_and_fetch('select * from article_match')
         article_match_set = sql_client.execute_and_fetch('select * from article_match'+
         ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(article_match_set)
 
         for match in article_match_set:
             try:
@@ -165,59 +419,156 @@ def compute_xa_allmatches():
                 # mark_as_done(match, 'article_match')
             except Exception as e:
                 print(e)
+        offset+=limit+1
 
+        if len(article_match_set) == 0:
+            break
+        print('computed xa_m for ',str(computed_count),' profiles')
 
-    with open('xa_m.json', 'w') as fp:
+    with open('results/xa_m.json', 'w') as fp:
         json.dump(xa_m, fp)
 
 
 def compute_xa_allnonmatches():
-    count = get_article_non_match_set_pair_count()
+#     count = get_article_non_match_set_pair_count()
     offset = 0
-    while(offset < count):
+    computed_count = 0
+    
+    while(1):
         query = 'select * from article_non_match'
-        # print(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
+        print(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
         article_non_match_set = sql_client.execute_and_fetch(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
-        
+        computed_count +=len(article_non_match_set)
+
         for match in article_non_match_set:
             try:
                 compute_xa(match, False)
                 # mark_as_done(match, 'article_non_match')
             except Exception as e:
                 print(e)
-        offset += limit
+        offset+=limit
+
+        if len(article_non_match_set) == 0:
+            break
+        print('computed xa_nm for ',str(computed_count),' profiles')
+        with open('results/xa_nm_'+str(offset)+'.json', 'w') as fp:
+            json.dump(xa_nm, fp)
 
 
-    with open('xa_nm.json', 'w') as fp:
+    with open('results/xa_nm.json', 'w') as fp:
         json.dump(xa_nm, fp)
     
 
 def compute_x1_x2_all():
     count = get_name_set_pair_count()
     offset = 0
-    while(offset < count):
+    computed_count = 0
+
+    while(1):
         name_set = sql_client.execute_and_fetch('select * from name_set' +
         ' limit ' + str(limit) + ' offset ' + str(offset))
-
+        computed_count =len(name_set)
+        c = 0
         for match in name_set:
             try:
-                compute_x1(match)
+#                 compute_x1(match)
                 compute_x2(match)
                 # mark_as_done(match, 'name_set')
             except Exception as e:
                 print(e)
         offset+=limit
+        if(len(name_set)==0):
+            break
 
-    
+        print('computed x1, x2 for ',str(computed_count),' profiles')
+        
+        
+def compute_x10_allmatches():
+    count = get_firstname_match_set_pair_count()
+    offset = 0
+    computed_count = 0
 
-    with open('x1_m.json', 'w') as fp:
-        json.dump(x1_m, fp)
-    with open('x1_nm.json', 'w') as fp:
-        json.dump(x1_nm, fp)
-    with open('x2_m.json', 'w') as fp:
-        json.dump(x2_m, fp)
-    with open('x2_nm.json', 'w') as fp:
-        json.dump(x2_nm, fp)
+    while(1):
+        firstname_match_set = sql_client.execute_and_fetch('select * from name_set' +
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(firstname_match_set)
+#         print(computed_count," count")
+        c = 0
+        for match in firstname_match_set:
+            try:
+                is_match_set = is_match(match)
+                if(is_match_set is not None and is_match_set==True):
+                    print("is match")
+                    compute_x10(match,True)
+#                 compute_x2(match)
+                # mark_as_done(match, 'name_set')
+            except Exception as e:
+                print(e)
+        offset+=limit
+        if(len(firstname_match_set)==0):
+            break
+
+        print('computed x10 for ',str(computed_count),' profiles')
+        
+
+def compute_x10_allnonmatches():
+    count = get_firstname_non_match_set_pair_count()
+    offset = 0
+    computed_count = 0
+
+    while(1):
+        firstname_nonmatch_set = sql_client.execute_and_fetch('select * from firstname_nonmatch_set' +
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(firstname_nonmatch_set)
+        c = 0
+        for match in firstname_nonmatch_set:
+            try:
+                compute_x10(match, False)
+#                 compute_x2(match)
+                # mark_as_done(match, 'name_set')
+            except Exception as e:
+                print(e)
+        offset+=limit
+        if(len(firstname_nonmatch_set)==0):
+            break
+
+        print('computed x10 for ',str(computed_count),' profiles')
+
+
+def compute_x10_all():
+    count = get_name_set_pair_count()
+#     count = 10 
+    offset = 0
+    computed_count = 0
+
+    while(1):
+        firstname_nonmatch_set = sql_client.execute_and_fetch('select * from name_set' +
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(firstname_nonmatch_set)
+        c = 0
+        for match in firstname_nonmatch_set:
+            try:
+                compute_x10_(match)
+#                 compute_x2(match)
+                # mark_as_done(match, 'name_set')
+            except Exception as e:
+                print(e)
+        offset+=limit
+        if(len(firstname_nonmatch_set)==0):
+            break
+
+        print('computed x10 for ',str(computed_count),' profiles')
+        
+        
+        
+#     with open('x1_m.json', 'w') as fp:
+#         json.dump(x1_m, fp)
+#     with open('x1_nm.json', 'w') as fp:
+#         json.dump(x1_nm, fp)
+#     with open('x2_m.json', 'w') as fp:
+#         json.dump(x2_m, fp)
+#     with open('x2_nm.json', 'w') as fp:
+#         json.dump(x2_nm, fp)
 
 
 def mark_as_done(record, table):
@@ -259,9 +610,185 @@ def get_article_non_match_set_pair_count():
     return count
 
 
-sql_client = sqlite_client()
+def get_firstname_match_set_pair_count():
+#     query = 'select count(*) from firstname_match_set'
+    query = 'select count(*) from name_set'
+
+    count = sql_client.execute_and_fetch(query)
+    print("firstname match set pair count: "+str(count))
+    return count
+
+
+def get_firstname_non_match_set_pair_count():
+    query = 'select count(*) from firstname_nonmatch_set'
+    count = sql_client.execute_and_fetch(query)
+    print("firstname non match set pair count: "+str(count))
+    return count
+
+
+def compute_xa_individual(match, is_match_set= True):
+    fullname1 = match[rowheadings['fullname1']]
+    fullname2 = match[rowheadings['fullname2']]
+    coautha = match[rowheadings['authors1']]
+    coauthb = match[rowheadings['authors2']]
+    coauth1 = coautha.split(',')
+    coauth2 = coauthb.split(',')
+  
+    coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
+    
+    title1 = match[rowheadings['title1']].lower()
+    title2 = match[rowheadings['title2']].lower()
+    x3 = len(set(title1.split(' ')) & set(title2.split(' ')))
+
+    if(match[rowheadings['journal_name1']].lower() == match[rowheadings['journal_name2']].lower()):
+        x4 = 1
+    else:
+        x4 = 0
+    
+    x5 = coauth_intersection
+
+    mesh1 = match[rowheadings['mesh_terms1']].lower().split(',')
+    mesh2 = match[rowheadings['mesh_terms2']].lower().split(',')
+
+    x6 = len(list(set(mesh1) & set(mesh2)))
+
+    langa = match[rowheadings['language1']].lower()
+    langb = match[rowheadings['language2']].lower()
+    if(langa == langb and langa != 'eng'):
+        x7 = 3
+    elif(langa == langb and langa == 'eng'):
+        x7 = 2
+    elif(langa != langb and (langa == 'eng' or langb == 'eng')):
+        x7 = 1
+    else:
+        x7 = 0
+    
+    value = str([x3, x4, x5, x6, x7])
+    if(is_match_set):
+        if(x3 in x3_m):
+            x3_m[x3] += 1
+        else:
+            x3_m[x3] = 1
+        if(x4 in x4_m):
+            x4_m[x4] += 1
+        else:
+            x4_m[x4] = 1
+        if(x5 in x5_m):
+            x5_m[x5] += 1
+        else:
+            x5_m[x5] = 1
+        if(x6 in x6_m):
+            x6_m[x6] += 1
+        else:
+            x6_m[x6] = 1
+        if(x7 in x7_m):
+            x7_m[x7] += 1
+        else:
+            x7_m[x7] = 1
+    else:
+        if(x3 in x3_nm):
+            x3_nm[x3] += 1
+        else:
+            x3_nm[x3] = 1
+        if(x4 in x4_nm):
+            x4_nm[x4] += 1
+        else:
+            x4_nm[x4] = 1
+        if(x5 in x5_nm):
+            x5_nm[x5] += 1
+        else:
+            x5_nm[x5] = 1
+        if(x6 in x6_nm):
+            x6_nm[x6] += 1
+        else:
+            x6_nm[x6] = 1
+        if(x7 in x7_nm):
+            x7_nm[x7] += 1
+        else:
+            x7_nm[x7] = 1
+
+
+def compute_xa_individual_all_matches():
+    #count = get_article_match_set_pair_count()
+    offset = 0
+    computed_count = 0
+    while(1):
+        # article_match_set = sql_client.execute_and_fetch('select * from article_match')
+        article_match_set = sql_client.execute_and_fetch('select * from article_match'+
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(article_match_set)
+
+        for match in article_match_set:
+            try:
+                compute_xa_individual(match, True)
+                # mark_as_done(match, 'article_match')
+            except Exception as e:
+                print(e)
+        offset+=limit+1
+
+        if len(article_match_set) == 0:
+            break
+        print('computed xa_m for ',str(computed_count),' profiles')
+
+    write_to_json(x3_m,"results/x3_m.json")
+    write_to_json(x4_m,"results/x4_m.json")
+    write_to_json(x5_m,"results/x5_m.json")
+    write_to_json(x6_m,"results/x6_m.json")
+    write_to_json(x7_m,"results/x7_m.json")
+
+
+def compute_xa_individual_all_nonmatches():
+#     count = get_article_non_match_set_pair_count()
+    offset = 0
+    computed_count = 0
+    
+    while(1):
+        query = 'select * from article_non_match'
+        print(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
+        article_non_match_set = sql_client.execute_and_fetch(query + ' limit ' + str(limit) + ' offset ' + str(offset) )
+        computed_count +=len(article_non_match_set)
+
+        for match in article_non_match_set:
+            try:
+                compute_xa_individual(match, False)
+                # mark_as_done(match, 'article_non_match')
+            except Exception as e:
+                print(e)
+        offset+=limit
+
+        if len(article_non_match_set) == 0:
+            break
+        print('computed xa_nm for ',str(computed_count),' profiles')
+#         with open('results/xa_nm_'+str(offset)+'.json', 'w') as fp:
+#             json.dump(xa_nm, fp)
+
+
+        write_to_json(x3_nm,'results/x3_nm_'+str(offset)+'.json')
+        write_to_json(x4_nm,'results/x4_nm_'+str(offset)+'.json')
+        write_to_json(x5_nm,'results/x5_nm_'+str(offset)+'.json')
+        write_to_json(x6_nm,'results/x6_nm_'+str(offset)+'.json')
+        write_to_json(x7_nm,'results/x7_nm_'+str(offset)+'.json')
+
+
+sql_client = sqlite_client('../../database/test3.db')
 # sql_client.connect_to_db('test1')
 
+# id
+# position
+# last_name
+# first_initial
+# middle_initial
+# suffix
+# title
+# journal_name
+# fullname
+# first_name
+# middle_name
+# language
+# authors
+# mesh_terms
+# affiliation
+# full_title
 
 rowheadings = {}
 rowheadings['id1'] = 0
@@ -272,62 +799,91 @@ rowheadings['middle_initial1'] = 4
 rowheadings['suffix1'] = 5
 rowheadings['title1'] = 6
 rowheadings['journal_name1'] = 7
-rowheadings['first_name1'] = 8
-rowheadings['middle_name1'] = 9
-rowheadings['fullname1'] = 10
-rowheadings['authors1'] = 11
-rowheadings['language1'] = 12
+rowheadings['fullname1'] = 8
+rowheadings['first_name1'] = 9
+rowheadings['middle_name1'] = 10
+rowheadings['language1'] = 11
+rowheadings['authors1'] = 12
 rowheadings['mesh_terms1'] = 13
 rowheadings['affiliation1'] = 14
-rowheadings['id2'] = 15
-rowheadings['position2'] = 16
-rowheadings['last_name2'] = 17
-rowheadings['first_initial2'] = 18
-rowheadings['middle_initial2'] = 19
-rowheadings['suffix2'] = 20
-rowheadings['title2'] = 21
-rowheadings['journal_name2'] = 22
-rowheadings['first_name2'] = 23
-rowheadings['middle_name2'] = 24
-rowheadings['fullname2'] = 25
-rowheadings['authors2'] = 26
+rowheadings['full_title1'] = 15
+rowheadings['id2'] = 16
+rowheadings['position2'] = 17
+rowheadings['last_name2'] = 18
+rowheadings['first_initial2'] = 19
+rowheadings['middle_initial2'] = 20
+rowheadings['suffix2'] = 21
+rowheadings['title2'] = 22
+rowheadings['journal_name2'] = 23
+rowheadings['fullname2'] = 24
+rowheadings['first_name2'] = 25
+rowheadings['middle_name2'] = 26
 rowheadings['language2'] = 27
-rowheadings['mesh_terms2'] = 28
-rowheadings['affiliation2'] = 29
+rowheadings['authors2'] = 28
+rowheadings['mesh_terms2'] = 29
+rowheadings['affiliation2'] = 30
+rowheadings['full_title2'] = 31
+
 
 
 # update, limit, offset = parse_arguments()
-update = 'false'
-limit = 9000000
+# update = 'false'
+limit = 1000000
+# limit = 10
 
-if update.lower() == 'true':
-    with open('x1_m.json') as json_file: 
-        x1_m = json.load(json_file) 
-    with open('x1_nm.json') as json_file: 
-        x1_nm = json.load(json_file) 
-    with open('x2_m.json') as json_file: 
-        x2_m = json.load(json_file) 
-    with open('xa_m.json') as json_file: 
-        xa_m = json.load(json_file) 
-    with open('xa_nm.json') as json_file: 
-        xa_nm = json.load(json_file) 
-    with open('x2_nm.json') as json_file: 
-        x2_nm = json.load(json_file) 
+x1_m = {}
+x1_nm = {}
 
-else:
-    x1_m = {}
-    x1_nm = {}
+x2_m = {}
+x2_nm = {}
 
-    x2_m = {}
-    x2_nm = {}
+xa_m = {}
+#     with open('xa_nm_74000000.json') as json_file: 
+#         xa_nm = json.load(json_file) 
+xa_nm = {}
 
-    xa_m = {}
-    xa_nm = {}
+x10_m = {}
+x10_nm = {}
 
-get_name_set_pair_count()
-get_article_match_set_pair_count()
-get_article_non_match_set_pair_count()
+x3_m = {}
+x3_nm = {}
 
-# # compute_xa_allmatches()
-# compute_xa_allnonmatches()
-# # compute_x1_x2_all()
+x4_m = {}
+x4_nm = {}
+
+x5_m = {}
+x5_nm = {}
+
+x6_m = {}
+x6_nm = {}
+
+x7_m = {}
+x7_nm = {}
+
+
+nicknames = load_nicknames()
+# get_name_set_pair_count()
+# get_article_match_set_pair_count()
+# get_article_non_match_set_pair_count()
+# get_firstname_match_set_pair_count()
+# get_firstname_non_match_set_pair_count()
+
+
+test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')
+
+compute_x1_x2_all()
+
+compute_xa_individual_all_matches()
+compute_xa_individual_all_nonmatches()
+
+
+compute_xa_allmatches()
+compute_xa_allnonmatches()
+compute_x10_allmatches()
+compute_x10_allnonmatches()
+# reset_coauth_analysis()
+compute_x10_all() 
+compute_x10_(test_pair)
+
+# add_total_profiles_to_score_files()
+# print(compute_coauth_intersection(["Saddie Gilbert", "Moody Marshmellow", "F Noname", "Check Case"],["Fu Noname", "M. Marshmellow", "CHECK CASE"],"Love Coder","Hate Coder"))
