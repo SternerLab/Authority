@@ -1,2 +1,0 @@
-C:\Users\manuh\Documents\sterner lab\AuthorDisambiguation\r_table\results\mesh\zeitpflagall\input.txt
-ERROR MESSAGE: Error - Text file empty
