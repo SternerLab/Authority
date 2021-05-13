@@ -75,8 +75,6 @@ def parse(xmlfile, mesh_file):
     journal_meta = article.find('./front/journal-meta')
     journal_name = journal_meta.find('./journal-title-group/journal-title').text
 
-    # unique_id = article_meta.find('./article-id').text+'_'+journal_meta.find('./journal-id')
-
     language = ''
     custom_meta_group = article_meta.find('./custom-meta-group')
     if custom_meta_group is not None:
@@ -146,35 +144,6 @@ def remove_stop_words(text, field):
         final_sentence += w + " "
     return final_sentence
 
-
-
-def get_mesh_and_affiliation_terms(title):
-    api = 'https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&retmode=json&retmax=1000&term={}&field=title'
-    mesh_api = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id={}"
-    doi_api 
-
-    title = title.replace(' ', '%20')
-    api_with_title = api.format(title)
-    # print("api ", api_with_title)
-    response = requests.get(api_with_title).json()
-    # print(response)
-    search_result = response["esearchresult"]
-    mesh_terms_str = ""
-    affiliation_terms_dict = {}
-    if search_result is not None and int(search_result["count"]) > 0:
-        pmid = search_result["idlist"][0]
-        print("pmid: " + pmid)
-        mesh_api_with_pmid = mesh_api.format(pmid)
-        response = requests.get(mesh_api_with_pmid).text
-        mesh_pattern = re.compile('.*term \"([A-Z a-z]*)\".*', re.MULTILINE)
-        mesh_terms = re.findall(mesh_pattern, response)
-        mesh_terms_str = ' '.join(mesh_terms)
-        print("terms "+ mesh_terms_str)
-        affiliation_pattern = re.compile('.*name ml \"([A-Z a-z.]*)\",\n.*affil str.\"([^\"]*)\"\n[ ]*}')
-        affiliation_terms = re.findall(affiliation_pattern, response) #format: [(author1, affiliation1),(author2, affiliation2)]. example: [('Vogler A', 'Department of Entomology, The Natural History Museum,\n London SW7 5BD, United Kingdom. a.vogler@nhm.ac.uk')]
-        affiliation_terms_dict = dict((y, x) for x, y in affiliation_terms)
-    return mesh_terms_str, affiliation_terms_dict
-    
 
 def add_to_mesh_input_file(unique_id, abstract, mesh_file):
     if(abstract is not None):

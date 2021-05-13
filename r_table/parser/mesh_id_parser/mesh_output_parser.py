@@ -4,6 +4,7 @@ sys.path.append('../../')
 # from SQL.SQLClient import SQLClient
 from SQL.sqlite_client import sqlite_client
 import json
+import os
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
@@ -15,10 +16,15 @@ def parse_arguments():
 
 def store_to_db(sql_client, output_file):
     output_str = ""
-
-    with open(output_file, 'r') as f:
+    
+    with open('mesh_log.txt', 'a+') as f:
+        f.write(output_file)
+        f.write('\n')
+        
+    with open(output_file, 'r', encoding='windows-1252') as f:
         output_str_list = f.readlines()
         f.close()
+
     query = 'update articles set mesh_terms = \'{}\' where id = \'{}\''
 
     id_mesh = {}
@@ -34,7 +40,6 @@ def store_to_db(sql_client, output_file):
                     id_mesh[_id] = mesh
                 else:
                     id_mesh[_id] += ','+mesh
-        # break
 
     for key in id_mesh.keys():
         value = id_mesh[key].replace('\'','\'\'')
@@ -51,10 +56,27 @@ def store_to_db(sql_client, output_file):
 
 folder = parse_arguments()
 
-sql_client = sqlite_client()
-# sql_client.connect_to_db('test1')
+#inputs and constants
+database_path = "../../../database/jstor-authority.db"
+table_name = "articles"
+
+#create connection to db
+sql_client = sqlite_client(database_path)
+
+with open('mesh_log.txt', 'r') as f:
+    files_read = f.readlines()
+
+print(files_read[0])
+
+new_files_read = [ x.strip() for x in files_read]
 
 for subdir, dirs, files in os.walk(folder):
-        for file in files:
-            output_file = subdir + os.sep + file
+    for file in files:
+        output_file = subdir + os.sep + file
+        print(output_file)
+        # to ensure parsing files that were not parsed before
+        if output_file in new_files_read:
+            print("file already parsed")
+        else:
+            print("file not parsed yet. parsing..")
             store_to_db(sql_client, output_file)
