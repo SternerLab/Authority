@@ -8,6 +8,7 @@ from SQL.sqlite_client import sqlite_client
 import xml_parser as xml_parser
 import os
 import shutil 
+import time
 
 
 #parse command line arguments. usage: python .\main.py --zip_file ./systzool.zip
@@ -43,7 +44,7 @@ def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
 
 
 def insert_article_to_db(articles, sql_client, file):
-    insert_articles_query = "INSERT INTO Articles_2_ab (id, position, last_name, first_initial, middle_initial, suffix, title, journal_name, fullname, first_name, middle_name, language, authors, mesh_terms, affiliation,full_title) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+    insert_articles_query = "INSERT INTO articles (id, position, last_name, first_initial, middle_initial, suffix, title, journal_name, fullname, first_name, middle_name, language, authors, mesh_terms, affiliation,full_title) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
     for article in articles:
         values = article.__repr__()
         try:
@@ -55,6 +56,11 @@ def insert_article_to_db(articles, sql_client, file):
                 print(file)
             else:
                 raise
+                with open("file_parsing_exceptions_"+folder+"_.txt","a+") as f:
+                        f.write('Exception parsing folder '+folder+' and file '+filepath+'\n')
+                        f.write("------------------------------------------------------\n")
+                        f.write(str(e))
+                        f.write("-------------------------------------------------------\n")
 
 
 def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
@@ -79,6 +85,8 @@ def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
                         f.write("-------------------------------------------------------\n")
                 
 
+start_time = time.time()
+
 #inputs and constants
 database_path = "../../database/jstor-authority.db"
 table_name = "articles"
@@ -99,9 +107,14 @@ if not os.path.exists(mesh_folder):
 
 if zip_file is not None:
     parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder)
+    time_taken = "---seconds ---"+ str(time.time() - start_time)
+    with open("parserlog.txt", "a+") as f:
+        f.write("done parsing zip: "+zip_file+"  time_taken:  "+time_taken"\n")
 elif folder is not None:
     if os.path.exists(folder):
         parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder)
+        with open("parserlog.txt", "a+") as f:
+            f.write("done parsing folder: "+folder+"  time_taken:  "+time_taken"\n")
     else:
         print("folder doesnot exists")
 else:
