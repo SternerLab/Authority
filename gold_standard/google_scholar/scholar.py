@@ -75,6 +75,7 @@ def get_top_ten_authors_with_name_match(query, name):
     try:
         for i in range(0,10):
             author = (next(query))
+            # print(author)
             #match on lastname middle name and first name todo #Douglas C. Andersen
 # Andersen, Douglas C. Glenn R. Lopez
 # Randall Glenn Lopez, M. S. Johnson and Michael S. Johnson and Michelle S. Johnson and Mathew Mark, Robert L. Smith and Robert L Smith
@@ -89,8 +90,8 @@ def get_top_ten_authors_with_name_match(query, name):
                 f.write('\n')
     return authors
 
-index_from = sys.argv[0]
-index_to = sys.argv[1]
+index_from = sys.argv[1]
+index_to = sys.argv[2]
 filename_log = 'scholarlog.txt'
 if os.path.exists(filename_log):
     log_lines = []
@@ -98,9 +99,11 @@ if os.path.exists(filename_log):
         log_lines = f.readlines()
         last_read = log_lines[len(log_lines)-1]
         last_read_index = last_read.split(':')[1]
-        index_from = last_read_index
+        index_from = last_read_index.strip()
 
-database_path = "test3.db"
+print("index_from",index_from)
+print('results_'+index_from+'_'+index_to+'.csv')
+database_path = "../../database/jstor-authority.db"
 cnx = sqlite3.connect(database_path)
 cursor = cnx.cursor()
 
@@ -110,7 +113,7 @@ create_table_query = "CREATE TABLE IF NOT EXISTS google_scholar (name_id VARCHAR
 cursor.execute(create_table_query)
 
 
-query = 'select distinct(fullname) from Articles_2_ab'
+query = 'select distinct(fullname) from articles'
 cursor.execute(query)
 authors=list(cursor.fetchall())
 print(len(authors))
@@ -121,14 +124,14 @@ query1 = "select count(*) from google_scholar"
 cursor.execute(query1)
 print(list(cursor.fetchall()))
 # print(authors.index(("Jennifer Nerissa Davis",0)))
-index = [x for x, y in enumerate(authors) if y[0] == "Mary  Meagher"]
-print(index)
+# index = [x for x, y in enumerate(authors) if y[0] == "Mary  Meagher"]
+# print(index)
 
 
 # pg = ProxyGenerator()
 # pg.FreeProxies()
 # scholarly.use_proxy(pg)
-count = index[0]
+count = 1
 i = int(index_from)
 for name in authors[(int(index_from)):(int(index_to))]:
     # name = 'wayne maddison'
@@ -142,11 +145,12 @@ for name in authors[(int(index_from)):(int(index_to))]:
         authors = search_query
         authors_list = get_top_ten_authors_with_name_match(search_query, name[0])
         for author in authors_list:
+            print(author)
             author_object = author.fill(sections=['publications'])
             publications = author_object.publications
             titles = [i.bib['title'] for i in publications]
             put_titles_in_db(titles, name[0], author_object.id)
-        time.sleep(30)
+        # time.sleep(30)
         count+=1
         if count%50 == 0:
             time.sleep(50)
