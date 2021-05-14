@@ -40,6 +40,11 @@ def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
                     
                 except Exception as e:
                     print(str(e))
+                    with open("file_parsing_exceptions_"+zip_file+"_.txt","a+") as f:
+                        f.write('Exception parsing zip file '+zip_file+' and file '+filepath+'\n')
+                        f.write("------------------------------------------------------\n")
+                        f.write(str(e))
+                        f.write("-------------------------------------------------------\n")
         shutil.rmtree('temp') 
 
 
@@ -56,11 +61,6 @@ def insert_article_to_db(articles, sql_client, file):
                 print(file)
             else:
                 raise
-                with open("file_parsing_exceptions_"+folder+"_.txt","a+") as f:
-                        f.write('Exception parsing folder '+folder+' and file '+filepath+'\n')
-                        f.write("------------------------------------------------------\n")
-                        f.write(str(e))
-                        f.write("-------------------------------------------------------\n")
 
 
 def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
@@ -109,12 +109,12 @@ if zip_file is not None:
     parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder)
     time_taken = "---seconds ---"+ str(time.time() - start_time)
     with open("parserlog.txt", "a+") as f:
-        f.write("done parsing zip: "+zip_file+"  time_taken:  "+time_taken"\n")
+        f.write("done parsing zip: "+zip_file+"  time_taken:  "+time_taken+"\n")
 elif folder is not None:
     if os.path.exists(folder):
         parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder)
         with open("parserlog.txt", "a+") as f:
-            f.write("done parsing folder: "+folder+"  time_taken:  "+time_taken"\n")
+            f.write("done parsing folder: "+folder+"  time_taken:  "+time_taken+"\n")
     else:
         print("folder doesnot exists")
 else:
