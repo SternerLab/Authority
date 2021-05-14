@@ -67,37 +67,3 @@ function f_t = construct_f_t(json_data_xa_m,json_data_xa_nm, json_data_rxa)
         f_t(k) = -2*w_xa*w_xa*r_xa;
     end
 end
-
-
-
-% H = [8.61913681e12 0 0;0 1.11507198e11 0;0 0 1.23960172e11];
-% f_t = [-1.92637708e14 -6.70715796e11 -3.32820666e12];
-% f = transpose(f_t);
-% Aeq = zeros(0,3);
-% beq = zeros(0,1);
-% iA0 = false(2,1);
-% 
-% % A = []
-% % A = zeros(n-1,n);
-% % i = 1;
-% % for k=1:n-1
-% %     for j=1:n
-% %         if(j==i)
-% %             A(k,j) = 1;
-% %         elseif(j==i+1)
-% %             A(k,j) = -1;
-% %         else
-% %             A(k,j) = 0;
-% %         end
-% %         
-% %     end
-% %     i = i+1;
-% % end
-% A = [1 -1 0 ;1 0 -1];
-% % disp(A);
-% % b = zeros(n-1,1);
-% b = zeros(2,1);
-% % disp(length(f_transpose));
-% opt = mpcActiveSetOptions;
-% [x,exitflag,iA,lambda] = mpcActiveSetSolver(H,f,A,b,Aeq,beq,iA0, opt);
-% disp(x);

@@ -37,8 +37,6 @@ def get_difference(key1, key2):
     return diff
 
 
-
-
 def interpolate(r_xa_sorted):
     #x3,x4,x5,x6,x8,x9 = 9,1,7,9,12,0
     #x3,x4,x5,x6,x8,x9 = 9,1,7,9,0,1
