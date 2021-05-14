@@ -70,10 +70,11 @@ def parse(xmlfile, mesh_file):
 
     add_to_mesh_input_file(unique_id,abstract, mesh_file)
     
-    article_title = remove_stop_words(article_title, 'title')
+    article_title_processed = remove_stop_words(article_title, 'title')
 
     journal_meta = article.find('./front/journal-meta')
     journal_name = journal_meta.find('./journal-title-group/journal-title').text
+    year = article_meta.find('./pub-date/year').text
 
     language = ''
     custom_meta_group = article_meta.find('./custom-meta-group')
@@ -87,7 +88,7 @@ def parse(xmlfile, mesh_file):
     for author in author_list:
         first_initial = '' if len(author.given_name) == 0 else author.given_name[0]
         middle_initial = '' if len(author.middle_name) == 0 else author.middle_name[0]
-        article_record_list.append(Article(unique_id, i, author.surname, first_initial, middle_initial, author.suffix, article_title, journal_name, author.full_name, author.given_name, author.middle_name, language, ",".join(author_name_list)))
+        article_record_list.append(Article(unique_id, i, author.surname, first_initial, middle_initial, author.suffix, article_title_processed, journal_name, author.full_name, author.given_name, author.middle_name, language, ",".join(author_name_list), article_title, year))
         i+=1
     return article_record_list
 
@@ -145,10 +146,11 @@ def remove_stop_words(text, field):
     return final_sentence
 
 
-def add_to_mesh_input_file(unique_id, abstract, mesh_file):
+def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
     if(abstract is not None):
         abstract_text = abstract.text
         if abstract_text != "":
             value = (abstract_text.encode("ascii", "ignore")).decode("utf-8")
-            mesh_file.write(unique_id+'|'+value)
-            mesh_file.write('\n')
+            with open(mesh_filename, "a+") as f:
+                f.write(unique_id+'|'+value)
+                f.write('\n')

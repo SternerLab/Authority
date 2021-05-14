@@ -1,0 +1,2 @@
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file annamissbotagard/1950/37/3/i317004/2394513/2394513.xml
+------------------------------------------------------
