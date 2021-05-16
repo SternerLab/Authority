@@ -1,0 +1,9 @@
+done parsing zip: ../../data/receipt-id-561931-jcodes-ab-part-001.zip  time_taken:  ---seconds ---16363.312187194824
+done parsing zip: ../../data/receipt-id-561931-jcodes-ab-part-002.zip  time_taken:  ---seconds ---4944.586807012558
+done parsing zip: ../../data/receipt-id-561931-jcodes-cdef-part-001.zip  time_taken:  ---seconds ---12445.138916492462
+done parsing zip: ../../data/receipt-id-561931-jcodes-cdef-part-002.zip  time_taken:  ---seconds ---1836.0137495994568
+done parsing zip: ../../data/receipt-id-561931-jcodes-ghij-part-001.zip  time_taken:  ---seconds ---16136.891166210175
+done parsing zip: ../../data/receipt-id-561931-jcodes-ghij-part-002.zip  time_taken:  ---seconds ---27748.945520162582
+done parsing zip: ../../data/receipt-id-561931-jcodes-klmnop-part-001.zip  time_taken:  ---seconds ---11904.593949317932
+done parsing zip: ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip  time_taken:  ---seconds ---9135.287203788757
+done parsing zip: ../../data/qrstuvwyz.zip  time_taken:  ---seconds ---13909.99191069603

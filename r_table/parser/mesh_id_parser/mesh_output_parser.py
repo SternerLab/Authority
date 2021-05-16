@@ -63,12 +63,15 @@ table_name = "articles"
 #create connection to db
 sql_client = sqlite_client(database_path)
 
-with open('mesh_log.txt', 'r') as f:
-    files_read = f.readlines()
+try:
+    with open('mesh_log.txt', 'a+') as f:
+        files_read = f.readlines()
 
-print(files_read[0])
+    print(files_read[0])
 
-new_files_read = [ x.strip() for x in files_read]
+    new_files_read = [ x.strip() for x in files_read]
+except:
+    new_files_read = []
 
 for subdir, dirs, files in os.walk(folder):
     for file in files:
