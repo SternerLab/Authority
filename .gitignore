@@ -3,3 +3,4 @@
 .ipynb_checkpoints/
 __pycache__
 /r_table/parser/temp/
+.DS_Store
