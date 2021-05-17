@@ -4,3 +4,4 @@
 __pycache__
 /r_table/parser/temp/
 .DS_Store
+/r_table/parser/mesh_id_parser/SKR*
