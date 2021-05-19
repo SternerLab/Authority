@@ -1,0 +1,432 @@
+30002114|Ireland|D007494|51262|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|118^7^0
+30002114|Stroke Volume|D013318|312564|MH|||RC
+30002114|Angiotensin Receptor Antagonists|D057911|272382|MH|||RC
+30002114|*Carbonates|D002254|459|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|1136^10^0
+30002114|*Islands|D062312|237|MH|RtM via: Islands|TI|MM|142^6^0
+30002160|*Ice Cover|D046448|8387|MH|RtM via: Ice Cover;Forced Leaf Node Lookup:sea ice|TI|MM;RC|467^9^0;463^7^0
+30002160|*Transportation Facilities|D000072436|426|MH|RtM via: Harbor|TI|MM|171^7^0
+30002160|*Physical Therapy Modalities|D026741|225|MH|RtM via: oscillations|TI|MM|420^11^0
+30002160|*Retreatments|D019233|201|ET|Entry Term Replacement for "Retreatment";RtM via: Retreatments|TI|MM|399^7^0
+30002115|Ireland|D007494|61883|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|421^7^0
+30002115|*Volcanic Eruptions|D018707|61004|MH|Forced Leaf Node Lookup:volcanism|TI|MM|395^9^0
+30002115|Cardiac Resynchronization Therapy Devices|D058409|611373|MH|||RC
+30002115|Cardiac Resynchronization Therapy|D058406|326294|MH|||RC
+30002161|*Dust|D004391|19498|MH|RtM via: Dust;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dust|TI|MM;RC|471^4^0;182^4^0;31^4^0;512^4^0
+30002161|*Quartz|D011791|19493|MH|RtM via: Quartz;Forced Leaf Node Lookup:quartz;checkForceMH Boosted|TI|MM;RC|245^6^0
+30002161|muscovite|C517971|9174|NM|RtM via: muscovite;Forced SCR Leaf Node Lookup:muscovite|TI|MM|377^9^0
+30002161|*Silica|D012822|7600|ET|Entry Term Replacement for "Silicon Dioxide";RtM via: silicon dioxide;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cristobalite|TI|MM;RC|289^12^0;229^6^0
+30002161|ferric oxide|C000499|5586|NM|RtM via: Hematite;Forced SCR Leaf Node Lookup:hematite|TI|MM|388^8^0
+30002161|*Calcite|D002119|5296|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Calcite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:calcite|TI|MM|401^7^0
+30002161|Ireland|D007494|3157|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|59^7^0
+30002161|*Accidental Falls|D000058|2524|MH|RtM via: Accidental Falls;Forced Leaf Node Lookup:falls|TI|MM|476^5^0;187^5^0
+30002161|*Aluminum Silicates|D000538|9173|HM|RtM via: muscovite|TI|MM;RC|377^9^0
+30002161|*Minerals|D008903|6027|MH|RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM;RC|352^8^0
+30002161|*Ferric Compounds|D005290|5585|HM|RtM via: Hematite|TI|MM|388^8^0
+30002161|*Weather|D014887|3675|MH|RtM via: Weather;Forced Non-Leaf Node Lookup:weather|TI|MM;RC|410^7^0
+30002161|Europe|D005060|1851|MH|RtM via: Europe|TI|MM|198^6^0
+30002161|Sahara|D000352|294|ET|Entry Term Replacement for "Africa, Northern";RtM via: Sahara|TI|MM|548^6^0
+30002161|England|D004739|0|MH|RtM via: England|TI|MM|89^7^0
+30002200|feldspar|C016447|328196|NM|RtM via: feldspar;Forced SCR Leaf Node Lookup:feldspar|TI|MM|616^8^0;489^8^0
+30002200|pyroxene|C092478|167805|NM|RtM via: pyroxene;Forced SCR Leaf Node Lookup:pyroxene|TI|MM|846^8^0
+30002200|biotite|C047410|167052|NM|RtM via: biotite;Forced SCR Leaf Node Lookup:biotite|TI|MM|881^7^0
+30002200|*Quartz|D011791|164933|MH|RtM via: Quartz;Forced Leaf Node Lookup:quartz;checkForceMH Boosted|TI|MM|605^6^0;478^6^0
+30002200|granite|C007886|164649|NM|RtM via: granodiorite;RtM via: granite;Forced SCR Leaf Node Lookup:granodiorite|TI|MM|1577^12^0;1383^12^0;1121^12^0;1021^12^0;925^12^0;704^12^0;550^12^0;360^12^0;201^12^0;177^12^0;1604^8^0;1277^8^0
+30002200|*Amphibole|D017636|84190|ET|Entry Term Replacement for "Asbestos, Amphibole";RtM via: Amphiboles;checkForceMH Boosted;Forced Non-Leaf Node Lookup:amphiboles|TI|MM|867^9^0
+30002200|*Temperature|D013696|81916|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|939^12^0
+30002200|Ireland|D007494|80848|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|70^7^0
+30002200|Liraglutide|D000069450|445314|MH|||RC
+30002200|*Aluminum Silicates|D000538|328195|HM|RtM via: biotite;RtM via: feldspar|TI|MM|881^7^0;616^8^0;489^8^0
+30002200|*Potassium Compounds|D017680|164780|HM|RtM via: feldspar|TI|MM|616^8^0;489^8^0
+30002200|*Minerals|D008903|167804|MH|RtM via: Minerals;RtM via: pyroxene;Forced Non-Leaf Node Lookup:minerals|TI|MM|816^8^0;846^8^0
+30002200|*Ferrous Compounds|D005296|162419|HM|RtM via: biotite|TI|MM|881^7^0
+30002200|*Silicon Dioxide|D012822|164648|HM|RtM via: granodiorite;RtM via: granite|TI|MM|1577^12^0;1383^12^0;1121^12^0;1021^12^0;925^12^0;704^12^0;550^12^0;360^12^0;201^12^0;177^12^0;1604^8^0;1277^8^0
+30002194|*Rivers|D045483|21703|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|365^7^0
+30002194|*Peat|D012987|21472|ET|Entry Term Replacement for "Soil";RtM via: Peat;checkForceMH Boosted;Forced Non-Leaf Node Lookup:peat|TI|MM|441^4^0
+30002194|*Wetlands|D053833|20785|MH|Forced Leaf Node Lookup:bog|TI|MM|102^3^0
+30002194|Basic Helix-Loop-Helix Transcription Factors|D051792|54876|MH|||RC
+30002194|Homeodomain Proteins|D018398|43976|MH|||RC
+30002194|*Weather|D014887|420|MH|RtM via: Weather;Forced Non-Leaf Node Lookup:weather|TI|MM|504^7^0
+30002194|Rain|D011891|1000|MH|Forced Non-Leaf Node Lookup:rain||MM|49^4^0
+30002462|Exercise|D015444|38236|MH|||RC
+30002462|*Recognition, Psychology|D021641|5304|MH|RtM via: Recognition, Psychology|TI|MM|455^11^0
+30002128|*Hot Temperature|D006358|28071|MH|RtM via: Heat (physical force);Forced Leaf Node Lookup:heat|TI|MM|613^4^0
+30002128|*Soil|D012987|27816|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|608^4^0
+30002128|Familial Hypophosphatemic Rickets|D053098|250850|MH|||RC
+30002128|Fibroblast Growth Factors|D005346|56212|MH|||RC
+30002457|*Pilot Projects|D010865|40102|MH|RtM via: Pilot Projects;Forced Lookup:pilot study;Forced Leaf Node Lookup:pilot study|TI|MM|23^11^0
+30002457|*Water|D014867|21767|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|125^5^0;290^5^0
+30002457|Fisheries|D005398|210200|MH|||RC
+30002457|Conservation of Natural Resources|D003247|68667|MH|||RC
+30002457|Herpes Zoster|D006562|1000|MH|Forced Non-Leaf Node Lookup:shingles||MM|85^7^0
+30002271|Animals|D000818|57938|CT|Embryo, Nonmammalian;CT Treecode Lookup: A13.350 (Embryo, Nonmammalian);Zebrafish;CT Treecode Lookup: B01.050.150.900.493 (Zebrafish)||RC
+30002271|*Facies|D019066|11956|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|88^6^0;150^6^0
+30002271|Northern Ireland|D009660|10996|MH|RtM via: Northern Ireland;Forced Leaf Node Lookup:northern ireland|TI|MM|735^16^0;500^16^0
+30002271|Embryo, Nonmammalian|D004625|56938|MH|||RC
+30002271|Zebrafish|D015027|27741|MH|||RC
+30002133|*Facies|D019066|14062|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|523^6^0
+30002133|Ireland|D007494|11209|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|576^7^0;278^7^0;44^7^0;462^7^0
+30002133|Glutamate Dehydrogenase|D005969|73060|MH|||RC
+30002133|Glutamic Acid|D018698|25990|MH|||RC
+30002133|Geologic Sediments|D019015|1000|MH|Forced Non-Leaf Node Lookup:marine sediments||MM|221^16^0
+30002151|*Facies|D019066|41749|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|997^6^0
+30002151|Thrombectomy|D017131|243833|MH|||RC
+30002151|Brain Ischemia|D002545|204981|MH|||RC
+30002151|*Spores|D013170|6|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|802^6^0
+30002460|olivine|C034475|189734|NM|RtM via: olivine;Forced SCR Leaf Node Lookup:olivine|TI|MM|302^7^0;25^7^0
+30002460|plagioclase|C000600851|100344|NM|RtM via: plagioclase;Forced SCR Leaf Node Lookup:plagioclase|TI|MM|325^11^0
+30002460|pyroxene|C092478|97188|NM|RtM via: pyroxene;Forced SCR Leaf Node Lookup:pyroxene|TI|MM|341^8^0
+30002460|*Limestone|D002119|47590|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|210^10^0
+30002460|*Rivers|D045483|45427|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|65^6^0
+30002460|Cognitive Reserve|D058245|195453|MH|||RC
+30002460|*Silicates|D017640|189733|HM|RtM via: plagioclase;RtM via: olivine|TI|MM|325^11^0;302^7^0;25^7^0
+30002460|*Magnesium Compounds|D017616|94043|HM|RtM via: olivine|TI|MM|302^7^0;25^7^0
+30002460|*Iron Compounds|D058085|95084|HM|RtM via: olivine|TI|MM|302^7^0;25^7^0
+30002460|*Aluminum Compounds|D017607|100343|HM|RtM via: plagioclase|TI|MM|325^11^0
+30002460|*Minerals|D008903|97187|HM|RtM via: Shale;RtM via: pyroxene|TI|MM|225^6^0;341^8^0
+30002154|Bell Palsy|D020330|173951|MH|||RC
+30002154|Facial Paralysis|D005158|78336|MH|||RC
+30002154|*Islands|D062312|99|MH|RtM via: Islands|TI|MM|387^6^0
+30002270|Virus Assembly|D019065|100803|MH|||RC
+30002270|Virion|D014771|61626|MH|||RC
+30002270|*Minerals|D008903|159|MH|RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|178^8^0
+30002458|basalt|C060346|101405|NM|RtM via: basalt;Forced SCR Leaf Node Lookup:basalt|TI|MM|589^8^0;360^6^0;244^6^0
+30002458|*Sand|D000080463|77910|MH|RtM via: Sand;Forced Leaf Node Lookup:sands;checkForceMH Boosted|TI|MM|574^5^0;181^5^0;83^4^0
+30002458|*Clay|D000077215|53765|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|531^4^0
+30002458|Smectite|C033214|51531|NM|RtM via: Smectite;Forced SCR Leaf Node Lookup:smectite|TI|MM|640^8^0
+30002458|*Soil|D012987|26233|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|598^5^0;375^5^0;225^5^0;106^4^0
+30002458|Northern Ireland|D009660|24940|MH|RtM via: Northern Ireland;Forced Leaf Node Lookup:northern ireland|TI|MM|254^16^0
+30002458|Insulin Resistance|D007333|123605|MH|||RC
+30002458|*Silicates|D017640|101404|HM|RtM via: Smectite;RtM via: basalt|TI|MM|640^8^0;589^8^0;360^6^0;244^6^0
+30002458|*Cation|D002412|300|ET|Entry Term Replacement for "Cations";RtM via: Cations;Forced Non-Leaf Node Lookup:cations|TI|MM|21^6^0
+30002135|Ireland|D007494|33324|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|79^7^0
+30002135|AMP-Activated Protein Kinases|D055372|111916|MH|||RC
+30002135|Insulin Secretion|D000078790|104972|MH|||RC
+30002135|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|477^5^0
+30002142|Humans|D006801|1000|CT|Forced Humans:D Prisoners||MM
+30002142|*Clay|D000077215|36350|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|689^4^0;506^4^0
+30002142|*Soils|D012987|17779|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|106^5^0
+30002142|Prisons|D011330|192852|MH|||RC
+30002142|Prisoners|D011329|101142|MH|||RC
+30002142|*Regression Analysis|D012044|1515|MH|RtM via: Regression Analysis;Forced Non-Leaf Node Lookup:regression analysis|TI|MM|790^19^0
+30002142|*Silicates|D017640|456|MH|RtM via: Silicates;Forced Non-Leaf Node Lookup:silicates|TI|MM|1265^9^0
+30002142|*Cation|D002412|126|ET|Entry Term Replacement for "Cations";RtM via: Cations;Forced Non-Leaf Node Lookup:cations|TI|MM|44^6^0
+30002142|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM|258^2^0;388^2^0;587^2^0;763^2^0
+30002150|Education, Medical, Graduate|D004503|253819|MH|||RC
+30002150|Fellowships and Scholarships|D005257|184431|MH|||RC
+30002125|Animals|D000818|199118|CT|Vertebrate;CT Treecode Lookup: B01.050.150.900 (Vertebrate)|TI|MM
+30002125|*Sand|D000080463|57454|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|100^4^0
+30002125|*Fossils|D005580|28697|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|32^6^0
+30002125|Hemochromatosis|D006432|198118|MH|||RC
+30002125|Hepcidins|D064451|86783|MH|||RC
+30002125|*Vertebrate|D014714|984|ET|Entry Term Replacement for "Vertebrates";RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|21^10^0
+30002149|Intracranial Arteriovenous Malformations|D002538|268970|MH|||RC
+30002149|Arteriovenous Fistula|D001164|57924|MH|||RC
+30002363|Humans|D006801|230899840|CT|Forced Humans: university;Forced Humans: college;Forced Humans: staff|TI|MM;RC
+30002363|*Universities|D014495|9299601|MH|RtM via: College (environment);RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|162^7^0;151^10^0
+30002363|Ireland|D007494|9299154|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|459^7^0
+30002363|Yellow Fever|D015004|260288|MH|||RC
+30002363|Yellow fever virus|D015005|190312|MH|||RC
+30002110|granite|C007886|51160|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|379^7^0
+30002110|*Ice Cover|D046448|23949|MH|RtM via: Sea Ice Cover;Forced Leaf Node Lookup:sea ice|TI|MM|451^7^0
+30002110|Immunoconjugates|D018796|191372|MH|||RC
+30002110|Antibodies, Monoclonal|D000911|57522|MH|||RC
+30002110|*Silicon Dioxide|D012822|51159|HM|RtM via: granite|TI|MM|379^7^0
+30002124|*Soil|D012987|51976|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|440^5^0;105^4^0;72^4^0
+30002124|*Laboratories|D007753|51958|MH|Forced Leaf Node Lookup:laboratory|TI|MM|217^10^0
+30002124|Hodgkin Disease|D006689|280010|MH|||RC
+30002124|Vinblastine|D014747|150987|MH|||RC
+30002111|granite|C007886|58150|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|489^7^0;231^7^0;133^7^0;189^7^0;286^7^0
+30002111|*Copper|D003300|57744|MH|Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM|79^6^0
+30002111|Fluorine Radioisotopes|D005462|143725|MH|||RC
+30002111|Sodium Fluoride|D012969|84027|MH|||RC
+30002111|*Silicon Dioxide|D012822|58149|HM|RtM via: granite|TI|MM|489^7^0;231^7^0;133^7^0;189^7^0
+30002111|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zinc||MM|74^4^0
+30002164|*Sand|D000080463|12936|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|709^4^0;720^4^0
+30002164|*Clay|D000077215|12564|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|689^4^0
+30002164|*Laboratories|D007753|6693|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|407^10^0
+30002164|*Soil|D012987|6378|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|618^5^0;87^4^0;169^5^0
+30002164|*Particle Size|D010316|5793|MH|Forced Leaf Node Lookup:particle sizes|TI|MM|312^13^0
+30002164|European Union|D005062|47627|MH|||RC
+30002164|Veterinary Drugs|D019155|19567|MH|||RC
+30002164|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM|695^2^0
+30002147|Brain Ischemia|D002545|243297|MH|||RC
+30002147|Stroke|D020521|154389|MH|||RC
+30002120|cis-trans-Isomerases|D019745|61708|MH|||RC
+30002120|Eye Proteins|D005136|48763|MH|||RC
+30002221|*Sewage|D012722|47089|MH|RtM via: Environmental sludge;Forced Leaf Node Lookup:sludge;checkForceMH Boosted|TI|MM|572^6^0
+30002221|*Sand|D000080463|47008|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|727^4^0;665^4^0;462^4^0;59^5^0
+30002221|*Bays|D061006|23504|MH|Forced Leaf Node Lookup:bay|TI|MM|28^3^0;336^3^0;356^3^0;371^3^0;506^3^0;681^3^0
+30002221|*Tidal Waves|D055871|23504|MH|Forced Leaf Node Lookup:tidal currents|TI|MM|198^13^0
+30002221|Kidney Glomerulus|D007678|146778|MH|||RC
+30002221|Glomerulonephritis|D005921|81003|MH|||RC
+30002459|*Sand|D000080463|22823|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|670^4^0;618^4^0;486^5^0
+30002459|Indoleamine-Pyrrole 2,3,-Dioxygenase|D050503|63673|MH|||RC
+30002459|Kynurenine|D007737|62101|MH|||RC
+30002459|*Suture|D013537|618|ET|Entry Term Replacement for "Sutures";RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|1688^6^0
+30002137|Humans|D006801|1000|CT|Forced Humans:D Farmers||MM
+30002137|*Solanum tuberosum|D011198|51859|MH|RtM via: Potato;RtM via: Solanum tuberosum;Forced Leaf Node Lookup:potato;checkForceMH Boosted|TI|MM|1073^6^0
+30002137|*Farmers|D000067565|50872|MH|RtM via: Farmers;Forced Leaf Node Lookup:farmers|TI|MM|564^6^0;31^7^0
+30002137|Ireland|D007494|24758|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|1144^7^0;984^7^0;723^7^0;419^7^0;306^7^0;124^7^0
+30002137|*Wetlands|D053833|24308|MH|Forced Leaf Node Lookup:bog|TI|MM|291^3^0
+30002137|Receptor, Fibroblast Growth Factor, Type 2|D051497|106963|MH|||RC
+30002137|Cell Line, Tumor|D045744|47233|MH|||RC
+30002137|*Agriculture|D000383|1035|MH|RtM via: Farm tractor;RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|1085^7^0;1180^11^0
+30002137|Western Europe|D005060|816|ET|Entry Term Replacement for "Europe";RtM via: Western Europe|TI|MM|513^14^0
+30002224|*Kaolin|D007616|222772|MH|RtM via: Kaolinite;Forced Leaf Node Lookup:kaolinite;checkForceMH Boosted|TI|MM|166^9^0
+30002224|andalusite|C121090|219530|NM|RtM via: andalusite;Forced SCR Leaf Node Lookup:andalusite|TI|MM|661^10^0;299^10^0;83^10^0
+30002224|sericite|C000610433|219521|NM|RtM via: sericite;Forced SCR Leaf Node Lookup:sericite|TI|MM|176^8^0
+30002224|chlorite|C001599|219470|NM|RtM via: chlorite;Forced SCR Leaf Node Lookup:chlorite|TI|MM|157^8^0
+30002224|*Water|D014867|110171|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|523^5^0
+30002224|Warfarin|D014859|554916|MH|||RC
+30002224|Anticoagulants|D000925|441775|MH|||RC
+30002224|*Aluminum Silicates|D000538|219529|HM|RtM via: andalusite|TI|MM|661^10^0;299^10^0;83^10^0
+30002224|*Silicon Dioxide|D012822|219520|HM|RtM via: sericite|TI|MM|176^8^0
+30002224|*Chlorides|D002712|219469|HM|RtM via: chlorite|TI|MM|157^8^0
+30002197|*Floods|D055868|36196|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|568^5^0;143^5^0;458^5^0
+30002197|*Limestone|D002119|35044|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|691^9^0
+30002197|*Water|D014867|34492|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|212^5^0
+30002197|Diabetic Angiopathies|D003925|181486|MH|||RC
+30002197|Diabetes Mellitus, Type 2|D003924|94723|MH|||RC
+30002197|*Groundwater|D060587|1449|MH|RtM via: Groundwater;Forced Non-Leaf Node Lookup:groundwaters|TI|MM|289^11^0
+30002146|ferroactinolite|C036431|49285|NM|RtM via: Actinolite;Forced SCR Leaf Node Lookup:actinolite|TI|MM|356^10^0
+30002146|*Asbestos, Serpentine|D017632|48984|MH|RtM via: Antigorite;Forced Leaf Node Lookup:antigorite;checkForceMH Boosted|TI|MM|374^10^0
+30002146|*Talc|D013627|46869|MH|RtM via: talc;Forced Leaf Node Lookup:talc;checkForceMH Boosted|TI|MM|368^4^0
+30002146|*Facies|D019066|24000|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|565^6^0
+30002146|*Graphite|D006108|23166|MH|RtM via: natural graphite;checkForceMH Boosted|TI|MM|309^9^0
+30002146|Safety Management|D017751|99973|MH|||RC
+30002146|Organizational Culture|D015279|90083|MH|||RC
+30002146|*Asbestos, Amphibole|D017636|49284|HM|RtM via: Actinolite|TI|MM|356^10^0
+30002146|*Carbonate|D002254|99|ET|Entry Term Replacement for "Carbonates";RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|386^9^0
+30002272|Rhodamines|D012235|233347|MH|||RC
+30002272|Spectrometry, Fluorescence|D013050|79917|MH|||RC
+30002113|granite|C007886|42282|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|267^7^0
+30002113|mica|C011934|42129|NM|RtM via: mica;Forced SCR Leaf Node Lookup:mica|TI|MM|288^4^0
+30002113|Ireland|D007494|21238|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|724^7^0
+30002113|Natriuretic Peptide, Brain|D020097|165334|MH|||RC
+30002113|Stroke Volume|D013318|52663|MH|||RC
+30002113|*Silicon Dioxide|D012822|42281|HM|RtM via: granite|TI|MM|267^7^0
+30002113|*Aluminum Silicates|D000538|42128|HM|RtM via: mica|TI|MM|288^4^0
+30002113|*Longitudinal Studies|D008137|25236|MH|RtM via: Continuous|TI|MM|706^12^0
+30002113|Scotland|D012606|0|MH|RtM via: Scotland|TI|MM|819^8^0
+30002220|*Sand|D000080463|4120|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|410^4^0
+30002220|Ireland|D007494|2588|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|590^7^0;140^7^0
+30002220|*Dust|D004391|1793|MH|RtM via: Dust;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dust|TI|MM|486^4^0;322^4^0;33^4^0;345^4^0;419^4^0
+30002220|Anniversaries and Special Events|D000846|9815|MH|||RC
+30002220|*Atmosphere|D001272|231|MH|RtM via: Atmosphere, planetary;Forced Non-Leaf Node Lookup:atmospheres|TI|MM|372^10^0
+30002220|*Rain|D011891|162|MH|RtM via: Rain;Forced Non-Leaf Node Lookup:rain|TI|MM|71^4^0
+30002220|Africa, Northern|D000352|1000|MH|Forced Non-Leaf Node Lookup:sahara||MM|400^6^0
+30002162|Shaker Superfamily of Potassium Channels|D051637|91713|MH|||RC
+30002162|Patch-Clamp Techniques|D018408|46928|MH|||RC
+30002116|*Rivers|D045483|15315|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|872^5^0;964^6^0
+30002116|*Depressive Disorder, Major|D003865|8571|MH|RtM via: Major Depressive Disorder;Forced Lookup:major depression|TI|MM|1033^16^0
+30002116|*Lakes|D060106|8154|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|975^4^0
+30002116|*Color|D003116|7311|MH|Forced Leaf Node Lookup:colours|TI|MM|635^6^0
+30002116|*Depression|D003863|7311|MH|Forced Leaf Node Lookup:depression|TI|MM|1039^10^0
+30002116|Glycosaminoglycans|D006025|28939|MH|||RC
+30002116|Extracellular Fluid|D045604|17575|MH|||RC
+30002165|Humans|D006801|3598|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans);Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)|TI|MM
+30002165|*African Americans|D001741|2509|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|711^5^0
+30002165|*Water|D014867|736|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|539^5^0
+30002165|*Ethnic Groups|D005006|795|MH|RtM via: british|TI|MM|821^7^0
+30002165|Paleontology|D010163|412|MH|||RC
+30002165|*Fabaceae|D007887|117|MH|RtM via: Bikinia le-testui|TI|MM|1066^4^0
+30002165|Scotland|D012606|3|MH|RtM via: Scotland|TI|MM|1017^8^0
+30002456|*Bays|D061006|14177|MH|Forced Leaf Node Lookup:bay|TI|MM|105^3^0
+30002456|Imaging, Three-Dimensional|D021621|61724|MH|||RC
+30002456|Image Processing, Computer-Assisted|D007091|36928|MH|||RC
+30002273|*Water|D014867|12661|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|245^5^0
+30002273|Intimate Partner Violence|D000066511|38911|MH|||RC
+30002273|Attitude of Health Personnel|D001291|27617|MH|||RC
+30002152|*Facies|D019066|19836|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|198^6^0
+30002152|Genome-Wide Association Study|D055106|58344|MH|||RC
+30002152|White Matter|D066127|43895|MH|||RC
+30002129|Animals|D000818|259744|CT|Drosophila melanogaster;CT Treecode Lookup: B01.050.500.131 (Drosophila melanogaster)||RC
+30002129|*Sand|D000080463|87999|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|32^4^0
+30002129|*Water|D014867|44598|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|203^5^0
+30002129|Northern Ireland|D009660|43887|MH|RtM via: Northern Ireland;Forced Leaf Node Lookup:northern ireland|TI|MM|131^16^0
+30002129|Drosophila melanogaster|D004331|258744|MH|||RC
+30002129|Drosophila Proteins|D029721|252894|MH|||RC
+30002274|*Water|D014867|195162|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|453^5^0
+30002274|*Fossils|D005580|98097|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|325^7^0;27^6^0
+30002274|Plant Stomata|D054046|231799|MH|||RC
+30002274|Abscisic Acid|D000040|199580|MH|||RC
+30002274|Scotland|D012606|0|MH|RtM via: Scotland|TI|MM|609^8^0
+30002166|*Soil|D012987|5047|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|23^4^0
+30002166|*Water|D014867|4972|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|217^5^0
+30002166|Anniversaries and Special Events|D000846|14804|MH|||RC
+30002166|Iron|D007501|1000|MH|Forced Non-Leaf Node Lookup:iron||MM|306^4^0
+30002126|*Coals|D003031|29985|ET|Entry Term Replacement for "Coal";RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coals|TI|MM|65^5^0
+30002126|Factor VIII|D005169|310753|MH|||RC
+30002126|Hemophilia A|D006467|166099|MH|||RC
+30002123|*Ice|D007053|97390|MH|Forced Leaf Node Lookup:ice;checkForceMH Boosted|TI|MM|214^3^0
+30002123|Ireland|D007494|48698|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|304^7^0;72^7^0
+30002123|Lumican|D000071234|211399|MH|||RC
+30002123|Keratan Sulfate|D007632|173734|MH|||RC
+30002195|*Rest|D012146|6256|MH|RtM via: Rest;Forced Leaf Node Lookup:rests|TI|MM|769^5^0
+30002195|*Rivers|D045483|5321|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|462^6^0;402^7^0
+30002195|*Facies|D019066|5239|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|343^6^0
+30002195|*Fossils|D005580|2659|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|563^7^0
+30002195|*Organizations|D009938|1941|MH|RtM via: conglomerate|TI|MM|226^13^0
+30002195|*Culture Media|D003470|1875|MH|RtM via: Culture Media|TI|MM|169^6^0
+30002195|*Homeostasis|D006706|1623|MH|RtM via: site-specific telomere resolvase activity|TI|MM|769^5^0
+30002461|Nerve Fibers|D009412|335792|MH|||RC
+30002461|Retinal Ganglion Cells|D012165|256924|MH|||RC
+30002109|muscovite|C517971|58807|NM|RtM via: muscovite;Forced SCR Leaf Node Lookup:muscovite|TI|MM|540^9^0;595^9^0
+30002109|chlorite|C001599|58267|NM|RtM via: chlorite;Forced SCR Leaf Node Lookup:chlorite|TI|MM|467^8^0;222^8^0
+30002109|Ireland|D007494|29469|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|1068^7^0;171^7^0
+30002109|*Explosions|D005107|28956|MH|Forced Leaf Node Lookup:explosions|TI|MM|622^9^0
+30002109|Radiotherapy Dosage|D011879|126773|MH|||RC
+30002109|Radiometry|D011874|113857|MH|||RC
+30002109|*Aluminum Silicates|D000538|58806|HM|RtM via: muscovite|TI|MM|540^9^0
+30002109|*Chlorides|D002712|58266|HM|RtM via: chlorite|TI|MM|467^8^0;222^8^0
+30002109|Membrane Microdomains|D021962|1000|MH|Forced Non-Leaf Node Lookup:rafts||MM|845^5^0
+30002223|Belgium|D001530|10605|MH|RtM via: Belgians;Forced Leaf Node Lookup:belgians|TI|MM|541^7^0
+30002223|Chronic Traumatic Encephalopathy|D000070627|66127|MH|||RC
+30002223|Athletic Injuries|D001265|33645|MH|||RC
+30002223|*Standing Position|D000078783|1434|MH|RtM via: erect|TI|MM|258^7^0
+30002122|Humans|D006801|303506|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+30002122|*Lead|D007854|53364|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|1037^2^0
+30002122|*Oxides|D010087|27492|MH|RtM via: Oxides;RtM via: Organic Oxide;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxides|TI|MM|798^5^0;89^6^0
+30002122|*Patient Discharge|D010351|26937|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|966^10^0
+30002122|Streptococcus pyogenes|D013297|302506|MH|||RC
+30002122|Streptococcal Infections|D013290|114708|MH|||RC
+30002122|*Sulfides|D013440|1140|MH|RtM via: Sulfides;Forced Non-Leaf Node Lookup:sulphides|TI|MM|1084^8^0;893^9^0;653^9^0;75^9^0
+30002122|*Bedding|D001512|897|ET|Entry Term Replacement for "Bedding and Linens";RtM via: Bedding;Forced Non-Leaf Node Lookup:beddings|TI|MM|454^7^0
+30002122|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zn||MM|1044^2^0
+30002268|*Sand|D000080463|16838|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|422^4^0
+30002268|*Mirabilis|D039282|16718|MH|RtM via: Mirabilis;Forced Leaf Node Lookup:mirabilis;checkForceMH Boosted|TI|MM|1226^9^0
+30002268|Nova Scotia|D009674|9127|MH|RtM via: Nova Scotia;Forced Leaf Node Lookup:nova scotia|TI|MM|1325^11^0
+30002268|*Bays|D061006|8272|MH|Forced Leaf Node Lookup:bay|TI|MM|754^3^0;861^3^0
+30002268|Protein Conformation|D011487|17709|MH|||RC
+30002268|Fluorescence Resonance Energy Transfer|D031541|16839|MH|||RC
+30002268|*Islands|D062312|945|MH|RtM via: Islands|TI|MM|55^6^0
+30002268|Europe|D005060|303|MH|RtM via: Europe|TI|MM|1278^6^0
+30002139|Pregnancy|D011247|78232|CT|Abruptio Placentae;CT Treecode Lookup: C13.703.420 (Abruptio Placentae);Abruptio Placentae;CT Treecode Lookup: C13.703.590 (Abruptio Placentae)||RC
+30002139|Female|D005260|78232|CT|Abruptio Placentae;CT Treecode Lookup: C13.703.420 (Abruptio Placentae);Abruptio Placentae;CT Treecode Lookup: C13.703.590 (Abruptio Placentae)||RC
+30002139|Humans|D006801|1000|CT|Forced Treecode Turn Back On: G08.686.784.769 (Pregnancy)||MM
+30002139|Abruptio Placentae|D000037|77232|MH|||RC
+30002139|Risk Factors|D012307|9758|MH|||RC
+30002463|Temporomandibular Joint Disc|D019224|299061|MH|||RC
+30002463|Tissue Engineering|D023822|128053|MH|||RC
+30002361|*Islands|D062312|31368|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|890^7^0;722^6^0
+30002361|*Water|D014867|31122|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1224^5^0;542^5^0;47^5^0
+30002361|DNA (Cytosine-5-)-Methyltransferase 1|D000076123|112255|MH|||RC
+30002361|DNA (Cytosine-5-)-Methyltransferases|D004248|101474|MH|||RC
+30002361|*Computer Program|D012984|2943|ET|Entry Term Replacement for "Software";RtM via: Computer software;Forced Non-Leaf Node Lookup:computer programs|TI|MM|69^16^0
+30002198|*Rivers|D045483|62611|MH|RtM via: Rivers;RtM via: Streams;Forced Leaf Node Lookup:streams;Forced Leaf Node Lookup:rivers|TI|MM|315^6^0;404^7^0;466^7^0;515^7^0;561^7^0
+30002198|*AT-Hook Motifs|D024761|31163|MH|Forced Leaf Node Lookup:at hooks|TI|MM|209^7^0
+30002198|Prediabetic State|D011236|100326|MH|||RC
+30002198|Diabetes Mellitus|D003920|98817|MH|||RC
+30002159|Animals|D000818|153693|CT|Corals;CT Treecode Lookup: B01.050.500.308 (Corals)||MM;RC
+30002159|*Foraminifera|D056908|34904|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:foraminifera;checkForceMH Boosted|TI|MM|332^12^0
+30002159|*Corals|D037421|17614|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|321^6^0
+30002159|*Fossils|D005580|17533|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|283^7^0
+30002159|*Respect|D000078682|16486|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|528^8^0
+30002159|Ireland|D007494|16483|MH|Forced Leaf Node Lookup:ireland|TI|MM|606^7^0
+30002159|RNA, Plant|D018749|152693|MH|||RC
+30002159|Gene Expression Regulation, Plant|D018506|63361|MH|||RC
+30002159|*Carbonates|D002254|1389|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|246^10^0
+30002159|Northern Ireland|D009660|0|MH|RtM via: Northern Ireland|TI|MM|606^13^0
+30002219|Ireland|D007494|23349|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|124^7^0;210^7^0
+30002219|Melanoma|D008545|175456|MH|||RC
+30002219|Skin Neoplasms|D012878|143244|MH|||RC
+30002148|*Soil|D012987|21323|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|332^4^0;212^4^0;100^4^0
+30002148|Plaque, Atherosclerotic|D058226|74550|MH|||RC
+30002148|Positron-Emission Tomography|D049268|54606|MH|||RC
+30002127|Humans|D006801|194915296|CT|Forced Humans: ladies|TI|MM;RC
+30002127|HL-60 Cells|D018922|118295|MH|||RC
+30002127|Cell Proliferation|D049109|64812|MH|||RC
+30002134|*Limestone|D002119|37904|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|121^9^0
+30002134|*Particle Size|D010316|37037|MH|Forced Leaf Node Lookup:particle sizes|TI|MM|172^13^0
+30002134|Adipose Tissue, White|D052436|134777|MH|||RC
+30002134|Insulin Resistance|D007333|134250|MH|||RC
+30002134|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM|165^2^0
+30002121|Ireland|D007494|91837|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|445^7^0
+30002121|Host Factor 1 Protein|D035001|747097|MH|||RC
+30002121|RNA, Small Untranslated|D058727|356957|MH|||RC
+30002269|olivine|C034475|89141|NM|RtM via: olivine;Forced SCR Leaf Node Lookup:olivine|TI|MM|195^7^0
+30002269|basalt|C060346|46875|NM|RtM via: basalt;Forced SCR Leaf Node Lookup:basalt|TI|MM|628^7^0;277^7^0;114^8^0
+30002269|*Trace Elements|D014131|43844|MH|RtM via: Trace Elements;Forced Leaf Node Lookup:trace element;checkForceMH Boosted|TI|MM|31^13^0
+30002269|*Alkali|D000468|26458|ET|Entry Term Replacement for "Alkalies";RtM via: Alkalies;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alkalis|TI|MM|361^6^0
+30002269|Hawaii|D006254|21133|MH|RtM via: Hawaiian population;Forced Leaf Node Lookup:hawaiian|TI|MM|352^8^0
+30002269|Ireland|D007494|21133|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|144^7^0
+30002269|*Silicates|D017640|89140|HM|RtM via: basalt;RtM via: olivine|TI|MM|628^7^0;277^7^0;114^8^0;195^7^0
+30002269|Nucleic Acid Conformation|D009690|70033|MH|||RC
+30002269|*Magnesium Compounds|D017616|46457|HM|RtM via: olivine|TI|MM|195^7^0
+30002269|*Iron Compounds|D058085|45773|HM|RtM via: olivine|TI|MM|195^7^0
+30002140|Animals|D000818|312334|CT|Coral;CT Treecode Lookup: B01.050.500.308 (Coral)|TI|MM
+30002140|Female|D005260|1000|CT|Forced Treecode Turn Back On: A16.710 (Placenta)||MM
+30002140|Pregnancy|D011247|1000|CT|Forced Treecode Turn Back On: A16.710 (Placenta)||MM
+30002140|Ireland|D007494|48155|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|358^7^0;108^7^0
+30002140|*Coral|D037421|47921|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|184^5^0;62^5^0
+30002140|Antihypertensive Agents|D000959|311334|MH|||RC
+30002140|Hypertension|D006973|215686|MH|||RC
+30002140|*Placenta|D010920|987|MH|RtM via: Placenta;Forced Non-Leaf Node Lookup:placentas|TI|MM|309^8^0
+30002167|*Rivers|D045483|31466|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|1315^5^0
+30002167|*Seasons|D012621|6215|MH|RtM via: Summer;RtM via: Seasons;RtM via: Winter;Forced Leaf Node Lookup:seasons|TI|MM|801^6^0;749^6^0;953^6^0;742^6^0
+30002167|*Ice|D007053|4900|MH|Forced Leaf Node Lookup:ice;checkForceMH Boosted|TI|MM|238^3^0;392^3^0
+30002167|Northern Ireland|D009660|2501|MH|RtM via: Northern Ireland;Forced Leaf Node Lookup:northern ireland|TI|MM|1084^16^0
+30002167|*Hydrology|D062070|7470|MH|RtM via: Hydrology|TI|MM|514^12^0
+30002167|Geologic Sediments|D019015|2450|MH|Forced Non-Leaf Node Lookup:suspended sediments||MM;RC|1284^18^0
+30002222|Podocytes|D050199|69011|MH|||RC
+30002222|Phosphatidylinositol 3-Kinases|D019869|52082|MH|||RC
+30002222|*Islands|D062312|402|MH|RtM via: Islands|TI|MM|245^6^0
+30002267|*Facies|D019066|17162|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|643^6^0
+30002267|Ireland|D007494|16187|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|90^7^0
+30002267|*Volcanic Eruptions|D018707|15986|MH|Forced Leaf Node Lookup:volcanism|TI|MM|310^9^0
+30002267|Lipid Bilayers|D008051|61451|MH|||RC
+30002267|Microscopy, Fluorescence|D008856|57266|MH|||RC
+30002267|*Islands|D062312|363|MH|RtM via: Islands|TI|MM|299^6^0
+30002153|*Facies|D019066|88797|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|380^6^0
+30002153|*Limestone|D002119|88191|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|331^10^0;118^10^0
+30002153|Methyl Ethers|D008738|400438|MH|||RC
+30002153|Anesthetics, Intravenous|D018686|391908|MH|||RC
+30002359|*Sand|D000080463|84313|MH|RtM via: Sand;Forced Leaf Node Lookup:sands;checkForceMH Boosted|TI|MM|260^5^0
+30002359|*Farms|D000072480|34892|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farm|TI|MM|114^4^0
+30002359|*Soil|D012987|31727|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|669^5^0;487^5^0;375^5^0;171^4^0;51^5^0
+30002359|*Iron|D007501|30947|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|444^4^0
+30002359|Closterovirus|D017790|249729|MH|||RC
+30002359|Genome, Viral|D016679|108328|MH|||RC
+30002196|Animals|D000818|243942|CT|Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves);Ostracods;CT Treecode Lookup: B01.050.500.131 (Ostracods)|TI|MM
+30002196|Sweden|D013548|50096|MH|RtM via: Sweden;Forced Leaf Node Lookup:sweden|TI|MM|477^6^0
+30002196|Glycated Hemoglobin A|D006442|242942|MH|||RC
+30002196|Diabetic Cardiomyopathies|D058065|130402|MH|||RC
+30002196|*Bivalves|D049872|795|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|151^8^0
+30002196|*Ostracods|D003445|621|ET|Entry Term Replacement for "Crustacea";RtM via: Ostracoda;Forced Non-Leaf Node Lookup:ostracods|TI|MM|161^9^0
+30002138|*Trace Elements|D014131|81816|MH|RtM via: Trace Elements;Forced Leaf Node Lookup:trace elements;checkForceMH Boosted|TI|MM|1208^14^0
+30002138|chlorite|C001599|81685|NM|RtM via: chlorite;Forced SCR Leaf Node Lookup:chlorite|TI|MM|1014^8^0
+30002138|*Facies|D019066|41001|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|1041^6^0
+30002138|Ireland|D007494|40452|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|71^7^0
+30002138|Thyroxine|D013974|334158|MH|||RC
+30002138|Hypothyroidism|D007037|204981|MH|||RC
+30002138|*Chlorides|D002712|81684|HM|RtM via: chlorite|TI|MM|1014^8^0
+30002360|Encephalitis, Herpes Simplex|D020803|173122|MH|||RC
+30002360|Acyclovir|D000212|143890|MH|||RC
+30002108|Humans|D006801|263366|CT|Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.300.760.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.959.350.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D12.776.866.249.500 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.050.285.625 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.101.140.625 (Prostate-Specific Antigen)||RC
+30002108|Male|D008297|263366|CT|Prostatectomy;CT Treecode Lookup: E04.950.774.860 (Prostatectomy);Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.300.760.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.959.350.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D12.776.866.249.500 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.050.285.625 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.101.140.625 (Prostate-Specific Antigen)||RC
+30002108|*Geology|D005844|52911|MH|RtM via: Geology;Forced Leaf Node Lookup:geology|TI|MM|1274^10^0;834^10^0;783^7^0
+30002108|Ireland|D007494|52602|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|252^7^0
+30002108|London|D008131|52602|MH|RtM via: London;Forced Leaf Node Lookup:london|TI|MM|159^6^0
+30002108|Scotland|D012606|52599|MH|Forced Leaf Node Lookup:scottish|TI|MM|1121^8^0
+30002108|Periodicals as Topic|D010506|1000|MH|Forced as Topic||MM
+30002108|Prostatectomy|D011468|262366|MH|||RC
+30002108|Prostate-Specific Antigen|D017430|249031|MH|||RC
+30002141|Middle Aged|D008875|280149|CT|CT Text Lookup: middle-age|TI|MM;RC|1056^10^0
+30002141|Humans|D006801|280149|CT|Lookup: Aged Rule||MM;RC
+30002141|*Soils|D012987|41268|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|1095^5^0;916^5^0;747^5^0;597^5^0;510^5^0;229^5^0;54^5^0
+30002141|*Rivers|D045483|40623|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|983^5^0
+30002141|*Iron|D007501|40464|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|778^4^0
+30002141|Glioblastoma|D005909|279149|MH|||RC
+30002141|Brain Neoplasms|D001932|143697|MH|||RC
+30002141|*Groundwater|D060587|1347|MH|RtM via: Groundwater;Forced Non-Leaf Node Lookup:groundwaters|TI|MM|383^11^0
+30002141|*Forest|D065928|1119|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|84^6^0
+30002141|*Cation|D002412|495|ET|Entry Term Replacement for "Cations";RtM via: Cations;Forced Non-Leaf Node Lookup:cations|TI|MM|801^6^0
+30002112|*Limestone|D002119|25187|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|321^10^0;62^9^0
+30002112|Positron Emission Tomography Computed Tomography|D000072078|92480|MH|||RC
+30002112|Edetic Acid|D004492|92377|MH|||RC
+30002112|*Islands|D062312|180|MH|RtM via: Islands|TI|MM|94^6^0
+30002218|Plaque, Atherosclerotic|D058226|184306|MH|||RC
+30002218|Coronary Artery Disease|D003324|132168|MH|||RC
+30002218|*Spore|D013170|1542|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|725^5^0;439^5^0;32^5^0
+30002218|*Pollen|D011058|786|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|714^6^0;428^6^0;21^6^0
+30002218|Europe|D005060|0|MH|RtM via: Europe|TI|MM|666^6^0;229^6^0

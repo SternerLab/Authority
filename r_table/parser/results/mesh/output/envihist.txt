@@ -1,0 +1,1080 @@
+23049824|Animals|D000818|112086|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: fish|TI|MM;RC|118^7^0;30^4^0
+23049824|United States|D014481|112086|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|383^13^0;133^13^0;21^5^0
+23049824|*Animals, Wild|D000835|68433|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild animals;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|359^8^0;345^8^0;113^12^0;39^8^0
+23049824|Dry Eye Syndromes|D015352|111086|MH|||RC
+23049824|Tears|D013666|70455|MH|||RC
+25473032|United States|D014481|518529|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|95^8^0
+25473032|*Darkness|D003624|104071|MH|RtM via: Darkness;Forced Leaf Node Lookup:darkness|TI|MM|599^8^0
+25473032|Periodicals as Topic|D010506|1000|MH|Forced as Topic||MM
+25473032|Aortic Aneurysm|D001014|517529|MH|||RC
+25473032|Aneurysm, Dissecting|D000784|513622|MH|||RC
+25473032|New England|D009511|348|MH|RtM via: New England|TI|MM|206^11^0
+40608503|Humans|D006801|82668|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM|184^5^0
+40608503|Animals|D000818|82668|CT|Livestock;CT Treecode Lookup: B01.050.050 (Livestock)||MM;RC
+40608503|*Greenhouse Gases|D000074382|51327|MH|RtM via: Greenhouse Gases;Forced Leaf Node Lookup:greenhouse gases;checkForceMH Boosted|TI|MM;RC|1085^16^0;737^14^0;82^14^0
+40608503|*Ecosystem|D017753|41260|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|199^10^0
+40608503|*Carbon Dioxide|D002245|36164|MH|RtM via: carbon dioxide;Forced Leaf Node Lookup:carbon dioxide;checkForceMH Boosted|TI|MM;RC|478^14^0
+40608503|*Fuel, Fossil|D005579|31726|ET|Entry Term Replacement for "Fossil Fuels";RtM via: Fossil Fuels;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fossil-fuels|TI|MM;RC|112^11^0
+40608503|*Biomass|D018533|26929|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM;RC|297^7^0
+40608503|*Soil|D012987|26845|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|320^4^0
+40608503|*Juniperus|D018653|26507|MH|RtM via: Juniper;RtM via: Juniperus;Forced Leaf Node Lookup:junipers;checkForceMH Boosted|TI|MM|535^7^0
+40608503|*Livestock|D058751|23285|MH|RtM via: Livestock;Forced Leaf Node Lookup:livestocks;checkForceMH Boosted|TI|MM|370^9^0
+40608503|Utah|D014589|10900|MH|RtM via: Utah;Forced Leaf Node Lookup:utah|TI|MM|243^4^0;650^4^0
+40608503|*Atmosphere|D001272|27735|MH|RtM via: Atmosphere, planetary;Forced Non-Leaf Node Lookup:atmospheres|TI|MM;RC|502^10^0;1054^10^0
+40608503|*Forests|D065928|24672|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM;RC|657^7^0;436^6^0;543^9^0;232^7^0
+40608503|*Carbon Cycle|D057486|10890|MH|RtM via: Carbon Cycle;Forced Non-Leaf Node Lookup:carbon cycles|TI|MM|892^12^0;47^12^0;161^14^0
+40608503|*Study, Interdisciplinary|D058025|753|ET|Entry Term Replacement for "Interdisciplinary Studies";RtM via: Interdisciplinary Studies;Forced Non-Leaf Node Lookup:interdisciplinary study|TI|MM|854^23^0
+23049826|Humans|D006801|422678|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human;CT Text Lookup: humans|TI|MM;RC|428^6^0;291^5^0;745^5^0
+23049826|Animals|D000818|422678|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);Sharks;CT Treecode Lookup: B01.050.150.900.493 (Sharks)|TI|MM
+23049826|*Animals, Wild|D000835|184467|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild animals;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|921^12^0;89^8^0
+23049826|*Sharks|D012754|62120|MH|RtM via: Shark - fish;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sharks|TI|MM|616^3^0;604^6^0;459^5^0;336^5^0;114^5^0;672^6^0;531^5^0
+23049826|Stromal Interaction Molecule 1|D000071737|421678|MH|||RC
+23049826|ORAI1 Protein|D000071740|377052|MH|||RC
+23049826|California|D002140|3|MH|RtM via: California|TI|MM|190^10^0
+23049818|Male|D008297|180697|CT|CT Text Lookup: he;CT Text Lookup: him|TI|MM;RC|448^2^0;692^3^0
+23049818|Animals|D000818|180697|CT|Ursidae;CT Treecode Lookup: B01.050.150.900.649.313.750 (Ursidae);Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|128^7^0;518^7^0
+23049818|Humans|D006801|180697|CT|Forced Leaf Node Lookup:humans;African Americans;CT Treecode Lookup: M01.686 (African Americans);CT Text Lookup: human;CT Text Lookup: humans|TI|MM;RC|536^6^0
+23049818|United States|D014481|180697|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|276^9^0;308^8^0
+23049818|*Ursidae|D001503|101472|MH|RtM via: Black Bears;RtM via: Ursidae Family;RtM via: Ursus americanus;Forced Leaf Node Lookup:black bears;Forced Leaf Node Lookup:bears;checkForceMH Boosted|TI|MM|632^11^0;437^5^0
+23049818|*Animals, Wild|D000835|98208|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild animals;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|317^8^0;123^12^0
+23049818|*African Americans|D001741|66097|MH|RtM via: African American;Forced Leaf Node Lookup:african-americans;Forced Leaf Node Lookup:blacks|TI|MM|648^5^0;137^16^0
+23049818|*Enslaved Persons|D063948|32519|MH|RtM via: Enslaved Persons;Forced Leaf Node Lookup:slaves|TI|MM|654^6^0;154^6^0
+23049818|Azoxymethane|D001397|179697|MH|||RC
+23049818|Colonic Neoplasms|D003110|79799|MH|||RC
+23049818|*Violence|D014754|432|MH|RtM via: Violence;Forced Non-Leaf Node Lookup:violence|TI|MM|398^8^0
+25473301|Humans|D006801|112452076|CT|Forced Humans: university|TI|MM;RC
+25473301|*Universities|D014495|4537306|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|579^10^0;438^10^0
+25473301|Streptococcus sanguis|D013298|146863|MH|||RC
+25473301|Bacterial Proteins|D001426|29712|MH|||RC
+25473301|*Books|D001877|1023|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|305^5^0
+25473301|*Politics|D011057|207|MH|RtM via: Politics;Forced Non-Leaf Node Lookup:politics|TI|MM|337^8^0
+25473301|Europe|D005060|855|MH|RtM via: Europe|TI|MM|409^6^0
+25473301|Germany|D005858|855|MH|RtM via: Germany|TI|MM|397^7^0
+25473329|Humans|D006801|120689320|CT|Forced Humans: individuals|TI|MM;RC
+25473329|Brazil|D001938|4904744|MH|RtM via: Rio de Janeiro;RtM via: brazilian;Forced Leaf Node Lookup:brazil;Geo Lookup:rio de janeiro|TI;AB|MM|103^14^0;1135^9^0;919^9^0;384^9^0;53^9^0;541^6^0;824^6^0
+25473329|Nigeria|D009549|0|MH|Geo Lookup:jos||MM
+25473329|Adverse Drug Reaction Reporting Systems|D016907|172889|MH|||RC
+25473329|Pharmacovigilance|D060735|172803|MH|||RC
+25473329|*Policy|D057766|4296|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policies;Forced Non-Leaf Node Lookup:policy|TI|MM|1153^8^0;206^6^0
+25473329|*Endowment|D005376|2313|ET|Entry Term Replacement for "Financial Management";RtM via: Endowments;Forced Non-Leaf Node Lookup:endowments|TI|MM|841^9^0
+25473329|*Esthetics|D004954|1851|MH|RtM via: Esthetics (discipline);Forced Non-Leaf Node Lookup:aesthetics|TI|MM|1198^9^0
+25473328|United States|D014481|574345|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|739^8^0;220^8^0
+25473328|*Parks, Recreational|D000068316|384157|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|989^14^0;835^13^0;748^14^0;581^13^0;489^13^0;288^14^0;229^13^0;163^13^0;1181^14^0
+25473328|*World War II|D047789|192665|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|770^12^0
+25473328|Switzerland|D013557|191807|MH|Forced Leaf Node Lookup:swiss|TI|MM|829^5^0
+25473328|Dipeptidyl-Peptidase IV Inhibitors|D054873|573345|MH|||RC
+25473328|Hypoglycemic Agents|D007004|416069|MH|||RC
+25473328|*Policies|D057766|1167|ET|Entry Term Replacement for "Policy";RtM via: Policy;Forced Non-Leaf Node Lookup:policies|TI|MM|595^8^0
+25473328|*Attitudes|D001290|552|ET|Entry Term Replacement for "Attitude";RtM via: Attitude;Forced Non-Leaf Node Lookup:attitudes|TI|MM|387^9^0
+25473328|Europe|D005060|918|MH|RtM via: Europe|TI|MM|817^6^0;306^6^0
+25764490|Humans|D006801|111727492|CT|Forced Humans: university;Forced Humans: person|TI|MM;RC
+25764490|United States|D014481|111727492|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|295^8^0;114^8^0;448^8^0
+25764490|*Water|D014867|4489422|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|264^5^0
+25764490|Texas|D013781|4487790|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|180^5^0
+25764490|*Universities|D014495|4487583|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|190^10^0
+25764490|Phenols|D010636|60608|MH|||RC
+25764490|Glucosides|D005960|54816|MH|||RC
+25764490|*Policy|D057766|462|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|270^6^0
+25764490|California|D002140|372|MH|RtM via: California|TI|MM|334^10^0
+25473065|Pregnancy|D011247|98359|CT|Pregnancy Complications, Infectious;CT Treecode Lookup: C01.674 (Pregnancy Complications, Infectious);Pregnancy Complications, Infectious;CT Treecode Lookup: C13.703.700 (Pregnancy Complications, Infectious);Cesarean Section;CT Treecode Lookup: E04.520 (Cesarean Section)||RC
+25473065|Female|D005260|98359|CT|Pregnancy Complications, Infectious;CT Treecode Lookup: C01.674 (Pregnancy Complications, Infectious);Pregnancy Complications, Infectious;CT Treecode Lookup: C13.703.700 (Pregnancy Complications, Infectious);Cesarean Section;CT Treecode Lookup: E04.520 (Cesarean Section)||RC
+25473065|Animals|D000818|98359|CT|Ants;CT Treecode Lookup: B01.050.500.131 (Ants);Mammoths;CT Treecode Lookup: B01.050.150.900.649.833 (Mammoths);Arthropods;CT Treecode Lookup: B01.050.500.131 (Arthropods);Locusts;CT Treecode Lookup: B01.050.500.131 (Locusts)||MM
+25473065|*Ants|D001000|30373|MH|RtM via: Ants;RtM via: Solenopsis <ant>;Forced Leaf Node Lookup:ants;checkForceMH Boosted|TI|MM|45^4^0;880^9^0;885^4^0
+25473065|*Insecticides|D007306|30346|MH|RtM via: Insecticides;Forced Leaf Node Lookup:insecticides;checkForceMH Boosted|TI|MM|730^12^0
+25473065|*Mammoths|D056665|29080|MH|RtM via: mammoth <Mammuthus>;Forced Leaf Node Lookup:mammoths;checkForceMH Boosted|TI|MM|480^7^0
+25473065|*DDT|D003634|28954|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|928^3^0
+25473065|*Motion Pictures|D009040|16289|MH|RtM via: Movies;RtM via: Movie house;Forced Leaf Node Lookup:movies|TI|MM|780^6^0;224^9^0
+25473065|*Arthropods|D001181|15593|MH|RtM via: Arthropods;checkForceMH Boosted;Forced Non-Leaf Node Lookup:arthropods|TI|MM|488^10^0
+25473065|*Pesticides|D010575|15410|MH|RtM via: Pesticides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pesticides|TI|MM|912^10^0
+25473065|*Locusts|D006110|15161|ET|Entry Term Replacement for "Grasshoppers";RtM via: Locusts;checkForceMH Boosted;Forced Non-Leaf Node Lookup:locusts|TI|MM|68^7^0
+25473065|*Metaphor|D019365|15005|MH|RtM via: Metaphor;Forced Leaf Node Lookup:metaphors|TI|MM|539^9^0
+25473065|Pregnancy Complications, Infectious|D011251|97359|MH|||RC
+25473065|Cesarean Section|D002585|42594|MH|||RC
+25473065|*Anxiety|D001007|5244|MH|RtM via: Worried;RtM via: Anxiety|TI|MM|801^7^0;286^9^0
+25473065|*Fear|D005239|3840|MH|RtM via: Fear (Mental Process);Forced Non-Leaf Node Lookup:fears|TI|MM|637^5^0;315^4^0
+25473065|*Moths|D009036|1146|MH|RtM via: Porthetria dispar;Forced Non-Leaf Node Lookup:moths|TI|MM|855^11^0;861^5^0
+25473065|Cell Proliferation|D049109|1000|MH|Forced Non-Leaf Node Lookup:proliferation||MM|1012^13^0
+25764489|Animals|D000818|153275|CT|CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|260^7^0
+25764489|*Conservation of Natural Resources|D003247|41954|MH|RtM via: Protection, Environmental;Forced Leaf Node Lookup:environmental protection|TI|MM|563^24^0
+25764489|*Goals|D006040|41042|MH|Forced Leaf Node Lookup:goal|TI|MM|354^4^0
+25764489|Methicillin-Resistant Staphylococcus aureus|D055624|152275|MH|||RC
+25764489|Penicillin-Binding Proteins|D046915|114154|MH|||RC
+25764489|*Birds|D001717|1272|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM|272^5^0
+25764489|China|D002681|750|MH|RtM via: China|TI|MM|427^5^0;89^5^0
+25473166|*Social Change|D012922|9505|MH|RtM via: Social Impact;Forced Leaf Node Lookup:social impacts|TI|MM|65^14^0
+25473166|*Rivers|D045483|9358|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|101^5^0
+25473166|British Columbia|D001955|8971|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|119^16^0
+25473166|Acute Disease|D000208|39003|MH|||RC
+25473166|Pancreatitis|D010195|37775|MH|||RC
+23049854|United States|D014481|238088|CT|Forced Leaf Node Lookup:american|TI|MM|941^8^0
+23049854|Humans|D006801|1000|CT|Forced Humans:D Spouses||MM
+23049854|*Spouses|D018454|63769|MH|RtM via: husband;Forced Leaf Node Lookup:husbands|TI|MM|820^9^0;882^8^0
+23049854|*Colonialism|D018595|62806|MH|RtM via: Colonialism;Forced Leaf Node Lookup:colonialism|TI|MM|1274^11^0;958^11^0;304^8^0
+23049854|Ireland|D007494|62017|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|1462^7^0;1224^7^0;641^7^0;373^7^0
+23049854|Virginia|D014768|62017|MH|RtM via: Virginia;Forced Leaf Node Lookup:virginia|TI|MM|1505^8^0;1185^8^0;412^8^0
+23049854|Amyloid beta-Peptides|D016229|237088|MH|||RC
+23049854|Alzheimer Disease|D000544|188450|MH|||RC
+23049854|*Violence|D014754|927|MH|RtM via: Violence;Forced Non-Leaf Node Lookup:violence|TI|MM|1359^8^0
+23049854|England|D004739|1000|MH|Forced Non-Leaf Node Lookup:england||MM|88^7^0
+23049854|North America|D009656|3|MH|RtM via: North America|TI|MM|653^13^0
+20749643|Humans|D006801|86812340|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|1022^5^0
+20749643|United States|D014481|86812340|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|800^8^0
+20749643|*Diplomacy|D000067551|3230510|MH|RtM via: Diplomacy;Forced Leaf Node Lookup:diplomacy|TI|MM|479^9^0
+20749643|*Military Personnel|D008889|3230327|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|292^8^0
+20749643|*Leadership|D007857|3229916|MH|RtM via: Leadership;Forced Leaf Node Lookup:leadership|TI|MM|832^10^0;584^10^0
+20749643|*Hostility|D006791|3229886|MH|RtM via: Hostility;Forced Leaf Node Lookup:hostility|TI|MM|769^9^0
+20749643|Cholangiopancreatography, Endoscopic Retrograde|D002760|39762|MH|||RC
+20749643|Constriction, Pathologic|D003251|11309|MH|||RC
+20749643|*United Nations|D014480|630|MH|RtM via: United Nations;Forced Non-Leaf Node Lookup:united nations|TI|MM|989^14^0
+20749643|Policy|D057766|1000|MH|Forced Non-Leaf Node Lookup:policy||MM|208^6^0
+25473194|Humans|D006801|54297242|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|599^5^0
+25473194|Animals|D000818|54297242|CT|Flounder;CT Treecode Lookup: B01.050.150.900.493 (Flounder)|TI|MM
+25473194|*Flounder|D005432|4108645|MH|RtM via: Halibut;RtM via: Hippoglossus hippoglossus;Forced Leaf Node Lookup:halibut;checkForceMH Boosted|TI|MM|700^7^0;200^7^0;758^16^0;63^16^0;72^7^0;412^7^0;767^7^0
+25473194|*Emigration and Immigration|D004641|2125721|MH|RtM via: Immigration;Forced Leaf Node Lookup:immigrations|TI|MM|345^11^0
+25473194|*Fisheries|D005398|2055620|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fishery|TI|MM|775^7^0;80^7^0
+25473194|*Taste|D013649|2054672|MH|RtM via: Taste Perception;Forced Leaf Node Lookup:tastes|TI|MM|400^6^0
+25473194|*Ecosystem|D017753|2054348|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM|619^10^0
+25473194|*Commodification|D032821|2054273|MH|RtM via: Commodification;Forced Leaf Node Lookup:commodification|TI|MM|277^15^0;305^15^0
+25473194|Gastric Bypass|D015390|275508|MH|||RC
+25473194|Hernia, Abdominal|D046449|236516|MH|||RC
+25473193|Humans|D006801|106211|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human|TI|MM;RC|453^5^0
+25473193|Animals|D000818|106211|CT|Forced Non-Leaf Node Lookup:animals||MM|395^7^0
+25473193|*Endocrine Disruptors|D052244|73974|MH|RtM via: Endocrine Disruptors;Forced Leaf Node Lookup:endocrine disruptors;checkForceMH Boosted|TI|MM|808^19^0;371^20^0;163^20^0
+25473193|*Diethylstilbestrol|D004054|50538|MH|RtM via: diethylstilbestrol;Forced Leaf Node Lookup:diethylstilbestrol;checkForceMH Boosted|TI|MM|711^18^0
+25473193|*Uncertainty|D035501|25662|MH|RtM via: Uncertainty;Forced Leaf Node Lookup:uncertainty|TI|MM|870^11^0
+25473193|*Floods|D055868|25056|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|332^5^0
+25473193|*Pollutants|D004785|24840|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|199^10^0
+25473193|Colectomy|D003082|105211|MH|||RC
+25473193|Anastomosis, Surgical|D000714|69883|MH|||RC
+25473193|*Cancers|D009369|17481|ET|Entry Term Replacement for "Neoplasms";RtM via: Malignant Neoplasms;RtM via: Primary malignant neoplasm;Forced Non-Leaf Node Lookup:cancers|TI|MM|59^7^0
+25473193|*Intersexuality|D012734|6369|ET|Entry Term Replacement for "Disorders of Sex Development";RtM via: Hermaphroditism;RtM via: Intersexuality;Forced Non-Leaf Node Lookup:intersexuality|TI|MM|30^14^0
+25473193|*Development, Sexual|D046468|5886|ET|Entry Term Replacement for "Sexual Development";RtM via: Sexual Development;Forced Non-Leaf Node Lookup:sexual development|TI|MM|275^18^0
+25473193|*Systems, Endocrine|D004703|3831|ET|Entry Term Replacement for "Endocrine System";RtM via: Endocrine system;Forced Non-Leaf Node Lookup:endocrine systems|TI|MM|246^17^0
+25473193|*Hormones|D006728|2688|MH|RtM via: Hormones;Forced Non-Leaf Node Lookup:hormones|TI|MM|221^8^0
+25473193|*Infertility|D007246|1446|MH|RtM via: Infertility;Forced Non-Leaf Node Lookup:infertility|TI|MM|72^11^0
+25473193|*Synthetic Estrogen|D045166|1227|ET|Entry Term Replacement for "Estradiol Congeners";RtM via: Estrogens, Synthetic;Forced Non-Leaf Node Lookup:synthetic estrogens|TI|MM|747^18^0
+25473193|*Reproduction|D012098|861|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|46^12^0;459^12^0
+25473193|*Government|D006076|306|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|482^10^0
+25473193|*Studies, Epidemiological|D016021|1893|ET|Entry Term Replacement for "Epidemiologic Studies";RtM via: Epidemiologic Studies|TI|MM|407^23^0
+25473262|Humans|D006801|50574|CT|Population Groups;CT Treecode Lookup: M01.686 (Population Groups);Population Groups;CT Treecode Lookup: N01.224.708 (Population Groups)||MM;RC
+25473262|*Population Groups|D044382|14249|MH|RtM via: Indigenous Population (Natives);Forced Leaf Node Lookup:native-born|TI|MM|229^11^0;49^11^0
+25473262|Retinal Artery Occlusion|D015356|49574|MH|||RC
+25473262|Retinal Vein Occlusion|D012170|44991|MH|||RC
+25473262|*Immigrants|D054242|687|ET|Entry Term Replacement for "Emigrants and Immigrants";RtM via: Immigrant (person);Forced Non-Leaf Node Lookup:immigrants|TI|MM|447^10^0;200^10^0;75^10^0
+25473134|United States|D014481|154845|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM;RC|287^8^0
+25473134|Wisconsin|D014922|27375|MH|RtM via: Wisconsin;Forced Leaf Node Lookup:wisconsin|TI|MM|141^9^0
+25473134|*Ownership|D010067|26823|MH|RtM via: Ownership;Forced Leaf Node Lookup:ownership|TI|MM|981^9^0
+25473134|*Pinus|D028223|26010|MH|RtM via: Pinus strobus;RtM via: Pinus <genus>;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM|41^18^0;61^13^0;730^4^0;621^4^0;228^4^0
+25473134|*Conifers|D064028|25992|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM|494^8^0
+25473134|*Goals|D006040|24849|MH|Forced Leaf Node Lookup:goals|TI|MM|804^5^0
+25473134|*Rivers|D045483|24849|MH|Forced Leaf Node Lookup:rivers|TI|MM|111^5^0;651^5^0
+25473134|Sex Education|D012736|153845|MH|||RC
+25473134|Sexual Abstinence|D012746|122775|MH|||RC
+25473134|*Study, Interdisciplinary|D058025|4359|ET|Entry Term Replacement for "Interdisciplinary Studies";RtM via: Interdisciplinary Studies;Forced Non-Leaf Node Lookup:interdisciplinary study|TI|MM|509^23^0
+25473134|*Forests|D065928|759|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|786^6^0;1036^7^0;308^7^0;430^7^0;259^6^0;837^6^0
+25473134|Great Lakes Region|D006114|3471|MH|RtM via: Great Lakes Region|TI|MM|692^18^0;202^18^0
+40608542|Humans|D006801|9549|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+40608542|Male|D008297|9549|CT|CT Text Lookup: he|TI|MM;RC|557^2^0
+40608542|*Parks, Recreational|D000068316|8549|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM;RC|861^13^0;603^14^0;390^14^0
+40608542|*African Americans|D001741|2568|MH|RtM via: African American;Forced Leaf Node Lookup:african americans;Forced Leaf Node Lookup:negro|TI|MM;RC|650^16^0;281^17^0;504^5^0
+40608542|*Camping|D002165|1909|MH|RtM via: Camping (activity);Forced Leaf Node Lookup:camping|TI|MM|21^7^0;196^7^0
+40608542|*Automobiles|D001336|967|MH|RtM via: Automobiles;Forced Leaf Node Lookup:automobiles|TI|MM|136^11^0
+40608542|*Leadership|D007857|868|MH|RtM via: Leadership;Forced Leaf Node Lookup:leadership|TI|MM|729^10^0
+40608542|*World War II|D047789|829|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|955^12^0
+40608542|*Racial Segregations|D000072699|2352|ET|Entry Term Replacement for "Social Segregation";RtM via: Racial Segregation|TI|MM|1023^11^0;370^19^0
+40608542|*Policy|D057766|1134|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|888^6^0
+25473038|Wound Healing|D014945|162959|MH|||RC
+25473038|Cicatrix|D002921|90841|MH|||RC
+23049856|Animals|D000818|233924|CT|Turkeys;CT Treecode Lookup: B01.050.150.900.248 (Turkeys);Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);Poultry;CT Treecode Lookup: B01.050.050 (Poultry);Poultry;CT Treecode Lookup: B01.050.150.900.248 (Poultry)||MM;RC
+23049856|United States|D014481|233924|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|321^13^0
+23049856|*Turkeys|D014422|73008|MH|RtM via: Meleagris gallopavo silvestris;RtM via: Meleagridinae;RtM via: Turkey (organism);Forced Leaf Node Lookup:turkeys;checkForceMH Boosted|TI|MM|514^19^0;989^7^0;912^7^0;287^11^0;43^7^0;199^7^0;464^7^0
+23049856|*Animals, Wild|D000835|70659|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|741^8^0
+23049856|*Poultry|D011200|36264|MH|RtM via: Fowls, Domestic;Forced Leaf Node Lookup:poultry|TI|MM|794^7^0
+23049856|*Supermarkets|D000085943|34083|MH|RtM via: Supermarkets;Forced New Lookup:supermarket|TI|MM|243^12^0
+23049856|CD55 Antigens|D018958|232924|MH|||RC
+23049856|CD59 Antigens|D018957|209032|MH|||RC
+23049856|*Biodiversity|D044822|486|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM|1034^12^0
+20749672|Cattle|D002417|13426|CT|RtM via: Bovine;RtM via: Cattle;Forced Leaf Node Lookup:cattle;Forced Leaf Node Lookup:beef;Forced Animals Lookup:bovine;CT Text Lookup: beef;CT Text Lookup: beef cattle;CT Text Lookup: bovine;CT Text Lookup: cattle|TI|MM|54^6^0;413^6^0;694^6^0;408^4^0;689^4^0
+20749672|Animals|D000818|13426|CT|RtM via: Cattle;Forced Animals Lookup:bovine;CT Text Lookup: animal;CT Text Lookup: beef;CT Text Lookup: beef cattle;CT Text Lookup: bovine;CT Text Lookup: cattle;Forced Non-Leaf Node Lookup:animals|TI|MM;RC|54^6^0;808^6^0;408^4^0;413^6^0
+20749672|Humans|D006801|1000|CT|Forced Humans:D Pastors||MM
+20749672|Italy|D007558|5749|MH|RtM via: Italians;RtM via: Italy;Forced Leaf Node Lookup:italians|TI|MM|725^8^0;288^5^0;441^5^0
+20749672|Hungary|D006814|2008|MH|RtM via: Hungarian (ethnic group);Forced Leaf Node Lookup:hungarians|TI|MM|708^9^0
+20749672|Europe|D005060|12426|MH|RtM via: Western Europe;RtM via: central europe;RtM via: Europe;Forced Non-Leaf Node Lookup:western europe|TI|MM;RC|627^14^0;464^14^0;645^14^0;1219^6^0;933^6^0;167^6^0;653^6^0
+20749672|*Pastors|D002977|1230|ET|Entry Term Replacement for "Clergy";RtM via: Pastors|TI|MM;RC|1063^11^0
+20749672|*Agriculture|D000383|924|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|1050^11^0
+20749672|*Physical Phenomena|D055585|894|MH|RtM via: Force|TI|MM|947^5^0
+20749672|*Zoonotic Diseases|D015047|768|ET|Entry Term Replacement for "Zoonoses";RtM via: Zoonoses;Forced Non-Leaf Node Lookup:zoonotic diseases|TI|MM|258^17^0
+20749672|*Habits|D006184|234|MH|RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|375^6^0
+40608469|Humans|D006801|1000|CT|Forced Humans:D Health Personnel||MM
+40608469|*Historiography|D006663|13123|MH|RtM via: Historiography;Forced Leaf Node Lookup:historiography|TI|MM;RC|953^14^0;383^14^0
+40608469|*Capitalism|D030861|2734|MH|RtM via: Capitalism;Forced Leaf Node Lookup:capitalism|TI|MM|130^10^0
+40608469|*Colonialism|D018595|2527|MH|RtM via: Colonialism;Forced Leaf Node Lookup:colonialism|TI|MM|117^11^0
+40608469|Latin America|D007843|1895|MH|RtM via: Latin America;Forced Leaf Node Lookup:latin american|TI|MM;RC|804^13^0;21^14^0
+40608469|*Fellowships and Scholarships|D005257|1426|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|567^11^0
+40608469|*Natural Sciences|D010811|825|ET|Entry Term Replacement for "Natural Science Disciplines";RtM via: Natural Science Disciplines;Forced Non-Leaf Node Lookup:natural sciences|TI|MM|622^16^0
+40608469|*Health Personnel|D006282|666|MH|RtM via: Historian|TI|MM;RC|790^10^0
+40608469|*Disasters|D004190|504|MH|RtM via: Disasters;Forced Non-Leaf Node Lookup:disasters|TI|MM|707^9^0
+40608469|*Narration|D033262|456|MH|RtM via: Narration|TI|MM|675^10^0
+25473031|*Farms|D000072480|122820|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farm|TI|MM|463^7^0;46^4^0
+25473031|Aortic Valve Stenosis|D001024|587515|MH|||RC
+25473031|Aortic Valve|D001021|490830|MH|||RC
+25473031|*Resource, Natural|D000067936|1557|ET|Entry Term Replacement for "Natural Resources";RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|224^16^0
+25473031|*Forests|D065928|264|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|600^6^0;475^7^0;292^6^0;161^6^0
+25473031|New England|D009511|0|MH|RtM via: New England|TI|MM|451^11^0;97^11^0
+3985740|Humans|D006801|221767|CT|Forced Leaf Node Lookup:humans|TI|MM;RC|85^5^0
+3985740|Dogs|D004285|221767|CT|RtM via: Canis familiaris;Forced Leaf Node Lookup:dog;CT Text Lookup: dog|TI|MM|326^3^0;211^3^0;112^3^0
+3985740|Animals|D000818|221767|CT|RtM via: Canis familiaris;Macropodidae;CT Treecode Lookup: B01.050.150.900.649.573 (Macropodidae);CT Text Lookup: dog|TI|MM|326^3^0;211^3^0;112^3^0
+3985740|*Macropodidae|D007614|50349|MH|RtM via: Kangaroo;RtM via: Macropus <genus>;Forced Leaf Node Lookup:kangaroos;checkForceMH Boosted|TI|MM|366^8^0
+3985740|*Firearms|D005389|25143|MH|RtM via: Guns;Forced Leaf Node Lookup:guns|TI|MM|357^4^0
+3985740|Tasmania|D013648|24678|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|46^8^0
+3985740|Budd-Chiari Syndrome|D006502|220767|MH|||RC
+3985740|Hepatic Veins|D006503|151519|MH|||RC
+3985740|*Development, Agricultural|D000383|312|ET|Entry Term Replacement for "Agriculture";RtM via: Agricultural Development (occupation);Forced Non-Leaf Node Lookup:agriculture|TI|MM|584^23^0
+3985740|*Islands|D062312|291|MH|RtM via: Islands|TI|MM|36^6^0
+25473163|*Floods|D055868|17575|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|739^6^0;496^8^0;326^8^0;188^8^0;69^6^0
+25473163|*Droughts|D055864|16855|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|695^8^0;557^8^0
+25473163|*Rivers|D045483|16486|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|609^5^0;297^5^0;175^5^0
+25473163|Fluid Therapy|D005440|79648|MH|||RC
+25473163|Resuscitation|D012151|53686|MH|||RC
+25764460|Animals|D000818|210049|CT|Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes)|TI|MM
+25764460|*Ecosystem|D017753|136781|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM;RC|81^9^0
+25764460|*Strigiformes|D020305|67828|MH|RtM via: Strix occidentalis;Forced Leaf Node Lookup:owl;checkForceMH Boosted|TI|MM|522^11^0;530^3^0;787^3^0
+25764460|*Leadership|D007857|33419|MH|RtM via: Leadership;Forced Leaf Node Lookup:leadership|TI|MM|918^10^0
+25764460|*Goals|D006040|32582|MH|Forced Leaf Node Lookup:goals|TI|MM|150^5^0
+25764460|*Biodiversity|D044822|209049|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|1050^12^0;799^12^0;456^12^0
+25764460|Basidiomycota|D001487|58911|MH|||RC
+25764460|*Policy|D057766|1092|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|1074^6^0;73^6^0;725^6^0
+23049820|Animals|D000818|130833|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);Ursidae;CT Treecode Lookup: B01.050.150.900.649.313.750 (Ursidae);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|653^7^0
+23049820|Humans|D006801|130833|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human;CT Text Lookup: humans|TI|MM;RC|642^6^0;577^5^0
+23049820|United States|D014481|130833|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|133^13^0
+23049820|*Animals, Wild|D000835|86505|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild life;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|894^8^0;603^8^0;815^9^0;483^8^0;198^9^0;345^8^0;77^9^0;93^8^0;966^8^0;1164^8^0
+23049820|*Ursidae|D001503|53869|MH|RtM via: Ursidae Family;Forced Leaf Node Lookup:bears;checkForceMH Boosted|TI|MM|772^5^0
+23049820|*Taste|D013649|27587|MH|RtM via: Taste Perception;Forced Leaf Node Lookup:tastes|TI|MM|806^5^0
+23049820|Complementarity Determining Regions|D022801|129833|MH|||RC
+23049820|Immunoglobulin Heavy Chains|D007143|77575|MH|||RC
+25473330|Pregnancy|D011247|57853|CT|Pregnant Women;CT Treecode Lookup: M01.975.807 (Pregnant Women);Prenatal Care;CT Treecode Lookup: N02.421.143.620 (Prenatal Care)||RC
+25473330|Female|D005260|57853|CT|Pregnant Women;CT Treecode Lookup: M01.975.807 (Pregnant Women);Prenatal Care;CT Treecode Lookup: N02.421.143.620 (Prenatal Care)||RC
+25473330|Humans|D006801|57853|CT|Pregnant Women;CT Treecode Lookup: M01.975.807 (Pregnant Women);Prenatal Care;CT Treecode Lookup: E02.760 (Prenatal Care);Prenatal Care;CT Treecode Lookup: N02.421.143 (Prenatal Care);Prenatal Care;CT Treecode Lookup: N02.421.143.620 (Prenatal Care);Prenatal Care;CT Treecode Lookup: N02.421.585 (Prenatal Care)||RC
+25473330|*Wetlands|D053833|10468|MH|RtM via: Wetlands;Forced Leaf Node Lookup:wetlands|TI|MM|327^7^0;64^7^0
+25473330|China|D002681|10390|MH|Forced Leaf Node Lookup:chinese|TI|MM|145^7^0
+25473330|Tibet|D018609|10390|MH|Forced Leaf Node Lookup:tibetan|TI|MM|163^7^0;189^7^0
+25473330|Pregnant Women|D037841|56853|MH|||RC
+25473330|Prenatal Care|D011295|39688|MH|||RC
+3986234|*Famine|D000079685|25314|MH|RtM via: Famine;Forced Leaf Node Lookup:famine|TI|MM|718^7^0
+3986234|*Specialization|D013038|25212|MH|RtM via: Hospital specialist;Forced Leaf Node Lookup:specialists|TI|MM|427^11^0
+3986234|Myocardial Contraction|D009200|93513|MH|||RC
+3986234|Sarcoplasmic Reticulum|D012519|91547|MH|||RC
+25764463|*Droughts|D055864|135523|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|408^7^0
+25764463|Australia|D001315|134701|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|223^9^0;656^10^0
+25764463|*Reproducibility of Results|D015203|134698|MH|Forced Lookup:reliability|TI|MM|74^11^0
+25764463|*Water Insecurity|D000085222|134698|MH|RtM via: Water Scarcity;Forced New Lookup:water scarcity|TI|MM|619^14^0
+25764463|beta-Lactamases|D001618|416223|MH|||RC
+25764463|Drug Resistance, Multiple, Bacterial|D024901|245718|MH|||RC
+25764463|*Development, Agricultural|D000383|2994|ET|Entry Term Replacement for "Agriculture";RtM via: Agricultural Development (occupation);Forced Non-Leaf Node Lookup:agricultural development|TI|MM|486^24^0
+25473169|United States|D014481|585756|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|25^13^0
+25473169|*Wildfires|D000075923|96607|MH|Forced Leaf Node Lookup:wildland fires|TI|MM|59^13^0
+25473169|Helicobacter Infections|D016481|584756|MH|||RC
+25473169|Helicobacter pylori|D016480|562498|MH|||RC
+25473169|Canada|D002170|429|MH|RtM via: Canada|TI|MM|43^6^0
+20749673|Humans|D006801|6084|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+20749673|*Fellowships and Scholarships|D005257|5084|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|155^11^0
+20749673|*Consciousness|D003243|4964|MH|RtM via: Conscious;Forced Leaf Node Lookup:consciousness|TI|MM|217^13^0
+20749673|*Humanities|D006809|3489|MH|RtM via: Humanities;Forced Non-Leaf Node Lookup:humanities|TI|MM|1136^10^0;512^10^0
+20749673|*Ethnic Groups|D005006|2847|MH|RtM via: Ethnic group|TI|MM|140^6^0
+20749673|*Text Messaging|D060145|1992|MH|RtM via: Text Messages|TI|MM|940^5^0;579^5^0
+20749673|*Civilization|D002962|1476|MH|RtM via: Civilization;Forced Non-Leaf Node Lookup:civilizations|TI|MM|702^12^0;634^13^0;38^13^0
+20749673|*Curriculum|D003479|462|MH|RtM via: Educational Curriculum;Forced Non-Leaf Node Lookup:curriculum;Forced Non-Leaf Node Lookup:curricula|TI|MM|648^10^0;52^9^0
+40608470|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+40608470|*World War I|D047828|45930|MH|RtM via: World War I;Forced Leaf Node Lookup:first world wars;Forced Leaf Node Lookup:great wars|TI|MM;RC|1066^15^0;212^9^0;169^15^0
+40608470|*Military Personnel|D008889|12597|MH|RtM via: Soldiers;RtM via: Military Personnel;Forced Leaf Node Lookup:military;Forced Leaf Node Lookup:soldiers|TI|MM;RC|642^8^0;527^8^0;319^8^0
+40608470|Austria|D001317|4404|MH|RtM via: Austrians;Forced Leaf Node Lookup:austrians|TI|MM|152^9^0
+40608470|*Historiography|D006663|3534|MH|RtM via: Historiography;Forced Leaf Node Lookup:historiography|TI|MM|190^14^0
+40608470|Europe|D005060|5646|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM;RC|724^6^0
+40608470|Germany|D005858|4089|MH|RtM via: Germany;Forced Non-Leaf Node Lookup:germany|TI|MM;RC|1017^7^0
+40608470|*Heroism|D066279|612|ET|Entry Term Replacement for "Courage";RtM via: Courage|TI|MM|505^6^0
+40608470|*Body Weights and Measures|D001837|432|MH|RtM via: Height / growth measure|TI|MM|512^7^0
+40608470|*Technology|D013672|225|MH|RtM via: Technology;Forced Non-Leaf Node Lookup:technology|TI|MM|328^10^0
+40608470|*Industry, Heavy|D008669|51|ET|Entry Term Replacement for "Metallurgy";RtM via: Industries, Heavy;Forced Non-Leaf Node Lookup:heavy industry|TI|MM|300^14^0
+23049827|United States|D014481|137162|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|102^13^0
+23049827|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+23049827|*Antidotes|D000931|55382|MH|RtM via: Antidote;Forced Leaf Node Lookup:antidotes;checkForceMH Boosted|TI|MM|996^8^0
+23049827|*Military Personnel|D008889|27931|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|1270^8^0;949^8^0;671^8^0;466^10^0;292^8^0;1181^8^0
+23049827|*Fellowships and Scholarships|D005257|27496|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|1054^11^0
+23049827|United Kingdom|D006113|27169|MH|Forced Lookup:britain|TI|MM|77^7^0
+23049827|Electroencephalography|D004569|136162|MH|||RC
+23049827|Cortical Synchronization|D003344|130314|MH|||RC
+23049827|*Impact, Environmental|D004777|3519|ET|Entry Term Replacement for "Environment";RtM via: Impacts, Environmental;Forced Non-Leaf Node Lookup:environmental impact|TI|MM|259^20^0
+23049827|France|D005602|3|MH|RtM via: France|TI|MM|86^6^0
+23049822|Animals|D000818|166834|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species)|TI|MM
+23049822|*Animals, Wild|D000835|94498|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|946^8^0;409^8^0;88^8^0
+23049822|*Endangered Species|D056727|94000|MH|RtM via: Endangered Species;Forced Leaf Node Lookup:endangered species;checkForceMH Boosted|TI|MM|540^18^0
+23049822|Microbial Sensitivity Tests|D008826|165834|MH|||RC
+23049822|Leptospermum|D031649|159913|MH|||RC
+23049822|*Communities, Biological|D058448|2628|ET|Entry Term Replacement for "Biota";RtM via: Biological Community;Forced Non-Leaf Node Lookup:biological communities|TI|MM|798^22^0
+23049822|*Attention|D001288|15|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|846^9^0
+40608479|Humans|D006801|37507084|CT|Forced Humans: professional;Forced Humans: all of us;Forced Lookup:all of us;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|530^9^0;259^12^0
+40608479|Chicago|D002641|1390680|MH|RtM via: Chicago;Forced Leaf Node Lookup:chicago|TI|MM|334^7^0
+40608479|*Population Health|D000075485|0|MH|Forced Lookup:all of us|TI|MM|530^9^0
+40608479|*Motivation|D009042|35826|MH|RtM via: Motivation|TI|MM|509^6^0
+40608479|*Emotions|D004644|3084|MH|RtM via: Passion|TI|MM;RC|542^7^0;290^7^0
+40608479|*Cognition|D003071|1074|MH|RtM via: Above average intellect|TI|MM|153^6^0
+40608479|*Educational Personnel|D000071195|432|MH|RtM via: Professor|TI|MM|484^9^0
+40608479|*Photography|D010781|234|MH|RtM via: Photography;Forced Non-Leaf Node Lookup:photography|TI|MM;RC|302^11^0
+40608479|*Books|D001877|225|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|412^5^0
+25473298|Humans|D006801|560951066|CT|Forced Humans: professional;Forced Humans: students;Forced Humans: college;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|384^12^0;508^12^0
+25473298|*Goals|D006040|20820665|MH|Forced Leaf Node Lookup:goals|TI|MM|632^5^0
+25473298|bcl-2 Homologous Antagonist-Killer Protein|D050998|275312|MH|||RC
+25473298|bcl-X Protein|D051020|167346|MH|||RC
+25473298|*Students|D013334|2715|MH|RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM|661^8^0
+25473298|Ecology|D004463|1000|MH|Forced Non-Leaf Node Lookup:ecologists||MM|347^10^0;574^10^0;968^10^0;1265^10^0
+25473298|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|1168^7^0
+25473263|Humans|D006801|1000|CT|Forced Humans:D Policy Makers||MM
+25473263|*Environmental Policy|D058735|52608|MH|RtM via: Environmental Policy;Forced Leaf Node Lookup:environmental policy|TI|MM|507^20^0
+25473263|Meibomian Glands|D008537|449087|MH|||RC
+25473263|Tears|D013666|220022|MH|||RC
+25473263|*Policy Makers|D000288|798|ET|Entry Term Replacement for "Administrative Personnel";RtM via: Policy Makers;Forced Non-Leaf Node Lookup:policy makers|TI|MM|629^13^0
+25473264|Humans|D006801|80903656|CT|Forced Humans: people|TI|MM;RC
+25473264|*Water|D014867|3304128|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|268^5^0
+25473264|*World War II|D047789|3303588|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|323^12^0
+25473264|*Federal Government|D035082|3303573|MH|RtM via: Federal Government;Forced Leaf Node Lookup:federal government|TI|MM|478^18^0
+25473264|*Water Insecurity|D000085222|3303528|MH|RtM via: Water Insecurity;Forced New Lookup:water insecurity|TI|MM|728^16^0
+25473264|Arizona|D001130|3303525|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM|446^7^0;509^7^0
+25473264|Keratomileusis, Laser In Situ|D020731|300707|MH|||RC
+25473264|Lasers, Excimer|D054018|260201|MH|||RC
+25473264|*Lifestyle|D008019|174|ET|Entry Term Replacement for "Life Style";RtM via: Life Style;Forced Non-Leaf Node Lookup:lifestyles|TI|MM|172^9^0
+25473264|*Groundwater|D060587|150|MH|RtM via: Groundwater;RtM via: Aquifers;Forced Non-Leaf Node Lookup:groundwaters;Forced Non-Leaf Node Lookup:aquifers|TI|MM|517^11^0;568^11^0;337^11^0;286^8^0
+25473327|Male|D008297|146564|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|96^4^0
+25473327|Humans|D006801|1000|CT|Forced Humans:D Veterans||MM
+25473327|*Trees|D014197|52553|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|214^5^0
+25473327|*Forestry|D016468|30919|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|288^8^0
+25473327|*Veterans|D014728|25657|MH|RtM via: Veterans;Forced Leaf Node Lookup:veterans|TI|MM|347^8^0
+25473327|*Vocational Education|D014829|25387|MH|RtM via: Vocational Training;Forced Leaf Node Lookup:vocational training|TI|MM|265^19^0
+25473327|*World War I|D047828|25201|MH|RtM via: World War I;Forced Leaf Node Lookup:world war i|TI|MM|335^11^0
+25473327|Therapeutic Equivalency|D013810|145564|MH|||RC
+25473327|Tandem Mass Spectrometry|D053719|65527|MH|||RC
+25473327|*Forest|D065928|2658|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|374^6^0
+25473327|*Resource, Natural|D000067936|1533|ET|Entry Term Replacement for "Natural Resources";RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|113^16^0
+25473327|*Manpower|D000078329|234|ET|Entry Term Replacement for "Workforce";RtM via: Workforce - population group;Forced Non-Leaf Node Lookup:manpowers|TI|MM|224^8^0
+23049785|*Search Engine|D057386|112459|MH|RtM via: Search Engine;Forced Leaf Node Lookup:search engines|TI|MM|758^13^0
+23049785|*Language|D007802|99673|MH|RtM via: Languages;Forced Leaf Node Lookup:languages|TI|MM|789^9^0
+23049785|*Fellowships and Scholarships|D005257|95308|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|208^11^0
+23049785|*Protestantism|D033303|95266|MH|RtM via: Protestant, follower of religion;Forced Leaf Node Lookup:protestants|TI|MM|29^10^0
+23049785|Rome|D012384|95059|MH|Forced Leaf Node Lookup:rome|TI|MM|141^4^0;251^4^0;334^4^0;422^4^0;547^4^0;655^4^0
+23049785|Pattern Recognition, Automated|D010363|437551|MH|||RC
+23049785|Artificial Intelligence|D001185|369261|MH|||RC
+23049785|Demography|D003710|1000|MH|Forced Non-Leaf Node Lookup:demographics||MM|112^11^0
+23049785|Malaria|D008288|1000|MH|Forced Non-Leaf Node Lookup:malaria||MM|173^7^0
+23049785|Northern Europe|D005060|3|ET|Entry Term Replacement for "Europe";RtM via: Northern Europe|TI|MM|75^15^0
+23049825|Humans|D006801|60515|CT|Forced Leaf Node Lookup:humans|TI|MM;RC|110^6^0;235^6^0;826^6^0;717^5^0
+23049825|Animals|D000818|60515|CT|RtM via: Rattus;RtM via: Rattus norvegicus;Forced Lookup:deer;Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);Deer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Deer)|TI|MM|650^4^0;462^11^0;672^4^0
+23049825|Rats|D051381|60515|CT|RtM via: Rattus;RtM via: Rattus norvegicus;Forced Non-Leaf Node Lookup:norway rats;Forced Non-Leaf Node Lookup:rats|TI|MM|650^4^0;462^11^0
+23049825|*Animals, Wild|D000835|42546|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|814^8^0;348^8^0;210^8^0;41^8^0;121^8^0;262^8^0;444^8^0
+23049825|*West Nile virus|D014902|41580|MH|RtM via: West Nile viral infection;RtM via: West Nile virus;Forced Leaf Node Lookup:west nile virus;checkForceMH Boosted|TI|MM|942^15^0
+23049825|*Plague|D010930|23157|MH|RtM via: Plague;Forced Leaf Node Lookup:plague|TI|MM|775^6^0
+23049825|*Urbanization|D014507|21747|MH|RtM via: Urbanization;Forced Leaf Node Lookup:urbanizations|TI|MM|497^12^0
+23049825|*Cities|D002947|21603|MH|RtM via: Cities;Forced Leaf Node Lookup:cities|TI|MM|836^6^0
+23049825|*Deer|D003670|2169|MH|RtM via: Odocoileus virginianus;Forced Lookup:deer|TI|MM|659^17^0;672^4^0
+23049825|Glaucoma, Open-Angle|D005902|52940|MH|||RC
+23049825|Polymorphism, Genetic|D011110|48018|MH|||RC
+23049825|*Zoonotic Diseases|D015047|6894|ET|Entry Term Replacement for "Zoonoses";RtM via: Zoonoses;Forced Non-Leaf Node Lookup:zoonotic diseases|TI|MM|749^17^0
+23049825|*Disease, Lyme|D008193|1335|ET|Entry Term Replacement for "Lyme Disease";RtM via: Lyme Disease;Forced Non-Leaf Node Lookup:lyme disease|TI|MM|925^12^0
+23049825|*Encephalitis|D004660|555|MH|RtM via: Encephalitis;Forced Non-Leaf Node Lookup:encephalitis|TI|MM|786^12^0
+23049825|*Environmental Health|D004782|384|MH|RtM via: Environmental Health;Forced Non-Leaf Node Lookup:environmental healths|TI|MM|283^20^0
+23049825|*Policies|D057766|282|ET|Entry Term Replacement for "Policy";RtM via: Policy;Forced Non-Leaf Node Lookup:policies|TI|MM|311^8^0
+23050648|Animals|D000818|93589|CT|RtM via: Subfamily Suinae;RtM via: Family suidae;CT Text Lookup: animal;Forced Non-Leaf Node Lookup:animals|TI|MM;RC|828^3^0;70^3^0;516^4^0;404^5^0;750^6^0;1056^6^0
+23050648|Swine|D013552|93589|CT|RtM via: Porcine species;RtM via: Subfamily Suinae;RtM via: Family suidae;Forced Non-Leaf Node Lookup:swine;Forced Non-Leaf Node Lookup:hogs;Forced Non-Leaf Node Lookup:pigs|TI|MM|828^3^0;70^3^0;516^4^0;404^5^0;127^4^0;218^4^0;699^3^0
+23050648|*Motivation|D009042|16446|MH|RtM via: Incentives;Forced Leaf Node Lookup:incentives|TI|MM|380^10^0
+23050648|*Capitalism|D030861|15888|MH|RtM via: Capitalism;Forced Leaf Node Lookup:capitalism|TI|MM|916^10^0
+23050648|China|D002681|15306|MH|Forced Leaf Node Lookup:chinese|TI|MM|62^7^0;508^7^0
+23050648|*Farms|D000072480|15306|MH|Forced Leaf Node Lookup:farm|TI|MM|733^4^0
+23050648|Histone Deacetylase Inhibitors|D056572|66887|MH|||RC
+23050648|Histone Deacetylases|D006655|51707|MH|||RC
+23050648|*Meat|D008460|1128|MH|RtM via: Meat;Forced Non-Leaf Node Lookup:meat|TI|MM|776^4^0
+23050648|*Gain, Weight|D015430|738|ET|Entry Term Replacement for "Weight Gain";RtM via: Weight Gain;Forced Non-Leaf Node Lookup:weight gains|TI|MM|659^11^0
+23050648|*Globalization|D038622|738|ET|Entry Term Replacement for "Internationality";RtM via: Globalization;Forced Non-Leaf Node Lookup:globalization|TI|MM|870^13^0
+23050648|*Forests|D065928|294|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|305^7^0;239^7^0
+23050648|Europe|D005060|2778|MH|RtM via: Europe|TI|MM|89^6^0
+23050648|England|D004739|3|MH|RtM via: England|TI|MM|573^7^0
+25764461|United States|D014481|196122|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|102^8^0
+25764461|Animals|D000818|196122|CT|Livestock;CT Treecode Lookup: B01.050.050 (Livestock)|TI|MM
+25764461|*Livestock|D058751|94743|MH|RtM via: Livestock;Forced Leaf Node Lookup:livestocks;checkForceMH Boosted|TI|MM|1128^9^0
+25764461|*Radioactive Waste|D011850|91740|MH|RtM via: Radioactive Waste;Forced Leaf Node Lookup:radioactive wastes;checkForceMH Boosted|TI|MM|986^17^0;151^17^0
+25764461|*Plutonium|D011005|90354|MH|RtM via: plutonium;Forced Leaf Node Lookup:plutonium;checkForceMH Boosted|TI|MM|571^9^0;84^9^0
+25764461|*Environmental Policy|D058735|54036|MH|RtM via: Environmental Policy;Forced Leaf Node Lookup:environmental policies|TI|MM|754^22^0
+25764461|*Goals|D006040|43560|MH|Forced Leaf Node Lookup:goals|TI|MM|592^5^0
+25764461|Fertilizers|D005308|195122|MH|||RC
+25764461|Nitrous Oxide|D009609|155176|MH|||RC
+25764461|*Waste Management|D018505|9855|MH|RtM via: Waste Management;Forced Non-Leaf Node Lookup:waste managements|TI|MM|327^16^0;715^16^0
+25764461|*Secrecy|D003219|597|ET|Entry Term Replacement for "Confidentiality";RtM via: Secrecy;RtM via: With intensity;Forced Non-Leaf Node Lookup:secrecy|TI|MM|521^7^0;270^7^0
+25764461|Government|D006076|1000|MH|Forced Non-Leaf Node Lookup:governments||MM|295^10^0
+25473161|*Introduced Species|D058865|33966|MH|RtM via: Introduced Species;Forced Leaf Node Lookup:alien species;checkForceMH Boosted|TI|MM|783^13^0
+25473161|*Colonialism|D018595|17082|MH|RtM via: Colonialism;Forced Leaf Node Lookup:colonialism|TI|MM|553^11^0
+25473161|Canada|D002170|16977|MH|RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM|579^8^0;338^8^0
+25473161|Enteral Nutrition|D004750|110500|MH|||RC
+25473161|Parenteral Nutrition|D010288|107267|MH|||RC
+20749671|Humans|D006801|8884|CT|Asian Americans;CT Treecode Lookup: M01.686 (Asian Americans)||MM;RC
+20749671|United States|D014481|8884|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|316^8^0
+20749671|*Asian Americans|D001213|3531|MH|RtM via: Japanese Americans;Forced Leaf Node Lookup:japanese americans|TI|MM|776^17^0;590^18^0;424^18^0;83^18^0
+20749671|*World War II|D047789|1824|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|109^12^0
+20749671|*Fellowships and Scholarships|D005257|1731|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|47^11^0
+20749671|Tinnitus|D014012|7884|MH|||RC
+20749671|*Sexual Partners|D012747|2622|MH|RtM via: Intimate (qualifier value)|TI|MM|626^8^0
+20749671|*Group Processes|D006126|726|MH|RtM via: Authority|TI|MM|353^9^0
+20749671|*Computer Systems|D003199|708|MH|RtM via: Software Service|TI|MM|732^6^0
+25764486|Humans|D006801|165174832|CT|Forced Humans: women;Forced Humans: boy;Forced Humans: men|TI|MM;RC
+25764486|*Leadership|D007857|8970728|MH|RtM via: Leadership;Forced Leaf Node Lookup:leadership|TI|MM|584^10^0
+25764486|*Men|D008571|58748232|MH|RtM via: Male population group;RtM via: Boys|TI|MM|720^5^0;296^3^0;625^3^0;366^3^0;25^3^0;94^7^0
+25764486|Macrolides|D018942|38689|MH|||RC
+25764486|*Control, Self|D000068356|1113|ET|Entry Term Replacement for "Self-Control";RtM via: Self-control as a personality trait;Forced Non-Leaf Node Lookup:self-control|TI|MM|555^12^0
+25764486|*Natural Resources|D000067936|267|MH|RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|410^17^0;106^17^0
+23049819|Pregnancy|D011247|86340|CT|Maternal-Fetal Exchange;CT Treecode Lookup: G08.686.784.769.455 (Maternal-Fetal Exchange)||RC
+23049819|Humans|D006801|86340|CT|American Natives;CT Treecode Lookup: M01.686 (American Natives)||MM;RC
+23049819|Female|D005260|86340|CT|Maternal-Fetal Exchange;CT Treecode Lookup: G08.686.784.769.455 (Maternal-Fetal Exchange)||RC
+23049819|Animals|D000818|86340|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)||MM
+23049819|United States|D014481|86340|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|545^9^0;110^8^0
+23049819|*Animals, Wild|D000835|33408|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild animals;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|605^8^0;401^8^0;276^8^0;21^11^0
+23049819|*Dancing|D003615|11286|MH|RtM via: Dancing;Forced Leaf Node Lookup:dance|TI|MM|455^5^0
+23049819|*American Natives|D000086562|10962|MH|RtM via: American Indians;RtM via: Native Americans;Forced New Lookup:american indian|TI|MM|465^15^0
+23049819|Chimerism|D046528|85340|MH|||RC
+23049819|Maternal-Fetal Exchange|D008431|43988|MH|||RC
+23049819|*Fears|D005239|1410|ET|Entry Term Replacement for "Fear";RtM via: Fear (Mental Process);Forced Non-Leaf Node Lookup:fears|TI|MM|392^5^0
+3985802|*Historiography|D006663|13828|MH|RtM via: Historiography;Forced Leaf Node Lookup:historiography|TI|MM|801^14^0
+3985802|*World War II|D047789|13453|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|131^12^0
+3985802|Italy|D007558|13306|MH|RtM via: Italians;Forced Leaf Node Lookup:italians|TI|MM|526^7^0
+3985802|Abscess|D000038|78320|MH|||RC
+3985802|Drainage|D004322|77568|MH|||RC
+3985802|*Forests|D065928|1716|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|690^7^0;578^6^0;636^7^0;446^6^0;170^6^0;116^7^0
+3985802|*Habitat|D017753|969|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|271^7^0
+3985802|*Occupation|D009790|180|ET|Entry Term Replacement for "Occupations";RtM via: Occupations;Forced Non-Leaf Node Lookup:occupations|TI|MM|534^10^0
+3985802|France|D005602|183|MH|RtM via: France|TI|MM|825^6^0;66^6^0
+25473234|United States|D014481|468243|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|696^9^0;91^8^0
+25473234|*Parks, Recreational|D000068316|27606|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|732^14^0
+25473234|*Protestantism|D033303|27246|MH|RtM via: Protestantism;Forced Leaf Node Lookup:protestantism|TI|MM|214^13^0
+25473234|Syringoma|D018252|467243|MH|||RC
+25473234|Sweat Gland Neoplasms|D013544|111985|MH|Neoplasm Coordination Rule: Syringoma||MM;RC
+25473234|*Environment|D004777|174|MH|RtM via: Valley|TI|MM|144^6^0
+25473234|England|D004739|3|MH|RtM via: England|TI|MM|379^7^0
+25764487|*Public-Private Sector Partnerships|D055818|29941|MH|RtM via: Public-Private Sector Partnerships;Forced Leaf Node Lookup:public-private partnerships|TI|MM|803^27^0;490^26^0
+25764487|*Parks, Recreational|D000068316|14816|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|197^13^0;168^13^0
+25764487|*Environmental Policy|D058735|14798|MH|RtM via: Environmental Policy;Forced Leaf Node Lookup:environmental policy|TI|MM|883^20^0
+25764487|Sesquiterpenes|D012717|59826|MH|||RC
+25764487|Asteraceae|D019659|49087|MH|||RC
+25764487|Appalachia|D001061|0|ET|Entry Term Replacement for "Appalachian Region";RtM via: Appalachian Region|TI|MM|79^11^0
+20749644|United States|D014481|255887|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|81^13^0
+20749644|*Social Values|D012945|20452|MH|RtM via: Social Values;Forced Leaf Node Lookup:social values|TI|MM|640^13^0
+20749644|Anti-Asthmatic Agents|D018927|254887|MH|||RC
+20749644|Asthma|D001249|57488|MH|||RC
+20749644|*Policy|D057766|1464|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|167^6^0;67^6^0
+20749644|*Governments|D006076|1137|ET|Entry Term Replacement for "Government";RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|451^12^0;397^10^0
+25473130|Humans|D006801|32215024|CT|Forced Humans: people|TI|MM;RC
+25473130|Pregnancy|D011247|32215024|CT|Chorionic Villi Sampling;CT Treecode Lookup: E01.370.378.630 (Chorionic Villi Sampling);Amniocentesis;CT Treecode Lookup: E01.370.378.630 (Amniocentesis)||RC
+25473130|Female|D005260|32215024|CT|Chorionic Villi Sampling;CT Treecode Lookup: E01.370.378 (Chorionic Villi Sampling);Amniocentesis;CT Treecode Lookup: E01.370.378 (Amniocentesis)||RC
+25473130|Animals|D000818|32215024|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species)||MM
+25473130|*Ice Cover|D046448|2842172|MH|RtM via: Glaciers;Forced Leaf Node Lookup:glaciers|TI|MM|757^7^0;465^7^0;399^8^0;292^7^0;152^8^0;40^8^0;577^8^0;505^7^0
+25473130|*Endangered Species|D056727|2841221|MH|RtM via: Endangered Species;Forced Leaf Node Lookup:endangered species;checkForceMH Boosted|TI|MM|110^18^0
+25473130|*Global Warming|D057232|1421386|MH|RtM via: Global Warming;Forced Leaf Node Lookup:global warming|TI|MM|769^14^0;187^14^0;81^14^0
+25473130|*Laboratories|D007753|1421269|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratories|TI|MM|608^12^0
+25473130|Chorionic Villi Sampling|D015193|305792|MH|||RC
+25473130|Amniocentesis|D000649|210718|MH|||RC
+25473130|Recreation|D011998|1000|MH|Forced Non-Leaf Node Lookup:recreations||MM|639^10^0;897^10^0
+25764485|Humans|D006801|116554468|CT|Forced Humans: man|TI|MM;RC
+25764485|Male|D008297|116554468|CT|CT Text Lookup: man|TI|MM;RC|1020^3^0
+25764485|United States|D014481|116554468|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|1410^13^0;33^8^0
+25764485|*Federal Government|D035082|4735028|MH|RtM via: Federal Government;Forced Leaf Node Lookup:federal government|TI|MM|843^18^0
+25764485|*World War II|D047789|4732535|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|154^12^0
+25764485|Arizona|D001130|4732166|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM|637^7^0
+25764485|*Conservation of Natural Resources|D003247|4732139|MH|RtM via: Protection, Environmental;Forced Leaf Node Lookup:environmental protection|TI|MM|516^24^0;51^24^0;452^24^0;1102^24^0
+25764485|*Beauty|D001504|4731710|MH|Forced Leaf Node Lookup:beauty|TI|MM|248^6^0
+25764485|Rome|D012384|4731710|MH|Forced Leaf Node Lookup:rome|TI|MM|429^4^0
+25764485|Radiographic Image Interpretation, Computer-Assisted|D011857|383582|MH|||RC
+25764485|Radiography, Thoracic|D013902|376858|MH|||RC
+25764485|*Social Welfare|D012946|1068|MH|RtM via: Social Welfare;Forced Non-Leaf Node Lookup:social welfare|TI|MM|587^14^0
+25764485|*Lifestyle|D008019|504|ET|Entry Term Replacement for "Life Style";RtM via: Life Style;Forced Non-Leaf Node Lookup:lifestyles|TI|MM|345^9^0
+3985803|*Apartheid|D000072698|19109|MH|RtM via: Apartheid;Forced Leaf Node Lookup:apartheid|TI|MM|231^9^0
+3985803|*Historiography|D006663|18299|MH|RtM via: Historiography;Forced Leaf Node Lookup:historiography|TI|MM|440^14^0
+3985803|Rectal Fistula|D012003|106751|MH|||RC
+3985803|Anus Neoplasms|D001005|91334|MH|||RC
+23049781|Animals|D000818|236735|CT|Penaeidae;CT Treecode Lookup: B01.050.500.131 (Penaeidae)||RC
+23049781|United States|D014481|236735|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|314^8^0
+23049781|*Trees|D014197|42764|MH|Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|117^4^0
+23049781|*Conifers|D064028|22759|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM|475^8^0
+23049781|Oregon|D009922|21865|MH|RtM via: Oregon (geographic location);Forced Leaf Node Lookup:oregon|TI|MM|160^6^0
+23049781|*Herbicide|D006540|21721|ET|Entry Term Replacement for "Herbicides";RtM via: Herbicides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:herbicides|TI|MM|417^9^0
+23049781|*Nuts|D009754|21667|MH|RtM via: Tree nut;Forced Leaf Node Lookup:nut|TI|MM|113^8^0
+23049781|*Plant Bark|D024301|21382|MH|Forced Leaf Node Lookup:bark|TI|MM|271^4^0
+23049781|White spot syndrome virus 1|D046848|235735|MH|||RC
+23049781|Penaeidae|D033561|74920|MH|||RC
+23049781|*Forest|D065928|1269|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|83^6^0
+23049781|California|D002140|561|MH|RtM via: California|TI|MM|132^10^0
+25473131|Humans|D006801|11432170|CT|Forced Humans: children|TI|MM;RC
+25473131|Child|D002648|11432170|CT|Forced Leaf Node Lookup:children;CT Text Lookup: children|TI|MM;RC|301^8^0
+25473131|Animals|D000818|11432170|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)|TI|MM
+25473131|*Religion|D012067|500739|MH|RtM via: sacrifice (spiritual)|TI|MM;RC|571^11^0
+25473131|Family Planning Services|D005193|108387|MH|||RC
+25473131|*Morals|D009014|31503|MH|RtM via: Morality;RtM via: Morals;Forced Non-Leaf Node Lookup:morals|TI|MM|257^5^0
+25473131|*Bird|D001717|240|ET|Entry Term Replacement for "Birds";RtM via: Aves;Forced Non-Leaf Node Lookup:bird|TI|MM|332^4^0;165^4^0
+3986027|Humans|D006801|110781124|CT|Forced Humans: women;Forced Humans: men|TI|MM;RC
+3986027|Male|D008297|110781124|CT|CT Text Lookup: men|TI|MM;RC|320^3^0
+3986027|Female|D005260|110781124|CT|CT Text Lookup: women|TI|MM;RC|61^5^0
+3986027|United States|D014481|110781124|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|122^13^0
+3986027|Pneumothorax|D011030|63500|MH|||RC
+3986027|Lung Injury|D055370|41097|MH|||RC
+3986027|*Natural Resources|D000067936|3|MH|RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|363^17^0
+20749669|Humans|D006801|142659856|CT|Forced Humans: people|TI|MM;RC
+20749669|United States|D014481|142659856|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM;RC|141^13^0
+20749669|*Conservation of Natural Resources|D003247|5849823|MH|RtM via: Protection, Environmental;Forced Leaf Node Lookup:environmental protection|TI|MM|366^24^0
+20749669|Liver Neoplasms|D008113|119125|MH|||RC
+3986030|*Public Opinion|D011639|6582|MH|RtM via: Interest Groups;Forced Leaf Node Lookup:interest groups|TI|MM|150^15^0
+3986030|Age Factors|D000367|38215|MH|||RC
+3986030|Sex Factors|D012737|31450|MH|||RC
+3986030|*Aquiculture|D017756|909|ET|Entry Term Replacement for "Aquaculture";RtM via: Aquaculture;Forced Non-Leaf Node Lookup:aquacultures|TI|MM|548^12^0;82^11^0
+3986030|*Publications|D011642|684|MH|RtM via: Publications|TI|MM|242^10^0
+25473167|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+25473167|*Military Personnel|D008889|39745|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|1284^8^0;1074^8^0;742^8^0;81^8^0;168^8^0;439^8^0;974^8^0
+25473167|*Soil|D012987|39598|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|469^4^0
+25473167|*Radar|D011825|39415|MH|RtM via: Radar;Forced Leaf Node Lookup:radar|TI|MM|817^5^0
+25473167|Canada|D002170|39277|MH|RtM via: Canada;RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM|688^6^0;212^6^0;999^8^0;460^8^0
+25473167|Calcium Signaling|D020013|140337|MH|||RC
+25473167|Pancreas, Exocrine|D046790|113667|MH|||RC
+25473167|*Attention|D001288|708|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|250^9^0
+3985738|Virginia|D014768|4094|MH|Forced Leaf Node Lookup:virginia|TI|MM|228^8^0
+3985738|Phosphates|D010710|6676|MH|||RC
+3985738|Autoanalysis|D001322|6636|MH|||RC
+25473133|Humans|D006801|45821270|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|311^5^0
+25473133|*Walking|D016138|1735463|MH|RtM via: Walking (activity);Forced Leaf Node Lookup:walking|TI|MM|490^7^0
+25473133|*Exploratory Behavior|D005106|1717850|MH|RtM via: Curiosity;Forced Leaf Node Lookup:curiosity|TI|MM|681^9^0
+25473133|Catholicism|D002410|70504|MH|||RC
+25473133|Religion and Medicine|D012068|35260|MH|||RC
+25473133|*Physicians|D010820|27594|MH|RtM via: Scientist|TI|MM;RC|642^10^0;542^10^0;32^10^0
+25473133|*Emotions|D004644|12327|MH|RtM via: Emotions;RtM via: Feelings;Forced Non-Leaf Node Lookup:emotions;Forced Non-Leaf Node Lookup:feelings|TI|MM|695^8^0;659^8^0
+25473133|*Bomb|D054042|1995|ET|Entry Term Replacement for "Bombs";RtM via: Bomb device;Forced Non-Leaf Node Lookup:bomb|TI|MM|866^4^0;137^4^0
+25473138|*Retirement|D012179|12520|MH|RtM via: Retirement;Forced Leaf Node Lookup:retirements|TI|MM|21^10^0
+25473138|Models, Statistical|D015233|13553|MH|||RC
+25473138|Residence Characteristics|D012111|11272|MH|||RC
+25473138|*Environment|D004777|4539|MH|RtM via: Woods|TI|MM|399^5^0
+25473138|*Organizations|D009938|1773|MH|RtM via: Academia (organization)|TI|MM|206^8^0
+25473197|Humans|D006801|87376030|CT|Forced Humans: humans;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|399^6^0
+25473197|Pregnancy|D011247|87376030|CT|Pregnancy Complications;CT Treecode Lookup: C13.703 (Pregnancy Complications)||RC
+25473197|Female|D005260|87376030|CT|Pregnancy Complications;CT Treecode Lookup: C13.703 (Pregnancy Complications)||RC
+25473197|United States|D014481|87376030|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|99^13^0
+25473197|*Fellowships and Scholarships|D005257|3799962|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|493^11^0;167^11^0
+25473197|Pancreatitis|D010195|63943|MH|||RC
+25473197|Pregnancy Complications|D011248|48738|MH|||RC
+25473197|*Policy Makers|D000288|1152|ET|Entry Term Replacement for "Administrative Personnel";RtM via: Policy Makers;Forced Non-Leaf Node Lookup:policy makers|TI|MM|265^13^0
+25473192|United States|D014481|54653|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|654^8^0
+25473192|Periodicals as Topic|D010506|1000|MH|Forced as Topic||MM
+25473192|Colorectal Neoplasms|D015179|53653|MH|||RC
+25473192|Biomarkers, Tumor|D014408|39062|MH|||RC
+25473192|*Forest|D065928|21|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|627^6^0;29^6^0
+25473192|*Longitudinal Studies|D008137|1047|MH|RtM via: Continuous|TI|MM|139^12^0
+25473035|Humans|D006801|1000|CT|Forced Humans:D Policy Makers||MM
+25473035|Extensively Drug-Resistant Tuberculosis|D054908|625613|MH|||RC
+25473035|Oxazolidinones|D023303|407725|MH|||RC
+25473035|*Humanities|D006809|6645|MH|RtM via: Humanities;Forced Non-Leaf Node Lookup:humanities|TI|MM|301^10^0
+25473035|*Social Sciences|D012942|3150|MH|RtM via: Social Sciences;Forced Non-Leaf Node Lookup:social sciences|TI|MM|281^15^0
+25473035|*Policy Makers|D000288|1173|ET|Entry Term Replacement for "Administrative Personnel";RtM via: Policy Makers;Forced Non-Leaf Node Lookup:policy makers|TI|MM|468^13^0
+25473066|Humans|D006801|80565850|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|725^5^0
+25473066|United States|D014481|80565850|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM;RC|333^13^0
+25473066|*Humanism|D006808|3424290|MH|RtM via: Humanism;Forced Leaf Node Lookup:humanism|TI|MM|584^8^0
+25473066|*Color|D003116|3422034|MH|Forced Leaf Node Lookup:colors|TI|MM|648^6^0
+25473066|*Globalization|D038622|21264|ET|Entry Term Replacement for "Internationality";RtM via: Globalization;Forced Non-Leaf Node Lookup:globalization|TI|MM;RC|245^13^0
+25473066|Fellowships and Scholarships|D005257|18583|MH|||RC
+25473066|*School|D012574|8856|ET|Entry Term Replacement for "Schools";RtM via: School;Forced Non-Leaf Node Lookup:schools|TI|MM;RC|174^6^0
+25473066|*Faculty|D005178|4182|MH|RtM via: Faculty;Forced Non-Leaf Node Lookup:faculty|TI|MM|137^7^0
+25473066|*Communication|D003142|2334|MH|RtM via: Communication;Forced Non-Leaf Node Lookup:communication|TI|MM|76^13^0
+25473237|*Quercus|D029963|5218|MH|Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM|121^3^0
+25473237|*Grassland|D065948|2609|MH|Forced Leaf Node Lookup:grasslands|TI|MM|135^9^0
+25473237|Nails|D009262|11396|MH|||RC
+25473237|Choristoma|D002828|6060|MH|||RC
+25473237|California|D002140|1000|MH|Forced Non-Leaf Node Lookup:california||MM|70^10^0;282^10^0
+25473237|Forests|D065928|1000|MH|Forced Non-Leaf Node Lookup:woodlands||MM|125^8^0
+40608499|Animals|D000818|5158|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|860^7^0;1037^7^0;1182^7^0
+40608499|*Animals, Wild|D000835|2786|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM;RC|475^8^0;21^8^0
+40608499|*Mass Media|D008402|4158|MH|RtM via: film (photographic)|TI|MM;RC|764^4^0;59^4^0
+40608499|*Film|D009040|3528|ET|Entry Term Replacement for "Motion Pictures";RtM via: Films as Topic|TI|MM;RC|764^4^0;59^4^0
+40608499|*Publications|D011642|972|MH|RtM via: Publications|TI|MM|749^10^0;139^10^0;30^10^0
+40608499|*Attitudes|D001290|735|ET|Entry Term Replacement for "Attitude";RtM via: Attitude;Forced Non-Leaf Node Lookup:attitudes|TI|MM|832^9^0
+40608499|*Photography|D010781|630|MH|RtM via: Photography;Forced Non-Leaf Node Lookup:photography|TI|MM|42^11^0
+40608499|*Esthetics|D004954|258|MH|RtM via: Esthetics (discipline);Forced Non-Leaf Node Lookup:aesthetics|TI|MM|1102^9^0
+40608499|Africa|D000349|288|MH|RtM via: Africa|TI|MM|1205^6^0;1007^6^0;179^6^0;67^6^0
+25473299|Humans|D006801|479485|CT|Forced Humans: professional;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|790^12^0
+25473299|Female|D005260|479485|CT|Forced Female Added (Neoplasms): Cervical Intraepithelial Neoplasia;Colposcopy;CT Treecode Lookup: E01.370.378 (Colposcopy);Colposcopy;CT Treecode Lookup: E04.520 (Colposcopy);Colposcopy;CT Treecode Lookup: E04.950.300 (Colposcopy);Cervical Intraepithelial Neoplasia;CT Treecode Lookup: C04.557.470.200.240.250 (Cervical Intraepithelial Neoplasia)||MM;RC
+25473299|Pregnancy|D011247|479485|CT|Colposcopy;CT Treecode Lookup: E04.520 (Colposcopy)||MM
+25473299|Nigeria|D009549|0|MH|Geo Lookup:jos||MM
+25473299|Colposcopy|D003127|478485|MH|||RC
+25473299|Cervical Intraepithelial Neoplasia|D018290|476366|MH|||RC
+25473299|Uterine Cervical Neoplasms|D002583|165846|MH|Neoplasm Coordination Rule: Cervical Intraepithelial Neoplasia||MM;RC
+25473299|*Policies|D057766|708|ET|Entry Term Replacement for "Policy";RtM via: Policy;Forced Non-Leaf Node Lookup:policies|TI|MM|734^8^0
+25473299|Conservation of Natural Resources|D003247|1000|MH|Forced Non-Leaf Node Lookup:nature conservation||MM|947^19^0
+25473299|Writing|D014956|1000|MH|Forced Non-Leaf Node Lookup:writing||MM|49^7^0
+25473299|Brazil|D001938|1464|MH|RtM via: brazilian|TI|MM|697^9^0;351^9^0;83^9^0
+23049821|Animals|D000818|63011|CT|Forced Non-Leaf Node Lookup:animals||MM|319^7^0;243^6^0
+23049821|Tinnitus|D014012|62011|MH|||RC
+23049821|Surveys and Questionnaires|D011795|11139|MH|||RC
+23049821|*Physical Examination|D010808|3471|MH|RtM via: Physical Examination|TI|MM|212^8^0
+23049821|*Mammals|D008322|657|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM|199^7^0
+23049821|*Habitat|D017753|318|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|255^7^0
+23049821|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|359^10^0
+20749647|Humans|D006801|144977764|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|650^5^0
+20749647|*Consciousness|D003243|5375484|MH|RtM via: Conscious;Forced Leaf Node Lookup:consciousness|TI|MM|877^13^0
+20749647|*Specialization|D013038|5373918|MH|RtM via: Hospital specialist;Forced Leaf Node Lookup:specialists|TI|MM|539^11^0
+20749647|Movement|D009068|13902|MH|||RC
+20749647|*Book|D001877|3222|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM|56^4^0
+20749647|*Earth, Planet|D018534|3132|MH|RtM via: Earth, Planet|TI|MM|673^5^0;138^5^0
+20749647|*Writing|D014956|2181|MH|RtM via: Writing (occupation or discipline);Forced Non-Leaf Node Lookup:writing|TI|MM|574^7^0;171^5^0
+25473132|United States|D014481|77752|CT|RtM via: United States|TI|MM;RC|338^7^0
+25473132|*Radioactive Waste|D011850|23535|MH|RtM via: Radioactive Waste;Forced Leaf Node Lookup:nuclear wastes;checkForceMH Boosted|TI|MM|284^13^0
+25473132|*Diplomacy|D000067551|13530|MH|RtM via: Diplomacy;Forced Leaf Node Lookup:diplomacy|TI|MM|458^9^0
+25473132|*World War II|D047789|13407|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|234^12^0
+25473132|*Nuclear Weapons|D054043|12336|MH|RtM via: Nuclear Weapons;Forced Leaf Node Lookup:nuclear weapons|TI|MM|349^15^0
+25473132|New York|D009518|12120|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|140^8^0
+25473132|Ontario|D009864|12042|MH|RtM via: Ontario;Forced Leaf Node Lookup:ontario|TI|MM|101^7^0
+25473132|*Lakes|D060106|11640|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|96^4^0
+25473132|*Religion|D012067|76752|MH|RtM via: sacrifice (spiritual)|TI|MM;RC|620^9^0;518^9^0
+25473132|Sex Education|D012736|30034|MH|||RC
+25473132|*Wills|D014918|6396|MH|RtM via: Inheritance|TI|MM|641^6^0
+25473132|*Secrecy|D003219|4056|ET|Entry Term Replacement for "Confidentiality";RtM via: Secrecy;Forced Non-Leaf Node Lookup:secrecy|TI|MM|556^7^0;68^7^0
+25473132|*Natural Resources|D000067936|1197|MH|RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|741^17^0
+25473132|Waste Management|D018505|1000|MH|Forced Non-Leaf Node Lookup:waste managements||MM|365^16^0
+40608544|*Forestry|D016468|7730|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|1052^8^0
+40608544|*Sequoia|D032487|3399|MH|RtM via: California redwood;Forced Leaf Node Lookup:redwoods;checkForceMH Boosted|TI|MM|1216^8^0;671^8^0;483^7^0;25^19^0;36^8^0
+40608544|*Conservation of Natural Resources|D003247|2705|MH|RtM via: Protection, Environmental;Forced Leaf Node Lookup:environmental protection|TI|MM;RC|885^24^0
+40608544|*Politics|D011057|4548|MH|RtM via: Politics;Forced Non-Leaf Node Lookup:politics|TI|MM;RC|469^8^0
+40608544|*Governments|D006076|2718|ET|Entry Term Replacement for "Government";RtM via: Government|TI|MM|1061^10^0;950^10^0;608^10^0
+40608544|*Social Problems|D012940|1011|MH|RtM via: Litigation finding|TI|MM|805^10^0
+40608544|*Publications|D011642|366|MH|RtM via: Publications|TI|MM|782^10^0
+40608544|California|D002140|81|MH|RtM via: California|TI|MM|1041^10^0
+25473265|United States|D014481|159386|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|552^13^0
+25473265|*Railroads|D011890|66009|MH|RtM via: Railroads;Forced Leaf Node Lookup:railroads|TI|MM|729^9^0;119^8^0
+25473265|*Psychological Distance|D012929|32625|MH|RtM via: Psychological Distance;Forced Leaf Node Lookup:psychological distances|TI|MM|1031^22^0
+25473265|*Rivers|D045483|32559|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|1073^5^0;996^5^0;439^5^0;278^5^0;51^5^0
+25473265|Trabeculectomy|D014130|158386|MH|||RC
+25473265|Tonometry, Ocular|D014065|111436|MH|||RC
+3986031|Humans|D006801|302182556|CT|Forced Humans: people;Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|287^5^0
+3986031|*Marine Biology|D008386|11196344|MH|RtM via: Marine Hydrobiology;Forced Leaf Node Lookup:marine ecology|TI|MM|753^14^0
+3986031|*Conservation of Natural Resources|D003247|11195378|MH|Forced Lookup:overfishing|TI|MM|188^11^0
+3986031|*Fisheries|D005398|0|MH|Forced Lookup:overfishing|TI|MM|188^11^0
+3986031|Liver Abscess, Amebic|D008101|33098|MH|||RC
+3986031|Liver Function Tests|D008111|9689|MH|||RC
+3986031|*Durable Medical Equipment|D004389|408|MH|RtM via: Oxygen supplies regulator|TI|MM|649^10^0
+3986031|*Habitat|D017753|93|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|201^7^0
+3986031|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|24^5^0;113^5^0;415^5^0;527^5^0
+23049855|Humans|D006801|326853188|CT|Forced Humans: humans;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|728^6^0
+23049855|*Seasons|D012621|13067834|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|166^7^0
+23049855|*Global Warming|D057232|13067576|MH|RtM via: Global Warming;Forced Leaf Node Lookup:global warming|TI|MM|755^14^0
+23049855|Leishmania donovani|D007893|349615|MH|||RC
+23049855|Leishmaniasis, Visceral|D007898|206556|MH|||RC
+23049855|*Books|D001877|1476|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|153^5^0
+23049855|*Biodiversity|D044822|219|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM|774^12^0
+23049853|Animals|D000818|52023|CT|CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: mammal|TI|MM;RC|360^7^0;125^6^0
+23049853|Russia|D012426|13583|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|503^7^0;240^7^0;67^7^0;269^7^0
+23049853|alpha-Crystallin B Chain|D038203|51023|MH|||RC
+23049853|Caspase 3|D053148|37748|MH|||RC
+23049853|*Geography|D005843|489|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|198^9^0
+23049853|Mammals|D008322|1000|MH|Forced Non-Leaf Node Lookup:mammals||MM|125^6^0
+23049853|*Islands|D062312|351|MH|RtM via: Islands|TI|MM|191^6^0
+23049815|Animals|D000818|178195|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)|TI|MM
+23049815|*Animals, Wild|D000835|113388|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wild animals;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|748^12^0;567^8^0;600^8^0;434^8^0;55^8^0
+23049815|*Social Justice|D012935|38436|MH|RtM via: Social Justice;Forced Leaf Node Lookup:social justice|TI|MM|376^14^0
+23049815|*Fellowships and Scholarships|D005257|38271|MH|RtM via: Scholarships;Forced Leaf Node Lookup:scholarships|TI|MM|609^11^0
+23049815|Hypertrophy, Left Ventricular|D017379|177195|MH|||RC
+23049815|Ventricular Remodeling|D020257|94191|MH|||RC
+23049815|*Book|D001877|759|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM|561^4^0
+23049815|North America|D009656|1974|MH|RtM via: North America|TI|MM|67^13^0
+25473164|Baltimore|D015142|14660|MH|RtM via: Baltimore;Forced Leaf Node Lookup:baltimore|TI|MM|373^9^0
+25473164|Quebec|D011792|14375|MH|RtM via: Quebec;Forced Leaf Node Lookup:quebec|TI|MM|408^6^0
+25473164|Enteral Nutrition|D004750|88944|MH|||RC
+25473164|Parenteral Nutrition|D010288|76364|MH|||RC
+25473164|*Impacts, Environmental|D004777|501|ET|Entry Term Replacement for "Environment";RtM via: Impacts, Environmental;Forced Non-Leaf Node Lookup:environmental impacts|TI|MM|420^21^0
+25473164|Decision Making|D003657|1000|MH|Forced Non-Leaf Node Lookup:decision making||MM|562^15^0
+25764488|Humans|D006801|159672|CT|Forced Humans: human-induced;Forced Leaf Node Lookup:human-induced;checkForceMH Boosted|TI|MM;RC|126^13^0
+25764488|*Climate Change|D057231|20122|MH|RtM via: Climate Change;Forced Lookup:climate change|TI|MM|140^14^0
+25764488|*Grassland|D065948|19333|MH|Forced Leaf Node Lookup:steppes|TI|MM|439^7^0
+25764488|Russia|D012426|19333|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|224^7^0
+25764488|Ethers, Cyclic|D004988|135037|MH|||RC
+25764488|Molecular Structure|D015394|44950|MH|||RC
+25764488|*Forest|D065928|1569|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|210^6^0
+25764488|*Government|D006076|222|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|53^10^0
+25473235|Humans|D006801|133738854|CT|Forced Humans: people;Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|508^5^0
+25473235|*Jews|D007585|4957450|MH|RtM via: Jewish, follower of religion;Forced Leaf Node Lookup:jewish|TI|MM|548^6^0;59^6^0;249^6^0
+25473235|Israel|D007557|4957327|MH|RtM via: Israel;Forced Leaf Node Lookup:israel|TI|MM|940^6^0;297^6^0
+25473235|Lichen Sclerosus et Atrophicus|D018459|34546|MH|||RC
+25473235|Skin|D012867|13887|MH|||RC
+25473235|*Dermatitis|D003872|10401|MH|RtM via: Equine laminitis|TI|MM|812^8^0
+25473235|*Sports|D013177|1578|MH|RtM via: Sports|TI|MM|317^7^0
+25473235|*Philosophies|D010684|1305|ET|Entry Term Replacement for "Philosophy";RtM via: Philosophy;Forced Non-Leaf Node Lookup:philosophies|TI|MM|363^12^0
+25473235|*Attitudes|D001290|552|ET|Entry Term Replacement for "Attitude";RtM via: Attitude;Forced Non-Leaf Node Lookup:attitudes|TI|MM|457^9^0
+25473235|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|441^10^0
+25473235|Middle East|D008877|1029|MH|RtM via: Middle East|TI|MM|853^11^0
+25473235|Europe|D005060|429|MH|RtM via: Europe|TI|MM|45^6^0
+23049828|Animals|D000818|486672|CT|Biomphalaria;CT Treecode Lookup: B01.050.500.644 (Biomphalaria);Schistosoma mansoni;CT Treecode Lookup: B01.050.500.500 (Schistosoma mansoni)||RC
+23049828|South Carolina|D013022|38965|MH|RtM via: South Carolina;Forced Leaf Node Lookup:south carolina|TI|MM|153^14^0
+23049828|*Poverty|D011203|38962|MH|Forced Leaf Node Lookup:poverty|TI|MM|763^7^0;963^7^0
+23049828|Biomphalaria|D001700|485672|MH|||RC
+23049828|Schistosoma mansoni|D012550|213992|MH|||RC
+23049828|Recreation|D011998|1000|MH|Forced Non-Leaf Node Lookup:recreations||MM|458^10^0
+23049828|*Islands|D062312|1119|MH|RtM via: Islands|TI|MM|307^6^0
+23050646|Animals|D000818|62995|CT|CT Text Lookup: animal|TI|MM;RC|864^6^0
+23050646|Humans|D006801|62995|CT|CT Text Lookup: human|TI|MM;RC|767^5^0
+23050646|*Cemeteries|D055699|46787|MH|RtM via: Cemeteries;Forced Leaf Node Lookup:graveyards|TI|MM|1038^9^0;105^10^0
+23050646|*Trees|D014197|45617|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|656^5^0
+23050646|*Vegetables|D014675|45227|MH|RtM via: Vegetables;Forced Leaf Node Lookup:vegetables;checkForceMH Boosted|TI|MM|875^9^0
+23050646|London|D008131|38923|MH|RtM via: London;Forced Leaf Node Lookup:london|TI|MM|71^6^0
+23050646|*Gardens|D000072506|25915|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|128^7^0
+23050646|*Parks, Recreational|D000068316|24172|MH|RtM via: Green Space;RtM via: School playground;Forced Leaf Node Lookup:green spaces|TI|MM|56^11^0;139^11^0
+23050646|*Grass|D006109|23371|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grass|TI|MM|637^5^0
+23050646|*Gases|D005740|22897|MH|RtM via: Gases;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gases|TI|MM|716^5^0
+23050646|*Human Body|D018594|22342|MH|Forced Leaf Node Lookup:human body|TI|MM|767^10^0
+23050646|United Kingdom|D006113|22342|MH|Forced Lookup:britain|TI|MM|401^7^0
+23050646|Blood-Brain Barrier|D001812|61995|MH|||RC
+23050646|S-Nitrosoglutathione|D026422|55529|MH|||RC
+23050646|*Corpse|D002102|753|ET|Entry Term Replacement for "Cadaver";RtM via: Cadaver;Forced Non-Leaf Node Lookup:corpses|TI|MM|492^6^0;369^6^0
+23050646|*Religion|D012067|444|MH|RtM via: Religion;Forced Non-Leaf Node Lookup:religions|TI|MM|307^8^0
+23050646|Recreation|D011998|1000|MH|Forced Non-Leaf Node Lookup:recreations||MM|947^10^0
+3986233|Humans|D006801|88819028|CT|Forced Humans: children;Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM|372^5^0
+3986233|Child|D002648|88819028|CT|Forced Leaf Node Lookup:children;CT Text Lookup: children|TI|MM|191^8^0;253^8^0;521^8^0
+3986233|*Socialism|D012950|3292157|MH|RtM via: Socialism;Forced Leaf Node Lookup:socialisms|TI|MM|203^9^0
+3986233|*Propaganda|D011406|3291896|MH|RtM via: Propaganda;Forced Leaf Node Lookup:propaganda|TI|MM|302^10^0
+3986233|Electromagnetic Fields|D004574|11046|MH|||RC
+3986233|USSR|D014586|1000|MH|Forced Non-Leaf Node Lookup:ussr||MM|118^4^0
+23049783|*Metaphor|D019365|18503|MH|RtM via: Metaphor;Forced Leaf Node Lookup:metaphors|TI|MM|297^9^0
+23049783|*Developing Countries|D003906|17921|MH|Forced Leaf Node Lookup:developing countries|TI|MM|695^20^0
+23049783|Heart Arrest|D006323|112789|MH|||RC
+23049783|Hypothermia, Induced|D007036|102986|MH|||RC
+40608500|United States|D014481|8313|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM;RC|684^13^0;110^13^0
+40608500|*Parks, Recreational|D000068316|7313|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM;RC|1152^14^0;434^14^0;275^14^0
+40608500|Mexico|D008800|5444|MH|RtM via: Mexico;RtM via: Mexican;Forced Leaf Node Lookup:mexico|TI|MM;RC|196^6^0;954^7^0;776^7^0;583^7^0;225^7^0;40^7^0
+40608500|*Negotiating|D017008|2351|MH|RtM via: Mediation;Forced Leaf Node Lookup:negotiations|TI|MM|1240^11^0
+40608500|*Consciousness|D003243|1445|MH|RtM via: Conscious;Forced Leaf Node Lookup:consciousness|TI|MM|156^13^0
+40608500|*Forest|D065928|5565|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1028^6^0
+40608500|*Wilderness|D055814|4185|MH|RtM via: Wilderness|TI|MM|1059^10^0
+40608500|*Dissent and Disputes|D034462|1101|MH|RtM via: Disputes|TI|MM|712^6^0;646^6^0
+40608500|*Government|D006076|1056|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|233^10^0;48^10^0
+40608500|*Funds|D005376|531|ET|Entry Term Replacement for "Financial Management";RtM via: Funds;Forced Non-Leaf Node Lookup:funds|TI|MM|813^5^0
+25473333|United States|D014481|115882|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|360^8^0;68^8^0
+25473333|Tablets|D013607|114882|MH|||RC
+25473333|Technology, Pharmaceutical|D013678|34714|MH|||RC
+25473333|*Humanities|D006809|372|MH|RtM via: Humanities;Forced Non-Leaf Node Lookup:humanities|TI|MM|497^10^0
+25473333|*Forest|D065928|75|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|197^6^0
+20749641|Humans|D006801|241036|CT|Forced Humans: women;Forced Humans: men|TI|MM;RC
+20749641|Female|D005260|241036|CT|Forced Lookup:female|TI|MM|501^6^0;537^6^0
+20749641|Male|D008297|241036|CT|Forced Lookup:male|TI|MM|492^4^0
+20749641|Animals|D000818|241036|CT|Feathers;CT Treecode Lookup: A13.370 (Feathers);Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)|TI|MM
+20749641|*Feathers|D005241|14590|MH|RtM via: Feathers;Forced Leaf Node Lookup:feathers|TI|MM|695^8^0;321^8^0
+20749641|*Rivers|D045483|13627|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|108^6^0
+20749641|Periodicals as Topic|D010506|1000|MH|Forced as Topic||MM
+20749641|*Societies|D012952|2580|MH|RtM via: Societies|TI|MM|649^9^0;136^7^0
+20749641|*Forest|D065928|555|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|97^6^0
+20749641|*Bird|D001717|510|ET|Entry Term Replacement for "Birds";RtM via: Aves;Forced Non-Leaf Node Lookup:avifauna;Forced Non-Leaf Node Lookup:bird|TI|MM|316^4^0;52^4^0;281^8^0
+40608471|Humans|D006801|36374909|CT|Forced Humans: humans;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM|473^6^0
+40608471|*Trees|D014197|3823078|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|60^4^0
+40608471|*Ecosystem|D017753|1921841|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM;RC|450^9^0
+40608471|*Grassland|D065948|1894871|MH|Forced Leaf Node Lookup:grasslands|TI|MM|166^10^0
+40608471|Nebraska|D009329|1894871|MH|RtM via: Nebraska (geographic location);Forced Leaf Node Lookup:nebraska|TI|MM|89^8^0
+40608471|*Forest|D065928|44463|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|519^6^0;419^6^0;183^6^0;140^6^0
+40608471|*Climate|D002980|7656|MH|RtM via: Climate|TI|MM|261^7^0
+40608471|*Technology|D013672|957|MH|RtM via: Technology;Forced Non-Leaf Node Lookup:technology|TI|MM|432^10^0;208^10^0
+40608506|Humans|D006801|4878147|CT|Forced Humans: professional;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|523^12^0
+40608506|*Shorthand|D012781|181222|MH|RtM via: Shorthand;Forced Leaf Node Lookup:shorthand|TI|MM|126^9^0
+40608506|*Numismatics|D009717|181201|MH|RtM via: Coins;Forced Leaf Node Lookup:coins|TI|MM|85^5^0
+40608506|*Names|D009275|867|MH|RtM via: Object Title;RtM via: Trial Title|TI|MM|324^5^0
+40608506|*Health Personnel|D006282|483|MH|RtM via: Historian|TI|MM;RC|845^10^0;588^9^0;75^9^0
+40608506|*Book|D001877|459|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM|311^4^0
+3986231|Humans|D006801|13314985|CT|Forced Humans: man|TI|MM;RC
+3986231|Male|D008297|13314985|CT|CT Text Lookup: he;CT Text Lookup: man|TI|MM;RC|212^2^0;50^3^0
+3986231|*Arachis|D010367|1093771|MH|RtM via: Arachis hypogaea;Forced Leaf Node Lookup:peanut;checkForceMH Boosted|TI|MM|43^6^0
+3986231|*African Americans|D001741|546806|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|440^5^0;234^5^0
+3986231|*Farmers|D000067565|546740|MH|RtM via: Farmers;Forced Leaf Node Lookup:farmers|TI|MM|446^7^0;240^7^0
+3986231|Washington|D014861|546668|MH|RtM via: Washington state;Forced Leaf Node Lookup:washington|TI|MM|79^10^0
+3986231|Adenosine Diphosphate|D000244|59095|MH|||RC
+3986231|Phosphocreatine|D010725|55417|MH|||RC
+40608502|United States|D014481|8967|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM;RC|84^8^0
+40608502|*Hazardous Wastes|D006256|7967|ET|Entry Term Replacement for "Hazardous Waste";RtM via: Hazardous Waste;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hazardous wastes|TI|MM;RC|220^16^0
+40608502|*Social Justice|D012935|4169|MH|RtM via: Social Justice;Forced Leaf Node Lookup:social justice|TI|MM;RC|510^14^0
+40608502|*Environmental Policy|D058735|3170|MH|RtM via: Environmental Policy;Forced Leaf Node Lookup:environmental policy|TI|MM|890^20^0
+40608502|New York|D009518|2270|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM;RC|299^8^0
+40608502|*Political Activism|D000074439|2243|MH|RtM via: Political Activism;Forced Leaf Node Lookup:social activism|TI|MM|1188^15^0
+40608502|*Accidental Falls|D000058|1481|MH|RtM via: Accidental Falls;RtM via: Falls;Forced Leaf Node Lookup:falls|TI|MM|292^5^0
+40608502|*Love|D008149|1373|MH|RtM via: Love;Forced Leaf Node Lookup:love|TI|MM|1019^4^0;667^4^0;25^4^0
+40608502|*Social Responsibility|D012941|2652|MH|RtM via: corporate responsibility|TI|MM;RC|569^24^0
+40608502|*Disasters|D004190|2028|MH|RtM via: Disasters;Forced Non-Leaf Node Lookup:disasters|TI|MM;RC|931^8^0;707^8^0;352^8^0;121^8^0;45^8^0
+40608502|*Environment|D004777|1290|MH|RtM via: Geographic canal|TI|MM|672^5^0;30^5^0
+40608502|*Governments|D006076|1083|ET|Entry Term Replacement for "Government";RtM via: Government|TI|MM|552^12^0
+25473236|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+25473236|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.150.900.493.602 (Croaker)||MM
+25473236|Japan|D007564|14569|MH|RtM via: Japan;Forced Leaf Node Lookup:japanese|TI|MM|120^5^0;493^8^0;655^8^0;399^5^0
+25473236|China|D002681|7499|MH|RtM via: China;Forced Leaf Node Lookup:chinese|TI|MM|110^5^0;455^7^0;643^7^0;202^5^0
+25473236|*Military Personnel|D008889|7490|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|422^8^0
+25473236|*Fisheries|D005398|7373|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fishery|TI|MM|584^7^0
+25473236|*Dissent and Disputes|D034462|7220|MH|RtM via: Disputes;Forced Leaf Node Lookup:disputes|TI|MM|150^8^0
+25473236|Interleukin-6|D015850|19053|MH|||RC
+25473236|Skin|D012867|6642|MH|||RC
+25473236|*Croaker|D010473|933|ET|Entry Term Replacement for "Perciformes";RtM via: Scombridae;Forced Non-Leaf Node Lookup:croakers|TI|MM|708^7^0;520^7^0;171^7^0
+25473236|*Government|D006076|177|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|463^10^0
+3986028|United States|D014481|122355|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM;RC|191^8^0
+3986028|Humans|D006801|1000|CT|Forced Humans:D Clergy||MM
+3986028|*Socialism|D012950|13382|MH|RtM via: Socialism;Forced Leaf Node Lookup:socialisms|TI|MM|448^9^0
+3986028|*Capitalism|D030861|13091|MH|RtM via: Capitalism;Forced Leaf Node Lookup:capitalism|TI|MM|462^10^0
+3986028|*Catholicism|D002410|12773|MH|RtM via: Roman Catholic, follower of religion (person);Forced Leaf Node Lookup:catholics|TI|MM|779^8^0;666^8^0;123^8^0
+3986028|*Clergy|D002977|12581|MH|RtM via: Priests;Forced Leaf Node Lookup:priests|TI|MM|603^6^0
+3986028|*Spirituality|D029181|11942|MH|RtM via: spirituality;Forced Leaf Node Lookup:spirituality|TI|MM|795^12^0
+3986028|Defensive Medicine|D003675|121355|MH|||RC
+3986028|Malpractice|D008318|44741|MH|||RC
+3986028|*Spiritual Therapies|D026443|2562|MH|RtM via: Spiritual Therapies|TI|MM|795^12^0
+3986028|*Curriculum|D003479|969|MH|RtM via: Educational Curriculum;Forced Non-Leaf Node Lookup:curriculum|TI|MM|650^10^0
+3986028|*Philosophy|D010684|609|MH|RtM via: Philosophy;Forced Non-Leaf Node Lookup:philosophy|TI|MM|86^10^0
+3986028|*Cyclicity|D010507|39|ET|Entry Term Replacement for "Periodicity";RtM via: Periodicity;Forced Non-Leaf Node Lookup:cyclicity|TI|MM|818^9^0
+23050645|Male|D008297|61429|CT|CT Text Lookup: him|TI|MM;RC|447^3^0
+23050645|United States|D014481|61429|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|995^8^0;772^8^0;100^8^0
+23050645|*Forestry|D016468|14584|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|819^8^0;549^8^0
+23050645|*Gardens|D000072506|13402|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|626^6^0
+23050645|*Wetlands|D053833|12052|MH|RtM via: Marshes;Forced Leaf Node Lookup:marsh|TI|MM|504^5^0
+23050645|Connecticut|D003237|11599|MH|RtM via: Connecticut;Forced Leaf Node Lookup:connecticut|TI|MM|899^11^0
+23050645|*Goals|D006040|11425|MH|Forced Leaf Node Lookup:goals|TI|MM|85^5^0
+23050645|Poly I-C|D011070|60429|MH|||RC
+23050645|Polylysine|D011107|23609|MH|||RC
+23050645|*Morals|D009014|2973|MH|RtM via: Morality;RtM via: Morals;Forced Non-Leaf Node Lookup:morals|TI|MM|1109^5^0
+23050645|*Forests|D065928|1350|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|434^7^0
+23050645|*Books|D001877|507|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|292^5^0
+23050645|*Ceramics|D002516|375|MH|RtM via: Ceramics;Forced Non-Leaf Node Lookup:ceramics|TI|MM|328^8^0;254^8^0
+23050645|France|D005602|3|MH|RtM via: France|TI|MM|643^6^0
+20749642|United States|D014481|6334|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|144^8^0
+20749642|*Reading|D011932|1902|MH|RtM via: Reading (activity);Forced Leaf Node Lookup:reading|TI|MM|843^7^0
+20749642|*Walking|D016138|1257|MH|RtM via: Walking (activity);Forced Leaf Node Lookup:walking|TI|MM|239^7^0
+20749642|*Book|D001877|2472|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM|215^4^0
+20749642|*Writing|D014956|1863|MH|RtM via: Writing (occupation or discipline);Forced Non-Leaf Node Lookup:writing|TI|MM|706^7^0
+20749642|*Publications|D011642|1659|MH|RtM via: Publications|TI|MM|407^10^0
+20749642|*Ownership|D010067|1083|MH|RtM via: possession|TI|MM|346^10^0
+20749642|New England|D009511|351|MH|RtM via: New England|TI|MM|301^11^0
+3985801|*Rivers|D045483|43337|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|92^6^0
+3985801|Spherocytosis, Hereditary|D013103|207477|MH|||RC
+3985801|Anemia, Hemolytic, Congenital|D000745|125424|MH|||RC
+3985801|*Books|D001877|93|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM|285^5^0;110^4^0
+3985739|Humans|D006801|152370364|CT|Forced Humans: children|TI|MM;RC
+3985739|Child|D002648|152370364|CT|Forced Leaf Node Lookup:children;CT Text Lookup: children|TI|MM;RC|172^8^0;389^8^0;471^8^0
+3985739|*Camping|D002165|6106333|MH|RtM via: Camping (activity);Forced Leaf Node Lookup:camping|TI|MM|182^7^0;264^7^0
+3985739|Alkalosis, Respiratory|D000472|134808|MH|||RC
+3985739|Hyperventilation|D006985|38723|MH|||RC
+3985739|*Anxiety|D001007|8763|MH|RtM via: Anxiety|TI|MM|113^9^0
+3985739|*Learning|D007858|2034|MH|RtM via: Learning|TI|MM|510^5^0
+3985737|United States|D014481|21374|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|283^8^0;136^8^0
+3985737|Thalassemia|D013789|20374|MH|||RC
+3985737|Hemoglobin E|D006446|16441|MH|||RC
+3985737|*Iodine|D007455|2682|MH|RtM via: Triumph|TI|MM|607^9^0
+20749674|Humans|D006801|214936|CT|American Natives;CT Treecode Lookup: M01.686 (American Natives)||MM;RC
+20749674|Male|D008297|214936|CT|CT Text Lookup: he;CT Text Lookup: him|TI|MM;RC|142^2^0;448^3^0
+20749674|*American Natives|D000086562|30423|MH|Forced New Lookup:native american|TI|MM|551^15^0
+20749674|Greece|D006115|30423|MH|RtM via: Greeks;Forced Leaf Node Lookup:greeks|TI|MM|289^6^0
+20749674|Pacific Islands|D010139|30423|MH|Forced Leaf Node Lookup:pacific islands|TI|MM|568^14^0
+20749674|Altitude Sickness|D000532|213936|MH|||RC
+20749674|Altitude|D000531|103314|MH|||RC
+20749674|*Civilizations|D002962|264|ET|Entry Term Replacement for "Civilization";RtM via: Civilization;Forced Non-Leaf Node Lookup:civilizations|TI|MM|191^13^0
+25473105|United States|D014481|222661|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|107^8^0
+25473105|Glioblastoma|D005909|221661|MH|||RC
+25473105|Oncolytic Virotherapy|D050130|133736|MH|||RC
+23049782|Dogs|D004285|115322|CT|RtM via: Canis familiaris;Forced Leaf Node Lookup:dogs;CT Text Lookup: dog|TI|MM|98^4^0
+23049782|Animals|D000818|115322|CT|RtM via: Canis familiaris;Animals, Zoo;CT Treecode Lookup: B01.050.050 (Animals, Zoo);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: dog|TI|MM;RC|98^4^0;53^7^0
+23049782|*Animals, Zoo|D000836|79158|MH|RtM via: Animals, Zoo;Forced Leaf Node Lookup:zoo animals;checkForceMH Boosted|TI|MM|85^11^0
+23049782|*Cities|D002947|39648|MH|RtM via: Cities;Forced Leaf Node Lookup:cities|TI|MM|264^6^0
+23049782|*Social Change|D012922|39630|MH|RtM via: Social Change;Forced Leaf Node Lookup:social changes|TI|MM|506^13^0;221^15^0
+23049782|*Language|D007802|39504|MH|Forced Leaf Node Lookup:languages|TI|MM|690^8^0
+23049782|Dendritic Cells|D003713|114322|MH|||RC
+23049782|Immune Tolerance|D007108|82200|MH|||RC
+25473033|Cattle|D002417|412809|CT|RtM via: Cattle;Forced Leaf Node Lookup:cattle;CT Text Lookup: cattle|TI|MM|416^6^0
+25473033|United States|D014481|412809|CT|Forced Leaf Node Lookup:american|TI|MM|148^8^0
+25473033|Animals|D000818|412809|CT|RtM via: Cattle;CT Text Lookup: cattle;Forced Animals Added: Cattle|TI|MM|416^6^0
+25473033|*Trees|D014197|145442|MH|Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|99^4^0
+25473033|*Rivers|D045483|72916|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|83^5^0
+25473033|*Canes|D002183|72721|MH|RtM via: CANE, INCLUDES CANES OF ALL MATERIALS, ADJUSTABLE OR FIXED, WITH TIP;Forced Leaf Node Lookup:cane|TI|MM|245^4^0;334^4^0;89^4^0
+25473033|Aortic Aneurysm, Thoracic|D017545|411809|MH|||RC
+25473033|Aneurysm, Dissecting|D000784|402989|MH|||RC
+25473033|Poaceae|D006109|1000|MH|Forced Non-Leaf Node Lookup:grass||MM|104^5^0
+3986232|Humans|D006801|12015637|CT|Forced Humans: human|TI|MM;RC
+3986232|*Hydrogen Sulfide|D006862|973340|MH|RtM via: Hydrogen Sulfide;Forced Leaf Node Lookup:hydrogen sulphide;checkForceMH Boosted|TI|MM|498^17^0
+3986232|*Uncertainty|D035501|487921|MH|RtM via: Uncertainty;Forced Leaf Node Lookup:uncertainty|TI|MM|471^11^0
+3986232|*Lakes|D060106|487090|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|359^4^0
+3986232|*Human Body|D018594|486346|MH|Forced Leaf Node Lookup:human bodies|TI|MM|623^12^0
+3986232|Epidermis|D004817|28345|MH|||RC
+3986232|Electric Conductivity|D004553|6561|MH|||RC
+3986232|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|544^10^0
+3986230|Humans|D006801|82126264|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|491^5^0
+3986230|Lipoproteins, HDL|D008075|116237|MH|||RC
+3986230|Lipoproteins|D008074|89356|MH|||RC
+40608501|Humans|D006801|4075|CT|CT Text Lookup: workers|TI|MM;RC|75^7^0
+40608501|United States|D014481|4075|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM;RC|101^13^0
+40608501|*Avalanches|D055875|1999|MH|RtM via: Avalanches;Forced Leaf Node Lookup:avalanches|TI|MM|746^9^0;522^9^0
+40608501|*Snow|D012914|1054|MH|RtM via: Snow (substance);RtM via: snow - weather;Forced Leaf Node Lookup:snow|TI|MM|232^4^0
+40608501|*Occupations|D009790|3075|MH|RtM via: Occupations;Forced Non-Leaf Node Lookup:occupations|TI|MM;RC|1083^3^0;1045^11^0;817^10^0
+40608501|*Sexual Partners|D012747|2733|MH|RtM via: Intimate (qualifier value)|TI|MM|572^8^0
+40608501|*Compulsive Behavior|D003192|1089|MH|RtM via: Obsessive compulsive behavior|TI|MM|270^9^0
+40608501|*Organizations|D009938|807|MH|RtM via: Corporation|TI|MM|648^9^0
+40608501|Canada|D002170|468|MH|RtM via: Canada|TI|MM|86^6^0
+3985799|Humans|D006801|85747204|CT|Forced Humans: people|TI|MM;RC
+3985799|*Advertising|D000329|3441666|MH|RtM via: Advertising (activity);Forced Leaf Node Lookup:advertisings;Forced as Topic|TI|MM|601^11^0
+3985799|*Automobiles|D001336|3440090|MH|RtM via: Automobiles;Forced Leaf Node Lookup:automobiles|TI|MM|387^10^0;126^10^0
+3985799|*Postmodernism|D033302|3439451|MH|RtM via: Postmodernism;Forced Leaf Node Lookup:postmodernism|TI|MM|673^13^0;79^10^0
+3985799|Leg|D007866|26691|MH|||RC
+3985799|Thromboembolism|D013923|26324|MH|||RC
+40608543|Animals|D000818|17775|CT|Weevils;CT Treecode Lookup: B01.050.500.131 (Weevils);Beetle;CT Treecode Lookup: B01.050.500.131 (Beetle);Insect;CT Treecode Lookup: B01.050.500.131 (Insect)||MM;RC
+40608543|Humans|D006801|17775|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human;CT Text Lookup: workers|TI|MM;RC|436^5^0;857^7^0
+40608543|*Weevils|D048889|16775|MH|RtM via: Weevils;Forced Leaf Node Lookup:weevils;checkForceMH Boosted|TI|MM;RC|779^6^0;37^6^0;474^6^0
+40608543|*Beetle|D001517|9718|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM;RC|393^6^0
+40608543|*Racism|D063505|3358|MH|RtM via: Racism;Forced Leaf Node Lookup:racism|TI|MM|169^6^0
+40608543|*Farmers|D000067565|2470|MH|RtM via: Farmers;Forced Leaf Node Lookup:farm workers|TI|MM|852^12^0
+40608543|Mississippi|D008922|1579|MH|RtM via: Mississippi (geographic location);Forced Leaf Node Lookup:mississippi|TI|MM|66^11^0
+40608543|*Insect|D007313|1959|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|819^6^0;303^6^0
+40608543|*Social Conditions|D012924|1932|MH|RtM via: social order|TI|MM;RC|594^12^0
+40608543|*Gossypium|D003368|1191|MH|RtM via: Gossypium herbaceum|TI|MM|763^6^0;325^6^0;25^6^0
+40608543|*Natural Disaster|D000077587|480|ET|Entry Term Replacement for "Natural Disasters";RtM via: Natural Disasters;Forced Non-Leaf Node Lookup:natural disasters|TI|MM|409^16^0
+23049857|Humans|D006801|501365646|CT|Forced Humans: humans;Forced Humans: women;Forced Humans: men;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|379^6^0
+23049857|Male|D008297|501365646|CT|CT Text Lookup: men|TI|MM;RC|172^3^0
+23049857|Female|D005260|501365646|CT|CT Text Lookup: women|TI|MM;RC|180^5^0
+23049857|*Fantasy|D005201|19702294|MH|RtM via: Fantasy;Forced Leaf Node Lookup:fantasies|TI|MM|396^9^0
+23049857|*Farms|D000072480|19701916|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farms|TI|MM|720^5^0
+23049857|*Ecosystem|D017753|19701766|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|310^9^0
+23049857|*Grassland|D065948|19700827|MH|Forced Leaf Node Lookup:prairies|TI|MM|66^7^0;197^7^0;302^7^0;325^7^0;420^7^0;593^7^0
+23049857|Wolbachia|D020577|53360|MH|||RC
+23049857|Genome, Bacterial|D016680|18354|MH|||RC
+23049857|*Sexuality|D019529|4728|MH|RtM via: Sexuality;Forced Non-Leaf Node Lookup:sexuality|TI|MM|527^9^0
+23049857|*Reproduction|D012098|3537|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|541^12^0;227^12^0
+23049857|*Fertility|D005298|3081|MH|RtM via: Fertility;Forced Non-Leaf Node Lookup:fertility|TI|MM|635^9^0;449^9^0;210^7^0;156^9^0
+23049857|*Civilization|D002962|1002|MH|RtM via: Civilization;Forced Non-Leaf Node Lookup:civilizations|TI|MM|740^12^0
+3986029|Male|D008297|214265|CT|CT Text Lookup: he|TI|MM;RC|374^2^0
+3986029|Female|D005260|214265|CT|Labor Presentation;CT Treecode Lookup: G08.686.520 (Labor Presentation);Labor Presentation;CT Treecode Lookup: G08.686.784.769.326.520 (Labor Presentation);Breech Presentation;CT Treecode Lookup: C13.703.420 (Breech Presentation)||RC
+3986029|Animals|D000818|214265|CT|Colinus;CT Treecode Lookup: B01.050.150.900.248 (Colinus);Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)||MM
+3986029|Pregnancy|D011247|1000|CT|Forced Treecode Turn Back On: C13.703.420.183 (Breech Presentation)||MM
+3986029|*Colinus|D003088|87471|MH|RtM via: Colinus virginianus (organism);RtM via: Genus Colinus (organism);Forced Leaf Node Lookup:bobwhites;checkForceMH Boosted|TI|MM|175^14^0
+3986029|*Animals, Wild|D000835|87123|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|416^8^0;52^8^0
+3986029|*Grassland|D065948|43398|MH|Forced Leaf Node Lookup:grasslands|TI|MM|119^9^0;494^9^0
+3986029|Breech Presentation|D001946|142968|MH|||RC
+3986029|*Forests|D065928|1944|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|129^7^0
+3986029|*Policy|D057766|549|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|742^6^0
+3986029|Conservation of Natural Resources|D003247|1000|MH|Forced Non-Leaf Node Lookup:land management||MM|225^15^0
+3986029|*Islands|D062312|1440|MH|RtM via: South Georgia|TI|MM|140^13^0
+23049784|*Fertilizers|D005308|51650|MH|RtM via: Fertilizers;Forced Leaf Node Lookup:fertilizers;checkForceMH Boosted|TI|MM|1281^10^0
+23049784|*Biomass|D018533|26164|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|265^7^0
+23049784|*Rationalization|D011908|25531|MH|RtM via: Rationalization;Forced Leaf Node Lookup:rationalization|TI|MM|1058^16^0
+23049784|*Motivation|D009042|25213|MH|Forced Leaf Node Lookup:expectations|TI|MM|167^12^0
+23049784|Hepatic Stellate Cells|D055166|82990|MH|||RC
+23049784|NADPH Oxidases|D019255|59734|MH|||RC
+23049784|*Forest|D065928|879|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|1250^6^0
+23049784|*Water Supplies|D014881|366|ET|Entry Term Replacement for "Water Supply";RtM via: Water Supply;Forced Non-Leaf Node Lookup:water supplies|TI|MM|1265^14^0
+25473195|*Farms|D000072480|21173|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farmlands;Forced Leaf Node Lookup:farms|TI|MM|597^5^0;460^9^0
+25473195|British Columbia|D001955|11386|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|70^16^0
+25473195|*State Government|D013219|11164|MH|RtM via: State Government;Forced Leaf Node Lookup:provincial government|TI|MM|103^21^0
+25473195|*Virtues|D028722|10687|MH|RtM via: Virtues;Forced Leaf Node Lookup:virtues|TI|MM|209^6^0
+25473195|*Lakes|D060106|10603|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|64^4^0
+25473195|Cysts|D003560|72640|MH|||RC
+25473195|Liver Diseases|D008107|64429|MH|||RC
+25473195|*Drainage|D004322|7065|MH|RtM via: Drain device;RtM via: Drainage procedure;Forced Non-Leaf Node Lookup:drainage|TI|MM|46^8^0;664^8^0;569^8^0;425^8^0
+25473195|*Logic|D008128|222|MH|RtM via: Logic;Forced Non-Leaf Node Lookup:logics|TI|MM|866^5^0
+25764462|*Steam|D013227|174459|MH|RtM via: Steam;Forced Leaf Node Lookup:steams;checkForceMH Boosted|TI|MM|497^5^0
+25764462|*Coal|D003031|97134|MH|RtM via: Coal;RtM via: Anthracite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:anthracites|TI|MM|786^4^0;637^4^0;469^4^0;286^4^0;77^4^0;626^10^0;275^10^0
+25764462|*Fossil Fuels|D005579|93522|MH|RtM via: Fossil Fuels;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fossil fuels|TI|MM|888^12^0;377^11^0
+25764462|*Iron|D007501|87579|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|484^4^0
+25764462|*Built Environment|D000076624|84318|MH|RtM via: Built Environment;Forced Leaf Node Lookup:built environments|TI|MM|212^17^0
+25764462|*Motivation|D009042|83262|MH|Forced Leaf Node Lookup:expectations|TI|MM|566^12^0
+25764462|Archaea|D001105|492719|MH|||RC
+25764462|Nitrification|D058465|320291|MH|||RC
+23049823|Animals|D000818|269343|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species);Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)|TI|MM
+23049823|*Endangered Species|D056727|47567|MH|RtM via: Endangered Species;Forced Leaf Node Lookup:endangered species;checkForceMH Boosted|TI|MM|724^18^0
+23049823|*Animals, Wild|D000835|47063|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|437^8^0;288^8^0
+23049823|*Environmental Science|D000079265|23959|MH|RtM via: Environmental Science;Forced Leaf Node Lookup:environmental science|TI|MM|144^21^0
+23049823|*World War II|D047789|23422|MH|RtM via: World War II;Forced Leaf Node Lookup:world war ii|TI|MM|542^12^0
+23049823|Corneal Topography|D019781|268343|MH|||RC
+23049823|Cornea|D003315|63611|MH|||RC
+23049823|*Politics|D011057|84|MH|RtM via: Politics;Forced Non-Leaf Node Lookup:politics|TI|MM|176^8^0
+23049823|Ecology|D004463|1000|MH|Forced Non-Leaf Node Lookup:ecologists||MM|333^10^0
+23050647|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+23050647|*Aluminum|D000535|34864|MH|RtM via: Dietary Aluminum;RtM via: aluminum;Forced Leaf Node Lookup:aluminum;checkForceMH Boosted|TI|MM|791^8^0;492^8^0
+23050647|cryolite|C007157|33326|NM|RtM via: cryolite;Forced SCR Leaf Node Lookup:cryolite|TI|MM|758^8^0
+23050647|*World War II|D047789|16769|MH|RtM via: World War II;Forced Leaf Node Lookup:second world wars|TI|MM|25^16^0
+23050647|*Bauxite|D000537|16457|ET|Entry Term Replacement for "Aluminum Oxide";RtM via: Bauxite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bauxite|TI|MM|640^7^0
+23050647|*Alloys|D000497|16151|MH|RtM via: Alloys;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alloys|TI|MM|529^6^0
+23050647|*Military Personnel|D008889|15860|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|854^8^0;348^8^0;114^8^0
+23050647|Greenland|D006116|15128|MH|RtM via: Greenland;Forced Leaf Node Lookup:greenland|TI|MM|776^9^0
+23050647|Guyana|D006172|15128|MH|RtM via: Guyana;Forced Leaf Node Lookup:british guiana|TI|MM|657^14^0
+23050647|Quebec|D011792|15128|MH|RtM via: Quebec;Forced Leaf Node Lookup:quebec|TI|MM|742^6^0
+23050647|Trinidad and Tobago|D014300|15128|MH|RtM via: Trinidad;Forced Leaf Node Lookup:trinidad|TI|MM|705^8^0
+23050647|Infarction, Middle Cerebral Artery|D020244|59964|MH|||RC
+23050647|Brain Ischemia|D002545|38865|MH|||RC
+23050647|*Aircraft|D000401|1149|MH|RtM via: Aircraft;Forced Non-Leaf Node Lookup:aircraft|TI|MM|540^8^0
+23050647|*Mineral|D008903|780|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|513^7^0
+23050647|Asia|D001208|429|MH|RtM via: Asia|TI|MM|143^4^0
+23050647|Europe|D005060|429|MH|RtM via: Europe|TI|MM|135^6^0
+25473326|Animals|D000818|46497|CT|Hymenoptera;CT Treecode Lookup: B01.050.500.131 (Hymenoptera);Wasps;CT Treecode Lookup: B01.050.500.131 (Wasps)||RC
+25473326|*Climate Change|D057231|13584|MH|RtM via: Climate Change;Forced Lookup:climate change|TI|MM|100^14^0
+25473326|*Global Warming|D057232|10467|MH|RtM via: Global Warming;Forced Leaf Node Lookup:global warming|TI|MM|353^14^0
+25473326|Wasps|D014863|37382|MH|||RC
+25473326|*Dissent and Disputes|D034462|1059|MH|RtM via: Disputes|TI|MM|371^5^0
+25473326|*Esthetics|D004954|927|MH|RtM via: Esthetics (discipline);Forced Non-Leaf Node Lookup:aesthetics|TI|MM|572^10^0
+25473326|*Politics|D011057|777|MH|RtM via: Politics;Forced Non-Leaf Node Lookup:politics|TI|MM|588^8^0
+25473326|*Mass Media|D008402|366|MH|RtM via: Mass Media;Forced Non-Leaf Node Lookup:mass media|TI|MM|244^10^0
+25473034|Humans|D006801|146910568|CT|Forced Humans: women|TI|MM;RC
+25473034|Female|D005260|146910568|CT|CT Text Lookup: women|TI|MM;RC|69^5^0
+25473034|*Lakes|D060106|5962940|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|64^4^0
+25473034|*Democracy|D003709|5962727|MH|Forced Leaf Node Lookup:democracy|TI|MM|129^9^0
+25473034|Fluorodeoxyglucose F18|D019788|489469|MH|||RC
+25473034|Multimodal Imaging|D064847|422774|MH|||RC
+25473034|*Air Pollution|D000397|804|MH|RtM via: Air Pollution;Forced Non-Leaf Node Lookup:air pollutions|TI|MM|202^13^0
+25473034|*Commerce|D003132|399|MH|RtM via: Commerce;Forced Non-Leaf Node Lookup:commerce|TI|MM|88^8^0
+23049817|Animals|D000818|53797|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)||MM;RC
+23049817|*Animals, Wild|D000835|48083|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|364^8^0;129^8^0
+23049817|Artificial Intelligence|D001185|52797|MH|||RC
+23049817|Amino Acid Sequence|D000595|45977|MH|||RC
+25473165|Animals|D000818|111547|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild)|TI|MM
+25473165|*Animals, Wild|D000835|51662|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM|452^8^0
+25473165|*Goals|D006040|25636|MH|Forced Leaf Node Lookup:goals|TI|MM|692^5^0
+25473165|Aneurysm, False|D017541|110547|MH|||RC
+25473165|Aneurysm, Ruptured|D017542|82304|MH|||RC
+25473165|*Habitat|D017753|366|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|441^7^0
+25473165|Canada|D002170|0|MH|RtM via: Canada|TI|MM|81^6^0
+3985800|Humans|D006801|82588708|CT|Forced Humans: people|TI|MM;RC
+3985800|United States|D014481|82588708|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|347^13^0
+3985800|*Parks, Recreational|D000068316|6805185|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|399^14^0;279^13^0;100^14^0;195^8^1;205^4^1;521^14^0
+3985800|Dumping Syndrome|D004377|142192|MH|||RC
+3985800|Neurotensin|D009496|25529|MH|||RC
+3985800|Canada|D002170|309|MH|RtM via: Canada|TI|MM|310^6^0;213^6^0
+25473162|Humans|D006801|103868012|CT|Forced Humans: human;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|1264^5^0
+25473162|*Uncertainty|D035501|3896417|MH|RtM via: Uncertainty;Forced Leaf Node Lookup:uncertainty|TI|MM|682^11^0
+25473162|*Federal Government|D035082|3896297|MH|RtM via: Federal Government;Forced Leaf Node Lookup:federal government|TI|MM|454^18^0
+25473162|*Local Government|D009111|3896093|MH|RtM via: Municipal Government;Forced Leaf Node Lookup:municipal government|TI|MM|1186^21^0
+25473162|Manitoba|D008350|3896027|MH|RtM via: Manitoba;Forced Leaf Node Lookup:manitoba|TI|MM|579^8^0;87^8^0;918^8^0
+25473162|*Grassland|D065948|3895403|MH|Forced Leaf Node Lookup:prairies|TI|MM|69^7^0;933^7^0
+25473162|*Drainage|D004322|601572|MH|RtM via: Drainage procedure|TI|MM;RC|906^8^0;881^8^0;192^8^0;49^8^0
+25473162|Pancreatitis, Acute Necrotizing|D019283|258050|MH|||RC
+25473162|*Policy|D057766|735|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|484^6^0
+25473162|Canada|D002170|1083|MH|RtM via: Canada|TI|MM|97^6^0
+25473168|Humans|D006801|67969696|CT|Forced Humans: students|TI|MM;RC
+25473168|Wisconsin|D014922|2742242|MH|RtM via: Wisconsin;Forced Leaf Node Lookup:wisconsin|TI|MM|295^9^0
+25473168|Michigan|D008824|2742140|MH|RtM via: Michigan (geographic location);Forced Leaf Node Lookup:michigan|TI|MM|310^8^0
+25473168|Canada|D002170|2742113|MH|RtM via: Canada;RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM|677^6^0;123^8^0
+25473168|*Lakes|D060106|2741675|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lakes|TI|MM|834^5^0;552^5^0;385^5^0;112^5^0
+25473168|Colonoscopy|D003113|226711|MH|||RC
+25473168|Dissection|D004210|74643|MH|||RC
+25473168|*Biases|D015982|2373|ET|Entry Term Replacement for "Bias";RtM via: Bias (Epidemiology);RtM via: Biases;Forced Non-Leaf Node Lookup:biases|TI|MM|492^6^0
+25473168|*Students|D013334|672|MH|RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM|325^8^0
+20749645|Humans|D006801|10286|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+20749645|*Social Change|D012922|5578|MH|RtM via: Social Development;Forced Leaf Node Lookup:social developments|TI|MM|196^18^0
+20749645|*Charcoal|D002606|5360|MH|RtM via: charcoal;Forced Leaf Node Lookup:charcoal;checkForceMH Boosted|TI|MM|776^8^0
+20749645|*Silver|D012834|5177|MH|RtM via: Silver;Forced Leaf Node Lookup:silver;checkForceMH Boosted|TI|MM|492^6^0
+20749645|*Wood|D014934|2935|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|446^4^0
+20749645|Mexico|D008800|2491|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|117^6^0
+20749645|Spain|D013030|2488|MH|RtM via: Spain;Forced Leaf Node Lookup:spain|TI|MM|573^5^0
+20749645|Skin|D012867|9286|MH|||RC
+20749645|*Ethnic Groups|D005006|3036|MH|RtM via: Ethnic group|TI|MM;RC|870^6^0
+20749645|*Colonialism|D018595|1422|MH|RtM via: Colonialism|TI|MM|622^8^0
+20749645|*Environment|D004777|1275|MH|RtM via: Chihuahua|TI|MM|580^9^0
+20749645|*Spanish American|D006630|969|ET|Entry Term Replacement for "Hispanic Americans";RtM via: Hispanic Americans;Forced Non-Leaf Node Lookup:spanish americans|TI|MM|218^16^0
+20749645|*Attention|D001288|783|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|297^9^0
+20749645|*Agriculture|D000383|663|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|838^11^0
+20749670|United States|D014481|346587|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM;RC|906^8^0
+20749670|*Gardens|D000072506|67436|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|948^7^0;591^6^0
+20749670|*Cities|D002947|34159|MH|RtM via: Cities;Forced Leaf Node Lookup:cities|TI|MM|832^6^0
+20749670|*Parks, Recreational|D000068316|33211|MH|RtM via: Green Space;Forced Leaf Node Lookup:green spaces|TI|MM|795^12^0
+20749670|*Cemeteries|D055699|32785|MH|RtM via: Cemeteries;Forced Leaf Node Lookup:cemetery|TI|MM|610^8^0
+20749670|Boston|D001900|32722|MH|RtM via: City of Boston;Forced Leaf Node Lookup:boston|TI|MM|528^6^0
+20749670|Sprains and Strains|D013180|345587|MH|||RC
+20749670|Ankle Injuries|D016512|163427|MH|||RC
+20749670|*Movement|D009068|3651|MH|RtM via: Movement|TI|MM|757^8^0
+20749670|*Wilderness|D055814|3135|MH|RtM via: Wilderness|TI|MM|880^10^0;173^10^0

@@ -1,0 +1,94 @@
+43855998|Animals|D000818|28984|CT|Melopsittacus;CT Treecode Lookup: B01.050.150.900.248 (Melopsittacus);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots);CT Text Lookup: melopsittacus|TI|MM;RC|82^13^0
+43855998|*Melopsittacus|D046408|27984|MH|RtM via: Melopsittacus;RtM via: Melopsittacus undulatus;Forced Leaf Node Lookup:melopsittacus;Forced Leaf Node Lookup:budgerigars;checkForceMH Boosted|TI|MM;RC|221^10^0;70^10^0;82^23^0
+43855998|*Diagnosis, Differential|D003937|5175|MH|RtM via: Differential Diagnosis;Forced Leaf Node Lookup:differential diagnosis|TI|MM;RC|494^22^0
+43855998|*Parrots|D010311|14853|MH|RtM via: Brotogeris pyrrhoptera|TI|MM;RC|267^21^0;136^23^0;113^21^0
+43855998|*Stomach Neoplasms|D013274|5634|MH|RtM via: Stomach Neoplasms|TI|MM;RC|187^17^0
+43855998|*Adenocarcinoma|D000230|4545|MH|RtM via: Adenocarcinoma;Forced Non-Leaf Node Lookup:adenocarcinomas|TI|MM;RC|36^14^0
+43855997|Humans|D006801|9556|CT|Oviducts;CT Treecode Lookup: A13.706 (Oviducts);Fallopian Tubes;CT Treecode Lookup: A13.706 (Fallopian Tubes)||MM;RC
+43855997|Female|D005260|9556|CT|Oviducts;CT Treecode Lookup: A13.706 (Oviducts);Fallopian Tubes;CT Treecode Lookup: A05.360.319 (Fallopian Tubes);Fallopian Tubes;CT Treecode Lookup: A13.706 (Fallopian Tubes);CT Text Lookup: salpinx|TI|MM;RC|246^7^0
+43855997|Animals|D000818|9556|CT|Melopsittacus;CT Treecode Lookup: B01.050.150.900.248 (Melopsittacus);CT Text Lookup: oviducts|TI|MM;RC|81^8^0
+43855997|*Melopsittacus|D046408|1548|MH|RtM via: Melopsittacus;RtM via: Melopsittacus undulatus;Forced Leaf Node Lookup:budgerigars;checkForceMH Boosted|TI|MM|109^10^0
+43855997|*Gelatin|D005780|699|MH|RtM via: gelatin;checkForceMH Boosted|TI|MM|155^10^0
+43855997|*Oviducts|D010057|8556|MH|RtM via: animal Oviduct;Forced Non-Leaf Node Lookup:oviducts|TI|MM;RC|81^8^0;131^7^0
+43855997|*Fallopian Tubes|D005187|5226|MH|RtM via: Entire left fallopian tube;RtM via: Left fallopian tube;RtM via: Right fallopian tube|TI|MM|241^12^0;125^13^0
+43855997|*Cyst|D003560|768|ET|Entry Term Replacement for "Cysts";RtM via: Cyst;Forced Non-Leaf Node Lookup:cyst|TI|MM;RC|203^4^0
+43855997|*Abdominal Cavity|D034841|360|MH|RtM via: Entire left fallopian tube|TI|MM|241^12^0
+10.2307/30134407|Animals|D000818|39736|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)||MM;RC
+10.2307/30134407|*Cockatoos|D046410|38736|MH|RtM via: Cacatua moluccensis;Forced Leaf Node Lookup:cockatoos;Forced Leaf Node Lookup:cacatua;checkForceMH Boosted|TI|MM;RC|115^19^0;96^17^0;105^8^0
+10.2307/30134407|*Paramyxoviruses, Avian|D018109|8283|ET|Entry Term Replacement for "Avulavirus";RtM via: Avulavirus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:avian paramyxoviruses|TI|MM|600^21^0
+10.2307/30134407|*Intranuclear Inclusion Bodies|D045586|4800|MH|RtM via: Nuclear Inclusion;Forced Leaf Node Lookup:intranuclear inclusion bodies|TI|MM|394^29^0
+10.2307/30134407|*Parrots|D010311|17550|MH|RtM via: Cacatua moluccensis|TI|MM;RC|115^19^0;96^17^0
+10.2307/30134407|*Neurons|D009474|3183|MH|RtM via: neuronal|TI|MM;RC|425^8^0
+10.2307/30134407|*Brain|D001921|2844|MH|RtM via: Brain;Forced Non-Leaf Node Lookup:brain|TI|MM;RC|85^5^0
+10.2307/30134407|*Telencephalon|D013687|2160|MH|RtM via: Telencephalon|TI|MM|323^8^0
+10.2307/30134407|*Cerebrum|D054022|2175|MH|RtM via: Cerebral hemisphere structure (body structure);RtM via: Cerebrum;Forced Non-Leaf Node Lookup:cerebrum|TI|MM|323^8^0
+10.2307/30134407|*Necrosis|D009336|1116|MH|RtM via: Necrosis;Forced Non-Leaf Node Lookup:necrosis|TI|MM|434^8^0
+10.2307/30134407|*Inflammation|D007249|918|MH|RtM via: Inflammation;Forced Non-Leaf Node Lookup:inflammations|TI|MM|493^12^0
+10.2307/30134407|*Incoordination|D001259|816|ET|Entry Term Replacement for "Ataxia";RtM via: Abnormal coordination;Forced Non-Leaf Node Lookup:incoordinations|TI|MM|164^14^0
+10.2307/30134153|Animals|D000818|23750|CT|Colinus;CT Treecode Lookup: B01.050.150.900.248 (Colinus)||MM;RC
+10.2307/30134153|*Colinus|D003088|22750|MH|RtM via: Colinus virginianus (organism);RtM via: Genus Colinus (organism);Forced Leaf Node Lookup:bobwhites;checkForceMH Boosted|TI|MM;RC|166^14^0
+10.2307/30134153|*Adenoviridae Infections|D000257|3498|MH|RtM via: Quail bronchitis|TI|MM;RC|29^16^0
+10.2307/30134153|*Research|D012106|759|MH|RtM via: Supportive Care Study|TI|MM|263^15^0
+10.2307/30134153|*Environment|D004777|108|MH|RtM via: Back yard|TI|MM|221^8^0
+10.2307/30134153|Bronchitis|D001991|1000|MH|Forced Non-Leaf Node Lookup:bronchitis||MM;RC|35^10^0
+10.2307/30134405|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.150.900.248 (Birds)||MM
+10.2307/30134405|Tomography, X-Ray Computed|D014057|1000|MH|Tomography, Emission-Computed Replacement Rule||MM;RC
+10.2307/30134405|*Radiography|D011859|20229|MH|RtM via: Diagnostic radiologic examination;RtM via: Radiographic imaging procedure|TI|MM;RC|549^9^0;29^9^0
+10.2307/30134405|*Contrast Media|D003287|12642|MH|RtM via: Radiographic Contrast Agent;RtM via: Radiographic contrast media|TI|MM;RC|229^21^0
+10.2307/30134405|*Ultrasonography|D014463|11301|MH|RtM via: Ultrasonography|TI|MM;RC|424^10^0
+10.2307/30134405|*Urography|D014567|11088|MH|RtM via: Intravenous pyelogram (procedure);Forced Non-Leaf Node Lookup:urograms|TI|MM;RC|286^18^0;296^8^0
+10.2307/30134405|*Radiology|D011871|7551|MH|RtM via: Diagnostic Radiology Specialty;RtM via: Radiology Specialty;Forced Non-Leaf Node Lookup:radiology|TI|MM;RC|549^9^0;29^9^0
+10.2307/30134405|*Birds|D001717|342|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|543^5^0;110^5^0
+10.2307/30134405|Radionuclide Imaging|D011877|999|MH|Forced Non-Leaf Node Lookup:scintigraphy||MM;RC|445^12^0
+10.2307/30134115|Animals|D000818|7036|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
+10.2307/30134115|*Birds|D001717|6036|MH|RtM via: Aves;RtM via: aquatic bird;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|344^5^0;29^13^0;37^5^0
+10.2307/30134115|*Diets|D004032|666|ET|Entry Term Replacement for "Diet";RtM via: Diet;Forced Non-Leaf Node Lookup:diets|TI|MM;RC|310^5^0
+10.2307/30134115|*Aquatic Organisms|D059001|426|MH|RtM via: aquatic bird|TI|MM|29^13^0
+10.2307/30134115|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|199^7^0
+43855994|Animals|D000818|23857|CT|Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes)||MM;RC
+43855994|*Strigiformes|D020305|8058|MH|RtM via: Strigiformes;Forced Leaf Node Lookup:owls;checkForceMH Boosted|TI|MM|281^3^0;157^3^0;55^4^0
+43855994|*Polymethyl Methacrylate|D019904|6267|MH|RtM via: Acrylic Bone Cement;Forced Leaf Node Lookup:acrylic bone cement;checkForceMH Boosted|TI|MM|132^19^0
+43855994|*Plastic|D010969|2574|ET|Entry Term Replacement for "Plastics";RtM via: Plastics;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plastics|TI|MM|91^7^0
+43855994|*Bone Nails|D001858|22857|MH|RtM via: Medical pins|TI|MM;RC|114^4^0
+43855994|*Proximal Humeral Fractures|D012784|14766|ET|Entry Term Replacement for "Shoulder Fractures";RtM via: Shoulder Fractures;Forced Non-Leaf Node Lookup:proximal humeral fractures|TI|MM;RC|21^26^0
+43855994|*Humerus|D006811|6462|MH|RtM via: Bone structure of humerus;Forced Non-Leaf Node Lookup:humeral|TI|MM;RC|435^7^0
+10.2307/30134114|Animals|D000818|4960|CT|Melopsittacus;CT Treecode Lookup: B01.050.150.900.248 (Melopsittacus)||MM;RC
+10.2307/30134114|*Reference Values|D012016|2770|MH|RtM via: Normal Range;Forced Leaf Node Lookup:normal ranges|TI|MM|560^13^0
+10.2307/30134114|*Sample Size|D018401|2728|MH|RtM via: Sample Size;Forced Leaf Node Lookup:sample sizes|TI|MM|662^11^0
+10.2307/30134114|*Melopsittacus|D046408|1751|MH|RtM via: Melopsittacus;RtM via: Melopsittacus undulatus;Forced Leaf Node Lookup:budgerigars;checkForceMH Boosted|TI|MM|520^11^0
+10.2307/30134114|*Autoanalyses|D001322|2847|ET|Entry Term Replacement for "Autoanalysis";RtM via: Autoanalysis procedure|TI|MM;RC|216^12^0
+10.2307/30134114|*Medicine|D008511|741|MH|RtM via: Medicine|TI|MM|135^8^0
+10.2307/30134114|*Research Design|D012107|573|MH|RtM via: Test Method|TI|MM|374^6^0
+10.2307/30134114|*Diagnostic Tests, Routine|D003955|516|MH|RtM via: Chemical method|TI|MM|179^17^0
+10.2307/30134162|*Laboratories|D007753|1915|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|263^10^0
+10.2307/30134162|*Computers|D003201|22971|MH|RtM via: Computer Hardware Device;RtM via: Computers;Forced Non-Leaf Node Lookup:computers|TI|MM;RC|343^8^0;520^9^0;315^8^0;142^8^0
+10.2307/30134162|*Software|D012984|12294|MH|RtM via: Computer software;Forced Non-Leaf Node Lookup:software|TI|MM;RC|356^8^0
+10.2307/30134162|*Survey|D011795|639|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys;Forced Non-Leaf Node Lookup:respondents|TI|MM;RC|199^6^0;62^6^0;122^11^0
+10.2307/30134162|*Ownership|D010067|315|MH|RtM via: Ownership|TI|MM|134^5^0
+10.2307/30134162|California|D002140|78|MH|RtM via: California|TI|MM|246^10^0
+43856000|Cats|D002415|11622|CT|RtM via: Felis catus;Forced Animals Lookup:feline;Cat Diseases;CT Treecode Lookup: C22.180 (Cat Diseases);CT Text Lookup: feline|TI|MM;RC|107^6^0
+43856000|Dogs|D004285|11622|CT|RtM via: Canis familiaris;Forced Animals Lookup:canine;Dog Diseases;CT Treecode Lookup: C22.268 (Dog Diseases)|TI|MM;RC|96^6^0
+43856000|Animals|D000818|11622|CT|RtM via: Canis familiaris;RtM via: Felis catus;Forced Animals Lookup:feline;Forced Animals Lookup:canine;Pets;CT Treecode Lookup: B01.050.050 (Pets);Animals, Laboratory;CT Treecode Lookup: B01.050.050 (Animals, Laboratory);Cat Diseases;CT Treecode Lookup: C22 (Cat Diseases);Cat Diseases;CT Treecode Lookup: C22.180 (Cat Diseases);Dog Diseases;CT Treecode Lookup: C22 (Dog Diseases);Dog Diseases;CT Treecode Lookup: C22.268 (Dog Diseases);CT Text Lookup: animal;CT Text Lookup: feline|TI|MM;RC|96^6^0;107^6^0;38^6^0
+43856000|Humans|D006801|11622|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human|TI|MM;RC|272^5^0
+43856000|*Pets|D057805|1577|MH|Forced Leaf Node Lookup:companion animals;checkForceMH Boosted|TI|MM;RC|28^16^0
+43856000|*Cat Diseases|D002371|674|MH|Forced Lookup:canine and feline|TI|MM|96^17^0
+43856000|*Dog Diseases|D004283|0|MH|Forced Lookup:canine and feline|TI|MM|96^17^0
+43856000|*Sexual Partners|D012747|5979|MH|RtM via: Intimate (qualifier value)|TI|MM|166^8^0
+43856000|*Sexual Behavior|D012725|3375|MH|RtM via: Intimate (qualifier value)|TI|MM|166^8^0
+43856000|*Pleasure|D057181|1092|MH|RtM via: Affection|TI|MM|149^12^0
+43856000|*Animals, Laboratory|D000830|1059|MH|RtM via: Animal Study|TI|MM|38^6^1;61^7^1
+43856000|*Birds|D001717|390|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|278^4^0;176^5^0
+43856000|*Attention|D001288|117|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|203^9^0
+43855996|Animals|D000818|4438|CT|Ducks;CT Treecode Lookup: B01.050.150.900.248 (Ducks);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
+43855996|*Ducks|D004372|3438|MH|RtM via: Ducks;Forced Leaf Node Lookup:ducks;checkForceMH Boosted|TI|MM;RC|239^5^0;21^5^0
+43855996|*Blister|D001768|417|MH|RtM via: Bulla;Forced Leaf Node Lookup:bulla|TI|MM|215^5^0
+43855996|*Birds|D001717|2688|MH|RtM via: Aves|TI|MM;RC|100^5^0
+43855996|*Trachea|D014132|2079|MH|RtM via: Tracheal syrinx|TI|MM;RC|68^6^0
+43855996|*Biological Phenomena|D001686|180|MH|RtM via: Pathology processes|TI|MM|131^9^0
+10.2307/30134406|Animals|D000818|42036|CT|Amazona;CT Treecode Lookup: B01.050.150.900.248 (Amazona);Psittaciformes;CT Treecode Lookup: B01.050.150.900.248 (Psittaciformes);Feathers;CT Treecode Lookup: A13.370 (Feathers);Beak;CT Treecode Lookup: A13.114 (Beak);Bird Diseases;CT Treecode Lookup: C22 (Bird Diseases);CT Text Lookup: beak|TI|MM;RC|50^4^0
+10.2307/30134406|*Amazona|D046708|41036|MH|RtM via: Amazona;RtM via: Amazona aestiva;Forced Leaf Node Lookup:amazona;checkForceMH Boosted|TI|MM;RC|226^13^0;122^15^0;101^19^0;232^7^0
+10.2307/30134406|*Feathers|D005241|4267|MH|RtM via: Entire feather;RtM via: Feathers;Forced Leaf Node Lookup:feathers|TI|MM|175^4^0;59^7^0
+10.2307/30134406|*Beak|D001502|3970|MH|RtM via: Beak;Forced Leaf Node Lookup:beak|TI|MM|175^4^0;50^4^0
+10.2307/30134406|*Psittaciformes|D011563|5181|MH|RtM via: Order Psittaciformes (organism);Forced Non-Leaf Node Lookup:psittacines|TI|MM|175^4^0;39^10^0
+10.2307/30134406|Bird Diseases|D001715|361|MH|||RC
+10.2307/30134406|*Syndrome|D013577|99|MH|RtM via: Syndrome|TI|MM|175^4^0;67^8^0
