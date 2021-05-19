@@ -1,0 +1,22 @@
+10.2307/3984309|United States|D014481|133714|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|1354^8^0;602^8^0;55^8^0
+10.2307/3984309|*Triticum|D014908|132714|MH|RtM via: Triticum;RtM via: Triticum aestivum;RtM via: Wheat (Dietary);RtM via: Wheat - grass (plant);Forced Leaf Node Lookup:wheat;checkForceMH Boosted|TI|MM;RC|123^5^0
+10.2307/3984309|*Hordeum|D001467|85314|MH|RtM via: Barley (Dietary);RtM via: Hordeum;RtM via: Hordeum vulgare;Forced Leaf Node Lookup:barley;checkForceMH Boosted|TI|MM|206^6^0
+10.2307/3984309|*Sorghum|D045868|72771|MH|RtM via: Sorghum;Forced Leaf Node Lookup:sorghums;checkForceMH Boosted|TI|MM;RC|147^7^0
+10.2307/3984309|*Zea mays|D003313|68739|MH|RtM via: Zea;RtM via: Maize;RtM via: Zea mays;Forced Leaf Node Lookup:corn;checkForceMH Boosted|TI|MM|344^4^0;99^4^0;400^5^0
+10.2307/3984309|*Oryza|D012275|66645|MH|RtM via: Oryza sativa;RtM via: Rice (Dietary);RtM via: brown rice preparation;Forced Leaf Node Lookup:rice;checkForceMH Boosted|TI|MM|175^4^0
+10.2307/3984309|*Avena|D018554|55098|MH|RtM via: Avena (plant);Forced Leaf Node Lookup:oats;checkForceMH Boosted|TI|MM|200^4^0
+10.2307/3984309|*Tobacco|D014026|48918|MH|RtM via: Nicotiana;RtM via: Nicotiana tabacum;Forced Leaf Node Lookup:tobaccos;checkForceMH Boosted|TI|MM|138^7^0
+10.2307/3984309|*Arachis|D010367|48315|MH|RtM via: Arachis hypogaea;Forced Leaf Node Lookup:peanuts;checkForceMH Boosted|TI|MM|191^7^0
+10.2307/3984309|*Solanum tuberosum|D011198|46704|MH|RtM via: Potato;RtM via: Solanum tuberosum;Forced Leaf Node Lookup:potatoes;checkForceMH Boosted|TI|MM|156^8^0
+10.2307/3984309|*Lycopersicon esculentum|D018551|46257|MH|RtM via: Lycopersicon esculentum;RtM via: Tomatoes;Forced Leaf Node Lookup:tomatoes;checkForceMH Boosted|TI|MM|181^8^0
+10.2307/3984309|*Soybeans|D013025|45189|MH|RtM via: Soybeans;Forced Leaf Node Lookup:soybeans;checkForceMH Boosted|TI|MM|105^7^0
+10.2307/3984309|*Medicago sativa|D000455|44595|MH|RtM via: Alfalfa;Forced Leaf Node Lookup:alfalfa;checkForceMH Boosted|TI|MM|114^7^0
+10.2307/3984309|*Citrus sinensis|D032084|40485|MH|RtM via: Orange (fruit);Forced Leaf Node Lookup:oranges;checkForceMH Boosted|TI|MM|166^7^0
+10.2307/3984309|*Farms|D000072480|22110|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farm|TI|MM|87^4^0
+10.2307/3984309|*Callosities|D002145|19539|MH|Forced Leaf Node Lookup:corns|TI|MM|400^5^0
+10.2307/3984309|*Edible Grain|D002523|71901|MH|RtM via: Oats (Dietary);RtM via: Sorghum (Food)|TI|MM;RC|200^4^0;147^7^0
+10.2307/3984309|*Crops, Agricultural|D018556|30951|MH|RtM via: Agricultural Crops|TI|MM;RC|1427^5^0;64^5^0
+10.2307/3984309|*Agriculture|D000383|21618|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM;RC|1363^11^0;611^11^0
+10.2307/3984309|*Nutritional Quality|D009753|10245|ET|Entry Term Replacement for "Nutritive Value";RtM via: Nutritional Quality;Forced Non-Leaf Node Lookup:nutritional quality|TI|MM;RC|870^19^0
+10.2307/3984309|*Cytoplasms|D003593|1140|ET|Entry Term Replacement for "Cytoplasm";RtM via: germ plasm;RtM via: Cytoplasm;Forced Non-Leaf Node Lookup:cytoplasms|TI|MM|1108^10^0;260^10^0;847^10^0
+10.2307/3984309|Genetic Variation|D014644|1000|MH|Forced Non-Leaf Node Lookup:genetic diversity||MM;RC|680^17^0

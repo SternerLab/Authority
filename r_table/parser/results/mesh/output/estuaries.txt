@@ -1,0 +1,12 @@
+1352857|Mice|D051379|130694|CT|t-Complex Genome Region;CT Treecode Lookup: G05.360.340.024.380.968 (t-Complex Genome Region)||RC
+1352857|Animals|D000818|130694|CT|t-Complex Genome Region;CT Treecode Lookup: G05.360.340.024.380.968 (t-Complex Genome Region);CT Text Lookup: fish|TI|MM;RC|774^4^0
+1352857|*Estuaries|D063366|89402|MH|RtM via: Estuaries;Forced Leaf Node Lookup:estuaries;Forced Leaf Node Lookup:estuary|TI|MM|590^7^0;86^9^0;123^9^0
+1352857|*Water|D014867|46939|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|513^5^0
+1352857|*Salinity|D054712|45883|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1431^8^0;1216^8^0;413^8^0
+1352857|*Rivers|D045483|45259|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|690^5^0
+1352857|*Floods|D055868|45109|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|259^5^0
+1352857|San Francisco|D012495|43561|MH|RtM via: San Francisco;Forced Leaf Node Lookup:san francisco|TI|MM|576^13^0
+1352857|*Seasons|D012621|43561|MH|Forced Leaf Node Lookup:seasonal patterns|TI|MM|669^17^0
+1352857|t-Complex Genome Region|D056427|129694|MH|||RC
+1352857|Proteins|D011506|108976|MH|||RC
+1352857|*Biota|D058448|1914|MH|RtM via: Biological Community;Forced Non-Leaf Node Lookup:biota|TI|MM|562^5^0

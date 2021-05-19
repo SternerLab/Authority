@@ -1,0 +1,52 @@
+bullecosociamer.96.4.670|Humans|D006801|20538784|CT|Forced Humans: students|TI|MM;RC
+bullecosociamer.96.4.670|*Feedback|D005246|826106|MH|RtM via: Feedback - evaluative response process;RtM via: Feedback - system communication;Forced Leaf Node Lookup:feedbacks|TI|MM|828^8^0
+bullecosociamer.96.4.670|*Environmental Science|D000079265|822869|MH|RtM via: Environmental Science;Forced Leaf Node Lookup:environmental science|TI|MM|96^21^0
+bullecosociamer.96.4.670|*Water|D014867|822860|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|252^5^0
+bullecosociamer.96.4.670|*Students|D013334|6195|MH|RtM via: student;RtM via: College student;Forced Non-Leaf Node Lookup:students|TI|MM;RC|842^7^0;928^8^0;567^8^0;362^8^0;182^8^0;152^13^0
+bullecosociamer.96.4.670|*Communication|D003142|2421|MH|RtM via: conversation|TI|MM;RC|909^13^0
+bullecosociamer.96.4.670|*Surveys|D011795|906|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|850^7^0
+bullecosociamer.96.4.670|*Electricity|D004560|645|MH|RtM via: Electricity;Forced Non-Leaf Node Lookup:electricity|TI|MM|259^11^0
+bullecosociamer.86.3.155|Dose Fractionation, Radiation|D019583|73|MH|||RC
+bullecosociamer.95.1.30|Humans|D006801|1573471|CT|Forced Humans: student|TI|MM;RC
+bullecosociamer.95.1.30|*Entrepreneurship|D016520|76594|MH|RtM via: Entrepreneurship;Forced Leaf Node Lookup:entrepreneurship|TI|MM|1436^16^0
+bullecosociamer.95.1.30|*Literacy|D000067010|76204|MH|RtM via: Literacy;Forced Leaf Node Lookup:literacy|TI|MM|2038^8^0
+bullecosociamer.95.1.30|*Feedback|D005246|75607|MH|RtM via: Feedback - system communication;Forced Leaf Node Lookup:feedbacks|TI|MM|450^9^0
+bullecosociamer.95.1.30|*Leadership|D007857|75439|MH|RtM via: Leadership;Forced Leaf Node Lookup:leadership|TI|MM|2047^10^0
+bullecosociamer.95.1.30|*Laboratories|D007753|75193|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|1913^10^0
+bullecosociamer.95.1.30|*Social Science|D012942|6996|ET|Entry Term Replacement for "Social Sciences";RtM via: Social Sciences;Forced Non-Leaf Node Lookup:social sciences|TI|MM;RC|1510^14^0
+bullecosociamer.95.1.30|*Interdisciplinary Studies|D058025|4797|MH|RtM via: Interdisciplinary Studies|TI|MM;RC|1825^17^0
+bullecosociamer.95.1.30|*Organization|D009938|3240|ET|Entry Term Replacement for "Organizations";RtM via: Organization administrative structures|TI|MM;RC|1776^12^0;1408^14^0
+bullecosociamer.95.1.30|*Accomplishments|D000124|2931|ET|Entry Term Replacement for "Achievement";RtM via: Achievement|TI|MM|831^12^0
+bullecosociamer.95.1.30|*Biology|D001695|2430|MH|RtM via: Mathematical Biology;Forced Non-Leaf Node Lookup:biology|TI|MM|932^22^0;907^7^0
+bullecosociamer.95.1.30|*Student|D013334|1962|ET|Entry Term Replacement for "Students";RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM|1809^7^0
+bullecosociamer.93.3.223|Science|D012586|8|MH|||RC
+bullecosociamer.96.4.513|Humans|D006801|5711044|CT|Forced Humans: person|TI|MM;RC
+bullecosociamer.96.4.513|*Reading|D011932|228452|MH|RtM via: Reading (activity);Forced Leaf Node Lookup:reading|TI|MM|230^7^0
+bullecosociamer.96.3.500|Animals|D000818|6404|CT|Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|233^7^0
+bullecosociamer.96.3.500|*Animals, Wild|D000835|5404|MH|RtM via: Animals, Wild;Forced Leaf Node Lookup:wildlife;checkForceMH Boosted|TI|MM;RC|106^8^0
+bullecosociamer.96.3.500|*Habitat|D017753|1752|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|186^7^0
+bullecosociamer.96.3.500|*Software|D012984|1152|MH|RtM via: Computer software;Forced Non-Leaf Node Lookup:software|TI|MM;RC|288^8^0
+bullecosociamer.96.3.500|*Technology|D013672|789|MH|RtM via: Technology;Forced Non-Leaf Node Lookup:technology|TI|MM|75^10^0
+bullecosociamer.96.3.500|*Internet|D020407|648|MH|RtM via: Internet;Forced Non-Leaf Node Lookup:internet|TI|MM|533^8^0
+bullecosociamer.96.3.500|Telemetry|D013686|1000|MH|Forced Non-Leaf Node Lookup:telemetry||MM;RC|603^9^0
+20168195|*Ecosystem|D017753|23197|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|70^9^0;168^9^0;247^9^0
+20168195|Sexual Dysfunctions, Psychological|D020018|142410|MH|||RC
+20168195|Sexual Dysfunction, Physiological|D012735|115469|MH|||RC
+bullecosociamer.92.3.298|*Software|D012984|864|MH|RtM via: Computer software;Forced Non-Leaf Node Lookup:software|TI|MM;RC|73^8^0
+bullecosociamer.92.3.298|Nerve Fibers|D009412|126|MH|||RC
+20167204|Humans|D006801|272241522|CT|Forced Humans: humans;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM;RC|129^6^0
+20167204|Animals|D000818|272241522|CT|Xenopus laevis;CT Treecode Lookup: B01.050.150.900.090 (Xenopus laevis)||RC
+20167204|United States|D014481|272241522|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|396^13^0
+20167204|*Goals|D006040|10633417|MH|Forced Leaf Node Lookup:goal|TI|MM|601^4^0
+20167204|Xenopus Proteins|D029867|34181|MH|||RC
+20167204|Xenopus laevis|D014982|32336|MH|||RC
+20167204|*Motivation|D009042|18138|MH|RtM via: Act Mood - Goal|TI|MM|601^4^0
+20167204|*Ecological Systems|D017753|2223|ET|Entry Term Replacement for "Ecosystem";RtM via: Ecosystem;Forced Non-Leaf Node Lookup:ecological systems|TI|MM|139^18^0
+20167204|*Environmental Health|D004782|1446|MH|RtM via: Environmental Health;Forced Non-Leaf Node Lookup:environmental healths|TI|MM|488^20^0
+bullecosociamer.96.2.352|Humans|D006801|21058|CT|CT Text Lookup: student;CT Text Lookup: students|TI|MM;RC|182^7^0;207^8^0
+bullecosociamer.96.2.352|*Immersion|D007101|4809|MH|Forced Leaf Node Lookup:immersions|TI|MM|1002^9^0
+bullecosociamer.96.2.352|*Universities|D014495|19080|MH|RtM via: College (environment)|TI|MM;RC|580^7^0
+bullecosociamer.96.2.352|*Curricula|D003479|17808|ET|Entry Term Replacement for "Curriculum";RtM via: Educational Curriculum;Forced Non-Leaf Node Lookup:curricula|TI|MM;RC|337^9^0
+bullecosociamer.96.2.352|*Biology|D001695|14118|MH|RtM via: biology (field);Forced Non-Leaf Node Lookup:biology|TI|MM;RC|546^13^0
+bullecosociamer.96.2.352|*Students|D013334|12480|MH|RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM;RC|660^8^0;284^7^0;473^8^0;182^7^0;207^8^0
+bullecosociamer.96.2.352|*Longitudinal Studies|D008137|540|MH|RtM via: Continuous|TI|MM|360^7^0

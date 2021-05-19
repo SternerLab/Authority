@@ -103,7 +103,7 @@ if os.path.exists(filename_log):
 
 print("index_from",index_from)
 print('results_'+index_from+'_'+index_to+'.csv')
-database_path = "../../../database/jstor-authority.db"
+database_path = "../../database/jstor-authority.db"
 cnx = sqlite3.connect(database_path)
 cursor = cnx.cursor()
 
@@ -150,7 +150,7 @@ for name in authors[(int(index_from)):(int(index_to))]:
             publications = author_object.publications
             titles = [i.bib['title'] for i in publications]
             put_titles_in_db(titles, name[0], author_object.id)
-        # time.sleep(30)
+        time.sleep(30)
         count+=1
         if count%50 == 0:
             time.sleep(50)

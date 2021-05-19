@@ -1,0 +1,175 @@
+41781972|*Cotyledon|D018548|4703|MH|RtM via: Cotyledon plant;Forced Leaf Node Lookup:cotyledons|TI|MM|388^10^0
+41781972|*Calycanthaceae|D031237|19668|MH|RtM via: Idiospermum;RtM via: Idiospermum australiense;RtM via: Calycanthus|TI|MM|616^11^0;21^24^0;78^11^0
+41781972|*Flower|D035264|11484|ET|Entry Term Replacement for "Flowers";RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM;RC|268^6^0
+41781972|*Plant Leaves|D018515|5667|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|259^4^0
+41781972|*Seeds|D012639|3984|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM;RC|571^5^0
+41781955|Female|D005260|5854|CT|Placentation;CT Treecode Lookup: G08.686.784.769.491 (Placentation)||MM;RC
+41781955|Humans|D006801|5854|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM
+41781955|Pregnancy|D011247|1000|CT|Forced Treecode Turn Back On: G08.686.784.769.491 (Placentation)||MM
+41781955|*Mesembryanthemum|D035723|3067|MH|RtM via: Mesembryanthemum;Forced Leaf Node Lookup:mesembryanthemums;checkForceMH Boosted|TI|MM|468^16^0;121^16^0
+41781955|*Fruit|D005638|2072|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|166^6^0
+41781955|*African Americans|D001741|1415|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|63^5^0
+41781955|Mexico|D008800|1136|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM;RC|600^6^0
+41781955|*Placentation|D010929|956|MH|RtM via: Placentation;Forced Leaf Node Lookup:placentation|TI|MM|210^12^0
+41781955|Chile|D002677|929|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|578^5^0
+41781955|South Africa|D013019|929|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|746^12^0
+41781955|*Aizoaceae|D035722|4854|MH|RtM via: Carpobrotus|TI|MM;RC|21^11^0
+41781955|*Social Segregation|D000072699|2610|MH|RtM via: Racial Segregation|TI|MM|105^10^0
+41781955|*Plants|D010944|2535|MH|RtM via: Plants|TI|MM;RC|833^6^0
+41781955|*Geraniaceae|D031314|2202|MH|RtM via: California (plant)|TI|MM|585^10^0
+41781955|*Seeds|D012639|1806|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM|1035^5^0
+41781955|*Plant Leaves|D018515|1188|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|1068^4^0
+41781955|Australia|D001315|114|MH|RtM via: Australia|TI|MM|622^9^0
+41781955|California|D002140|3|MH|RtM via: California|TI|MM|585^10^0
+41781951|*Eucalyptus|D005052|7186|MH|RtM via: Eucalyptus populnea;Forced Leaf Node Lookup:eucalyptus;checkForceMH Boosted|TI|MM;RC|128^19^0
+41781951|Queensland|D011793|521|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|242^10^0
+41781951|*Plant Leaves|D018515|1524|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|104^4^0
+41781951|*Ifosfamide|D007069|987|MH|RtM via: dacarbazine/doxorubicin/ifosfamide/mesna protocol|TI|MM|173^4^0
+41781951|*Mesna|D015080|861|MH|RtM via: dacarbazine/doxorubicin/ifosfamide/mesna protocol|TI|MM|173^4^0
+41781951|*Dacarbazine|D003606|270|MH|RtM via: dacarbazine/doxorubicin/ifosfamide/mesna protocol|TI|MM|173^4^0
+41782020|Animals|D000818|9688|CT|Polychaeta;CT Treecode Lookup: B01.050.500.091 (Polychaeta)||MM;RC
+41782020|*Combretaceae|D029764|8688|MH|RtM via: Combretaceae;RtM via: Macropteranthes;RtM via: Lumnitzera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:combretaceae|TI|MM|21^12^0;1237^15^0;1339^10^0
+41782020|*Terminalia|D029766|5445|MH|RtM via: Terminalia;Forced Leaf Node Lookup:terminalias;checkForceMH Boosted|TI|MM|134^10^0
+41782020|*Trichomes|D064201|4590|MH|RtM via: Trichomes;Forced Leaf Node Lookup:indumentums|TI|MM|1225^10^0
+41782020|*Seasons|D012621|3492|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasonal;Forced Leaf Node Lookup:seasons|TI|MM|846^7^0;939^8^0
+41782020|*Fruit|D005638|2910|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM;RC|1155^5^0;709^5^0;752^5^0
+41782020|*Flowers|D035264|3720|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM;RC|1028^7^0
+41782020|*Plant Leaves|D018515|3477|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|1177^4^0
+41782020|*Combretum|D029765|2328|MH|RtM via: Combretum indicum|TI|MM|1408^17^0
+41782020|*Polychaeta|D011077|1245|MH|RtM via: Arenicola|TI|MM;RC|332^9^0
+41782020|Australia|D001315|546|MH|RtM via: Australia|TI|MM|1461^9^0;1397^9^0;1275^9^0;289^9^0;123^9^0
+41781889|Humans|D006801|5267|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)|TI|MM
+41781889|*Trees|D014197|4267|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|1316^4^0
+41781889|*African Americans|D001741|4103|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|1918^5^0
+41781889|*Trichomes|D064201|4028|MH|RtM via: Trichomes;Forced Leaf Node Lookup:indumentums|TI|MM|538^10^0;216^10^0;659^10^0
+41781889|*Melaleuca|D031650|2200|MH|Forced Leaf Node Lookup:melaleucas;checkForceMH Boosted|TI|MM|30^9^0
+41781889|*Fruit|D005638|2033|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|378^6^0
+41781889|*Melastomataceae|D035322|2487|MH|RtM via: Tibouchina urvilleana|TI|MM|1932^9^0
+41781889|*Proteaceae|D039105|2298|MH|RtM via: Leucadendron|TI|MM|2031^12^0;1119^12^0;722^12^0
+41781889|*Ascomycota|D001203|2205|MH|RtM via: Lanceolata (fungus);RtM via: Monticola|TI|MM;RC|1684^10^0;1902^9^0
+41781889|*Plant Leaves|D018515|1773|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|1283^4^0
+41781889|*Flowers|D035264|1122|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|366^7^0
+41781889|*Habit|D006184|159|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|279^5^0
+41782017|*Myoporum|D031643|3812|MH|RtM via: Myoporum;RtM via: Myoporum tenuifolium;Forced Leaf Node Lookup:myoporums;checkForceMH Boosted|TI|MM;RC|527^8^0;455^20^0
+41782017|Queensland|D011793|322|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|82^10^0
+41782017|*Scrophulariaceae|D028083|624|MH|RtM via: Eremophila angiosperm|TI|MM|342^10^0;62^10^0
+41782017|Animal Distribution|D063147|160|MH|||RC
+41781893|*Gardens|D000072506|1524|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|102^6^0
+41781893|*Fertility|D005298|3120|MH|RtM via: Fertility|TI|MM;RC|137^7^0
+41781893|*Chromosomes|D002875|1932|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM;RC|21^18^0
+41781893|*Infertility|D007246|1668|MH|RtM via: Infertility|TI|MM|82^7^0
+41781893|*Gardening|D051639|507|MH|RtM via: Gardening|TI|MM|102^6^0
+41781966|*Adoxa|D031003|2708|ET|Entry Term Replacement for "Adoxaceae";RtM via: Muskroot;checkForceMH Boosted;Forced Non-Leaf Node Lookup:adoxas|TI|MM|242^5^0;252^5^0
+41781966|*Plant Leaves|D018515|135|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|90^6^0
+41781966|*Names|D009275|30|MH|RtM via: Maiden Name|TI|MM|548^6^0
+41781895|*Acacia|D000045|7649|MH|RtM via: Acacia brachycarpa;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM;RC|21^18^0
+41781895|Queensland|D011793|631|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|636^10^0
+41781895|*Ifosfamide|D007069|1038|MH|RtM via: dacarbazine/doxorubicin/ifosfamide/mesna protocol|TI|MM|602^4^0;520^4^0
+41781895|*Amoebozoa|D056894|1035|MH|RtM via: Pellita|TI|MM|310^7^0
+41781895|*Proteaceae|D039105|1035|MH|RtM via: Orites|TI|MM|341^6^0
+41781895|*Mesna|D015080|978|MH|RtM via: dacarbazine/doxorubicin/ifosfamide/mesna protocol|TI|MM|602^4^0;520^4^0
+41770390|Humans|D006801|60967|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+41770390|*Cyperus|D029786|20605|MH|RtM via: Cyperus (plant);RtM via: Cyperus esculentus;RtM via: Cyperus isolepis;Forced Leaf Node Lookup:cyperus;checkForceMH Boosted|TI|MM|3185^7^0;1724^7^0;3020^7^1;3045^8^1
+41770390|*Inflorescence|D056626|4715|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|217^13^0
+41770390|*Fruit|D005638|3782|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|323^5^0
+41770390|*African Americans|D001741|3404|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|260^5^0
+41770390|*Cyperaceae|D029785|59967|MH|RtM via: Baumea articulata;RtM via: Lepidosperma;RtM via: Machaerina;RtM via: Morelotia;RtM via: Oreobolus;RtM via: Oreobolus acutifolius;RtM via: Oreobolus oxycarpus;RtM via: Schoenus ornithopodioides;RtM via: Schoenus pygmaeus;RtM via: Trachystylis;RtM via: Gahnia;RtM via: Fimbristylis;RtM via: Gahnia sieberiana;RtM via: Machaerina gunnii;RtM via: Scirpus;RtM via: Scleria (plant);RtM via: Cladium;RtM via: Fuirena;RtM via: Isolepis|TI|MM;RC|798^17^0;111^12^0;296^10^0;1429^9^0;423^9^0;3210^9^0;691^21^0;714^19^0;1477^25^0;735^17^0;566^12^0;1887^6^0;276^6^0;1362^6^0;668^6^0;100^6^0;2079^12^0;592^12^0;2833^16^0;1106^14^0;2996^7^0;1689^7^0;1557^7^0;757^7^0;1260^8^0;1378^7^0;1925^7^0;1222^7^0;817^7^0;2803^7^0;2779^7^0;1577^8^0
+41770390|vinyl polysiloxane|C034183|1480|NM|RtM via: affinis|TI|MM|1439^7^0
+41770390|*Siloxanes|D012833|1479|HM|RtM via: affinis|TI|MM|1439^7^0
+41770390|*Plant Leaves|D018515|1206|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM;RC|608^4^0;144^6^0;189^6^0
+41770390|*Polyvinyls|D011145|657|HM|RtM via: affinis|TI|MM|1439^7^0
+41770390|Tahiti|D011114|3|ET|Entry Term Replacement for "Polynesia";RtM via: Tahiti|TI|MM|3238^6^0
+41781987|Animals|D000818|3424|CT|Hymenoptera;CT Treecode Lookup: B01.050.500.131 (Hymenoptera);Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera)||MM;RC
+41781987|*Acacia|D000045|1403|MH|RtM via: Acacia;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM;RC|21^6^0
+41781987|*Hymenoptera|D006927|2424|MH|RtM via: Dineura|TI|MM;RC|538^7^0
+41781987|*Confusion|D003221|1365|MH|RtM via: Clouded consciousness;RtM via: Confusion|TI|MM|78^8^0
+41781987|*Lepidoptera|D007915|1008|MH|RtM via: Crassa (insect)|TI|MM|404^6^0
+41781987|*Name|D009275|366|ET|Entry Term Replacement for "Names";RtM via: Maiden Name;RtM via: Name;RtM via: Person Name|TI|MM|688^6^0;333^4^0
+41781978|*Poa|D031785|2745|MH|RtM via: Poa imbecilla;Forced Leaf Node Lookup:poa;checkForceMH Boosted|TI|MM|882^13^0
+41781978|*Eragrostis|D031750|2643|MH|RtM via: Eragrostis;Forced Leaf Node Lookup:eragrostis;checkForceMH Boosted|TI|MM|732^10^0
+41781978|New Zealand|D009520|474|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|908^11^0
+41781978|Animal Distribution|D063147|229|MH|||RC
+41782012|Indonesia|D007214|623|MH|RtM via: Timor;Forced Leaf Node Lookup:timor|TI|MM|585^5^0
+41782012|*Mimosa|D031298|565|MH|RtM via: Mimosa;Forced Leaf Node Lookup:mimosas;checkForceMH Boosted|TI|MM|226^6^0
+41782012|New Guinea|D009512|554|MH|RtM via: New Guinea;Forced Leaf Node Lookup:new guinea|TI|MM|457^10^0
+41782012|Vanuatu|D009514|554|MH|RtM via: Vanuatu;Forced Leaf Node Lookup:new hebrides|TI|MM|522^12^0
+41782012|Mexico|D008800|131|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM;RC|627^6^0
+41782012|Australia|D001315|996|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|111^9^0
+41781953|Animals|D000818|30378|CT|Scyphozoa;CT Treecode Lookup: B01.050.500.308 (Scyphozoa)||MM;RC
+41781953|*Elaeocarpaceae|D045467|29378|MH|RtM via: Elaeocarpaceae;RtM via: Elaeocarpus stellaris;checkForceMH Boosted;Forced Non-Leaf Node Lookup:elaeocarpaceae|TI|MM;RC|168^14^0;145^21^0
+41781953|*Chenopodiaceae|D019663|25166|MH|RtM via: Chenopodiaceae;RtM via: Suaeda arbusculoides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chenopodiaceae|TI|MM;RC|128^14^0;106^20^0
+41781953|*Proteaceae|D039105|21563|MH|RtM via: Musgravea heterophylla;RtM via: Neorites;RtM via: Neorites kevedianus;RtM via: Proteaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:proteaceae|TI|MM|319^22^0;69^8^0;346^18^0;366^10^0
+41781953|*Melastomataceae|D035322|19432|MH|RtM via: Melastomataceae;RtM via: Pternandra;Forced Leaf Node Lookup:melastomataceae;checkForceMH Boosted|TI|MM|581^15^0;728^10^0;549^10^0
+41781953|*Olacaceae|D031656|18400|MH|RtM via: Olacaceae;RtM via: Olax;Forced Leaf Node Lookup:olacaceae;checkForceMH Boosted|TI|MM|393^9^0;379^4^0
+41781953|*Myoporaceae|D031642|10838|MH|RtM via: Myoporaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:myoporaceae|TI|MM|305^11^0
+41781953|*Clerodendrum|D032409|10069|MH|RtM via: Clerodendrum;Forced Leaf Node Lookup:clerodendrums;checkForceMH Boosted|TI|MM|491^12^0
+41781953|*Myoporum|D031643|9889|MH|RtM via: Myoporum betcheanum;Forced Leaf Node Lookup:myoporums;checkForceMH Boosted|TI|MM|267^19^0
+41781953|*Monimiaceae|D029585|9371|MH|RtM via: Austromatthaea elegans;RtM via: Monimiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:monimiaceae|TI|MM|229^22^0;253^11^0;52^11^0;36^14^0
+41781953|*Morinda|D032066|9261|MH|Forced Leaf Node Lookup:morindas;checkForceMH Boosted|TI|MM;RC|599^7^0
+41781953|*Sterculiaceae|D019660|8246|ET|Entry Term Replacement for "Malvaceae";RtM via: Malvaceae;RtM via: Lasiopetalum;RtM via: Argyrodendron actinophyllum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sterculiaceae|TI|MM|673^13^0;471^13^0;792^12^0;643^12^0;405^27^0
+41781953|Queensland|D011793|7112|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM;RC|810^10^0;706^10^0
+41781953|*Euphorbiaceae|D019665|6770|MH|RtM via: Calycopeplus casuarinoides;RtM via: Euphorbiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:euphorbiaceae|TI|MM|185^26^0;213^13^0
+41781953|*Rubiaceae|D019666|6449|MH|RtM via: Rubiaceae;RtM via: Coelospermum salomoniense;checkForceMH Boosted;Forced Non-Leaf Node Lookup:rubiaceae|TI|MM|627^9^0;599^20^0
+41781953|*Verbenaceae|D029648|5771|MH|RtM via: Verbenaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:verbenaceae|TI|MM|514^11^0
+41781953|*Campanulaceae|D029422|3840|MH|RtM via: Cyanea angiosperm|TI|MM|560^6^0
+41781953|Australia|D001315|2685|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|777^9^0
+41781953|*Malvales|D000077142|2544|MH|RtM via: Family Sterculiaceae|TI|MM|673^13^0;471^13^0
+41781891|Animals|D000818|1231|CT|Songbirds;CT Treecode Lookup: B01.050.150.900.248 (Songbirds)||MM;RC
+41781891|*Neglecta|D000086242|54|MH|RtM via: Neglecta;Forced New Lookup:neglecta;checkForceMH Boosted|TI|MM|73^8^0
+41781891|Queensland|D011793|33|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM;RC|240^10^0;181^10^0
+41781891|*Ploidies|D011003|231|MH|RtM via: Ploidies|TI|MM|106^21^0
+41781891|*Ascomycota|D001203|84|MH|RtM via: Monticola|TI|MM|24^9^0
+41781891|*Songbirds|D020308|36|MH|RtM via: Monticola|TI|MM|24^9^0
+41781891|*Record|D011996|33|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|167^8^0
+41781891|Chromosomes|D002875|999|MH|Forced Non-Leaf Node Lookup:chromosome||MM;RC|106^10^0
+41782006|*Solanum|D032322|4403|MH|RtM via: genus Solanum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:solanums|TI|MM;RC|900^7^0;886^7^0
+41782006|Plant Breeding|D000069600|1915|MH|Replacement of Breeding Plants Found||MM
+41782006|*Pollen|D011058|4311|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|1333^6^0;1181^6^0;1361^6^0
+41782006|*Seed|D012639|2721|ET|Entry Term Replacement for "Seeds";RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seed|TI|MM;RC|797^4^0
+41782006|*Pollination|D054817|2091|MH|RtM via: Pollination|TI|MM|1248^11^0
+41782006|*Solanum nigrum|D032324|729|MH|RtM via: Solanum nigrum|TI|MM|900^7^0;886^7^0
+41782006|Australia|D001315|6|MH|RtM via: Australia|TI|MM|1072^9^0;936^9^0;67^9^0
+41781960|Humans|D006801|12463|CT|CT Text Lookup: workers|TI|MM;RC|1967^7^0
+41781960|*Isodon|D037602|11463|MH|RtM via: Isodon;Forced Leaf Node Lookup:rabdosias;Forced Leaf Node Lookup:isodons;checkForceMH Boosted|TI|MM|67^6^0;44^8^0
+41781960|*Plectranthus|D031346|8814|MH|RtM via: Plectranthus;Forced Leaf Node Lookup:plectranthus;checkForceMH Boosted|TI|MM|262^12^0;21^12^0
+41781960|*Coleus|D031330|8043|MH|RtM via: Coleus;Forced Leaf Node Lookup:coleus;checkForceMH Boosted|TI|MM|176^6^0
+41781960|*Ocimum|D031339|6804|MH|RtM via: Ocimum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ocimums|TI|MM|881^6^0
+41781960|*Trichomes|D064201|6759|MH|RtM via: Trichomes;Forced Leaf Node Lookup:indumentums|TI|MM|2807^10^0
+41781960|Australia|D001315|6603|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM;RC|381^9^0;1488^10^0;2515^10^0
+41781960|*Gardens|D000072506|6603|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|2258^6^0
+41781960|Indonesia|D007214|5847|MH|RtM via: Timor;Forced Leaf Node Lookup:timor;Forced Leaf Node Lookup:java|TI|MM|1415^5^0;636^5^0;1474^4^0
+41781960|*Estrogens, Conjugated (USP)|D004966|5406|MH|RtM via: Congest;Forced Leaf Node Lookup:congest;checkForceMH Boosted|TI|MM|592^7^0
+41781960|*Lip|D008046|5070|MH|RtM via: External upper lip;RtM via: Upper lip structure;Forced Leaf Node Lookup:lip|TI|MM|1907^9^0;1913^3^0
+41781960|Fiji|D005367|3942|MH|RtM via: Fiji;Forced Leaf Node Lookup:fiji|TI|MM|1058^4^0
+41781960|New Caledonia|D009510|3942|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM|1043^13^0
+41781960|New Guinea|D009512|3942|MH|RtM via: New Guinea;Forced Leaf Node Lookup:new guinea|TI|MM|1425^10^0;843^10^0;621^10^0
+41781960|Vanuatu|D009514|3942|MH|RtM via: Vanuatu;Forced Leaf Node Lookup:new hebrides|TI|MM|1029^12^0
+41781960|Queensland|D011793|3648|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|403^10^0
+41781960|Mauritius|D008436|3516|MH|RtM via: Mauritius;Forced Leaf Node Lookup:mauritius|TI|MM|1167^9^0
+41781960|Hawaii|D006254|3090|MH|RtM via: Hawaii;Forced Leaf Node Lookup:hawaii|TI|MM|799^6^0
+41781960|Sri Lanka|D013188|3090|MH|RtM via: Sri Lanka;Forced Leaf Node Lookup:ceylon|TI|MM|1287^6^0
+41781960|South Africa|D013019|2967|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|1308^12^0
+41781960|Peru|D010568|2664|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|2486^4^0
+41781960|*Plant Leaves|D018515|4962|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|2151^4^0;1637^4^0;1679^4^0;1809^4^0
+41781960|*Habit|D006184|87|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|2825^5^0;1607^5^0
+41781984|*Poaceae|D006109|4176|MH|RtM via: Thyridolepis mitchelliana;RtM via: Neurachne;RtM via: Paraneurachne muelleri;RtM via: Panicoideae|TI|MM;RC|415^25^0;31^9^0;332^22^0;218^13^0;248^12^0;590^11^0
+41781984|Australia|D001315|411|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|643^9^0
+41781984|*Muscle Hypotonia|D009123|321|HM|RtM via: SCALP-EAR-NIPPLE SYNDROME|TI|MM|602^4^0
+41781969|*Ploidies|D011003|543|MH|RtM via: Ploidies|TI|MM|180^21^0
+41781969|*Biliary Tract|D001659|120|MH|RtM via: Papilla;RtM via: Papilla of duodenum|TI|MM|136^8^0
+41781969|*Araliaceae|D027481|45|MH|RtM via: Trachymene|TI|MM|21^10^0
+41781969|Chromosomes|D002875|999|MH|Forced Non-Leaf Node Lookup:chromosome||MM;RC|180^10^0
+41782009|Animals|D000818|5413|CT|Coleoptera;CT Treecode Lookup: B01.050.500.131 (Coleoptera)||MM;RC
+41782009|Queensland|D011793|3949|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM;RC|388^10^0
+41782009|*Sand|D000080463|3160|MH|RtM via: Sand;checkForceMH Boosted|TI|MM|1651^5^0;607^5^0
+41782009|*Cymbopogon|D031743|3116|MH|RtM via: Cymbopogon;Forced Leaf Node Lookup:cymbopogons;checkForceMH Boosted|TI|MM|537^10^0;45^10^0
+41782009|*Soils|D012987|2701|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|1671^5^0;622^5^0
+41782009|*Inflorescence|D056626|1798|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|1133^14^0
+41782009|Indonesia|D007214|1618|MH|RtM via: Timor;Forced Leaf Node Lookup:timor|TI|MM|329^5^0
+41782009|*Cicatrix|D002921|1240|MH|RtM via: Cicatrix;RtM via: Scar Tissue;Forced Leaf Node Lookup:scar|TI|MM|1927^4^0
+41782009|Hawaii|D006254|1108|MH|RtM via: Hawaii;Forced Leaf Node Lookup:hawaii|TI|MM|433^6^0
+41782009|*Habitats|D017753|4413|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|1691^8^0
+41782009|Australia|D001315|4179|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|511^9^0;295^9^0;92^9^0
+41782009|*Poaceae|D006109|2532|MH|RtM via: Schizachyrium|TI|MM|1594^13^0;69^13^0
+41782009|*Coleoptera|D001517|2094|MH|RtM via: Subgenus Procerus|TI|MM;RC|905^8^0;249^8^0
+41782009|*Plant Leaves|D018515|1059|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|2017^4^0;1059^4^0

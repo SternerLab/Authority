@@ -1,0 +1,17 @@
+42786320|Animals|D000818|1744|CT|Aphids;CT Treecode Lookup: B01.050.500.131 (Aphids)||MM;RC
+42786320|United States|D014481|1744|CT|Forced Leaf Node Lookup:american|TI|MM|143^8^0
+42786320|*Rosa|D027826|274|MH|RtM via: Rosa;Forced Leaf Node Lookup:rose;checkForceMH Boosted|TI|MM|91^4^0
+42786320|*Cactaceae|D029421|744|MH|RtM via: Thelocactus;RtM via: Sclerocactus;RtM via: Ferocactus;RtM via: Echinocactus (cactus)|TI|MM|463^11^0;419^14^0;446^12^0;286^14^0;535^10^0;221^10^0;267^12^0;163^12^0
+42786320|*Cluster Analysis|D016000|291|MH|RtM via: Recognition of Outliers by Sampling Ends|TI|MM;RC|91^4^0
+42786320|*Stramenopiles|D058009|246|MH|RtM via: Otto|TI|MM|183^4^0
+42786320|*Aphids|D001042|228|MH|RtM via: Coloradoa|TI|MM|435^9^0
+42786896|*Diploidy|D004171|4369|MH|RtM via: Diploidy;Forced Leaf Node Lookup:diploids|TI|MM;RC|27^7^0
+42786896|*Tetraploidy|D057891|4273|MH|RtM via: Tetraploidy;Forced Leaf Node Lookup:tetraploids|TI|MM;RC|274^10^0;150^10^0
+42786896|Kenya|D007630|2482|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM;RC|392^5^0;96^5^0
+42786896|*Aloe|D000504|1103|MH|RtM via: Aloe;RtM via: aloe extract;Forced Leaf Node Lookup:aloe;checkForceMH Boosted|TI|MM|46^4^0
+42786896|East Africa|D000351|2211|ET|Entry Term Replacement for "Africa, Eastern";RtM via: Africa, Eastern;Forced Non-Leaf Node Lookup:east africa|TI|MM;RC|180^11^0
+42786291|Animals|D000818|1411|CT|Sea Urchins;CT Treecode Lookup: B01.050.500.408 (Sea Urchins)||MM;RC
+42786291|*Probability|D011336|411|MH|RtM via: Probability|TI|MM|489^8^0
+42786291|*Uncertainty|D035501|321|MH|RtM via: Uncertainty|TI|MM|244^9^0
+42786291|*Names|D009275|156|MH|RtM via: Name;RtM via: Person Name|TI|MM|266^5^0;41^5^0
+42786291|*Sea Urchins|D012617|135|MH|RtM via: Phyllacanthus <echinoderm>|TI|MM|324^13^0

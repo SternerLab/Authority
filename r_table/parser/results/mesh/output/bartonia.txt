@@ -1,0 +1,319 @@
+41610105|Animals|D000818|24046|CT|Forced Lookup:deer;Deer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Deer);Mammals;CT Treecode Lookup: B01.050.150.900.649 (Mammals);CT Text Lookup: mammal|TI|MM;RC|229^4^0;339^4^0;478^4^0;567^4^0;1034^4^0;1173^4^0;1279^4^0;194^7^0
+41610105|*Introduced Species|D058865|21050|MH|RtM via: Invasive Species;Forced Leaf Node Lookup:invasive species;checkForceMH Boosted|TI|MM;RC|1288^16^0
+41610105|*Herbivory|D060434|20240|MH|RtM via: Herbivory;Forced Leaf Node Lookup:herbivores;Forced Leaf Node Lookup:herbivory|TI|MM;RC|1178^9^0;937^9^0;1066^9^0;181^9^0;44^9^0
+41610105|*Deer|D003670|10299|MH|RtM via: Odocoileus virginianus;Forced Lookup:deer|TI|MM;RC|216^17^0;229^4^0;339^4^0;478^4^0;567^4^0;1034^4^0;1173^4^0;1279^4^0
+41610105|*Holly|D030017|3976|ET|Entry Term Replacement for "Ilex";RtM via: Holly;RtM via: Ilex;checkForceMH Boosted;Forced Non-Leaf Node Lookup:holly|TI|MM|1205^5^0;877^5^0;684^5^0;433^5^0
+41610105|New York|D009518|3547|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|345^8^0
+41610105|*Forests|D065928|23046|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1401^6^0;1021^7^0;492^6^0;371^6^0;324^6^0;397^7^0
+41610105|*Brassicaceae|D019607|1803|MH|RtM via: Alliaria petiolata|TI|MM;RC|79^18^0
+41610126|*Trees|D014197|23937|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|481^5^0;220^5^0
+41610126|*Pinus|D028223|13611|MH|RtM via: Pinus echinata;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM;RC|600^14^0;57^14^0;41^14^0
+41610126|*Conifers|D064028|11721|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|697^8^0
+41610126|North Carolina|D009657|2655|MH|RtM via: North Carolina;Forced Leaf Node Lookup:north carolina|TI|MM|92^14^0
+41610126|*Forest|D065928|17397|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|188^6^0
+41610126|*Cycadopsida|D032462|7398|MH|RtM via: Division Coniferophyta (organism)|TI|MM;RC|697^8^0
+41610126|*Rotation|D012399|84|MH|RtM via: Replacement|TI|MM|723^8^0
+41610085|*Germination|D018525|38981|MH|RtM via: Germination;Forced Leaf Node Lookup:germinations|TI|MM;RC|1482^11^0;1271^9^0;1096^9^0;971^9^0;854^11^0;626^11^0;705^10^0;471^10^0;402^10^0;364^9^0;300^10^0;101^11^0;134^9^0;800^11^0
+41610085|*Agar|D000362|8569|MH|RtM via: agar;Forced Leaf Node Lookup:agar;checkForceMH Boosted|TI|MM|719^4^0;518^4^0
+41610085|*Asteraceae|D019659|7521|MH|RtM via: Symphyotrichum novae-angliae;RtM via: Doellingeria umbellata|TI|MM;RC|203^28^0;164^22^0
+41610085|*Plant Weeds|D057685|2427|MH|RtM via: Plant Weeds|TI|MM|1453^5^0
+41610085|*Aster Plant|D031173|1260|MH|RtM via: Aster Plant|TI|MM|1459^5^0
+41610085|Resource Allocation|D040841|1000|MH|Forced Non-Leaf Node Lookup:allocation of resources||MM|1386^23^0
+41610125|Animals|D000818|58043|CT|Eagles;CT Treecode Lookup: B01.050.150.900.248 (Eagles)||MM;RC
+41610125|*Rivers|D045483|57043|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM;RC|2559^6^0;2278^7^0;1426^6^0;1287^7^0;451^6^0;43^6^0
+41610125|*Eagles|D020307|13597|MH|RtM via: Haliaeetus leucocephalus;Forced Leaf Node Lookup:eagles;checkForceMH Boosted|TI|MM|1492^10^0;1497^5^0
+41610125|Pennsylvania|D010414|5891|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|516^12^0
+41610125|*Benchmarking|D019985|5831|MH|RtM via: Benchmarks;Forced Leaf Node Lookup:metrics|TI|MM|2493^7^0;2378^7^0;1979^7^0;1744^7^0;1265^7^0;677^7^0;1891^7^0
+41610125|*Habitats|D017753|34521|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|2080^7^0;740^7^0;50^8^0
+41610125|*Agriculture|D000383|14199|MH|RtM via: Agriculture|TI|MM;RC|1449^14^0;1188^12^0;920^12^0
+41610125|*Forests|D065928|6825|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|2062^6^0;1509^6^0;1139^8^0;908^8^0
+41610125|*Plant|D010944|6546|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|115^5^0
+41610125|*Groundwater|D060587|5883|MH|RtM via: Groundwater;Forced Non-Leaf Node Lookup:groundwaters|TI|MM|2675^11^0
+41610125|*Insect|D007313|2274|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|1258^6^0
+41610089|*Wetlands|D053833|12569|MH|RtM via: Wetlands;Forced Leaf Node Lookup:wetlands|TI|MM;RC|824^8^0;244^8^0;91^8^0
+41610089|*Ponds|D061005|6515|MH|RtM via: Natural pond;Forced Leaf Node Lookup:ponds|TI|MM;RC|911^5^0;660^5^0;409^5^0;35^5^0
+41610089|*Biodiversity|D044822|13035|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|973^12^0;288^12^0
+41610089|*Ecology|D004463|11253|MH|RtM via: Ecology|TI|MM;RC|71^12^0
+41610089|*Plant|D010944|6723|ET|Entry Term Replacement for "Plants";RtM via: Plants;Forced Non-Leaf Node Lookup:herbaceous|TI|MM;RC|480^5^0;137^5^0;732^10^0;862^10^0
+41610089|*Attention|D001288|6|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|765^9^0
+41955392|*Mycorrhizas|D038821|48857|ET|Entry Term Replacement for "Mycorrhizae";RtM via: Mycorrhizae;checkForceMH Boosted|TI|MM;RC|512^11^0;319^11^0;64^11^0
+41955392|*Hyphae|D025301|8882|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM;RC|405^6^0
+41955392|New Jersey|D009515|3500|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|267^10^0
+41955392|Spores, Fungal|D013172|7307|MH|Spores Specifics:Spores||MM;RC
+41955392|*Pinus|D028223|7848|MH|RtM via: Pinus <genus>|TI|MM;RC|278^4^0
+41955392|*Cyperaceae|D029785|5253|MH|RtM via: Rhynchospora|TI|MM;RC|113^12^0
+41955391|*Andropogon|D031722|23708|MH|RtM via: Andropogon gerardi;Forced Leaf Node Lookup:andropogons;checkForceMH Boosted|TI|MM;RC|574^19^0;21^19^0
+41955391|*Lespedeza|D029884|8453|MH|RtM via: Lespedeza cuneata;Forced Leaf Node Lookup:lespedezas;checkForceMH Boosted|TI|MM;RC|642^17^0
+41955391|*Soil|D012987|7096|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|831^4^0;402^4^0
+41955391|*Copper|D003300|6308|MH|RtM via: copper;Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM;RC|1027^6^0
+41955391|*Manganese|D008345|6026|MH|RtM via: manganese;Forced Leaf Node Lookup:manganese;checkForceMH Boosted|TI|MM|933^9^0
+41955391|*Boron|D001895|5423|MH|RtM via: boron;Forced Leaf Node Lookup:boron;checkForceMH Boosted|TI|MM|948^5^0
+41955391|*Magnesium|D008274|5399|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM|922^9^0
+41955391|*Fraxinus|D031661|5168|MH|RtM via: Ash tree;Forced Leaf Node Lookup:fraxinus;checkForceMH Boosted|TI|MM|700^8^0
+41955391|*Vitis|D027843|5081|MH|RtM via: Vitis rotundifolia;Forced Leaf Node Lookup:vitis;checkForceMH Boosted|TI|MM|676^18^0
+41955391|*Rubus|D065856|4715|MH|RtM via: Rubus argutus;Forced Leaf Node Lookup:rubus;checkForceMH Boosted|TI|MM|661^13^0
+41955391|*Poaceae|D006109|7803|MH|RtM via: Dichanthelium scoparium|TI|MM;RC|792^23^0
+41955391|*Ecology|D004463|3039|MH|RtM via: Ecology|TI|MM|164^7^0
+41955391|*Ions|D007477|981|MH|RtM via: Dietary Manganese|TI|MM|933^9^0
+41955391|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM|895^2^0
+43893668|*Introduced Species|D058865|17406|MH|RtM via: Invasive Species;Forced Leaf Node Lookup:non-native species;Forced Leaf Node Lookup:invasive species;checkForceMH Boosted|TI|MM;RC|754^16^0;322^18^0
+43893668|New York|D009518|8329|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM;RC|905^8^0
+43893668|New Jersey|D009515|3145|MH|RtM via: Cumberland County, NJ;RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|231^17^0;856^10^0
+43893668|*Checklist|D057189|1579|MH|RtM via: Checklist;Forced Leaf Node Lookup:checklists|TI|MM|199^9^0
+43893668|Delaware|D003691|1525|MH|Forced Leaf Node Lookup:delaware|TI|MM|895^8^0
+43893668|*Tracheophyta|D064028|1983|MH|RtM via: Tracheophyta|TI|MM|212^15^0
+43893668|Ecosystem|D017753|683|MH|||RC
+43893668|*Gentianaceae|D029965|186|MH|RtM via: Bartonia|TI|MM|268^8^0
+43893668|*Name|D009275|180|ET|Entry Term Replacement for "Names";RtM via: Name;RtM via: Person Name|TI|MM|178^4^0
+41610086|United States|D014481|3254|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|366^8^0
+41610086|*Authorship|D001319|2254|MH|RtM via: Authorship;Forced Leaf Node Lookup:authorships|TI|MM|503^10^0
+41610086|New Jersey|D009515|703|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|1058^10^0;848^10^0;166^10^0;85^10^0
+41610086|*Plants|D010944|2118|MH|RtM via: Plants|TI|MM;RC|1039^6^0;829^6^0;66^6^0
+41610086|*Names|D009275|1512|MH|RtM via: Established Drug Name;RtM via: Name;RtM via: Person Name|TI|MM|1113^14^0;798^5^0;445^5^0
+41610086|*Publications|D011642|1239|MH|RtM via: Scientific Publication|TI|MM|1013^9^0;953^9^0;100^9^0
+41610086|*Confusion|D003221|795|MH|RtM via: Clouded consciousness;RtM via: Confusion|TI|MM|550^9^0
+44089926|Humans|D006801|1000|CT|Forced Humans:D Police||MM
+44089926|Maryland|D008396|416|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM;RC|315^8^0;176^8^0;88^8^0
+44089926|*Ludwigia|D029594|284|ET|Entry Term Replacement for "Onagraceae";RtM via: Ludwigia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ludwigias|TI|MM;RC|203^8^0
+44089926|*Coreopsis|D031945|142|MH|RtM via: Coreopsis rosea;Forced Leaf Node Lookup:coreopsis;checkForceMH Boosted|TI|MM|348^15^0
+44089926|Delaware|D003691|91|MH|Forced Leaf Node Lookup:delaware|TI|MM;RC|101^8^0;142^8^0
+44089926|*Ericaceae|D029791|72|MH|RtM via: Gaylussacia dumosa|TI|MM|325^18^0
+44089926|Police|D016495|22|MH|||RC
+41610108|Humans|D006801|64804|CT|American Natives;CT Treecode Lookup: M01.686 (American Natives)||MM;RC
+41610108|*American Natives|D000086562|8843|MH|RtM via: Native Americans;RtM via: American Indians;Forced New Lookup:american indian;Forced New Lookup:native american|TI|MM|652^15^0;264^15^0
+41610108|*Ethnobotany|D019448|63804|MH|RtM via: Ethnobotany|TI|MM;RC|187^14^0
+41610108|*Traditional Medicine|D008519|29115|ET|Entry Term Replacement for "Medicine, Traditional";RtM via: Traditional Medicine|TI|MM;RC|640^11^1;668^8^1
+41610108|*Biomedical Research|D035843|660|MH|RtM via: Biomedical Research;Forced Non-Leaf Node Lookup:biomedical research|TI|MM|214^19^0
+44089928|*Mycology|D009172|7088|MH|RtM via: The science of Mycology;Forced Leaf Node Lookup:mycology|TI|MM;RC|344^8^0
+44089928|Poland|D011044|1493|MH|RtM via: Country of Poland;Forced Leaf Node Lookup:poland|TI|MM|439^6^0
+44089928|*Biodiversity|D044822|5715|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|900^12^0
+44089928|*Book|D001877|3804|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM;RC|742^4^0
+44089928|*Habitats|D017753|3741|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|479^8^0
+44089928|*Fungi|D005658|2604|MH|RtM via: Fungi;Forced Non-Leaf Node Lookup:fungi|TI|MM;RC|948^5^0;987^6^0;503^5^0;372^5^0;574^5^0
+44089928|Germany|D005858|825|MH|RtM via: Germany|TI|MM|419^7^0
+44089927|Humans|D006801|1855471|CT|Forced Humans: families|TI|MM;RC
+44089927|*Checklist|D057189|78538|MH|RtM via: Checklist;Forced Leaf Node Lookup:checklists|TI|MM|34^9^0
+44089927|New Jersey|D009515|77713|MH|RtM via: Salem County, NJ;RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|103^12^0;597^10^0
+44089927|*Grassland|D065948|77710|MH|Forced Leaf Node Lookup:meadows|TI|MM|358^7^0
+44089927|*Forests|D065928|21528|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|565^6^0;628^7^0;346^7^0;141^6^0
+44089927|*Habitat|D017753|12378|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|433^7^0
+44089927|*Plants|D010944|5052|MH|RtM via: Plants|TI|MM;RC|477^6^0;69^6^0
+41610134|Humans|D006801|4446631|CT|Forced Humans: families|TI|MM;RC
+41610134|*Introduced Species|D058865|362465|MH|RtM via: Invasive Species;Forced Leaf Node Lookup:invasive species;checkForceMH Boosted|TI|MM;RC|373^16^0
+41610134|Pennsylvania|D010414|179314|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM;RC|118^12^0
+41610134|*Water|D014867|178900|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|65^5^0
+41610134|New Jersey|D009515|178846|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|103^10^0
+41610134|Delaware|D003691|178378|MH|Forced Leaf Node Lookup:delaware|TI|MM|56^8^0
+41610134|*Tracheophyta|D064028|1587|MH|RtM via: Tracheophyta|TI|MM|33^15^0
+41610134|Biodiversity|D044822|508|MH|||RC
+41610134|Recreation|D011998|1000|MH|Forced Non-Leaf Node Lookup:recreations||MM;RC|84^10^0
+41610084|Animals|D000818|172666|CT|Forced Lookup:odocoileus;Forced Lookup:deer;Deer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Deer)|TI|MM;RC|1574^10^0;1568^4^0
+41610084|United States|D014481|172666|CT|RtM via: Americas Ethnicity;RtM via: United States;Forced Leaf Node Lookup:american|TI|MM;RC|500^8^0;1432^5^1;1446^1^1
+41610084|*Acer|D031002|171666|MH|RtM via: Acer rubrum;RtM via: Acer saccharum;Forced Leaf Node Lookup:acer saccharums;Forced Leaf Node Lookup:sugar maples;Forced Leaf Node Lookup:maples;checkForceMH Boosted|TI|MM;RC|351^11^0;340^9^0;549^14^0;536^11^0;344^5^0
+41610084|*Fagus|D029964|161628|MH|RtM via: Fagus grandifolia;RtM via: Beech;Forced Leaf Node Lookup:beechs;Forced Leaf Node Lookup:fagus;checkForceMH Boosted|TI|MM;RC|516^17^0;509^5^0
+41610084|*Quercus|D029963|103842|MH|RtM via: Quercus rubra;Forced Leaf Node Lookup:quercus;Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM;RC|377^13^0;368^7^0;770^3^0;478^3^0;483^7^0;372^3^0
+41610084|*Trees|D014197|87450|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|422^5^0;33^5^0
+41610084|*Tsuga|D028225|71202|MH|RtM via: Tsuga canadensis;Forced Leaf Node Lookup:tsugas;checkForceMH Boosted|TI|MM;RC|317^16^0
+41610084|*Betula|D029662|67731|MH|RtM via: Betula lenta;Forced Leaf Node Lookup:betulas;Forced Leaf Node Lookup:birchs;checkForceMH Boosted|TI|MM;RC|610^12^0;597^11^0;603^5^0
+41610084|*Seedlings|D036226|62139|MH|RtM via: Seedlings;Forced Leaf Node Lookup:seedlings;checkForceMH Boosted|TI|MM;RC|1617^8^0;1145^9^0;998^8^0;98^9^0
+41610084|*Pinus|D028223|44406|MH|RtM via: Pinus strobus;RtM via: Pinus <genus>;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM;RC|578^13^0;572^4^0
+41610084|*Saccharum|D031786|35763|MH|RtM via: Saccharum;Forced Leaf Node Lookup:saccharum;checkForceMH Boosted|TI|MM|743^9^0
+41610084|*Hemlock|D018652|23589|MH|RtM via: Hemlock;Forced Leaf Node Lookup:hemlocks|TI|MM|308^7^0;152^7^0
+41610084|Pennsylvania|D010414|18027|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|229^12^0
+41610084|*Deer|D003670|3576|MH|RtM via: Odocoileus virginianus;Forced Lookup:odocoileus;Forced Lookup:deer|TI|MM;RC|1574^22^0;1555^17^0;1568^4^0
+41610084|*Forests|D065928|28887|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1519^7^0;1319^6^0;1451^7^0;185^6^0
+41610084|Ecosystem|D017753|2593|MH|||RC
+41610084|*Biological Phenomena|D001686|1407|MH|RtM via: Tissue Growth|TI|MM|1488^6^0
+43893669|*Temperature|D013696|10360|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|944^11^0
+43893669|*Droughts|D055864|4303|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|965^7^0
+43893669|*Lakes|D060106|2818|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|237^4^0
+43893669|*Plant Bloom|D035264|6594|ET|Entry Term Replacement for "Flowers";RtM via: Flowers|TI|MM;RC|1035^5^1;1049^8^1
+43893669|*Reproduction|D012098|3039|MH|RtM via: flowering|TI|MM;RC|615^9^0;217^9^0
+43893669|*Plants|D010944|2967|MH|RtM via: Plants|TI|MM;RC|1274^6^0;1087^6^0
+43893669|*Educational Status|D004522|2361|MH|RtM via: Educational Status|TI|MM|174^9^0
+43893669|*Photography|D010781|621|MH|RtM via: Photography;Forced Non-Leaf Node Lookup:photography|TI|MM;RC|1353^11^0
+43893669|*Data Storage|D016247|375|ET|Entry Term Replacement for "Information Storage and Retrieval";RtM via: Data Storage;Forced Non-Leaf Node Lookup:data storage|TI|MM|1369^12^0
+43893669|Documentation|D004282|1000|MH|Forced Non-Leaf Node Lookup:documentations||MM|438^13^0
+43233854|Animals|D000818|53410|CT|Forced Lookup:deer;Deer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Deer)|TI|MM;RC|747^4^0;790^4^0
+43233854|Humans|D006801|53410|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)|TI|MM
+43233854|*Quercus|D029963|52410|MH|RtM via: Quercus alba;RtM via: Quercus velutina;Forced Leaf Node Lookup:quercus;Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM;RC|402^12^0;416^9^0;444^9^0;672^7^0;422^3^0;450^3^0
+43233854|*Trees|D014197|51105|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|539^4^0;618^4^0;518^5^0
+43233854|*Seedlings|D036226|19699|MH|RtM via: Seedlings;Forced Leaf Node Lookup:seedlings;checkForceMH Boosted|TI|MM;RC|685^9^0;623^9^0
+43233854|New York|D009518|5465|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM;RC|197^8^0
+43233854|*African Americans|D001741|5459|MH|Forced Leaf Node Lookup:blacks|TI|MM|444^5^0
+43233854|*Deer|D003670|1932|MH|RtM via: Odocoileus virginianus;Forced Lookup:deer|TI|MM;RC|778^16^0;747^4^0;790^4^0
+43233854|*Forests|D065928|39360|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|531^6^0;277^6^0;158^6^0;30^6^0;111^7^0
+43233854|*Islands|D062312|3651|MH|RtM via: Islands|TI|MM|813^6^0;189^6^0
+43233854|Northeastern United States|D009511|3|ET|Entry Term Replacement for "New England";RtM via: New England|TI|MM|126^26^0
+41955393|*Ecosystem|D017753|24352|MH|RtM via: Habitat;RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|1738^7^0;1362^7^0;488^7^0;1135^10^0
+41955393|*Bays|D061006|5752|MH|RtM via: Bay (geographic);Forced Leaf Node Lookup:bays|TI|MM|524^4^0
+41955393|*Polygonum|D028502|3899|MH|RtM via: Polygonum;Forced Leaf Node Lookup:polygonums;checkForceMH Boosted|TI|MM|280^9^0
+41955393|*Amaranthus|D027721|3803|MH|RtM via: Amaranthus pumilus;Forced Leaf Node Lookup:amaranthus;checkForceMH Boosted|TI|MM|199^18^0
+41955393|*Oenothera|D031664|1879|MH|RtM via: Oenothera humifusa;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oenotheras|TI|MM|353^18^0
+41955393|New Jersey|D009515|1840|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM;RC|1640^10^0;1239^10^0;1022^10^0;446^10^0;128^10^0
+41955393|Delaware|D003691|1834|MH|Forced Leaf Node Lookup:delaware|TI|MM|515^8^0
+41955393|*Feasibility Studies|D005240|1834|MH|Forced Leaf Node Lookup:feasibility|TI|MM|1686^11^0
+41955393|Conservation of Natural Resources|D003247|2389|MH|||RC
+41955393|*Aizoaceae|D035722|1368|MH|RtM via: Sesuvium maritimum;Forced Non-Leaf Node Lookup:sesuviums|TI|MM|333^18^0
+41955393|*Caryophyllaceae|D029748|888|MH|RtM via: Honckenya peploides|TI|MM|299^19^0
+41610088|United States|D014481|1357|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|88^8^0
+41610088|*Coal|D003031|357|MH|RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coal|TI|MM;RC|606^4^0;245^4^0;38^4^0
+41610107|*Isoenzymes|D007527|832|MH|RtM via: Alloenzymes;Forced Leaf Node Lookup:allozymes|TI|MM;RC|516^8^0
+41610107|*Ruellia|D027901|433|ET|Entry Term Replacement for "Acanthaceae";RtM via: Ruellia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ruellia|TI|MM|21^7^0
+41610107|Pennsylvania|D010414|292|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|262^12^0;73^12^0
+41610107|Genetic Variation|D014644|493|MH|Forced Non-Leaf Node Lookup:genetic diversity||MM;RC|449^17^0
+41610107|Phylogeny|D010802|199|MH|||RC
+41610107|*Surveys|D011795|60|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|183^7^0
+41610124|Humans|D006801|1000|CT|Forced Humans:D Military Personnel||MM
+41610124|*Rivers|D045483|9105|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|1229^3^0;476^5^0
+41610124|*Panicum|D008897|9075|MH|RtM via: Panicum;Forced Leaf Node Lookup:panicum;checkForceMH Boosted|TI|MM|1068^7^0
+41610124|*Lobelia|D029746|8568|MH|RtM via: Lobelia;Forced Leaf Node Lookup:lobelia;checkForceMH Boosted|TI|MM|1005^7^0
+41610124|*Gentiana|D030012|8196|MH|RtM via: Gentiana autumnalis;Forced Leaf Node Lookup:gentiana;checkForceMH Boosted|TI|MM|984^19^0
+41610124|*Military Personnel|D008889|4047|MH|RtM via: Military Personnel;Forced Leaf Node Lookup:military|TI|MM|1467^8^0;572^8^0
+41610124|New Jersey|D009515|3762|MH|RtM via: Burlington County, NJ;RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM;RC|109^17^0;128^10^0
+41610124|*Habitats|D017753|24219|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|1423^7^0;762^7^0;612^7^0;406^8^0;309^8^0;702^7^0
+41610124|*Plants|D010944|10557|MH|RtM via: Plants|TI|MM;RC|1440^6^0;1195^5^0;803^5^0;290^5^0;55^5^0
+41610124|*Resource, Natural|D000067936|7191|ET|Entry Term Replacement for "Natural Resources";RtM via: Natural Resources;Forced Non-Leaf Node Lookup:natural resources|TI|MM|1334^16^0
+41610120|Philadelphia|D015143|191|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|740^12^0
+41610120|*Natural Sciences|D010811|2952|ET|Entry Term Replacement for "Natural Science Disciplines";RtM via: Natural Science Disciplines;Forced Non-Leaf Node Lookup:natural sciences|TI|MM|720^16^0
+41610120|*Academy|D000047|429|ET|Entry Term Replacement for "Academies and Institutes";RtM via: Academies|TI|MM|709^7^0
+41610120|*Names|D009275|297|MH|RtM via: Name;RtM via: Person Name|TI|MM|618^5^0;170^5^0
+41610120|North America|D009656|261|MH|RtM via: North America;Forced Non-Leaf Node Lookup:north america|TI|MM;RC|100^13^0
+41610132|*Anthocerotophyta|D049936|38742|MH|RtM via: Anthocerotophyta;Forced Leaf Node Lookup:anthocerotophytas;Forced Leaf Node Lookup:hornworts;checkForceMH Boosted|TI|MM;RC|93^16^0;82^9^0
+41610132|*Liverworts|D035926|14546|ET|Entry Term Replacement for "Hepatophyta";RtM via: Marchantiophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:liverworts|TI|MM;RC|307^10^0;139^10^0;151^15^0
+41610132|New Jersey|D009515|1922|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|194^10^0
+41610132|Bryophyta|D044002|571|MH|||RC
+41610132|*Biological Phenomena|D001686|549|MH|RtM via: Tissue Growth|TI|MM|185^5^0
+41610132|*Knowledge|D019359|171|MH|RtM via: Knowledge|TI|MM|172^4^0
+43233851|Humans|D006801|17003659|CT|Forced Humans: university|TI|MM
+43233851|*Asteridae|D019684|1136182|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Magnoliopsida;RtM via: Subclass Asteridae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asteridae|TI|MM;RC|372^9^0
+43233851|*Gentianaceae|D029965|1127677|MH|RtM via: Gentianaceae;RtM via: Schenkia spicata;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gentianaceae|TI|MM|358^12^0;1249^16^0
+43233851|*Gentianales|D000070677|1127512|MH|RtM via: Gentianales;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gentianales|TI|MM|383^11^0
+43233851|New York|D009518|1126039|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|997^2^0;970^8^0
+43233851|New Jersey|D009515|1126012|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|1284^10^0;515^10^0;446^10^0;21^10^0
+43233851|*Universities|D014495|1125955|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|1129^10^0
+43233851|Philadelphia|D015143|1125793|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|1072^12^0
+43233851|*Men|D008571|10982214|MH|RtM via: Male population group|TI|MM|1274^4^0
+43233851|*Habitats|D017753|9663|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|112^8^0
+43233851|*Plants|D010944|6798|MH|RtM via: Garden plant|TI|MM;RC|1015^14^0
+43233851|*Tracheophyta|D064028|3357|MH|RtM via: Tracheophyta|TI|MM|690^14^0
+43233851|*Natural Sciences|D010811|3213|ET|Entry Term Replacement for "Natural Science Disciplines";RtM via: Natural Science Disciplines;Forced Non-Leaf Node Lookup:natural sciences|TI|MM|1052^16^0
+43233851|North America|D009656|6|MH|RtM via: North America|TI|MM|86^13^0
+41610106|Pennsylvania|D010414|338|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|206^12^0;66^12^0
+41610106|*Tracheophyta|D064028|5331|MH|RtM via: Ophioglossum;RtM via: Ophioglossum engelmannii;RtM via: Ophioglossum pusillum;RtM via: Ophioglossum vulgatum|TI|MM|38^12^0;220^24^0;135^21^0;100^21^0
+41610106|Ferns|D029624|950|MH|||RC
+41610118|Humans|D006801|1475236|CT|Forced Humans: families|TI|MM
+41610118|Animals|D000818|1475236|CT|Forced Lookup:deer;Deer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Deer)|TI|MM;RC|88^4^0;1016^4^0
+41610118|*Carex Plant|D031255|129774|MH|RtM via: Carex Genus;Forced Leaf Node Lookup:carex;checkForceMH Boosted|TI|MM|550^5^0
+41610118|*Viola|D032413|125838|MH|Forced Leaf Node Lookup:violas;checkForceMH Boosted|TI|MM|570^5^0
+41610118|*Cyperaceae|D029785|67314|MH|RtM via: Cyperaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cyperaceae|TI|MM|448^10^0
+41610118|*Poaceae|D006109|65685|MH|RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:poaceae|TI|MM|473^7^0
+41610118|*Wetlands|D053833|65187|MH|RtM via: Wetlands;Forced Leaf Node Lookup:wetlands|TI|MM|789^7^0
+41610118|*Asteraceae|D019659|64686|MH|RtM via: Asteraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asteraceae|TI|MM|499^10^0
+41610118|Pennsylvania|D010414|63012|MH|RtM via: McKean County, PA;RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|117^13^0;762^12^0;132^12^0
+41610118|*Appendix|D001065|62937|MH|RtM via: Appendix;Forced Leaf Node Lookup:appendix|TI|MM|838^8^0
+41610118|*Deer|D003670|2391|MH|RtM via: Odocoileus virginianus;Forced Lookup:deer|TI|MM;RC|1003^17^0;88^4^0;1016^4^0
+41610118|*Forest|D065928|9015|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1024^6^0;172^6^0
+41610118|*Aster Plant|D031173|924|MH|RtM via: Aster Plant|TI|MM|593^5^0
+43233853|New Jersey|D009515|275|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM;RC|645^10^0;134^10^0
+43233853|*Habitat|D017753|2361|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|356^7^0
+43233853|*Pinus|D028223|2328|MH|RtM via: Pinus <genus>|TI|MM;RC|103^4^0
+43233853|*Seeds|D012639|603|MH|RtM via: Xyris|TI|MM;RC|221^5^0;21^5^0
+43233852|*Gentianaceae|D029965|23890|MH|RtM via: Gentianaceae;RtM via: Sabatia stellaris;RtM via: Chironia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gentianaceae|TI|MM;RC|137^12^0;750^17^0;523^8^0
+43233852|*Centaurium|D029966|19865|MH|RtM via: Centaurium pulchellum;Forced Leaf Node Lookup:centaurium;checkForceMH Boosted|TI|MM;RC|795^21^0
+43233852|*Gentiana|D030012|17168|MH|RtM via: Gentiana clausa;RtM via: Gentiana andrewsii;Forced Leaf Node Lookup:gentiana;checkForceMH Boosted|TI|MM;RC|421^15^0;597^18^0
+43233852|*Asteridae|D019684|5368|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Magnoliopsida;RtM via: Subclass Asteridae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asteridae|TI|MM|151^9^0
+43233852|*Gentianales|D000070677|4411|MH|RtM via: Gentianales;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gentianales|TI|MM|162^11^0
+43233852|New Jersey|D009515|2269|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|211^10^0
+43233852|Phylogeny|D010802|98|MH|||RC
+43233852|*Drugs, Generic|D016568|90|MH|RtM via: Generic Drugs|TI|MM|40^7^0
+41610092|Humans|D006801|3194953|CT|Forced Humans: families|TI|MM
+41610092|*Introduced Species|D058865|260305|MH|Forced Leaf Node Lookup:non-native species;checkForceMH Boosted|TI|MM;RC|316^18^0
+41610092|*Poaceae|D006109|131879|MH|RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:poaceae|TI|MM|244^7^0
+41610092|*Asteraceae|D019659|130979|MH|RtM via: Asteraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asteraceae|TI|MM|216^10^0
+41610092|*Appendix|D001065|130082|MH|RtM via: Appendix;Forced Leaf Node Lookup:appendix|TI|MM|465^8^0
+41610092|New York|D009518|130064|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|105^8^0
+41610092|*Islands|D062312|2505|MH|RtM via: Islands|TI|MM|95^6^0
+41610092|*Tracheophyta|D064028|1842|MH|RtM via: Tracheophyta|TI|MM|431^15^0
+41610092|*Liberty|D005610|276|ET|Entry Term Replacement for "Freedom";RtM via: Freedom;Forced Non-Leaf Node Lookup:liberty|TI|MM|53^7^0
+41610119|*Rivers|D045483|5895|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|201^5^0
+41610119|*Appendix|D001065|1065|MH|RtM via: Appendix;Forced Leaf Node Lookup:appendix|TI|MM|638^8^0
+41610119|Pennsylvania|D010414|1035|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|222^12^0
+41610119|Delaware|D003691|1032|MH|Forced Leaf Node Lookup:delaware|TI|MM|192^8^0
+41610119|*Plants|D010944|8367|MH|RtM via: Plants|TI|MM;RC|450^5^0;539^6^0;302^5^0
+41610119|*Islands|D062312|3594|MH|RtM via: Islands|TI|MM|151^6^0
+41610119|*Tracheophyta|D064028|1878|MH|RtM via: Tracheophyta|TI|MM|108^14^0
+41610135|*Universities|D014495|666|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|101^10^0
+41610135|*Plants|D010944|2670|MH|RtM via: Plants;Forced Non-Leaf Node Lookup:herbaceous|TI|MM;RC|301^6^0;216^10^0;253^10^0
+41610135|*Environment|D004777|2313|MH|RtM via: Woods|TI|MM;RC|295^5^0
+41610135|*Woods|D014934|798|ET|Entry Term Replacement for "Wood";RtM via: Wood material|TI|MM|295^5^0
+44089931|Bees|D001516|10107|CT|RtM via: Bees;Forced Leaf Node Lookup:bee|TI|MM|874^3^0
+44089931|Animals|D000818|10107|CT|RtM via: Bees;Wasps;CT Treecode Lookup: B01.050.500.131 (Wasps);Fly;CT Treecode Lookup: B01.050.500.131 (Fly);Beetles;CT Treecode Lookup: B01.050.500.131 (Beetles);Spider;CT Treecode Lookup: B01.050.500.131 (Spider);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: fish|TI|MM;RC|874^3^0;797^7^0;909^4^0
+44089931|*Wasps|D014863|3727|MH|RtM via: Wasps;Forced Leaf Node Lookup:wasp;checkForceMH Boosted|TI|MM|942^4^0
+44089931|*Fly|D004175|3653|ET|Entry Term Replacement for "Diptera";RtM via: Fly (organism);RtM via: Diptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:flies|TI|MM|999^5^0;919^5^0
+44089931|*Flowering Plants|D019684|3017|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:flowering plants|TI|MM|222^16^0
+44089931|*Physalis|D032321|2848|MH|RtM via: Physalis philadelphica;Forced Leaf Node Lookup:physalis;checkForceMH Boosted|TI|MM|472^22^0
+44089931|*Diatoms|D017377|2815|MH|RtM via: Diatoms;RtM via: Cymbella;Forced Leaf Node Lookup:diatoms;checkForceMH Boosted|TI|MM|629^6^0;638^8^0
+44089931|*Erigeron|D049919|2668|MH|RtM via: Erigeron philadelphicus;Forced Leaf Node Lookup:erigerons;checkForceMH Boosted|TI|MM|396^23^0
+44089931|*Beetles|D001517|2576|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM|883^7^0
+44089931|*Panicum|D008897|2449|MH|RtM via: Panicum philadelphicum;Forced Leaf Node Lookup:panicum;checkForceMH Boosted|TI|MM|444^22^0
+44089931|*Lilium|D027762|2398|MH|RtM via: Lilium philadelphicum;Forced Leaf Node Lookup:liliums;checkForceMH Boosted|TI|MM|421^21^0
+44089931|*Spider|D013112|1985|ET|Entry Term Replacement for "Spiders";RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|930^6^0
+44089931|Philadelphia|D015143|1334|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|1279^12^0;1099^12^0;829^12^0;667^12^0;277^12^0;168^12^0;46^12^0;1153^12^0;1243^12^0
+44089931|*Plant|D010944|4671|ET|Entry Term Replacement for "Plants";RtM via: Algae;RtM via: Plants|TI|MM;RC|623^4^0;1182^5^0
+44089931|*Birds|D001717|873|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM|898^5^0
+44089931|*Hydrangeaceae|D029628|714|MH|RtM via: Mock orange|TI|MM|1194^12^0
+44089931|*Fishes|D005399|576|MH|RtM via: Fishes|TI|MM|909^4^0
+41610117|Bees|D001516|88940|CT|RtM via: Bees;Forced Leaf Node Lookup:bee|TI|MM;RC|397^3^0
+41610117|Animals|D000818|88940|CT|RtM via: Bees;CT Text Lookup: wing;Forced Animals Added: Bees|TI|MM;RC|397^3^0;259^4^0
+41610117|*Pollination|D054817|87940|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM;RC|376^11^0;164^10^0;455^11^0
+41610117|*Sarraceniaceae|D052583|13457|MH|RtM via: Sarracenia alata;Forced Leaf Node Lookup:sarracenias;checkForceMH Boosted|TI|MM|32^16^0
+41610117|*Pollen|D011058|31209|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|236^6^0
+41610117|*Flowers|D035264|21921|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM;RC|345^6^0;197^7^0;21^7^0;411^6^0
+41610117|*Acclimatization|D000064|978|MH|RtM via: Acclimatization|TI|MM|361^10^0
+41610117|*Adaptation, Physiological|D000222|765|MH|RtM via: Adaptation|TI|MM|361^10^0;209^7^0
+41610117|*Staining|D013194|36|ET|Entry Term Replacement for "Staining and Labeling";RtM via: Staining method;Forced Non-Leaf Node Lookup:stainings|TI|MM|93^8^0
+41610117|*Benzidines|D001560|3|MH|RtM via: Benzidine;RtM via: Benzidines;Forced Non-Leaf Node Lookup:benzidines|TI|MM|83^9^0
+41610117|Louisiana|D008145|3|MH|RtM via: Louisiana (geographic location)|TI|MM|178^9^0
+44089929|psoromic acid|C574499|2905|NM|Forced SCR Leaf Node Lookup:psoromic acid|TI|MM|764^13^0
+44089929|atranorin|C026304|2230|NM|RtM via: atranorin;Forced SCR Leaf Node Lookup:atranorin|TI|MM|796^9^0
+44089929|Herteliana schuyleriana|C000693273|988|NM|Forced New Lookup:herteliana schuyleriana|TI|MM|21^23^0
+44089929|*Ascomycota|D001203|6837|MH|RtM via: Herteliana;RtM via: Herteliana schuyleriana;RtM via: Squamarinaceae|TI|MM;RC|313^10^0;21^23^0;392^14^0
+44089929|*Phylogeny|D010802|3540|MH|RtM via: Phylogeny|TI|MM;RC|212^10^0
+44089929|*Habitats|D017753|3360|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|509^8^0;548^8^0
+44089929|*Benzoxepins|D001584|2904|HM|RtM via: psoromic acid|TI|MM|764^13^0
+44089929|*Carboxylic Acids|D002264|2058|HM|RtM via: psoromic acid|TI|MM|764^13^0
+44089929|*Hydroxybenzoates|D062385|2229|HM|RtM via: atranorin|TI|MM|796^9^0
+44089929|*Sterility|D007246|39|ET|Entry Term Replacement for "Infertility";RtM via: Infertility;RtM via: Sterility, Reproductive;Forced Non-Leaf Node Lookup:sterility|TI|MM|659^9^0
+44089929|North America|D009656|1000|MH|Forced Non-Leaf Node Lookup:north america||MM;RC|150^13^0
+44089929|Appalachia|D001061|273|ET|Entry Term Replacement for "Appalachian Region";RtM via: Appalachian Region|TI|MM|117^11^0
+41610133|*Lichens|D008011|1262|MH|RtM via: Lichen - organism;Forced Leaf Node Lookup:lichens;checkForceMH Boosted|TI|MM;RC|65^6^0
+41610133|Pennsylvania|D010414|145|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM;RC|119^12^0
+41610133|*Pruritus|D011537|744|MH|RtM via: Lichen disease|TI|MM|65^6^0
+41610133|*Eczema|D004485|609|MH|RtM via: Lichen disease|TI|MM|65^6^0
+41610133|*Keratosis|D007642|420|MH|RtM via: Lichen disease|TI|MM|65^6^0
+41610133|*Habitats|D017753|267|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|72^8^0
+41610127|Humans|D006801|7997137|CT|Forced Humans: university;Forced Humans: families|TI|MM;RC
+41610127|*Gardens|D000072506|652898|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM;RC|1106^6^0;793^7^0;541^6^0;199^6^0;142^6^0
+41610127|*Universities|D014495|323785|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM;RC|309^10^0
+41610127|*Gardening|D051639|2562|MH|RtM via: Gardening|TI|MM;RC|1106^6^0;793^7^0;541^6^0;199^6^0;142^6^0
+41610127|*Interior Design and Furnishings|D007374|534|MH|RtM via: Table - furniture|TI|MM|804^5^0
+41610127|*Problem Solving|D011340|447|MH|RtM via: Insight|TI|MM|1237^8^0
+41610127|*Uncertainty|D035501|321|MH|RtM via: Uncertainty|TI|MM|572^9^0
+41610104|*Expeditions|D005101|7712|MH|RtM via: Expeditions;Forced Leaf Node Lookup:expeditions|TI|MM;RC|698^10^0;299^10^0;41^10^0;149^10^0
+41610104|*Floods|D055868|1640|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|178^5^0
+41610104|*Gardens|D000072506|1233|MH|Forced Leaf Node Lookup:gardens|TI|MM;RC|583^7^0
+41610104|Philadelphia|D015143|1160|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|859^12^0;466^12^0
+41610104|Periodicals as Topic|D010506|1000|MH|Forced as Topic||MM
+41610104|*Natural Sciences|D010811|2721|ET|Entry Term Replacement for "Natural Science Disciplines";RtM via: Natural Science Disciplines;Forced Non-Leaf Node Lookup:natural sciences|TI|MM|801^16^0;446^16^0
+41610104|*Plants|D010944|2694|MH|RtM via: Plants;RtM via: Garden plant|TI|MM;RC|675^5^0;766^6^0;414^6^0;575^15^0
+41610104|*Books|D001877|2085|MH|RtM via: Books;Forced Non-Leaf Node Lookup:books|TI|MM;RC|187^5^0
+41610104|*Problem Solving|D011340|1914|MH|RtM via: Insight|TI|MM|1086^8^0
+41610087|Humans|D006801|1529053|CT|Forced Humans: university|TI|MM;RC
+41610087|*Universities|D014495|63275|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM;RC|357^10^0
+41610087|*Paintings|D010151|61739|MH|RtM via: Paintings;Forced Leaf Node Lookup:paintings|TI|MM|139^9^0
+41610087|Michigan|D008824|61535|MH|RtM via: Michigan (geographic location);Forced Leaf Node Lookup:michigan|TI|MM|455^8^0
+41610087|Philadelphia|D015143|61448|MH|RtM via: Philadelphia;Forced Leaf Node Lookup:philadelphia|TI|MM|384^12^0;215^12^0
+41610087|*Natural Sciences|D010811|3165|ET|Entry Term Replacement for "Natural Science Disciplines";RtM via: Natural Science Disciplines;Forced Non-Leaf Node Lookup:natural sciences|TI|MM|195^16^0
+41610087|*Academy|D000047|993|ET|Entry Term Replacement for "Academies and Institutes";RtM via: Academies|TI|MM|184^7^0
+41610087|*Fungi|D005658|522|MH|RtM via: Fungi;Forced Non-Leaf Node Lookup:fungi|TI|MM;RC|152^5^0

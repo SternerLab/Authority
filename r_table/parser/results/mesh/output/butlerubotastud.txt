@@ -1,0 +1,76 @@
+41822560|*Glutamic Acid|D018698|3154|MH|RtM via: glutamic acid;Forced Leaf Node Lookup:glutamic acid;checkForceMH Boosted|TI|MM;RC|128^13^0;307^13^0;379^13^0
+41822560|*Micrococcus|D008837|2120|MH|RtM via: Micrococcus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:micrococcus|TI|MM;RC|528^11^0
+41822560|*Glucose|D005947|1526|MH|RtM via: glucose;checkForceMH Boosted;Forced Non-Leaf Node Lookup:glucose|TI|MM;RC|147^7^0
+41822560|*Urea|D014508|1262|MH|RtM via: urea;checkForceMH Boosted;Forced Non-Leaf Node Lookup:urea|TI|MM|159^4^0
+41822560|*Soil|D012987|1037|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|68^4^0
+41822560|*X-Rays|D014965|833|MH|Forced Leaf Node Lookup:x-rays|TI|MM|215^5^0
+41822560|*Citric Acid Cycle|D002952|5136|MH|RtM via: Citric Acid Cycle|TI|MM;RC|447^9^0
+41822560|*Culture Media|D003470|2424|MH|RtM via: Culture Media|TI|MM;RC|100^6^0
+41822560|*Biochemical Phenomena|D001669|2199|MH|RtM via: glutamate biosynthetic process|TI|MM|379^26^0;307^26^0
+41822560|*Diagnostic Tests, Routine|D003955|819|MH|RtM via: Glutamate Measurement|TI|MM|128^13^0
+41822561|Animals|D000818|4609|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
+41822561|*Chlorophyta|D000460|3609|MH|RtM via: Trentepohlia (green algae);RtM via: Ulothrix|TI|MM;RC|77^12^0;149^8^0
+41822561|*Birds|D001717|138|MH|RtM via: Bostrychia (bird)|TI|MM|49^10^0
+41822561|Panama|D010176|3|MH|RtM via: Panama|TI|MM|34^6^0
+41822559|Animals|D000818|55936|CT|Ants;CT Treecode Lookup: B01.050.500.131 (Ants);Parasites;CT Treecode Lookup: B01.050.500.714 (Parasites);Insects;CT Treecode Lookup: B01.050.500.131 (Insects)||MM;RC
+41822559|*Pollination|D054817|54936|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM;RC|1025^11^0;807^11^0;703^10^0
+41822559|*Nectars|D057048|32814|ET|Entry Term Replacement for "Plant Nectar";RtM via: Plant Nectar;checkForceMH Boosted|TI|MM;RC|893^9^0
+41822559|*Trees|D014197|24915|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|75^4^0
+41822559|*Ants|D001000|20160|MH|RtM via: Ants;Forced Leaf Node Lookup:ants;checkForceMH Boosted|TI|MM;RC|917^4^0
+41822559|*Bignoniaceae|D029402|16935|MH|RtM via: Bignoniaceae;RtM via: Tecoma stans;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bignoniaceae|TI|MM;RC|87^12^0;21^12^0
+41822559|*Seedlings|D036226|16590|MH|RtM via: Seedlings;Forced Leaf Node Lookup:seedlings;checkForceMH Boosted|TI|MM|1270^9^0
+41822559|*Parasites|D010271|15183|MH|RtM via: Parasites;Forced Leaf Node Lookup:parasites;checkForceMH Boosted|TI|MM|1669^9^0
+41822559|*Wind|D014919|14952|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM;RC|1127^4^0
+41822559|*Fruit|D005638|10560|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM;RC|990^5^0
+41822559|*Droughts|D055864|9537|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|1434^7^0;1013^7^0
+41822559|*Temperature|D013696|8556|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|274^11^0
+41822559|*Capsules|D002214|7860|MH|RtM via: capsule (pharmacologic);Forced Leaf Node Lookup:capsules|TI|MM|1094^8^0
+41822559|*Limestone|D002119|7431|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|373^9^0
+41822559|*Somatotypes|D013008|7269|MH|RtM via: Mesomorph;Forced Leaf Node Lookup:mesomorphs|TI|MM|1547^9^0
+41822559|*Flowers|D035264|17619|MH|RtM via: Flowers;RtM via: Plant Calyx;Forced Non-Leaf Node Lookup:flowers|TI|MM;RC|691^7^0;887^5^0
+41822559|*Insects|D007313|10188|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM;RC|1662^6^0;755^7^0
+41822559|*Forest|D065928|9306|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|527^6^0
+41822559|*Seeds|D012639|4596|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM;RC|1149^5^0
+41822559|*Drainage|D004322|696|MH|RtM via: Drainage procedure;Forced Non-Leaf Node Lookup:drainage|TI|MM|442^8^0
+41822559|Plant Leaves|D018515|1000|MH|Forced Non-Leaf Node Lookup:leaf||MM|1452^4^0
+41822558|Humans|D006801|26620|CT|CT Text Lookup: workers|TI|MM|1075^7^0
+41822558|*Rivers|D045483|25620|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|121^5^0
+41822558|*Diatoms|D017377|24555|MH|RtM via: Diatoma;RtM via: Diatoms;RtM via: Gomphonema;RtM via: Meridion;Forced Leaf Node Lookup:diatoms;checkForceMH Boosted|TI|MM;RC|722^7^0;25^6^0;742^10^0;809^8^0
+41822558|Indiana|D007196|13005|MH|RtM via: Indiana;RtM via: Marion County, IN;Forced Leaf Node Lookup:indiana|TI|MM;RC|158^7^0;621^13^0
+41822558|*Temperature|D013696|5490|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|403^11^0
+41822558|*Water|D014867|4818|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|382^5^0;308^5^0
+41822558|Water Quality|D060753|1525|MH|||RC
+41822558|*Drug Contamination|D004340|570|MH|RtM via: adulteration|TI|MM|344^13^0
+41822556|*Amino Acids|D000596|41139|MH|RtM via: Amino Acid [EPC];RtM via: Amino Acids;checkForceMH Boosted;Forced Non-Leaf Node Lookup:amino acids|TI|MM;RC|593^10^0;354^11^0
+41822556|*Vitamins|D014815|38136|MH|RtM via: Vitamins;checkForceMH Boosted;Forced Non-Leaf Node Lookup:vitamins|TI|MM;RC|686^8^0
+41822556|*Leucine|D007930|31062|MH|RtM via: leucine;Forced Leaf Node Lookup:l-leucine;Forced Leaf Node Lookup:leucine;checkForceMH Boosted|TI|MM|478^7^0;401^9^0
+41822556|*Magnesium|D008274|28245|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM|750^9^0
+41822556|*Phosphate|D010710|22731|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM;RC|791^9^0
+41822556|*Histidine|D006639|22146|MH|RtM via: histidine;Forced Leaf Node Lookup:l-histidine;checkForceMH Boosted|TI|MM|415^11^0
+41822556|*Asparagine|D001216|21672|MH|RtM via: asparagine;Forced Leaf Node Lookup:l-asparagine;checkForceMH Boosted|TI|MM|367^12^0
+41822556|*Capreomycin|D002207|18930|MH|RtM via: capreomycin;Forced Leaf Node Lookup:capreomycin;checkForceMH Boosted|TI|MM|979^11^0
+41822556|*Glucose|D005947|14889|MH|RtM via: glucose;checkForceMH Boosted;Forced Non-Leaf Node Lookup:glucose|TI|MM;RC|293^7^0;210^7^0
+41822556|*Glycine|D005998|13557|MH|RtM via: glycine;checkForceMH Boosted;Forced Non-Leaf Node Lookup:glycine|TI|MM|381^7^0
+41822556|*Starch|D013213|11979|MH|RtM via: starch;checkForceMH Boosted;Forced Non-Leaf Node Lookup:starch|TI|MM;RC|219^6^0
+41822556|*Potassium|D011188|11937|MH|RtM via: potassium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:potassium|TI|MM|776^9^0
+41822556|*Iron|D007501|11919|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|770^4^0
+41822556|*Pentoses|D010429|11889|MH|RtM via: Pentoses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pentoses|TI|MM|200^8^0
+41822556|*Fatty Acids|D005227|11109|MH|RtM via: Fatty Acids;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fatty acids|TI|MM|713^11^0
+41822556|*Antibiotic|D000900|10851|ET|Entry Term Replacement for "Anti-Bacterial Agents";RtM via: Antibiotics;checkForceMH Boosted;Forced Non-Leaf Node Lookup:antibiotics|TI|MM;RC|830^21^0;560^10^0;444^10^0;257^10^0
+41822556|*Carbohydrates|D002241|19002|MH|RtM via: Carbohydrates;Forced Non-Leaf Node Lookup:carbohydrates|TI|MM;RC|147^13^0
+41822556|*Culture Media|D003470|9402|MH|RtM via: Culture Media|TI|MM;RC|874^6^0;702^6^0;39^6^0
+41822556|*Alanine|D000409|6387|MH|RtM via: alanine;Forced Non-Leaf Node Lookup:l-alanine|TI|MM|390^9^0
+41822557|Humans|D006801|51923|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+41822557|*Juniperus|D018653|50923|MH|RtM via: Juniperus ashei;RtM via: Juniperus virginiana;Forced Leaf Node Lookup:juniperus virginianas;Forced Leaf Node Lookup:junipers;checkForceMH Boosted|TI|MM;RC|1064^15^0;349^15^0;616^20^0;1665^8^0;995^7^0;748^8^0
+41822557|*Quercus|D029963|29809|MH|RtM via: Quercus stellata;RtM via: Quercus velutina;Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM;RC|711^8^0;721^5^1;732^3^1;716^3^0;780^3^0
+41822557|*Soil|D012987|15986|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|972^4^0;597^4^0
+41822557|*Sand|D000080463|14014|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|1657^4^0;658^4^0;96^4^0
+41822557|*Andropogon|D031722|13894|MH|RtM via: Andropogon;Forced Leaf Node Lookup:andropogons;checkForceMH Boosted|TI|MM|497^10^0
+41822557|*Limestone|D002119|7136|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM;RC|523^9^0;383^9^0;74^9^0
+41822557|Oklahoma|D009825|5255|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM;RC|1197^8^0
+41822557|*Talus|D013628|5201|MH|RtM via: Talus;Forced Leaf Node Lookup:talus|TI|MM|1027^5^0;127^5^0
+41822557|*African Americans|D001741|5117|MH|Forced Leaf Node Lookup:blacks|TI|MM|721^5^0
+41822557|*Habitats|D017753|19281|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|1521^8^0;1321^8^0;1149^8^0;335^8^0;1495^8^0;1632^8^0
+41822557|*Forest|D065928|17529|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|784^6^0;736^6^0
+41822557|*Woods|D014934|6969|ET|Entry Term Replacement for "Wood";RtM via: Wood material|TI|MM;RC|827^5^0
+41822557|*Poaceae|D006109|3642|MH|RtM via: Bouteloua hirsuta|TI|MM|475^17^0
