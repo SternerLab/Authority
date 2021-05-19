@@ -1,0 +1,356 @@
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file annamissbotagard/1950/37/3/i317004/2394513/2394513.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2006/167/1/10.1086/an.2006.167.issue-1/10.1086/500116/10.1086/500116.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/2000/44/4/i271728/1593054/1593054.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/2002/46/2/i271734/1592844/1592844.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file botanicalgazette/1911/52/5/i320988/2467082/2467082.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.24/10.3318/bioe.2016.24.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file behaecolsoci/2008/63/2/i40011912/40295289/40295289.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file auk/2011/128/3/10.1525/auk.2011.128.issue-3/10.1525/auk.2011.128.3.595/10.1525/auk.2011.128.3.595.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2001/157/5/10.1086/an.2001.157.issue-5/10.1086/319935/10.1086/319935.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/1998/42/3/i271719/1592689/1592689.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/1/10.3318/biolenviprocria.116b.issue-1/10.3318/bioe.2016.02/10.3318/bioe.2016.02.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2017/117B/1/10.3318/biolenviprocria.117b.issue-1/10.3318/bioe.2017.06/10.3318/bioe.2017.06.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2017/117B/1/10.3318/biolenviprocria.117b.issue-1/10.3318/bioe.2017.01/10.3318/bioe.2017.01.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file auk/2014/131/2/e90008159/90008165/90008165.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/1/10.3318/biolenviprocria.116b.issue-1/10.3318/bioe.2016.5/10.3318/bioe.2016.5.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2006/87/4/bullecosociamer.87.issue-4/bullecosociamer.87.4.315a/bullecosociamer.87.4.315a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.27/10.3318/bioe.2016.27.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/2/10.3318/biolenviprocria.116b.issue-2/10.3318/bioe.2016.12/10.3318/bioe.2016.12.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2002/159/2/10.1086/an.2002.159.issue-2/10.1086/339375/10.1086/339375.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.20/10.3318/bioe.2016.20.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2017/117B/1/10.3318/biolenviprocria.117b.issue-1/10.3318/bioe.2017.02/10.3318/bioe.2017.02.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.22/10.3318/bioe.2016.22.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2008/89/4/bullecosociamer.89.issue-4/bullecosociamer.89.4.368/bullecosociamer.89.4.368.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2005/165/1/10.1086/an.2005.165.issue-1/10.1086/427929/10.1086/427929.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/2007/51/2/i404944/4493267/4493267.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2014/114B/2/10.3318/biolenviprocria.114.issue-2/10.3318/bioe.2014.19/10.3318/bioe.2014.19.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2003/161/1/10.1086/an.2003.161.issue-1/10.1086/367908/10.1086/367908.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.16/10.3318/bioe.2016.16.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/2/10.3318/biolenviprocria.116b.issue-2/10.3318/bioe.2016.10/10.3318/bioe.2016.10.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.17/10.3318/bioe.2016.17.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2001/157/4/10.1086/an.2001.157.issue-4/10.1086/319324/10.1086/319324.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/1999/43/1/i271721/1592777/1592777.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.21/10.3318/bioe.2016.21.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.28/10.3318/bioe.2016.28.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2017/117B/1/10.3318/biolenviprocria.117b.issue-1/10.3318/bioe.2017.03/10.3318/bioe.2017.03.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.23/10.3318/bioe.2016.23.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/1999/43/2/i271722/1592618/1592618.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2002/159/4/10.1086/an.2002.159.issue-4/10.1086/340326/10.1086/340326.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2007/169/2/10.1086/508302/10.1086/512379/10.1086/512379.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file annamissbotagard/1949/36/4/i317001/2394471/2394471.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2006/167/2/10.1086/an.2006.167.issue-2/10.1086/500991/10.1086/500991.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/1/10.3318/biolenviprocria.116b.issue-1/10.3318/bioe.2016.04/10.3318/bioe.2016.04.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/2001/45/1/i271729/1593026/1593026.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2004/163/1/10.1086/an.2004.163.issue-1/10.1086/382553/10.1086/382553.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2007/169/4/10.1086/508305/10.1086/517973/10.1086/517973.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.426/bullecosociamer.90.4.426.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2008/89/4/bullecosociamer.89.issue-4/bullecosociamer.89.4.379a/bullecosociamer.89.4.379a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file americanjbotany/1957/44/6/i319279/2438920/2438920.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file auk/2010/127/2/10.1525/auk.2010.127.issue-2/10.1525/auk.2009.09167/10.1525/auk.2009.09167.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.412a/bullecosociamer.90.4.412a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.417/bullecosociamer.90.4.417.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/1999/43/3/i271723/1592655/1592655.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2007/169/3/10.1086/508304/10.1086/513082/10.1086/513082.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file amernatu/2002/159/3/10.1086/an.2002.159.issue-3/10.1086/339786/10.1086/339786.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.19/10.3318/bioe.2016.19.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-001.zip and file aviandiseases/2000/44/4/i271728/1593053/1593053.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/1/10.3318/biolenviprocria.116b.issue-1/10.3318/bioe.2016.1/10.3318/bioe.2016.1.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.430a/bullecosociamer.90.4.430a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.26/10.3318/bioe.2016.26.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2005/165/2/10.1086/an.2005.165.issue-2/10.1086/428704/10.1086/428704.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/2/10.3318/biolenviprocria.116b.issue-2/10.3318/bioe.2016.11/10.3318/bioe.2016.11.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2006/87/4/bullecosociamer.87.issue-4/bullecosociamer.87.4.317/bullecosociamer.87.4.317.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.29/10.3318/bioe.2016.29.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2008/171/4/10.1086/523969/10.1086/587769/10.1086/587769.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/2/10.3318/biolenviprocria.116b.issue-2/10.3318/bioe.2016.13/10.3318/bioe.2016.13.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2008/89/4/bullecosociamer.89.issue-4/bullecosociamer.89.4.365a/bullecosociamer.89.4.365a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.402a/bullecosociamer.90.4.402a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2006/87/4/bullecosociamer.87.issue-4/bullecosociamer.87.4.302a/bullecosociamer.87.4.302a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/2/10.3318/biolenviprocria.116b.issue-2/10.3318/bioe.2016.09/10.3318/bioe.2016.09.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.361/bullecosociamer.90.4.361.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file botanicalgazette/1911/52/5/i320988/2467083/2467083.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file auk/2011/128/3/10.1525/auk.2011.128.issue-3/10.1525/auk.2011.128.3.594/10.1525/auk.2011.128.3.594.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.395a/bullecosociamer.90.4.395a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2008/171/2/10.1086/523967/10.1086/529053/10.1086/529053.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file aviandiseases/2000/44/3/i271727/1593088/1593088.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2006/167/3/10.1086/an.2006.167.issue-3/10.1086/503611/10.1086/503611.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.409/bullecosociamer.90.4.409.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2005/86/2/bullecosociamer.86.issue-2/bullecosociamer.86.2.109/bullecosociamer.86.2.109.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.15/10.3318/bioe.2016.15.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/1/10.3318/biolenviprocria.116b.issue-1/10.3318/bioe.2016.03/10.3318/bioe.2016.03.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2017/117B/1/10.3318/biolenviprocria.117b.issue-1/10.3318/bioe.2017.04/10.3318/bioe.2017.04.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file biolenviprocria/2016/116B/3/10.3318/biolenviprocria.116b.issue-3/10.3318/bioe.2016.25/10.3318/bioe.2016.25.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2003/161/2/10.1086/an.2003.161.issue-2/10.1086/373978/10.1086/373978.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2008/89/4/bullecosociamer.89.issue-4/bullecosociamer.89.4.380/bullecosociamer.89.4.380.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file amernatu/2008/171/3/10.1086/523968/10.1086/533612/10.1086/533612.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2009/90/4/bullecosociamer.90.issue-4/bullecosociamer.90.4.391/bullecosociamer.90.4.391.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2006/87/4/bullecosociamer.87.issue-4/bullecosociamer.87.4.303/bullecosociamer.87.4.303.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file aviandiseases/1999/43/1/i271721/1592769/1592769.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file auk/2011/128/3/10.1525/auk.2011.128.issue-3/10.1525/auk.2011.128.3.593/10.1525/auk.2011.128.3.593.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ab-part-002.zip and file bullecosociamer/2005/86/4/bullecosociamer.86.issue-4/bullecosociamer.86.4.315a/bullecosociamer.86.4.315a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/2/e90008338/90008347/90008347.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/2/e90008338/90008341/90008341.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file cereresecomm/2008/36//e90003150/90003202/90003202.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file cereresecomm/2008/36//e90003150/90003325/90003325.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/1/e90007892/90007908/90007908.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/1/e90008394/90008402/90008402.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/1/e90007892/90007902/90007902.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/1/e90008394/90008403/90008403.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2016/38/2/e90008618/90008628/90008628.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file communityecology/2005/6/2/e90002592/90002607/90002607.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/1/e90008394/90008411/90008411.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2016/38/1/e90008881/90008897/90008897.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file communityecology/2005/6/2/e90002592/90002608/90002608.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2014/36/2/e90008375/90008382/90008382.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/2/e90008601/90008606/90008606.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/2/e90008601/90008605/90008605.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file evolution/1976/30/1/i200120/2407690/2407690.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file darwiniana/2016/4/2/e90005714/90005718/90005718.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file condor/2014/116/1/e90008039/90008054/90008054.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file condor/2014/116/2/e90008435/90008439/90008439.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2014/36/2/e90008375/90008381/90008381.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file cereresecomm/2008/36//e90003150/90003310/90003310.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file condor/2014/116/2/e90008435/90008440/90008440.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2015/37/1/e90008394/90008400/90008400.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/1/e90007892/90007906/90007906.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/2/e90008338/90008343/90008343.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2013/35/2/e90008338/90008342/90008342.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2014/36/2/e90008375/90008384/90008384.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-001.zip and file caldasia/2014/36/1/e90008357/90008364/90008364.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-002.zip and file caldasia/2014/36/1/e90008357/90008366/90008366.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-002.zip and file darwiniana/2016/4/2/e90005714/90005721/90005721.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-cdef-part-002.zip and file caldasia/2017/39/1/e90009017/90009024/90009024.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680221/10.1086/680221.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680401/10.1086/680401.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2013/174/7/10.1086/667929/10.1086/670259/10.1086/670259.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680683/10.1086/680683.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670366/10.1086/670366.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676302/10.1086/676302.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670668/10.1086/670668.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2002/163/2/10.1086/ijps.2002.163.issue-2/10.1086/338825/10.1086/338825.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680402/10.1086/680402.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2001/162/1/10.1086/ijps.2001.162.issue-1/10.1086/317911/10.1086/317911.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2001/162/3/10.1086/ijps.2001.162.issue-3/10.1086/320129/10.1086/320129.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2013/174/7/10.1086/667929/10.1086/671197/10.1086/671197.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676622/10.1086/676622.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2004/165/4/10.1086/ijps.2004.165.issue-4/10.1086/386562/10.1086/386562.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2001/162/1/10.1086/ijps.2001.162.issue-1/10.1086/317899/10.1086/317899.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2004/165/4/10.1086/ijps.2004.165.issue-4/10.1086/386563/10.1086/386563.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file jnortamerbentsoc/2009/28/2/10.1899/jnortamerbentsoc.28.issue-2/10.1899/08-118.1/10.1899/08-118.1.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670591/10.1086/670591.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2001/162/1/10.1086/ijps.2001.162.issue-1/10.1086/317913/10.1086/317913.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680684/10.1086/680684.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file jnortamerbentsoc/2008/27/2/10.1899/jnortamerbentsoc.27.issue-2/10.1899/08-025.1/10.1899/08-025.1.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676301/10.1086/676301.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2001/162/1/10.1086/ijps.2001.162.issue-1/10.1086/317897/10.1086/317897.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2002/163/2/10.1086/ijps.2002.163.issue-2/10.1086/338824/10.1086/338824.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file javianmedsurg/2006/20/2/i40008847/40236523/40236523.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670691/10.1086/670691.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676305/10.1086/676305.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676306/10.1086/676306.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676303/10.1086/676303.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670368/10.1086/670368.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2015/176/4/10.1086/680247/10.1086/680482/10.1086/680482.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2008/169/9/10.1086/522649/10.1086/591981/10.1086/591981.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676621/10.1086/676621.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2001/162/3/10.1086/ijps.2001.162.issue-3/10.1086/320140/10.1086/320140.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670369/10.1086/670369.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2008/169/9/10.1086/522649/10.1086/591982/10.1086/591982.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/6/10.1086/667928/10.1086/670367/10.1086/670367.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2009/170/4/10.1086/592009/10.1086/597271/10.1086/597271.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/7/10.1086/667929/10.1086/671745/10.1086/671745.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2008/169/9/10.1086/522649/10.1086/591987/10.1086/591987.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2013/174/7/10.1086/667929/10.1086/671432/10.1086/671432.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file intejplanscie/2014/175/6/10.1086/673564/10.1086/676304/10.1086/676304.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-001.zip and file mounresedeve/2017/37/2/e90009001/90009012/90009012.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-001.zip and file mounresedeve/2017/37/2/e90009001/90009015/90009015.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file kewbulletin/1953/8/4/i382560/4117388/4117388.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file kewbulletin/1973/28/1/i382561/4117069/4117069.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file mounresedeve/2017/37/2/e90009001/90009016/90009016.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file mounresedeve/2014/34/2/mounresedeve.34.issue-2/mounresedeve.34.2.84/mounresedeve.34.2.84.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file mammalianspecies/2008//812/10.1644/mammalianspecies.40.issue-812/10.1644/mammalianspecies.40.812.1/10.1644/mammalianspecies.40.812.1.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file mounresedeve/2017/37/2/e90009001/90009014/90009014.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip and file mounresedeve/2017/37/2/e90009001/90009013/90009013.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/qrstuvwyz.zip and file qrstuvwyz/quarbullnuttorni/1876/1/1/i24722723/24722725/.ipynb_checkpoints/24722725-checkpoint.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/qrstuvwyz.zip and file qrstuvwyz/taxon/2013/62/6/taxon.62.issue-6/taxon.62.6.1340/taxon.62.6.1340.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/qrstuvwyz.zip and file qrstuvwyz/taxon/2013/62/2/taxon.62.issue-2/taxon.62.2.412a/taxon.62.2.412a.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/qrstuvwyz.zip and file qrstuvwyz/taxon/2013/62/3/taxon.62.issue-3/taxon.62.3.629/taxon.62.3.629.xml
+------------------------------------------------------
+Exception parsing zip file ../../data/qrstuvwyz.zip and file qrstuvwyz/taxon/2013/62/3/taxon.62.issue-3/taxon.62.3.635a/taxon.62.3.635a.xml
+------------------------------------------------------

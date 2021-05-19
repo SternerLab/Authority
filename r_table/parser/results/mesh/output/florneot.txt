@@ -1,0 +1,755 @@
+4393854|*Mosses|D044002|36823|ET|Entry Term Replacement for "Bryophyta";RtM via: Mosses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mosses|TI|MM|86^6^0
+4393854|Latin America|D007843|32551|MH|RtM via: Latin America;Forced Leaf Node Lookup:latin america|TI|MM|901^13^0;470^13^0
+4393854|Ireland|D007494|32548|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|601^7^0
+4393854|Laryngeal Neoplasms|D007822|102673|MH|||RC
+4393857|Female|D005260|36335|CT|Ovary;CT Treecode Lookup: A05.360.319 (Ovary)||MM;RC
+4393857|*Ericaceae|D029791|6914|MH|RtM via: Ericaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ericaceae|TI|MM|516^9^0;61^9^0
+4393857|*Ovary|D010053|6611|MH|RtM via: Both ovaries;RtM via: Ovary;Forced Leaf Node Lookup:ovaries|TI|MM|85^7^0
+4393857|*Phylogeny|D010802|6479|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|284^9^0
+4393857|Granuloma, Lethal Midline|D006103|35335|MH|||RC
+4393857|Nose Neoplasms|D009669|34046|MH|||RC
+4393857|*Cytodiagnosis|D003581|3708|MH|RtM via: Cytology procedure|TI|MM|245^8^0
+4393857|*Pollen|D011058|228|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|226^6^0
+4393739|*Tabebuia|D029663|36395|MH|RtM via: Tabebuia;Forced Leaf Node Lookup:tabebuia;checkForceMH Boosted|TI|MM|2423^8^0;2154^8^0;1142^8^0;876^8^0
+4393739|*Bignoniaceae|D029402|19618|MH|RtM via: Bignoniaceae;RtM via: Tecomeae;RtM via: Jacaranda;RtM via: Sparattosperma;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bignoniaceae|TI|MM|1423^12^0;47^12^0;2600^8^0;1443^8^0;1306^8^0;67^8^0;1968^9^0;1657^9^0;690^9^0;364^9^0;2119^14^0;841^14^0
+4393739|*Wood|D014934|17893|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|1286^4^0
+4393739|*Appendix|D001065|17668|MH|RtM via: Appendix;Forced Leaf Node Lookup:appendix|TI|MM|1270^8^0
+4393739|Carcinoma, Hepatocellular|D006528|144524|MH|||RC
+4393739|Liver Neoplasms|D008113|107056|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+4393739|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1942^3^0
+4393681|*Chrysobalanaceae|D045469|15125|MH|RtM via: Chrysobalanaceae;Forced Leaf Node Lookup:chrysobalanaceae;checkForceMH Boosted|TI|MM|690^16^0;62^16^0
+4393681|*Foraminifera|D056908|14894|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|771^5^0
+4393681|Promethazine|D011398|73448|MH|||RC
+4393681|Vomiting|D014839|28634|MH|||RC
+4393681|*Publications|D011642|591|MH|RtM via: Scientific Publication|TI|MM|321^9^0;83^9^0
+4393842|Epinephrine|D004837|112729|MH|||RC
+4393842|Isoproterenol|D007545|111420|MH|||RC
+4393869|*Inflorescence|D056626|31495|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|199^14^0
+4393869|Peru|D010568|30898|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|760^4^0
+4393869|Bolivia|D001838|30727|MH|RtM via: Bolivia;Forced Leaf Node Lookup:bolivia|TI|MM|1446^7^0;572^7^0
+4393869|Venezuela|D014687|30721|MH|RtM via: Venezuela;Forced Leaf Node Lookup:venezuela|TI|MM|1392^9^0;532^9^0
+4393869|Colombia|D003105|30712|MH|RtM via: Colombia;Forced Leaf Node Lookup:colombia|TI|MM|1497^8^0;624^8^0
+4393869|Trinidad and Tobago|D014300|30001|MH|RtM via: Trinidad;Forced Leaf Node Lookup:trinidad|TI|MM|1382^8^0;522^8^0
+4393869|Nose Neoplasms|D009669|183189|MH|||RC
+4393869|Nasal Cavity|D009296|128124|MH|||RC
+4393869|*Ear, External|D004431|3273|MH|RtM via: External Ear|TI|MM|1092^6^0;179^6^0
+4393869|*Pollen|D011058|2190|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|308^6^0
+4393869|*Forest|D065928|231|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|689^6^0
+4393869|*Chromosomes|D002875|33|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM|336^18^0
+4393869|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|395^7^0
+4393869|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1545^3^0
+4393863|*Grass|D006109|10985|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grass|TI|MM|339^5^0
+4393863|Chondroma|D002812|48730|MH|||RC
+4393863|Laryngoscopy|D007828|25744|MH|||RC
+4393863|*Flowers|D035264|1143|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|304^7^0
+4393863|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2006^3^0;2334^3^0
+4393863|Africa|D000349|0|MH|RtM via: Africa|TI|MM|2097^6^0
+4393893|*Bactris|D028023|17782|ET|Entry Term Replacement for "Arecaceae";RtM via: Bactris;RtM via: Bactris concinna;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bactris|TI|MM|824^7^0;616^7^0;70^7^0;1354^7^1;1399^8^1;653^16^0;1391^7^0
+4393893|Arrhythmias, Cardiac|D001145|84611|MH|||RC
+4393893|Sympatholytics|D013565|58617|MH|||RC
+4393724|*Bertholletia|D031383|64933|MH|RtM via: Bertholletia;Forced Leaf Node Lookup:bertholletias;checkForceMH Boosted|TI|MM|2180^12^0;148^12^0
+4393724|*Trees|D014197|62197|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|2027^5^0
+4393724|*Lecythidaceae|D031381|43034|MH|RtM via: Corythophora (plant);RtM via: Couratari;RtM via: Couroupita;RtM via: Lecythis;RtM via: Eschweilera;RtM via: Asteranthos;RtM via: Lecythidaceae;RtM via: Eschweilera amazoniciformis;RtM via: Lecythis parvifructa;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lecythidaceae|TI|MM|2166^12^0;134^12^0;2194^9^0;162^9^0;2154^10^0;122^10^0;2219^8^0;190^8^0;2205^11^0;173^11^0;3279^11^0;1261^11^0;3791^13^0;3625^13^0;3234^13^0;2041^13^0;1858^13^0;1584^13^0;1228^13^0;1109^13^0;32^13^0;2257^27^0;231^27^0;2755^20^0;729^20^0;1335^13^0;1690^13^0
+4393724|*Pollination|D054817|33824|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|1549^11^0
+4393724|*Wood|D014934|31325|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|1486^4^0;1431^4^0;1153^4^0;1365^4^0
+4393724|*Fruit|D005638|29801|MH|Forced Leaf Node Lookup:fruits|TI|MM|2006^6^0
+4393724|Antilymphocyte Serum|D000961|101088|MH|||RC
+4393724|Transplantation Immunology|D014181|93784|MH|||RC
+4393724|*Habitat|D017753|4518|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|2984^7^0;947^7^0
+4393724|*Flowers|D035264|1434|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1987^7^0
+4393724|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|1561^7^0
+4393926|United States|D014481|73973|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|245^8^0
+4393926|*Phylogeny|D010802|35253|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analysis|TI|MM|674^21^0
+4393926|Propranolol|D011433|72973|MH|||RC
+4393926|Adrenergic beta-Antagonists|D000319|57138|MH|||RC
+4393908|Animals|D000818|143311|CT|RtM via: Bees;Butterflies;CT Treecode Lookup: B01.050.500.131 (Butterflies);Beetles;CT Treecode Lookup: B01.050.500.131 (Beetles);Larva;CT Treecode Lookup: B05.500 (Larva);Larva;CT Treecode Lookup: G07.345.500.550.500 (Larva)|TI|MM;RC|2397^4^0
+4393908|Female|D005260|143311|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|2390^6^0
+4393908|Bees|D001516|143311|CT|RtM via: Bees;Forced Leaf Node Lookup:bees|TI|MM|2397^4^0
+4393908|*Butterflies|D002080|11283|MH|RtM via: Butterflies;Forced Lookup:butterflies;Forced Leaf Node Lookup:butterflies;checkForceMH Boosted|TI|MM|2665^11^0;2575^11^0
+4393908|*Herbivory|D060434|10911|MH|RtM via: Herbivory;Forced Leaf Node Lookup:herbivores;Forced Leaf Node Lookup:herbivory|TI|MM|2806^10^0;2727^9^0;2484^10^0;2291^9^0
+4393908|*Trichomes|D064201|7344|MH|RtM via: Trichomes;Forced Leaf Node Lookup:trichomes|TI|MM|1555^8^0;711^8^0;663^9^0
+4393908|*Beetles|D001517|7212|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;RtM via: Chrysomelidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM|2525^7^0;5660^13^0;2547^13^0
+4393908|relacin|C580565|7042|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|3998^7^0;5848^7^0
+4393908|*Pollination|D054817|6966|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|2302^11^0;2275^11^0
+4393908|*Larva|D007814|5673|MH|RtM via: Larva;checkForceMH Boosted;Forced Non-Leaf Node Lookup:larvae|TI|MM|5715^6^0;2616^6^0
+4393908|*Solanum|D032322|5316|MH|RtM via: genus Solanum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:solanums|TI|MM|5409^7^0;4109^7^0;3672^7^0;2865^7^0;2317^7^0;1153^7^0;779^7^0;20^7^0
+4393908|*Phylogeny|D010802|4272|MH|RtM via: Phylogeny;RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM|2626^27^0;1437^12^0
+4393908|*Inflorescence|D056626|4125|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|1579^13^0
+4393908|Argentina|D001118|3618|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|3109^9^0;261^9^0
+4393908|Uruguay|D014583|3618|MH|RtM via: Uruguay;Forced Leaf Node Lookup:uruguay|TI|MM|3087^7^0;240^7^0
+4393908|*Rivers|D045483|3546|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|478^7^0
+4393908|*Judgment|D007600|3501|MH|RtM via: Judgment;Forced Leaf Node Lookup:judgments|TI|MM|2197^8^0
+4393908|*Cicatrix|D002921|3444|MH|RtM via: Cicatrix;RtM via: Scar Tissue;Forced Leaf Node Lookup:scar|TI|MM|1616^4^0
+4393908|Mexico|D008800|2820|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|185^6^0
+4393908|*Histological Techniques|D006652|8193|MH|RtM via: Sectioning technique|TI|MM;RC|2873^7^0;2700^7^0;2513^7^0;2088^7^0;2024^7^0;1751^7^0;1340^7^0;976^8^0;767^8^0;592^7^0;157^7^0;28^7^0
+4393908|Submandibular Gland|D013363|8043|MH|||RC
+4393908|*Polyploid|D011123|1965|ET|Entry Term Replacement for "Polyploidy";RtM via: Polyploidy;Forced Non-Leaf Node Lookup:polyploids|TI|MM|396^9^0
+4393908|*Forests|D065928|1602|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|574^6^0;558^7^0;497^6^0
+4393908|*Plant Leaves|D018515|1191|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|1540^4^0
+4393908|Plant Extracts|D010936|1000|MH|Forced Non-Leaf Node Lookup:extracts||MM|2456^7^0
+4393908|Pollen|D011058|1000|MH|Forced Non-Leaf Node Lookup:pollen||MM|2464^6^0
+4393908|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3272^3^0;3392^3^0;3681^3^0;3864^3^0;4165^3^0;4246^3^0;4457^3^0;5030^3^0;5616^3^0
+4393929|*Ocotea|D027444|38049|MH|RtM via: Ocotea;RtM via: Ocotea cernua;Forced Leaf Node Lookup:ocoteas;checkForceMH Boosted|TI|MM|1161^6^0;96^6^0;1728^13^0;576^13^0;231^6^0;1324^6^0
+4393929|Kidney Diseases|D007674|140813|MH|||RC
+4393929|Kidney|D007668|93252|MH|||RC
+4393929|*Lauraceae|D019770|1191|MH|RtM via: Endlicheria;RtM via: Rhodostemonodaphne;RtM via: Endlicheria punctulata|TI|MM|2169^11^0;2034^11^0;1603^11^0;1423^11^0;1113^11^0;1014^11^0;864^11^0;484^11^0;310^11^0;45^11^0;2184^18^0;2046^18^0;1933^18^0;1511^18^0;1303^18^0;1031^18^0;876^18^0;778^18^0;402^18^0;208^18^0;1649^22^0;511^22^0
+4393929|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1492^3^0;1570^3^0
+4393929|South America|D013020|0|MH|RtM via: South America|TI|MM|60^13^0
+4393860|United States|D014481|79095|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american;Forced Non-Leaf Node Lookup:united states|TI|MM|1533^13^0;1497^8^0;160^8^0
+4393860|Animals|D000818|79095|CT|Hoof and Claw;CT Treecode Lookup: A13.491 (Hoof and Claw)|TI|MM
+4393860|Brazil|D001938|32473|MH|RtM via: Brazil;RtM via: Bahia (organism);Forced Leaf Node Lookup:brazil;Forced Leaf Node Lookup:bahia|TI|MM|4521^6^0;1946^6^0;4514^5^0;1939^5^0
+4393860|*Fruit|D005638|31654|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1486^5^0;1139^6^0
+4393860|*Turnera|D029647|31591|MH|RtM via: Turnera (plant);Forced Leaf Node Lookup:turnera;checkForceMH Boosted|TI|MM|2597^7^0
+4393860|variacin|C099477|31079|NM|RtM via: variacin;Forced SCR Leaf Node Lookup:variacin|TI|MM|4462^8^0
+4393860|Uruguay|D014583|16421|MH|RtM via: Uruguay;Forced Leaf Node Lookup:uruguay|TI|MM|4115^7^0;1573^7^0
+4393860|Paraguay|D010239|16400|MH|RtM via: Paraguay;Forced Leaf Node Lookup:paraguay|TI|MM|4630^8^0;2030^8^0
+4393860|Argentina|D001118|16385|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|4103^9^0;1559^9^0
+4393860|*Inflorescence|D056626|16301|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|1174^14^0
+4393860|*Trichomes|D064201|16295|MH|RtM via: Trichomes;Forced Leaf Node Lookup:indumentums|TI|MM|565^10^0;628^10^0
+4393860|*Silk|D047011|15659|MH|RtM via: Silk;checkForceMH Boosted|TI|MM|753^5^0
+4393860|*Hoof and Claw|D006724|15506|MH|Forced Leaf Node Lookup:claws|TI|MM|355^5^0
+4393860|Vestibular Function Tests|D014724|78095|MH|||RC
+4393860|Labyrinth Diseases|D007759|38796|MH|||RC
+4393860|*Bacteriocins|D001430|31078|HM|RtM via: variacin|TI|MM|4462^8^0
+4393860|*Chromosome|D002875|660|ET|Entry Term Replacement for "Chromosomes";RtM via: Chromosomes;Forced Non-Leaf Node Lookup:chromosome|TI|MM|2163^10^0
+4393860|*Polyploids|D011123|432|ET|Entry Term Replacement for "Polyploidy";RtM via: Polyploidy;Forced Non-Leaf Node Lookup:polyploids|TI|MM|2257^10^0
+4393860|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2980^3^0;3197^3^0;3354^3^0;3850^3^0;4582^3^0
+4393810|Falkland Islands|D019432|73863|MH|RtM via: Falkland Islands;Forced Leaf Node Lookup:falkland islands;Forced Leaf Node Lookup:malvinas|TI|MM|2422^14^0;1077^16^0;2428^8^0
+4393810|Venezuela|D014687|38127|MH|RtM via: Venezuela;Forced Leaf Node Lookup:venezuela|TI|MM|1565^9^0;255^9^0
+4393810|Chile|D002677|38112|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|2311^5^0;973^5^0
+4393810|Colombia|D003105|38103|MH|RtM via: Colombia;Forced Leaf Node Lookup:colombia|TI|MM|1885^8^0;1738^8^0;547^8^0;413^8^0
+4393810|Argentina|D001118|38097|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|2299^9^0;1577^9^0;959^9^0;268^9^0
+4393810|Brazil|D001938|38070|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1947^6^0;1607^6^0;607^6^0;298^6^0
+4393810|Dominican Republic|D004293|37677|MH|RtM via: Dominican Republic;Forced Leaf Node Lookup:dominican republic|TI|MM|790^18^0;622^18^0
+4393810|Guatemala|D006166|37416|MH|RtM via: Guatemala;Forced Leaf Node Lookup:guatemala|TI|MM|2153^9^0;772^9^0
+4393810|Mexico|D008800|37251|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|764^6^0;403^6^0
+4393810|Transplantation Immunology|D014181|233115|MH|||RC
+4393810|Histocompatibility|D006648|74555|MH|||RC
+4393810|*Plant Leaves|D018515|393|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|904^6^0;696^4^0;500^4^0;523^4^0
+4393810|West Indies|D014900|2355|MH|RtM via: Caribbean Islands|TI|MM|118^11^0
+4393810|Central America|D002489|2136|MH|RtM via: Central America|TI|MM|97^15^0
+4393866|*Lichens|D008011|36083|MH|RtM via: Lichen - organism;Forced Leaf Node Lookup:lichens;checkForceMH Boosted|TI|MM|199^10^0;257^7^0;308^7^0
+4393866|Indonesia|D007214|15415|MH|Forced Leaf Node Lookup:madura|TI|MM|1168^6^0
+4393866|Frontal Sinus|D005626|133951|MH|||RC
+4393866|Paranasal Sinus Neoplasms|D010255|123623|MH|||RC
+4393866|*Keratosis|D007642|6447|MH|RtM via: Lichen disease|TI|MM|199^10^0;257^7^0
+4393866|*Spores|D013170|1080|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|444^6^0;364^5^0
+4393866|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|934^3^0
+4393956|United States|D014481|139024|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|49^8^0
+4393956|*Introduced Species|D058865|54339|MH|RtM via: Introduced Species;Forced Leaf Node Lookup:introduced species;checkForceMH Boosted|TI|MM|166^18^0
+4393956|*Proteaceae|D039105|27843|MH|RtM via: Grevillea;RtM via: Proteaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grevilleas|TI|MM|648^9^0;188^9^0;606^10^0;68^10^0
+4393956|Carcinoma, Hepatocellular|D006528|138024|MH|||RC
+4393956|Liver Neoplasms|D008113|109843|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+4393905|*Morus|D031625|43596|MH|RtM via: Morus (plant);Forced Leaf Node Lookup:morus;checkForceMH Boosted|TI|MM|6020^5^0;3262^5^0;624^5^0
+4393905|*Maclura|D031624|42900|MH|RtM via: Maclura;Forced Leaf Node Lookup:macluras;checkForceMH Boosted|TI|MM|6002^7^0;3244^7^0;606^7^0
+4393905|*Ficus|D030681|42561|MH|RtM via: Ficus;Forced Leaf Node Lookup:ficus;checkForceMH Boosted|TI|MM|7465^5^0;5832^5^0;4844^5^0;3077^5^0;2081^5^0;438^5^0
+4393905|relacin|C580565|38965|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|5052^7^0
+4393905|*Foraminifera|D056908|38763|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|6394^5^0;6152^5^0
+4393905|*Pollination|D054817|20301|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|2219^11^0;1962^11^0
+4393905|CXCR4 protein, human|C527276|19993|NM|RtM via: CXCR4 protein, human|TI|MM|4156^5^0
+4393905|*Receptors, CXCR4|D019718|19992|MH|RtM via: CXCR4 Receptors;RtM via: CXCR4 protein, human;Forced Leaf Node Lookup:fusin|TI|MM|4156^5^0
+4393905|*Respect|D000078682|19617|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|1236^8^0
+4393905|Arboviruses|D001103|90635|MH|||RC
+4393905|Encephalitis Viruses, Tick-Borne|D004669|80612|MH|||RC
+4393905|*Dipeptides|D004151|38964|HM|RtM via: relacin|TI|MM|5052^7^0
+4393905|*Deoxyguanosine|D003849|19872|HM|RtM via: relacin|TI|MM|5052^7^0
+4393905|*Habit|D006184|1965|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|2212^5^0
+4393905|*Documentation|D004282|264|MH|RtM via: Documentation;Forced Non-Leaf Node Lookup:documentations|TI|MM|1512^13^0
+4393871|Sympatholytics|D013565|109966|MH|||RC
+4393871|Adrenergic beta-Antagonists|D000319|73421|MH|||RC
+4393871|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|688^3^0
+4393871|Caribbean|D017691|387|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|99^9^0
+4393914|*Ustilago|D014588|47646|MH|RtM via: Ustilago;Forced Leaf Node Lookup:ustilagos;checkForceMH Boosted|TI|MM|1741^8^0;652^8^0
+4393914|*Angiosperms|D019684|25479|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:angiosperma|TI|MM|552^11^0;1622^11^0
+4393914|*Cyperaceae|D029785|25467|MH|RtM via: Cyperaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cyperaceae|TI|MM|478^10^0
+4393914|*Microscopy, Electron, Scanning|D008855|25461|MH|RtM via: Scanning Electron Microscopy;Forced Leaf Node Lookup:scanning electron microscopical|TI|MM|301^31^0
+4393914|*Poaceae|D006109|24945|MH|RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:poaceae|TI|MM|448^7^0
+4393914|Sporisorium andropogonis|C000673812|22744|NM|Forced New Lookup:sporisorium andropogonis|TI|MM|775^24^0;1846^24^0
+4393914|Sporisorium panici|C000681976|22744|NM|Forced New Lookup:sporisorium panici|TI|MM|1953^18^0
+4393914|Colon|D003106|107571|MH|||RC
+4393914|Colitis|D003092|66578|MH|||RC
+4393914|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1525^3^0
+4393845|Female|D005260|53520|CT|Uterus;CT Treecode Lookup: A05.360.319 (Uterus)||RC
+4393845|Humans|D006801|53520|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+4393845|*Frullania|D037961|25379|MH|RtM via: Frullania;Forced Leaf Node Lookup:frullanias;checkForceMH Boosted|TI|MM|4429^9^0;1651^9^0
+4393845|*Droughts|D055864|13261|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|1721^7^0
+4393845|*Rainforest|D065947|13252|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|628^11^0
+4393845|*Explosive|D053834|12448|ET|Entry Term Replacement for "Explosive Agents";RtM via: Explosive Agents;checkForceMH Boosted|TI|MM|1535^9^0
+4393845|*Patient Discharge|D010351|12124|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharge|TI|MM|1525^9^0;1428^9^0
+4393845|*Capsules|D002214|12052|MH|Forced Leaf Node Lookup:capsules|TI|MM|1103^8^0
+4393845|*Conservation of Natural Resources|D003247|12052|MH|Forced Leaf Node Lookup:deforestation|TI|MM|692^13^0
+4393845|Uterus|D014599|52520|MH|||RC
+4393845|Oxytocin|D010121|41168|MH|||RC
+4393845|*Spores|D013170|1020|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|1743^6^0;1519^5^0;1422^5^0;1290^6^0;1178^6^0
+4393845|*Plant Leaves|D018515|414|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|1795^6^0
+4393845|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3062^3^0;3151^3^0;4441^3^0;4593^3^0;4874^3^0
+4393845|South America|D013020|0|MH|RtM via: South America|TI|MM|511^13^0
+4393887|*Phylogeny|D010802|78845|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analyses|TI|MM|979^21^0
+4393887|*Fruit|D005638|40000|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1544^6^0
+4393887|*Capsules|D002214|39472|MH|RtM via: capsule (pharmacologic);Forced Leaf Node Lookup:capsules|TI|MM|841^8^0
+4393887|Humeral Fractures|D006810|72815|MH|||RC
+4393887|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|4175^3^0;4359^3^0
+4393887|North America|D009656|3|MH|RtM via: North America|TI|MM|718^13^0
+4393884|United States|D014481|186330|CT|RtM via: Americas Ethnicity;RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|175^8^0;1442^13^0
+4393884|*Hibiscus|D031584|48005|MH|RtM via: Hibiscus;Forced Leaf Node Lookup:hibiscus;checkForceMH Boosted|TI|MM|5940^8^0;2622^8^0;2745^8^0;6065^8^0
+4393884|relacin|C580565|46884|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|4266^7^0
+4393884|*Malvaceae|D019660|24886|MH|RtM via: Malvaceae;RtM via: Pavonia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:malvaceae|TI|MM|3300^9^0;570^9^0;39^9^0;6276^7^0;5996^7^0;5283^7^0;5081^7^0;4632^7^0;4431^7^0;3844^7^0;3618^7^0;3602^7^0;3234^7^0;2945^7^0;2677^7^0;1969^7^0;1772^7^0;1346^7^0;1173^7^0;606^7^0;391^7^0;375^7^0;30^7^0
+4393884|*Rainforest|D065947|24385|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|1653^12^0
+4393884|*Tetraploidy|D057891|23716|MH|RtM via: Tetraploidy;Forced Leaf Node Lookup:tetraploids|TI|MM|1833^10^0
+4393884|*Fruit|D005638|23656|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1330^5^0;899^5^0
+4393884|Taiwan|D013624|23134|MH|RtM via: Taiwan;Forced Leaf Node Lookup:formosa|TI|MM|5377^7^0;2063^7^0
+4393884|Argentina|D001118|22996|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|4769^9^0;1472^9^0
+4393884|Parathyroid Hormone|D010281|185330|MH|||RC
+4393884|Bone and Bones|D001842|68718|MH|||RC
+4393884|*Dipeptides|D004151|46883|HM|RtM via: relacin|TI|MM|4266^7^0
+4393884|*Deoxyguanosine|D003849|23764|HM|RtM via: relacin|TI|MM|4266^7^0
+4393884|*Flowers|D035264|1347|MH|RtM via: Flowers;RtM via: Plant Calyx;Forced Non-Leaf Node Lookup:flowers|TI|MM|1297^6^0;817^6^0;595^7^0;806^5^0
+4393884|*Chromosome|D002875|1308|ET|Entry Term Replacement for "Chromosomes";RtM via: Chromosome number;RtM via: Chromosomes;Forced Non-Leaf Node Lookup:chromosome|TI|MM|1750^17^0
+4393884|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3852^3^0;4354^3^0;4640^3^0;4796^3^0;4852^3^0
+4393878|*Lichen|D008011|20447|ET|Entry Term Replacement for "Lichens";RtM via: Lichen - organism;checkForceMH Boosted|TI|MM|24^10^0
+4393878|*Phylogeny|D010802|13868|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM|1412^12^0
+4393878|Hawaii|D006254|13664|MH|RtM via: Hawaii;Forced Leaf Node Lookup:hawaii|TI|MM|2565^6^0;1071^6^0
+4393878|Syncesia byssina|C000703030|13230|NM|Forced New Lookup:syncesia byssina|TI|MM|420^16^0;1893^16^0
+4393878|Syncesia leprobola|C000682176|13230|NM|Forced New Lookup:syncesia leprobola|TI|MM|177^18^0;1660^18^0
+4393878|Tanzania|D013636|13229|MH|RtM via: Tanzania;Forced Leaf Node Lookup:tanzania|TI|MM|2660^8^0;1164^8^0
+4393878|Bone Diseases, Developmental|D001848|46463|MH|||RC
+4393878|Spine|D013131|41270|MH|||RC
+4393878|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1559^3^0;2326^3^0;2459^3^0;2589^3^0
+4393878|Australasia|D044362|855|MH|RtM via: Australasia|TI|MM|2677^11^0;1185^11^0
+4393878|Europe|D005060|297|MH|RtM via: Europe|TI|MM|1149^6^0
+25660972|Humans|D006801|89098516|CT|Forced Humans: university|TI|MM;RC
+25660972|Australia|D001315|3612278|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|2865^9^0;263^9^0;212^10^0;2814^10^0
+25660972|*Parmeliaceae|D000068837|3608993|MH|RtM via: Parmeliaceae;RtM via: Hypotrachyna;RtM via: Ahtiana;checkForceMH Boosted;Forced Non-Leaf Node Lookup:parmeliaceae|TI|MM|3028^12^0;542^12^0;426^12^0;3139^12^0;3014^12^0;528^12^0;412^12^0;3701^7^0;1026^7^0
+25660972|*Lichen|D008011|3602963|ET|Entry Term Replacement for "Lichens";RtM via: Lichen - organism;checkForceMH Boosted|TI|MM|3042^10^0;556^10^0;440^10^0
+25660972|*Universities|D014495|3601886|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|2955^10^0;2834^10^0;2681^10^0;353^10^0;232^10^0;79^10^0
+25660972|*Museums|D009144|3601739|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|2668^6^0;66^6^0
+25660972|Arizona|D001130|3601346|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM|2941^7^0;339^7^0
+25660972|Berlin|D001604|3600827|MH|RtM via: City of Berlin;Forced Leaf Node Lookup:berlin|TI|MM|2726^6^0;124^6^0
+25660972|*Gardens|D000072506|3600827|MH|Forced Leaf Node Lookup:gardens|TI|MM|47^6^0;2649^6^0
+25660972|Digoxin|D004077|333574|MH|||RC
+25660972|Anti-Arrhythmia Agents|D000889|227399|MH|||RC
+25660972|*Life Sciences|D001690|1584|ET|Entry Term Replacement for "Biological Science Disciplines";RtM via: Biological Science Disciplines;Forced Non-Leaf Node Lookup:life sciences|TI|MM|2926^13^0;324^13^0
+25660972|*Habitats|D017753|1545|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|844^8^0
+25660972|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3615^3^0;5257^3^0
+4393881|relacin|C580565|31174|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|1825^7^0
+4393881|Mexico|D008800|16416|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|199^6^0;54^6^0
+4393881|Florida|D005431|15846|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|1168^7^0;297^7^0
+4393881|*Wood|D014934|15660|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|765^4^0
+4393881|*Monoterpenes|D039821|15639|MH|RtM via: Monoterpenes;checkForceMH Boosted;Forced Non-Leaf Node Lookup:monoterpenes|TI|MM|852^12^0
+4393881|Osteochondritis|D010007|84210|MH|||RC
+4393881|Scheuermann Disease|D012544|55959|MH|||RC
+4393881|*Dipeptides|D004151|31173|HM|RtM via: relacin|TI|MM|1825^7^0
+4393881|*Deoxyguanosine|D003849|15600|HM|RtM via: relacin|TI|MM|1825^7^0
+4393881|*Pollen|D011058|39|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|795^6^0
+4393881|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1006^3^0
+4393881|Caribbean|D017691|1281|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|317^9^0;87^9^0
+4393881|Central America|D002489|1281|MH|RtM via: Central America|TI|MM|62^15^0
+4393875|relacin|C580565|23981|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|932^7^0
+4393875|Brazil|D001938|12356|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1289^6^0;598^6^0
+4393875|*Phylogeny|D010802|11960|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|284^9^0
+4393875|*Grassland|D065948|11771|MH|Forced Leaf Node Lookup:savannas|TI|MM|478^8^0
+4393875|Promethazine|D011398|61284|MH|||RC
+4393875|Pheniramine|D010632|58516|MH|||RC
+4393875|*Dipeptides|D004151|23980|HM|RtM via: relacin|TI|MM|932^7^0
+4393875|*Deoxyguanosine|D003849|12347|HM|RtM via: relacin|TI|MM|932^7^0
+4393875|*Habit|D006184|150|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|445^5^0
+4393836|Male|D008297|15547|CT|CT Text Lookup: both sexes|TI|MM;RC|527^10^0
+4393836|Female|D005260|15547|CT|CT Text Lookup: both sexes|TI|MM;RC|527^10^0
+4393836|*Germ Cells, Plant|D055993|6905|MH|RtM via: Gametophytes;Forced Leaf Node Lookup:gametophytes|TI|MM|173^11^0
+4393836|*Hyalin|D006818|5984|MH|RtM via: Hyalin;Forced Leaf Node Lookup:hyaline|TI|MM|357^7^0
+4393836|*Ovule|D056771|5900|MH|RtM via: Female Gametophytes;Forced Leaf Node Lookup:female gametophytes|TI|MM|447^19^0
+4393836|Vertigo|D014717|14547|MH|||RC
+4393836|Intracranial Arteriosclerosis|D002537|13137|MH|||RC
+4393836|Americas|D000569|2169|MH|RtM via: Americas;Forced Non-Leaf Node Lookup:americas|TI|MM|500^8^0
+4393836|*Plant Leaves|D018515|180|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|249^4^0;207^4^0
+4393836|South America|D013020|2298|MH|RtM via: South America|TI|MM|119^13^0
+4393836|Caribbean|D017691|2004|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|105^9^0
+4393836|Central America|D002489|1683|MH|RtM via: Central America|TI|MM|818^15^0;84^15^0
+4393836|Africa|D000349|1089|MH|RtM via: Africa|TI|MM|1266^6^0;520^6^0
+4393917|United States|D014481|75796|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|325^8^0
+4393917|Animals|D000818|75796|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species)|TI|MM
+4393917|Melicoccus|C000633711|74796|NM|RtM via: Melicoccus bijugatus;Forced SCR Leaf Node Lookup:melicoccus|TI|MM|3946^20^0;1124^20^0;5227^10^0;4138^10^0;3867^10^0;3586^10^0;3170^10^0;3094^10^0;2363^10^0;1300^10^0;914^10^0;440^10^0;369^10^0;2388^10^0;2409^10^0;2439^10^0;2467^10^0;5252^10^0;5274^10^0;5304^10^0;5332^10^0
+4393917|Talisia|C000633704|44984|NM|RtM via: Talisia croatii;RtM via: Talisia hexaphylla;Forced SCR Leaf Node Lookup:talisia|TI|MM|5393^15^0;2527^15^0;5357^7^0;4951^7^0;4829^7^0;4623^7^0;4228^7^0;3107^7^0;2491^7^0;2100^7^0;1998^7^0;1373^7^0;357^7^0;5492^18^0;2626^18^0;2544^7^0;2565^7^0;2588^7^0;2607^7^0;2661^7^0;2700^7^0;2716^7^0;2731^7^0;2755^7^0;5410^7^0;5431^7^0;5454^7^0;5473^7^0;5527^7^0;5566^7^0;5582^7^0;5597^7^0;5619^7^0
+4393917|variacin|C099477|34508|NM|RtM via: variacin;Forced SCR Leaf Node Lookup:variacin|TI|MM|5034^8^0
+4393917|*Endangered Species|D056727|30718|MH|RtM via: Endangered Species;Forced Leaf Node Lookup:endangered species;checkForceMH Boosted|TI|MM|1353^18^0
+4393917|Mexico|D008800|29989|MH|RtM via: Mexico;Forced Leaf Node Lookup:yucatan;Forced Leaf Node Lookup:mexico|TI|MM|1872^6^0;946^6^0;954^7^0;1880^7^0
+4393917|*Cotyledon|D018548|18677|MH|RtM via: Cotyledon plant;Forced Leaf Node Lookup:cotyledons|TI|MM|851^10^0
+4393917|*Trees|D014197|18326|MH|RtM via: Trees (plant);checkForceMH Boosted|TI|MM|1404^8^0;474^8^0
+4393917|*Ovule|D056771|16724|MH|RtM via: Plant Ovule;Forced Leaf Node Lookup:ovules|TI|MM|105^5^0
+4393917|Uruguay|D014583|16400|MH|RtM via: Uruguay;Forced Leaf Node Lookup:uruguay|TI|MM|4757^7^0;1937^7^0
+4393917|*Fruit|D005638|16367|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1719^6^0;757^6^0;281^6^0
+4393917|Argentina|D001118|16352|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|4740^9^0;3749^9^0;1919^9^0;1045^9^0
+4393917|Chile|D002677|16352|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|4751^5^0;1930^5^0
+4393917|Paraguay|D010239|16349|MH|RtM via: Paraguay;Forced Leaf Node Lookup:paraguay|TI|MM|4714^8^0;3770^8^0;1902^8^0;1069^8^0
+4393917|Bolivia|D001838|16331|MH|RtM via: Bolivia;Forced Leaf Node Lookup:bolivia|TI|MM|3760^7^0;1056^7^0
+4393917|Dominican Republic|D004293|14906|MH|RtM via: Dominican Republic;Forced Leaf Node Lookup:dominican republic|TI|MM|1328^18^0;1104^18^0
+4393917|*Sapindaceae|D029631|74795|HM|RtM via: Talisia croatii;RtM via: Melicoccus bijugatus;RtM via: Melicocceae;RtM via: Talisia hexaphylla|TI|MM|5393^15^0;2527^15^0;3946^20^0;1124^20^0;3081^11^0;2786^11^0;344^11^0;30^11^0;5357^7^0;4951^7^0;4829^7^0;4623^7^0;4228^7^0;3107^7^0;2491^7^0;2100^7^0;1998^7^0;1373^7^0;357^7^0;5227^10^0;4138^10^0;3867^10^0;3586^10^0;3170^10^0;3094^10^0;2363^10^0;1300^10^0;914^10^0;440^10^0;369^10^0;5492^18^0;2626^18^0
+4393917|Ferredoxins|D005288|64705|MH|||RC
+4393917|*Bacteriocins|D001430|34507|HM|RtM via: variacin|TI|MM|5034^8^0
+4393917|*Forest|D065928|2862|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|2038^6^0
+4393917|*Plant Leaves|D018515|2688|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|1450^6^0;513^6^0;132^6^0
+4393917|*Habit|D006184|63|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|1424^5^0;483^5^0
+4393917|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|5094^3^0;5200^3^0
+4393941|Animals|D000818|78395|CT|Amazona;CT Treecode Lookup: B01.050.150.900.248 (Amazona);Diptera;CT Treecode Lookup: B01.050.500.131 (Diptera)||MM;RC
+4393941|*Trees|D014197|24652|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|1660^5^0
+4393941|*Amazona|D046708|24541|MH|RtM via: Amazona;Forced Leaf Node Lookup:amazona;checkForceMH Boosted|TI|MM|3783^7^0
+4393941|Brazil|D001938|17366|MH|RtM via: Amazonia;RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1688^8^0;3259^6^0;1230^6^0
+4393941|*Laurales|D000073571|15671|MH|RtM via: Laurales;RtM via: Siparunaceae;RtM via: Glossocalyx;checkForceMH Boosted;Forced Non-Leaf Node Lookup:laurales|TI|MM|2820^8^0;2309^8^0;846^8^0;369^8^0;3925^12^0;1979^12^0;1801^12^0;63^12^0;3148^8^0;2757^8^0;2367^8^0;2023^8^0;1134^8^0;783^8^0;406^8^0;101^8^0;2768^11^0;2537^11^0;2043^11^0;796^11^0;643^11^0;131^11^0
+4393941|*Ovule|D056771|14540|MH|RtM via: Plant Ovule;Forced Leaf Node Lookup:ovules|TI|MM|880^6^0
+4393941|*Diptera|D004175|13265|MH|RtM via: Diptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gall midges|TI|MM|3652^7^0;1576^7^0;1563^11^0
+4393941|Paraguay|D010239|12422|MH|RtM via: Paraguay;Forced Leaf Node Lookup:paraguay|TI|MM|3211^8^0;1183^8^0
+4393941|*Ethnobotany|D019448|12368|MH|RtM via: Ethnobotany;Forced Leaf Node Lookup:ethnobotany|TI|MM|1819^14^0;292^11^0
+4393941|Mexico|D008800|12041|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|1164^6^0
+4393941|Lung Transplantation|D016040|77395|MH|||RC
+4393941|Lung|D008168|31050|MH|||RC
+4393941|*Pollen|D011058|3537|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1522^6^0
+4393941|Pharmaceutical Preparations|D004364|1000|MH|Forced Non-Leaf Node Lookup:pharmaceuticals||MM|1864^14^0
+4393941|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3347^3^0;3403^3^0;3729^3^0;3831^3^0
+4393804|*Inflorescence|D056626|59034|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|886^13^0;845^14^0;995^13^0
+4393804|xylometazoline|C009695|56800|NM|RtM via: Snup;Forced SCR Leaf Node Lookup:stas|TI|MM|3390^4^0
+4393804|Guyana|D006172|29499|MH|RtM via: Guyana;Forced Leaf Node Lookup:guyana|TI|MM|3644^6^0;1104^6^0
+4393804|Bolivia|D001838|29496|MH|RtM via: Bolivia;Forced Leaf Node Lookup:bolivia|TI|MM|3627^7^0;1087^7^0
+4393804|Paraguay|D010239|29496|MH|RtM via: Paraguay;Forced Leaf Node Lookup:paraguay|TI|MM|3699^8^0;1165^8^0
+4393804|Brazil|D001938|29469|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|3746^6^0;1202^6^0
+4393804|*Phylogeny|D010802|28731|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM|1414^12^0
+4393804|Mexico|D008800|28596|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|3556^6^0;1045^6^0
+4393804|CXCR4 protein, human|C527276|28471|NM|RtM via: CXCR4 protein, human|TI|MM|3443^5^0
+4393804|*Receptors, CXCR4|D019718|28470|MH|RtM via: CXCR4 Receptors;RtM via: CXCR4 protein, human;Forced Leaf Node Lookup:fusin|TI|MM|3443^5^0
+4393804|MMPI|D008950|114039|MH|||RC
+4393804|Paranoid Disorders|D010259|105289|MH|||RC
+4393804|*Imidazoles|D007093|56799|HM|RtM via: Snup|TI|MM|3390^4^0
+4393804|*Clustering|D016000|6675|ET|Entry Term Replacement for "Cluster Analysis";RtM via: statistical cluster;Forced Non-Leaf Node Lookup:clusterings|TI|MM;RC|920^10^0
+4393804|*Geography|D005843|4074|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|397^9^0
+4393804|*Habitat|D017753|3369|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|4923^7^0;2338^7^0
+4393804|*Plant Leaves|D018515|2313|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|650^4^0;564^4^0
+4393804|Southeast Asia|D001210|981|ET|Entry Term Replacement for "Asia, Southeastern";RtM via: Asia, Southeastern;Forced Non-Leaf Node Lookup:southeast asia|TI|MM|1740^14^0;1241^14^0
+4393804|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3220^3^0;4505^3^0
+25800079|United States|D014481|31980|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|1137^13^0;699^8^0;818^8^0;489^8^0
+25800079|Mexico|D008800|30093|MH|RtM via: Mexico;RtM via: Baja California;Forced Lookup:baja california;Forced Leaf Node Lookup:baja california;Forced Leaf Node Lookup:mexico|TI|MM|931^6^0;951^15^0;974^6^0
+25800079|*Terminalia|D029766|20868|MH|RtM via: Terminalia;Forced Leaf Node Lookup:terminalias;checkForceMH Boosted|TI|MM|1841^10^0;1772^10^0;1715^10^0;1386^10^0;544^10^0;1899^10^0
+25800079|*Trees|D014197|20835|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|315^5^0;351^5^0
+25800079|*Combretum|D029765|20520|MH|RtM via: Combretum;Forced Leaf Node Lookup:combretums;checkForceMH Boosted|TI|MM|1662^9^0;1610^9^0;451^9^0
+25800079|*Combretaceae|D029764|14019|MH|RtM via: Combretaceae;RtM via: Conocarpus;RtM via: Laguncularia;RtM via: Buchenavia;RtM via: Bucida;RtM via: Quisqualis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:combretaceae|TI|MM|25^12^0;772^10^0;732^12^0;1534^10^0;632^10^0;1733^6^0;1627^10^0
+25800079|Brazil|D001938|11133|MH|RtM via: Amazonia;RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1059^8^0;1075^6^0;1251^6^0
+25800079|Argentina|D001118|10770|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1010^9^0
+25800079|Bahamas|D001444|10767|MH|RtM via: Bahamas;Forced Leaf Node Lookup:bahamas|TI|MM|1155^7^0
+25800079|Florida|D005431|10194|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|900^7^0
+25800079|Bermuda|D001605|9915|MH|RtM via: Bermuda;Forced Leaf Node Lookup:bermuda|TI|MM|880^7^0
+25800079|*Grassland|D065948|9486|MH|Forced Leaf Node Lookup:savannas|TI|MM|370^7^0
+25800079|Confidentiality|D003219|30980|MH|||RC
+25800079|Social Media|D061108|29507|MH|||RC
+25800079|*Publications|D011642|9948|MH|RtM via: Scientific Publication|TI|MM|1518^9^0
+25800079|*Forest|D065928|2322|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|334^6^0
+25800079|West Indies|D014900|2313|MH|RtM via: Caribbean Islands|TI|MM|1170^11^0
+25800079|Central America|D002489|2238|MH|RtM via: Central America|TI|MM|1115^15^0
+25800079|Africa|D000349|1887|MH|RtM via: Africa|TI|MM|532^6^0
+4393873|*Euterpe|D065748|20667|MH|RtM via: Euterpe;RtM via: Euterpe catinga;Forced Leaf Node Lookup:euterpes;checkForceMH Boosted|TI|MM|864^7^0;196^7^0;999^15^0;341^15^0
+4393873|Montana|D009009|8076|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|1139^7^0;481^7^0
+4393873|Pheniramine|D010632|42164|MH|||RC
+4393873|Histamine H1 Antagonists|D006634|22168|MH|||RC
+4393873|*Plant Leaves|D018515|783|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|123^4^0
+4393873|*Pollen|D011058|273|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|141^6^0
+4393807|Bees|D001516|23836|CT|RtM via: Bees;Forced Leaf Node Lookup:bees|TI|MM|971^4^0
+4393807|Animals|D000818|23836|CT|RtM via: Bees|TI|MM|971^4^0
+4393807|*Krameriaceae|D031326|22836|MH|RtM via: Krameriaceae;RtM via: Ratany;Forced Leaf Node Lookup:krameriaceae;Forced Leaf Node Lookup:kramerias;Forced Leaf Node Lookup:rhatany;checkForceMH Boosted|TI|MM|24^12^0;1529^7^0;1298^8^0;1353^7^0;698^8^0;74^8^0
+4393807|*Rosa|D027826|12579|MH|RtM via: Rosa;Forced Leaf Node Lookup:rose;checkForceMH Boosted|TI|MM|576^4^0
+4393807|*Mouthwashes|D009067|9963|MH|RtM via: Mouthwash;Forced Leaf Node Lookup:mouthwashes;checkForceMH Boosted|TI|MM|1509^11^0
+4393807|*Dentifrices|D003802|9798|MH|Forced Leaf Node Lookup:dentifrices;checkForceMH Boosted|TI|MM|1493^11^0
+4393807|*Leguminosae|D007887|8556|ET|Entry Term Replacement for "Fabaceae";RtM via: Caesalpinioideae;RtM via: Fabaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:leguminosae|TI|MM|1059^16^0;1047^11^0
+4393807|*Polygalaceae|D029608|7671|MH|RtM via: Polygalaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:polygalaceae|TI|MM|1083^12^0
+4393807|*Fruit|D005638|6591|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|595^6^0
+4393807|*Tannins|D013634|6357|MH|RtM via: tannic acid;checkForceMH Boosted;Forced Non-Leaf Node Lookup:tannins|TI|MM|1435^7^0
+4393807|*Wine|D014920|5787|MH|RtM via: port wine;Forced Leaf Node Lookup:wine|TI|MM|1582^9^0;1587^4^0
+4393807|Polyarteritis Nodosa|D010488|17777|MH|||RC
+4393807|Central Nervous System|D002490|16780|MH|||RC
+4393807|*Plant Leaves|D018515|1947|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|447^6^0
+4393807|*Seed|D012639|1917|ET|Entry Term Replacement for "Seeds";RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seed|TI|MM|645^4^0
+4393807|*Flowers|D035264|1488|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1124^7^0;467^7^0
+4393807|*Habitats|D017753|1287|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|291^8^0
+4393807|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|871^7^0
+4393807|North America|D009656|210|MH|RtM via: North America|TI|MM|182^13^0
+4393807|South America|D013020|210|MH|RtM via: South America|TI|MM|217^13^0
+4393902|Animals|D000818|41856|CT|Parasites;CT Treecode Lookup: B01.050.500.714 (Parasites)|TI|MM
+4393902|*Parasites|D010271|29404|MH|RtM via: Parasites;Forced Leaf Node Lookup:parasites;checkForceMH Boosted|TI|MM|113^9^0
+4393902|Argentina|D001118|15182|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1361^9^0;595^9^0
+4393902|Mexico|D008800|15020|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|505^6^0
+4393902|*Wood|D014934|14939|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|259^4^0
+4393902|Paris|D010297|14594|MH|RtM via: Paris, France;Forced Leaf Node Lookup:paris|TI|MM|1132^5^0;357^5^0
+4393902|Intelligence|D007360|40856|MH|||RC
+4393902|Brain Damage, Chronic|D001925|28076|MH|||RC
+4393902|*Plant Oils|D010938|4107|MH|RtM via: Plant Oils;Forced Non-Leaf Node Lookup:seed oils|TI|MM|381^4^0;376^9^0
+4393902|*Plant Leaves|D018515|1794|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|250^4^0
+4393902|*Pollen|D011058|654|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|304^6^0
+4393902|South America|D013020|1020|MH|RtM via: South America|TI|MM|569^13^0
+4393902|Central America|D002489|855|MH|RtM via: Central America|TI|MM|520^15^0
+4393938|Animals|D000818|29577|CT|Ants;CT Treecode Lookup: B01.050.500.131 (Ants);CT Text Lookup: animal|TI|MM;RC|1064^6^0;3282^6^0;4662^6^0
+4393938|relacin|C580565|28577|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|3267^7^0
+4393938|*Foraminifera|D056908|24622|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|4186^5^0
+4393938|*Ants|D001000|24490|MH|RtM via: Ants;Forced Leaf Node Lookup:ants;checkForceMH Boosted|TI|MM|579^4^0
+4393938|*Trees|D014197|24271|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|135^5^0
+4393938|*Pollination|D054817|15329|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|1082^11^0
+4393938|*Inflorescence|D056626|13550|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|346^14^0
+4393938|*Cecropiaceae|D027003|13004|ET|Entry Term Replacement for "Urticaceae";RtM via: Cecropiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cecropiaceae|TI|MM|3722^12^0;2269^12^0;96^12^0
+4393938|*Trichomes|D064201|12377|MH|RtM via: Trichomes;Forced Leaf Node Lookup:indumentums|TI|MM|394^10^0
+4393938|*Trichilia|D029582|12317|ET|Entry Term Replacement for "Meliaceae";RtM via: Trichilia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:trichilias|TI|MM|2569^9^0;406^9^0
+4393938|nas|C015378|11682|NM|Forced SCR Leaf Node Lookup:nas|TI|MM|3762^3^0;4346^3^0
+4393938|*Dipeptides|D004151|28576|HM|RtM via: relacin|TI|MM|3267^7^0
+4393938|Chromatography, Gel|D002850|28320|MH|||RC
+4393938|*Deoxyguanosine|D003849|12644|HM|RtM via: relacin|TI|MM|3267^7^0
+4393938|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2296^3^0;2392^3^0;3024^3^0;3422^3^0
+4393825|Animals|D000818|57760|CT|Parasites;CT Treecode Lookup: B01.050.500.714 (Parasites)||RC
+4393825|*Lichens|D008011|29949|MH|RtM via: Lichen - organism;Forced Leaf Node Lookup:lichens;checkForceMH Boosted|TI|MM|90^6^0
+4393825|variacin|C099477|21907|NM|RtM via: variacin;Forced SCR Leaf Node Lookup:variacin|TI|MM|2454^8^0
+4393825|*Hyphae|D025301|12639|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM|393^6^0
+4393825|*Gelatin|D005780|11094|MH|RtM via: gelatin;checkForceMH Boosted|TI|MM|381^11^0
+4393825|Parasites|D010271|56760|MH|||RC
+4393825|Parasitic Diseases|D010272|52201|MH|||RC
+4393825|*Bacteriocins|D001430|21906|HM|RtM via: variacin|TI|MM|2454^8^0
+4393825|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2252^3^0;2743^3^0
+4393911|*Potamogetonaceae|D031821|32370|MH|RtM via: Stuckenia;RtM via: Potamogeton;RtM via: Potamogetonaceae;Forced Leaf Node Lookup:potamogetonaceae;Forced Leaf Node Lookup:potamogetons;checkForceMH Boosted|TI|MM|895^9^0;754^9^0;359^9^0;227^9^0;808^11^0;740^11^0;269^11^0;211^11^0;566^16^0;24^16^0
+4393911|Sleep Wake Disorders|D012893|84768|MH|||RC
+4393911|Sleep|D012890|46154|MH|||RC
+4393911|*Behavior Therapy|D001521|3078|MH|RtM via: System Support Mapping|TI|MM|508^4^0
+4393911|*Plant Leaves|D018515|57|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|86^6^0
+4393911|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|583^3^0;765^3^0
+4393932|Humans|D006801|44620|CT|CT Text Lookup: workers|TI|MM;RC|788^7^0
+4393932|variacin|C099477|28959|NM|RtM via: variacin;Forced SCR Leaf Node Lookup:variacin|TI|MM|1538^8^0;1275^8^0
+4393932|*Lauraceae|D019770|14470|MH|RtM via: Rhodostemonodaphne;RtM via: Lauraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lauraceae|TI|MM|1046^18^0;44^18^0;1834^9^0;1100^9^0;803^9^0;121^9^0
+4393932|Internship and Residency|D007396|43620|MH|||RC
+4393932|*Bacteriocins|D001430|28958|HM|RtM via: variacin|TI|MM|1538^8^0;1275^8^0
+4393932|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2009^3^0;2053^3^0
+4393950|Female|D005260|94696|CT|Ovary;CT Treecode Lookup: A05.360.319 (Ovary);CT Text Lookup: ovary|TI|MM;RC|900^5^0
+4393950|Animals|D000818|94696|CT|Ants;CT Treecode Lookup: B01.050.500.131 (Ants)||MM;RC
+4393950|Trinidad and Tobago|D014300|64386|MH|RtM via: Tobago;RtM via: Trinidad;RtM via: Trinidad and Tobago;Forced Leaf Node Lookup:trinidad and tobago;Forced Leaf Node Lookup:tobago|TI|MM|203^6^0;190^8^0;1837^8^1;1848^6^1
+4393950|*Phylogeny|D010802|43248|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analysis|TI|MM|402^21^0
+4393950|*Ants|D001000|42918|MH|Forced Leaf Node Lookup:ant;checkForceMH Boosted|TI|MM|294^3^0
+4393950|*Ovary|D010053|22062|MH|RtM via: Both ovaries;RtM via: Ovary;Forced Leaf Node Lookup:ovary|TI|MM|900^5^0
+4393950|Bolivia|D001838|21654|MH|RtM via: Bolivia;Forced Leaf Node Lookup:bolivia|TI|MM|1789^7^0;154^7^0
+4393950|Mexico|D008800|21459|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|144^6^0
+4393950|Propranolol|D011433|93696|MH|||RC
+4393950|Adrenergic beta-Antagonists|D000319|72611|MH|||RC
+4393950|*Plant Leaves|D018515|1428|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|325^4^0
+4393950|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2211^3^0
+4393950|Brazil|D001938|195|MH|RtM via: Brazil|TI|MM|1799^6^0
+4393923|*Altitude|D000531|8866|MH|Forced Leaf Node Lookup:altitudes|TI|MM|192^9^0
+4393923|Colombia|D003105|8866|MH|Forced Leaf Node Lookup:colombian|TI|MM|333^9^0
+4393923|Guatemala|D006166|8866|MH|RtM via: Guatemala;Forced Leaf Node Lookup:guatemala|TI|MM|1636^9^0
+4393923|Transplantation Immunology|D014181|37086|MH|||RC
+4393923|Graft vs Host Reaction|D006087|31737|MH|||RC
+4393923|*Spores|D013170|1797|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|923^6^0
+4393923|*Plant Leaves|D018515|474|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|787^4^0;848^6^0
+4393923|*Habitats|D017753|408|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|1172^8^0
+4393923|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1547^3^0;2279^3^0;2366^3^0
+25660968|*Lichens|D008011|140315|MH|RtM via: Lichen - organism;Forced Leaf Node Lookup:lichens;checkForceMH Boosted|TI|MM|7058^10^0;1673^7^0;1276^7^0;823^7^0;650^7^0;565^10^0;249^10^0;282^7^0;176^10^0
+25660968|*Phylogeny|D010802|58336|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|1735^9^0
+25660968|*Rainforest|D065947|53584|MH|RtM via: Temperate Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|1030^22^0;1040^12^0
+25660968|*Lakes|D060106|52834|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|6992^4^0;84^4^0
+25660968|*Museums|D009144|52111|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|6973^6^0;65^6^0
+25660968|Mexico|D008800|51772|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|969^6^0
+25660968|Chicago|D002641|51742|MH|RtM via: Chicago;Forced Leaf Node Lookup:chicago|TI|MM|7010^7^0;102^7^0
+25660968|Argentina|D001118|51652|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|7905^9^0;998^9^0;1075^9^0;8005^9^0
+25660968|Chile|D002677|51652|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|7897^5^0;988^5^0;1065^5^0;7997^5^0
+25660968|Anisomeridium guttuliferum|C000661284|51446|NM|Forced New Lookup:anisomeridium guttuliferum|TI|MM|2208^26^0;9122^26^0
+25660968|Byssoloma subdiscordans|C000664500|51446|NM|Forced New Lookup:byssoloma subdiscordans|TI|MM|4874^23^0;11784^23^0
+25660968|Dictyonema phyllogenum|C000683553|51446|NM|Forced New Lookup:dictyonema phyllogenum|TI|MM|4054^22^0;10971^22^0
+25660968|Gyalideopsis vulgaris|C000675311|51446|NM|Forced New Lookup:gyalideopsis vulgaris|TI|MM|4262^21^0;11179^21^0
+25660968|Phyllobathelium anomalum|C000680464|51446|NM|Forced New Lookup:phyllobathelium anomalum|TI|MM|3376^24^0;10290^24^0
+25660968|Porina fusca|C000699889|51446|NM|Forced New Lookup:porina fusca|TI|MM|6233^12^0;13149^12^0
+25660968|Porina mirabilis|C000699895|51446|NM|Forced New Lookup:porina mirabilis|TI|MM|6385^16^0;13301^16^0
+25660968|Psoroglaena biatorella|C000670374|51446|NM|Forced New Lookup:psoroglaena biatorella|TI|MM|5850^22^0;12760^22^0
+25660968|Strigula minuta|C000702848|51446|NM|Forced New Lookup:strigula minuta|TI|MM|3696^15^0;10610^15^0
+25660968|Strigula nemathora|C000680467|51446|NM|Forced New Lookup:strigula nemathora|TI|MM|5890^18^0;12800^18^0
+25660968|Strigula smaragdula|C000702851|51446|NM|Forced New Lookup:strigula smaragdula|TI|MM|6447^19^0
+25660968|*Classification|D002965|51445|MH|Forced Leaf Node Lookup:systematics|TI|MM|473^10^0
+25660968|*Ascomycota|D001203|65343|MH|RtM via: Psoroglaena biatorella;RtM via: Ascomycota (fungus);RtM via: Phyllobathelium anomalum;RtM via: Porina fusca;RtM via: Byssoloma subdiscordans;RtM via: Coenogonium;RtM via: Porina mirabilis;RtM via: Strigula nemathora;RtM via: Strigula smaragdula;RtM via: Badimia;RtM via: Aspidothelium;RtM via: Calopadia;RtM via: Tricharia;RtM via: Bacidina;RtM via: Anisomeridium;RtM via: Malcolmiella;RtM via: Echinoplaca;RtM via: Fellhanera;RtM via: Gyalideopsis;RtM via: Trichothelium;RtM via: Aderkomyces;RtM via: Asterothyrium;RtM via: Bapalmuia;RtM via: Calenia;RtM via: Chroodiscus;RtM via: Opegrapha;RtM via: Sporopodium;RtM via: Arthonia;Forced Non-Leaf Node Lookup:ascomycotas|TI|MM|12760^22^0;5850^22^0;7525^10^0;608^10^0;10290^24^0;3376^24^0;13149^12^0;6233^12^0;11784^23^0;4874^23^0;11895^11^0;4985^11^0;13301^16^0;6385^16^0;12800^18^0;5890^18^0;6447^19^0;13757^9^0;11734^9^0;9396^9^0;6830^9^0;4824^9^0;2482^9^0;13665^7^0;13622^7^0;11563^7^0;8987^7^0;6738^7^0;6695^7^0;4653^7^0;2038^7^0;11431^13^0;9180^13^0;4521^13^0;2266^13^0;13055^9^0;9637^9^0;6139^9^0;2723^9^0;12883^9^0;10675^9^0;5975^9^0;3761^9^0;11477^8^0;10931^8^0;9283^8^0;4567^8^0;4014^8^0;2369^8^0;9122^13^0;2208^13^0;10114^12^0;3200^12^0;10483^11^0;3569^11^0;13363^8^0;12949^8^0;10610^8^0;6026^8^0;3696^8^0;13833^6^0;13801^6^0;13211^6^0;11226^6^0;10357^6^0;6908^6^0;6876^6^0;6295^6^0;4309^6^0;3443^6^0;11050^11^0;9775^11^0;4133^11^0;2861^11^0;11132^10^0;9879^10^0;4215^10^0;2965^10^0;11179^12^0;9970^12^0;4262^12^0;3056^12^0;11303^13^0;10702^13^0;4386^13^0;3788^13^0;10829^11^0;9066^11^0;3912^11^0;2152^11^0;9240^13^0;2326^13^0;9311^9^0;2397^9^0;9448^7^0;2534^7^0;9737^11^0;2823^11^0;10226^9^0;3312^9^0;10534^11^0;3620^11^0;10885^8^0;3968^8^0
+25660968|*Basidiomycota|D001487|23319|MH|RtM via: Basidiomycota;Forced Non-Leaf Node Lookup:basidiomycotas|TI|MM|7538^13^0;623^13^0
+25660968|*Plant Leaves|D018515|2217|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|322^6^0
+25660968|*Botany|D001901|2037|MH|RtM via: Botany;Forced Non-Leaf Node Lookup:botany|TI|MM|6955^6^0;47^6^0
+25660968|*Habit|D006184|273|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|1415^5^0
+25660968|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|8027^3^0;13010^3^0
+4393953|*Compositae|D019659|9794|ET|Entry Term Replacement for "Asteraceae";RtM via: Asteraceae;RtM via: Vernonieae;RtM via: Piptocarpha;checkForceMH Boosted;Forced Non-Leaf Node Lookup:compositae|TI|MM|55^10^0;43^10^0;1016^11^0;974^11^0;797^11^0;248^11^0;30^11^0
+4393953|*Trichomes|D064201|9065|MH|RtM via: Trichomes;Forced Leaf Node Lookup:trichomes|TI|MM|444^9^0
+4393953|*Inflorescence|D056626|8396|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|347^14^0
+4393953|Puerto Rico|D011647|8267|MH|RtM via: Puerto Rico;Forced Leaf Node Lookup:puerto rico|TI|MM|131^11^0
+4393953|*Flavonoid|D005419|7817|ET|Entry Term Replacement for "Flavonoids";RtM via: Flavonoids;checkForceMH Boosted;Forced Non-Leaf Node Lookup:flavonoids|TI|MM|751^9^0
+4393953|Mouth, Edentulous|D009066|30464|MH|||RC
+4393953|Denture, Complete|D003824|28831|MH|||RC
+4393953|*Plant Leaves|D018515|444|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|494^4^0
+4393953|West Indies|D014900|1281|MH|RtM via: Caribbean Islands|TI|MM|221^11^0
+4393953|Central America|D002489|429|MH|RtM via: Central America|TI|MM|197^15^0
+4393890|Animals|D000818|39933|CT|Crustacea;CT Treecode Lookup: B01.050.500.131 (Crustacea)|TI|MM
+4393890|*Lichens|D008011|30390|MH|RtM via: Lichen - organism;Forced Leaf Node Lookup:lichens;checkForceMH Boosted|TI|MM|50^6^0
+4393890|*Indican|D007200|20487|MH|RtM via: Indican;Forced Leaf Node Lookup:indican;checkForceMH Boosted|TI|MM|3164^7^0
+4393890|Cladonia anaemica|C000667007|10168|NM|Forced New Lookup:cladonia anaemica|TI|MM|1044^17^0;2764^17^0
+4393890|Cladonia arbuscula|C000667010|10168|NM|Forced New Lookup:cladina arbuscula|TI|MM|280^17^0;953^17^0;1989^17^0;2673^17^0
+4393890|Brazil|D001938|10167|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|3380^6^0;1573^6^0
+4393890|Bone Diseases, Developmental|D001848|38933|MH|||RC
+4393890|Spine|D013131|29173|MH|||RC
+4393890|*Ascomycota|D001203|3144|MH|RtM via: Cladonia anaemica;RtM via: Lecanorales;RtM via: Cladoniaceae;RtM via: Ascomycota (fungus);RtM via: Cladonia arbuscula;RtM via: Cladia;RtM via: Pycnothelia;Forced Non-Leaf Node Lookup:ascomycotas|TI|MM|2764^17^0;1044^17^0;1684^11^0;77^11^0;1645^12^0;36^12^0;1659^10^0;65^10^0;2673^17^0;1989^17^0;953^17^0;280^17^0;1968^6^0;1837^6^0;259^6^0;133^6^0;1902^11^0;200^11^0;2592^8^0;2095^8^0;1872^8^0;886^8^0;386^8^0;168^8^0
+4393890|*Habitats|D017753|876|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|3145^7^0;1363^8^0
+4393890|*Crustacea|D003445|834|MH|RtM via: Class crustacea;RtM via: Subphylum Crustacea;Forced Non-Leaf Node Lookup:crustaceas|TI|MM|2142^9^0;433^9^0
+4393890|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3253^3^0
+4393813|*Trees|D014197|88884|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|2399^4^0;1223^5^0
+4393813|*Fruit|D005638|58540|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|2393^5^0;1567^6^0;500^6^0
+4393813|*Cecropiaceae|D027003|33674|ET|Entry Term Replacement for "Urticaceae";RtM via: Cecropiaceae;RtM via: Coussapoa;RtM via: Pourouma;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cecropiaceae|TI|MM|112^12^0;154^9^0;126^9^0;1040^8^0;140^8^0
+4393813|*Rainforest|D065947|31253|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|1756^11^0;653^11^0
+4393813|*Inflorescence|D056626|30833|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|1397^14^0;409^14^0
+4393813|Mexico|D008800|29177|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|549^6^0
+4393813|Brazil|D001938|28877|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1651^6^0;573^6^0
+4393813|Phentolamine|D010646|123158|MH|||RC
+4393813|Sympatholytics|D013565|103843|MH|||RC
+4393813|*Plant Leaves|D018515|2022|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|2193^4^0;1276^6^0;323^6^0;2205^4^0
+4393813|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|1014^7^0;2331^7^0
+4393813|Central America|D002489|729|MH|RtM via: Central America|TI|MM|1618^15^0
+4393813|West Indies|D014900|429|MH|RtM via: Caribbean Islands|TI|MM|1679^11^0;601^11^0
+25660964|*Altitude|D000531|25699|MH|RtM via: Altitude;Forced Leaf Node Lookup:altitudes|TI|MM|667^8^0
+25660964|*Rainforest|D065947|25510|MH|RtM via: Tropical Rainforest;Forced Leaf Node Lookup:tropical rainforests|TI|MM|2619^19^0
+25660964|Brazil|D001938|24904|MH|RtM via: Rio de Janeiro;RtM via: Brazil;Forced Leaf Node Lookup:brazil;Geo Lookup:rio de janeiro|TI;AB|MM|1632^14^0;76^14^0;2521^6^0;1700^6^0;855^6^0;144^6^0
+25660964|nas|C015378|24902|NM|Forced SCR Leaf Node Lookup:nas|TI|MM|617^3^0;863^3^0
+25660964|Picrates|D010851|53489|MH|||RC
+25660964|Coordination Complexes|D056831|47593|MH|||RC
+25660964|*Ciliata|D016798|1290|ET|Entry Term Replacement for "Ciliophora";RtM via: Ciliata;Forced Non-Leaf Node Lookup:ciliatas|TI|MM|3180^7^0;1535^7^0
+25660964|*Epidermal Cells|D000078404|864|MH|RtM via: Epidermal cells;Forced Non-Leaf Node Lookup:epidermal cells|TI|MM|2045^15^0
+25660964|West Indies|D014900|3|MH|RtM via: Caribbean Islands|TI|MM|2472^11^0
+4393920|Humans|D006801|53453|CT|CT Text Lookup: workers|TI|MM;RC|455^7^0
+4393920|*Guatteria|D031043|23028|MH|RtM via: Guatteria;Forced Leaf Node Lookup:guatterias;checkForceMH Boosted|TI|MM|2925^9^0;1634^9^0;235^9^0
+4393920|*Annona|D031041|21489|MH|RtM via: Annona;Forced Leaf Node Lookup:annonas;checkForceMH Boosted|TI|MM|2951^6^0;1657^6^0;263^6^0
+4393920|*Foraminifera|D056908|19494|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|3121^5^0
+4393920|*Annonaceae|D029061|18501|MH|RtM via: Duguetia;RtM via: Pachypodanthium;RtM via: Duckeanthus;RtM via: Annonaceae;RtM via: Fusaea;checkForceMH Boosted;Forced Non-Leaf Node Lookup:annonaceae|TI|MM|2724^8^0;1430^8^0;160^8^0;20^8^0;2760^15^0;1460^15^0;44^15^0;3016^11^0;1730^11^0;334^11^0;2889^10^0;1595^10^0;199^10^0;3007^6^0;1721^6^0;323^6^0
+4393920|*Phylogeny|D010802|10902|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|1319^9^0
+4393920|*Wood|D014934|10290|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|1251^4^0
+4393920|nas|C015378|9355|NM|Forced SCR Leaf Node Lookup:nas|TI|MM|3852^3^0
+4393920|*Plant Bark|D024301|9354|MH|Forced Leaf Node Lookup:bark|TI|MM|1261^4^0
+4393920|*Seed Dispersal|D058614|9354|MH|Forced Leaf Node Lookup:seed dispersals|TI|MM|1401^14^0
+4393920|Sympathomimetics|D013566|52453|MH|||RC
+4393920|Phenylpropanolamine|D010665|37498|MH|||RC
+4393920|*Geography|D005843|1785|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|1055^9^0;714^12^0
+4393920|*Plant Leaves|D018515|1035|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|1245^4^0
+4393920|*Chromosomes|D002875|357|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM|928^17^0
+4393920|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|1389^7^0
+4393920|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1524^3^0
+4393920|Africa|D000349|0|MH|RtM via: Africa|TI|MM|2848^6^0;1554^6^0;600^6^0;152^6^0
+4393896|Humans|D006801|46211|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+4393896|*Cissus|D032422|20704|MH|RtM via: Cissus;Forced Leaf Node Lookup:cissus;checkForceMH Boosted|TI|MM|1861^6^0;1453^6^0;936^6^0;509^6^0
+4393896|*Ampelopsis|D032421|20368|MH|RtM via: Ampelopsis;Forced Leaf Node Lookup:ampelopsis;checkForceMH Boosted|TI|MM|1339^10^0;399^10^0
+4393896|*Vitis|D027843|20353|MH|RtM via: Vitis;Forced Leaf Node Lookup:vitis;checkForceMH Boosted|TI|MM|1076^5^0;112^5^0
+4393896|*Foraminifera|D056908|19435|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|1554^5^0
+4393896|*Vitaceae|D027844|12599|MH|RtM via: Vitaceae;RtM via: Ampelocissus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:vitaceae|TI|MM|993^8^0;24^15^0;1229^12^0;282^12^0;31^8^0
+4393896|Mexico|D008800|10721|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|747^6^0;501^6^0;200^6^0
+4393896|Chile|D002677|10322|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|1602^5^0;664^5^0
+4393896|Argentina|D001118|10319|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1619^9^0
+4393896|Florida|D005431|9680|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|653^7^0
+4393896|Psychophysiologic Disorders|D011602|45211|MH|||RC
+4393896|MMPI|D008950|38771|MH|||RC
+4393896|*Ethnic Groups|D005006|14346|MH|RtM via: Caribbean natives|TI|MM;RC|810^9^0;372^9^0;229^9^0
+4393896|Central America|D002489|2211|MH|RtM via: Central America|TI|MM|758^15^0;348^15^0;208^15^0
+4393896|Caribbean|D017691|2163|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|810^9^0;372^9^0;229^9^0
+4393896|North America|D009656|2064|MH|RtM via: North America|TI|MM|461^13^0;162^13^0
+4393947|*Liverworts|D035926|48465|ET|Entry Term Replacement for "Hepatophyta";RtM via: Cronisia;RtM via: Jungermanniidae;RtM via: Sphaerocarpales;RtM via: Marchantiophyta;RtM via: Marchantiidae;RtM via: Monocleales;RtM via: Riccia;RtM via: Marchantiales;RtM via: Mannia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:liverworts|TI|MM|5459^8^0;1658^8^0;3739^15^0;98^15^0;7279^15^0;7120^15^0;4359^15^0;3383^15^0;3230^15^0;715^15^0;3678^9^0;2329^10^0;38^9^0;24^10^0;7424^13^0;6467^13^0;5444^13^0;4493^13^0;4344^13^0;3820^13^0;3773^13^0;3544^13^0;2586^13^0;1643^13^0;839^13^0;700^13^0;204^13^0;140^13^0;7265^11^0;7106^11^0;4253^11^0;3896^11^0;3367^11^0;3214^11^0;610^11^0;270^11^0;5807^6^0;4227^6^0;1976^6^0;589^6^0;7338^13^0;7165^13^0;4193^13^0;3913^13^0;3880^13^0;3435^13^0;3286^13^0;555^13^0;283^13^0;252^13^0;2021^6^0
+4393947|*Phylogeny|D010802|34119|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analysis|TI|MM|3070^21^0
+4393947|xylometazoline|C009695|33688|NM|RtM via: Snup;Forced SCR Leaf Node Lookup:stas|TI|MM|5522^4^0;5206^4^0
+4393947|*Mosses|D044002|27870|ET|Entry Term Replacement for "Bryophyta";RtM via: Mosses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mosses|TI|MM|2344^6^0
+4393947|*Islands|D062312|19395|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|1904^7^0
+4393947|*Germ Cells, Plant|D055993|19098|MH|RtM via: Gametophytes;Forced Leaf Node Lookup:gametophytes|TI|MM|1078^12^0;1043^12^0
+4393947|*Seasons|D012621|18381|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|2096^7^0
+4393947|*Droughts|D055864|18108|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|2226^7^0;1136^7^0;1022^7^0
+4393947|Mexico|D008800|16947|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|2126^6^0
+4393947|Argentina|D001118|16932|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|6029^9^0;2197^9^0
+4393947|*Lighting|D008029|16929|MH|RtM via: Lighting;Forced Leaf Node Lookup:illumination|TI|MM|968^12^0
+4393947|Brazil|D001938|16926|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|6020^6^0;2186^6^0
+4393947|Guyana|D006172|16917|MH|RtM via: Guyana;Forced Leaf Node Lookup:guyana|TI|MM|5683^6^0;1859^6^0
+4393947|*Temperature|D013696|16518|MH|Forced Leaf Node Lookup:temperatures|TI|MM|1001^11^0
+4393947|Hexobarbital|D006591|87325|MH|||RC
+4393947|*Imidazoles|D007093|33687|HM|RtM via: Snup|TI|MM|5522^4^0;5206^4^0
+4393947|*Spores|D013170|5565|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|1149^6^0;1060^6^0
+4393947|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|4507^3^0;4594^3^0;4816^3^0
+4393834|*Musci|D044002|37918|ET|Entry Term Replacement for "Bryophyta";RtM via: class Musci;RtM via: Mosses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mosses|TI|MM|1088^5^0;39^5^0;62^6^0
+4393834|*Hyalin|D006818|31771|MH|RtM via: Hyalin;Forced Leaf Node Lookup:hyaline|TI|MM|314^7^0
+4393834|Miotics|D008916|70829|MH|||RC
+4393834|Parasympatholytics|D010276|42639|MH|||RC
+4393834|*Plant Leaves|D018515|291|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|267^4^0;517^6^0;422^4^0
+4393834|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1095^3^0;1974^3^0;2076^3^0
+4393834|Africa|D000349|0|MH|RtM via: Africa|TI|MM|2129^6^0;1057^6^0
+4393899|*Buddleja|D032861|67962|MH|RtM via: Buddleja;RtM via: Buddleja indica;Forced Leaf Node Lookup:buddlejas;checkForceMH Boosted|TI|MM|1532^9^0;1264^8^0;905^8^0;824^8^0;463^8^0;181^8^0;1932^6^1;1978^8^1
+4393899|*Trees|D014197|45251|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|636^4^0
+4393899|relacin|C580565|44565|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|1383^7^0
+4393899|Mexico|D008800|22492|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|540^6^0
+4393899|Brazil|D001938|22063|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1580^6^0;482^6^0
+4393899|Bone Marrow Transplantation|D016026|97652|MH|||RC
+4393899|Bone Marrow|D001853|67260|MH|||RC
+4393899|*Deoxyguanosine|D003849|23917|HM|RtM via: relacin|TI|MM|1383^7^0
+4393899|*Dipeptides|D004151|44564|HM|RtM via: relacin|TI|MM|1383^7^0
+4393899|*Habitats|D017753|441|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|622^8^0
+4393899|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1103^3^0;1700^3^0;1775^3^0
+4393899|Central America|D002489|429|MH|RtM via: Central America|TI|MM|513^15^0
+4393959|*Bryophyta|D044002|14720|MH|RtM via: Mosses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:bryophytas|TI|MM|1159^9^0;139^6^0;40^9^0;67^6^0
+4393959|Tryptophan Oxygenase|D014366|62498|MH|||RC
+4393959|Enzyme Induction|D004790|32277|MH|||RC
+4393959|*Habitats|D017753|972|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|231^8^0
+4393959|*Plant Leaves|D018515|750|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|660^4^0;427^4^0;410^6^0
+4393959|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1170^3^0;1569^3^0;1779^3^0;2138^3^0
+4393959|Africa|D000349|1461|MH|RtM via: Africa|TI|MM|2191^6^0;1106^6^0
+4393959|Europe|D005060|1461|MH|RtM via: Europe|TI|MM|1098^6^0
+4393959|North America|D009656|1461|MH|RtM via: North America|TI|MM|1026^13^0
+4393959|Australia|D001315|1140|MH|RtM via: Australia|TI|MM|2206^9^0;1124^9^0
+4393959|Asia|D001208|1107|MH|RtM via: Asia|TI|MM|2199^4^0;1114^4^0
+4393822|variacin|C099477|41881|NM|RtM via: variacin;Forced SCR Leaf Node Lookup:variacin|TI|MM|1103^8^0
+4393822|*Musci|D044002|40734|ET|Entry Term Replacement for "Bryophyta";RtM via: Mosses;RtM via: class Musci;checkForceMH Boosted;Forced Non-Leaf Node Lookup:musci|TI|MM|1002^5^0;117^5^0
+4393822|Adenoma, Islet Cell|D007516|66238|MH|||RC
+4393822|Multiple Endocrine Neoplasia|D009377|62619|MH|||RC
+4393822|*Bacteriocins|D001430|41880|HM|RtM via: variacin|TI|MM|1103^8^0
+4393822|Pancreatic Neoplasms|D010190|1000|MH|Neoplasm Coordination Rule: Adenoma, Islet Cell||MM;RC
+4393822|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|946^3^0
+20749542|*Basidiomycota|D001487|17694|MH|RtM via: Gomphaceae;RtM via: Stereopsis (Fungus);RtM via: Cotylidia;RtM via: Amylostereum;RtM via: Stereaceae;RtM via: Echinodontiaceae;RtM via: Stereum|TI|MM|2061^10^0;861^10^0;2038^10^0;1548^10^0;822^10^0;412^10^0;1925^9^0;1379^9^0;673^9^0;213^9^0;2228^12^0;1287^12^0;1039^12^0;121^12^0;2163^10^0;973^10^0;2248^16^0;1061^16^0;2149^7^0;1566^7^0;1209^7^0;955^7^0;432^7^0;68^7^0
+20749542|*Polyporales|D020072|16767|MH|RtM via: Hydnopolyporus;RtM via: Inflatostereum;RtM via: Meruliaceae;RtM via: Cymatoderma;RtM via: Podoscypha;RtM via: Podoscyphaceae|TI|MM|1908^14^0;1457^14^0;654^14^0;291^14^0;2296^14^0;1491^14^0;1109^14^0;325^14^0;2098^11^0;898^11^0;1969^11^0;1744^11^0;1426^11^0;731^11^0;574^11^0;260^11^0;1983^10^0;1774^10^0;1531^10^0;747^10^0;601^10^0;395^10^0;2007^14^0;1867^14^0;789^14^0
+20749542|*Agaricales|D000363|14952|MH|RtM via: Cystostereum;RtM via: Chondrostereum;RtM via: Cystostereaceae|TI|MM|2111^12^0;1394^12^0;911^12^0;228^12^0;2073^14^0;1327^14^0;873^14^0;161^14^0;2130^15^0;934^15^0
+20749542|*Polyporaceae|D011124|2961|MH|RtM via: Lopharia|TI|MM|2313^8^0;1757^8^0;1511^8^0;1129^8^0;587^8^0;345^8^0
+20749542|*Stereopsis|D003867|87|ET|Entry Term Replacement for "Depth Perception";RtM via: Depth Perception;Forced Non-Leaf Node Lookup:stereopsis|TI|MM|2038^10^0;1548^10^0;822^10^0;412^10^0
+20749542|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1882^3^0;1935^3^0;2327^3^0
+4393944|*Drosera|D029787|56857|MH|RtM via: Drosera;Forced Leaf Node Lookup:droseras;checkForceMH Boosted|TI|MM|387^7^0;135^7^0;44^7^0;163^7^0;491^7^0;517^7^0
+4393944|*Droseraceae|D031257|28652|MH|RtM via: Droseraceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:droseraceae|TI|MM|428^11^0;71^11^0
+4393944|Tooth Avulsion|D014084|191615|MH|||RC
+4393944|Tooth Injuries|D018677|148977|MH|||RC
+4393819|Animals|D000818|123411|CT|Amazona;CT Treecode Lookup: B01.050.150.900.248 (Amazona)||MM;RC
+4393819|*Altitude|D000531|50346|MH|RtM via: Altitude;Forced Leaf Node Lookup:altitudes|TI|MM|1177^8^0;985^9^0
+4393819|*Amazona|D046708|48648|MH|Forced Leaf Node Lookup:amazona;checkForceMH Boosted|TI|MM|3080^7^0
+4393819|*Arecaceae|D028023|31356|MH|RtM via: Dictyocaryum;RtM via: Iriartea;RtM via: Iriartella;RtM via: Socratea;RtM via: Arecaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:arecaceae|TI|MM|2622^12^0;2353^12^0;900^12^0;672^12^0;2802^8^0;2367^8^0;1073^8^0;686^8^0;2948^10^0;2377^10^0;1202^10^0;696^10^0;3092^8^0;2391^8^0;1333^8^0;711^8^0;1264^5^0;966^5^0;629^5^0;545^5^0;470^5^0;58^9^0
+4393819|*Fossils|D005580|25806|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|778^6^0;221^6^0
+4393819|*Phylogeny|D010802|25743|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|793^9^0
+4393819|*Domestication|D000071278|24672|MH|RtM via: Domestication;Forced Leaf Node Lookup:domestication|TI|MM|286^13^0
+4393819|Glucagon|D005934|122411|MH|||RC
+4393819|Enzyme Induction|D004790|58989|MH|||RC
+4393819|*Pollen|D011058|483|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|740^6^0;164^6^0
+4393819|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|842^7^0
+4393819|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2647^3^0
+4393819|South America|D013020|3|MH|RtM via: South America|TI|MM|1399^13^0;1043^13^0
+29534143|Pregnancy|D011247|10790|CT|Forced Lookup:placental|TI|MM|1827^9^0
+29534143|Female|D005260|10790|CT|Forced Lookup:placental|TI|MM;RC|1827^9^0
+29534143|Humans|D006801|1000|CT|Forced Treecode Turn Back On: G08.686.784.769 (Pregnancy)||MM
+29534143|*Trees|D014197|9790|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|1497^5^0;1304^5^0
+29534143|*Rainforest|D065947|6344|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|916^12^0
+29534143|*Calcium Oxalate|D002129|6064|MH|RtM via: Calcium oxalate crystals;Forced Leaf Node Lookup:calcium oxalate;checkForceMH Boosted|TI|MM|1204^24^0
+29534143|origen|C009784|5504|NM|RtM via: origen;Forced SCR Leaf Node Lookup:origen|TI|MM|4114^6^0
+29534143|*Fruit|D005638|5297|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1720^6^0;1690^6^0
+29534143|*Odorants|D009812|4901|MH|RtM via: Fragrance (odor);Forced Leaf Node Lookup:scents|TI|MM|1571^5^0;1709^5^0
+29534143|*Perfume|D010476|4511|MH|RtM via: Perfume;checkForceMH Boosted|TI|MM|1700^8^0
+29534143|Paraguay|D010239|3812|MH|RtM via: Paraguay;Forced Leaf Node Lookup:paraguay|TI|MM|411^8^0
+29534143|Haiti|D006205|3608|MH|RtM via: Haiti;Forced Leaf Node Lookup:haiti|TI|MM|439^5^0
+29534143|Cuba|D003462|3446|MH|RtM via: Cuba;Forced Leaf Node Lookup:cuba|TI|MM|2681^4^0;580^4^0
+29534143|*Universities|D014495|3236|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|2207^10^0;61^10^0
+29534143|Nicaragua|D009527|3158|MH|RtM via: Nicaragua;Forced Leaf Node Lookup:nicaragua|TI|MM|389^9^0
+29534143|Sweden|D013548|2732|MH|RtM via: Sweden;Forced Leaf Node Lookup:sweden|TI|MM|2236^6^0;90^6^0
+29534143|*Seasons|D012621|2729|MH|Forced Leaf Node Lookup:seasonal|TI|MM|713^8^0
+29534143|*Azocines|D001392|5503|HM|RtM via: origen|TI|MM|4114^6^0
+29534143|*Primulaceae|D029623|4998|MH|RtM via: Neomezia;RtM via: Clavija;RtM via: Theophrasta;RtM via: Bonellia <angiosperm>;RtM via: Votschia;RtM via: Jacquinia|TI|MM|3621^8^0;3468^8^0;2654^8^0;1531^8^0;1333^8^0;551^8^0;4196^7^0;3459^7^0;3012^7^0;2495^7^0;2053^7^0;1324^7^0;863^7^0;348^7^0;3633^11^0;3480^11^0;2687^11^0;1545^11^0;1347^11^0;586^11^0;2408^8^0;245^8^0;2762^8^0;634^8^0;2599^9^0;490^9^0
+29534143|*Forests|D065928|4476|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|829^7^0
+29534143|*Flowers|D035264|2055|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1508^7^0;1675^7^0
+29534143|*Plant Leaves|D018515|1872|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|3226^5^0;1076^4^0
+29534143|*Habit|D006184|819|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|1271^5^0
+29534143|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|44^7^0;2190^7^0
+29534143|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|3382^3^0;3492^3^0;3556^3^0;3829^3^0
+4393848|Male|D008297|70413|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|1198^4^0
+4393848|Bees|D001516|70413|CT|RtM via: Bees;Forced Leaf Node Lookup:bees|TI|MM|1214^4^0
+4393848|Animals|D000818|70413|CT|RtM via: Bees;Butterflies;CT Treecode Lookup: B01.050.500.131 (Butterflies);Larva;CT Treecode Lookup: B05.500 (Larva);Larva;CT Treecode Lookup: G07.345.500.550.500 (Larva)|TI|MM|1214^4^0
+4393848|*Butterflies|D002080|52029|MH|RtM via: Butterflies;RtM via: Family Nymphalidae;Forced Lookup:butterflies;Forced Leaf Node Lookup:butterflies;Forced Leaf Node Lookup:nymphalidae;checkForceMH Boosted|TI|MM|1446^11^0;3363^11^0
+4393848|*Trees|D014197|37707|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|242^5^0;101^5^0;379^4^0
+4393848|*Herbivory|D060434|26697|MH|RtM via: Herbivory;Forced Leaf Node Lookup:herbivores|TI|MM|1387^10^0;1173^9^0
+4393848|*Lycopersicon esculentum|D018551|23850|MH|Forced Leaf Node Lookup:tomato;checkForceMH Boosted|TI|MM|384^6^0
+4393848|*Pollination|D054817|18258|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|1623^11^0;1236^11^0;1148^11^0
+4393848|*Larva|D007814|14322|MH|RtM via: Larva;checkForceMH Boosted;Forced Non-Leaf Node Lookup:larvae|TI|MM|3294^6^0;1424^6^0
+4393848|*Odorants|D009812|12600|MH|RtM via: Odors;Forced Leaf Node Lookup:odor|TI|MM|1323^4^0
+4393848|*Fruit|D005638|12306|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|338^6^0
+4393848|Argentina|D001118|12123|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1886^9^0;176^9^0
+4393848|Brazil|D001938|12123|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1926^6^0;211^6^0
+4393848|Mexico|D008800|11928|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|157^6^0
+4393848|Kidney Diseases|D007674|69413|MH|||RC
+4393848|Polyarteritis Nodosa|D010488|45787|MH|||RC
+4393848|*Pollen|D011058|4626|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1311^6^0
+4393848|*Forest|D065928|2034|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|287^6^0
+4393848|*Flowers|D035264|1674|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1263^7^0
+4393848|*Alkaloids|D000470|300|MH|RtM via: Alkaloids;Forced Non-Leaf Node Lookup:alkaloids|TI|MM|1701^9^0
+4393848|*Chromosomes|D002875|207|MH|RtM via: Chromosomes;Forced Non-Leaf Node Lookup:chromosomes|TI|MM|1031^11^0
+4393848|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|609^7^0
+4393848|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1960^3^0;2804^3^0;3012^3^0;3375^3^0
+23350499|United States|D014481|66162|CT|RtM via: Americas Ethnicity|TI|MM;RC|3778^8^0
+23350499|*Symbiosis|D013559|20820|MH|RtM via: Endosymbiosis;RtM via: Symbiosis;Forced Leaf Node Lookup:endosymbiosis;Forced Leaf Node Lookup:symbiosis|TI|MM|3207^13^0;3636^9^0;3269^9^0
+23350499|*Tilia|D032384|17823|MH|RtM via: Tilia (Plant);Forced Leaf Node Lookup:lindens;checkForceMH Boosted|TI|MM|4090^6^0;2082^6^0
+23350499|relacin|C580565|17479|NM|Forced SCR Leaf Node Lookup:relacin|TI|MM|1181^7^0
+23350499|*Angiosperms|D019684|12528|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:angiosperma|TI|MM|3178^11^0;1085^11^0
+23350499|*Islands|D062312|12015|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|2284^7^0
+23350499|*Nostoc punctiforme|D046937|10698|ET|Entry Term Replacement for "Nostoc";RtM via: Nostoc punctiforme;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nostoc punctiforme|TI|MM|3244^18^0;1103^18^0
+23350499|*Soils|D012987|10359|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|3391^5^0
+23350499|Hawaii|D006254|10167|MH|RtM via: Hawaii;Forced Leaf Node Lookup:hawaii|TI|MM|2294^6^0;152^6^0
+23350499|*Phylogeny|D010802|9678|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|3602^9^0
+23350499|New Zealand|D009520|9408|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|2335^11^0
+23350499|*Rhizome|D027343|9309|MH|RtM via: Rhizome;Forced Leaf Node Lookup:rhizomes|TI|MM|2710^8^0
+23350499|Malaysia|D008296|8682|MH|RtM via: Malaysia;Forced Leaf Node Lookup:malaya|TI|MM|2313^6^0;170^6^0
+23350499|Tasmania|D013648|8679|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|2321^8^0;178^8^0
+23350499|Physician-Patient Relations|D010817|65162|MH|||RC
+23350499|Informed Consent|D007258|41047|MH|||RC
+23350499|*Dipeptides|D004151|17478|HM|RtM via: relacin|TI|MM|1181^7^0
+23350499|*Deoxyguanosine|D003849|8769|HM|RtM via: relacin|TI|MM|1181^7^0
+23350499|*Habitats|D017753|2343|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|3357^8^0
+23350499|*Reproduction|D012098|1029|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|3532^12^0
+23350499|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|3523^7^0
+23350499|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|515^3^0;602^3^0
+4393851|*Sagittaria|D034903|36024|MH|RtM via: Sagittaria <water-plantain>;Forced Leaf Node Lookup:sagittarias;checkForceMH Boosted|TI|MM|504^10^0;340^10^0
+4393851|*Alismataceae|D034901|26697|MH|RtM via: Alismataceae;RtM via: Echinodorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alismataceae|TI|MM|24^12^0;383^11^0;324^11^0
+4393851|Action Potentials|D000200|40449|MH|||RC
+4393851|Neural Conduction|D009431|39274|MH|||RC
+4393851|*Plant Leaves|D018515|1956|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|94^6^0
+4393816|*Sapotaceae|D029632|18009|MH|RtM via: Sapotaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sapotaceae|TI|MM|47^10^0
+4393816|Guanethidine|D006145|86677|MH|||RC
+4393816|Sympatholytics|D013565|40265|MH|||RC
+4393816|*Pollen|D011058|114|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|186^6^0
+4393839|*Trees|D014197|21247|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|592^5^0;462^5^0
+4393839|*Lauraceae|D019770|9965|MH|RtM via: Lauraceae;RtM via: Nectandra;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lauraceae|TI|MM|61^9^0;1700^9^0;860^9^0;703^9^0;20^9^0
+4393839|Peru|D010568|9620|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|439^4^0
+4393839|Foot Injuries|D018409|81491|MH|||RC
+4393839|Foot|D005528|20870|MH|||RC
+4393839|*Forests|D065928|2670|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|484^7^0
+4393839|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1410^3^0
+4393831|Animals|D000818|57576|CT|Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera)||MM;RC
+4393831|*Annona|D031041|37437|MH|RtM via: Annona;Forced Leaf Node Lookup:annonas;checkForceMH Boosted|TI|MM|2444^6^0;1515^6^0;1374^6^0;1205^6^0;308^6^0;171^6^0
+4393831|*Rollinia|D031045|34185|MH|RtM via: Rollinia;Forced Leaf Node Lookup:rollinias;checkForceMH Boosted|TI|MM|2433^8^0;1431^8^0;1421^8^0;1217^8^0;1180^8^0;232^8^0;222^8^0;20^8^0
+4393831|*Annonaceae|D029061|20523|MH|RtM via: Annonaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:annonaceae|TI|MM|1320^10^0;119^10^0
+4393831|*Seed Dispersal|D058614|19494|MH|RtM via: Seed Dispersal;Forced Leaf Node Lookup:seed dispersals|TI|MM|1075^14^0
+4393831|*Lepidoptera|D007915|18144|MH|RtM via: Lepidoptera;checkForceMH Boosted|TI|MM|1156^11^0
+4393831|*Wood|D014934|17652|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|950^4^0
+4393831|Blood Pressure|D001794|56576|MH|||RC
+4393831|Antihypertensive Agents|D000959|56271|MH|||RC
+4393831|*Geography|D005843|1722|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|778^9^0;559^12^0
+4393831|*Plant Leaves|D018515|1701|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|941^4^0
+4393831|*Flower|D035264|1176|ET|Entry Term Replacement for "Flowers";RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1048^6^0
+4393831|*Chromosomes|D002875|588|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM|671^17^0
+4393831|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|1055^7^0
+4393935|*Alchornea|D019665|9349|ET|Entry Term Replacement for "Euphorbiaceae";RtM via: Gavarretia;RtM via: Alchorneae;RtM via: Aparisthmium;RtM via: Conceveiba;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alchornea|TI|MM|2892^10^0;631^10^0;2415^10^0;105^10^0;4530^12^0;2723^12^0;2488^12^0;2295^12^0;422^12^0;176^12^0;4214^10^0;3746^10^0;3106^10^0;2934^10^0;2831^10^0;2509^10^0;2019^10^0;1480^10^0;853^10^0;677^10^0;555^10^0;199^10^0;4015^9^0;3695^9^0;3469^9^0;3029^9^0;2570^9^0;2529^9^0;2473^9^0;1782^9^0;1312^9^0;1262^9^0;774^9^0;281^9^0;219^9^0;161^9^0
+4393935|*Pollination|D054817|8158|MH|RtM via: Pollination;Forced Leaf Node Lookup:pollination|TI|MM|1122^11^0
+4393935|*Seedlings|D036226|6443|MH|RtM via: Seedlings;Forced Leaf Node Lookup:seedlings;checkForceMH Boosted|TI|MM|1151^9^0
+4393935|*Foraminifera|D056908|5291|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|3946^5^0;3151^5^0;2903^5^0;2539^5^0
+4393935|*Inflorescence|D056626|4540|MH|RtM via: Inflorescence;Forced Leaf Node Lookup:inflorescences|TI|MM|2205^14^0;1014^14^0;2237^14^0
+4393935|*Fruit|D005638|4129|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|1056^6^0
+4393935|Colombia|D003105|3313|MH|RtM via: Colombia;Forced Leaf Node Lookup:colombia|TI|MM|1278^8^0
+4393935|*Ethnobotany|D019448|3127|MH|RtM via: Ethnobotany;Forced Leaf Node Lookup:ethnobotany|TI|MM|1186^11^0
+4393935|nas|C015378|2459|NM|Forced SCR Leaf Node Lookup:nas|TI|MM|4302^3^0;4357^3^0
+4393935|Licensure, Medical|D008007|11625|MH|||RC
+4393935|Legislation, Medical|D007883|5565|MH|||RC
+4393935|*Pollen|D011058|3906|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1039^6^0
+4393935|*Flowers|D035264|2361|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|2229^7^0;1030^7^0;2257^7^0
+4393935|*Seeds|D012639|2157|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM|1067^5^0
+4393935|*Plant Leaves|D018515|1338|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|1797^4^0;1006^6^0
+4393935|*Habit|D006184|558|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|989^5^0
+4393935|*Chromosomes|D002875|174|MH|RtM via: Chromosomes;Forced Non-Leaf Node Lookup:chromosomes|TI|MM|1162^11^0
+4393935|South America|D013020|855|MH|RtM via: South America|TI|MM|540^13^0
+25800083|*Blueberry Plants|D029798|39446|MH|RtM via: Blueberries;Forced Leaf Node Lookup:blueberry;checkForceMH Boosted|TI|MM|61^9^0
+25800083|*Phylogeny|D010802|37442|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analyses|TI|MM|696^21^0
+25800083|*Ericaceae|D029791|27532|MH|RtM via: Ericaceae;RtM via: Vaccinieae;RtM via: Disterigma;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ericaceae|TI|MM|2992^9^0;2457^9^0;587^9^0;33^9^0;4814^10^0;3423^10^0;2414^10^0;1009^10^0;4668^10^0;4417^10^0;3707^10^0;3390^10^0;3313^10^0;3243^10^0;2911^10^0;2782^10^0;2587^10^0;2445^10^0;2304^10^0;2052^10^0;1303^10^0;966^10^0;870^10^0;802^10^0;476^10^0;308^10^0;135^10^0;21^10^0
+25800083|Colombia|D003105|25333|MH|RtM via: Colombia;Forced Leaf Node Lookup:colombia|TI|MM|3864^8^0;3792^8^0;1465^8^0;1390^8^0
+25800083|Peru|D010568|19936|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|1533^4^0
+25800083|Ecuador|D004484|19594|MH|RtM via: Ecuador;Forced Leaf Node Lookup:ecuador|TI|MM|3918^7^0;3803^7^0;1521^7^0;1403^7^0
+25800083|Bronchiectasis|D001987|140035|MH|||RC
+25800083|Mucociliary Clearance|D009079|34317|MH|||RC
+25800083|*Flower|D035264|1467|ET|Entry Term Replacement for "Flowers";RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|1186^6^0
+25800083|*Forests|D065928|432|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|274^7^0
+25800083|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|2645^3^0;2793^3^0;3369^3^0;3836^3^0;4604^3^0;4650^3^0
+25800083|South America|D013020|2046|MH|RtM via: South America|TI|MM|103^13^0
