@@ -1,0 +1,481 @@
+42594428|Humans|D006801|5983738|CT|Forced Humans: man|TI|MM;RC
+42594428|Male|D008297|5983738|CT|CT Text Lookup: he;CT Text Lookup: him;CT Text Lookup: man|TI|MM;RC|439^2^0;398^3^0;626^3^0
+42594428|*Forestry|D016468|245385|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|195^8^0
+42594428|*Specialization|D013038|240114|MH|RtM via: Hospital specialist;Forced Leaf Node Lookup:specialists|TI|MM|749^11^0;648^10^0
+42594428|*Colonialism|D018595|738|MH|RtM via: Colonialism|TI|MM|101^8^0
+42594428|*Forest|D065928|711|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|322^6^0;167^6^0;110^6^0
+42594428|*Knowledge|D019359|705|MH|RtM via: Knowledge|TI|MM|839^9^0
+42594428|*Organization|D009938|474|ET|Entry Term Replacement for "Organizations";RtM via: Organization administrative structures|TI|MM|596^12^0;301^12^0
+42594428|*Botany|D001901|189|MH|RtM via: Botany;Forced Non-Leaf Node Lookup:botany|TI|MM|117^6^0
+42594428|*Attention|D001288|165|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|21^9^0
+42594017|Humans|D006801|33890974|CT|Forced Humans: staff|TI|MM;RC
+42594017|Animals|D000818|33890974|CT|Tsetse Flies;CT Treecode Lookup: B01.050.500.131 (Tsetse Flies);Glossinidae;CT Treecode Lookup: B01.050.500.131 (Glossinidae)||MM;RC
+42594017|*Tsetse Flies|D014370|2719039|MH|Forced Leaf Node Lookup:glossinas;checkForceMH Boosted|TI|MM;RC|377^8^0
+42594017|Malawi|D008295|1360506|MH|RtM via: Malawi;Forced Leaf Node Lookup:nyasaland|TI|MM;RC|124^9^0
+42594017|*Hands|D006225|34374|ET|Entry Term Replacement for "Hand";RtM via: Hand|TI|MM|279^5^0
+42594017|*Glossinidae|D018429|2622|MH|RtM via: Glossina morsitans|TI|MM|377^18^0
+42594017|*Forest|D065928|2499|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|288^6^0
+42594017|East Africa|D000351|2286|ET|Entry Term Replacement for "Africa, Eastern";RtM via: Africa, Eastern|TI|MM|404^11^0
+42593759|Humans|D006801|1180850|CT|Forced Humans: professional;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|290^12^0;739^12^0
+42593759|Male|D008297|1180850|CT|CT Text Lookup: he|TI|MM;RC|205^2^0
+42593759|*Forestry|D016468|45857|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|390^8^0;329^8^0
+42593759|*Propaganda|D011406|45317|MH|RtM via: Propaganda;Forced Leaf Node Lookup:propaganda|TI|MM;RC|699^10^0;413^10^0;338^10^0;523^10^0;623^10^0
+42593759|*Reading|D011932|43994|MH|RtM via: Reading (activity);Forced Leaf Node Lookup:reading|TI|MM|303^7^0
+42593759|*Societies|D012952|327|MH|RtM via: Societies|TI|MM|752^7^0
+42593759|*Surveys and Questionnaires|D011795|177|MH|RtM via: PANEL.SURVEY.SEEK|TI|MM;RC|714^4^0
+42593569|Humans|D006801|26547|CT|CT Text Lookup: workers|TI|MM|936^7^0
+42593569|Adult|D000328|26547|CT|Forced Leaf Node Lookup:adults|TI|MM|763^5^0;1096^5^0
+42593569|*Picea|D028222|25547|MH|RtM via: Picea sitchensis;Forced Leaf Node Lookup:piceas;checkForceMH Boosted|TI|MM;RC|158^16^0;150^6^0
+42593569|*Wood|D014934|14545|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|982^4^0;740^4^0;769^4^0;1016^4^0;1102^4^0
+42593569|*Trees|D014197|9008|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|474^4^0
+42593569|*Respect|D000078682|1912|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|1133^8^0
+42593569|*Causality|D015984|804|MH|RtM via: Etiology|TI|MM|502^6^0
+42593569|*Biological Phenomena|D001686|681|MH|RtM via: Tissue Growth|TI|MM|138^5^0
+42593569|*Physical Phenomena|D055585|561|MH|RtM via: Compression|TI|MM|1004^11^0
+42593569|*Inclusion Bodies|D002479|507|MH|RtM via: Inclusion Bodies|TI|MM|969^9^0
+42594858|*Forestry|D016468|9955|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|375^8^0;53^8^0;93^8^0
+42594858|*Motivation|D009042|1303|MH|RtM via: Incentives;Forced Leaf Node Lookup:incentives|TI|MM|198^9^0
+42594858|Conservation of Natural Resources|D003247|211|MH|||RC
+42594858|Canada|D002170|30|MH|RtM via: Canada;Forced Non-Leaf Node Lookup:canada|TI|MM|105^6^0
+42595102|*Trees|D014197|24039|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|289^5^0
+42595102|sodium arsenite|C017947|10258|NM|RtM via: sodium arsenite;Forced SCR Leaf Node Lookup:sodium arsenite|TI|MM|247^15^0
+42595102|*Poison|D011042|2505|ET|Entry Term Replacement for "Poisons";RtM via: Poisons;checkForceMH Boosted|TI|MM|233^8^0
+42595102|*Forest|D065928|19506|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|117^6^0
+42595102|*Sodium Compounds|D017670|10257|HM|RtM via: sodium arsenite|TI|MM|247^15^0
+42595102|*Conservation of Natural Resources|D003247|9552|MH|RtM via: Natural regeneration|TI|MM;RC|83^12^0
+42595102|*Arsenites|D018053|8139|HM|RtM via: sodium arsenite|TI|MM|247^15^0
+42595102|Regeneration|D012038|1000|MH|Forced Non-Leaf Node Lookup:regenerations||MM|83^12^0
+42593059|*Forestry|D016468|1788|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|51^8^0
+42593059|Finland|D005387|99|MH|RtM via: Finland;Forced Leaf Node Lookup:finland|TI|MM;RC|63^7^0
+42593059|*Seasons|D012621|402|MH|RtM via: Summer|TI|MM;RC|132^6^0
+42593059|*Protein Structure, Secondary|D017433|12|MH|RtM via: Protein Turn|TI|MM|105^4^0
+42595026|*Trees|D014197|3862|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|148^5^0
+42595026|Uganda|D014454|341|MH|RtM via: Uganda;Forced Leaf Node Lookup:uganda|TI|MM|168^6^0
+42595026|*Abstracting and Indexing|D000043|537|MH|RtM via: Index|TI|MM|55^5^0
+42595026|*Research Design|D012107|507|MH|RtM via: Test Method|TI|MM|401^6^0
+42595026|*Health Services|D006296|459|MH|RtM via: Test Method|TI|MM|401^6^0
+42595026|*Publications|D011642|366|MH|RtM via: Card (document)|TI|MM|61^4^0
+42595026|*Dissection|D004210|18|MH|RtM via: Tissue Dissection;Forced Non-Leaf Node Lookup:dissections|TI|MM|306^10^0
+42595026|*Elasticity|D004548|18|MH|RtM via: elasticity;Forced Non-Leaf Node Lookup:elasticity|TI|MM|331^10^0
+42594379|*Trees|D014197|34296|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|935^5^0;749^4^0;47^5^0
+42594379|*Tropical Climate|D014329|5986|MH|Forced Leaf Node Lookup:tropical conditions|TI|MM;RC|480^19^0;1038^19^0
+42594379|*Forests|D065928|27159|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|823^6^0;977^7^0
+42594379|*Woods|D014934|6450|ET|Entry Term Replacement for "Wood";RtM via: Wood material|TI|MM;RC|432^5^0
+42594379|*Biological Phenomena|D001686|786|MH|RtM via: Tissue Growth|TI|MM|803^6^0;565^6^0;414^6^0;93^6^0
+42593559|Humans|D006801|1888|CT|Asian Continental Ancestry Group;CT Treecode Lookup: M01.686 (Asian Continental Ancestry Group)||MM;RC
+42593559|*Forest|D065928|888|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|50^6^0;95^6^0
+42593559|*Asian Continental Ancestry Group|D044466|294|MH|RtM via: Asian Indian|TI|MM|43^6^0
+42595107|*Forests|D065928|10638|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|240^8^0;164^6^0;100^7^0
+42595107|Trees|D014197|1027|MH|||RC
+42591859|*Abies|D028202|21406|MH|RtM via: Abies;Forced Leaf Node Lookup:abies;checkForceMH Boosted|TI|MM;RC|425^5^0
+42591859|*Picea|D028222|16840|MH|RtM via: Picea;Forced Leaf Node Lookup:piceas;checkForceMH Boosted|TI|MM;RC|432^5^0
+42591859|*Pseudotsuga|D028224|14605|MH|RtM via: Pseudotsuga;Forced Leaf Node Lookup:pseudotsugas;checkForceMH Boosted|TI|MM;RC|439^11^0
+42591859|*Larix|D028221|14419|MH|RtM via: Larix;Forced Leaf Node Lookup:larix;checkForceMH Boosted|TI|MM;RC|455^5^0
+42591859|*Conifers|D064028|5726|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|552^8^0;288^8^0;148^8^0
+42591859|*Negative Results|D000076723|2294|MH|RtM via: Negative Results;Forced Leaf Node Lookup:negative results|TI|MM|494^16^0
+42591859|*Cycadopsida|D032462|1767|MH|RtM via: Division Coniferophyta (organism)|TI|MM|552^8^0;288^8^0;148^8^0
+42591859|*Biological Phenomena|D001686|636|MH|RtM via: Tissue Growth|TI|MM|694^5^0
+42591859|*Affordability|D003365|141|ET|Entry Term Replacement for "Costs and Cost Analysis";RtM via: Affordability|TI|MM|654^8^0
+42593058|Humans|D006801|121000|CT|Forced Humans: staff|TI|MM;RC
+42593058|*Forestry|D016468|30389|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|1849^8^0;997^8^0;48^8^0
+42593058|*Soil|D012987|17003|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|1196^4^0;582^4^0
+42593058|Belize|D001531|8927|MH|RtM via: Belize;Forced Leaf Node Lookup:british honduras|TI|MM|82^16^0
+42593058|*Agriculture|D000383|15540|MH|RtM via: Agricultural Development (occupation);RtM via: Agriculture;Forced Non-Leaf Node Lookup:agricultural development|TI|MM;RC|317^24^0;1668^12^0;1424^11^0
+42593058|*Forest|D065928|13803|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1722^6^0;1330^6^0;279^6^0;195^6^0
+42593058|*Rural Development|D012939|9051|ET|Entry Term Replacement for "Social Planning";RtM via: Rural Development;Forced Non-Leaf Node Lookup:rural developments|TI|MM;RC|1830^17^0;1126^17^0
+42593058|*Climate|D002980|6513|MH|RtM via: Climate|TI|MM;RC|612^7^0
+42593058|*Survey Methods|D011795|612|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Survey Methods;RtM via: Surveys;Forced Non-Leaf Node Lookup:survey methods|TI|MM|652^14^0;1254^6^0;737^7^0
+42593058|Ecology|D004463|1000|MH|Forced Non-Leaf Node Lookup:ecologists||MM|839^10^0
+42595344|*Trees|D014197|41107|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|1830^4^0;919^4^0
+42595344|*Quercus|D029963|33831|MH|RtM via: Quercus;Forced Leaf Node Lookup:oaks;checkForceMH Boosted|TI|MM;RC|2053^3^0;1914^3^0;1684^3^0;1645^3^0;1572^4^0;1324^3^0;1190^3^0;609^3^0;216^3^0;40^3^0;157^3^0;1715^3^0
+42595344|*Soil|D012987|32321|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM;RC|2016^4^0;1934^4^0;1840^4^0;1751^5^0;1669^5^0;1559^4^0;1532^4^0;1493^4^0;832^5^0;2298^4^0
+42595344|*Clay|D000077215|14950|MH|RtM via: clay;Forced Leaf Node Lookup:clays;checkForceMH Boosted|TI|MM|748^5^0
+42595344|*Forest|D065928|35751|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1398^6^0;1216^6^0;567^6^0;256^6^0;61^6^0
+42595344|*Agriculture|D000383|4032|MH|RtM via: Agriculture|TI|MM|508^12^0
+42595344|*Woods|D014934|3345|ET|Entry Term Replacement for "Wood";RtM via: Wood material|TI|MM|44^5^0
+42595344|Ecology|D004463|1000|MH|Forced Non-Leaf Node Lookup:ecologists||MM|2279^9^0
+42595542|Malaysia|D008296|1698|MH|RtM via: Malaysia;Forced Leaf Node Lookup:malaya|TI|MM|1106^6^0
+42595542|*Forests|D065928|13665|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1868^6^0;1482^6^0;1215^6^0;406^6^0;465^7^0;54^7^0
+42595542|Forestry|D016468|2418|MH|||RC
+42595542|*Government|D006076|2052|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|983^10^0
+42595542|*Affordability|D003365|1803|ET|Entry Term Replacement for "Costs and Cost Analysis";RtM via: Affordability|TI|MM|145^6^0
+42595542|*Plant Leaves|D018515|813|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|1311^6^0
+42595197|*Seasons|D012621|7522|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM;RC|911^6^0;738^6^0
+42595197|*Agricultural Crops|D018556|2710|ET|Entry Term Replacement for "Crops, Agricultural";RtM via: Agricultural Crops;checkForceMH Boosted;Forced Non-Leaf Node Lookup:agricultural crops|TI|MM|1405^18^0;24^18^0
+42595197|*Conservation of Natural Resources|D003247|1738|MH|Forced Leaf Node Lookup:deforestation|TI|MM;RC|193^13^0;325^13^0
+42595197|Ghana|D005869|1279|MH|RtM via: Ghana;Forced Leaf Node Lookup:gold coast|TI|MM|73^10^0
+42595197|*Forests|D065928|11730|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1356^7^0;1071^6^0;101^6^0
+42595197|Trees|D014197|1797|MH|||RC
+42595197|*Biological Phenomena|D001686|1305|MH|RtM via: Tissue Growth|TI|MM|129^6^0
+42593062|*Forestry|D016468|12547|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|250^8^0
+42593062|Malaysia|D008296|628|MH|RtM via: Malaysia;Forced Leaf Node Lookup:malaya|TI|MM|358^6^0
+42593062|Trees|D014197|615|MH|||RC
+42593062|*Suggestion|D013404|459|MH|RtM via: therapeutic suggestion|TI|MM|276^10^0
+42593062|*Attention|D001288|15|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|21^9^0
+42591997|Humans|D006801|8409|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+42591997|Animals|D000818|8409|CT|Comb and Wattles;CT Treecode Lookup: A13.242 (Comb and Wattles)||MM
+42591997|*Agricultural Crop|D018556|7409|ET|Entry Term Replacement for "Crops, Agricultural";RtM via: Agricultural Crops;checkForceMH Boosted;Forced Non-Leaf Node Lookup:agricultural crops|TI|MM;RC|593^17^0
+42591997|*Acacia|D000045|4879|MH|RtM via: Acacia;Forced Leaf Node Lookup:wattle tree;checkForceMH Boosted|TI|MM;RC|519^11^0
+42591997|*Trees|D014197|4309|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|81^4^0
+42591997|*Vegetables|D014675|2296|MH|Forced Leaf Node Lookup:vegetables;checkForceMH Boosted|TI|MM|346^9^0
+42591997|*Disease Resistance|D060467|1943|MH|RtM via: Disease Resistance;Forced Leaf Node Lookup:disease resistances|TI|MM|700^18^0
+42591997|*Plant Breeding|D000069600|6216|MH|Forced Leaf Node Lookup:plant breeding;Replacement of Breeding Plants Found|TI|MM;RC|149^14^0
+42591997|*Comb and Wattles|D003129|1172|MH|RtM via: Wattles;Forced Leaf Node Lookup:wattles|TI|MM|303^6^0;55^6^0
+42591997|*African Americans|D001741|1148|MH|Forced Leaf Node Lookup:blacks|TI|MM|49^5^0
+42591997|*Databases, Genetic|D030541|1584|MH|RtM via: Genetic Inheritance|TI|MM;RC|804^11^0
+42591997|*Heredity|D040941|1209|MH|RtM via: Genetic Inheritance|TI|MM|804^11^0
+42591997|*Health Services|D006296|795|MH|RtM via: Test Method|TI|MM|479^6^0
+42591997|*Inheritance|D014918|720|ET|Entry Term Replacement for "Wills";RtM via: Inheritance|TI|MM|804^11^0
+42595112|*Laboratories|D007753|326|MH|Forced Leaf Node Lookup:laboratory|TI|MM|53^10^0
+42595112|*Fungi|D005658|4074|MH|RtM via: Fungi;Forced Non-Leaf Node Lookup:fungi|TI|MM;RC|616^6^0;154^6^0;315^5^0
+42595112|*Biological Phenomena|D001686|741|MH|RtM via: Tissue Growth|TI|MM|391^5^0
+42595112|*Biochemical Phenomena|D001669|213|MH|RtM via: Resistance Process|TI|MM|515^10^0;470^10^0;86^10^0
+42594391|*Trees|D014197|19086|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|406^5^0
+42594391|*Pinus|D028223|11421|MH|RtM via: Pinus contorta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM;RC|235^14^0
+42594391|*Phosphate|D010710|2517|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|155^9^0
+42594391|*Composting|D000076282|2328|MH|RtM via: Compost;Forced Leaf Node Lookup:compost|TI|MM|119^7^0
+42594391|*Incidence|D015994|2280|MH|RtM via: Incidence;Forced Leaf Node Lookup:incidences|TI|MM|437^9^0
+42594391|*Forest|D065928|16122|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|81^6^0
+42594391|Ecosystem|D017753|396|MH|||RC
+42594391|*Needle|D009339|249|ET|Entry Term Replacement for "Needles";RtM via: Needle device|TI|MM|456^6^0;225^6^0
+42594391|*Research Design|D012107|84|MH|RtM via: Field experiments|TI|MM|52^17^0
+42594950|*Lignin|D008031|18405|MH|RtM via: Lignin;Forced Leaf Node Lookup:lignins;checkForceMH Boosted|TI|MM;RC|1144^6^0
+42594950|*Cellulose|D002482|11886|MH|RtM via: cellulose;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cellulose|TI|MM;RC|1119^9^0
+42594950|*Water|D014867|2799|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1065^5^0
+42594950|*Mechanical Tests|D000083522|2364|MH|RtM via: Mechanical Tests;Forced New Lookup:mechanical test|TI|MM|36^16^0
+42594950|Lasiodiplodia theobromae|C000676991|1993|NM|Forced New Lookup:botryodiplodia theobromae|TI|MM|241^25^0
+42594950|*Basidiomycota|D001487|6288|MH|RtM via: white rot fungus|TI|MM;RC|1176^16^0
+42594950|*Steam|D013227|5481|MH|RtM via: Steam|TI|MM;RC|487^8^0
+42594950|*Mitosporic Fungi|D003904|3825|MH|RtM via: Lasiodiplodia theobromae|TI|MM|241^25^0
+42594950|*Fungus|D005658|2394|ET|Entry Term Replacement for "Fungi";RtM via: Fungi;Forced Non-Leaf Node Lookup:fungus|TI|MM|1014^6^0;519^6^0;270^6^0;1186^6^0
+42594950|*Staining|D013194|225|ET|Entry Term Replacement for "Staining and Labeling";RtM via: Staining method;Forced Non-Leaf Node Lookup:stainings|TI|MM|301^8^0
+42595545|*Wood|D014934|3645|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|279^4^0;105^4^0;459^4^0
+42595545|*Color|D003116|285|MH|Forced Leaf Node Lookup:colours|TI|MM|445^6^0
+42595545|*Biological Phenomena|D001686|1191|MH|RtM via: Tissue Growth|TI|MM|42^6^0
+42595545|*Physical Phenomena|D055585|465|MH|RtM via: Compression|TI|MM|267^11^0;93^11^0
+42595545|*Excipients|D005079|300|MH|RtM via: Coloring Excipient|TI|MM|445^6^0
+42593625|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B05.500 (Life Cycle)||MM
+42593625|*Mycorrhizae|D038821|29205|MH|RtM via: Mycorrhizae;Forced Leaf Node Lookup:mycorrhizas;checkForceMH Boosted|TI|MM;RC|2092^10^0;1749^11^0;755^10^0;634^11^0;815^11^0
+42593625|*Boron|D001895|10217|MH|RtM via: boron;Forced Leaf Node Lookup:boron;checkForceMH Boosted|TI|MM|932^5^0
+42593625|*Water|D014867|8083|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|1548^5^0
+42593625|*Phosphates|D010710|6277|MH|RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted|TI|MM|986^10^0
+42593625|*Zinc|D015032|5485|MH|RtM via: Dietary Zinc;RtM via: zinc;checkForceMH Boosted;Forced Non-Leaf Node Lookup:zinc|TI|MM|924^4^0
+42593625|*Poverty|D011203|4633|MH|RtM via: Poverty;Forced Leaf Node Lookup:poverty|TI|MM|804^7^0
+42593625|*Incidence|D015994|4624|MH|RtM via: Incidence;Forced Leaf Node Lookup:incidences|TI|MM|962^9^0;669^9^0;337^9^0
+42593625|*Respect|D000078682|4465|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|1998^7^0
+42593625|Arizona|D001130|4453|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM|324^7^0
+42593625|Wales|D014852|4414|MH|RtM via: Country of Wales;Forced Leaf Node Lookup:wales|TI|MM|268^5^0
+42593625|*Pinus sylvestris|D041605|26727|MH|RtM via: Pinus sylvestris (plant)|TI|MM;RC|133^10^0
+42593625|*Pinus|D028223|24993|MH|RtM via: Pinus mugo;RtM via: Pinus <genus>|TI|MM;RC|275^13^0;115^13^0;1931^4^0;109^4^0
+42593625|*Plant Leaves|D018515|5910|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM;RC|1583^6^0
+42593625|*Forest|D065928|4254|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|50^6^0
+42593625|*Carbohydrate|D002241|1737|ET|Entry Term Replacement for "Carbohydrates";RtM via: Carbohydrates;Forced Non-Leaf Node Lookup:carbohydrates|TI|MM|1334^12^0
+42593625|*Life Cycle|D008018|1041|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|1792^10^0
+42593625|*Dressings|D001458|282|ET|Entry Term Replacement for "Bandages";RtM via: Medical dressing;Forced Non-Leaf Node Lookup:dressings|TI|MM|997^9^0
+42593625|Australia|D001315|3|MH|RtM via: Australia|TI|MM|1137^9^0
+42595019|*Trees|D014197|23406|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|349^4^0
+42595019|*Geology|D005844|3801|MH|RtM via: Geology;Forced Leaf Node Lookup:geology|TI|MM|188^7^0
+42595019|*Limestone|D002119|2796|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|274^9^0
+42595019|Jamaica|D007563|2553|MH|RtM via: Jamaica;Forced Leaf Node Lookup:jamaica|TI|MM|92^7^0
+42595019|*Forests|D065928|22068|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|413^6^0;462^7^0
+42595019|*Climate|D002980|10809|MH|RtM via: Climate|TI|MM;RC|197^7^0
+42595019|*Islands|D062312|3735|MH|RtM via: Islands|TI|MM|82^6^0
+42595019|*Policy|D057766|486|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|616^6^0;399^6^0
+42595105|*Sand|D000080463|3505|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|297^4^0
+42595105|*Desiccation|D003890|680|MH|Forced Leaf Node Lookup:desiccation|TI|MM|174^11^0
+42595105|*Forest|D065928|8076|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|199^6^0
+42595105|Soil|D012987|946|MH|||RC
+42595105|Far East|D005202|336|MH|RtM via: Far East;Forced Non-Leaf Node Lookup:far east|TI|MM|137^8^0
+42595105|*Engineering|D004738|333|MH|RtM via: Engineering|TI|MM|502^11^0
+42595105|North Africa|D000352|132|ET|Entry Term Replacement for "Africa, Northern";RtM via: Africa, Northern|TI|MM|104^12^0
+42593560|*Acacia|D000045|3225|MH|RtM via: Acacia;RtM via: Acacia aneura;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM|156^6^0;149^5^0
+42593560|Western Australia|D014904|960|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|74^17^0
+42593560|*Forests|D065928|11079|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|246^7^0;29^7^0
+42593560|Forestry|D016468|2283|MH|||RC
+42593567|*Hyphae|D025301|7758|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM;RC|819^13^0;826^6^0
+42593567|*Wood|D014934|4509|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|630^4^0;668^4^0
+42593567|*Thuja|D029783|2961|MH|RtM via: Thuja plicata;Forced Leaf Node Lookup:western red cedars;checkForceMH Boosted|TI|MM|72^17^0
+42593567|*Specific Gravity|D013046|2916|MH|RtM via: Specific Gravity;Forced Leaf Node Lookup:specific gravity|TI|MM|726^16^0;439^16^0;491^16^0
+42593567|*Color|D003116|1133|MH|Forced Leaf Node Lookup:colours|TI|MM;RC|124^6^0;185^6^0
+42593567|Coniferiporia weirii|C000668532|1117|NM|Forced New Lookup:poria weirii|TI|MM|919^12^0
+42593567|Canada|D002170|1116|MH|RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM|63^8^0
+42593567|*Fungus|D005658|3258|ET|Entry Term Replacement for "Fungi";RtM via: Fungi;Forced Non-Leaf Node Lookup:fungus|TI|MM;RC|1056^6^0;796^6^0;570^6^0;968^6^0
+42593567|*Mycelium|D025282|3000|MH|RtM via: Mycelium;Forced Non-Leaf Node Lookup:myceliums|TI|MM|570^15^0;577^8^0
+42593567|*Basidiomycota|D001487|1812|MH|RtM via: Coniferiporia weirii|TI|MM|919^12^0
+42593567|*Dwarfism|D004392|1668|MH|RtM via: SHORT STATURE, ONYCHODYSPLASIA, FACIAL DYSMORPHISM, AND HYPOTRICHOSIS SYNDROME|TI|MM|255^6^0
+42593567|*Walls, Cell|D002473|627|ET|Entry Term Replacement for "Cell Wall";RtM via: Cell Wall;Forced Non-Leaf Node Lookup:cell walls|TI|MM|870^10^0
+42593567|*Staining|D013194|117|ET|Entry Term Replacement for "Staining and Labeling";RtM via: Staining method;Forced Non-Leaf Node Lookup:stainings|TI|MM|1070^8^0
+42594330|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B05.500 (Life Cycle)||MM
+42594330|*Salts|D012492|3684|MH|RtM via: Salts;Forced Leaf Node Lookup:salts;checkForceMH Boosted|TI|MM|1551^5^0
+42594330|borax|C018851|3499|NM|RtM via: Borax;Forced SCR Leaf Node Lookup:borax|TI|MM|1585^5^0
+42594330|Kenya|D007630|1731|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM|210^5^0
+42594330|*Forest|D065928|8340|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|278^6^0
+42594330|*Poaceae|D006109|7731|MH|RtM via: Oldeania alpina|TI|MM;RC|178^18^0
+42594330|*Flowers|D035264|4134|MH|RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM;RC|768^7^0
+42594330|*Reproduction|D012098|3696|MH|RtM via: flowering|TI|MM;RC|798^9^0
+42594330|*Borates|D001881|3498|HM|RtM via: Borax|TI|MM|1585^5^0
+42594330|*Seeds|D012639|2925|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM;RC|777^5^0
+42594330|*Plant Leaves|D018515|2253|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|1483^6^0
+42594330|*Life Cycle|D008018|1962|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|746^10^0;662^10^0
+42595540|Humans|D006801|121000|CT|Forced Humans: university|TI|MM;RC
+42595540|*Forestry|D016468|73196|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|832^8^0
+42595540|*Trees|D014197|64801|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|1085^5^0;550^5^0;468^5^0
+42595540|*Larix|D028221|46444|MH|RtM via: Larix;Forced Leaf Node Lookup:larchs;checkForceMH Boosted|TI|MM;RC|1131^5^0
+42595540|*Chamaecyparis|D029780|30523|MH|RtM via: Chamaecyparis obtusa;Forced Leaf Node Lookup:hinoki cypress;checkForceMH Boosted|TI|MM|1115^14^0
+42595540|*Conifers|D064028|26210|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|574^8^0;426^8^0
+42595540|Japan|D007564|14990|MH|RtM via: Japan;Forced Leaf Node Lookup:japan|TI|MM;RC|1687^5^0;1491^5^0;1010^5^0;724^5^0;291^5^0;69^5^0
+42595540|*Universities|D014495|14744|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|903^10^0
+42595540|*Rotation|D012399|13958|MH|RtM via: Musculoskeletal rotation;Forced Leaf Node Lookup:rotation|TI|MM|1198^8^0
+42595540|*Forests|D065928|41502|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1186^7^0;988^6^0;584^6^0;501^6^0;303^6^0;280^7^0;127^6^0;1249^7^0
+42595540|*Pinus|D028223|12708|MH|RtM via: Pinus resinosa|TI|MM;RC|1141^8^0
+42595540|China|D002681|7719|MH|RtM via: China;Forced Non-Leaf Node Lookup:china|TI|MM;RC|1612^5^0
+42595540|*Policy|D057766|1389|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|591^6^0
+42594799|*Soil|D012987|12208|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|99^4^0
+42594799|*Trees|D014197|11237|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|169^4^0
+42594799|*Juniperus|D018653|6995|MH|RtM via: Juniperus bermudiana;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM;RC|262^20^0
+42594799|*Islands|D062312|1805|MH|Forced Leaf Node Lookup:islands|TI|MM;RC|63^7^0
+42594799|Bermuda|D001605|1711|MH|RtM via: Bermuda;Forced Leaf Node Lookup:bermuda|TI|MM|55^15^0
+42594799|*Climate|D002980|10074|MH|RtM via: Climate|TI|MM;RC|78^7^0
+42594799|*Plant|D010944|5058|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|184^5^0
+42594859|Nigeria|D009549|1416|MH|RtM via: Nigeria;Forced Leaf Node Lookup:nigerian|TI|MM|24^7^0;655^8^0
+42594859|*Forest|D065928|8097|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|697^6^0;217^6^0
+42594859|*Preservation, Biological|D011309|2043|MH|RtM via: Biologic Preservation|TI|MM|403^12^0
+42595543|*Government Agencies|D006077|2517|MH|RtM via: governmental department|TI|MM;RC|230^22^0
+42595874|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.131.617 (Insect)||MM
+42595874|*Trees|D014197|4603|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|227^5^0
+42595874|*Wind|D014919|1895|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM|731^4^0
+42595874|*Rivers|D045483|1522|MH|RtM via: Streams;Forced Leaf Node Lookup:streams|TI|MM|945^7^0;435^6^0
+42595874|*Cicatrix|D002921|941|MH|RtM via: Cicatrix;RtM via: Scar Tissue;Forced Leaf Node Lookup:scars|TI|MM|209^5^0
+42595874|*Cambium|D058506|2799|MH|RtM via: Cambium|TI|MM|619^7^0
+42595874|*Fire|D005390|1626|ET|Entry Term Replacement for "Fires";RtM via: Fire - disasters|TI|MM|722^4^0
+42595874|*Biological Transport|D001692|1065|MH|RtM via: Exudation|TI|MM;RC|935^9^0;495^9^0;425^9^0
+42595874|*Insect|D007313|543|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|996^6^0;598^6^0
+42595541|Animals|D000818|2489|CT|Beetle;CT Treecode Lookup: B01.050.500.131 (Beetle)||MM;RC
+42595541|*Beetle|D001517|1489|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM;RC|133^6^0
+42595541|*Powders|D011208|1331|MH|RtM via: Powder dose form;Forced Leaf Node Lookup:powder;checkForceMH Boosted|TI|MM|121^6^0
+42595541|*Temperature|D013696|1261|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|315^11^0
+42595541|*Water|D014867|982|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|309^5^0;193^5^0
+42595541|*Immersion|D007101|379|MH|Forced Leaf Node Lookup:immersions|TI|MM|155^9^0
+42595541|*Causality|D015984|906|MH|RtM via: Immune|TI|MM|109^6^0
+42595541|*Research Design|D012107|789|MH|RtM via: Test Method|TI|MM|221^6^0
+42595541|*Health Services|D006296|429|MH|RtM via: Test Method|TI|MM|221^6^0
+42595541|*Emollients|D004643|258|MH|RtM via: Powder Dosage Form Category|TI|MM|121^6^0
+42595195|*Soil|D012987|19615|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|2190^4^0
+42595195|*Forestry|D016468|16003|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|2764^8^0
+42595195|*Trees|D014197|14636|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|462^4^0
+42595195|*Sand|D000080463|13247|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|2184^5^0;742^4^0;613^4^0;607^4^0
+42595195|*Manure|D008372|12884|MH|RtM via: Manure;Forced Leaf Node Lookup:manure;checkForceMH Boosted|TI|MM|2328^6^0
+42595195|*Wind|D014919|12034|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM;RC|1634^4^0
+42595195|*Grasses|D006109|10144|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted|TI|MM;RC|1835^6^0
+42595195|*Commiphora|D029744|9338|MH|RtM via: Commiphora;Forced Leaf Node Lookup:commiphora;checkForceMH Boosted|TI|MM|907^10^0
+42595195|Nigeria|D009549|9332|MH|RtM via: Nigeria;Forced Leaf Node Lookup:nigerian|TI|MM|2082^7^0;1672^7^0;1362^8^0
+42595195|*Acacia|D000045|9212|MH|Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM|887^6^0
+42595195|*Farms|D000072480|7036|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farmlands|TI|MM|2281^7^0;2043^9^0;1771^9^0;945^9^0
+42595195|*Conservation of Natural Resources|D003247|6164|MH|Forced Leaf Node Lookup:deforestation|TI|MM;RC|672^13^0
+42595195|Sudan|D013397|5080|MH|RtM via: Sudan;Forced Leaf Node Lookup:sudan|TI|MM|1205^5^0
+42595195|*Conservative Treatment|D000072700|4696|MH|RtM via: Conservative Treatment;Forced Leaf Node Lookup:conservative managements|TI|MM|2499^23^0
+42595195|*Desiccation|D003890|4606|MH|Forced Leaf Node Lookup:desiccation|TI|MM|63^11^0
+42595195|*Rains|D011891|12984|ET|Entry Term Replacement for "Rain";RtM via: Rain;Forced Non-Leaf Node Lookup:rains|TI|MM;RC|1604^5^0
+42595195|*Forest|D065928|6852|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|2583^6^0;1694^6^0;1918^6^0
+42595195|*Agriculture|D000383|4101|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|2774^12^0;2150^11^0;2281^7^0;1054^11^0
+42595195|*Government|D006076|1953|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|2829^10^0
+42595195|*Civilization|D002962|1824|MH|RtM via: Civilization;Forced Non-Leaf Node Lookup:civilizations|TI|MM|366^12^0
+42595195|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM;RC|574^5^0
+42595194|*Trees|D014197|6140|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|1302^5^0;194^5^0
+42595194|*Forestry|D016468|5863|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|102^8^0
+42595194|*Rainforest|D065947|4450|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|241^11^0
+42595194|Malaysia|D008296|1444|MH|RtM via: Malaysia;Forced Leaf Node Lookup:malaya|TI|MM|456^6^0
+42595194|*Forests|D065928|2964|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|1057^6^0;222^7^0;1117^6^0
+42595194|*Confusion|D003221|1638|MH|RtM via: Clouded consciousness;RtM via: Confusion|TI|MM|1217^9^0
+42595194|*Names|D009275|1446|MH|RtM via: Name;RtM via: Person Name|TI|MM;RC|1277^5^0;1183^5^0;885^4^0;737^4^0;694^5^0;516^5^0;315^5^0
+42595194|*Research Design|D012107|1311|MH|RtM via: Test Method|TI|MM|422^6^0
+42595194|*Standardization|D012015|315|ET|Entry Term Replacement for "Reference Standards";RtM via: Standardization;Forced Non-Leaf Node Lookup:standardization|TI|MM|486^15^0
+42595194|*School|D012574|129|ET|Entry Term Replacement for "Schools";RtM via: School;Forced Non-Leaf Node Lookup:schools|TI|MM|1064^6^0
+42594793|Animals|D000818|7546|CT|Comb and Wattles;CT Treecode Lookup: A13.242 (Comb and Wattles)||MM;RC
+42594793|Humans|D006801|7546|CT|African Continental Ancestry Group;CT Treecode Lookup: M01.686 (African Continental Ancestry Group)||MM;RC
+42594793|South Africa|D013019|6546|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM;RC|189^12^0;91^12^0
+42594793|*Forestry|D016468|1206|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|406^8^0;161^8^0;320^8^0;53^8^0
+42594793|*Comb and Wattles|D003129|408|MH|RtM via: Wattles;Forced Leaf Node Lookup:wattles|TI|MM|642^7^0
+42594793|*Agriculture|D000383|201|MH|RtM via: Agriculture|TI|MM|731^12^0
+42594793|*Acacia|D000045|96|MH|RtM via: Acacia|TI|MM|642^7^0
+42594793|*African Continental Ancestry Group|D044383|33|MH|RtM via: AFRICAN, EAST|TI|MM|718^12^0
+42595544|*Trees|D014197|48159|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|103^5^0;293^5^0
+42595544|*Juniperus|D018653|14112|MH|RtM via: Juniperus procera;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM|235^17^0
+42595544|*Grassland|D065948|4886|MH|Forced Leaf Node Lookup:grasslands|TI|MM;RC|651^9^0
+42595544|Kenya|D007630|4455|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM|129^5^0
+42595544|Procera|C077451|4453|NM|Forced SCR Leaf Node Lookup:procera|TI|MM|245^7^0
+42595544|*Forest|D065928|32787|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|755^6^0;515^6^0;440^6^0;341^6^0;81^6^0;604^6^0;671^6^0
+42595544|*Conservation of Natural Resources|D003247|19578|MH|RtM via: Natural regeneration|TI|MM;RC|579^12^0
+42595544|Regeneration|D012038|1000|MH|Forced Non-Leaf Node Lookup:regenerations||MM|579^12^0
+42594863|*Forestry|D016468|20237|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|495^8^0
+42594863|*Soil|D012987|19619|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|323^4^0;148^4^0;446^4^0
+42594863|*Advisory Committees|D026683|2828|MH|RtM via: Advisory Committees;Forced Leaf Node Lookup:advisory committees|TI|MM|406^18^0
+42594863|Trinidad and Tobago|D014300|2702|MH|RtM via: Trinidad;Forced Leaf Node Lookup:trinidad|TI|MM|220^8^0
+42594863|*Forest|D065928|21666|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|304^6^0;41^6^0
+42594863|Agriculture|D000383|1092|MH|||RC
+42594863|*Health Services|D006296|285|MH|RtM via: Infertility study|TI|MM|328^9^0
+42594792|Uganda|D014454|2233|MH|RtM via: Uganda;Forced Leaf Node Lookup:uganda|TI|MM|43^6^0
+42594792|*Forest|D065928|16794|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|493^6^0;342^6^0;33^6^0
+42594792|*Conservation of Natural Resources|D003247|13662|MH|RtM via: Natural regeneration|TI|MM;RC|526^12^0
+42594792|*Climate|D002980|8700|MH|RtM via: Climate|TI|MM;RC|152^7^0
+42594792|*Plants|D010944|3090|MH|RtM via: Plants|TI|MM;RC|666^8^0;693^6^0
+42594792|Regeneration|D012038|1000|MH|Forced Non-Leaf Node Lookup:regenerations||MM|526^12^0
+42594947|*Droughts|D055864|1218|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM|107^7^0
+42594947|*Tropical Rainforest|D065947|1380|ET|Entry Term Replacement for "Rainforest";RtM via: Tropical Rainforest|TI|MM|161^20^0
+42594947|*Forests|D065928|822|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|456^7^0;175^6^0
+42594947|*Plant Leaves|D018515|222|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|125^4^0
+42594947|*Foods, Specialized|D019648|63|MH|RtM via: frosties|TI|MM|118^5^0
+42594947|Rain|D011891|1000|MH|Forced Non-Leaf Node Lookup:rain||MM|170^4^0
+42594803|*Juniperus|D018653|27003|MH|RtM via: Juniperus;RtM via: Juniperus communis;RtM via: Juniperus procera;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM;RC|708^9^0;102^17^0
+42594803|*Trees|D014197|23445|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|275^5^0;93^5^0
+42594803|*Wood|D014934|9015|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|231^4^0
+42594803|*Wind|D014919|3729|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM|444^4^0
+42594803|Procera|C077451|2755|NM|Forced SCR Leaf Node Lookup:procera|TI|MM|112^7^0
+42594803|*Color|D003116|2754|MH|Forced Leaf Node Lookup:colours|TI|MM|549^6^0
+42594803|*Forest|D065928|12837|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|306^6^0;171^6^0
+42594803|*Biological Phenomena|D001686|1455|MH|RtM via: Tissue Growth|TI|MM|667^6^0;479^5^0;281^5^0;132^5^0
+42594803|*Physical Phenomena|D055585|780|MH|RtM via: Compression|TI|MM|219^11^0
+42594803|*Pressure|D011312|135|MH|RtM via: Compression|TI|MM|219^11^0
+42595345|*Trees|D014197|2069|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|571^4^0
+42595345|*Wind|D014919|1492|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM;RC|510^4^0
+42595345|*Fractures, Bone|D050723|1518|MH|RtM via: Fracture|TI|MM;RC|118^9^0
+42595345|*Pressure|D011312|1308|MH|RtM via: Compression|TI|MM;RC|469^11^0;308^11^0;29^11^0
+42595345|*Mechanical Phenomena|D055595|1056|MH|RtM via: Mechanical force|TI|MM|540^5^0
+42595345|*Physical Phenomena|D055585|1011|MH|RtM via: Force;RtM via: Compression|TI|MM|540^5^0;469^11^0;308^11^0;29^11^0
+42594335|*Wood|D014934|5062|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|442^4^0;69^4^0;105^4^0;188^4^0;508^4^0
+42594335|*Hot Temperature|D006358|961|MH|RtM via: Heat (physical force);Forced Leaf Node Lookup:heat|TI|MM|228^4^0
+42594335|*Forests|D065928|4689|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|531^7^0
+42594335|*Industries|D007221|2760|ET|Entry Term Replacement for "Industry";RtM via: Industry|TI|MM;RC|453^10^0
+42594335|*Durable Medical Equipment|D004389|522|MH|RtM via: Physical restraint equipment (device)|TI|MM|145^8^0
+42594335|*Rotation|D012399|135|MH|RtM via: Replacement|TI|MM|340^7^0
+42594860|Humans|D006801|4129|CT|Ethnic Groups;CT Treecode Lookup: M01.686 (Ethnic Groups)||MM;RC
+42594860|*Lamiaceae|D019686|3129|MH|RtM via: Tectona|TI|MM;RC|452^4^0;267^4^0;36^4^0;122^4^0
+42594860|*Verbenaceae|D029648|1263|MH|RtM via: Tectona|TI|MM|452^4^0;267^4^0;36^4^0;122^4^0
+42594860|*Ethnic Groups|D005006|81|MH|RtM via: Chosen Chinese|TI|MM|210^6^0
+42594022|Animals|D000818|9937|CT|Isoptera;CT Treecode Lookup: B01.050.500.131 (Isoptera)||MM;RC
+42594022|*Isoptera|D020049|8937|MH|RtM via: Isoptera;Forced Leaf Node Lookup:termites;checkForceMH Boosted|TI|MM;RC|29^7^0;410^8^0
+42594022|sodium arsenite|C017947|4707|NM|RtM via: sodium arsenite;Forced SCR Leaf Node Lookup:sodium arsenite|TI|MM|345^15^0
+42594022|zinc chloride|C016837|4029|NM|RtM via: zinc chloride;Forced SCR Leaf Node Lookup:zinc chloride|TI|MM|462^13^0
+42594022|Zambia|D015024|964|MH|RtM via: Zambia;Forced Leaf Node Lookup:northern rhodesia|TI|MM|86^17^0
+42594022|*Sodium Compounds|D017670|4706|HM|RtM via: sodium arsenite|TI|MM|345^15^0
+42594022|*Zinc Compounds|D017967|4028|HM|RtM via: zinc chloride|TI|MM|462^13^0
+42594022|*Arsenites|D018053|3938|HM|RtM via: sodium arsenite|TI|MM|345^15^0
+42594022|*Chlorides|D002712|3239|HM|RtM via: zinc chloride|TI|MM|462^13^0
+42594022|*Woodlands|D065928|1926|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM|73^9^0
+42594022|Oxides|D010087|1000|MH|Forced Non-Leaf Node Lookup:oxides||MM|374^5^0
+42593822|*Forestry|D016468|4599|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|533^8^0
+42593822|*Rationalization|D011908|2892|MH|RtM via: Rationalization;Forced Leaf Node Lookup:rationalization|TI|MM|1450^15^0
+42593822|*Botany|D001901|2754|MH|RtM via: Botany;Forced Non-Leaf Node Lookup:botany|TI|MM;RC|1485^6^0;82^6^0
+42593822|*Colonialism|D018595|2091|MH|RtM via: Colonialism|TI|MM;RC|1469^8^0;1338^8^0;1201^8^0;823^8^0;66^8^0
+42593822|*Grant|D005381|1428|ET|Entry Term Replacement for "Financing, Organized";RtM via: funding grant|TI|MM|1682^5^0
+42593822|*Biology|D001695|1341|MH|RtM via: biology (field)|TI|MM|1268^16^0;785^16^0
+42593822|*Policy|D057766|1311|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|1769^6^0
+42594435|*Wood|D014934|2516|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|451^4^0;33^4^0;124^5^0
+42594435|*Health Services|D006296|771|MH|RtM via: Test Method|TI|MM|355^6^0
+42594435|*Research Design|D012107|462|MH|RtM via: Test Method|TI|MM|355^6^0
+42594435|*Industries|D007221|336|ET|Entry Term Replacement for "Industry";RtM via: Industry|TI|MM|173^10^0
+42594435|*Environment|D004777|135|MH|RtM via: Woods|TI|MM|124^5^0
+42594862|*Forestry|D016468|2382|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|948^8^0;431^8^0;37^8^0;169^8^0
+42594862|*Academies and Institutes|D000047|2601|MH|RtM via: Institutes|TI|MM;RC|447^9^0;178^9^0
+42594862|*Governments|D006076|1746|ET|Entry Term Replacement for "Government";RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|790^11^0
+42594862|*Organization|D009938|1080|ET|Entry Term Replacement for "Organizations";RtM via: Organization administrative structures|TI|MM|717^12^0;98^12^0
+42594862|*Health Facilities|D006268|489|MH|RtM via: Health care facility|TI|MM|139^11^0
+42595024|Humans|D006801|1000|CT|Forced Humans:D Sexual Partners||MM
+42595024|Sri Lanka|D013188|588|MH|RtM via: Sri Lanka;Forced Leaf Node Lookup:ceylon|TI|MM|47^6^0
+42595024|*Sexual Partners|D012747|3234|MH|RtM via: Intimate (qualifier value)|TI|MM|387^10^0
+42595024|*Forest|D065928|3021|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|366^6^0;439^6^0
+42595024|*Government|D006076|2262|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM;RC|33^10^0
+42594861|Animals|D000818|30106|CT|Psyllid;CT Treecode Lookup: B01.050.500.131 (Psyllid)||MM;RC
+42594861|*Trees|D014197|29106|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|2266^4^0;2054^5^0;1692^5^0;752^5^0
+42594861|*Juniperus|D018653|10022|MH|RtM via: Juniperus procera;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM|705^17^0
+42594861|*Acacia|D000045|9140|MH|RtM via: Acacia;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM|1752^6^0
+42594861|*Albizzia|D031289|7802|MH|RtM via: Albizzia;Forced Leaf Node Lookup:albizzias;checkForceMH Boosted|TI|MM|927^8^0
+42594861|*Soil|D012987|6115|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|1897^5^0;1762^4^0
+42594861|*Palm Oil|D000073878|5230|MH|RtM via: palm oil;checkForceMH Boosted|TI|MM|1998^8^0
+42594861|*Grassland|D065948|4785|MH|Forced Leaf Node Lookup:grasslands|TI|MM;RC|961^9^0;1080^9^0;1310^9^0
+42594861|Malawi|D008295|4120|MH|RtM via: Malawi;Forced Leaf Node Lookup:nyasaland|TI|MM|94^9^0
+42594861|*Psyllid|D006430|4066|ET|Entry Term Replacement for "Hemiptera";RtM via: Psyllids;checkForceMH Boosted;Forced Non-Leaf Node Lookup:psyllids|TI|MM|2179^7^0
+42594861|Procera|C077451|3653|NM|Forced SCR Leaf Node Lookup:procera|TI|MM|715^7^0
+42594861|*Forest|D065928|19152|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM;RC|2345^8^0;1241^6^0;1141^6^0
+42594861|*Conservation of Natural Resources|D003247|11451|MH|RtM via: Natural regeneration|TI|MM;RC|852^12^0
+42594861|*Rainforest|D065947|6732|MH|RtM via: Rainforest|TI|MM|1136^11^0
+42594861|*Fire|D005390|6081|ET|Entry Term Replacement for "Fires";RtM via: Fire - disasters|TI|MM|1341^4^0
+42594861|Africa, Central|D000350|1272|MH|RtM via: Africa, Central;Forced Non-Leaf Node Lookup:central africa|TI|MM|1626^14^0
+42594861|*Fertility|D005298|192|MH|RtM via: Fertility;Forced Non-Leaf Node Lookup:fertility|TI|MM|1919^9^0
+42594861|Regeneration|D012038|1000|MH|Forced Non-Leaf Node Lookup:regenerations||MM|852^12^0
+42594861|Rain|D011891|1000|MH|Forced Non-Leaf Node Lookup:rain||MM|1136^4^0
+42594870|*Publications|D011642|150|MH|RtM via: Card (document)|TI|MM|132^4^0
+42594870|*Cardiology|D002309|126|MH|RtM via: Cardiology discipline|TI|MM|132^4^0
+42594870|*Disorders of Sex Development|D012734|15|MH|RtM via: Sex Differentiation Disorders|TI|MM|132^4^0
+42595202|Animals|D000818|45556|CT|Tsetse Flies;CT Treecode Lookup: B01.050.500.131 (Tsetse Flies)|TI|MM
+42595202|*Trees|D014197|44556|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|991^5^0
+42595202|*Soil|D012987|15249|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|799^4^0
+42595202|*Tsetse Flies|D014370|12243|MH|RtM via: Glossina <genus>;Forced Leaf Node Lookup:tsetse flies;checkForceMH Boosted|TI|MM|1174^12^0
+42595202|*Grass|D006109|8253|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grass|TI|MM|333^5^0
+42595202|Nigeria|D009549|5874|MH|RtM via: Nigeria;Forced Leaf Node Lookup:nigeria|TI|MM|41^7^0
+42595202|*Fires|D005390|33483|MH|RtM via: Fire - disasters|TI|MM;RC|1250^4^0;778^5^0;565^4^0;478^4^0;265^5^0
+42595202|*Forests|D065928|33237|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM;RC|1127^6^0;869^6^0;402^7^0;378^7^0;339^9^0;25^6^0;521^7^0;165^6^0;236^6^0
+42595202|*Rain|D011891|5586|MH|RtM via: Rain;Forced Non-Leaf Node Lookup:rain|TI|MM|204^4^0
+42595202|*Crops, Agricultural|D018556|3159|MH|RtM via: Agricultural Crops|TI|MM|954^5^0
+42594714|Humans|D006801|265548|CT|Forced Humans: professional;Forced Humans: staff;Forced Leaf Node Lookup:professionals;checkForceMH Boosted|TI|MM;RC|1767^12^0
+42594714|*Forestry|D016468|39712|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|1859^8^0;1412^8^0;826^8^0;651^8^0;415^8^0;21^8^0;982^8^0
+42594714|*Health Expenditures|D005102|12832|MH|RtM via: Expenditures;Forced Leaf Node Lookup:expenditures|TI|MM|104^11^0
+42594714|*Maintenance|D008283|4296|MH|RtM via: Maintenance|TI|MM|432^11^0
+42594714|*Governments|D006076|3261|ET|Entry Term Replacement for "Government";RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|1704^11^0;1177^11^0;714^11^0
+42594714|*Policies|D057766|2076|ET|Entry Term Replacement for "Policy";RtM via: Policy;Forced Non-Leaf Node Lookup:policies|TI|MM|2004^8^0;1136^8^0
+42594714|*Social Services|D012947|1881|ET|Entry Term Replacement for "Social Work";RtM via: Social Work (discipline);Forced Non-Leaf Node Lookup:social services|TI|MM|1550^15^0;1345^15^0
+42594714|*Funds|D005376|1611|ET|Entry Term Replacement for "Financial Management";RtM via: Funds;Forced Non-Leaf Node Lookup:funds|TI|MM|1830^5^0;1269^5^0
+42594714|India|D007194|96|MH|RtM via: India|TI|MM|145^5^0
+42594714|Africa|D000349|3|MH|RtM via: Africa|TI|MM|1680^6^0
+42593626|Humans|D006801|121006|CT|Forced Humans: patient;RtM via: Patients|TI|MM;RC|297^7^0
+42593626|*Military Personnel|D008889|5278|MH|RtM via: Soldiers;Forced Leaf Node Lookup:soldiers|TI|MM|111^7^0;172^7^0
+42593626|*Forest|D065928|5745|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|77^6^0;21^6^0;197^6^0
+42593626|Forestry|D016468|1328|MH|||RC
+42595199|*Trees|D014197|29071|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|641^4^0
+42595199|*Soil|D012987|16661|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|1138^4^0;266^4^0
+42595199|*Seasons|D012621|8465|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM;RC|709^6^0;664^6^0
+42595199|*Sand|D000080463|7436|MH|RtM via: Sand;checkForceMH Boosted|TI|MM|278^5^0
+42595199|*Rivers|D045483|7403|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|399^5^0
+42595199|*Wood|D014934|6509|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|859^4^0
+42595199|Gambia|D005714|4277|MH|RtM via: Gambia;Forced Leaf Node Lookup:gambia|TI|MM|105^6^0
+42595199|*Desiccation|D003890|4244|MH|Forced Leaf Node Lookup:desiccation|TI|MM|1114^11^0
+42595199|*Forests|D065928|22260|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM;RC|1375^7^0;1179^6^0;1061^6^0;777^6^0;602^9^0;298^6^0
+42595199|*Agriculture|D000383|10974|MH|RtM via: Agriculture|TI|MM;RC|521^12^0
+42595199|*Rains|D011891|10833|ET|Entry Term Replacement for "Rain";RtM via: Rain|TI|MM;RC|703^5^0
+42595199|*Arecaceae|D028023|4341|MH|RtM via: Borassus|TI|MM;RC|828^8^0
+42595199|Conservation of Natural Resources|D003247|1000|MH|Forced Non-Leaf Node Lookup:forest conservation||MM;RC|1179^19^0
+42593633|Animals|D000818|7164|CT|Isoptera;CT Treecode Lookup: B01.050.500.131 (Isoptera)||MM;RC
+42593633|*Wood|D014934|6164|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM;RC|752^5^0;368^5^0;82^4^0
+42593633|*Isoptera|D020049|4861|MH|RtM via: Isoptera;Forced Leaf Node Lookup:termites;checkForceMH Boosted|TI|MM;RC|410^7^0
+42593633|*Copper|D003300|3091|MH|RtM via: copper;Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM;RC|151^6^0
+42593633|copper naphthenate|C092401|2402|NM|RtM via: copper naphthenate;Forced SCR Leaf Node Lookup:copper naphthenate|TI|MM|465^19^0
+42593633|*Solubility|D012995|2249|MH|RtM via: Solubility;Forced Leaf Node Lookup:solubility|TI|MM|290^10^0
+42593633|*Water|D014867|2009|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|328^5^0;345^5^0
+42593633|*Mercury|D008628|1580|MH|RtM via: mercury;checkForceMH Boosted|TI|MM|489^8^0;162^8^0
+42593633|*Cemeteries|D055699|1118|MH|RtM via: Cemeteries;Forced Leaf Node Lookup:graveyards|TI|MM|629^9^0
+42593633|Trinidad and Tobago|D014300|977|MH|RtM via: Trinidad;Forced Leaf Node Lookup:trinidad|TI|MM|57^8^0
+42593633|*Forest|D065928|5544|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|36^6^0
+42593633|*Carboxylic Acids|D002264|2401|HM|RtM via: copper naphthenate|TI|MM|465^19^0
+42593633|*Coal Tar|D003033|885|MH|RtM via: Wood preservative|TI|MM|82^17^0
+42594798|*Trees|D014197|14104|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|379^5^0
+42594798|*Woodland|D065928|6450|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM|265^8^0
+42594798|Forestry|D016468|1660|MH|||RC
+42595816|Humans|D006801|1000|CT|Forced Humans:D Clergy||MM
+42595816|*Forestry|D016468|32143|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM;RC|2408^8^0;1979^8^0;1782^8^0;1556^8^0;1511^8^0;1318^8^0;971^8^0;170^8^0;1114^8^0
+42595816|*Rivers|D045483|4306|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|1208^6^0
+42595816|*Propaganda|D011406|2554|MH|RtM via: Propaganda;Forced Leaf Node Lookup:propaganda|TI|MM|1327^10^0
+42595816|*Clergy|D002977|2410|MH|RtM via: Ministers;Forced Leaf Node Lookup:ministers|TI|MM|2170^8^0
+42595816|New Zealand|D009520|2383|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|2431^11^0;1499^11^0;1234^11^0
+42595816|*Organization|D009938|3873|ET|Entry Term Replacement for "Organizations";RtM via: Agencies;RtM via: Organization administrative structures|TI|MM|1630^6^0;1942^12^0
+42595816|*Government|D006076|3096|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|1380^10^0
+42594857|Humans|D006801|1000|CT|Forced Humans:D Educational Personnel||MM
+42594857|South Africa|D013019|9976|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM;RC|86^12^0
+42594857|Zambia|D015024|1744|MH|RtM via: Zambia;Forced Leaf Node Lookup:northern rhodesia|TI|MM|168^17^0
+42594857|*Fabaceae|D007887|33|MH|RtM via: Baikiaea plurijuga|TI|MM|21^18^0
+42594857|*Educational Personnel|D000071195|30|MH|RtM via: Teaching principal|TI|MM|47^9^0
+42594857|*Sleep|D012890|15|MH|RtM via: Sleep|TI|MM|68^7^0
+42593063|*Wood|D014934|270|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|453^4^0
+42593063|Australia|D001315|147|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|104^10^0
+42593063|*Pressure|D011312|759|MH|RtM via: Compression|TI|MM;RC|905^11^0;779^11^0;566^11^0;425^11^0
+42593063|*Physical Phenomena|D055585|336|MH|RtM via: Compression|TI|MM|905^11^0;779^11^0;566^11^0;425^11^0
+42593063|*Causality|D015984|168|MH|RtM via: Etiology|TI|MM|1001^6^0;824^6^0
