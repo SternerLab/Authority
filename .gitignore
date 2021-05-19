@@ -5,5 +5,6 @@ __pycache__
 /r_table/parser/temp/
 .DS_Store
 /r_table/parser/mesh_id_parser/SKR*
-/gold_standard_db/google_scholar/*.log
-/gold_standard_db/google_scholar/*.txt 
+gold_standard/google_scholar/*.log
+/gold_standard/google_scholar/*.txt
+/util.pynb 
