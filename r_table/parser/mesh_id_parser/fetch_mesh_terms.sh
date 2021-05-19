@@ -1,6 +1,6 @@
 #!/bin/bash
 web_api_examples_path="SKR_Web_API_V2_4/examples"
-input_path="../../../results/mesh/[j-z]*.txt"
+input_path="../../../results/mesh/"
 output_path="../../../results/mesh/output/"
 cd $web_api_examples_path
 
@@ -14,8 +14,8 @@ for filename in "$input_path"*; do
     output_file_name="${output_path}${fname}"
     echo $fname
     echo $output_file_name
-#     python "../..mesh_abstracts_preprocessor.py" --file $filename
-#     java -cp ../classes:../lib/skrAPI.jar:../lib/commons-logging-1.2.jar:../lib/httpclient-cache-4.5.13.jar:../lib/httpclient-4.5.13.jar:../lib/httpcore-4.4.13.jar:../lib/httpmime-4.5.13.jar GenericBatch $filename > $output_file_name
-    
-     
+    java -cp ../classes:../lib/skrAPI.jar:../lib/commons-logging-1.2.jar:../lib/httpclient-cache-4.5.13.jar:../lib/httpclient-4.5.13.jar:../lib/httpcore-4.4.13.jar:../lib/httpmime-4.5.13.jar GenericBatch $filename > $output_file_name
+
+    # java -cp ../classes:../lib/skrAPI.jar:../lib/commons-logging-1.2.jar:../lib/httpclient-cache-4.5.13.jar:../lib/httpclient-4.5.13.jar:../lib/httpcore-4.4.13.jar:../lib/httpmime-4.5.13.jar GenericBatch $filename > ${output_folder_path}${filename}
+    # (java -cp ../classes:../lib/skrAPI.jar:../lib/commons-logging-1.1.1.jar:../lib/httpclient-cache-4.1.1.jar:../lib/httpcore-nio-4.1.jar:../lib/httpclient-4.1.1.jar:../lib/httpcore-4.1.jar:../lib/httpmime-4.1.1.jar GenericBatch $filename) > ${output_folder_path}${filename}"  
 done
