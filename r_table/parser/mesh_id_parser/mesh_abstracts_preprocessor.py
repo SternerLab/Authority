@@ -22,6 +22,9 @@ for value in content:
         id_abstract = value.strip().split('|')
         if id_abstract[1]!=''  and len(id_abstract[1]) < 10000:
             final_content+= value
+        elif len(id_abstract[1]) >= 10000:
+            id_abstract[1] = id_abstract[1][:9999]
+            final_content+= id_abstract[0] + "|" + id_abstract[1]
 
 with open(file_name, 'w') as f:
     f.write(final_content)
