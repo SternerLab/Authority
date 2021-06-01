@@ -3,7 +3,7 @@ sys.path.append('../')
 from SQL.sqlite_client import sqlite_client
 
 
-sql_client = sqlite_client('../../database/test3.db')
+sql_client = sqlite_client('../../database/jstor-authority.db')
 # sql_client.connect_to_db("test1")
 
 article_m_records_sql_file = './sql/article_match_records.sql'
