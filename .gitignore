@@ -7,4 +7,6 @@ __pycache__
 /r_table/parser/mesh_id_parser/SKR*
 gold_standard/google_scholar/*.log
 /gold_standard/google_scholar/*.txt
-/util.pynb 
+/util.pynb
+/.ipynb_checkpoints
+.ipynb_checkpoints 
