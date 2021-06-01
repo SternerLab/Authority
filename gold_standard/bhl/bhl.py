@@ -15,7 +15,7 @@ def put_titles_in_db(titles, name, name_id):
     # query1 = "select * from google_scholar"
     # cursor.execute(query1)
     # print(list(cursor.fetchall()))
-    query = "SELECT id, fullname FROM articles where UPPER(title_full) in " + "( "
+    query = "SELECT id, fullname FROM articles where UPPER(full_title) in " + "( "
     for title in titles:
         title = title.replace('\'', '\'\'').upper()
         query += "\'"+title+"\'" + ","

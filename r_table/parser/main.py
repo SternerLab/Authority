@@ -48,7 +48,7 @@ def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
 
 
 def insert_article_to_db(articles, sql_client, file):
-    insert_articles_query = "INSERT INTO articles (id, position, last_name, first_initial, middle_initial, suffix, title, journal_name, fullname, first_name, middle_name, language, authors, mesh_terms, affiliation,title_full,year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+    insert_articles_query = "INSERT INTO articles (id, position, last_name, first_initial, middle_initial, suffix, title, journal_name, fullname, first_name, middle_name, language, authors, mesh_terms, affiliation,full_title,year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
     for article in articles:
         values = article.__repr__()
         try:
@@ -93,7 +93,7 @@ table_name = "articles"
 sql_client = sqlite_client(database_path)
 
 #create table 'Articles'
-create_table_query = 'CREATE TABLE IF NOT EXISTS {} (id VARCHAR(255) NOT NULL, position INTEGER, last_name VARCHAR(255), first_initial VARCHAR(255), middle_initial VARCHAR(255), suffix VARCHAR(255), title LONGTEXT, journal_name VARCHAR(255), fullname VARCHAR(255), first_name VARCHAR(255), middle_name VARCHAR(255), language VARCHAR(255),authors LONGTEXT, mesh_terms LONGTEXT, affiliation LONGTEXT, title_full LONGTEXT,year INTEGER, CONSTRAINT PK PRIMARY KEY(id, position))'.format(table_name)
+create_table_query = 'CREATE TABLE IF NOT EXISTS {} (id VARCHAR(255) NOT NULL, position INTEGER, last_name VARCHAR(255), first_initial VARCHAR(255), middle_initial VARCHAR(255), suffix VARCHAR(255), title LONGTEXT, journal_name VARCHAR(255), fullname VARCHAR(255), first_name VARCHAR(255), middle_name VARCHAR(255), language VARCHAR(255),authors LONGTEXT, mesh_terms LONGTEXT, affiliation LONGTEXT, full_title LONGTEXT,year INTEGER, CONSTRAINT PK PRIMARY KEY(id, position))'.format(table_name)
 
 sql_client.execute(create_table_query)
 
