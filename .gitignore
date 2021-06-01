@@ -8,5 +8,4 @@ __pycache__
 gold_standard/google_scholar/*.log
 /gold_standard/google_scholar/*.txt
 /util.pynb
-*/.ipynb_checkpoints/*
-.ipynb_checkpoints 
+*/.ipynb_checkpoints/*.* 
