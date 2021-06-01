@@ -1,0 +1,7 @@
+4626699|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.150.900.248 (Birds)||MM
+4626699|*Trees|D014197|32579|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|250^5^0
+4626699|British Columbia|D001955|14989|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|102^16^0
+4626699|Mandibular Condyle|D008335|116817|MH|||RC
+4626699|Temporomandibular Joint|D013704|70520|MH|||RC
+4626699|*Birds|D001717|1941|MH|RtM via: Aves;RtM via: Ardea herodias;Forced Non-Leaf Node Lookup:birds|TI|MM|724^5^0;498^5^0;197^5^0;47^16^0
+4626699|*Habitat|D017753|1326|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|416^7^0

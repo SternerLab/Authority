@@ -5,23 +5,23 @@
 23874579|Cluster Analysis|D016000|1000|MH|Forced Non-Leaf Node Lookup:cluster analysis||MM|231^16^0
 23874579|Australia|D001315|1000|MH|Forced Non-Leaf Node Lookup:australia||MM|469^9^0
 23874579|South Australia|D013021|0|MH|RtM via: South Australia|TI|MM|460^18^0
-23874430|*Trees|D014197|118129|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|780^4^0
-23874430|*Fabaceae|D007887|63707|MH|RtM via: Fabaceae;RtM via: Genisteae;RtM via: Chamaecytisus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fabaceae|TI|MM|61^8^0;71^9^0;21^13^0
-23874430|New South Wales|D009517|60746|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|554^15^0
-23874430|South Australia|D013021|60746|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|537^15^0
-23874430|Tasmania|D013648|60746|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|584^8^0
-23874430|Victoria|D014739|60746|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM|571^8^0
-23874430|Spain|D013030|60623|MH|RtM via: Gran Canaria;RtM via: La Palma;RtM via: Tenerife;RtM via: Canary Islands;RtM via: Gomera;RtM via: Island of Hierro;Forced Leaf Node Lookup:canary islands|TI|MM|173^12^0;737^8^0;231^8^0;139^8^0;802^8^0;160^8^0;881^14^0;414^14^0;193^13^0;152^6^0;131^6^0
-23874430|Portugal|D011174|60611|MH|RtM via: Portugal;Forced Leaf Node Lookup:portugal|TI|MM|635^8^0
-23874430|Kenya|D007630|59039|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM|659^5^0
-23874430|New Zealand|D009520|59039|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|465^11^0
-23874430|Tanzania|D013636|59039|MH|RtM via: Tanzania;Forced Leaf Node Lookup:tanzania|TI|MM|666^8^0
-23874430|Hawaii|D006254|58898|MH|RtM via: Hawaiian population;Forced Leaf Node Lookup:hawaiian|TI|MM|605^8^0
-23874430|South Africa|D013019|58613|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|679^12^0
-23874430|*Gardens|D000072506|58610|MH|Forced Leaf Node Lookup:gardens|TI|MM|962^7^0;991^7^0
-23874430|Indonesia|D007214|58610|MH|Forced Leaf Node Lookup:java|TI|MM|595^4^0
-23874430|HIV-1|D015497|229635|MH|||RC
-23874430|CD4 Lymphocyte Count|D018791|227457|MH|||RC
+23874430|*Trees|D014197|116449|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|780^4^0
+23874430|*Fabaceae|D007887|62867|MH|RtM via: Fabaceae;RtM via: Genisteae;RtM via: Chamaecytisus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fabaceae|TI|MM|61^8^0;71^9^0;21^13^0
+23874430|New South Wales|D009517|59906|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|554^15^0
+23874430|South Australia|D013021|59906|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|537^15^0
+23874430|Tasmania|D013648|59906|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|584^8^0
+23874430|Victoria|D014739|59906|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM|571^8^0
+23874430|Spain|D013030|59783|MH|RtM via: Gran Canaria;RtM via: La Palma;RtM via: Tenerife;RtM via: Canary Islands;RtM via: Gomera;RtM via: Island of Hierro;Forced Leaf Node Lookup:canary islands|TI|MM|173^12^0;737^8^0;231^8^0;139^8^0;802^8^0;160^8^0;881^14^0;414^14^0;193^13^0;152^6^0;131^6^0
+23874430|Portugal|D011174|59771|MH|RtM via: Portugal;Forced Leaf Node Lookup:portugal|TI|MM|635^8^0
+23874430|Kenya|D007630|58199|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM|659^5^0
+23874430|New Zealand|D009520|58199|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|465^11^0
+23874430|Tanzania|D013636|58199|MH|RtM via: Tanzania;Forced Leaf Node Lookup:tanzania|TI|MM|666^8^0
+23874430|Hawaii|D006254|58058|MH|RtM via: Hawaiian population;Forced Leaf Node Lookup:hawaiian|TI|MM|605^8^0
+23874430|South Africa|D013019|57773|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|679^12^0
+23874430|*Gardens|D000072506|57770|MH|Forced Leaf Node Lookup:gardens|TI|MM|962^7^0;991^7^0
+23874430|Indonesia|D007214|57770|MH|Forced Leaf Node Lookup:java|TI|MM|595^4^0
+23874430|HIV-1|D015497|229568|MH|||RC
+23874430|CD4 Lymphocyte Count|D018791|227361|MH|||RC
 23874430|*Fodder|D000821|381|ET|Entry Term Replacement for "Animal Feed";RtM via: Fodder;Forced Non-Leaf Node Lookup:fodders|TI|MM|773^6^0
 23873796|*Clerodendrum|D032409|102759|MH|RtM via: Clerodendrum;Forced Leaf Node Lookup:clerodendrums;checkForceMH Boosted|TI|MM|45^12^0
 23873796|Queensland|D011793|51282|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|334^10^0
@@ -214,10 +214,10 @@
 23875392|Paleodontology|D010161|30188|MH|||RC
 23875392|*Seeds|D012639|357|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM|110^5^0
 23875392|*Ribs|D012272|18|MH|RtM via: Bone structure of rib;Forced Non-Leaf Node Lookup:ribs|TI|MM|146^4^0
-23874055|*Zygophyllaceae|D028461|18248|MH|RtM via: Zygophyllaceae;RtM via: Tribulopis homalococca;checkForceMH Boosted;Forced Non-Leaf Node Lookup:zygophyllaceae|TI|MM|75^14^0;238^22^0;192^22^0;56^10^0
-23874055|Australia|D001315|15419|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|95^10^0
-23874055|Psychometrics|D011594|69099|MH|||RC
-23874055|Surveys and Questionnaires|D011795|47591|MH|||RC
+23874055|*Zygophyllaceae|D028461|18183|MH|RtM via: Zygophyllaceae;RtM via: Tribulopis homalococca;checkForceMH Boosted;Forced Non-Leaf Node Lookup:zygophyllaceae|TI|MM|75^14^0;238^22^0;192^22^0;56^10^0
+23874055|Australia|D001315|15354|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|95^10^0
+23874055|Psychometrics|D011594|68896|MH|||RC
+23874055|Surveys and Questionnaires|D011795|47376|MH|||RC
 23874055|*Habitat|D017753|465|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|447^7^0
 23874135|*Vitex|D020950|20312|MH|RtM via: Vitex (plant);Forced Leaf Node Lookup:vitex;checkForceMH Boosted|TI|MM|391^5^0
 23874135|DNA, Ribosomal Spacer|D021903|66172|MH|||RC
@@ -229,17 +229,17 @@
 23874106|Northern Territory|D015876|18813|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|202^18^0
 23874106|Immunoconjugates|D018796|140101|MH|||RC
 23874106|Antibodies, Monoclonal|D000911|67657|MH|||RC
-23874126|Netherlands|D009426|39566|MH|RtM via: Netherlands;Forced Leaf Node Lookup:holland|TI|MM|47^7^0
-23874126|Australia|D001315|39005|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|329^10^0
+23874126|Netherlands|D009426|39561|MH|RtM via: Netherlands;Forced Leaf Node Lookup:holland|TI|MM|47^7^0
+23874126|Australia|D001315|39000|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|329^10^0
 23874126|Bortezomib|D000069286|328423|MH|||RC
-23874126|Multiple Myeloma|D009101|127678|MH|||RC
+23874126|Multiple Myeloma|D009101|127669|MH|||RC
 23873839|Queensland|D011793|32356|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|67^10^0
 23873839|Quinazolinones|D052999|165283|MH|||RC
 23873839|Drug Design|D015195|58488|MH|||RC
-23872351|*Lauraceae|D019770|27044|MH|RtM via: Lauraceae;RtM via: Cassytha;RtM via: Cassytha glabella;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lauraceae|TI|MM|60^9^0;841^8^0;268^8^0;47^8^0;454^17^0
-23872351|*Candida|D002175|17846|MH|RtM via: Candida (fungus);checkForceMH Boosted;Forced Non-Leaf Node Lookup:candida|TI|MM|340^7^0
-23872351|Hypochlorous Acid|D006997|95259|MH|||RC
-23872351|Peroxidase|D009195|71356|MH|||RC
+23872351|*Lauraceae|D019770|27058|MH|RtM via: Lauraceae;RtM via: Cassytha;RtM via: Cassytha glabella;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lauraceae|TI|MM|60^9^0;841^8^0;268^8^0;47^8^0;454^17^0
+23872351|*Candida|D002175|17854|MH|RtM via: Candida (fungus);checkForceMH Boosted;Forced Non-Leaf Node Lookup:candida|TI|MM|340^7^0
+23872351|Hypochlorous Acid|D006997|95294|MH|||RC
+23872351|Peroxidase|D009195|71370|MH|||RC
 23872351|*Chromosome|D002875|246|ET|Entry Term Replacement for "Chromosomes";RtM via: Chromosomes;Forced Non-Leaf Node Lookup:chromosome|TI|MM|807^10^0
 23872351|Australia|D001315|3|MH|RtM via: Australia|TI|MM|74^9^0
 23872226|Humans|D006801|42491|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
@@ -312,12 +312,11 @@
 23872158|Northern Territory|D015876|15807|MH|Forced Leaf Node Lookup:northern territory|TI|MM|177^18^0
 23872158|Brain Ischemia|D002545|45408|MH|||RC
 23872158|Cerebrovascular Circulation|D002560|40732|MH|||RC
-23874513|Humans|D006801|99382|CT|Asian Continental Ancestry Group;CT Treecode Lookup: M01.686 (Asian Continental Ancestry Group)||RC
-23874513|Animals|D000818|99382|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica)||MM
-23874513|*Thoracica|D001468|56735|MH|RtM via: Pedunculata;Forced Leaf Node Lookup:pedunculatas;checkForceMH Boosted|TI|MM|539^11^0
-23874513|New South Wales|D009517|28063|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|87^15^0
-23874513|Amyotrophic Lateral Sclerosis|D000690|98382|MH|||RC
-23874513|Asian Continental Ancestry Group|D044466|70393|MH|||RC
+23874513|Animals|D000818|96283|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica)|TI|MM
+23874513|*Thoracica|D001468|48065|MH|RtM via: Pedunculata;Forced Leaf Node Lookup:pedunculatas;checkForceMH Boosted|TI|MM|539^11^0
+23874513|New South Wales|D009517|23728|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|87^15^0
+23874513|Amyotrophic Lateral Sclerosis|D000690|95283|MH|||RC
+23874513|Genetic Predisposition to Disease|D020022|39840|MH|||RC
 23874214|New South Wales|D009517|46245|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|82^15^0
 23874214|South Australia|D013021|46245|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|220^15^0
 23874214|Plant Breeding|D000069600|150446|MH|Replacement of Breeding Plants Found||MM
@@ -358,11 +357,11 @@
 23874102|Hypoglycemia|D007003|215453|MH|||RC
 23874102|Diabetes Mellitus, Type 1|D003922|154701|MH|||RC
 23874102|*Chromosomes|D002875|12|MH|RtM via: Chromosome number;Forced Non-Leaf Node Lookup:chromosome|TI|MM|180^17^0
-23874058|*Fruit|D005638|18006|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|301^6^0
-23874058|South Australia|D013021|17031|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|116^15^0
-23874058|Leisure Activities|D007899|106575|MH|||RC
-23874058|Personal Satisfaction|D010549|36313|MH|||RC
-23874058|*Habit|D006184|8481|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|225^5^0
+23874058|*Fruit|D005638|17957|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|301^6^0
+23874058|South Australia|D013021|16988|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|116^15^0
+23874058|Leisure Activities|D007899|106255|MH|||RC
+23874058|Personal Satisfaction|D010549|36233|MH|||RC
+23874058|*Habit|D006184|8463|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|225^5^0
 23874058|*Plant Leaves|D018515|525|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM|268^6^0
 23873780|Australia|D001315|23613|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|33^10^0
 23873780|Gold|D006046|248810|MH|||RC
@@ -428,14 +427,14 @@
 23874197|*Habit|D006184|45|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|307^5^0
 23874197|Drosophila|D004330|1000|MH|Forced Non-Leaf Node Lookup:d. erecta||MM|107^9^0
 23874197|Australia|D001315|3|MH|RtM via: Australia|TI|MM|163^9^0;59^9^0
-23874401|Animals|D000818|79897|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica)|TI|MM
-23874401|*Thoracica|D001468|47693|MH|RtM via: Pedunculata;Forced Leaf Node Lookup:pedunculatas;checkForceMH Boosted|TI|MM|772^11^0
-23874401|*Mediterranea|D000086222|47534|MH|RtM via: Mediterranea;Forced New Lookup:mediterranea;checkForceMH Boosted|TI|MM|737^12^0
-23874401|Tasmania|D013648|24070|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|145^8^0
-23874401|Queensland|D011793|24067|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|166^10^0
-23874401|Florida|D005431|23767|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|560^7^0;575^7^0
-23874401|Aryl Hydrocarbon Hydroxylases|D001189|78897|MH|||RC
-23874401|Polymorphism, Genetic|D011110|76194|MH|||RC
+23874401|Animals|D000818|74924|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica)|TI|MM
+23874401|*Thoracica|D001468|42547|MH|RtM via: Pedunculata;Forced Leaf Node Lookup:pedunculatas;checkForceMH Boosted|TI|MM|772^11^0
+23874401|*Mediterranea|D000086222|42388|MH|RtM via: Mediterranea;Forced New Lookup:mediterranea;checkForceMH Boosted|TI|MM|737^12^0
+23874401|Tasmania|D013648|21497|MH|RtM via: Tasmania (Island);Forced Leaf Node Lookup:tasmania|TI|MM|145^8^0
+23874401|Queensland|D011793|21494|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|166^10^0
+23874401|Florida|D005431|21194|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|560^7^0;575^7^0
+23874401|Aryl Hydrocarbon Hydroxylases|D001189|73924|MH|||RC
+23874401|Polymorphism, Genetic|D011110|70668|MH|||RC
 23874210|*Introduced Species|D058865|92211|MH|RtM via: Introduced Species;Forced Leaf Node Lookup:alien species;checkForceMH Boosted|TI|MM|170^13^0;271^13^0
 23874210|South Australia|D013021|45786|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|128^15^0
 23874210|Crossing Over, Genetic|D003434|181889|MH|||RC
@@ -444,12 +443,12 @@
 23874065|Female|D005260|1000|CT|Forced Treecode Turn Back On: A16.710 (Placenta)||MM
 23874065|Pregnancy|D011247|1000|CT|Forced Treecode Turn Back On: A16.710 (Placenta)||MM
 23874065|Humans|D006801|1000|CT|Forced Treecode Turn Back On: G08.686.784.769 (Pregnancy)||MM
-23874065|*Solanum|D032322|16974|MH|RtM via: genus Solanum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:solanums|TI|MM|63^7^0
-23874065|*Fruit|D005638|15825|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|424^6^0
-23874065|*Endoplasmic Reticulum Stress|D059865|14013|MH|Forced Leaf Node Lookup:reticulum|TI|MM|615^9^0
-23874065|Gene Frequency|D005787|41583|MH|||RC
-23874065|Genetic Predisposition to Disease|D020022|32392|MH|||RC
-23874065|*Placenta|D010920|600|MH|RtM via: Placenta;Forced Non-Leaf Node Lookup:placentas|TI|MM|295^8^0;162^8^0;21^8^0;498^8^0
+23874065|*Solanum|D032322|15391|MH|RtM via: genus Solanum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:solanums|TI|MM|63^7^0
+23874065|*Fruit|D005638|14227|MH|RtM via: Fruit;Forced Leaf Node Lookup:fruits|TI|MM|424^6^0
+23874065|*Endoplasmic Reticulum Stress|D059865|12430|MH|Forced Leaf Node Lookup:reticulum|TI|MM|615^9^0
+23874065|Gene Frequency|D005787|38569|MH|||RC
+23874065|Genetic Predisposition to Disease|D020022|29691|MH|||RC
+23874065|*Placenta|D010920|597|MH|RtM via: Placenta;Forced Non-Leaf Node Lookup:placentas|TI|MM|295^8^0;162^8^0;21^8^0;498^8^0
 23873900|Animals|D000818|2079|CT|Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera)||MM;RC
 23873900|Western Australia|D014904|1079|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM;RC|129^17^0
 23873900|*Lepidoptera|D007915|315|MH|RtM via: Rhadinophylla|TI|MM|70^13^0
@@ -522,22 +521,22 @@
 43304744|*Confusion|D003221|1740|MH|RtM via: Clouded consciousness;RtM via: Confusion|TI|MM|282^8^0
 43304744|*Gastropoda|D049851|552|MH|RtM via: Corolla (genus)|TI|MM|601^7^0
 43304744|*Hair Color|D006200|507|MH|RtM via: White hair|TI|MM|644^11^0
-23874577|*Introduced Species|D058865|42227|MH|RtM via: Introduced Species;Forced Leaf Node Lookup:introduced species;checkForceMH Boosted|TI|MM|488^18^0
-23874577|Australia|D001315|22963|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|238^9^0;623^10^0
-23874577|South Australia|D013021|21199|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|739^15^0;348^15^0;297^15^0;46^15^0
-23874577|Life Style|D008019|95295|MH|||RC
-23874577|Diet|D004032|39707|MH|||RC
-23874577|*Habits|D006184|16857|MH|RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|605^6^0
-23874577|*Agriculture|D000383|3207|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|404^11^0;124^11^0
+23874577|*Introduced Species|D058865|42027|MH|RtM via: Introduced Species;Forced Leaf Node Lookup:introduced species;checkForceMH Boosted|TI|MM|488^18^0
+23874577|Australia|D001315|22863|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|238^9^0;623^10^0
+23874577|South Australia|D013021|21099|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|739^15^0;348^15^0;297^15^0;46^15^0
+23874577|Life Style|D008019|94907|MH|||RC
+23874577|Diet|D004032|39576|MH|||RC
+23874577|*Habits|D006184|16836|MH|RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|605^6^0
+23874577|*Agriculture|D000383|3195|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|404^11^0;124^11^0
 23874577|*Plants|D010944|1224|MH|RtM via: Plants;Forced Non-Leaf Node Lookup:herbaceous|TI|MM|641^6^0;580^6^0;594^10^0
 23874068|Fatty Acids, Omega-3|D015525|107060|MH|||RC
 23874068|Dietary Supplements|D019587|76287|MH|||RC
 23874068|*Islands|D062312|0|MH|RtM via: Islands|TI|MM|104^6^0
-23874443|South Australia|D013021|32132|MH|Forced Leaf Node Lookup:south australian|TI|MM|765^16^0
+23874443|South Australia|D013021|34664|MH|Forced Leaf Node Lookup:south australian|TI|MM|765^16^0
 23874443|Australia|D001315|0|MH|Geo Lookup:australian||MM
-23874443|Rotavirus Infections|D012400|316357|MH|||RC
-23874443|Rotavirus|D012401|281176|MH|||RC
-23874443|*Islands|D062312|1152|MH|RtM via: Islands|TI|MM|176^6^0
+23874443|Rotavirus Infections|D012400|340977|MH|||RC
+23874443|Rotavirus|D012401|304391|MH|||RC
+23874443|*Islands|D062312|1176|MH|RtM via: Islands|TI|MM|176^6^0
 23874591|*Teucrium|D031367|9940|MH|RtM via: Teucrium racemosum;Forced Leaf Node Lookup:teucrium;checkForceMH Boosted|TI|MM|42^18^0
 23874591|Oligonucleotide Array Sequence Analysis|D020411|27690|MH|||RC
 23874591|Gene Expression Profiling|D020869|13501|MH|||RC
@@ -555,8 +554,8 @@
 23873898|Pulmonary Artery|D011651|146661|MH|||RC
 23873898|Western Australia|D014904|909|MH|RtM via: Western Australia|TI|MM|477^7^1;490^9^1
 23873898|*Islands|D062312|684|MH|RtM via: Islands|TI|MM|636^6^0
-23873877|Autoantibodies|D001323|67741|MH|||RC
-23873877|Peptides, Cyclic|D010456|49001|MH|||RC
+23873877|Autoantibodies|D001323|67646|MH|||RC
+23873877|Peptides, Cyclic|D010456|48971|MH|||RC
 23874202|Viral Regulatory and Accessory Proteins|D054334|150568|MH|||RC
 23874202|vpr Gene Products, Human Immunodeficiency Virus|D054325|86336|MH|||RC
 23874202|Asia|D001208|3|MH|RtM via: Asia|TI|MM|191^4^0
@@ -656,11 +655,11 @@
 23872367|Tomography, Optical Coherence|D041623|6576|MH|||RC
 23872367|*Convolvulaceae|D027722|1653|MH|RtM via: Operculina <angiosperm>;RtM via: Operculina turpethum|TI|MM|157^10^0;103^20^0
 23872367|Recombination, Genetic|D011995|1000|MH|Forced Non-Leaf Node Lookup:recombinations||MM|186^13^0
-23874211|Animals|D000818|58809|CT|Tribolium;CT Treecode Lookup: B01.050.500.131 (Tribolium);Coleoptera;CT Treecode Lookup: B01.050.500.131 (Coleoptera)||RC
-23874211|Australia|D001315|14056|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|52^10^0
-23874211|Tribolium|D014231|57809|MH|||RC
-23874211|Coleoptera|D001517|35384|MH|||RC
-23874211|*Pollen|D011058|2151|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|605^6^0
+23874211|Animals|D000818|62888|CT|Tribolium;CT Treecode Lookup: B01.050.500.131 (Tribolium);Coleoptera;CT Treecode Lookup: B01.050.500.131 (Coleoptera)||RC
+23874211|Australia|D001315|14658|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|52^10^0
+23874211|Tribolium|D014231|61888|MH|||RC
+23874211|Coleoptera|D001517|41231|MH|||RC
+23874211|*Pollen|D011058|2004|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|605^6^0
 23874129|*Acacia|D000045|92656|MH|RtM via: Acacia;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM|36^6^0
 23874129|South Australia|D013021|40874|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|163^15^0
 23874129|Mycorrhizae|D038821|206588|MH|||RC
@@ -676,18 +675,18 @@
 23874512|Tuberculosis|D014376|46032|MH|||RC
 23874512|Tuberculosis, Pulmonary|D014397|42910|MH|||RC
 23874512|*Social Segregation|D000072699|3525|MH|RtM via: Racial Segregation|TI|MM|106^10^0
-23872233|Animals|D000818|105444|CT|Caenorhabditis elegans;CT Treecode Lookup: B01.050.500.500 (Caenorhabditis elegans)|TI|MM
-23872233|*Capsicum|D002212|70415|MH|RtM via: Capsicum annuum;Forced Leaf Node Lookup:capsicum annuum;checkForceMH Boosted|TI|MM|128^15^0
-23872233|*Hyoscyamus|D032304|70352|MH|RtM via: Hyoscyamus albus;Forced Leaf Node Lookup:hyoscyamus;checkForceMH Boosted|TI|MM|370^16^0
-23872233|*Cestrum|D032301|70298|MH|RtM via: Cestrum aurantiacum;Forced Leaf Node Lookup:cestrums;checkForceMH Boosted|TI|MM|236^19^0
-23872233|*Lycopersicon esculentum|D018551|69740|MH|RtM via: Lycopersicon esculentum;Forced Leaf Node Lookup:lycopersicon esculentum;checkForceMH Boosted|TI|MM|404^23^0
-23872233|*Withania|D032341|68843|MH|RtM via: Withania somnifera (plant);Forced Leaf Node Lookup:withania somniferas;checkForceMH Boosted|TI|MM|760^18^0
-23872233|*Caenorhabditis elegans|D017173|67931|MH|RtM via: Caenorhabditis elegans;Forced Lookup:c. elegans;checkForceMH Boosted|TI|MM|264^1^1;267^7^1
-23872233|*Petunia|D032306|67052|MH|Forced Leaf Node Lookup:petunias;checkForceMH Boosted|TI|MM|648^7^0
-23872233|*Physalis|D032321|67052|MH|Forced Leaf Node Lookup:physalis;checkForceMH Boosted|TI|MM|467^8^0
-23872233|Niger|D009548|33526|MH|RtM via: Niger;Forced Leaf Node Lookup:niger|TI|MM|394^5^0
-23872233|Genetic Predisposition to Disease|D020022|104444|MH|||RC
-23872233|Polymorphism, Single Nucleotide|D020641|86206|MH|||RC
+23872233|Animals|D000818|102080|CT|Caenorhabditis elegans;CT Treecode Lookup: B01.050.500.500 (Caenorhabditis elegans)|TI|MM
+23872233|*Capsicum|D002212|67777|MH|RtM via: Capsicum annuum;Forced Leaf Node Lookup:capsicum annuum;checkForceMH Boosted|TI|MM|128^15^0
+23872233|*Hyoscyamus|D032304|67714|MH|RtM via: Hyoscyamus albus;Forced Leaf Node Lookup:hyoscyamus;checkForceMH Boosted|TI|MM|370^16^0
+23872233|*Cestrum|D032301|67660|MH|RtM via: Cestrum aurantiacum;Forced Leaf Node Lookup:cestrums;checkForceMH Boosted|TI|MM|236^19^0
+23872233|*Lycopersicon esculentum|D018551|67102|MH|RtM via: Lycopersicon esculentum;Forced Leaf Node Lookup:lycopersicon esculentum;checkForceMH Boosted|TI|MM|404^23^0
+23872233|*Withania|D032341|66205|MH|RtM via: Withania somnifera (plant);Forced Leaf Node Lookup:withania somniferas;checkForceMH Boosted|TI|MM|760^18^0
+23872233|*Caenorhabditis elegans|D017173|65293|MH|RtM via: Caenorhabditis elegans;Forced Lookup:c. elegans;checkForceMH Boosted|TI|MM|264^1^1;267^7^1
+23872233|*Petunia|D032306|64414|MH|Forced Leaf Node Lookup:petunias;checkForceMH Boosted|TI|MM|648^7^0
+23872233|*Physalis|D032321|64414|MH|Forced Leaf Node Lookup:physalis;checkForceMH Boosted|TI|MM|467^8^0
+23872233|Niger|D009548|32207|MH|RtM via: Niger;Forced Leaf Node Lookup:niger|TI|MM|394^5^0
+23872233|Genetic Predisposition to Disease|D020022|101080|MH|||RC
+23872233|Catechol O-Methyltransferase|D002394|84908|MH|||RC
 23872233|Australia|D001315|3|MH|RtM via: Australia|TI|MM|93^9^0
 23874307|Humans|D006801|243395|CT|Forced Leaf Node Lookup:humans|TI|MM;RC|590^5^0
 23874307|South Australia|D013021|49433|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|102^15^0
@@ -739,17 +738,17 @@
 23873865|New Guinea|D009512|14364|MH|RtM via: New Guinea;Forced Leaf Node Lookup:new guinea|TI|MM|60^10^0
 23873865|Chlamydomonas reinhardtii|D016825|59425|MH|||RC
 23873865|Algal Proteins|D020418|50843|MH|||RC
-23873904|granite|C007886|52229|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|426^7^0
-23873904|South Australia|D013021|26519|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|812^15^0
-23873904|Victoria|D014739|26342|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM|777^8^0;880^8^0
-23873904|New South Wales|D009517|26336|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|893^5^1;907^3^1;917^5^1;374^15^0;459^15^0;559^15^0
-23873904|Queensland|D011793|26324|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|350^10^0;446^10^0
-23873904|New Zealand|D009520|26060|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|1155^11^0
-23873904|Portugal|D011174|25634|MH|RtM via: Portugal;Forced Leaf Node Lookup:portugal|TI|MM|1222^8^0
-23873904|South Africa|D013019|25634|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|1037^12^0
-23873904|Stomach Neoplasms|D013274|54969|MH|||RC
-23873904|Neoplasm Staging|D009367|53442|MH|||RC
-23873904|*Silicon Dioxide|D012822|52228|HM|RtM via: granite|TI|MM|426^7^0
+23873904|granite|C007886|32375|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|426^7^0
+23873904|South Australia|D013021|16694|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|812^15^0
+23873904|Victoria|D014739|16517|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM|777^8^0;880^8^0
+23873904|New South Wales|D009517|16511|MH|RtM via: New South Wales;Forced Leaf Node Lookup:new south wales|TI|MM|893^5^1;907^3^1;917^5^1;374^15^0;459^15^0;559^15^0
+23873904|Queensland|D011793|16499|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|350^10^0;446^10^0
+23873904|New Zealand|D009520|16235|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|1155^11^0
+23873904|Portugal|D011174|15809|MH|RtM via: Portugal;Forced Leaf Node Lookup:portugal|TI|MM|1222^8^0
+23873904|South Africa|D013019|15809|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM|1037^12^0
+23873904|Neoplasm Staging|D009367|41826|MH|||RC
+23873904|Stomach Neoplasms|D013274|33623|MH|||RC
+23873904|*Silicon Dioxide|D012822|32374|HM|RtM via: granite|TI|MM|426^7^0
 23873904|Norfolk Island|D008542|429|ET|Entry Term Replacement for "Melanesia";RtM via: Norfolk Island|TI|MM|1171^14^0
 23875379|Humans|D006801|1000|CT|Forced Humans:D Dentists||MM
 23875379|Dentists|D003815|4396|MH|||RC
@@ -796,10 +795,10 @@
 23874021|*Headaches|D006261|2832|ET|Entry Term Replacement for "Headache";RtM via: Headache;Forced Non-Leaf Node Lookup:headaches|TI|MM|409^9^0
 23874021|*Burial|D002048|339|MH|RtM via: Burial;Forced Non-Leaf Node Lookup:burials|TI|MM|651^6^0
 23874021|Australia|D001315|0|MH|RtM via: Australia|TI|MM|726^9^0;238^9^0
-23874429|*Language|D007802|42779|MH|RtM via: Languages;Forced Leaf Node Lookup:languages|TI|MM;RC|66^8^0
-23874429|Northern Territory|D015876|26177|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|89^18^0
-23874429|Adaptation, Psychological|D000223|114082|MH|||RC
-23874429|Earthquakes|D055866|110332|MH|||RC
+23874429|*Language|D007802|42315|MH|RtM via: Languages;Forced Leaf Node Lookup:languages|TI|MM;RC|66^8^0
+23874429|Northern Territory|D015876|26124|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|89^18^0
+23874429|Adaptation, Psychological|D000223|113827|MH|||RC
+23874429|Earthquakes|D055866|110191|MH|||RC
 23874432|Western Australia|D014904|33575|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|99^17^0
 23874432|Image Enhancement|D007089|123014|MH|||RC
 23874432|Image Interpretation, Computer-Assisted|D007090|102907|MH|||RC
@@ -917,11 +916,11 @@
 23872222|Transplantation Conditioning|D019172|403075|MH|||RC
 23872222|Vidarabine|D014740|305295|MH|||RC
 23872222|Australia|D001315|0|MH|RtM via: Australia|TI|MM|151^9^0
-23872234|Humans|D006801|232216|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
-23872234|Animals|D000818|232216|CT|Hominidae;CT Treecode Lookup: B01.050.150.900.649.313.988.400.112.400 (Hominidae)||RC
-23872234|*African Americans|D001741|43476|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|427^5^0
-23872234|Neanderthals|D059125|231216|MH|||RC
-23872234|Hominidae|D015186|165792|MH|||RC
+23872234|Humans|D006801|230406|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+23872234|Animals|D000818|230406|CT|Hominidae;CT Treecode Lookup: B01.050.150.900.649.313.988.400.112.400 (Hominidae)||RC
+23872234|*African Americans|D001741|42941|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|427^5^0
+23872234|Neanderthals|D059125|229406|MH|||RC
+23872234|Hominidae|D015186|165474|MH|||RC
 23872234|Australia|D001315|2064|MH|RtM via: Australia|TI|MM|177^9^0
 23872223|Australia|D001315|17608|MH|RtM via: Australia;Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|436^9^0;198^9^0;379^10^0
 23872223|Peru|D010568|16810|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|110^4^0
@@ -1064,11 +1063,11 @@
 23874578|*Trees|D014197|60014|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM|173^4^0
 23874578|Side-Population Cells|D058985|158994|MH|||RC
 23874578|Neoplastic Stem Cells|D014411|71998|MH|||RC
-23874212|Animals|D000818|218044|CT|Drosophila melanogaster;CT Treecode Lookup: B01.050.500.131 (Drosophila melanogaster)||RC
-23874212|Western Australia|D014904|34965|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|147^17^0
-23874212|Northern Territory|D015876|34539|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|207^18^0
-23874212|Drosophila Proteins|D029721|217044|MH|||RC
-23874212|Drosophila melanogaster|D004331|189907|MH|||RC
+23874212|Animals|D000818|200163|CT|Drosophila melanogaster;CT Treecode Lookup: B01.050.500.131 (Drosophila melanogaster)||RC
+23874212|Western Australia|D014904|32721|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|147^17^0
+23874212|Northern Territory|D015876|32295|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|207^18^0
+23874212|Drosophila Proteins|D029721|199163|MH|||RC
+23874212|Drosophila melanogaster|D004331|160687|MH|||RC
 23874212|*Aizoaceae|D035722|1848|MH|RtM via: Aizoaceae;RtM via: Tetragonia cristata;RtM via: Trianthema megaspermum;RtM via: Trianthema patellitectum;Forced Non-Leaf Node Lookup:tetragonias;Forced Non-Leaf Node Lookup:trianthemas;Forced Non-Leaf Node Lookup:aizoaceae|TI|MM|46^16^0;94^19^0;166^21^0;230^23^0;53^9^0
 23874433|Australia|D001315|18130|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|67^10^0
 23874433|Optogenetics|D062308|88826|MH|||RC
@@ -1225,13 +1224,13 @@
 23874289|Western Australia|D014904|16429|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|641^17^0
 23874289|Cerebellum|D002531|50472|MH|||RC
 23874289|Psychomotor Performance|D011597|42367|MH|||RC
-23890931|Humans|D006801|455267|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
-23890931|*Indigofera|D029883|181459|MH|RtM via: Indigofera;Forced Leaf Node Lookup:indigoferas;checkForceMH Boosted|TI|MM|37^10^0
-23890931|*African Americans|D001741|95573|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|507^5^0
-23890931|Queensland|D011793|91757|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|190^10^0
-23890931|Northern Territory|D015876|91457|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|222^18^0
-23890931|Antihypertensive Agents|D000959|454267|MH|||RC
-23890931|Blood Pressure Monitoring, Ambulatory|D018660|319443|MH|||RC
+23890931|Humans|D006801|471384|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+23890931|*Indigofera|D029883|194121|MH|RtM via: Indigofera;Forced Leaf Node Lookup:indigoferas;checkForceMH Boosted|TI|MM|37^10^0
+23890931|*African Americans|D001741|101811|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|507^5^0
+23890931|Queensland|D011793|98088|MH|RtM via: Queensland;Forced Leaf Node Lookup:queensland|TI|MM|190^10^0
+23890931|Northern Territory|D015876|97788|MH|RtM via: Northern Territory;Forced Leaf Node Lookup:northern territory|TI|MM|222^18^0
+23890931|Antihypertensive Agents|D000959|470384|MH|||RC
+23890931|Blood Pressure Monitoring, Ambulatory|D018660|374622|MH|||RC
 23873837|Capsaicin|D002211|70408|MH|||RC
 23873837|TRPV Cation Channels|D050916|45608|MH|||RC
 23873837|*Habit|D006184|1284|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|215^5^0
@@ -1261,8 +1260,8 @@
 23874138|*Checklist|D057189|45836|MH|RtM via: Checklist;Forced Leaf Node Lookup:checklists|TI|MM|195^9^0
 23874138|Microbial Sensitivity Tests|D008826|206168|MH|||RC
 23874138|Drug Resistance, Multiple, Bacterial|D024901|97474|MH|||RC
-23874468|Sleep Wake Disorders|D012893|84721|MH|||RC
-23874468|Sleep|D012890|70559|MH|||RC
+23874468|Sleep Wake Disorders|D012893|84586|MH|||RC
+23874468|Sleep|D012890|70344|MH|||RC
 23874468|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|179^7^0
 23874468|Australia|D001315|432|MH|RtM via: Australia|TI|MM|36^9^0
 23874127|*Acacia|D000045|19993|MH|RtM via: Acacia;Forced Leaf Node Lookup:acacias;checkForceMH Boosted|TI|MM|38^6^0
@@ -1311,17 +1310,17 @@
 23874288|South Australia|D013021|40002|MH|RtM via: South Australia;Forced Leaf Node Lookup:south australia|TI|MM|60^15^0
 23874288|Brain Mapping|D001931|167301|MH|||RC
 23874288|Nerve Net|D009415|138524|MH|||RC
-23874510|Humans|D006801|86527|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
-23874510|Animals|D000818|86527|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM
-23874510|*Malva|D028501|68767|MH|RtM via: Malva;RtM via: Malva preissiana;Forced Leaf Node Lookup:malvas;checkForceMH Boosted|TI|MM|325^5^0;67^16^0
-23874510|*Salt-Tolerant Plants|D055051|65233|MH|RtM via: Halophytes;Forced Leaf Node Lookup:halophytes;checkForceMH Boosted|TI|MM|209^9^0
-23874510|*African Americans|D001741|37748|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|556^5^0
-23874510|*Hollyhock|D019660|33527|ET|Entry Term Replacement for "Malvaceae";RtM via: Hollyhock;RtM via: Lavatera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hollyhocks|TI|MM|98^9^0;379^8^0
-23874510|*Islands|D062312|32927|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|251^7^0
-23874510|*Lakes|D060106|32630|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lakes|TI|MM|301^5^0
-23874510|Australia|D001315|32579|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|48^10^0
-23874510|Brain|D001921|85527|MH|||RC
-23874510|White Matter|D066127|85309|MH|||RC
+23874510|Humans|D006801|86545|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
+23874510|Animals|D000818|86545|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM
+23874510|*Malva|D028501|68797|MH|RtM via: Malva;RtM via: Malva preissiana;Forced Leaf Node Lookup:malvas;checkForceMH Boosted|TI|MM|325^5^0;67^16^0
+23874510|*Salt-Tolerant Plants|D055051|65263|MH|RtM via: Halophytes;Forced Leaf Node Lookup:halophytes;checkForceMH Boosted|TI|MM|209^9^0
+23874510|*African Americans|D001741|37763|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|556^5^0
+23874510|*Hollyhock|D019660|33542|ET|Entry Term Replacement for "Malvaceae";RtM via: Hollyhock;RtM via: Lavatera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hollyhocks|TI|MM|98^9^0;379^8^0
+23874510|*Islands|D062312|32942|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|251^7^0
+23874510|*Lakes|D060106|32645|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lakes|TI|MM|301^5^0
+23874510|Australia|D001315|32594|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|48^10^0
+23874510|Brain|D001921|85545|MH|||RC
+23874510|White Matter|D066127|85318|MH|||RC
 23874510|Birds|D001717|1000|MH|Forced Non-Leaf Node Lookup:seabirds||MM|315^8^0;222^7^0
 23874588|Humans|D006801|329331|CT|Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.300.760.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.959.350.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D12.776.866.249.500 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.050.285.625 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.101.140.625 (Prostate-Specific Antigen);African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM;RC
 23874588|Male|D008297|329331|CT|Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.300.760.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D08.811.277.656.959.350.442.750 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D12.776.866.249.500 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.050.285.625 (Prostate-Specific Antigen);Prostate-Specific Antigen;CT Treecode Lookup: D23.101.140.625 (Prostate-Specific Antigen)||RC
@@ -1462,7 +1461,8 @@
 23874297|Alzheimer Disease|D000544|140111|MH|||RC
 23874297|Amyloid beta-Peptides|D016229|128239|MH|||RC
 23874297|Australia|D001315|0|MH|RtM via: Australia|TI|MM|265^9^0;208^9^0
-23874511|Animals|D000818|191087|CT|Scrapie;CT Treecode Lookup: C10.228.228.800.717 (Scrapie);Scrapie;CT Treecode Lookup: C10.574.843.850 (Scrapie);Scrapie;CT Treecode Lookup: C22 (Scrapie);Scrapie;CT Treecode Lookup: C22.836.799 (Scrapie)||RC
+23874511|Animals|D000818|191087|CT|Scrapie;CT Treecode Lookup: C10.228.228.800.717 (Scrapie);Scrapie;CT Treecode Lookup: C10.574.843.850 (Scrapie);Scrapie;CT Treecode Lookup: C22 (Scrapie);Scrapie;CT Treecode Lookup: C22.836 (Scrapie)||RC
+23874511|Sheep|D012756|191087|CT|Scrapie;CT Treecode Lookup: C22.836 (Scrapie)||MM;RC
 23874511|*Stellaria|D029752|54042|MH|RtM via: Stellaria (plant);Forced Leaf Node Lookup:stellaria;checkForceMH Boosted|TI|MM|595^9^0;48^9^0
 23874511|PrPSc Proteins|D018620|190087|MH|||RC
 23874511|Scrapie|D012608|129670|MH|||RC

@@ -79,7 +79,7 @@
 10.2307/30134303|*Simplexvirus|D018139|5604|MH|RtM via: Simplexvirus|TI|MM;RC|189^11^0
 10.2307/30134303|*Papilloma|D010212|1884|MH|RtM via: Papilloma;Forced Non-Leaf Node Lookup:papillomas|TI|MM;RC|290^2^0;205^2^0;120^9^0
 10.2307/30134303|Psittaciformes|D011563|1000|MH|Forced Non-Leaf Node Lookup:psittaciformes||MM|476^13^0
-10.2307/30135007|Animals|D000818|133514|CT|Forced Lookup:chickens;Cryptosporidiosis;CT Treecode Lookup: C22 (Cryptosporidiosis);Turkeys;CT Treecode Lookup: B01.050.150.900.248 (Turkeys);Ducks;CT Treecode Lookup: B01.050.150.900.248 (Ducks);Chickens;CT Treecode Lookup: B01.050.150.900.248 (Chickens);Coturnix;CT Treecode Lookup: B01.050.150.900.248 (Coturnix);Quail;CT Treecode Lookup: B01.050.150.900.248 (Quail);Poultry Diseases;CT Treecode Lookup: C22 (Poultry Diseases);CT Text Lookup: cryptosporidiosis|TI|MM;RC|424^8^0;114^17^0
+10.2307/30135007|Animals|D000818|133514|CT|Forced Lookup:chickens;Turkeys;CT Treecode Lookup: B01.050.150.900.248 (Turkeys);Ducks;CT Treecode Lookup: B01.050.150.900.248 (Ducks);Chickens;CT Treecode Lookup: B01.050.150.900.248 (Chickens);Coturnix;CT Treecode Lookup: B01.050.150.900.248 (Coturnix);Quail;CT Treecode Lookup: B01.050.150.900.248 (Quail);Poultry Diseases;CT Treecode Lookup: C22 (Poultry Diseases)|TI|MM;RC|424^8^0
 10.2307/30135007|*Cryptosporidiosis|D003457|132514|MH|RtM via: Cryptosporidiosis;Forced Lookup:cryptosporidium;Forced Leaf Node Lookup:cryptosporidiosis|TI|MM;RC|114^17^0;314^15^0;359^15^0
 10.2307/30135007|*Cryptosporidium|D003458|131639|MH|RtM via: Cryptosporidium baileyi;RtM via: Deprecated Cryptosporidium sp Ag [Presence] in Unspecified specimen by Immunofluorescence;Forced Lookup:cryptosporidium;checkForceMH Boosted|TI|MM;RC|359^23^0;314^15^0
 10.2307/30135007|*Turkeys|D014422|114601|MH|RtM via: Meleagridinae;RtM via: Meleagris gallopavo;RtM via: Turkey (organism);Forced Leaf Node Lookup:turkeys;checkForceMH Boosted|TI|MM;RC|437^7^0
@@ -601,7 +601,7 @@
 10.2307/27671040|*Recurrence|D012008|3975|MH|RtM via: Recurrence;RtM via: Recurrence (disease attribute);RtM via: Recurrent tumor|TI|MM|316^10^0
 10.2307/27671040|*Neoplasms|D009369|2865|MH|RtM via: Recurrent tumor|TI|MM|316^10^0
 10.2307/30136969|Cats|D002415|50317|CT|RtM via: Felis catus;Forced Leaf Node Lookup:cats;CT Text Lookup: cat|TI|MM;RC|541^4^0
-10.2307/30136969|Animals|D000818|50317|CT|RtM via: Felis catus;Ratite;CT Treecode Lookup: B01.050.150.900.248 (Ratite);Toxoplasmosis, Animal;CT Treecode Lookup: C22 (Toxoplasmosis, Animal);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: cat|TI|MM;RC|541^4^0;315^7^0
+10.2307/30136969|Animals|D000818|50317|CT|RtM via: Felis catus;Ratite;CT Treecode Lookup: B01.050.150.900.248 (Ratite);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: cat|TI|MM;RC|541^4^0;315^7^0
 10.2307/30136969|*Toxoplasma|D014122|49317|MH|RtM via: Toxoplasma gondii;Forced Leaf Node Lookup:toxoplasma gondii;checkForceMH Boosted|TI|MM;RC|162^17^0
 10.2307/30136969|*Ratite|D046108|9636|ET|Entry Term Replacement for "Palaeognathae";RtM via: Ratites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ratites|TI|MM;RC|630^7^0;572^6^0;603^7^0;496^7^0;33^7^0
 10.2307/30136969|*Anorexia|D000855|6657|MH|RtM via: Anorexia;RtM via: Loss of appetite (finding);Forced Leaf Node Lookup:anorexias|TI|MM|509^8^0;82^8^0

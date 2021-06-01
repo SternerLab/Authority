@@ -786,20 +786,20 @@
 30135163|*Bacterial Infections|D001424|6951|MH|RtM via: Bacterial Infections;Forced Non-Leaf Node Lookup:bacterial infections|TI|MM|69^20^0
 30135163|*Intravenous Administration|D061605|5976|ET|Entry Term Replacement for "Administration, Intravenous";RtM via: intravenous administration;RtM via: Intravenous;Forced Non-Leaf Node Lookup:intravenous administrations|TI|MM|1042^26^0;894^26^0;1489^13^0;1239^11^0;754^11^0;643^11^0
 30135163|*Chlamydia|D002689|2445|MH|RtM via: Chlamydia;Forced Non-Leaf Node Lookup:chlamydia|TI|MM|131^9^0
-27753660|Animals|D000818|281671|CT|Agapornis;CT Treecode Lookup: B01.050.150.900.248 (Agapornis)|TI|MM
-27753660|*Agapornis|D046710|145071|MH|RtM via: Agapornis;Forced Leaf Node Lookup:agapornis;Forced Leaf Node Lookup:lovebirds;checkForceMH Boosted|TI|MM|740^9^0;729^9^0
-27753660|*Spleen|D013154|54579|MH|RtM via: Spleen;Forced Leaf Node Lookup:spleen|TI|MM|453^6^0;371^6^0
-27753660|*Splenomegaly|D013163|52077|MH|RtM via: Splenomegaly;Forced Leaf Node Lookup:splenomegaly|TI|MM|210^12^0
-27753660|Netherlands|D009426|48294|MH|RtM via: Netherlands;Forced Leaf Node Lookup:netherlands|TI|MM|83^11^0
-27753660|Esophagogastric Junction|D004943|280671|MH|||RC
-27753660|Receptor, ErbB-2|D018719|130840|MH|||RC
+27753660|Animals|D000818|281607|CT|Agapornis;CT Treecode Lookup: B01.050.150.900.248 (Agapornis)|TI|MM
+27753660|*Agapornis|D046710|144972|MH|RtM via: Agapornis;Forced Leaf Node Lookup:agapornis;Forced Leaf Node Lookup:lovebirds;checkForceMH Boosted|TI|MM|740^9^0;729^9^0
+27753660|*Spleen|D013154|54546|MH|RtM via: Spleen;Forced Leaf Node Lookup:spleen|TI|MM|453^6^0;371^6^0
+27753660|*Splenomegaly|D013163|52020|MH|RtM via: Splenomegaly;Forced Leaf Node Lookup:splenomegaly|TI|MM|210^12^0
+27753660|Netherlands|D009426|48261|MH|RtM via: Netherlands;Forced Leaf Node Lookup:netherlands|TI|MM|83^11^0
+27753660|Esophagogastric Junction|D004943|280607|MH|||RC
+27753660|Receptor, ErbB-2|D018719|130771|MH|||RC
 27753660|*Polyomavirus|D011120|4398|MH|RtM via: Budgerigar fledgling disease polyomavirus;Forced Non-Leaf Node Lookup:polyomavirus|TI|MM|669^18^0;595^18^0;324^18^0;330^12^0;601^12^0
-27753660|*Kidneys|D007668|3951|ET|Entry Term Replacement for "Kidney";RtM via: Both kidneys;RtM via: Kidney;Forced Non-Leaf Node Lookup:kidneys|TI|MM|465^7^0;383^7^0
-27753660|*Liver|D008099|3801|MH|RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM|446^5^0;364^5^0
-27753660|*Polyomavirus Infection|D027601|2688|ET|Entry Term Replacement for "Polyomavirus Infections";RtM via: Polyomavirus Infections;Forced Non-Leaf Node Lookup:polyomavirus infection|TI|MM|675^22^0
-27753660|*Polymerase Chain Reaction|D016133|2415|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM|392^25^0
+27753660|*Kidneys|D007668|3921|ET|Entry Term Replacement for "Kidney";RtM via: Both kidneys;RtM via: Kidney;Forced Non-Leaf Node Lookup:kidneys|TI|MM|465^7^0;383^7^0
+27753660|*Liver|D008099|3792|MH|RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM|446^5^0;364^5^0
+27753660|*Polyomavirus Infection|D027601|2676|ET|Entry Term Replacement for "Polyomavirus Infections";RtM via: Polyomavirus Infections;Forced Non-Leaf Node Lookup:polyomavirus infection|TI|MM|675^22^0
+27753660|*Polymerase Chain Reaction|D016133|2391|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM|392^25^0
 27753660|*Homology, Sequence|D017385|1473|ET|Entry Term Replacement for "Sequence Homology";RtM via: Sequence Homology;Forced Non-Leaf Node Lookup:sequence homology|TI|MM|556^17^0
-27753660|*DNA|D004247|1347|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM|501^3^0
+27753660|*DNA|D004247|1338|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM|501^3^0
 27753660|*Sequence Analysis|D017421|1260|MH|RtM via: Sequence Analysis;Forced Non-Leaf Node Lookup:sequence analysis|TI|MM|510^17^0
 27753660|Inclusion Bodies, Viral|D007181|1000|MH|Forced Non-Leaf Node Lookup:viral inclusion bodies||MM|285^22^0
 27753660|Necrosis|D009336|1000|MH|Forced Non-Leaf Node Lookup:necrosis||MM|235^8^0
@@ -918,20 +918,20 @@
 30133189|Genetic Testing|D005820|78588|MH|||RC
 30133189|Genetic Carrier Screening|D006580|67534|MH|||RC
 30133189|*Sternum|D013249|447|MH|RtM via: Sternum;Forced Non-Leaf Node Lookup:sternum|TI|MM|189^7^0
-30134520|Humans|D006801|76070|CT|Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms)||RC
-30134520|Female|D005260|76070|CT|Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms)||RC
-30134520|Animals|D000818|76070|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Melopsittacus;CT Treecode Lookup: B01.050.150.900.248 (Melopsittacus);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots);CT Text Lookup: melopsittacus|TI|MM;RC|774^13^0
-30134520|Adult|D000328|76070|CT|Forced Leaf Node Lookup:adults;CT Text Lookup: adult|TI|MM;RC|137^5^0;1170^5^0;1559^5^0
-30134520|*Cockatoos|D046410|72750|MH|RtM via: Nymphicus;RtM via: Nymphicus hollandicus;Forced Leaf Node Lookup:nymphicus hollandicus;Forced Leaf Node Lookup:cockatiels;checkForceMH Boosted|TI|MM|1533^10^0;1056^10^0;672^10^0;684^21^0
-30134520|*Melopsittacus|D046408|67251|MH|RtM via: Melopsittacus undulatus;Forced Leaf Node Lookup:melopsittacus;Forced Leaf Node Lookup:budgerigars;checkForceMH Boosted|TI|MM|845^11^0;761^11^0;774^23^0;924^11^0
-30134520|*DNA, Viral|D004279|45117|MH|RtM via: DNA, Viral;Forced Leaf Node Lookup:viral dna;checkForceMH Boosted|TI|MM|389^9^0
-30134520|*Parrots|D010311|28440|MH|RtM via: Nymphicus;RtM via: Family Psittacidae (organism);checkForceMH Boosted;Forced Non-Leaf Node Lookup:parrots|TI|MM|1533^10^0;1056^10^0;672^10^0;1565^7^0;1176^7^0;726^7^0;249^7^0;76^10^0
-30134520|*Polyoma Virus|D011120|28179|ET|Entry Term Replacement for "Polyomavirus";RtM via: Polyomavirus;RtM via: Budgerigar fledgling disease polyomavirus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:polyomavirus|TI|MM|100^12^0;1208^18^0;981^18^0;36^18^0;42^12^0;987^12^0;1214^12^0
-30134520|*Prevalence|D015995|22527|MH|RtM via: High Prevalence;RtM via: Statistical Prevalence;Forced Leaf Node Lookup:prevalences|TI|MM|630^15^0;517^10^0;235^10^0;635^10^0
-30134520|*Asymptomatic Infections|D058345|22398|MH|RtM via: Asymptomatic Infections;Forced Leaf Node Lookup:inapparent infection|TI|MM|262^20^0
-30134520|*Antibodies, Viral|D000914|22263|MH|RtM via: Antibodies, Viral;checkForceMH Boosted|TI|MM|477^5^1;492^10^1
-30134520|GPI-Linked Proteins|D058851|75070|MH|||RC
-30134520|Ovarian Neoplasms|D010051|45844|MH|||RC
+30134520|Humans|D006801|75991|CT|Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms)||RC
+30134520|Female|D005260|75991|CT|Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms)||RC
+30134520|Animals|D000818|75991|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Melopsittacus;CT Treecode Lookup: B01.050.150.900.248 (Melopsittacus);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots);CT Text Lookup: melopsittacus|TI|MM;RC|774^13^0
+30134520|Adult|D000328|75991|CT|Forced Leaf Node Lookup:adults;CT Text Lookup: adult|TI|MM;RC|137^5^0;1170^5^0;1559^5^0
+30134520|*Cockatoos|D046410|72711|MH|RtM via: Nymphicus;RtM via: Nymphicus hollandicus;Forced Leaf Node Lookup:nymphicus hollandicus;Forced Leaf Node Lookup:cockatiels;checkForceMH Boosted|TI|MM|1533^10^0;1056^10^0;672^10^0;684^21^0
+30134520|*Melopsittacus|D046408|67212|MH|RtM via: Melopsittacus undulatus;Forced Leaf Node Lookup:melopsittacus;Forced Leaf Node Lookup:budgerigars;checkForceMH Boosted|TI|MM|845^11^0;761^11^0;774^23^0;924^11^0
+30134520|*DNA, Viral|D004279|45091|MH|RtM via: DNA, Viral;Forced Leaf Node Lookup:viral dna;checkForceMH Boosted|TI|MM|389^9^0
+30134520|*Parrots|D010311|28427|MH|RtM via: Nymphicus;RtM via: Family Psittacidae (organism);checkForceMH Boosted;Forced Non-Leaf Node Lookup:parrots|TI|MM|1533^10^0;1056^10^0;672^10^0;1565^7^0;1176^7^0;726^7^0;249^7^0;76^10^0
+30134520|*Polyoma Virus|D011120|28166|ET|Entry Term Replacement for "Polyomavirus";RtM via: Polyomavirus;RtM via: Budgerigar fledgling disease polyomavirus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:polyomavirus|TI|MM|100^12^0;1208^18^0;981^18^0;36^18^0;42^12^0;987^12^0;1214^12^0
+30134520|*Prevalence|D015995|22511|MH|RtM via: High Prevalence;RtM via: Statistical Prevalence;Forced Leaf Node Lookup:prevalences|TI|MM|630^15^0;517^10^0;235^10^0;635^10^0
+30134520|*Asymptomatic Infections|D058345|22385|MH|RtM via: Asymptomatic Infections;Forced Leaf Node Lookup:inapparent infection|TI|MM|262^20^0
+30134520|*Antibodies, Viral|D000914|22250|MH|RtM via: Antibodies, Viral;checkForceMH Boosted|TI|MM|477^5^1;492^10^1
+30134520|GPI-Linked Proteins|D058851|74991|MH|||RC
+30134520|Ovarian Neoplasms|D010051|45831|MH|||RC
 30134520|*Polymerase Chain Reaction|D016133|2985|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM|347^25^0
 30134520|Antibodies, Neutralizing|D057134|1000|MH|Forced Non-Leaf Node Lookup:neutralizing antibody||MM|1386^21^0
 30135180|Animals|D000818|98139|CT|Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)||MM;RC
@@ -996,14 +996,14 @@
 30130683|*Aorta|D001011|1155|MH|RtM via: Aorta;Forced Non-Leaf Node Lookup:aortas|TI|MM|766^5^0
 30130683|*Cerebellum|D002531|327|MH|RtM via: Cerebellum;Forced Non-Leaf Node Lookup:cerebellums|TI|MM|438^10^0
 30130683|Inflammation|D007249|1000|MH|Forced Non-Leaf Node Lookup:inflammations||MM|503^12^0
-40236556|Animals|D000818|25585|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)||MM;RC
-40236556|*Cockatoos|D046410|21756|MH|RtM via: Nymphicus;RtM via: Nymphicus hollandicus;Forced Leaf Node Lookup:nymphicus hollandicus;Forced Leaf Node Lookup:cockatiels;checkForceMH Boosted|TI|MM;RC|394^9^0;100^9^0;111^21^0
-40236556|*Eyelids|D005143|24585|MH|RtM via: Congenital ankyloblepharon;RtM via: Left palpebral fissure;RtM via: Eyelid structure;Forced Non-Leaf Node Lookup:eyelids|TI|MM;RC|166^13^0;317^22^0;281^7^0;172^7^0;21^6^0
-40236556|*Eyelid Diseases|D005141|9438|MH|RtM via: Deformity of eyelid|TI|MM|21^16^0
+40236556|Animals|D000818|25327|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)||MM;RC
+40236556|*Cockatoos|D046410|21723|MH|RtM via: Nymphicus;RtM via: Nymphicus hollandicus;Forced Leaf Node Lookup:nymphicus hollandicus;Forced Leaf Node Lookup:cockatiels;checkForceMH Boosted|TI|MM;RC|394^9^0;100^9^0;111^21^0
+40236556|*Eyelids|D005143|24327|MH|RtM via: Congenital ankyloblepharon;RtM via: Left palpebral fissure;RtM via: Eyelid structure;Forced Non-Leaf Node Lookup:eyelids|TI|MM;RC|166^13^0;317^22^0;281^7^0;172^7^0;21^6^0
+40236556|*Eyelid Diseases|D005141|9432|MH|RtM via: Deformity of eyelid|TI|MM|21^16^0
 40236556|*Parrots|D010311|8523|MH|RtM via: Nymphicus|TI|MM;RC|394^9^0;100^9^0
-40236556|*Corneal Disease|D003316|1863|ET|Entry Term Replacement for "Corneal Diseases";RtM via: Corneal Diseases;Forced Non-Leaf Node Lookup:corneal disease|TI|MM|452^15^0
+40236556|*Corneal Disease|D003316|1860|ET|Entry Term Replacement for "Corneal Diseases";RtM via: Corneal Diseases;Forced Non-Leaf Node Lookup:corneal disease|TI|MM|452^15^0
 40236556|*Burn|D002056|327|ET|Entry Term Replacement for "Burns";RtM via: Burn injury;Forced Non-Leaf Node Lookup:burn|TI|MM|256^4^0
-40236556|*Accident|D000059|177|ET|Entry Term Replacement for "Accidents";RtM via: Accidents;Forced Non-Leaf Node Lookup:accidents|TI|MM|261^8^0
+40236556|*Accident|D000059|174|ET|Entry Term Replacement for "Accidents";RtM via: Accidents;Forced Non-Leaf Node Lookup:accidents|TI|MM|261^8^0
 30134870|Animals|D000818|5596|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)|TI|MM
 30134870|*Birds|D001717|210|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM|258^5^0;117^5^0
 40236478|Animals|D000818|104959|CT|Amazona;CT Treecode Lookup: B01.050.150.900.248 (Amazona)||MM;RC
@@ -1848,21 +1848,21 @@
 30134475|*Central Nervous System|D002490|4479|MH|RtM via: Central Nervous System;Forced Non-Leaf Node Lookup:central nervous system|TI|MM|1108^22^0
 30134475|*Aspergillosis|D001228|3315|MH|RtM via: Aspergillosis;Forced Non-Leaf Node Lookup:aspergillosis|TI|MM|1319^13^0
 30134475|*Aspergillus|D001230|1761|MH|RtM via: Aspergillus;Forced Non-Leaf Node Lookup:aspergillus|TI|MM|938^11^0
-30135256|Animals|D000818|496557|CT|Forced Lookup:chickens;Chickens;CT Treecode Lookup: B01.050.150.900.248 (Chickens);CT Text Lookup: animal|TI|MM;RC|782^8^0;52^6^0
-30135256|*Magnesium|D008274|86660|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM|1511^9^0
-30135256|*Chlorides|D002712|78809|MH|RtM via: Chlorides;RtM via: chloride ion;Forced Leaf Node Lookup:chloride;checkForceMH Boosted|TI|MM|1304^8^0;1362^8^0
-30135256|*Chickens|D002645|78404|MH|RtM via: Chickens;Forced Lookup:chickens;Forced Leaf Node Lookup:chickens;checkForceMH Boosted|TI|MM|782^8^0
-30135256|*Ice|D007053|77096|MH|Forced Leaf Node Lookup:ice;checkForceMH Boosted|TI|MM|820^3^0
-30135256|*Creatine Phosphokinase|D003402|44257|ET|Entry Term Replacement for "Creatine Kinase";RtM via: Creatine Kinase;checkForceMH Boosted;Forced Non-Leaf Node Lookup:creatine phosphokinase|TI|MM|1478^22^0
-30135256|*Potassium|D011188|41992|MH|RtM via: potassium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:potassium|TI|MM|1226^9^0
-30135256|*Phosphorus|D010758|40702|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1526^10^0
-30135256|*Laboratories|D007753|38548|MH|Forced Leaf Node Lookup:laboratory|TI|MM|142^10^0
-30135256|*Temperature|D013696|38548|MH|Forced Leaf Node Lookup:temperatures|TI|MM|900^11^0
-30135256|Dystrophin|D016189|495557|MH|||RC
-30135256|Muscular Dystrophy, Duchenne|D020388|213338|MH|||RC
+30135256|Animals|D000818|496217|CT|Forced Lookup:chickens;Chickens;CT Treecode Lookup: B01.050.150.900.248 (Chickens);CT Text Lookup: animal|TI|MM;RC|782^8^0;52^6^0
+30135256|*Magnesium|D008274|86372|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM|1511^9^0
+30135256|*Chlorides|D002712|78554|MH|RtM via: Chlorides;RtM via: chloride ion;Forced Leaf Node Lookup:chloride;checkForceMH Boosted|TI|MM|1304^8^0;1362^8^0
+30135256|*Chickens|D002645|78158|MH|RtM via: Chickens;Forced Lookup:chickens;Forced Leaf Node Lookup:chickens;checkForceMH Boosted|TI|MM|782^8^0
+30135256|*Ice|D007053|76850|MH|Forced Leaf Node Lookup:ice;checkForceMH Boosted|TI|MM|820^3^0
+30135256|*Creatine Phosphokinase|D003402|44095|ET|Entry Term Replacement for "Creatine Kinase";RtM via: Creatine Kinase;checkForceMH Boosted;Forced Non-Leaf Node Lookup:creatine phosphokinase|TI|MM|1478^22^0
+30135256|*Potassium|D011188|41857|MH|RtM via: potassium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:potassium|TI|MM|1226^9^0
+30135256|*Phosphorus|D010758|40579|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1526^10^0
+30135256|*Laboratories|D007753|38425|MH|Forced Leaf Node Lookup:laboratory|TI|MM|142^10^0
+30135256|*Temperature|D013696|38425|MH|Forced Leaf Node Lookup:temperatures|TI|MM|900^11^0
+30135256|Dystrophin|D016189|495217|MH|||RC
+30135256|Muscular Dystrophy, Duchenne|D020388|213060|MH|||RC
 30135256|*Globulin|D005916|1869|ET|Entry Term Replacement for "Globulins";RtM via: Globulins;Forced Non-Leaf Node Lookup:globulins|TI|MM|1388^8^0;1382^14^0;1206^8^0
 30135256|*Serum Globulins|D012712|1266|MH|RtM via: Serum Globulins;Forced Non-Leaf Node Lookup:serum globulins|TI|MM|1382^14^0
-30135256|*Albumins|D000418|996|MH|RtM via: Albumins;Forced Non-Leaf Node Lookup:albumins|TI|MM|1189^7^0;1198^7^0
+30135256|*Albumins|D000418|981|MH|RtM via: Albumins;Forced Non-Leaf Node Lookup:albumins|TI|MM|1189^7^0;1198^7^0
 30135256|*Centrifugation|D002498|858|MH|RtM via: Centrifugation;Forced Non-Leaf Node Lookup:centrifugation|TI|MM|330^14^0
 30134503|Animals|D000818|74242|CT|CT Text Lookup: mammal|TI|MM;RC|81^7^0
 30134503|*Myelography|D009192|22569|MH|RtM via: Myelography;Forced Leaf Node Lookup:myelography|TI|MM|1153^11^0
@@ -2040,14 +2040,14 @@
 40793205|*Livers|D008099|675|ET|Entry Term Replacement for "Liver";RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM|1776^6^0;1537^5^0
 40793205|*Polymerase Chain Reaction|D016133|666|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM;RC|1607^25^0;389^25^0
 40793205|Dexamethasone|D003907|1000|MH|Forced Non-Leaf Node Lookup:dexamethasone||MM|1287^13^0
-30130685|Animals|D000818|238101|CT|Agapornis;CT Treecode Lookup: B01.050.150.900.248 (Agapornis);Nictitating Membrane;CT Treecode Lookup: A13.660 (Nictitating Membrane)||MM;RC
-30130685|*Lacerations|D022125|65858|MH|RtM via: Laceration;Forced Leaf Node Lookup:lacerations|TI|MM|820^11^0;589^10^0;343^11^0;280^11^0
-30130685|*Agapornis|D046710|65369|MH|RtM via: Agapornis;Forced Leaf Node Lookup:lovebirds;checkForceMH Boosted|TI|MM|214^8^0
-30130685|*Nictitating Membrane|D009541|33328|MH|RtM via: Nictitating Membrane;Forced Leaf Node Lookup:third eyelids|TI|MM|807^12^0;702^12^0;545^12^0;267^12^0;42^18^0;25^12^0;129^12^0;325^12^0;899^12^0
-30130685|Eicosapentaenoic Acid|D015118|237101|MH|||RC
+30130685|Animals|D000818|238062|CT|Agapornis;CT Treecode Lookup: B01.050.150.900.248 (Agapornis);Nictitating Membrane;CT Treecode Lookup: A13.660 (Nictitating Membrane)||MM;RC
+30130685|*Lacerations|D022125|65804|MH|RtM via: Laceration;Forced Leaf Node Lookup:lacerations|TI|MM|820^11^0;589^10^0;343^11^0;280^11^0
+30130685|*Agapornis|D046710|65315|MH|RtM via: Agapornis;Forced Leaf Node Lookup:lovebirds;checkForceMH Boosted|TI|MM|214^8^0
+30130685|*Nictitating Membrane|D009541|33301|MH|RtM via: Nictitating Membrane;Forced Leaf Node Lookup:third eyelids|TI|MM|807^12^0;702^12^0;545^12^0;267^12^0;42^18^0;25^12^0;129^12^0;325^12^0;899^12^0
+30130685|Eicosapentaenoic Acid|D015118|237062|MH|||RC
 30130685|Docosahexaenoic Acids|D004281|150107|MH|||RC
-30130685|*Corneal Disease|D003316|1863|ET|Entry Term Replacement for "Corneal Diseases";RtM via: Corneal Diseases;Forced Non-Leaf Node Lookup:corneal disease|TI|MM|749^15^0
-30130685|*Tendons|D013710|1269|MH|RtM via: Tendon of pyramidalis;Forced Non-Leaf Node Lookup:tendons|TI|MM|607^18^0;441^18^0;453^6^0;619^6^0
+30130685|*Corneal Disease|D003316|1851|ET|Entry Term Replacement for "Corneal Diseases";RtM via: Corneal Diseases;Forced Non-Leaf Node Lookup:corneal disease|TI|MM|749^15^0
+30130685|*Tendons|D013710|1260|MH|RtM via: Tendon of pyramidalis;Forced Non-Leaf Node Lookup:tendons|TI|MM|607^18^0;441^18^0;453^6^0;619^6^0
 30134875|Horses|D006736|232785|CT|RtM via: Equus caballus;Forced Leaf Node Lookup:horses|TI|MM|68^6^0
 30134875|Adult|D000328|232785|CT|Forced Leaf Node Lookup:adults; Forced Age Group: in an adult|TI|MM|184^5^0;178^11^0
 30134875|Humans|D006801|232785|CT|Forced Leaf Node Lookup:humans|TI|MM|79^6^0
@@ -2293,12 +2293,12 @@
 30135626|*Physical Examination|D010808|894|MH|RtM via: Physical Examination;Forced Non-Leaf Node Lookup:physical examinations|TI|MM|185^20^0
 30135626|*Anesthesia, General|D000768|474|MH|RtM via: General Anesthesia;Forced Non-Leaf Node Lookup:general anesthesias|TI|MM|360^18^0
 30135626|Galliformes|D046094|1000|MH|Forced Non-Leaf Node Lookup:pheasants||MM|47^8^0
-30135231|Animals|D000818|245711|CT|Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes)|TI|MM
-30135231|*Strigiformes|D020305|70844|MH|RtM via: Bubo virginianus;Forced Leaf Node Lookup:great horned owls;checkForceMH Boosted|TI|MM|51^16^0;33^16^0
-30135231|*Diaphyses|D018483|40192|MH|RtM via: Diaphyses;Forced Leaf Node Lookup:diaphyses|TI|MM|350^9^0
-30135231|*Radius|D011884|38608|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|383^6^0
-30135231|Cholera|D002771|244711|MH|||RC
-30135231|Vibrio cholerae|D014734|174194|MH|||RC
+30135231|Animals|D000818|245680|CT|Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes)|TI|MM
+30135231|*Strigiformes|D020305|70836|MH|RtM via: Bubo virginianus;Forced Leaf Node Lookup:great horned owls;checkForceMH Boosted|TI|MM|51^16^0;33^16^0
+30135231|*Diaphyses|D018483|40188|MH|RtM via: Diaphyses;Forced Leaf Node Lookup:diaphyses|TI|MM|350^9^0
+30135231|*Radius|D011884|38604|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|383^6^0
+30135231|Cholera|D002771|244680|MH|||RC
+30135231|Vibrio cholerae|D014734|174169|MH|||RC
 30135231|*Ulna|D014457|5001|MH|RtM via: Bone structure of ulna;Forced Non-Leaf Node Lookup:ulna|TI|MM|395^4^0
 30135231|*Cortical Bone|D000071538|4056|MH|RtM via: Compact bone;Forced Non-Leaf Node Lookup:cortical bone|TI|MM|475^13^0
 30135231|*Humerus|D006811|3909|MH|RtM via: Bone structure of humerus;Forced Non-Leaf Node Lookup:humerus|TI|MM|374^7^0
@@ -2306,28 +2306,28 @@
 30135231|*Xanthomatosis|D014973|2409|MH|RtM via: Xanthomatosis;Forced Non-Leaf Node Lookup:xanthomatosis|TI|MM|741^13^0;605^12^0
 30135231|Cell Proliferation|D049109|1000|MH|Forced Non-Leaf Node Lookup:proliferation||MM|230^13^0
 30135231|Cholesterol|D002784|1000|MH|Forced Non-Leaf Node Lookup:cholesterol||MM|526^11^0
-40236557|Animals|D000818|59814|CT|Spheniscidae;CT Treecode Lookup: B01.050.150.900.248 (Spheniscidae);Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)||MM;RC
-40236557|*Spheniscidae|D046429|58814|MH|RtM via: Eudyptula minor;RtM via: Spheniscidae;Forced Leaf Node Lookup:eudyptula minor;Forced Leaf Node Lookup:little penguins;Forced Leaf Node Lookup:penguins;checkForceMH Boosted|TI|MM;RC|104^15^0;1500^8^0;608^7^0;94^8^0;87^15^0
-40236557|*Selenium|D012643|24707|MH|RtM via: selenium;Forced Leaf Node Lookup:selenium;checkForceMH Boosted|TI|MM;RC|1428^8^0
-40236557|*Cadmium|D002104|24437|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;checkForceMH Boosted|TI|MM;RC|1367^7^0
-40236557|*Mercury|D008628|19939|MH|RtM via: mercury;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mercury|TI|MM;RC|1386^7^0
-40236557|*Radius|D011884|18658|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|891^6^0
-40236557|*Elbow|D004550|16507|MH|RtM via: Elbow;Forced Leaf Node Lookup:elbow|TI|MM|693^5^0
-40236557|*Metacarpal Bones|D050279|12901|MH|RtM via: Metacarpal bone;Forced Leaf Node Lookup:metacarpals|TI|MM|899^11^0
-40236557|Victoria|D014739|11884|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM;RC|176^8^0
-40236557|*Carpal Joints|D050824|11374|MH|RtM via: Structure of intercarpal joint;Forced Leaf Node Lookup:carpal joint|TI|MM|703^12^0
-40236557|*Clavicle|D002968|10807|MH|RtM via: Left clavicle;Forced Leaf Node Lookup:clavicles|TI|MM|968^13^0;973^8^0
-40236557|*Gardens|D000072506|9898|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|598^6^0
-40236557|Western Australia|D014904|9844|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|404^17^0
-40236557|*Islands|D062312|9739|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|616^7^0;168^6^0
-40236557|*Thinness|D013851|8329|MH|RtM via: Underweight;Forced Leaf Node Lookup:underweight|TI|MM|471^11^0
-40236557|*Swimming|D013550|8098|MH|Forced Leaf Node Lookup:swimming|TI|MM|365^8^0
-40236557|*Elbow Joint|D004551|19797|MH|RtM via: Elbow joint structure;RtM via: Entire elbow region|TI|MM;RC|693^5^0
+40236557|Animals|D000818|59804|CT|Spheniscidae;CT Treecode Lookup: B01.050.150.900.248 (Spheniscidae);Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)||MM;RC
+40236557|*Spheniscidae|D046429|58804|MH|RtM via: Eudyptula minor;RtM via: Spheniscidae;Forced Leaf Node Lookup:eudyptula minor;Forced Leaf Node Lookup:little penguins;Forced Leaf Node Lookup:penguins;checkForceMH Boosted|TI|MM;RC|104^15^0;1500^8^0;608^7^0;94^8^0;87^15^0
+40236557|*Selenium|D012643|24700|MH|RtM via: selenium;Forced Leaf Node Lookup:selenium;checkForceMH Boosted|TI|MM;RC|1428^8^0
+40236557|*Cadmium|D002104|24433|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;checkForceMH Boosted|TI|MM;RC|1367^7^0
+40236557|*Mercury|D008628|19937|MH|RtM via: mercury;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mercury|TI|MM;RC|1386^7^0
+40236557|*Radius|D011884|18653|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|891^6^0
+40236557|*Elbow|D004550|16505|MH|RtM via: Elbow;Forced Leaf Node Lookup:elbow|TI|MM|693^5^0
+40236557|*Metacarpal Bones|D050279|12896|MH|RtM via: Metacarpal bone;Forced Leaf Node Lookup:metacarpals|TI|MM|899^11^0
+40236557|Victoria|D014739|11882|MH|RtM via: Victoria Austrailia;Forced Leaf Node Lookup:victoria|TI|MM;RC|176^8^0
+40236557|*Carpal Joints|D050824|11372|MH|RtM via: Structure of intercarpal joint;Forced Leaf Node Lookup:carpal joint|TI|MM|703^12^0
+40236557|*Clavicle|D002968|10799|MH|RtM via: Left clavicle;Forced Leaf Node Lookup:clavicles|TI|MM|968^13^0;973^8^0
+40236557|*Gardens|D000072506|9896|MH|RtM via: Gardens;Forced Leaf Node Lookup:gardens|TI|MM|598^6^0
+40236557|Western Australia|D014904|9842|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|404^17^0
+40236557|*Islands|D062312|9734|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|616^7^0;168^6^0
+40236557|*Thinness|D013851|8312|MH|RtM via: Underweight;Forced Leaf Node Lookup:underweight|TI|MM|471^11^0
+40236557|*Swimming|D013550|8096|MH|Forced Leaf Node Lookup:swimming|TI|MM|365^8^0
+40236557|*Elbow Joint|D004551|19791|MH|RtM via: Elbow joint structure;RtM via: Entire elbow region|TI|MM;RC|693^5^0
 40236557|*Humerus|D006811|17607|MH|RtM via: Bone structure of humerus;Forced Non-Leaf Node Lookup:humerus|TI|MM;RC|844^7^0;312^7^0
 40236557|*Heavy Metals|D019216|11787|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM;RC|1320^12^0
-40236557|*Ulna|D014457|13482|MH|RtM via: Bone structure of ulna;Forced Non-Leaf Node Lookup:ulna|TI|MM|885^4^0
+40236557|*Ulna|D014457|13476|MH|RtM via: Bone structure of ulna;Forced Non-Leaf Node Lookup:ulna|TI|MM|885^4^0
 40236557|*Radiography|D011859|6696|MH|RtM via: Diagnostic radiologic examination;RtM via: Radiographic imaging procedure;Forced Non-Leaf Node Lookup:radiography|TI|MM|770^11^0;248^11^0
-40236557|*Kidney|D007668|5934|MH|RtM via: Both kidneys;RtM via: Kidney;Forced Non-Leaf Node Lookup:kidneys|TI|MM;RC|1336^6^0
+40236557|*Kidney|D007668|5928|MH|RtM via: Both kidneys;RtM via: Kidney;Forced Non-Leaf Node Lookup:kidneys|TI|MM;RC|1336^6^0
 40236557|*Liver|D008099|4482|MH|RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM;RC|1344^5^0
 40236557|*Sensation|D012677|1350|MH|RtM via: Esthesia;Forced Non-Leaf Node Lookup:sensations|TI|MM|729^9^0
 40236557|*Brain|D001921|351|MH|RtM via: Brain;Forced Non-Leaf Node Lookup:brain|TI|MM|1355^5^0
@@ -2553,15 +2553,15 @@
 41318152|*Esophagus|D004947|1062|MH|RtM via: Esophagus;Forced Non-Leaf Node Lookup:esophagus|TI|MM|68^9^0
 41318152|*Systems, Immune|D007107|777|ET|Entry Term Replacement for "Immune System";RtM via: Immune system;Forced Non-Leaf Node Lookup:immune systems|TI|MM|120^14^0
 41318152|Computers|D003201|1000|MH|Forced Non-Leaf Node Lookup:computers||MM|1510^8^0
-30136865|United States|D014481|276355|CT|National Cancer Institute (U.S.);CT Treecode Lookup: I01.409.418.750 (National Cancer Institute (U.S.));National Cancer Institute (U.S.);CT Treecode Lookup: N03.540.348.500.500 (National Cancer Institute (U.S.))||MM;RC
-30136865|Male|D008297|276355|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|35^4^0
-30136865|Animals|D000818|276355|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)|TI|MM
+30136865|United States|D014481|276361|CT|National Cancer Institute (U.S.);CT Treecode Lookup: I01.409.418.750 (National Cancer Institute (U.S.));National Cancer Institute (U.S.);CT Treecode Lookup: N03.540.348.500.500 (National Cancer Institute (U.S.))||MM;RC
+30136865|Male|D008297|276361|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|35^4^0
+30136865|Animals|D000818|276361|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)|TI|MM
 30136865|*Reactive Oxygen Species|D017382|87661|MH|RtM via: Reactive Oxygen Species;Forced Leaf Node Lookup:oxygen radicals;checkForceMH Boosted|TI|MM|302^15^0
 30136865|*Photochemotherapy|D010778|55892|MH|RtM via: Photochemotherapy;Forced Leaf Node Lookup:photodynamic therapy|TI|MM|372^20^0;252^20^0
 30136865|*Diagnostic Tests, Routine|D003955|46682|MH|RtM via: Diagnostic tests;Forced Leaf Node Lookup:diagnostic tests|TI|MM|186^16^0
-30136865|National Cancer Institute (U.S.)|D054547|215905|MH|||RC
-30136865|*Antineoplastic Agents|D000970|79920|MH|RtM via: Cytotoxic agent (product)|TI|MM;RC|292^9^0
-30136865|*Squamous Cell Carcinoma|D002294|23742|ET|Entry Term Replacement for "Carcinoma, Squamous Cell";RtM via: Squamous cell carcinoma;RtM via: Squamous cell carcinoma - category;Forced Non-Leaf Node Lookup:squamous cell carcinomas|TI|MM|215^23^0
+30136865|National Cancer Institute (U.S.)|D054547|215910|MH|||RC
+30136865|*Antineoplastic Agents|D000970|79923|MH|RtM via: Cytotoxic agent (product)|TI|MM;RC|292^9^0
+30136865|*Squamous Cell Carcinoma|D002294|23745|ET|Entry Term Replacement for "Carcinoma, Squamous Cell";RtM via: Squamous cell carcinoma;RtM via: Squamous cell carcinoma - category;Forced Non-Leaf Node Lookup:squamous cell carcinomas|TI|MM|215^23^0
 30136865|*Physical Examination|D010808|2874|MH|RtM via: Physical Examination;Forced Non-Leaf Node Lookup:physical examinations|TI|MM|485^8^0;126^20^0
 30136865|*Bird|D001717|525|ET|Entry Term Replacement for "Birds";RtM via: Aves;RtM via: Concave-casqued hornbill;Forced Non-Leaf Node Lookup:bird|TI|MM|546^4^0;56^16^0;40^14^0
 27823420|Animals|D000818|44458|CT|Amazona;CT Treecode Lookup: B01.050.150.900.248 (Amazona)||MM;RC
@@ -2889,9 +2889,9 @@
 30133172|*Arabs|D018912|35670|MH|RtM via: arab ethnic group;Forced Leaf Node Lookup:arab|TI|MM|540^4^0
 30133172|Pseudopodia|D011554|216925|MH|||RC
 30133172|Actin Cytoskeleton|D008841|145102|MH|||RC
-30133172|*Habitat|D017753|5787|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|686^7^0
+30133172|*Habitat|D017753|5784|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|686^7^0
 30133172|*Agriculture|D000383|1167|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|310^11^0
-30133172|*Biomedical Research|D035843|1137|MH|RtM via: Biomedical Research;Forced Non-Leaf Node Lookup:biomedical research|TI|MM|726^19^0
+30133172|*Biomedical Research|D035843|1128|MH|RtM via: Biomedical Research;Forced Non-Leaf Node Lookup:biomedical research|TI|MM|726^19^0
 30133172|Middle East|D008877|3|MH|RtM via: Middle East|TI|MM|615^11^0;511^11^0;161^11^0
 40236606|Animals|D000818|186811|CT|Forced Lookup:chickens;Chickens;CT Treecode Lookup: B01.050.150.900.248 (Chickens);Poultry Diseases;CT Treecode Lookup: C22 (Poultry Diseases);Influenza in Birds;CT Treecode Lookup: C22 (Influenza in Birds);Parasites;CT Treecode Lookup: B01.050.500.714 (Parasites);Poultry;CT Treecode Lookup: B01.050.050 (Poultry);Poultry;CT Treecode Lookup: B01.050.150.900.248 (Poultry);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);Animals, Wild;CT Treecode Lookup: B01.050.050 (Animals, Wild);CT Text Lookup: avian influenza;CT Text Lookup: newcastle disease;CT Text Lookup: poultry diseases|TI|MM;RC|710^8^0;1856^8^0;2175^8^0;1473^15^0;1219^17^0;1822^16^0
 40236606|*Chickens|D002645|185811|MH|RtM via: Chickens;Forced Lookup:chickens;Forced Leaf Node Lookup:chickens;checkForceMH Boosted|TI|MM;RC|2175^8^0;1856^8^0;710^8^0;125^7^0
@@ -3382,25 +3382,24 @@
 30136864|Chromatin|D002843|59859|MH|||RC
 30136864|*Cyst|D003560|2547|ET|Entry Term Replacement for "Cysts";RtM via: Cyst;Forced Non-Leaf Node Lookup:cyst|TI|MM|470^4^0;185^4^0;460^4^0
 30136864|Physical Examination|D010808|1000|MH|Forced Non-Leaf Node Lookup:physical examinations||MM|226^20^0
-40236568|Animals|D000818|4685|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM
-40236568|*Spleen|D013154|3685|MH|RtM via: Spleen;Forced Leaf Node Lookup:spleen|TI|MM|514^6^0
-40236568|*Adenovirus|D000256|2458|ET|Entry Term Replacement for "Adenoviridae";RtM via: Adenoviruses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:adenovirus|TI|MM|1091^10^0;556^10^0;605^10^0
-40236568|basic fuchsin|C025485|1703|NM|RtM via: rosaniline hydrochloride|TI|MM|336^7^0
-40236568|*Rosaniline Dyes|D012394|1702|MH|RtM via: Rosaniline Dyes;RtM via: rosaniline hydrochloride;Forced Leaf Node Lookup:magentas|TI|MM|336^7^0
-40236568|*Orange|D032084|1384|ET|Entry Term Replacement for "Citrus sinensis";RtM via: Orange (fruit);checkForceMH Boosted|TI|MM|795^6^0
-40236568|*Hepatocytes|D022781|3006|MH|RtM via: Hepatocyte;Forced Non-Leaf Node Lookup:hepatocytes|TI|MM|382^11^0;210^11^0
-40236568|*Splenic Diseases|D013158|2796|MH|RtM via: Splenitis|TI|MM|228^9^0
-40236568|*Adenovirus Infection|D000257|2613|ET|Entry Term Replacement for "Adenoviridae Infections";RtM via: Adenovirus Infections;Forced Non-Leaf Node Lookup:adenovirus infection|TI|MM|1091^10^0;923^20^0;556^10^0;29^20^0
-40236568|*Liver|D008099|2538|MH|RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM|504^5^0
-40236568|*Hepatitis|D006505|2481|MH|RtM via: Hepatitis;Forced Non-Leaf Node Lookup:hepatitis|TI|MM|163^9^0
-40236568|*DNA|D004247|1284|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM|474^3^0
-40236568|*Polymerase Chain Reaction|D016133|1086|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM|395^25^0
-40236568|*Sequence Analysis|D017421|1047|MH|RtM via: Sequence Analysis;Forced Non-Leaf Node Lookup:sequence analysis|TI|MM|522^17^0
-40236568|*Arteries|D001158|768|MH|RtM via: Arteries;Forced Non-Leaf Node Lookup:arteries|TI|MM|298^8^0
-40236568|*Necrosis|D009336|765|MH|RtM via: Necrosis;Forced Non-Leaf Node Lookup:necrosis|TI|MM|255^8^0;198^8^0
-40236568|*Homology, Sequence|D017385|315|ET|Entry Term Replacement for "Sequence Homology";RtM via: Sequence Homology;Forced Non-Leaf Node Lookup:sequence homology|TI|MM|623^17^0
-40236568|*Inclusion Bodies|D002479|261|MH|RtM via: Inclusion Bodies;Forced Non-Leaf Node Lookup:inclusion bodies|TI|MM|344^16^0
-40236568|Birds|D001717|1000|MH|Forced Non-Leaf Node Lookup:bird||MM|497^4^0
+40236568|Animals|D000818|128686|CT|Falconiformes;CT Treecode Lookup: B01.050.150.900.248 (Falconiformes)||MM;RC
+40236568|*Spleen|D013154|27908|MH|RtM via: Spleen;Forced Leaf Node Lookup:spleen|TI|MM;RC|514^6^0
+40236568|*Adenovirus|D000256|16076|ET|Entry Term Replacement for "Adenoviridae";RtM via: Adenoviruses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:adenovirus|TI|MM|1091^10^0;556^10^0;605^10^0
+40236568|basic fuchsin|C025485|11721|NM|RtM via: rosaniline hydrochloride|TI|MM|336^7^0
+40236568|*Rosaniline Dyes|D012394|11720|MH|RtM via: Rosaniline Dyes;RtM via: rosaniline hydrochloride;Forced Leaf Node Lookup:magentas|TI|MM|336^7^0
+40236568|*Orange|D032084|11246|ET|Entry Term Replacement for "Citrus sinensis";RtM via: Orange (fruit);checkForceMH Boosted|TI|MM|795^6^0
+40236568|*Falconiformes|D046093|127686|MH|RtM via: Falco deiroleucus;RtM via: Falco fasciinucha;RtM via: Falco femoralis;RtM via: Falco femoralis septentrionalis;RtM via: Falco sparverius;RtM via: Kestrel|TI|MM;RC|820^17^0;772^17^0;700^15^0;674^24^0;1136^17^0;80^16^0;98^16^0;973^7^0;1052^8^0;582^7^0;1084^6^0;916^6^0;884^7^0;598^6^0;811^7^0
+40236568|*Adenovirus Infection|D000257|42120|ET|Entry Term Replacement for "Adenoviridae Infections";RtM via: Adenovirus Infections;Forced Non-Leaf Node Lookup:adenovirus infection|TI|MM;RC|1091^10^0;923^20^0;556^10^0;29^20^0
+40236568|*Liver|D008099|17079|MH|RtM via: Liver;Forced Non-Leaf Node Lookup:livers|TI|MM;RC|504^5^0
+40236568|*Polymerase Chain Reaction|D016133|8040|MH|RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:polymerase chain reactions|TI|MM;RC|395^25^0
+40236568|*Hepatocytes|D022781|6507|MH|RtM via: Hepatocyte;Forced Non-Leaf Node Lookup:hepatocytes|TI|MM|382^11^0;210^11^0
+40236568|*Hepatitis|D006505|5175|MH|RtM via: Hepatitis;Forced Non-Leaf Node Lookup:hepatitis|TI|MM|163^9^0
+40236568|*DNA|D004247|2709|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM|474^3^0
+40236568|*Sequence Analysis|D017421|1938|MH|RtM via: Sequence Analysis;Forced Non-Leaf Node Lookup:sequence analysis|TI|MM|522^17^0
+40236568|*Necrosis|D009336|1701|MH|RtM via: Necrosis;Forced Non-Leaf Node Lookup:necrosis|TI|MM|255^8^0;198^8^0
+40236568|*Homology, Sequence|D017385|1671|ET|Entry Term Replacement for "Sequence Homology";RtM via: Sequence Homology;Forced Non-Leaf Node Lookup:sequence homology|TI|MM|623^17^0
+40236568|*Arteries|D001158|825|MH|RtM via: Arteries;Forced Non-Leaf Node Lookup:arteries|TI|MM|298^8^0
+40236568|*Inclusion Bodies|D002479|723|MH|RtM via: Inclusion Bodies;Forced Non-Leaf Node Lookup:inclusion bodies|TI|MM|344^16^0
 41826565|Female|D005260|57499|CT|Carcinoma, Ovarian Epithelial;CT Treecode Lookup: C13.351.500.056 (Carcinoma, Ovarian Epithelial);Carcinoma, Ovarian Epithelial;CT Treecode Lookup: C13.351.937.418 (Carcinoma, Ovarian Epithelial);Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms)||MM;RC
 41826565|Animals|D000818|57499|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)||MM;RC
 41826565|Humans|D006801|57499|CT|RtM via: Patients;Carcinoma, Ovarian Epithelial;CT Treecode Lookup: C13.351.500.056 (Carcinoma, Ovarian Epithelial);Carcinoma, Ovarian Epithelial;CT Treecode Lookup: C13.351.937.418 (Carcinoma, Ovarian Epithelial);Ovarian Neoplasms;CT Treecode Lookup: C13.351.500.056 (Ovarian Neoplasms);Ovarian Neoplasms;CT Treecode Lookup: C13.351.937.418 (Ovarian Neoplasms);CT Text Lookup: patient|TI|MM;RC|215^7^0
@@ -3718,14 +3717,14 @@
 30133198|*Anesthesia|D000758|2148|MH|RtM via: Anesthesia procedures;Forced Non-Leaf Node Lookup:anesthesia|TI|MM|118^10^0
 30133198|*Sulfur|D013455|1947|MH|RtM via: sulfur;Forced Non-Leaf Node Lookup:sulphur|TI|MM|279^7^0;55^7^0;179^7^0
 30133198|Anesthetics|D000777|1000|MH|Forced Non-Leaf Node Lookup:anesthetics||MM|571^10^0
-30133089|*Polymethyl Methacrylate|D019904|45110|MH|RtM via: Polymethyl Methacrylate;Forced Leaf Node Lookup:polymethyl methacrylate;checkForceMH Boosted|TI|MM|284^23^0
-30133089|*Bone Wires|D001864|26218|MH|RtM via: Kirschner Wires;Forced Leaf Node Lookup:kirschner wires|TI|MM|234^15^0
-30133089|*Weight-Bearing|D016474|23155|MH|RtM via: Weight-Bearing state;Forced Leaf Node Lookup:weight bearing|TI|MM|541^14^0
-30133089|Leucine-Rich Repeat Serine-Threonine Protein Kinase-2|D000071158|231884|MH|||RC
+30133089|*Polymethyl Methacrylate|D019904|44850|MH|RtM via: Polymethyl Methacrylate;Forced Leaf Node Lookup:polymethyl methacrylate;checkForceMH Boosted|TI|MM|284^23^0
+30133089|*Bone Wires|D001864|26088|MH|RtM via: Kirschner Wires;Forced Leaf Node Lookup:kirschner wires|TI|MM|234^15^0
+30133089|*Weight-Bearing|D016474|23025|MH|RtM via: Weight-Bearing state;Forced Leaf Node Lookup:weight bearing|TI|MM|541^14^0
+30133089|Leucine-Rich Repeat Serine-Threonine Protein Kinase-2|D000071158|231643|MH|||RC
 30133089|Dynamin III|D034286|75436|MH|||RC
 30133089|*Intertarsal Joint|D013640|8958|ET|Entry Term Replacement for "Tarsal Joints";RtM via: Intertarsal joint structure;Forced Non-Leaf Node Lookup:intertarsal joint|TI|MM|949^17^0;759^17^0
 30133089|*Arthrodesis|D001174|2979|MH|RtM via: Arthrodesis;Forced Non-Leaf Node Lookup:arthrodesis|TI|MM|930^11^0;740^11^0
-30133089|*Osteotomy|D010027|1614|MH|RtM via: Osteotomy;Forced Non-Leaf Node Lookup:osteotomy|TI|MM|789^9^0
+30133089|*Osteotomy|D010027|1599|MH|RtM via: Osteotomy;Forced Non-Leaf Node Lookup:osteotomy|TI|MM|789^9^0
 41826552|Animals|D000818|9733|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird);Hospitals, Animal;CT Treecode Lookup: N06.230.150.360.250 (Hospitals, Animal)||MM;RC
 41826552|*Thermography|D013817|7800|MH|RtM via: thermography;Forced Leaf Node Lookup:thermography|TI|MM;RC|357^12^0
 41826552|*Fluorescein Angiography|D005451|5238|MH|RtM via: Fluorescein Angiography;Forced Leaf Node Lookup:fluorescein angiography|TI|MM;RC|375^23^0
@@ -4717,22 +4716,22 @@
 30134894|*Hyperostosis|D015576|900|MH|RtM via: Hyperostosis;Forced Non-Leaf Node Lookup:hyperostosis|TI|MM|229^12^0
 30134894|*Sternum|D013249|486|MH|RtM via: Sternum;Forced Non-Leaf Node Lookup:sternum|TI|MM|275^7^0
 30134894|Cysts|D003560|1000|MH|Forced Non-Leaf Node Lookup:cyst||MM|246^4^0
-27670704|Pregnancy|D011247|72635|CT|Cesarean Section, Repeat;CT Treecode Lookup: E04.520 (Cesarean Section, Repeat);Cesarean Section, Repeat;CT Treecode Lookup: E04.520.252.500.150 (Cesarean Section, Repeat)||RC
-27670704|Female|D005260|72635|CT|Cesarean Section, Repeat;CT Treecode Lookup: E04.520 (Cesarean Section, Repeat);Cesarean Section, Repeat;CT Treecode Lookup: E04.520.252.500.150 (Cesarean Section, Repeat)||RC
-27670704|Animals|D000818|72635|CT|Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)|TI|MM
-27670704|*Vitamin A|D014801|25078|MH|Forced Leaf Node Lookup:vitamin a;checkForceMH Boosted|TI|MM|507^9^0
-27670704|*Surgical Wound|D000072836|19979|MH|RtM via: Surgical wound;Forced Leaf Node Lookup:surgical wounds|TI|MM|670^14^0
-27670704|*Biopsy, Fine-Needle|D044963|13856|MH|RtM via: Fine needle aspiration biopsy;Forced Leaf Node Lookup:fine needle aspirations|TI|MM|352^22^0
-27670704|*Mycoplasma|D009174|13115|MH|RtM via: Mycoplasma;RtM via: Mycoplasma species;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mycoplasma|TI|MM|406^18^0
+27670704|Pregnancy|D011247|85765|CT|Cesarean Section, Repeat;CT Treecode Lookup: E04.520 (Cesarean Section, Repeat);Cesarean Section, Repeat;CT Treecode Lookup: E04.520.252.500.150 (Cesarean Section, Repeat)||RC
+27670704|Female|D005260|85765|CT|Cesarean Section, Repeat;CT Treecode Lookup: E04.520 (Cesarean Section, Repeat);Cesarean Section, Repeat;CT Treecode Lookup: E04.520.252.500.150 (Cesarean Section, Repeat)||RC
+27670704|Animals|D000818|85765|CT|Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots)|TI|MM
+27670704|*Vitamin A|D014801|25942|MH|Forced Leaf Node Lookup:vitamin a;checkForceMH Boosted|TI|MM|507^9^0
+27670704|*Surgical Wound|D000072836|18800|MH|RtM via: Surgical wound;Forced Leaf Node Lookup:surgical wounds|TI|MM|670^14^0
+27670704|*Biopsy, Fine-Needle|D044963|14273|MH|RtM via: Fine needle aspiration biopsy;Forced Leaf Node Lookup:fine needle aspirations|TI|MM|352^22^0
+27670704|*Mycoplasma|D009174|13505|MH|RtM via: Mycoplasma;RtM via: Mycoplasma species;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mycoplasma|TI|MM|406^18^0
 27670704|Neoplasm Recurrence, Local|D009364|1000|MH|Recurrence-C04 (CBD)||MM
-27670704|Cesarean Section, Repeat|D017604|71635|MH|||RC
-27670704|Tissue Adhesions|D000267|44165|MH|||RC
-27670704|*Eye|D005123|4824|MH|RtM via: Left eye structure|TI|MM|298^8^0;138^8^0
+27670704|Cesarean Section, Repeat|D017604|84765|MH|||RC
+27670704|Tissue Adhesions|D000267|43998|MH|||RC
+27670704|*Eye|D005123|4503|MH|RtM via: Left eye structure|TI|MM|298^8^0;138^8^0
 27670704|*Exophthalmos|D005094|3354|MH|RtM via: Exophthalmos;Forced Non-Leaf Node Lookup:exophthalmos|TI|MM|85^12^0
-27670704|*Metaplasia|D008679|3327|MH|RtM via: Metaplasia;Forced Non-Leaf Node Lookup:metaplasia|TI|MM|426^10^0
-27670704|*Ultrasonography|D014463|1557|MH|RtM via: Ultrasonography;Forced Non-Leaf Node Lookup:ultrasonography|TI|MM|198^15^0
-27670704|*Adenoma|D000236|504|MH|RtM via: Adenoma;Forced Non-Leaf Node Lookup:adenoma|TI|MM|826^7^0;657^7^0
-27670704|*Dietary Supplements|D019587|441|MH|RtM via: Vitamin A supplement;Forced Non-Leaf Node Lookup:supplementation|TI|MM|507^25^0;517^15^0
+27670704|*Metaplasia|D008679|3288|MH|RtM via: Metaplasia;Forced Non-Leaf Node Lookup:metaplasia|TI|MM|426^10^0
+27670704|*Ultrasonography|D014463|1392|MH|RtM via: Ultrasonography;Forced Non-Leaf Node Lookup:ultrasonography|TI|MM|198^15^0
+27670704|*Adenoma|D000236|498|MH|RtM via: Adenoma;Forced Non-Leaf Node Lookup:adenoma|TI|MM|826^7^0;657^7^0
+27670704|*Dietary Supplements|D019587|435|MH|RtM via: Vitamin A supplement;Forced Non-Leaf Node Lookup:supplementation|TI|MM|507^25^0;517^15^0
 27670704|*Parrots|D010311|123|MH|RtM via: Psittacus erithacus;Forced Non-Leaf Node Lookup:parrots|TI|MM|24^19^0;45^19^0;37^6^0
 40236609|Animals|D000818|42916|CT|Eagles;CT Treecode Lookup: B01.050.150.900.248 (Eagles);Raptor;CT Treecode Lookup: B01.050.150.900.248 (Raptor);Gizzard, Avian;CT Treecode Lookup: A13.853 (Gizzard, Avian)||MM;RC
 40236609|Male|D008297|42916|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|34^4^0
@@ -5230,7 +5229,7 @@
 30133201|*Thiamine Deficiency|D013832|4869|MH|RtM via: Thiamine Deficiency;Forced Non-Leaf Node Lookup:thiamine deficiency|TI|MM|301^19^0
 30133201|*Birds|D001717|1584|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM|500^5^0
 30133201|*Brain|D001921|177|MH|RtM via: Brain;Forced Non-Leaf Node Lookup:brain|TI|MM|396^5^0
-40236523|Dogs|D004285|44129|CT|RtM via: Canis familiaris;Forced Leaf Node Lookup:dog;CT Text Lookup: dog|TI|MM|504^3^0;247^3^0
+40236523|Dogs|D004285|44129|CT|RtM via: Canis familiaris;Forced Lookup:dog food;Forced Leaf Node Lookup:dog;CT Text Lookup: dog|TI|MM|504^3^0;247^3^0
 40236523|Animals|D000818|44129|CT|RtM via: Canis familiaris;Starlings;CT Treecode Lookup: B01.050.150.900.248 (Starlings);CT Text Lookup: dog|TI|MM;RC|504^3^0;247^3^0
 40236523|*Iron, Dietary|D019266|43129|MH|RtM via: Dietary Iron;Forced Leaf Node Lookup:dietary iron;checkForceMH Boosted|TI|MM;RC|820^12^0;597^4^0;366^12^0;358^4^0
 40236523|*Iron|D007501|33308|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM;RC|597^4^0;358^4^0;21^4^0;117^4^0;139^4^0;202^4^0;224^4^0;264^4^0;285^4^0;533^4^0;656^4^0;698^4^0;797^4^0;1027^4^0;1058^4^0;1125^4^0
@@ -5240,6 +5239,7 @@
 40236523|*Tannic Acid|D013634|9752|ET|Entry Term Replacement for "Tannins";RtM via: tannic acid;checkForceMH Boosted;Forced Non-Leaf Node Lookup:tannic acid|TI|MM|920^11^0;765^11^0;185^11^0
 40236523|*Inositol|D007294|8633|MH|RtM via: inositol;checkForceMH Boosted;Forced Non-Leaf Node Lookup:inositol|TI|MM|751^8^0
 40236523|*Colorimetry|D003124|8396|MH|RtM via: Colorimetry;Forced Leaf Node Lookup:colorimetric|TI|MM|319^12^0
+40236523|*Animal Feed|D000821|7976|MH|Forced Lookup:dog food|TI|MM|247^8^0;504^8^0
 40236523|*Diet|D004032|37473|MH|RtM via: Basal Diet;RtM via: Diet;Forced Non-Leaf Node Lookup:diets|TI|MM;RC|1072^4^0;95^5^0;1032^5^0;538^4^0;802^4^0
 40236523|*Meat|D008460|10662|MH|RtM via: Meat;Forced Non-Leaf Node Lookup:meat|TI|MM;RC|493^4^0;236^4^0
 40236523|*Hemochromatosis|D006432|8877|MH|RtM via: Hemochromatosis|TI|MM|1125^20^0;656^20^0
@@ -5690,14 +5690,14 @@
 30133121|*Gram Negative Bacteria|D006090|1149|ET|Entry Term Replacement for "Gram-Negative Bacteria";RtM via: Gram Negative Bacteria;Forced Non-Leaf Node Lookup:gram-negative bacteria|TI|MM|923^22^0
 30133121|*Bacterial Diseases|D001424|636|ET|Entry Term Replacement for "Bacterial Infections";RtM via: Bacterial Infections;Forced Non-Leaf Node Lookup:bacterial diseases|TI|MM|715^18^0
 30133121|*Musculoskeletal Diseases|D009140|384|MH|RtM via: Musculoskeletal Diseases;Forced Non-Leaf Node Lookup:musculoskeletal conditions|TI|MM|580^26^0
-30134173|Animals|D000818|80235|CT|Rheiformes;CT Treecode Lookup: B01.050.150.900.248 (Rheiformes)||MM;RC
-30134173|*Rheiformes|D020311|75012|MH|RtM via: Rhea americana;RtM via: Family Rheidae;RtM via: Rhea (genus);RtM via: Rhea americana albescens;RtM via: Rheiformes;Forced Leaf Node Lookup:rhea americana;Forced Leaf Node Lookup:rheas;checkForceMH Boosted|TI|MM|122^14^0;295^5^0;115^5^0
-30134173|*Mycoplasma synoviae|D045805|53222|MH|RtM via: Mycoplasma synoviae;Forced Leaf Node Lookup:mycoplasma synoviae;checkForceMH Boosted|TI|MM|21^19^0
-30134173|*Doxycycline|D004318|48407|MH|RtM via: doxycycline;Forced Leaf Node Lookup:doxycycline;checkForceMH Boosted|TI|MM|329^11^0
-30134173|*Tylosin|D015645|46298|MH|RtM via: tylosin;Forced Leaf Node Lookup:tylosin;checkForceMH Boosted|TI|MM|345^7^0
-30134173|*Escherichia coli|D004926|25177|MH|RtM via: Escherichia coli;checkForceMH Boosted;Forced Non-Leaf Node Lookup:escherichia coli|TI|MM|189^16^0
-30134173|Nuclear Receptor Subfamily 4, Group A, Member 1|D057105|79235|MH|||RC
-30134173|Macrophages|D008264|61584|MH|||RC
+30134173|Animals|D000818|80207|CT|Rheiformes;CT Treecode Lookup: B01.050.150.900.248 (Rheiformes)||MM;RC
+30134173|*Rheiformes|D020311|74955|MH|RtM via: Rhea americana;RtM via: Family Rheidae;RtM via: Rhea (genus);RtM via: Rhea americana albescens;RtM via: Rheiformes;Forced Leaf Node Lookup:rhea americana;Forced Leaf Node Lookup:rheas;checkForceMH Boosted|TI|MM|122^14^0;295^5^0;115^5^0
+30134173|*Mycoplasma synoviae|D045805|53184|MH|RtM via: Mycoplasma synoviae;Forced Leaf Node Lookup:mycoplasma synoviae;checkForceMH Boosted|TI|MM|21^19^0
+30134173|*Doxycycline|D004318|48366|MH|RtM via: doxycycline;Forced Leaf Node Lookup:doxycycline;checkForceMH Boosted|TI|MM|329^11^0
+30134173|*Tylosin|D015645|46260|MH|RtM via: tylosin;Forced Leaf Node Lookup:tylosin;checkForceMH Boosted|TI|MM|345^7^0
+30134173|*Escherichia coli|D004926|25158|MH|RtM via: Escherichia coli;checkForceMH Boosted;Forced Non-Leaf Node Lookup:escherichia coli|TI|MM|189^16^0
+30134173|Nuclear Receptor Subfamily 4, Group A, Member 1|D057105|79207|MH|||RC
+30134173|Macrophages|D008264|61516|MH|||RC
 30133088|Animals|D000818|342663|CT|Columbidae;CT Treecode Lookup: B01.050.150.900.248 (Columbidae)||MM;RC
 30133088|*Biuret|D001737|79773|MH|RtM via: Biuret;Forced Leaf Node Lookup:biuret;checkForceMH Boosted|TI|MM|898^6^0;546^6^0;323^6^0;68^6^0
 30133088|*Columbidae|D010856|76905|MH|RtM via: Columba;RtM via: Columbidae;Forced Leaf Node Lookup:pigeons;checkForceMH Boosted|TI|MM|107^7^0
@@ -6934,14 +6934,14 @@
 41318124|*Protein|D011506|2967|ET|Entry Term Replacement for "Proteins";RtM via: Proteins|TI|MM|337^7^0;69^7^0
 41318124|*Reference Values|D012016|1959|MH|RtM via: Normal Range|TI|MM;RC|1450^19^0;153^19^0
 41318124|*Parrots|D010311|966|MH|RtM via: Psittacus erithacus;Forced Non-Leaf Node Lookup:parrots|TI|MM;RC|597^20^0;619^19^0;610^7^0
-27753692|Animals|D000818|175677|CT|Stifle;CT Treecode Lookup: A13.473 (Stifle)||MM;RC
-27753692|*Stifle|D013264|30584|MH|RtM via: Stifle joint;Forced Leaf Node Lookup:stifles|TI|MM|1084^6^0;1001^12^0;864^12^0;643^6^0;294^6^0;364^12^0
-27753692|*Fibula|D005360|30581|MH|RtM via: Fibula;Forced Leaf Node Lookup:fibulas|TI|MM|420^6^0
-27753692|Colitis, Ulcerative|D003093|174677|MH|||RC
-27753692|Crohn Disease|D003424|160712|MH|||RC
+27753692|Animals|D000818|175556|CT|Stifle;CT Treecode Lookup: A13.473 (Stifle)||MM;RC
+27753692|*Stifle|D013264|30557|MH|RtM via: Stifle joint;Forced Leaf Node Lookup:stifles|TI|MM|1084^6^0;1001^12^0;864^12^0;643^6^0;294^6^0;364^12^0
+27753692|*Fibula|D005360|30539|MH|RtM via: Fibula;Forced Leaf Node Lookup:fibulas|TI|MM|420^6^0
+27753692|Colitis, Ulcerative|D003093|174556|MH|||RC
+27753692|Crohn Disease|D003424|160497|MH|||RC
 27753692|*Capsule, Joint|D017746|3363|ET|Entry Term Replacement for "Joint Capsule";RtM via: Joint Capsule;Forced Non-Leaf Node Lookup:joint capsules|TI|MM|371^13^0
-27753692|*Ligaments|D008022|2070|MH|RtM via: Rupture of cruciate ligaments;Forced Non-Leaf Node Lookup:ligaments|TI|MM|81^26^0;350^9^0;90^8^0
-27753692|*Physical Therapy|D026741|729|ET|Entry Term Replacement for "Physical Therapy Modalities";RtM via: Physical therapy;Forced Non-Leaf Node Lookup:physical therapy|TI|MM|1026^16^0
+27753692|*Ligaments|D008022|2064|MH|RtM via: Rupture of cruciate ligaments;Forced Non-Leaf Node Lookup:ligaments|TI|MM|81^26^0;350^9^0;90^8^0
+27753692|*Physical Therapy|D026741|726|ET|Entry Term Replacement for "Physical Therapy Modalities";RtM via: Physical therapy;Forced Non-Leaf Node Lookup:physical therapy|TI|MM|1026^16^0
 27753692|*Parrots|D010311|342|MH|RtM via: Psittacus erithacus;Forced Non-Leaf Node Lookup:parrots|TI|MM|607^19^0;162^19^0;183^19^0;175^6^0;620^6^0
 40236598|Humans|D006801|2647834|CT|Forced Humans: pediatric;RtM via: Pediatric|TI|MM|121^9^0
 40236598|Animals|D000818|2647834|CT|Stifle;CT Treecode Lookup: A13.473 (Stifle);Parrots;CT Treecode Lookup: B01.050.150.900.248 (Parrots);Psittaciformes;CT Treecode Lookup: B01.050.150.900.248 (Psittaciformes)||MM;RC
@@ -7034,24 +7034,23 @@
 40236494|*Anti-Bacterial Agents|D000900|1983|MH|RtM via: Antibiotic therapy;RtM via: Antibiotics;Forced Non-Leaf Node Lookup:antibiotic therapy|TI|MM|456^18^0
 40236494|Peritonitis|D010538|1000|MH|Forced Non-Leaf Node Lookup:peritonitis||MM;RC|673^11^0
 40236494|Abdomen|D000005|1000|MH|Forced Non-Leaf Node Lookup:abdomens||MM|120^7^0
-30135625|Humans|D006801|40561|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
-30135625|Animals|D000818|40561|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Beak;CT Treecode Lookup: A13.114 (Beak)||MM
-30135625|Male|D008297|40561|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|34^4^0
+30135625|Humans|D006801|49034|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+30135625|Animals|D000818|49034|CT|Cockatoos;CT Treecode Lookup: B01.050.150.900.248 (Cockatoos);Beak;CT Treecode Lookup: A13.114 (Beak)||MM
+30135625|Male|D008297|49034|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|34^4^0
 30135625|Child|D002648|1000|CT|Forced Age Group: - A 7-year-old male||MM|19^19^0
-30135625|*Cockatoos|D046410|39561|MH|RtM via: Cacatua leadbeateri;Forced Leaf Node Lookup:cockatoos;Forced Leaf Node Lookup:cacatua;checkForceMH Boosted|TI|MM|66^19^0;39^25^0;56^8^0
-30135625|*Cryptococcus neoformans|D003455|25674|MH|Forced Leaf Node Lookup:cryptococcus neoformans;checkForceMH Boosted|TI|MM|996^23^0
-30135625|*Saccharomyces cerevisiae|D012441|25674|MH|Forced Leaf Node Lookup:yeast;checkForceMH Boosted|TI|MM|738^5^0
-30135625|*Beak|D001502|15252|MH|RtM via: Beak;Forced Leaf Node Lookup:beak|TI|MM|119^4^0
-30135625|*Mouth Breathing|D009058|14652|MH|RtM via: Mouth Breathing;Forced Leaf Node Lookup:mouth breathings|TI|MM|251^20^0;256^15^0
-30135625|*Capsules|D002214|13635|MH|RtM via: capsule (pharmacologic);Forced Leaf Node Lookup:capsules|TI|MM|802^8^0
-30135625|*Pectoralis Muscles|D010369|13335|MH|RtM via: Pectoralis Muscles;Forced Leaf Node Lookup:pectoral muscle|TI|MM|211^15^0
-30135625|*Patient Discharge|D010351|12837|MH|Forced Leaf Node Lookup:discharge|TI|MM|312^9^0
-30135625|Agammaglobulinemia|D000361|30326|MH|||RC
-30135625|Dystonia|D004421|23217|MH|||RC
-30135625|*Cryptococcus gattii|D056285|12837|MH|RtM via: Cryptococcus gattii|TI|MM|996^34^0
-30135625|*Cryptococcosis|D003453|6717|MH|RtM via: Cryptococcosis;RtM via: Infection by Cryptococcus neoformans;Forced Non-Leaf Node Lookup:cryptococcosis|TI|MM|1102^14^0;559^14^0
-30135625|*Sinuses, Nasal|D010256|6045|ET|Entry Term Replacement for "Paranasal Sinuses";RtM via: Infraorbital sinus;RtM via: Nasal sinus;Forced Non-Leaf Node Lookup:nasal sinuses|TI|MM|890^20^0;916^7^0;529^13^0
-30135625|*Tumor|D009369|2457|ET|Entry Term Replacement for "Neoplasms";RtM via: Neoplasms;RtM via: Tumor Mass;Forced Non-Leaf Node Lookup:tumor|TI|MM|124^5^0
+30135625|*Cockatoos|D046410|46128|MH|RtM via: Cacatua leadbeateri;Forced Leaf Node Lookup:cockatoos;Forced Leaf Node Lookup:cacatua;checkForceMH Boosted|TI|MM|66^19^0;39^25^0;56^8^0
+30135625|*Cryptococcus neoformans|D003455|30052|MH|Forced Leaf Node Lookup:cryptococcus neoformans;checkForceMH Boosted|TI|MM|996^23^0
+30135625|*Saccharomyces cerevisiae|D012441|30052|MH|Forced Leaf Node Lookup:yeast;checkForceMH Boosted|TI|MM|738^5^0
+30135625|*Beak|D001502|17390|MH|RtM via: Beak;Forced Leaf Node Lookup:beak|TI|MM|119^4^0
+30135625|*Mouth Breathing|D009058|16982|MH|RtM via: Mouth Breathing;Forced Leaf Node Lookup:mouth breathings|TI|MM|251^20^0;256^15^0
+30135625|*Capsules|D002214|15725|MH|RtM via: capsule (pharmacologic);Forced Leaf Node Lookup:capsules|TI|MM|802^8^0
+30135625|*Pectoralis Muscles|D010369|15512|MH|RtM via: Pectoralis Muscles;Forced Leaf Node Lookup:pectoral muscle|TI|MM|211^15^0
+30135625|*Patient Discharge|D010351|15026|MH|Forced Leaf Node Lookup:discharge|TI|MM|312^9^0
+30135625|Agammaglobulinemia|D000361|48034|MH|||RC
+30135625|Genetic Diseases, X-Linked|D040181|36800|MH|||RC
+30135625|*Cryptococcosis|D003453|6804|MH|RtM via: Cryptococcosis;RtM via: Infection by Cryptococcus neoformans;Forced Non-Leaf Node Lookup:cryptococcosis|TI|MM|1102^14^0;559^14^0
+30135625|*Sinuses, Nasal|D010256|6249|ET|Entry Term Replacement for "Paranasal Sinuses";RtM via: Infraorbital sinus;RtM via: Nasal sinus;Forced Non-Leaf Node Lookup:nasal sinuses|TI|MM|890^20^0;916^7^0;529^13^0
+30135625|*Tumor|D009369|2709|ET|Entry Term Replacement for "Neoplasms";RtM via: Neoplasms;RtM via: Tumor Mass;Forced Non-Leaf Node Lookup:tumor|TI|MM|124^5^0
 30135228|Animals|D000818|73974|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)|TI|MM
 30135228|*Rotation|D012399|15975|MH|RtM via: External rotation;RtM via: Musculoskeletal rotation;Forced Leaf Node Lookup:rotation|TI|MM|346^17^0;1219^8^0;733^8^0;218^8^0;97^8^0;355^8^0
 30135228|Bacterial Typing Techniques|D015373|72974|MH|||RC
@@ -7072,17 +7071,16 @@
 27753662|*Fund|D005376|381|ET|Entry Term Replacement for "Financial Management";RtM via: Funds;Forced Non-Leaf Node Lookup:fund|TI|MM|47^4^0
 27753662|Eating|D004435|1000|MH|Forced Non-Leaf Node Lookup:ingestion||MM|491^9^0
 27753662|California|D002140|597|MH|RtM via: California|TI|MM|261^10^0
-30135161|Animals|D000818|84397|CT|Seals, Earless;CT Treecode Lookup: B01.050.150.900.649.313.750 (Seals, Earless);Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior);Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes);Raptors;CT Treecode Lookup: B01.050.150.900.248 (Raptors);Falconiformes;CT Treecode Lookup: B01.050.150.900.248 (Falconiformes);CT Text Lookup: wing|TI|MM;RC|415^4^0
-30135161|*Strigiformes|D020305|49527|MH|RtM via: Megascops asio;Forced Leaf Node Lookup:owl;checkForceMH Boosted|TI|MM|633^19^0;654^9^0;649^3^0
-30135161|*Isoflurane|D007530|35517|MH|RtM via: isoflurane;Forced Leaf Node Lookup:isoflurane;checkForceMH Boosted|TI|MM|471^10^0
-30135161|*Neurofibromin 2|D025581|35364|MH|Forced Leaf Node Lookup:merlin;checkForceMH Boosted|TI|MM|672^6^0
-30135161|*Raptors|D020304|31569|MH|RtM via: Raptors;checkForceMH Boosted;Forced Non-Leaf Node Lookup:raptors|TI|MM|61^6^0;28^7^0
-30135161|*Elbow|D004550|25728|MH|RtM via: Elbow;Forced Leaf Node Lookup:elbow|TI|MM|818^5^0;108^5^0
-30135161|Seals, Earless|D046048|83397|MH|||RC
-30135161|Predatory Behavior|D011235|64628|MH|||RC
-30135161|*Falconiformes|D046093|26289|MH|RtM via: Falco columbarius;RtM via: Falco peregrinus|TI|MM|680^17^0;672^6^0;605^16^0;587^16^0
-30135161|*Ligament|D008022|1758|ET|Entry Term Replacement for "Ligaments";RtM via: Ligaments;Forced Non-Leaf Node Lookup:ligaments|TI|MM|865^8^0
-30135161|*Physical Therapy|D026741|771|ET|Entry Term Replacement for "Physical Therapy Modalities";RtM via: Physical therapy;Forced Non-Leaf Node Lookup:physical therapy|TI|MM|486^16^0
+30135161|Animals|D000818|81516|CT|Seals, Earless;CT Treecode Lookup: B01.050.150.900.649.313.750 (Seals, Earless);Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior);Strigiformes;CT Treecode Lookup: B01.050.150.900.248 (Strigiformes);Raptors;CT Treecode Lookup: B01.050.150.900.248 (Raptors);CT Text Lookup: wing|TI|MM;RC|415^4^0
+30135161|*Strigiformes|D020305|51782|MH|RtM via: Megascops asio;Forced Leaf Node Lookup:owl;checkForceMH Boosted|TI|MM|633^19^0;654^9^0;649^3^0
+30135161|*Isoflurane|D007530|37397|MH|RtM via: isoflurane;Forced Leaf Node Lookup:isoflurane;checkForceMH Boosted|TI|MM|471^10^0
+30135161|*Neurofibromin 2|D025581|37244|MH|Forced Leaf Node Lookup:merlin;checkForceMH Boosted|TI|MM|672^6^0
+30135161|*Raptors|D020304|33136|MH|RtM via: Raptors;checkForceMH Boosted;Forced Non-Leaf Node Lookup:raptors|TI|MM|61^6^0;28^7^0
+30135161|*Elbow|D004550|26707|MH|RtM via: Elbow;Forced Leaf Node Lookup:elbow|TI|MM|818^5^0;108^5^0
+30135161|Seals, Earless|D046048|80516|MH|||RC
+30135161|Predatory Behavior|D011235|69677|MH|||RC
+30135161|*Ligament|D008022|1761|ET|Entry Term Replacement for "Ligaments";RtM via: Ligaments;Forced Non-Leaf Node Lookup:ligaments|TI|MM|865^8^0
+30135161|*Physical Therapy|D026741|774|ET|Entry Term Replacement for "Physical Therapy Modalities";RtM via: Physical therapy;Forced Non-Leaf Node Lookup:physical therapy|TI|MM|486^16^0
 27823464|Animals|D000818|66574|CT|Charadriiformes;CT Treecode Lookup: B01.050.150.900.248 (Charadriiformes);Columbidae;CT Treecode Lookup: B01.050.150.900.248 (Columbidae);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
 27823464|Humans|D006801|66574|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM
 27823464|*Crude Oil|D010578|65574|ET|Entry Term Replacement for "Petroleum";RtM via: Petroleum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:crude oils|TI|MM;RC|520^9^0
@@ -7221,7 +7219,7 @@
 41318155|Plant Breeding|D000069600|2029|MH|Replacement of Breeding Plants Found||MM
 41318155|*Anseriformes|D046090|37587|MH|RtM via: Cygnus olor|TI|MM;RC|33^11^0;21^10^0
 41318155|*Skin|D012867|5388|MH|RtM via: Skin;RtM via: Skin, Human|TI|MM|427^10^0
-41318155|*Photosensitization|D010787|4704|ET|Entry Term Replacement for "Photosensitivity Disorders";RtM via: Photosensitivity of skin;Forced Non-Leaf Node Lookup:photosensitization|TI|MM|899^18^0
+41318155|*Photosensitization|D010787|4704|ET|Entry Term Replacement for "Photosensitivity Disorders";RtM via: Photosensitivity of skin|TI|MM|899^18^0
 41318155|*Feeding Behavior|D005247|624|MH|RtM via: Feeding behaviors;Forced Non-Leaf Node Lookup:feeding behavior|TI|MM|821^16^0
 41318155|*Eyelids|D005143|234|MH|RtM via: Eyelid structure;Forced Non-Leaf Node Lookup:eyelids|TI|MM|183^7^0
 41318155|Dermatitis|D003872|1000|MH|Forced Non-Leaf Node Lookup:dermatitis||MM|359^10^0;873^10^0

@@ -27,9 +27,9 @@
 25067853|Income|D007182|41913|MH|||RC
 25067853|Employment|D004651|31010|MH|||RC
 25067853|*Clones|D002999|132|ET|Entry Term Replacement for "Clone Cells";RtM via: Clone Cells;Forced Non-Leaf Node Lookup:clones|TI|MM|905^6^0;576^6^0
-3705029|*Dentition|D003817|4511|MH|Forced Leaf Node Lookup:dentitions|TI|MM|109^9^0
-3705029|Psychophysiologic Disorders|D011602|18353|MH|||RC
-3705029|Cross-Cultural Comparison|D003431|11221|MH|||RC
+3705029|*Dentition|D003817|4379|MH|Forced Leaf Node Lookup:dentitions|TI|MM|109^9^0
+3705029|Psychophysiologic Disorders|D011602|18246|MH|||RC
+3705029|Cross-Cultural Comparison|D003431|10550|MH|||RC
 4129809|Ohio|D009820|6790|MH|RtM via: Ohio;Forced Leaf Node Lookup:ohio|TI|MM|95^4^0
 4129809|Reflex Sympathetic Dystrophy|D012019|32718|MH|||RC
 4129809|Radiography|D011859|19878|MH|||RC
@@ -510,7 +510,7 @@
 20798578|*Social Evolution|D000083645|7405|MH|RtM via: Social Evolution;Forced New Lookup:social evolution|TI|MM|1162^16^0
 20798578|Antibody Specificity|D000918|20649|MH|||RC
 20798578|Cell Wall|D002473|12572|MH|||RC
-3706264|Animals|D000818|174850|CT|Cryptosporidiosis;CT Treecode Lookup: C22 (Cryptosporidiosis);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+3706264|Animals|D000818|174850|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3706264|Cryptosporidiosis|D003457|173850|MH|||RC
 3706264|Acquired Immunodeficiency Syndrome|D000163|37815|MH|||RC
 3706264|*Spiders|D013112|330|MH|RtM via: Amphinectidae;RtM via: Tasmarubrius|TI|MM|228^13^0;174^12^0
@@ -815,7 +815,6 @@
 23610232|*Predatory Behavior|D011235|15806|MH|RtM via: Predatory Behavior;Forced Leaf Node Lookup:predation|TI|MM|952^9^0;613^9^0
 23610232|*Food Chain|D020387|15626|MH|RtM via: Food Web;Forced Leaf Node Lookup:food webs|TI|MM|1660^9^0
 23610232|*Ecosystem|D017753|13484|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM|1505^10^0
-23610232|*Gastrointestinal Microbiome|D000069196|12194|MH|Forced Leaf Node Lookup:gut|TI|MM|803^3^0
 23610232|Japan|D007564|12194|MH|Forced Leaf Node Lookup:japanese|TI|MM|215^8^0
 23610232|Respiratory Tract Infections|D012141|37411|MH|||RC
 23610232|Ambulatory Care|D000553|26205|MH|||RC
@@ -1426,7 +1425,6 @@
 4129793|*Diastase|D000681|17063|ET|Entry Term Replacement for "Amylases";RtM via: amylase;checkForceMH Boosted;Forced Non-Leaf Node Lookup:diastase|TI|MM|410^8^0
 4129793|*Aldehydes|D000447|16451|MH|RtM via: Aldehydes;checkForceMH Boosted;Forced Non-Leaf Node Lookup:aldehydes|TI|MM|525^9^0
 4129793|*Spiders|D013112|15923|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|536^7^0;39^7^0
-4129793|*Gastrointestinal Microbiome|D000069196|15332|MH|Forced Leaf Node Lookup:gut|TI|MM|347^3^0
 4129793|Lysogeny|D008242|117565|MH|||RC
 4129793|*Rosaniline Dyes|D012394|50781|HM|RtM via: Schiff's reagent;RtM via: Fast Green|TI|MM|506^14^0;212^10^0
 4129793|*DNA|D004247|36882|MH|RtM via: DNA;Forced Non-Leaf Node Lookup:dna|TI|MM;RC|156^3^0;238^3^0
@@ -1837,12 +1835,12 @@
 3706067|*Spiders|D013112|3618|MH|RtM via: Maevia inclemens;RtM via: Family Salticidae;Forced Non-Leaf Node Lookup:spiders|TI|MM|73^16^0;57^14^0;65^6^0
 3706067|*Attention|D001288|1131|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|976^9^0;840^9^0
 23610239|Animals|D000818|478908|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
-23610239|*Spiders|D013112|93587|MH|RtM via: Eresidae;RtM via: Stegodyphus dumicola;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|423^8^0;389^20^0;380^7^0;114^6^0;58^7^0
-23610239|*Silk|D047011|91622|MH|RtM via: Silk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silk|TI|MM|561^4^0;241^4^0
-23610239|*Walking|D016138|90866|MH|RtM via: Walking (activity);Forced Leaf Node Lookup:walking|TI|MM|465^7^0
+23610239|*Spiders|D013112|93392|MH|RtM via: Eresidae;RtM via: Stegodyphus dumicola;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|423^8^0;389^20^0;380^7^0;114^6^0;58^7^0
+23610239|*Silk|D047011|91415|MH|RtM via: Silk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silk|TI|MM|561^4^0;241^4^0
+23610239|*Walking|D016138|90638|MH|RtM via: Walking (activity);Forced Leaf Node Lookup:walking|TI|MM|465^7^0
 23610239|Fumarates|D005650|477908|MH|||RC
-23610239|Antihypertensive Agents|D000959|449161|MH|||RC
-23610239|*Abdomen|D000005|2787|MH|RtM via: Abdomen;Forced Non-Leaf Node Lookup:abdomens|TI|MM|200^7^0
+23610239|Antihypertensive Agents|D000959|448865|MH|||RC
+23610239|*Abdomen|D000005|2772|MH|RtM via: Abdomen;Forced Non-Leaf Node Lookup:abdomens|TI|MM|200^7^0
 3706160|Animals|D000818|55182|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)|TI|MM
 3706160|*Soybeans|D013025|32307|MH|RtM via: Soybeans;Forced Leaf Node Lookup:soybeans;checkForceMH Boosted|TI|MM|1035^7^0;477^7^0;130^7^0
 3706160|*Seasons|D012621|17184|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|633^6^0;531^6^0
@@ -1970,14 +1968,14 @@
 25067824|Male|D008297|363287|CT|CT Text Lookup: male;CT Text Lookup: males|TI|MM;RC|248^5^0
 25067824|Animals|D000818|363287|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
 25067824|Female|D005260|363287|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|227^6^0
-25067824|*Temperature|D013696|103700|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|340^12^0;143^11^0
-25067824|*Copper|D003300|103244|MH|RtM via: copper;Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM|272^6^0
-25067824|*Laboratories|D007753|51829|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|126^10^0
-25067824|*Spiders|D013112|51772|MH|RtM via: Spiders;RtM via: Peucetia viridans;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|279^6^0;186^7^0;96^7^0;61^17^0;368^6^0
-25067824|*Body Temperature|D001831|51520|MH|Forced Leaf Node Lookup:body temperatures|TI|MM|375^17^0
-25067824|Tennessee|D013714|51520|MH|RtM via: Tennessee;Forced Leaf Node Lookup:tennessee|TI|MM|519^9^0
+25067824|*Temperature|D013696|103670|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|340^12^0;143^11^0
+25067824|*Copper|D003300|103211|MH|RtM via: copper;Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM|272^6^0
+25067824|*Laboratories|D007753|51814|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|126^10^0
+25067824|*Spiders|D013112|51757|MH|RtM via: Spiders;RtM via: Peucetia viridans;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|279^6^0;186^7^0;96^7^0;61^17^0;368^6^0
+25067824|*Body Temperature|D001831|51505|MH|Forced Leaf Node Lookup:body temperatures|TI|MM|375^17^0
+25067824|Tennessee|D013714|51505|MH|RtM via: Tennessee;Forced Leaf Node Lookup:tennessee|TI|MM|519^9^0
 25067824|Adalimumab|D000068879|362287|MH|||RC
-25067824|Infliximab|D000069285|201640|MH|||RC
+25067824|Infliximab|D000069285|201629|MH|||RC
 20617607|Turkmenistan|D014423|7418|MH|RtM via: Turkmenistan;Forced Leaf Node Lookup:turkmenistan|TI|MM|199^12^0
 20617607|Amino Acid Metabolism, Inborn Errors|D000592|30229|MH|||RC
 20617607|Renal Tubular Transport, Inborn Errors|D015499|29952|MH|||RC
@@ -2296,7 +2294,6 @@
 41804574|*mtDNA|D004272|5453|ET|Entry Term Replacement for "DNA, Mitochondrial";RtM via: DNA, Mitochondrial;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mtdna|TI|MM|645^5^0
 41804574|*Laboratories|D007753|4256|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|1119^10^0
 41804574|Russia|D012426|3938|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM;RC|173^7^0
-41804574|*Gastrointestinal Microbiome|D000069196|3761|MH|Forced Leaf Node Lookup:gut|TI|MM|331^3^0
 41804574|*Species Specificity|D013045|3633|MH|RtM via: Species Specificity|TI|MM;RC|573^16^0
 41804574|*Genetic Techniques|D005821|1989|MH|RtM via: Gene Amplification Technique;RtM via: Deoxyribonucleic Acid Measurement|TI|MM|603^7^0;1108^3^0
 41804574|*Seasons|D012621|1722|MH|RtM via: Winter|TI|MM;RC|747^6^0
@@ -2703,9 +2700,9 @@
 3706188|Leucine|D007930|36172|MH|||RC
 3706188|Nutritional Requirements|D009751|34199|MH|||RC
 25654019|Animals|D000818|82388|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)|TI|MM
-25654019|*Spiders|D013112|13870|MH|RtM via: Spiders;RtM via: Myrmarachne;RtM via: Family Salticidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|419^7^0;299^7^0;495^11^0;194^11^0;21^11^0;95^14^0;103^6^0
+25654019|*Spiders|D013112|13808|MH|RtM via: Spiders;RtM via: Myrmarachne;RtM via: Family Salticidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|419^7^0;299^7^0;495^11^0;194^11^0;21^11^0;95^14^0;103^6^0
 25654019|Periodontal Attachment Loss|D017622|81388|MH|||RC
-25654019|Periodontal Diseases|D010510|43013|MH|||RC
+25654019|Periodontal Diseases|D010510|42940|MH|||RC
 3706218|Animals|D000818|46969|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)|TI|MM
 3706218|*Seasons|D012621|9820|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasonal;Forced Leaf Node Lookup:seasons|TI|MM|388^7^0;892^8^0
 3706218|*Taiga|D066188|6134|MH|RtM via: Taiga;Forced Leaf Node Lookup:boreal forests|TI|MM|423^13^0
@@ -3419,7 +3416,6 @@
 3706005|Animals|D000818|103274|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior)||MM;RC
 3706005|*Spiders|D013112|17407|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|1217^7^0;575^7^0;180^7^0
 3706005|*Predatory Behavior|D011235|16984|MH|RtM via: Predatory Behavior;Forced Leaf Node Lookup:predation|TI|MM|1110^9^0;692^9^0;338^9^0;20^9^0
-3706005|*Gastrointestinal Microbiome|D000069196|15817|MH|Forced Leaf Node Lookup:gut|TI|MM|391^3^0;722^3^0
 3706005|*Laboratories|D007753|15817|MH|Forced Leaf Node Lookup:laboratory|TI|MM|255^10^0;428^10^0
 3706005|Monocytes|D009000|102274|MH|||RC
 3706005|Macrophages|D008264|76114|MH|||RC
@@ -4125,11 +4121,11 @@
 25067854|*Oxygen Consumption|D010101|1746|MH|RtM via: Oxygen Consumption;Forced Non-Leaf Node Lookup:oxygen consumptions|TI|MM|393^18^0;302^18^0
 25067854|*Lungs|D008168|666|ET|Entry Term Replacement for "Lung";RtM via: Lung;Forced Non-Leaf Node Lookup:lungs|TI|MM|288^5^0;160^5^0
 25067854|*Book|D001877|96|ET|Entry Term Replacement for "Books";RtM via: Books;Forced Non-Leaf Node Lookup:book|TI|MM|283^4^0;155^4^0
-3706223|Humans|D006801|92822|CT|African Continental Ancestry Group;CT Treecode Lookup: M01.686 (African Continental Ancestry Group)||RC
-3706223|Animals|D000818|92822|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: animal|TI|MM;RC|76^6^0
-3706223|*Spiders|D013112|23830|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|971^7^0;916^6^0;846^7^0;486^6^0;100^6^0
-3706223|Vitamin D|D014807|91822|MH|||RC
-3706223|African Continental Ancestry Group|D044383|52617|MH|||RC
+3706223|Humans|D006801|92591|CT|African Continental Ancestry Group;CT Treecode Lookup: M01.686 (African Continental Ancestry Group)||RC
+3706223|Animals|D000818|92591|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: animal|TI|MM;RC|76^6^0
+3706223|*Spiders|D013112|23619|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|971^7^0;916^6^0;846^7^0;486^6^0;100^6^0
+3706223|Vitamin D|D014807|91591|MH|||RC
+3706223|African Continental Ancestry Group|D044383|50247|MH|||RC
 3706223|*Artemisia|D019306|2085|MH|RtM via: Artemisia spinescens;RtM via: Artemisia tridentata;Forced Non-Leaf Node Lookup:sagebrushs|TI|MM|630^13^0;634^9^0
 3706223|*Habitat|D017753|1554|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|662^7^0
 3706223|Analysis of Variance|D000704|1000|MH|Forced Non-Leaf Node Lookup:anova||MM|738^5^0
@@ -4349,7 +4345,7 @@
 3706283|*Reproductive Periods|D012098|3537|ET|Entry Term Replacement for "Reproduction";RtM via: Reproductive Period;RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproductive periods|TI|MM|1207^20^0;1334^10^0
 3706283|*Life Cycle|D008018|2847|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|1056^10^0
 3705420|Male|D008297|422512|CT|CT Text Lookup: male;CT Text Lookup: males|TI|MM;RC|1172^5^0;1222^5^0
-3705420|Animals|D000818|422512|CT|Babesiosis;CT Treecode Lookup: C22 (Babesiosis);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: fish|TI|MM;RC|104^4^0
+3705420|Animals|D000818|422512|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: fish|TI|MM;RC|104^4^0
 3705420|Female|D005260|422512|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|1093^6^0;1156^6^0;1201^6^0
 3705420|*Spiders|D013112|43813|MH|RtM via: Dolomedes triton;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|56^16^0;1244^7^0;982^6^0;848^6^0;598^6^0;678^7^0;498^7^0;419^6^0;224^7^0;562^7^0;1332^7^0;440^6^0;1048^6^0
 3705420|*Wetlands|D053833|41617|MH|RtM via: Wetlands;Forced Leaf Node Lookup:wetlands|TI|MM|1265^8^0
@@ -4680,7 +4676,7 @@
 3704940|Duodenal Ulcer|D004381|178785|MH|||RC
 3704940|Stomach Ulcer|D013276|122786|MH|||RC
 3704940|North America|D009656|0|MH|RtM via: North America|TI|MM|260^13^0
-3705159|Animals|D000818|442105|CT|Toxoplasmosis, Animal;CT Treecode Lookup: C22 (Toxoplasmosis, Animal);Ants;CT Treecode Lookup: B01.050.500.131 (Ants);Aphids;CT Treecode Lookup: B01.050.500.131 (Aphids);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+3705159|Animals|D000818|442105|CT|Ants;CT Treecode Lookup: B01.050.500.131 (Ants);Aphids;CT Treecode Lookup: B01.050.500.131 (Aphids);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3705159|*Ants|D001000|98600|MH|RtM via: Ants;Forced Leaf Node Lookup:ants;checkForceMH Boosted|TI|MM|124^4^0
 3705159|*Aphids|D001042|98351|MH|RtM via: Aphids;Forced Leaf Node Lookup:aphids;checkForceMH Boosted|TI|MM|116^6^0
 3705159|*Spiders|D013112|49480|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|193^7^0;178^7^0
@@ -5191,6 +5187,7 @@
 4489050|*Seasons|D012621|1893|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|652^6^0;702^6^0
 4489050|Mexico|D008800|1635|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|130^6^0
 4489050|Nursing Service, Hospital|D009738|10022|MH|||RC
+4489050|Nursing|D009729|4839|MH|||RC
 4489050|*Confusion|D003221|1632|MH|RtM via: Clouded consciousness;RtM via: Confusion|TI|MM|346^8^0
 4489050|*Spiders|D013112|756|MH|RtM via: Cupiennius getazi;RtM via: Cupiennius salei;RtM via: Phoneutria fera|TI|MM|415^17^0;570^16^0;360^15^0;36^10^0
 4489050|*Forest|D065928|720|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|630^6^0
@@ -5780,7 +5777,8 @@
 25067884|Learning Disabilities|D007859|16879|MH|||RC
 3706092|Infant, Newborn|D007231|102542|CT|Infant, Premature;CT Treecode Lookup: M01.060.703.520 (Infant, Premature);Infant, Premature, Diseases;CT Treecode Lookup: C16.614.521 (Infant, Premature, Diseases)||RC
 3706092|Humans|D006801|102542|CT|Infant, Premature;CT Treecode Lookup: M01.060 (Infant, Premature);Infant, Premature;CT Treecode Lookup: M01.060.703.520 (Infant, Premature);Infant, Premature, Diseases;CT Treecode Lookup: C16.614.521 (Infant, Premature, Diseases)||RC
-3706092|Animals|D000818|102542|CT|Scrapie;CT Treecode Lookup: C10.228.228.800.717 (Scrapie);Scrapie;CT Treecode Lookup: C10.574.843.850 (Scrapie);Scrapie;CT Treecode Lookup: C22 (Scrapie);Scrapie;CT Treecode Lookup: C22.836.799 (Scrapie)||MM
+3706092|Sheep|D012756|102542|CT|Scrapie;CT Treecode Lookup: C22.836 (Scrapie)||MM
+3706092|Animals|D000818|102542|CT|Scrapie;CT Treecode Lookup: C10.228.228.800.717 (Scrapie);Scrapie;CT Treecode Lookup: C10.574.843.850 (Scrapie);Scrapie;CT Treecode Lookup: C22 (Scrapie);Scrapie;CT Treecode Lookup: C22.836 (Scrapie)||MM
 3706092|*Seasons|D012621|38961|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|582^6^0;513^6^0;396^7^0
 3706092|*Opuntia|D029747|38469|MH|RtM via: Opuntia;Forced Leaf Node Lookup:opuntia;checkForceMH Boosted|TI|MM|1261^7^0;624^7^0
 3706092|*Sand|D000080463|38286|MH|Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|101^4^0
@@ -6162,17 +6160,17 @@
 3705736|Balneology|D001452|72373|MH|||RC
 3705736|*Spiders|D013112|1230|MH|RtM via: Genus Atrax;RtM via: Hololena adnexa;RtM via: Agelenopsis;Forced Non-Leaf Node Lookup:spiders|TI|MM|75^17^0;94^15^0;195^11^0;86^6^0
 3705736|*Sperm|D013094|75|ET|Entry Term Replacement for "Spermatozoa";RtM via: sperm cell;Forced Non-Leaf Node Lookup:sperm|TI|MM|613^5^0
-25654016|Male|D008297|131743|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|412^4^0;679^4^0
-25654016|Female|D005260|131743|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: her;CT Text Lookup: she;Forced Non-Leaf Node Lookup:females|TI|MM;RC|742^6^0;808^3^0;770^3^0
-25654016|Animals|D000818|131743|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Insects;CT Treecode Lookup: B01.050.500.131 (Insects)|TI|MM
+25654016|Male|D008297|138340|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|412^4^0;679^4^0
+25654016|Female|D005260|138340|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: her;CT Text Lookup: she;Forced Non-Leaf Node Lookup:females|TI|MM;RC|742^6^0;808^3^0;770^3^0
+25654016|Animals|D000818|138340|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Insects;CT Treecode Lookup: B01.050.500.131 (Insects)|TI|MM
 25654016|Humans|D006801|1000|CT|Forced Humans:D Students, Medical||MM
-25654016|*Gift Giving|D037921|33018|MH|RtM via: Gifts;Forced Leaf Node Lookup:gifts|TI|MM|74^5^0
-25654016|*Spiders|D013112|29226|MH|RtM via: Family Araneidae;RtM via: Family Theridiidae;RtM via: Spiders;RtM via: Argyrodes;RtM via: Argyrodes elevatus;RtM via: Metepeira incrassata;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|663^9^0;493^11^0;958^6^0;654^7^0;484^7^0;440^6^0;184^7^0;896^9^0;447^18^0;604^20^0
-25654016|*Theft|D013800|27612|MH|RtM via: Theft;Forced Leaf Node Lookup:stealings|TI|MM|519^8^0
-25654016|Mexico|D008800|24264|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|314^6^0
-25654016|Education, Medical, Undergraduate|D004504|130743|MH|||RC
-25654016|Students, Medical|D013337|91304|MH|||RC
-25654016|*Insects|D007313|963|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|136^7^0
+25654016|*Gift Giving|D037921|34383|MH|RtM via: Gifts;Forced Leaf Node Lookup:gifts|TI|MM|74^5^0
+25654016|*Spiders|D013112|30432|MH|RtM via: Family Araneidae;RtM via: Family Theridiidae;RtM via: Spiders;RtM via: Argyrodes;RtM via: Argyrodes elevatus;RtM via: Metepeira incrassata;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|663^9^0;493^11^0;958^6^0;654^7^0;484^7^0;440^6^0;184^7^0;896^9^0;447^18^0;604^20^0
+25654016|*Theft|D013800|28836|MH|RtM via: Theft;Forced Leaf Node Lookup:stealings|TI|MM|519^8^0
+25654016|Mexico|D008800|25422|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|314^6^0
+25654016|Education, Medical, Undergraduate|D004504|137340|MH|||RC
+25654016|Students, Medical|D013337|95829|MH|||RC
+25654016|*Insects|D007313|969|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|136^7^0
 4129805|Animals|D000818|18900|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 4129805|*Spiders|D013112|7536|MH|RtM via: Spiders;RtM via: Achaearanea;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|1465^6^0;1412^6^0;1248^6^0;1123^6^0;899^6^0;757^6^0;511^7^0;294^6^0;54^6^0;61^11^0;1055^6^0;1521^6^0
 4129805|*Surgical Mesh|D013526|5430|MH|Forced Leaf Node Lookup:mesh|TI|MM|572^4^0;1552^4^0
@@ -6818,8 +6816,8 @@
 41804577|*Arachnida|D001097|29598|MH|RtM via: Cyphophthalmi;RtM via: Austropurcellia;RtM via: Opiliones|TI|MM;RC|21^13^0;537^15^0;331^15^0;145^15^0;97^9^0
 41804577|*Forests|D065928|5139|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|845^6^0;265^7^0
 41804577|Australia|D001315|1074|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM|288^9^0
-3705801|Sheep|D012756|338002|CT|Ecthyma, Contagious;CT Treecode Lookup: C01.925.256.743.193 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22.836.259 (Ecthyma, Contagious)||MM;RC
-3705801|Animals|D000818|338002|CT|Ecthyma, Contagious;CT Treecode Lookup: C01.925.256.743.193 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22.836.259 (Ecthyma, Contagious);Holometabola;CT Treecode Lookup: B01.050.500.131 (Holometabola)||MM;RC
+3705801|Sheep|D012756|338002|CT|Ecthyma, Contagious;CT Treecode Lookup: C01.925.256.743.193 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22.836 (Ecthyma, Contagious)||MM;RC
+3705801|Animals|D000818|338002|CT|Ecthyma, Contagious;CT Treecode Lookup: C01.925.256.743.193 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22 (Ecthyma, Contagious);Ecthyma, Contagious;CT Treecode Lookup: C22.836 (Ecthyma, Contagious);Holometabola;CT Treecode Lookup: B01.050.500.131 (Holometabola)||MM;RC
 3705801|Ecthyma, Contagious|D004474|337002|MH|||RC
 3705801|Orf virus|D009923|280974|MH|||RC
 3705801|*Holometabola|D000074748|3135|MH|RtM via: Brachycentrus|TI|MM|777^13^0;136^13^0
@@ -7101,11 +7099,11 @@
 4489052|Hospitals, Psychiatric|D006778|20787|MH|||RC
 4489052|Psychiatric Nursing|D011568|9672|MH|||RC
 4489052|*Salts|D012492|5451|HM|RtM via: brine|TI|MM|624^5^0;592^5^0
-25434300|Animals|D000818|294977|CT|Mite;CT Treecode Lookup: B01.050.500.131 (Mite)||MM;RC
-25434300|*Mite|D008925|59525|ET|Entry Term Replacement for "Mites";RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mite|TI|MM|66^4^0
-25434300|*Microvilli|D008871|56213|MH|RtM via: Microvilli;Forced Leaf Node Lookup:microvilli|TI|MM|859^10^0;765^10^0
-25434300|Lakes|D060106|293977|MH|||RC
-25434300|Geologic Sediments|D019015|288503|MH|||RC
+25434300|Animals|D000818|294773|CT|Mite;CT Treecode Lookup: B01.050.500.131 (Mite)||MM;RC
+25434300|*Mite|D008925|59498|ET|Entry Term Replacement for "Mites";RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mite|TI|MM|66^4^0
+25434300|*Microvilli|D008871|56186|MH|RtM via: Microvilli;Forced Leaf Node Lookup:microvilli|TI|MM|859^10^0;765^10^0
+25434300|Lakes|D060106|293773|MH|||RC
+25434300|Geologic Sediments|D019015|288362|MH|||RC
 25434300|*Retina|D012160|2415|MH|RtM via: Retina;Forced Non-Leaf Node Lookup:retina|TI|MM|1133^6^0;949^6^0;328^6^0;316^6^0;160^6^0
 25434300|*Glial Cells|D009457|2364|ET|Entry Term Replacement for "Neuroglia";RtM via: Neuroglia;Forced Non-Leaf Node Lookup:glial cells|TI|MM|487^11^0;370^11^0
 25434300|*Nerve, Optic|D009900|2223|ET|Entry Term Replacement for "Optic Nerve";RtM via: Optic Nerve;Forced Non-Leaf Node Lookup:optic nerves|TI|MM|387^11^0
@@ -7576,11 +7574,11 @@
 3705822|*Bacteria|D001419|978|MH|RtM via: Bacteria;Forced Non-Leaf Node Lookup:bacteria|TI|MM|157^8^0
 3705156|Erythrocyte Aging|D004905|73081|MH|||RC
 3705156|Lutheran Blood-Group System|D008188|61909|MH|||RC
-25067886|Male|D008297|163550|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|30^4^0
+25067886|Male|D008297|163345|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|30^4^0
 25067886|Humans|D006801|1000|CT|Forced Humans:D Caregivers||MM
-25067886|Mexico|D008800|29276|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|48^6^0
-25067886|Caregivers|D017028|162550|MH|||RC
-25067886|Dementia|D003704|130556|MH|||RC
+25067886|Mexico|D008800|29132|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|48^6^0
+25067886|Caregivers|D017028|162345|MH|||RC
+25067886|Dementia|D003704|130473|MH|||RC
 3706262|Animals|D000818|57891|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3706262|*Spiders|D013112|21047|MH|RtM via: Spiders;RtM via: Family Lycosidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|1154^7^0;784^7^0;728^7^0;680^6^0;255^6^0;105^7^0;1078^9^0;948^9^0
 3706262|Finland|D005387|20813|MH|RtM via: Finland;Forced Leaf Node Lookup:finland|TI|MM|437^7^0
@@ -7648,13 +7646,13 @@
 25654023|*Spider|D013112|23311|ET|Entry Term Replacement for "Spiders";RtM via: Homoeomma uruguayense;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|108^21^0;101^6^0
 25654023|Tooth Apex|D019227|211749|MH|||RC
 25654023|Odontometry|D009811|200140|MH|||RC
-25654005|Animals|D000818|423372|CT|Arachnid;CT Treecode Lookup: B01.050.500.131 (Arachnid);Animal Shells;CT Treecode Lookup: A13.080 (Animal Shells)|TI|MM
-25654005|West Virginia|D014903|49596|MH|RtM via: Fayette County, WV;RtM via: West Virginia;Forced Leaf Node Lookup:west virginia|TI|MM|131^14^0;147^13^0
-25654005|*Arachnid|D001097|46260|ET|Entry Term Replacement for "Arachnida";RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|241^8^0
-25654005|*Animal Shells|D060105|46032|MH|RtM via: Animal Shells;Forced Leaf Node Lookup:carapaces|TI|MM|601^8^0
-25654005|Poland|D011044|45945|MH|RtM via: Country of Poland;Forced Leaf Node Lookup:poland|TI|MM|872^6^0
-25654005|Arteriovenous Shunt, Surgical|D001166|422372|MH|||RC
-25654005|Renal Dialysis|D006435|178538|MH|||RC
+25654005|Animals|D000818|423323|CT|Arachnid;CT Treecode Lookup: B01.050.500.131 (Arachnid);Animal Shells;CT Treecode Lookup: A13.080 (Animal Shells)|TI|MM
+25654005|West Virginia|D014903|49582|MH|RtM via: Fayette County, WV;RtM via: West Virginia;Forced Leaf Node Lookup:west virginia|TI|MM|131^14^0;147^13^0
+25654005|*Arachnid|D001097|46246|ET|Entry Term Replacement for "Arachnida";RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|241^8^0
+25654005|*Animal Shells|D060105|46018|MH|RtM via: Animal Shells;Forced Leaf Node Lookup:carapaces|TI|MM|601^8^0
+25654005|Poland|D011044|45931|MH|RtM via: Country of Poland;Forced Leaf Node Lookup:poland|TI|MM|872^6^0
+25654005|Arteriovenous Shunt, Surgical|D001166|422323|MH|||RC
+25654005|Renal Dialysis|D006435|178470|MH|||RC
 3705407|Dogs|D004285|67513|CT|Hip Dysplasia, Canine;CT Treecode Lookup: C22.268 (Hip Dysplasia, Canine)||RC
 3705407|Animals|D000818|67513|CT|Hip Dysplasia, Canine;CT Treecode Lookup: C22 (Hip Dysplasia, Canine);Hip Dysplasia, Canine;CT Treecode Lookup: C22.268 (Hip Dysplasia, Canine);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3705407|*Sand|D000080463|9033|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|430^4^0;335^4^0;91^4^0
@@ -7980,20 +7978,19 @@
 23610279|*Sperm|D013094|12090|ET|Entry Term Replacement for "Spermatozoa";RtM via: sperm cell;Forced Non-Leaf Node Lookup:sperm|TI|MM;RC|1122^5^0;744^5^0;480^5^0;204^5^0;40^5^0;131^5^0;299^5^0;506^5^0;545^5^0;772^5^0;1186^5^0;1228^5^0
 3705787|Fibula|D005360|171837|MH|||RC
 3705787|Giant Cell Tumors|D005870|142000|MH|||RC
-3706072|Animals|D000818|53077|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: horns|TI|MM;RC|1199^5^0
-3706072|Male|D008297|53077|CT|Forced Lookup:male;Spermatogonia;CT Treecode Lookup: A05.360.490.890 (Spermatogonia);Spermatogonia;CT Treecode Lookup: A11.497.760 (Spermatogonia);CT Text Lookup: male;CT Text Lookup: males;Forced Non-Leaf Node Lookup:males|TI|MM;RC|610^4^0;681^4^0;1310^4^0;1499^5^0
-3706072|Female|D005260|53077|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: female genitalia;CT Text Lookup: females;CT Text Lookup: her;Forced Non-Leaf Node Lookup:females|TI|MM;RC|582^6^0;809^6^0;890^6^0;1053^6^0;1177^6^0;1231^6^0;1412^6^0;1793^6^0;938^3^0
-3706072|*Courtship|D003380|9022|MH|RtM via: Courtship;Forced Leaf Node Lookup:courtships|TI|MM|1470^9^0;1335^9^0;774^9^0;397^9^0;123^9^0
-3706072|*Spermatogonia|D013093|8611|MH|RtM via: Spermatogonia;Forced Leaf Node Lookup:spermatophores|TI|MM|1775^13^0;1121^13^0;1024^13^0
-3706072|*Vibration|D014732|8467|MH|RtM via: Vibration - physical agent;Forced Leaf Node Lookup:vibrations|TI|MM|1584^10^0
-3706072|*Rest|D012146|8428|MH|RtM via: Rest;Forced Leaf Node Lookup:rests|TI|MM|1184^5^0
-3706072|*Spiders|D013112|8188|MH|RtM via: Spiders;checkForceMH Boosted|TI|MM|1727^7^0;167^6^0
-3706072|Colorado|D003120|7033|MH|RtM via: Colorado;Forced Leaf Node Lookup:colorado|TI|MM|2243^8^0;368^8^0
-3706072|Muscle, Smooth|D009130|52077|MH|||RC
-3706072|Muscle Contraction|D009119|23460|MH|||RC
-3706072|*Reproduction|D012098|9153|MH|RtM via: mating;RtM via: conjugation with cellular fusion;RtM via: parasexual conjugation with cellular fusion|TI|MM|1550^4^0;473^6^0
+3706072|Animals|D000818|55584|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);CT Text Lookup: horns|TI|MM;RC|1199^5^0
+3706072|Male|D008297|55584|CT|Forced Lookup:male;Spermatogonia;CT Treecode Lookup: A05.360.490.890 (Spermatogonia);Spermatogonia;CT Treecode Lookup: A11.497.760 (Spermatogonia);CT Text Lookup: male;CT Text Lookup: males;Forced Non-Leaf Node Lookup:males|TI|MM;RC|610^4^0;681^4^0;1310^4^0;1499^5^0
+3706072|Female|D005260|55584|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: female genitalia;CT Text Lookup: females;CT Text Lookup: her;Forced Non-Leaf Node Lookup:females|TI|MM;RC|582^6^0;809^6^0;890^6^0;1053^6^0;1177^6^0;1231^6^0;1412^6^0;1793^6^0;938^3^0
+3706072|*Courtship|D003380|9880|MH|RtM via: Courtship;Forced Leaf Node Lookup:courtships|TI|MM|1470^9^0;1335^9^0;774^9^0;397^9^0;123^9^0
+3706072|*Spermatogonia|D013093|9484|MH|RtM via: Spermatogonia;Forced Leaf Node Lookup:spermatophores|TI|MM|1775^13^0;1121^13^0;1024^13^0
+3706072|*Vibration|D014732|9340|MH|RtM via: Vibration - physical agent;Forced Leaf Node Lookup:vibrations|TI|MM|1584^10^0
+3706072|*Rest|D012146|9298|MH|RtM via: Rest;Forced Leaf Node Lookup:rests|TI|MM|1184^5^0
+3706072|*Spiders|D013112|9052|MH|RtM via: Spiders;checkForceMH Boosted|TI|MM|1727^7^0;167^6^0
+3706072|Colorado|D003120|7891|MH|RtM via: Colorado;Forced Leaf Node Lookup:colorado|TI|MM|2243^8^0;368^8^0
+3706072|Muscle, Smooth|D009130|54584|MH|||RC
+3706072|Muscle Contraction|D009119|24357|MH|||RC
 3706072|*Female Genitalia|D005836|2505|ET|Entry Term Replacement for "Genitalia, Female";RtM via: Female genitalia;Forced Non-Leaf Node Lookup:female genitalia|TI|MM|1793^16^0
-3706072|*Body Size|D049628|1467|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM|546^9^0
+3706072|*Body Size|D049628|1470|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM|546^9^0
 3706072|*Islands|D062312|654|MH|RtM via: Islands|TI|MM|377^6^0
 3706072|Panama|D010176|3|MH|RtM via: Panama|TI|MM|385^6^0
 3706285|Animals|D000818|55663|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
@@ -8021,15 +8018,15 @@
 3705150|*Plant Leaves|D018515|234|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM|426^6^0;335^4^0
 3705150|*Locomotor Activity|D008124|198|ET|Entry Term Replacement for "Locomotion";RtM via: Locomotion;Forced Non-Leaf Node Lookup:locomotor activity|TI|MM|395^18^0
 3705150|*Rhythmicity|D010507|189|ET|Entry Term Replacement for "Periodicity";RtM via: Periodicity;Forced Non-Leaf Node Lookup:rhythmicity|TI|MM|368^11^0
-23070790|Male|D008297|435122|CT|CT Text Lookup: male;CT Text Lookup: males|TI|MM;RC|304^5^0;476^5^0;628^5^0;781^5^0
-23070790|Animals|D000818|435122|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
-23070790|Female|D005260|435122|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|314^6^0;825^6^0;989^6^0
-23070790|*Smell|D012903|50715|MH|RtM via: Smell Perception;Forced Leaf Node Lookup:olfaction|TI|MM|198^9^0;128^9^0
-23070790|*Odorants|D009812|50070|MH|RtM via: Odors;Forced Leaf Node Lookup:odor|TI|MM|860^4^0;512^4^0;443^4^0;649^4^0;697^4^0;905^4^0
-23070790|*Spiders|D013112|48684|MH|RtM via: Family Salticidae;RtM via: Spiders;RtM via: Genus Portia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|21^15^0;38^10^0;837^7^0;330^6^0;234^12^0;29^7^0
-23070790|Vitamin D Deficiency|D014808|434122|MH|||RC
-23070790|Vitamin D|D014807|293097|MH|||RC
-23070790|*Reproduction|D012098|40749|MH|RtM via: conjugation with cellular fusion;RtM via: parasexual conjugation with cellular fusion;RtM via: mating|TI|MM|1083^6^0;425^4^0
+23070790|Male|D008297|434688|CT|CT Text Lookup: male;CT Text Lookup: males|TI|MM;RC|304^5^0;476^5^0;628^5^0;781^5^0
+23070790|Animals|D000818|434688|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
+23070790|Female|D005260|434688|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|314^6^0;825^6^0;989^6^0
+23070790|*Smell|D012903|50660|MH|RtM via: Smell Perception;Forced Leaf Node Lookup:olfaction|TI|MM|198^9^0;128^9^0
+23070790|*Odorants|D009812|50015|MH|RtM via: Odors;Forced Leaf Node Lookup:odor|TI|MM|860^4^0;512^4^0;443^4^0;649^4^0;697^4^0;905^4^0
+23070790|*Spiders|D013112|48629|MH|RtM via: Family Salticidae;RtM via: Spiders;RtM via: Genus Portia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|21^15^0;38^10^0;837^7^0;330^6^0;234^12^0;29^7^0
+23070790|Vitamin D Deficiency|D014808|433688|MH|||RC
+23070790|Vitamin D|D014807|292809|MH|||RC
+23070790|*Reproduction|D012098|40719|MH|RtM via: conjugation with cellular fusion;RtM via: parasexual conjugation with cellular fusion;RtM via: mating|TI|MM|1083^6^0;425^4^0
 23610280|Animals|D000818|10644|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 23610280|*Courtship|D003380|9644|MH|RtM via: Courtship;Forced Leaf Node Lookup:courtships|TI|MM;RC|890^9^0;592^9^0;381^9^0;231^9^0;34^9^0
 23610280|*Spiders|D013112|2316|MH|RtM via: Pardosa|TI|MM;RC|624^7^0;286^7^0
@@ -8846,19 +8843,20 @@
 4489040|Hospitals, General|D006769|14401|MH|||RC
 4489040|*Diet|D004032|2604|MH|RtM via: Basal Diet;RtM via: Diet;Forced Non-Leaf Node Lookup:diet|TI|MM|393^4^0
 4489040|*Food|D005502|2430|MH|RtM via: Food|TI|MM|451^4^0
-23048783|Animals|D000818|20753|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
-23048783|Female|D005260|20753|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;CT Text Lookup: oviposition;Forced Non-Leaf Node Lookup:females|TI|MM;RC|21^6^0;1654^11^0
-23048783|*Typhaceae|D032401|19753|MH|RtM via: Typha;RtM via: Typha latifolia;Forced Leaf Node Lookup:cattails;Forced Leaf Node Lookup:typhas;checkForceMH Boosted|TI|MM|1467^7^0;1166^8^0;875^8^0;633^8^0;643^15^0
-23048783|*Salix|D032108|16440|MH|RtM via: salicin extract;RtM via: Willow;Forced Leaf Node Lookup:willows;Forced Leaf Node Lookup:salix;checkForceMH Boosted|TI|MM;RC|748^5^0;1344^6^0;734^6^0
-23048783|*Grass|D006109|14764|ET|Entry Term Replacement for "Poaceae";RtM via: Calamagrostis;RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grass|TI|MM;RC|694^13^0;978^5^0;687^5^0;221^5^0
-23048783|*Spiders|D013112|12322|MH|RtM via: Spiders;RtM via: Clubiona riparia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM;RC|1627^7^0;1359^7^0;1244^6^0;53^6^0;60^16^0;1483^7^0
-23048783|*Wetlands|D053833|7207|MH|RtM via: Marshes;Forced Leaf Node Lookup:marsh|TI|MM;RC|547^5^0
-23048783|*Silk|D047011|5881|MH|RtM via: Silk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silk|TI|MM|353^4^0
-23048783|*Oviposition|D010058|5389|MH|RtM via: Oviposition;Forced Leaf Node Lookup:ovipositions|TI|MM;RC|1654^11^0
-23048783|Ontario|D009864|3175|MH|RtM via: Ontario;Forced Leaf Node Lookup:ontario|TI|MM|564^7^0
-23048783|*Capsules|D002214|2616|MH|Forced Leaf Node Lookup:capsules|TI|MM;RC|95^8^0;519^8^0;599^8^0;857^8^0;961^8^0;1148^8^0;1386^8^0
-23048783|*Iris Plant|D031323|3414|MH|RtM via: Iris <angiosperm>;RtM via: Iris versicolor|TI|MM|935^4^0;661^4^0;667^15^0
+23048783|Animals|D000818|20749|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+23048783|Female|D005260|20749|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;CT Text Lookup: oviposition;Forced Non-Leaf Node Lookup:females|TI|MM;RC|21^6^0;1654^11^0
+23048783|*Typhaceae|D032401|19749|MH|RtM via: Typha;RtM via: Typha latifolia;Forced Leaf Node Lookup:cattails;Forced Leaf Node Lookup:typhas;checkForceMH Boosted|TI|MM|1467^7^0;1166^8^0;875^8^0;633^8^0;643^15^0
+23048783|*Salix|D032108|16437|MH|RtM via: salicin extract;RtM via: Willow;Forced Leaf Node Lookup:willows;Forced Leaf Node Lookup:salix;checkForceMH Boosted|TI|MM;RC|748^5^0;1344^6^0;734^6^0
+23048783|*Grass|D006109|14763|ET|Entry Term Replacement for "Poaceae";RtM via: Calamagrostis;RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:grass|TI|MM;RC|694^13^0;978^5^0;687^5^0;221^5^0
+23048783|*Spiders|D013112|12321|MH|RtM via: Spiders;RtM via: Clubiona riparia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM;RC|1627^7^0;1359^7^0;1244^6^0;53^6^0;60^16^0;1483^7^0
+23048783|*Iris Plant|D031323|8562|MH|RtM via: Iris <angiosperm>;RtM via: Iris versicolor;Forced Leaf Node Lookup:iris versicolor;checkForceMH Boosted|TI|MM|935^4^0;661^4^0;667^15^0
+23048783|*Wetlands|D053833|7203|MH|RtM via: Marshes;Forced Leaf Node Lookup:marsh|TI|MM;RC|547^5^0
+23048783|*Silk|D047011|5880|MH|RtM via: Silk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silk|TI|MM|353^4^0
+23048783|*Oviposition|D010058|5388|MH|RtM via: Oviposition;Forced Leaf Node Lookup:ovipositions|TI|MM;RC|1654^11^0
+23048783|Ontario|D009864|3174|MH|RtM via: Ontario;Forced Leaf Node Lookup:ontario|TI|MM|564^7^0
+23048783|*Capsules|D002214|2615|MH|Forced Leaf Node Lookup:capsules|TI|MM;RC|95^8^0;519^8^0;599^8^0;857^8^0;961^8^0;1148^8^0;1386^8^0
 23048783|*Plant Leaves|D018515|3006|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM;RC|1425^4^0;1351^6^0;623^6^0;389^4^0;236^4^0;36^4^0
+23048783|*Eggs|D004531|405|MH|RtM via: Egg Food Product|TI|MM|153^4^0
 25434290|Animals|D000818|28550|CT|Thysanoptera;CT Treecode Lookup: B01.050.500.131 (Thysanoptera);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Homoptera;CT Treecode Lookup: B01.050.500.131 (Homoptera);Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera);Larvae;CT Treecode Lookup: B05.500 (Larvae);Larvae;CT Treecode Lookup: G07.345.500.550.500 (Larvae)|TI|MM
 25434290|*Sand|D000080463|27550|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|121^4^0
 25434290|*Thysanoptera|D061149|26665|MH|RtM via: Thysanoptera;Forced Leaf Node Lookup:thysanoptera;checkForceMH Boosted|TI|MM|270^12^0
@@ -9053,10 +9051,10 @@
 25654021|Root Planing|D016745|189480|MH|||RC
 25654021|Periodontal Pocket|D010514|84726|MH|||RC
 25654021|*Habitats|D017753|174|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|171^8^0
-23070794|*Lakes|D060106|21947|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|76^4^0
-23070794|Uganda|D014454|21617|MH|RtM via: Uganda;Forced Leaf Node Lookup:uganda|TI|MM|268^6^0
-23070794|Molybdenum|D008982|139169|MH|||RC
-23070794|Disulfides|D004220|76939|MH|||RC
+23070794|*Lakes|D060106|21396|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|76^4^0
+23070794|Uganda|D014454|20760|MH|RtM via: Uganda;Forced Leaf Node Lookup:uganda|TI|MM|268^6^0
+23070794|Molybdenum|D008982|136090|MH|||RC
+23070794|Disulfides|D004220|73530|MH|||RC
 3705392|Horses|D006736|45016|CT|Horse Diseases;CT Treecode Lookup: C22.488 (Horse Diseases)||RC
 3705392|Animals|D000818|45016|CT|Horse Diseases;CT Treecode Lookup: C22 (Horse Diseases);Horse Diseases;CT Treecode Lookup: C22.488 (Horse Diseases);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3705392|Female|D005260|45016|CT|Mothers;CT Treecode Lookup: F01.829.263.500.320.200 (Mothers);Mothers;CT Treecode Lookup: I01.880.853.150.500.340.270 (Mothers);Mothers;CT Treecode Lookup: M01.620.630 (Mothers)||MM
@@ -9264,15 +9262,15 @@
 3705466|Sindbis Virus|D012845|103761|MH|||RC
 3705466|RNA, Viral|D012367|45955|MH|||RC
 3705466|*Habitats|D017753|1785|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|170^7^0;155^8^0
-25434286|Animals|D000818|77144|CT|Arachnids;CT Treecode Lookup: B01.050.500.131 (Arachnids);Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions);Horseshoe Crabs;CT Treecode Lookup: B01.050.500.131 (Horseshoe Crabs);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Mites;CT Treecode Lookup: B01.050.500.131 (Mites)||MM;RC
-25434286|*Arachnids|D001097|34635|ET|Entry Term Replacement for "Arachnida";RtM via: Opiliones;RtM via: Pseudoscorpiones;RtM via: Ricinulei;RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|402^9^0;866^15^0;356^16^0;418^9^0;598^8^0;187^9^0
-25434286|*Scorpions|D012605|33672|MH|RtM via: Scorpions;Forced Leaf Node Lookup:scorpions;checkForceMH Boosted|TI|MM|719^9^0;301^10^0
-25434286|*Horseshoe Crabs|D006737|32094|MH|RtM via: Xiphosura;Forced Leaf Node Lookup:xiphosuras;checkForceMH Boosted|TI|MM|319^9^0
-25434286|*Fossils|D005580|28989|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|932^7^0;591^6^0;497^6^0;243^6^0;123^6^0;52^6^0
-25434286|*Spiders|D013112|19605|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|555^7^0;230^7^0
-25434286|*Mites|D008925|18201|MH|RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mites|TI|MM|847^5^0
-25434286|Hypercapnia|D006935|76144|MH|||RC
-25434286|Pulmonary Ventilation|D012123|44815|MH|||RC
+25434286|Animals|D000818|78641|CT|Arachnids;CT Treecode Lookup: B01.050.500.131 (Arachnids);Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions);Horseshoe Crabs;CT Treecode Lookup: B01.050.500.131 (Horseshoe Crabs);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Mites;CT Treecode Lookup: B01.050.500.131 (Mites)||MM;RC
+25434286|*Arachnids|D001097|35614|ET|Entry Term Replacement for "Arachnida";RtM via: Opiliones;RtM via: Pseudoscorpiones;RtM via: Ricinulei;RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|402^9^0;866^15^0;356^16^0;418^9^0;598^8^0;187^9^0
+25434286|*Scorpions|D012605|35018|MH|RtM via: Scorpions;Forced Leaf Node Lookup:scorpions;checkForceMH Boosted|TI|MM|719^9^0;301^10^0
+25434286|*Horseshoe Crabs|D006737|33416|MH|RtM via: Xiphosura;Forced Leaf Node Lookup:xiphosuras;checkForceMH Boosted|TI|MM|319^9^0
+25434286|*Fossils|D005580|30311|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|932^7^0;591^6^0;497^6^0;243^6^0;123^6^0;52^6^0
+25434286|*Spiders|D013112|20368|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|555^7^0;230^7^0
+25434286|*Mites|D008925|18883|MH|RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mites|TI|MM|847^5^0
+25434286|Hypercapnia|D006935|77641|MH|||RC
+25434286|Pulmonary Ventilation|D012123|47891|MH|||RC
 23048801|Animals|D000818|3868|CT|Arachnida;CT Treecode Lookup: B01.050.500.131 (Arachnida)||MM;RC
 23048801|Male|D008297|3868|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|96^4^0
 23048801|*Marble|D002119|401|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Marble;checkForceMH Boosted;Forced Non-Leaf Node Lookup:marble|TI|MM|158^6^0
@@ -9442,7 +9440,6 @@
 3706321|*Zea mays|D003313|13069|MH|RtM via: Maize;RtM via: Zea;RtM via: Zea mays;Forced Leaf Node Lookup:corn;checkForceMH Boosted|TI|MM|192^4^0
 3706321|*Avena|D018554|12484|MH|Forced Leaf Node Lookup:oat;checkForceMH Boosted|TI|MM|360^3^0
 3706321|*Spiders|D013112|8615|MH|RtM via: Oxyopes salticus;RtM via: Spiders;RtM via: Salticus;RtM via: Misumenops;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|275^16^0;157^7^0;408^8^0;421^10^0
-3706321|*Gastrointestinal Microbiome|D000069196|6320|MH|RtM via: Gut;Forced Leaf Node Lookup:gut|TI|MM|252^4^0;62^3^0
 3706321|Medication Systems, Hospital|D008510|53222|MH|||RC
 3706321|Pharmacy Service, Hospital|D010607|17044|MH|||RC
 3706321|*Insect|D007313|1023|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM|136^6^0
@@ -10364,11 +10361,13 @@
 3705985|Mexico|D008800|17995|MH|RtM via: Mexico;RtM via: Mexicano;Forced Leaf Node Lookup:mexico|TI|MM|472^6^0;251^6^0;1037^8^0;538^6^0
 3705985|Renal Circulation|D012079|82883|MH|||RC
 3705985|Glomerular Filtration Rate|D005919|59669|MH|||RC
-40233837|Male|D008297|5394|CT|CT Text Lookup: both sexes|TI|MM;RC|144^10^0
-40233837|Female|D005260|5394|CT|Forced Lookup:female;CT Text Lookup: both sexes;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|164^6^0;144^10^0
-40233837|Spain|D013030|4394|MH|RtM via: Spain;Forced Leaf Node Lookup:spain|TI|MM;RC|905^5^0;119^5^0
-40233837|Mediterranean Region|D019083|1074|MH|RtM via: Mediterranean Region;Forced Non-Leaf Node Lookup:mediterranean region|TI|MM|793^20^0
-40233837|*Burkitt Lymphoma|D002051|276|MH|RtM via: African Burkitt's lymphoma|TI|MM|208^7^0
+40233837|Male|D008297|5896|CT|CT Text Lookup: both sexes|TI|MM;RC|144^10^0
+40233837|Animals|D000818|5896|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+40233837|Female|D005260|5896|CT|Forced Lookup:female;CT Text Lookup: both sexes;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|164^6^0;144^10^0
+40233837|Spain|D013030|4896|MH|RtM via: Spain;Forced Leaf Node Lookup:spain|TI|MM;RC|905^5^0;119^5^0
+40233837|Mediterranean Region|D019083|1158|MH|RtM via: Mediterranean Region;Forced Non-Leaf Node Lookup:mediterranean region|TI|MM|793^20^0
+40233837|*Burkitt Lymphoma|D002051|270|MH|RtM via: African Burkitt's lymphoma|TI|MM|208^7^0
+40233837|*Spiders|D013112|153|MH|RtM via: Cetonana laticeps;RtM via: Trachelas|TI|MM|1751^17^0;866^17^0;1650^9^0;1007^9^0;962^9^0;768^9^0;521^9^0;423^9^0;95^9^0;31^9^0
 40233837|Nuclear Family|D009679|1000|MH|Forced Non-Leaf Node Lookup:son||MM|1682^3^0
 3706391|Animals|D000818|64107|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders);Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior)||MM;RC
 3706391|Female|D005260|64107|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|22^6^0;88^6^0
@@ -10487,11 +10486,11 @@
 3706075|Form Perception|D005556|48805|MH|||RC
 3706075|Evoked Potentials, Visual|D005074|46258|MH|||RC
 3706075|*Reproductive Period|D012098|453|ET|Entry Term Replacement for "Reproduction";RtM via: Reproductive Period;Forced Non-Leaf Node Lookup:reproductive periods|TI|MM|376^19^0
-4129870|Animals|D000818|34957|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
-4129870|*Spiders|D013112|10346|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|728^6^0;248^7^0
-4129870|Microsomes, Liver|D008862|33957|MH|||RC
-4129870|Cytochrome Reductases|D003579|24479|MH|||RC
-4129870|*Biodiversity|D044822|183|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM|65^12^0
+4129870|Animals|D000818|38819|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+4129870|*Spiders|D013112|9381|MH|RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|728^6^0;248^7^0
+4129870|Microsomes, Liver|D008862|37819|MH|||RC
+4129870|Cytochrome Reductases|D003579|21633|MH|||RC
+4129870|*Biodiversity|D044822|162|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM|65^12^0
 3706100|Animals|D000818|86360|CT|Ursidae;CT Treecode Lookup: B01.050.150.900.649.313.750 (Ursidae);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)|TI|MM
 3706100|*Ursidae|D001503|25752|MH|Forced Leaf Node Lookup:bears;checkForceMH Boosted|TI|MM|64^5^0
 3706100|*Metatarsus|D008684|19758|MH|RtM via: Region of metatarsal;Forced Leaf Node Lookup:metatarsus|TI|MM|637^10^0;517^10^0;31^10^0;744^10^0
@@ -10708,13 +10707,13 @@
 4129859|Prostate|D011467|338583|MH|||RC
 4129859|Prostatic Hyperplasia|D011470|181687|MH|||RC
 4129859|*X Chromosomes|D014960|1845|ET|Entry Term Replacement for "X Chromosome";RtM via: X Chromosome;Forced Non-Leaf Node Lookup:x chromosomes|TI|MM|835^12^0;582^13^0
-25434319|Animals|D000818|110224|CT|Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions)|TI|MM
-25434319|*Scorpions|D012605|60733|MH|RtM via: Family Buthidae;RtM via: Scorpions;RtM via: Zabius fuscus;Forced Leaf Node Lookup:scorpions;checkForceMH Boosted|TI|MM|1078^8^0;115^8^0;1066^10^0;578^8^0;103^10^0;1186^13^0;224^13^0;1686^6^0;1050^6^0;705^6^0;87^6^0
-25434319|Brazil|D001938|30899|MH|RtM via: Rio Grande do Sul;RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1143^17^0;181^17^0;1703^6^0;1162^6^0;724^6^0;200^6^0;986^6^0
-25434319|Argentina|D001118|30713|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1414^9^0;445^9^0
-25434319|Uruguay|D014583|30506|MH|RtM via: Uruguay;Forced Leaf Node Lookup:uruguay|TI|MM|965^7^0
-25434319|Genetic Predisposition to Disease|D020022|109224|MH|||RC
-25434319|Phosphoinositide Phospholipase C|D054801|105110|MH|||RC
+25434319|Animals|D000818|108871|CT|Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions)|TI|MM
+25434319|*Scorpions|D012605|60105|MH|RtM via: Family Buthidae;RtM via: Scorpions;RtM via: Zabius fuscus;Forced Leaf Node Lookup:scorpions;checkForceMH Boosted|TI|MM|1078^8^0;115^8^0;1066^10^0;578^8^0;103^10^0;1186^13^0;224^13^0;1686^6^0;1050^6^0;705^6^0;87^6^0
+25434319|Brazil|D001938|30585|MH|RtM via: Rio Grande do Sul;RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|1143^17^0;181^17^0;1703^6^0;1162^6^0;724^6^0;200^6^0;986^6^0
+25434319|Argentina|D001118|30399|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|1414^9^0;445^9^0
+25434319|Uruguay|D014583|30192|MH|RtM via: Uruguay;Forced Leaf Node Lookup:uruguay|TI|MM|965^7^0
+25434319|Genetic Predisposition to Disease|D020022|107871|MH|||RC
+25434319|Phosphoinositide Phospholipase C|D054801|104453|MH|||RC
 3705557|*Melanins|D008543|13060|MH|Forced Leaf Node Lookup:melanins;checkForceMH Boosted|TI|MM|225^7^0
 3705557|*Microscopy|D008853|7298|MH|RtM via: Microscopy;Forced Leaf Node Lookup:microscopy|TI|MM|187^10^0
 3705557|*Microvilli|D008871|7139|MH|RtM via: Microvilli;Forced Leaf Node Lookup:microvilli|TI|MM|459^10^0
@@ -10988,9 +10987,9 @@
 3705833|Male|D008297|149857|CT|Forced Lookup:male;CT Text Lookup: male;CT Text Lookup: males;Forced Non-Leaf Node Lookup:males|TI|MM;RC|201^4^0;424^5^0
 3705833|Female|D005260|149857|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|292^6^0
 3705833|Animals|D000818|149857|CT|Arachnids;CT Treecode Lookup: B01.050.500.131 (Arachnids)|TI|MM
-3705833|*Arachnids|D001097|25692|ET|Entry Term Replacement for "Arachnida";RtM via: Caddidae;RtM via: Caddo agilis;RtM via: Eumesosoma roeweri;RtM via: Mitopus morio;RtM via: Nelima satoi;RtM via: Phalangiidae;RtM via: Phalangiinae;RtM via: Protolophus tuberculatus;RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|552^8^0;49^8^0;35^12^0;162^18^0;367^13^0;132^12^0;565^12^0;82^12^0;661^12^0;433^24^0;844^9^0
+3705833|*Arachnids|D001097|25669|ET|Entry Term Replacement for "Arachnida";RtM via: Caddidae;RtM via: Caddo agilis;RtM via: Eumesosoma roeweri;RtM via: Mitopus morio;RtM via: Nelima satoi;RtM via: Phalangiidae;RtM via: Phalangiinae;RtM via: Protolophus tuberculatus;RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|552^8^0;49^8^0;35^12^0;162^18^0;367^13^0;132^12^0;565^12^0;82^12^0;661^12^0;433^24^0;844^9^0
 3705833|Transsexualism|D014189|148857|MH|||RC
-3705833|Gender Identity|D005783|89673|MH|||RC
+3705833|Gender Identity|D005783|89505|MH|||RC
 3705833|*Sex Chromosome|D012730|2175|ET|Entry Term Replacement for "Sex Chromosomes";RtM via: Sex Chromosomes;Forced Non-Leaf Node Lookup:sex chromosomes|TI|MM|314^14^0;221^14^0
 4129892|Male|D008297|80905|CT|Forced Lookup:male;CT Text Lookup: male;Forced Non-Leaf Node Lookup:male|TI|MM;RC|194^4^0;245^4^0;294^4^0
 4129892|Female|D005260|80905|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|207^6^0;254^6^0
@@ -11549,13 +11548,13 @@
 20798592|*Spiders|D013112|14307|MH|RtM via: Pholcus phalangioides;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|268^21^0;260^7^0
 20798592|Macronucleus|D048648|87724|MH|||RC
 20798592|Tetrahymena thermophila|D016808|52017|MH|||RC
-25067877|Male|D008297|301169|CT|Forced Lookup:male;CT Text Lookup: male;CT Text Lookup: males;Forced Non-Leaf Node Lookup:males|TI|MM;RC|760^4^0;400^5^0;633^5^0
-25067877|Female|D005260|301169|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|643^6^0;708^6^0
-25067877|Animals|D000818|301169|CT|Spider;CT Treecode Lookup: B01.050.500.131 (Spider)|TI|MM
-25067877|*Spider|D013112|56154|ET|Entry Term Replacement for "Spiders";RtM via: Trechalea;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|310^9^0;25^6^0
-25067877|*Trees|D014197|55578|MH|RtM via: Trees (plant);checkForceMH Boosted|TI|MM|770^8^0
-25067877|Risedronic Acid|D000068296|300169|MH|||RC
-25067877|Etidronic Acid|D012968|274266|MH|||RC
+25067877|Male|D008297|300196|CT|Forced Lookup:male;CT Text Lookup: male;CT Text Lookup: males;Forced Non-Leaf Node Lookup:males|TI|MM;RC|760^4^0;400^5^0;633^5^0
+25067877|Female|D005260|300196|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|643^6^0;708^6^0
+25067877|Animals|D000818|300196|CT|Spider;CT Treecode Lookup: B01.050.500.131 (Spider)|TI|MM
+25067877|*Spider|D013112|56055|ET|Entry Term Replacement for "Spiders";RtM via: Trechalea;RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|310^9^0;25^6^0
+25067877|*Trees|D014197|55479|MH|RtM via: Trees (plant);checkForceMH Boosted|TI|MM|770^8^0
+25067877|Risedronic Acid|D000068296|299196|MH|||RC
+25067877|Etidronic Acid|D012968|274065|MH|||RC
 4129879|Male|D008297|32728|CT|CT Text Lookup: male;CT Text Lookup: males|TI|MM;RC|894^5^0
 4129879|Animals|D000818|32728|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 4129879|Female|D005260|32728|CT|Forced Lookup:female;CT Text Lookup: female;CT Text Lookup: females;Forced Non-Leaf Node Lookup:females|TI|MM;RC|828^6^0
@@ -11654,7 +11653,7 @@
 3705360|Kenya|D007630|15646|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM|106^5^0
 3705360|Abortion, Veterinary|D000034|94928|MH|||RC
 3705360|Horse Diseases|D006734|61395|MH|||RC
-3706266|Animals|D000818|103847|CT|Cryptosporidiosis;CT Treecode Lookup: C22 (Cryptosporidiosis);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+3706266|Animals|D000818|103847|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
 3706266|*Spiders|D013112|20687|MH|RtM via: Family Theridiidae;RtM via: Spiders;RtM via: Genus Nephila;RtM via: Argyrodes;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|575^11^0;1330^7^0;865^7^0;179^7^0;1150^7^0;1380^9^0;1312^9^0;1095^9^0;527^9^0;20^9^0
 3706266|*Silk|D047011|17690|MH|RtM via: Silk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silk|TI|MM|1586^4^0
 3706266|*Phylogeny|D010802|14018|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|1754^9^0;447^9^0
@@ -11736,6 +11735,7 @@
 4489065|Animals|D000818|14349|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)|TI|MM
 4489065|Argentina|D001118|4832|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|76^9^0
 4489065|Cuba|D003462|4832|MH|RtM via: Cuba;Forced Leaf Node Lookup:cuba|TI|MM|128^4^0
+4489065|Nursing|D009729|13349|MH|||RC
 4489065|International Cooperation|D007391|6650|MH|||RC
 4489065|*Spiders|D013112|3|MH|RtM via: Mastophora Holmberg, 1876|TI|MM|41^16^0
 24365287|Animals|D000818|104885|CT|Ursidae;CT Treecode Lookup: B01.050.150.900.649.313.750 (Ursidae);Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions);Sensilla;CT Treecode Lookup: A13.093 (Sensilla)|TI|MM
@@ -12822,15 +12822,15 @@
 3705626|Venous Insufficiency|D014689|21867|MH|||RC
 3705626|Thrombophlebitis|D013924|11434|MH|||RC
 3705626|*Reproduction|D012098|561|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|1897^12^0
-25067836|Animals|D000818|242634|CT|Arachnids;CT Treecode Lookup: B01.050.500.131 (Arachnids);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
-25067836|*Arachnids|D001097|28486|ET|Entry Term Replacement for "Arachnida";RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|633^8^0;106^9^0
-25067836|*Spiders|D013112|28450|MH|RtM via: Spiders;RtM via: Brachypelma vagans;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|1517^7^0;213^7^0;31^7^0;378^18^0;52^11^0
-25067836|*B-DNA|D059371|25213|ET|Entry Term Replacement for "DNA, B-Form";RtM via: DNA, B-Form;checkForceMH Boosted|TI|MM|694^1^1;704^3^1
-25067836|Belize|D001531|24064|MH|RtM via: Belize;Forced Leaf Node Lookup:belize|TI|MM|418^6^0
-25067836|*Commerce|D003132|24061|MH|Forced Lookup:international trade|TI|MM|131^19^0
+25067836|Animals|D000818|242521|CT|Arachnids;CT Treecode Lookup: B01.050.500.131 (Arachnids);Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM
+25067836|*Arachnids|D001097|28474|ET|Entry Term Replacement for "Arachnida";RtM via: Arachnida (invertebrate);checkForceMH Boosted;Forced Non-Leaf Node Lookup:arachnids|TI|MM|633^8^0;106^9^0
+25067836|*Spiders|D013112|28435|MH|RtM via: Spiders;RtM via: Brachypelma vagans;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM|1517^7^0;213^7^0;31^7^0;378^18^0;52^11^0
+25067836|*B-DNA|D059371|25201|ET|Entry Term Replacement for "DNA, B-Form";RtM via: DNA, B-Form;checkForceMH Boosted|TI|MM|694^1^1;704^3^1
+25067836|Belize|D001531|24052|MH|RtM via: Belize;Forced Leaf Node Lookup:belize|TI|MM|418^6^0
+25067836|*Commerce|D003132|24049|MH|Forced Lookup:international trade|TI|MM|131^19^0
 25067836|*Internationality|D038622|0|MH|Forced Lookup:international trade|TI|MM|131^19^0
-25067836|Pregabalin|D000069583|241634|MH|||RC
-25067836|Analgesics|D000700|85881|MH|||RC
+25067836|Pregabalin|D000069583|241521|MH|||RC
+25067836|Analgesics|D000700|85842|MH|||RC
 25067836|*PCR|D016133|939|ET|Entry Term Replacement for "Polymerase Chain Reaction";RtM via: Polymerase Chain Reaction;Forced Non-Leaf Node Lookup:pcr|TI|MM|651^3^0
 20617596|Female|D005260|71457|CT|Maternal Exposure;CT Treecode Lookup: N06.850.460.350.145 (Maternal Exposure);Prenatal Exposure Delayed Effects;CT Treecode Lookup: C13.703.824.500 (Prenatal Exposure Delayed Effects);CT Text Lookup: her;CT Text Lookup: she|TI|MM;RC|704^3^0;521^3^0
 20617596|Humans|D006801|71457|CT|Maternal Exposure;CT Treecode Lookup: N06.850.460.350.145 (Maternal Exposure)||RC
@@ -13498,11 +13498,11 @@
 23048791|*Ecology|D004463|2655|MH|RtM via: Ecology;Forced Non-Leaf Node Lookup:interspecific competition|TI|MM|146^7^0;768^25^0
 23048791|*Season|D012621|2097|ET|Entry Term Replacement for "Seasons";RtM via: Seasons|TI|MM;RC|464^6^0
 23048791|Resource Allocation|D040841|1000|MH|Forced Non-Leaf Node Lookup:allocation of||MM|871^13^0
-25067876|Female|D005260|93110|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|146^6^0
-25067876|Brazil|D001938|18256|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|752^6^0
-25067876|Peru|D010568|18256|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|684^4^0
-25067876|Dystrophin|D016189|92110|MH|||RC
-25067876|Muscular Dystrophy, Duchenne|D020388|44806|MH|||RC
+25067876|Female|D005260|93047|CT|Forced Lookup:female;CT Text Lookup: female;Forced Non-Leaf Node Lookup:females|TI|MM;RC|146^6^0
+25067876|Brazil|D001938|18154|MH|RtM via: Brazil;Forced Leaf Node Lookup:brazil|TI|MM|752^6^0
+25067876|Peru|D010568|18154|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|684^4^0
+25067876|Dystrophin|D016189|92047|MH|||RC
+25067876|Muscular Dystrophy, Duchenne|D020388|44731|MH|||RC
 24717312|Animals|D000818|83314|CT|Isoptera;CT Treecode Lookup: B01.050.500.131 (Isoptera);Ants;CT Treecode Lookup: B01.050.500.131 (Ants)|TI|MM
 24717312|*Isoptera|D020049|33402|MH|RtM via: Isoptera;Forced Leaf Node Lookup:termites;checkForceMH Boosted|TI|MM|488^8^0
 24717312|*Ants|D001000|32898|MH|RtM via: Ants;Forced Leaf Node Lookup:ants;checkForceMH Boosted|TI|MM|459^4^0

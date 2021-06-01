@@ -1,0 +1,17 @@
+C:\Users\manuh\Documents\sterner lab\AuthorDisambiguation\r_table\parser\results\mesh\palemono.txt
+1315659|*Bays|D061006|14129|MH|Forced Leaf Node Lookup:bay|TI|MM|196^3^0
+1315659|District of Columbia|D004219|14129|MH|Forced Leaf Node Lookup:washington, d.c.|TI|MM|205^16^0;1029^16^0
+1315659|Maryland|D008396|14129|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM|168^8^0
+1315659|Receptors, Transforming Growth Factor beta|D018125|63520|MH|||RC
+1315659|Osteoblasts|D010006|46369|MH|||RC
+1315659|Washington|D014861|3|MH|RtM via: Washington state|TI|MM|1029^10^0;205^10^0
+1315662|Humans|D006801|1000|CT|Forced Humans: Research Personnel||MM
+1315662|*Facies|D019066|10244|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|2411^6^0;1837^6^0;1611^6^0;1453^6^0;1433^6^0;726^6^0;604^6^0;556^6^0;641^6^0;2615^6^0
+1315662|*Foraminifera|D056908|9818|MH|RtM via: Cibicides;RtM via: Uvigerina;RtM via: Cassidulina;RtM via: Bulimina;RtM via: Foraminifera;checkForceMH Boosted|TI|MM|2370^9^0;1980^9^0;2467^9^0;2277^9^0;2006^9^0;1537^9^0;2554^11^0;2336^11^0;1644^8^0;1491^8^0;215^13^0
+1315662|Oregon|D009922|9518|MH|RtM via: Oregon (geographic location);Forced Leaf Node Lookup:oregon|TI|MM|478^6^0
+1315662|Washington|D014861|9425|MH|RtM via: Washington state;Forced Leaf Node Lookup:washington|TI|MM|2325^10^0;2194^10^0;1706^10^0;1573^10^0;986^10^0;489^10^0
+1315662|*Oxygen|D010100|9269|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|634^6^0
+1315662|Macula Lutea|D008266|35997|MH|||RC
+1315662|*Research|D012106|2403|MH|RtM via: Correlative Study|TI|MM|1463^11^0
+1315662|*Research Personnel|D012108|2280|MH|RtM via: Comment Evaluator|TI|MM|170^6^0
+1315662|California|D002140|513|MH|RtM via: California|TI|MM|2266^10^0;2120^10^0;1763^10^0;1518^10^0;802^10^0

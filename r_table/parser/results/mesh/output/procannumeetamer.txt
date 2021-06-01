@@ -1,0 +1,566 @@
+10.2307/3687210|Animals|D000818|14716|CT|Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates)||MM;RC
+10.2307/3687210|*Fossils|D005580|13716|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|532^7^0
+10.2307/3687210|San Francisco|D012495|1485|MH|RtM via: San Francisco;Forced Leaf Node Lookup:san francisco|TI|MM|74^13^0
+10.2307/3687210|*Geology|D005844|5703|MH|RtM via: Geology|TI|MM;RC|136^8^0
+10.2307/3687210|*Invertebrates|D007448|2871|MH|RtM via: Invertebrates;Forced Non-Leaf Node Lookup:invertebrates|TI|MM|986^13^0
+10.2307/3687210|*Geraniaceae|D031314|936|MH|RtM via: California (plant)|TI|MM|89^10^0
+10.2307/3687210|*Minerals|D008903|726|MH|RtM via: Shale|TI|MM;RC|582^6^0
+10.2307/3687289|*Clay|D000077215|5877|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM;RC|1237^4^0
+10.2307/3687289|*Water|D014867|2277|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|998^5^0;596^5^0
+10.2307/3687289|*Laboratories|D007753|1467|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|469^10^0
+10.2307/3687289|*Minerals|D008903|2436|MH|RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM;RC|1242^8^0
+10.2307/3687289|Geologic Sediments|D019015|1946|MH|||RC
+10.2307/3687289|*Pollen|D011058|1623|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|1449^3^0;1257^3^0;961^3^0;728^6^0;516^6^0;358^3^0;78^6^0
+10.2307/3687289|*Physical Phenomena|D055585|1230|MH|RtM via: Hydration|TI|MM|1211^9^0;581^9^0
+10.2307/3687289|*Standardization|D012015|759|ET|Entry Term Replacement for "Reference Standards";RtM via: Standardization;Forced Non-Leaf Node Lookup:standardization|TI|MM|1163^15^0
+10.2307/3687289|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM;RC|577^2^0;933^2^0
+10.2307/3687212|*Fossils|D005580|14691|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|1555^6^0
+10.2307/3687212|*Facies|D019066|1644|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|796^6^0
+10.2307/3687212|North Sea|D009659|945|MH|RtM via: North Sea;Forced Leaf Node Lookup:north sea|TI|MM|454^9^0
+10.2307/3687212|Paleontology|D010163|2105|MH|||RC
+10.2307/3687212|*Spores|D013170|1116|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|1024^6^0
+10.2307/3687212|Europe|D005060|1014|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM;RC|484^6^0
+10.2307/3687212|England|D004739|3|MH|RtM via: England|TI|MM|257^7^0;49^7^0
+10.2307/3687259|Canada|D002170|207|MH|RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM;RC|182^8^0
+10.2307/3687259|*Islands|D062312|2640|MH|RtM via: Islands|TI|MM;RC|105^6^0;167^7^0
+10.2307/3687259|Arctic Regions|D001110|1314|MH|RtM via: Arctic Regions|TI|MM;RC|611^6^0;191^6^0
+10.2307/3687221|*Angiosperm|D019684|23548|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:angiosperms|TI|MM;RC|833^10^0;582^10^0;205^10^0;42^10^0;959^10^0
+10.2307/3687221|*Gymnosperm|D032462|14776|ET|Entry Term Replacement for "Cycadopsida";RtM via: Cycadopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gymnosperms|TI|MM|311^10^0
+10.2307/3687221|*Phytoplankton|D010839|3346|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|335^13^0
+10.2307/3687221|Alberta|D000416|2716|MH|RtM via: Alberta province;Forced Leaf Node Lookup:alberta|TI|MM|96^7^0
+10.2307/3687221|*Biological Evolution|D005075|8574|MH|RtM via: Biological Evolution|TI|MM;RC|1046^12^0;721^12^0;445^12^0
+10.2307/3687221|*Pollen|D011058|6318|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|1071^6^0;844^6^0;216^6^0;53^6^0;970^6^0
+10.2307/3687221|*Ferns|D029624|4875|MH|RtM via: Ferns|TI|MM|294^12^0
+10.2307/3687221|*Tracheophyta|D064028|3468|MH|RtM via: Gymnosperm|TI|MM|311^10^0
+10.2307/3687299|*Fossils|D005580|4575|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|961^6^0;376^6^0
+10.2307/3687299|*Facies|D019066|1803|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|583^6^0
+10.2307/3687299|*Microscopy, Electron, Scanning|D008855|1355|MH|Forced Leaf Node Lookup:scanning electron microscope|TI|MM;RC|261^28^0
+10.2307/3687299|*Spores|D013170|12519|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM;RC|168^6^0
+10.2307/3687299|*Pollen|D011058|2175|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|383^6^0;157^6^0;482^6^0
+10.2307/3687299|*Preservation, Biological|D011309|1491|MH|RtM via: Biologic Preservation|TI|MM|921^12^0
+10.2307/3687299|*Longitudinal Studies|D008137|81|MH|RtM via: Longitudinal Studies|TI|MM|1251^9^1;1271^7^1
+10.2307/3687238|United States|D014481|2461|CT|Forced Leaf Node Lookup:american|TI|MM;RC|669^8^0
+10.2307/3687238|Humans|D006801|2461|CT|Continental Population Groups;CT Treecode Lookup: M01.686 (Continental Population Groups)|TI|MM
+10.2307/3687238|Maryland|D008396|897|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM|525^8^0
+10.2307/3687238|New Jersey|D009515|759|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|555^10^0
+10.2307/3687238|*Clay|D000077215|561|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|253^4^0
+10.2307/3687238|Texas|D013781|306|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|721^5^0;298^5^0
+10.2307/3687238|*Spore|D013170|1461|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|107^5^0
+10.2307/3687238|Fossils|D005580|735|MH|||RC
+10.2307/3687238|*Pollen|D011058|288|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|96^6^0
+10.2307/3687238|*Continental Population Groups|D044469|21|MH|RtM via: North American (race)|TI|MM|663^14^0
+10.2307/3687254|*Microscopy, Electron, Scanning|D008855|7247|MH|RtM via: Scanning Electron Microscopy;Forced Leaf Node Lookup:microscopy, scanning electron|TI|MM;RC|520^28^0;508^29^0
+10.2307/3687254|*Fossils|D005580|3095|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|354^6^0
+10.2307/3687254|*Clay|D000077215|2380|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|1313^4^0;425^4^0
+10.2307/3687254|Maryland|D008396|1199|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM|446^8^0
+10.2307/3687254|*Protoplasm|D003593|1878|ET|Entry Term Replacement for "Cytoplasm";RtM via: Protoplasm;Forced Non-Leaf Node Lookup:protoplasms|TI|MM|1167^10^0
+10.2307/3687254|*Biological Phenomena|D001686|1503|MH|RtM via: Tissue Growth|TI|MM|1189^6^0
+10.2307/3687254|*Lenses|D007909|1062|MH|RtM via: Lens (device)|TI|MM|1463^10^0;1027^10^0;627^10^0
+10.2307/3687254|Australia|D001315|855|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM|287^9^0
+10.2307/3687254|*Freshwater|D005618|591|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM|1375^10^0
+10.2307/3687254|*Habitat|D017753|447|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|1386^7^0
+10.2307/3687254|*Suture|D013537|96|ET|Entry Term Replacement for "Sutures";RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|1506^6^0;1147^6^0
+10.2307/3687254|Europe|D005060|855|MH|RtM via: Europe|TI|MM|317^6^0
+10.2307/3687254|North America|D009656|855|MH|RtM via: North America|TI|MM|298^13^0
+10.2307/3687303|Wales|D014852|615|MH|RtM via: Country of Wales;Forced Leaf Node Lookup:wales|TI|MM|526^5^0
+10.2307/3687303|Texas|D013781|192|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM;RC|374^5^0;206^5^0
+10.2307/3687303|Natural Gas|D059206|591|MH|||RC
+10.2307/3687303|Oil and Gas Fields|D061329|473|MH|||RC
+10.2307/3687303|England|D004739|429|MH|RtM via: England;Forced Non-Leaf Node Lookup:england|TI|MM|514^7^0
+10.2307/3687303|*Minerals|D008903|363|MH|RtM via: Shale|TI|MM|295^5^0;73^5^0
+10.2307/3687303|*Spore|D013170|309|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|459^5^0;500^5^0;537^5^0
+10.2307/3687303|Europe|D005060|210|MH|RtM via: Europe|TI|MM|261^6^0
+10.2307/3687303|Canada|D002170|0|MH|RtM via: Canada|TI|MM|485^6^0;272^6^0
+10.2307/3687279|Animals|D000818|7212|CT|Mollusca;CT Treecode Lookup: B01.050.500.644 (Mollusca)||MM;RC
+10.2307/3687279|*Gymnosperms|D032462|6212|ET|Entry Term Replacement for "Cycadopsida";RtM via: Cycadopsida;checkForceMH Boosted|TI|MM;RC|147^13^0
+10.2307/3687279|*Clay|D000077215|1573|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|673^4^0;30^4^0
+10.2307/3687279|*Lignite|D003031|875|ET|Entry Term Replacement for "Coal";RtM via: Lignite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lignites|TI|MM|645^7^0
+10.2307/3687279|Texas|D013781|809|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|99^5^0
+10.2307/3687279|*Spores|D013170|5772|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM;RC|437^6^0
+10.2307/3687279|*Pollen|D011058|1737|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|137^6^0
+10.2307/3687279|*Tracheophyta|D064028|1011|MH|RtM via: Gymnosperm|TI|MM|147^13^0
+10.2307/3687279|*Mollusca|D008974|729|MH|RtM via: Pelecypod|TI|MM|718^9^0
+10.2307/3687279|*Freshwater|D005618|291|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:fresh waters|TI|MM|706^11^0
+10.2307/3687209|*Paleontology|D010163|4021|MH|RtM via: Paleontology;Forced Leaf Node Lookup:paleontology|TI|MM;RC|41^12^0
+10.2307/3687209|Oklahoma|D009825|919|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|930^8^0
+10.2307/3687209|*Spores|D013170|7434|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM;RC|768^6^0
+10.2307/3687209|*Pollen|D011058|2757|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|757^6^0
+10.2307/3687209|*Analysis, Factor|D005163|1302|ET|Entry Term Replacement for "Factor Analysis, Statistical";RtM via: Analysis, Factor;Forced Non-Leaf Node Lookup:factor analysis|TI|MM|1363^15^0
+10.2307/3687209|*Cluster Analysis|D016000|831|MH|RtM via: statistical cluster;Forced Non-Leaf Node Lookup:cluster analysis|TI|MM|1231^16^0
+10.2307/3687275|*Dinoflagellate|D004141|3233|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|86^14^0
+10.2307/3687275|*Ecology|D004463|1344|MH|RtM via: Ecology|TI|MM|479^8^0
+10.2307/3687275|Biodiversity|D044822|161|MH|||RC
+10.2307/3687288|Animals|D000818|13023|CT|Annelida;CT Treecode Lookup: B01.050.500.091 (Annelida)||MM;RC
+10.2307/3687288|*Fossils|D005580|12023|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|187^6^0
+10.2307/3687288|*Annelida|D000845|2334|MH|RtM via: Annelida|TI|MM|93^8^0
+10.2307/3687288|Paleontology|D010163|1712|MH|||RC
+10.2307/3687288|*Alkalies|D000468|633|MH|RtM via: Alkalies|TI|MM|230^13^0
+10.2307/3687288|*Preservation, Biological|D011309|576|MH|RtM via: Biologic Preservation|TI|MM|347^12^0
+10.2307/3687288|*Jaws|D007568|1053|ET|Entry Term Replacement for "Jaw";RtM via: Jaw;Forced Non-Leaf Node Lookup:jaws|TI|MM|1014^4^0;954^4^0;631^4^0;373^4^0;74^4^0
+10.2307/3687288|Canada|D002170|75|MH|RtM via: Canada|TI|MM|691^6^0
+10.2307/3687245|*Microscopy, Electron, Scanning|D008855|3159|MH|Forced Leaf Node Lookup:scanning electron microscope|TI|MM;RC|231^28^0
+10.2307/3687245|*Artifacts|D016477|2535|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artifacts|TI|MM|569^8^0
+10.2307/3687245|*Freezing|D005615|2412|MH|RtM via: Freezing;Forced Leaf Node Lookup:freezing|TI|MM|1368^8^0
+10.2307/3687245|*Fossils|D005580|1749|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1687^6^0;1457^6^0;108^6^0
+10.2307/3687245|*Surface Tension|D013500|1614|MH|RtM via: Surface Tension;Forced Leaf Node Lookup:surface tensions|TI|MM|660^15^0
+10.2307/3687245|*Freeze Drying|D005612|10122|MH|RtM via: Freeze Drying;Forced Non-Leaf Node Lookup:freeze dryings|TI|MM;RC|1081^13^0;1246^13^0
+10.2307/3687245|*Desiccation|D003890|4947|MH|RtM via: Desiccation|TI|MM;RC|1534^6^0;1215^6^0;578^6^0;438^6^0
+10.2307/3687245|*Spores|D013170|2556|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|1476^6^0;127^6^0
+10.2307/3687245|*Pollen|D011058|1938|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1464^7^0;115^7^0
+10.2307/3687256|United States|D014481|23302|CT|Forced Leaf Node Lookup:american|TI|MM|87^8^0
+10.2307/3687256|*Ambrosia|D031164|22302|MH|RtM via: Ambrosia;Forced Leaf Node Lookup:ambrosias;checkForceMH Boosted|TI|MM|332^8^0
+10.2307/3687256|*Betula|D029662|20550|MH|RtM via: Betula Genus;Forced Leaf Node Lookup:betulas;checkForceMH Boosted|TI|MM|230^6^0
+10.2307/3687256|*Fagus|D029964|17442|MH|RtM via: fagus;Forced Leaf Node Lookup:fagus;checkForceMH Boosted|TI|MM|310^5^0
+10.2307/3687256|*Juniperus|D018653|16803|MH|RtM via: Juniperus;RtM via: Juniperus communis;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM|187^9^0
+10.2307/3687256|*Picea|D028222|15852|MH|RtM via: Picea;Forced Leaf Node Lookup:piceas;checkForceMH Boosted|TI|MM|121^5^0
+10.2307/3687256|*Acer|D031002|14694|MH|RtM via: Acer;Forced Leaf Node Lookup:acer;checkForceMH Boosted|TI|MM|288^4^0
+10.2307/3687256|*Larix|D028221|14649|MH|RtM via: Larix;Forced Leaf Node Lookup:larix;checkForceMH Boosted|TI|MM|180^5^0
+10.2307/3687256|*Quercus|D029963|14568|MH|RtM via: Quercus;Forced Leaf Node Lookup:quercus;checkForceMH Boosted|TI|MM|294^7^0
+10.2307/3687256|*Alnus|D029661|14508|MH|RtM via: Alder plant;Forced Leaf Node Lookup:alnus;checkForceMH Boosted|TI|MM|245^5^0
+10.2307/3687256|*Pseudotsuga|D028224|14223|MH|RtM via: Pseudotsuga;Forced Leaf Node Lookup:pseudotsugas;checkForceMH Boosted|TI|MM|168^11^0
+10.2307/3687256|*Taxodium|D032489|14058|MH|RtM via: Taxodium;Forced Leaf Node Lookup:taxodiums;checkForceMH Boosted|TI|MM|197^8^0
+10.2307/3687256|*Nyssa|D031655|13515|MH|RtM via: Nyssa;Forced Leaf Node Lookup:nyssa;checkForceMH Boosted|TI|MM|303^5^0
+10.2307/3687256|*Tsuga|D028225|13038|MH|RtM via: Tsuga heterophylla;Forced Leaf Node Lookup:tsugas;checkForceMH Boosted|TI|MM|137^5^1;154^12^1
+10.2307/3687256|*Gramineae|D006109|12537|ET|Entry Term Replacement for "Poaceae";RtM via: Poaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gramineae|TI|MM;RC|219^9^0
+10.2307/3687256|*Liquidambar|D031317|12369|MH|RtM via: Sweet Gum Trees;Forced Leaf Node Lookup:liquidambar;checkForceMH Boosted|TI|MM|275^11^0
+10.2307/3687256|*Ulmus|D034403|11517|MH|RtM via: Ulmus;Forced Leaf Node Lookup:ulmus;checkForceMH Boosted|TI|MM|252^5^0
+10.2307/3687256|*Conifers|D064028|11436|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|651^8^0
+10.2307/3687256|*Carya|D031325|11175|MH|RtM via: Carya;Forced Leaf Node Lookup:caryas;checkForceMH Boosted|TI|MM|238^5^0
+10.2307/3687256|*Pinus|D028223|9507|MH|RtM via: Pinus <genus>;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM|114^5^0
+10.2307/3687256|*Cyperaceae|D029785|7869|MH|RtM via: Cyperaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cyperaceae|TI|MM|207^10^0
+10.2307/3687256|*Lakes|D060106|7818|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lakes|TI|MM|433^5^0
+10.2307/3687256|*Artemisia|D019306|7362|MH|RtM via: Artemisia (plant);checkForceMH Boosted;Forced Non-Leaf Node Lookup:artemisias|TI|MM|317^9^0
+10.2307/3687256|*Ephedra|D029789|6324|MH|RtM via: Ephedra;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ephedras|TI|MM|128^7^0
+10.2307/3687256|*Pollen|D011058|22191|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|608^6^0;96^6^0
+10.2307/3687298|Animals|D000818|2434|CT|Forced Lookup:metazoan;Life Cycles;CT Treecode Lookup: B05.500 (Life Cycles);Life Cycles;CT Treecode Lookup: G07.345.500.550.500 (Life Cycles)|TI|MM;RC|762^8^0
+10.2307/3687298|*Facies|D019066|1039|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|1117^6^0
+10.2307/3687298|*Plankton|D010933|856|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|440^10^0
+10.2307/3687298|*Capsules|D002214|487|MH|RtM via: capsule (pharmacologic);Forced Leaf Node Lookup:capsules|TI|MM|783^8^0
+10.2307/3687298|Northern Europe|D005060|1434|ET|Entry Term Replacement for "Europe";RtM via: Northern Europe;Forced Non-Leaf Node Lookup:northern europe|TI|MM;RC|1352^15^0
+10.2307/3687298|North America|D009656|1359|MH|RtM via: North America;Forced Non-Leaf Node Lookup:north america|TI|MM;RC|1334^13^0
+10.2307/3687298|*Life Cycles|D008018|1275|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|421^11^0
+10.2307/3687298|*Reproduction|D012098|789|MH|RtM via: Reproduction|TI|MM|852^12^0
+10.2307/3687298|Dissociative Disorders|D004213|1000|MH|Forced Non-Leaf Node Lookup:dissociation||MM|319^12^0
+10.2307/3687223|lens intermediate filament proteins|C028286|605|NM|RtM via: lens intermediate filament proteins;Forced SCR Leaf Node Lookup:lentin|TI|MM|541^6^0
+10.2307/3687223|*Freshwater|D005618|1869|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM;RC|581^10^0;657^10^0
+10.2307/3687223|*Dinoflagellida|D004141|1755|MH|RtM via: Peridinium limbatum;Forced Non-Leaf Node Lookup:peridiniums|TI|MM;RC|598^19^0
+10.2307/3687223|*Eye Proteins|D005136|604|HM|RtM via: lens intermediate filament proteins|TI|MM|541^6^0
+10.2307/3687305|*Plants|D010944|5109|MH|RtM via: Plants|TI|MM;RC|1555^6^0;863^6^0;508^5^0;323^6^0
+10.2307/3687305|*Plant Leaves|D018515|1350|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|257^4^0
+10.2307/3687305|India|D007194|99|MH|RtM via: India|TI|MM|1010^5^0
+10.2307/3687262|Animals|D000818|2549|CT|Dinosaurs;CT Treecode Lookup: B01.050.150.900.833 (Dinosaurs);Mollusca;CT Treecode Lookup: B01.050.500.644 (Mollusca)||MM;RC
+10.2307/3687262|Canada|D002170|913|MH|RtM via: Canada;RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM;RC|540^6^0;91^8^0;578^6^0
+10.2307/3687262|*Dinoflagellate|D004141|472|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM|270^14^0
+10.2307/3687262|Dinosaurs|D025061|1549|MH|||RC
+10.2307/3687262|Paleontology|D010163|920|MH|||RC
+10.2307/3687262|*Mollusca|D008974|831|MH|RtM via: Pelecypod|TI|MM|126^9^0
+10.2307/3687253|*Dinoflagellate|D004141|1763|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|462^14^0;109^14^0;221^14^0
+10.2307/3687253|*Accommodation, Ocular|D000065|729|MH|RtM via: Visual Accommodation|TI|MM|1198^11^0
+10.2307/3687253|*Knowledge|D019359|165|MH|RtM via: Knowledge|TI|MM|60^9^0
+10.2307/3687253|*Standing Position|D000078783|120|MH|RtM via: erect|TI|MM|1187^7^0
+10.2307/3687253|*Cysts|D003560|24|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|477^5^0;124^5^0;236^5^0
+10.2307/3687253|England|D004739|3|MH|RtM via: England|TI|MM|587^7^0
+10.2307/3687203|Animals|D000818|3613|CT|Hawks;CT Treecode Lookup: B01.050.150.900.248 (Hawks)||MM;RC
+10.2307/3687203|New Zealand|D009520|2613|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|229^11^0
+10.2307/3687203|*Hawks|D046428|1725|MH|RtM via: Hawks (bird);Forced Leaf Node Lookup:hawks;checkForceMH Boosted|TI|MM|1364^5^0;43^5^0
+10.2307/3687203|granite|C007886|1408|NM|RtM via: granite;Forced SCR Leaf Node Lookup:granite|TI|MM|330^7^0
+10.2307/3687203|Fossils|D005580|2170|MH|||RC
+10.2307/3687203|Australia|D001315|1773|MH|RtM via: Australia;Forced Non-Leaf Node Lookup:australia|TI|MM;RC|245^9^0
+10.2307/3687203|*Silicon Dioxide|D012822|1407|HM|RtM via: granite|TI|MM|330^7^0
+10.2307/3687203|*Spore|D013170|1374|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|160^5^0
+10.2307/3687203|*Pollen|D011058|258|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|166^6^0
+10.2307/3687281|*Temperature|D013696|4504|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|1236^11^0;1339^12^0;1100^11^0;836^11^0;499^11^0;781^11^0;925^11^0;1140^11^0;1291^11^0
+10.2307/3687281|*Sand|D000080463|2584|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|98^4^0
+10.2307/3687281|*Microscopy|D008853|2075|MH|RtM via: Light Microscopy;Forced Leaf Node Lookup:light microscopy|TI|MM|274^16^0
+10.2307/3687281|*Hot Temperature|D006358|1844|MH|RtM via: Heat (physical force);Forced Leaf Node Lookup:heat|TI|MM|1047^4^0
+10.2307/3687281|*Laboratories|D007753|1310|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|863^10^0;592^10^0
+10.2307/3687281|*Plant|D010944|1164|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|327^5^0
+10.2307/3687281|*Physical Phenomena|D055585|1110|MH|RtM via: Flow|TI|MM|1052^4^0
+10.2307/3687281|*Plant Structures|D018514|882|MH|RtM via: Grains|TI|MM|308^6^0;83^6^0
+10.2307/3687281|*Durable Medical Equipment|D004389|726|MH|RtM via: Physical restraint equipment (device)|TI|MM|462^10^0
+10.2307/3687281|*Burial|D002048|393|MH|RtM via: Burial;Forced Non-Leaf Node Lookup:burials|TI|MM|1284^6^0;1437^6^0
+10.2307/3687281|*Bombs|D054042|24|MH|RtM via: Bomb device;Forced Non-Leaf Node Lookup:bombs|TI|MM|1188^4^0;874^5^0;603^5^0
+10.2307/3687224|*Islands|D062312|1729|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|269^7^0
+10.2307/3687224|*Dinoflagellates|D004141|1480|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|445^14^0;305^15^0;43^14^0
+10.2307/3687224|Europe|D005060|747|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|419^6^0
+10.2307/3687224|Paleontology|D010163|662|MH|||RC
+10.2307/3687224|Canada|D002170|108|MH|RtM via: Canada;Forced Non-Leaf Node Lookup:canada|TI|MM;RC|139^6^0
+10.2307/3687242|*Peat|D012987|4289|ET|Entry Term Replacement for "Soil";RtM via: Peat;checkForceMH Boosted;Forced Non-Leaf Node Lookup:peat|TI|MM;RC|516^4^0;404^4^0;288^4^0;57^4^0
+10.2307/3687242|*Lignite|D003031|2240|ET|Entry Term Replacement for "Coal";RtM via: Lignite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lignites|TI|MM;RC|246^7^0;131^7^0
+10.2307/3687242|North Dakota|D009658|542|MH|RtM via: North Dakota (geographic location);Forced Leaf Node Lookup:north dakota|TI|MM|233^12^0;181^12^0
+10.2307/3687242|sapropel|C050488|2386|NM|RtM via: sapropel|TI|MM|45^10^0
+10.2307/3687242|*Humic Substances|D006812|2385|HM|RtM via: sapropel|TI|MM|45^10^0
+10.2307/3687242|*Spores|D013170|2139|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|546^6^0
+10.2307/3687242|*Mineral|D008903|738|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|368^7^0;443^7^0
+10.2307/3687242|*Benzopyrans|D001578|480|HM|RtM via: sapropel|TI|MM|45^10^0
+10.2307/3687242|*Pollen|D011058|342|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|535^6^0
+10.2307/3687276|*Sphagnopsida|D044003|1774|MH|RtM via: Sphagnum;Forced Leaf Node Lookup:sphagnums;checkForceMH Boosted|TI|MM|959^8^0
+10.2307/3687276|*Coal|D003031|1607|MH|RtM via: Lignite;RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lignites|TI|MM;RC|480^8^0;317^7^0;129^7^0;450^4^0;597^8^0
+10.2307/3687276|*Corylus|D031211|823|MH|RtM via: Corylus;Forced Leaf Node Lookup:corylus;checkForceMH Boosted|TI|MM|951^7^0
+10.2307/3687276|Texas|D013781|308|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|310^5^0;100^5^0
+10.2307/3687276|*Plant|D010944|2178|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|427^5^0
+10.2307/3687276|Biodiversity|D044822|480|MH|||RC
+10.2307/3687276|*Mineral|D008903|234|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|781^7^0
+10.2307/3687276|*Causality|D015984|168|MH|RtM via: Recurrence|TI|MM|523^9^0
+10.2307/3687278|*Data Management|D000079803|4323|MH|RtM via: Databases|TI|MM|192^16^0;103^16^0
+10.2307/3687278|*Computer|D003201|3507|ET|Entry Term Replacement for "Computers";RtM via: Computers;Forced Non-Leaf Node Lookup:computers|TI|MM;RC|248^8^0;40^8^0
+10.2307/3687278|*Databases, Factual|D016208|1800|MH|RtM via: Databases|TI|MM;RC|192^16^0;103^16^0
+10.2307/3687278|*Information Storage|D016247|1566|ET|Entry Term Replacement for "Information Storage and Retrieval";RtM via: Data Storage;Forced Non-Leaf Node Lookup:information storage and retrieval|TI|MM|55^19^0
+10.2307/3687278|Africa|D000349|3|MH|RtM via: Africa|TI|MM|154^6^0
+10.2307/3687226|*Coals|D003031|1244|ET|Entry Term Replacement for "Coal";RtM via: Coal;checkForceMH Boosted|TI|MM|1038^5^0;580^5^0;37^5^0
+10.2307/3687226|*Water|D014867|1160|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|633^5^0
+10.2307/3687226|Iran|D007492|932|MH|RtM via: Iran;Forced Leaf Node Lookup:iran|TI|MM|1012^4^0;279^4^0;91^4^0
+10.2307/3687226|*Ferns|D029624|4440|MH|RtM via: Ferns|TI|MM;RC|702^12^0
+10.2307/3687226|*Spores|D013170|3792|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|715^6^0
+10.2307/3687226|*Pollen|D011058|1968|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|813^6^0
+10.2307/3687273|*Dinoflagellates|D004141|3353|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|813^14^0;531^14^0;316^15^0;404^15^0
+10.2307/3687273|*Fossils|D005580|689|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|309^6^0
+10.2307/3687273|Spores, Protozoan|D033761|2120|MH|Spores Specifics:Spores||MM;RC
+10.2307/3687273|*Knowledge|D019359|360|MH|RtM via: Knowledge|TI|MM|793^9^0
+10.2307/3687273|*Causality|D015984|228|MH|RtM via: Etiology|TI|MM|631^6^0
+10.2307/3687273|*Physical Phenomena|D055585|204|MH|RtM via: Affinity|TI|MM|176^10^0
+10.2307/3687273|*Cysts|D003560|111|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM;RC|828^5^0;546^5^0;364^5^0;650^4^0
+10.2307/3687273|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|513^7^0
+10.2307/3687261|Animals|D000818|6805|CT|Hydrozoa;CT Treecode Lookup: B01.050.500.308 (Hydrozoa)|TI|MM
+10.2307/3687261|*Fossils|D005580|1792|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|645^6^0
+10.2307/3687261|*Hyphae|D025301|901|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM|307^6^0;225^6^0;176^6^0
+10.2307/3687261|Spores, Bacterial|D013171|3355|MH|Spores Specifics:Spores||MM
+10.2307/3687261|*Pollen|D011058|5805|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|812^6^0;663^6^0
+10.2307/3687261|*Hydrozoa|D037402|1146|MH|RtM via: Capitata|TI|MM|576^8^0
+10.2307/3687261|*Bacillus|D001407|579|MH|RtM via: Genus Bacillus|TI|MM|166^9^0
+10.2307/3687302|Netherlands|D009426|2682|MH|RtM via: Netherlands;Forced Leaf Node Lookup:holland|TI|MM|1120^7^0
+10.2307/3687302|Switzerland|D013557|2682|MH|RtM via: Switzerland;Forced Leaf Node Lookup:switzerland|TI|MM|1141^11^0
+10.2307/3687302|*Biological Evolution|D005075|7329|MH|RtM via: Biological Evolution|TI|MM;RC|887^12^0
+10.2307/3687302|*Spores|D013170|3213|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|736^5^0;612^6^0
+10.2307/3687302|Germany|D005858|3075|MH|RtM via: Germany;Forced Non-Leaf Node Lookup:germany|TI|MM;RC|1111^7^0
+10.2307/3687302|*Pollen|D011058|927|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|800^6^0;573^6^0;639^6^0
+10.2307/3687302|France|D005602|1431|MH|RtM via: France|TI|MM|1129^6^0
+10.2307/3687302|England|D004739|3|MH|RtM via: England|TI|MM|1212^7^0
+10.2307/3687225|Animals|D000818|1435|CT|Bivalvia;CT Treecode Lookup: B01.050.500.644 (Bivalvia)||MM;RC
+10.2307/3687225|*Preservation, Biological|D011309|435|MH|RtM via: Biologic Preservation|TI|MM|419^9^0
+10.2307/3687225|*Bivalvia|D049872|294|MH|RtM via: Arctica|TI|MM|1406^7^0
+10.2307/3687225|*Biological Assay|D001681|276|MH|RtM via: Flocculation Assay|TI|MM|317^10^0
+10.2307/3687229|*Research Design|D012107|747|MH|RtM via: Test Method|TI|MM;RC|407^6^0;102^6^0
+10.2307/3687229|*Software|D012984|414|MH|RtM via: Compiler|TI|MM;RC|313^11^0
+10.2307/3687229|*Health Services|D006296|240|MH|RtM via: Test Method|TI|MM|407^6^0;102^6^0
+10.2307/3687229|*Dissent and Disputes|D034462|93|MH|RtM via: Disputes|TI|MM|383^6^0
+10.2307/3687266|*Fossils|D005580|15694|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|266^7^0
+10.2307/3687266|*Angiosperms|D019684|10039|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:angiosperms|TI|MM;RC|442^11^0
+10.2307/3687266|*Spores, Fungal|D013172|5903|MH|RtM via: Spores, Fungal;Forced Leaf Node Lookup:fungal spores;checkForceMH Boosted|TI|MM;RC|95^13^0
+10.2307/3687266|*Biological Evolution|D005075|5958|MH|RtM via: Biological Evolution|TI|MM;RC|374^12^0
+10.2307/3687266|*Climate|D002980|1743|MH|RtM via: Climate|TI|MM|505^7^0
+10.2307/3687266|*Fungi|D005658|1443|MH|RtM via: Fungi;Forced Non-Leaf Node Lookup:fungi|TI|MM|398^5^0
+10.2307/3687291|*Dinoflagellate|D004141|4675|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|35^14^0
+10.2307/3687291|*Fossils|D005580|814|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|28^6^0
+10.2307/3687291|Geologic Sediments|D019015|817|MH|||RC
+10.2307/3687291|Environmental Monitoring|D004784|223|MH|||RC
+10.2307/3687291|*Cysts|D003560|96|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM;RC|222^4^0;50^5^0
+10.2307/3687291|*Campanula|D029422|51|ET|Entry Term Replacement for "Campanulaceae";RtM via: Campanula;Forced Non-Leaf Node Lookup:campanulas|TI|MM|82^9^0
+10.2307/3687301|Animals|D000818|36375|CT|Life Cycle;CT Treecode Lookup: B05.500 (Life Cycle);Life Cycle;CT Treecode Lookup: G07.345.500.550.500 (Life Cycle)|TI|MM
+10.2307/3687301|Male|D008297|36375|CT|Sperm;CT Treecode Lookup: A05.360.490.890 (Sperm);Sperm;CT Treecode Lookup: A11.497.760 (Sperm)|TI|MM
+10.2307/3687301|*Ovule|D056771|35375|MH|RtM via: Plant Ovule;Forced Leaf Node Lookup:ovules|TI|MM;RC|778^5^0;596^5^0
+10.2307/3687301|*Germination|D018525|24719|MH|RtM via: Germination;Forced Leaf Node Lookup:germinations|TI|MM;RC|1396^11^0;1003^11^0;693^11^0;392^11^0
+10.2307/3687301|*Angiosperms|D019684|15884|ET|Entry Term Replacement for "Magnoliopsida";RtM via: Angiosperm;RtM via: Magnoliopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:angiosperms|TI|MM;RC|1344^11^0;1178^11^0
+10.2307/3687301|*Conifers|D064028|7280|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM|976^8^0
+10.2307/3687301|*Cycadopsida|D032462|16428|MH|RtM via: Division Coniferophyta (organism);RtM via: Cycadopsida|TI|MM|976^8^0;1018^5^0;881^6^0
+10.2307/3687301|*Pollen|D011058|13731|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen grains|TI|MM;RC|1386^6^0;1321^6^0;1164^6^0;864^6^0;528^12^0;354^13^0;955^6^0;1024^6^0
+10.2307/3687301|*Seed|D012639|5565|ET|Entry Term Replacement for "Seeds";RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seed|TI|MM;RC|96^4^0
+10.2307/3687301|*Spore|D013170|4251|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|142^5^0
+10.2307/3687301|*Life Cycle|D008018|1470|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|172^10^0
+10.2307/3687301|*Habit|D006184|513|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|101^5^0
+10.2307/3687301|*Sperm|D013094|318|ET|Entry Term Replacement for "Spermatozoa";RtM via: sperm cell;Forced Non-Leaf Node Lookup:sperm|TI|MM|1070^5^0
+10.2307/3687301|*Suture|D013537|111|ET|Entry Term Replacement for "Sutures";RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|421^6^0
+10.2307/3687255|Animals|D000818|3109|CT|Reindeer;CT Treecode Lookup: B01.050.150.900.649.313.500 (Reindeer)|TI|MM
+10.2307/3687255|*Coal|D003031|2109|MH|RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coal|TI|MM;RC|603^4^0
+10.2307/3687255|*Rivers|D045483|1266|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|69^5^0
+10.2307/3687255|Northwest Territories|D015873|1176|MH|RtM via: Northwest Territories;Forced Leaf Node Lookup:northwest territories|TI|MM|89^21^0
+10.2307/3687255|*Reindeer|D012053|831|MH|RtM via: Reindeer;Forced Leaf Node Lookup:reindeer;checkForceMH Boosted|TI|MM|362^8^0
+10.2307/3687255|*Color|D003116|411|MH|Forced Leaf Node Lookup:colors|TI|MM;RC|389^6^0
+10.2307/3687255|*Hydrocarbons|D006838|1101|MH|RtM via: Hydrocarbons;Forced Non-Leaf Node Lookup:hydrocarbons|TI|MM;RC|269^12^0
+10.2307/3687255|Canada|D002170|855|MH|RtM via: Canada;Forced Non-Leaf Node Lookup:canada|TI|MM|112^6^0
+10.2307/3687255|*Excipients|D005079|456|MH|RtM via: Coloring Excipient|TI|MM|850^5^0;389^6^0;188^5^0
+10.2307/3687255|*Pollen|D011058|165|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|843^6^0
+10.2307/3687280|Animals|D000818|2006|CT|Orthoptera;CT Treecode Lookup: B01.050.500.131 (Orthoptera)||MM;RC
+10.2307/3687280|*Dinoflagellate|D004141|1006|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|491^14^0;291^14^0
+10.2307/3687280|Montana|D009009|430|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|137^7^0
+10.2307/3687280|Wyoming|D014959|430|MH|RtM via: Wyoming;Forced Leaf Node Lookup:wyoming|TI|MM|117^7^0
+10.2307/3687280|*Orthoptera|D009987|648|MH|RtM via: Montana <invertebrate>|TI|MM|137^7^0
+10.2307/3687280|*Physical Phenomena|D055585|411|MH|RtM via: Sedimentation process|TI|MM|1040^13^0
+10.2307/3687280|*Time Perception|D013998|249|MH|RtM via: Time Interval|TI|MM|791^4^1;801^8^1
+10.2307/3687280|*Tongue Diseases|D014060|153|MH|RtM via: Location of Oral Residue Following Swallowing|TI|MM|813^7^0
+10.2307/3687280|*Cyst|D003560|42|ET|Entry Term Replacement for "Cysts";RtM via: Cyst;Forced Non-Leaf Node Lookup:cyst|TI|MM|306^4^0
+10.2307/3687263|*Spores, Fungal|D013172|21813|MH|RtM via: Spores, Fungal;Forced Leaf Node Lookup:fungal spores;checkForceMH Boosted;Spores Specifics:Spores|TI|MM;RC|496^13^0;35^13^0
+10.2307/3687263|*Hyphae|D025301|12147|MH|RtM via: Hyphae;Forced Leaf Node Lookup:hyphae|TI|MM;RC|268^6^0
+10.2307/3687263|*Fossils|D005580|3885|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|28^6^0
+10.2307/3687263|*Phylogeny|D010802|3555|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM|633^12^0
+10.2307/3687263|*Fungi|D005658|17346|MH|RtM via: Mycelia sterilia;RtM via: Fungi;Forced Non-Leaf Node Lookup:fungi|TI|MM;RC|364^16^0;656^6^0;445^5^0
+10.2307/3687263|*Fungi imperfecti|D003904|14841|ET|Entry Term Replacement for "Mitosporic Fungi";RtM via: Class Deuteromycetes;RtM via: Mitosporic Fungi;Forced Non-Leaf Node Lookup:fungi imperfecti|TI|MM;RC|388^22^0;427^16^0;394^16^0
+10.2307/3687263|*Mycelium|D025282|6012|MH|RtM via: Mycelium|TI|MM;RC|287^7^0
+10.2307/3687263|*Biological Phenomena|D001686|1314|MH|RtM via: Septation|TI|MM|583^9^0;232^9^0
+10.2307/3687292|Animals|D000818|3183|CT|Echinoidea;CT Treecode Lookup: B01.050.500.408 (Echinoidea)||MM;RC
+10.2307/3687292|*Dinoflagellate|D004141|2183|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|249^14^0
+10.2307/3687292|*Phylogeny|D010802|1935|MH|RtM via: Phylogenetic Analysis|TI|MM;RC|759^16^0
+10.2307/3687292|*Echinoidea|D012617|1335|ET|Entry Term Replacement for "Sea Urchins";RtM via: Sea urchin (invertebrate);Forced Non-Leaf Node Lookup:echinoideas|TI|MM;RC|932^10^0;450^10^0;342^10^0;558^10^0
+10.2307/3687292|*Morphogenesis|D009024|222|MH|RtM via: Morphogenesis|TI|MM|687^13^0
+10.2307/3687292|*Cysts|D003560|27|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|264^5^0;840^4^0
+10.2307/3687208|Animals|D000818|12108|CT|Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates)||MM;RC
+10.2307/3687208|*Fossils|D005580|11108|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|698^7^0
+10.2307/3687208|Yukon Territory|D015874|944|MH|RtM via: Yukon Territory;Forced Leaf Node Lookup:yukon territory|TI|MM|105^15^0
+10.2307/3687208|*Invertebrates|D007448|8889|MH|RtM via: Brachiopoda|TI|MM;RC|482^11^0;332^11^0
+10.2307/3687208|Extinction, Biological|D053476|849|MH|||RC
+10.2307/3687265|Kansas|D007615|4623|MH|RtM via: Johnson County, KS;RtM via: Kansas (geographic location);Forced Leaf Node Lookup:kansas|TI|MM|204^14^0;137^6^0;220^6^0
+10.2307/3687265|*Natural Springs|D060985|1353|MH|RtM via: Natural Springs|TI|MM|106^7^0
+10.2307/3687265|RNA, Ribosomal, 16S|D012336|335|MH|||RC
+10.2307/3687265|*Spore|D013170|180|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|236^5^0
+10.2307/3687265|*Suture|D013537|135|ET|Entry Term Replacement for "Sutures";RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|270^6^0
+10.2307/3687244|*Juniperus|D018653|14460|MH|RtM via: Juniperus;RtM via: Juniperus communis;Forced Leaf Node Lookup:juniperus;checkForceMH Boosted|TI|MM|655^9^0
+10.2307/3687244|*Quercus|D029963|12624|MH|RtM via: Quercus;Forced Leaf Node Lookup:quercus;checkForceMH Boosted|TI|MM;RC|604^7^0
+10.2307/3687244|*Soil|D012987|11418|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|1071^4^0
+10.2307/3687244|*Rivers|D045483|10458|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|699^5^0;547^5^0;154^5^0;193^5^0
+10.2307/3687244|*Amaranthus|D027721|7614|MH|RtM via: Amaranthus;Forced Leaf Node Lookup:amaranthus;checkForceMH Boosted|TI|MM|995^10^0
+10.2307/3687244|*Pinus|D028223|5775|MH|RtM via: Pinus <genus>;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pinus|TI|MM|509^5^0
+10.2307/3687244|*Chenopodiaceae|D019663|4953|MH|RtM via: Chenopodiaceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chenopodiaceae|TI|MM|980^14^0
+10.2307/3687244|*Salinity|D054712|4833|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1076^8^0
+10.2307/3687244|*Ephedra|D029789|4821|MH|RtM via: Ephedra torreyana;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ephedras|TI|MM|888^17^0
+10.2307/3687244|Arizona|D001130|3555|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM;RC|95^7^0
+10.2307/3687244|*Pollen|D011058|16011|MH|RtM via: tree pollen allergenic extracts;RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|426^15^0;1006^6^0;965^6^0;783^6^0;515^6^0;386^6^0;40^6^0;435^6^0;612^6^0;825^6^0
+10.2307/3687244|*Rain|D011891|11685|MH|RtM via: Rain;Forced Non-Leaf Node Lookup:rain|TI|MM;RC|393^4^0
+10.2307/3687244|*Habitat|D017753|9651|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|1053^7^0
+10.2307/3687219|Animals|D000818|2356|CT|Colubridae;CT Treecode Lookup: B01.050.150.900.833 (Colubridae);CT Text Lookup: fish|TI|MM;RC|768^4^0
+10.2307/3687219|Connecticut|D003237|1107|MH|RtM via: Connecticut;Forced Leaf Node Lookup:connecticut|TI|MM|316^11^0
+10.2307/3687219|*Wetlands|D053833|945|MH|RtM via: Swamp;Forced Leaf Node Lookup:swamps|TI|MM|1669^5^0
+10.2307/3687219|New Jersey|D009515|681|MH|RtM via: New Jersey;Forced Leaf Node Lookup:new jersey|TI|MM|1380^10^0
+10.2307/3687219|Virginia|D014768|681|MH|RtM via: Virginia;Forced Leaf Node Lookup:virginia|TI|MM|1340^8^0
+10.2307/3687219|*Grassland|D065948|372|MH|Forced Leaf Node Lookup:meadows|TI|MM|234^6^0;552^6^0;644^6^0;1084^6^0
+10.2307/3687219|*Climate|D002980|1248|MH|RtM via: dry climate|TI|MM|1583^11^0
+10.2307/3687219|*Spore|D013170|984|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|1773^5^0
+10.2307/3687219|Massachusetts|D008404|735|MH|RtM via: Massachusetts (geographic location);Forced Non-Leaf Node Lookup:massachusetts|TI|MM|332^13^0
+10.2307/3687219|*Colubridae|D017812|564|MH|RtM via: Virginia (Reptile)|TI|MM|1340^8^0
+10.2307/3687219|*Pollen|D011058|276|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1785^6^0
+10.2307/3687211|*Conifers|D064028|11474|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|675^7^0;785^8^0;717^7^0;735^7^0
+10.2307/3687211|*Fern|D029624|8819|ET|Entry Term Replacement for "Ferns";RtM via: Ferns;checkForceMH Boosted;Forced Non-Leaf Node Lookup:fern|TI|MM;RC|613^4^0;646^4^0;688^4^0
+10.2307/3687211|Alaska|D000413|2291|MH|RtM via: Alaska;Forced Leaf Node Lookup:alaska|TI|MM|897^6^0;93^6^0
+10.2307/3687211|*Cycadopsida|D032462|22290|MH|RtM via: Division Coniferophyta (organism)|TI|MM;RC|785^8^0
+10.2307/3687211|*Magnoliopsida|D019684|5826|MH|RtM via: Magnoliopsida|TI|MM;RC|773^6^0
+10.2307/3687211|*Climates|D002980|4527|ET|Entry Term Replacement for "Climate";RtM via: Climate|TI|MM;RC|946^8^0
+10.2307/3687267|Fossils|D005580|858|MH|||RC
+10.2307/3687267|Biological Evolution|D005075|550|MH|||RC
+10.2307/3687264|Alaska|D000413|150|MH|RtM via: Alaska;Forced Leaf Node Lookup:alaska|TI|MM;RC|166^6^0
+10.2307/3687264|*Bays|D061006|144|MH|Forced Leaf Node Lookup:inlets|TI|MM|153^5^0;335^5^0
+10.2307/3687264|*Water Wells|D060986|1311|MH|RtM via: Water Wells|TI|MM|193^5^0;135^5^0
+10.2307/3687264|*Dinoflagellida|D004141|1296|MH|RtM via: Dinophyceae sp.;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|43^14^1;89^2^1
+10.2307/3687264|*Cysts|D003560|21|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|214^5^0;58^4^0
+10.2307/3687277|*Corrosion|D003343|2753|MH|RtM via: Corrosion;Forced Leaf Node Lookup:corrosions|TI|MM|579^9^0
+10.2307/3687277|Tanzania|D013636|1526|MH|RtM via: Tanzania;Forced Leaf Node Lookup:tanzania|TI|MM;RC|1087^8^0
+10.2307/3687277|*Fungi|D005658|8256|MH|RtM via: Fungi|TI|MM;RC|572^6^0
+10.2307/3687277|*Climate|D002980|6648|MH|RtM via: Climate|TI|MM;RC|238^7^0
+10.2307/3687277|*Plant|D010944|4422|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|251^5^0
+10.2307/3687277|*Bacteria|D001419|3654|MH|RtM via: Bacterial|TI|MM;RC|558^9^0
+10.2307/3687277|*Weather|D014887|2280|MH|RtM via: Weather;Forced Non-Leaf Node Lookup:weather|TI|MM|293^7^0
+10.2307/3687290|Animals|D000818|2645|CT|RtM via: Trigona|TI|MM;RC|314^7^0
+10.2307/3687290|Bees|D001516|2645|CT|RtM via: Trigona|TI|MM|314^7^0
+10.2307/3687290|*Fossils|D005580|1645|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|28^6^0
+10.2307/3687290|*Stramenopiles|D058009|981|MH|RtM via: Dictyocha;RtM via: Dictyochophyceae|TI|MM|86^9^0;35^17^0
+10.2307/3687290|*Cornus|D029768|330|MH|RtM via: Cornus|TI|MM|78^6^0
+10.2307/3687290|*Minerals|D008903|279|MH|RtM via: Shale|TI|MM;RC|148^5^0
+10.2307/3687290|*Histological Techniques|D006652|69|MH|RtM via: Sectioning technique|TI|MM|483^7^0
+10.2307/3687304|*Fossils|D005580|5550|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|381^6^0
+10.2307/3687304|*Rivers|D045483|1347|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|313^5^0
+10.2307/3687304|Arizona|D001130|531|MH|RtM via: Arizona;Forced Leaf Node Lookup:arizona|TI|MM|337^7^0
+10.2307/3687304|*Plant Leaves|D018515|1569|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM;RC|125^6^0
+10.2307/3687304|*Plant|D010944|1386|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|399^5^0
+10.2307/3687304|*Reproduction|D012098|870|MH|RtM via: Reproduction|TI|MM;RC|152^12^0
+10.2307/3687304|*Sodium Chloride|D012965|735|MH|RtM via: sodium chloride|TI|MM|308^4^0
+10.2307/3687241|Animals|D000818|2328|CT|Heteroptera;CT Treecode Lookup: B01.050.500.131 (Heteroptera)||MM;RC
+10.2307/3687241|*Wetlands|D053833|1328|MH|RtM via: Swamp;Forced Leaf Node Lookup:swamps|TI|MM|584^6^0
+10.2307/3687241|*Salinity|D054712|1148|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|353^8^0
+10.2307/3687241|*Floods|D055868|902|MH|RtM via: Floods;Forced Leaf Node Lookup:floods|TI|MM|562^5^0
+10.2307/3687241|*Coal|D003031|464|MH|RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coal|TI|MM|579^4^0
+10.2307/3687241|Gulf of Mexico|D060851|293|MH|RtM via: Gulf of Mexico;Forced Leaf Node Lookup:gulf of mexico|TI|MM|293^14^0
+10.2307/3687241|Utah|D014589|254|MH|RtM via: Utah;Forced Leaf Node Lookup:utah|TI|MM|106^4^0
+10.2307/3687241|*Heteroptera|D020062|567|MH|RtM via: Dacota|TI|MM;RC|1191^6^0;753^6^0;655^6^0;32^6^0
+10.2307/3687241|Fossils|D005580|318|MH|||RC
+10.2307/3687241|*Serogroup|D065288|105|MH|RtM via: Dakota Serotype|TI|MM|1191^6^0;753^6^0;655^6^0;32^6^0
+10.2307/3687241|Arctic Regions|D001110|57|MH|RtM via: Arctic Regions|TI|MM;RC|315^6^0
+10.2307/3687258|*Taiga|D066188|19209|MH|RtM via: Taiga;Forced Leaf Node Lookup:boreal forests;Forced Leaf Node Lookup:taigas|TI|MM;RC|156^13^0;171^5^0
+10.2307/3687258|*Lakes|D060106|10290|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM;RC|71^4^0
+10.2307/3687258|*Ice Cover|D046448|9918|MH|RtM via: Ice Cover;Forced Leaf Node Lookup:ice sheets|TI|MM;RC|633^9^0
+10.2307/3687258|Quebec|D011792|2763|MH|RtM via: Quebec;Forced Leaf Node Lookup:quebec|TI|MM|230^6^0
+10.2307/3687258|Arctic Regions|D001110|13101|MH|RtM via: Arctic Regions|TI|MM;RC|723^6^0;252^6^0
+10.2307/3687258|*Tundra|D065929|8265|MH|RtM via: Tundra;Forced Non-Leaf Node Lookup:tundras|TI|MM;RC|910^6^0;378^6^0;185^6^0;197^6^0
+10.2307/3687258|*Forest|D065928|4887|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|178^6^0
+10.2307/3687258|*Pollen|D011058|1509|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|805^6^0;28^6^0
+10.2307/3687222|*Rivers|D045483|321|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|113^5^0
+10.2307/3687222|Phylogeny|D010802|147|MH|||RC
+10.2307/3687222|*Gastrointestinal Microbiome|D000069196|69|MH|RtM via: Intestinal Microbiome|TI|MM|313^11^0;36^11^0
+10.2307/3687222|*Histological Techniques|D006652|27|MH|RtM via: Sectioning technique|TI|MM|596^7^0;55^7^0
+10.2307/3687222|*Cyst|D003560|6|ET|Entry Term Replacement for "Cysts";RtM via: Cyst;Forced Non-Leaf Node Lookup:cyst|TI|MM|693^4^0
+10.2307/3687237|*Islands|D062312|2451|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|154^6^0;184^7^0
+10.2307/3687237|Canada|D002170|354|MH|RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM;RC|168^8^0
+10.2307/3687237|*Spores|D013170|2250|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|422^6^0
+10.2307/3687237|*Geography|D005843|933|MH|RtM via: Geography|TI|MM;RC|294^12^0
+10.2307/3687237|*Pollen|D011058|663|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|411^6^0
+10.2307/3687237|Arctic Regions|D001110|591|MH|RtM via: Arctic Regions|TI|MM;RC|177^6^0
+10.2307/3687257|*Fossils|D005580|3304|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|28^6^0
+10.2307/3687257|Alaska|D000413|2152|MH|RtM via: Alaska;Forced Leaf Node Lookup:alaska|TI|MM;RC|155^6^0
+10.2307/3687257|Canada|D002170|933|MH|RtM via: Canada;Forced Non-Leaf Node Lookup:canada|TI|MM;RC|266^6^0
+10.2307/3687257|*Pollen|D011058|363|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|35^6^0;453^6^0
+10.2307/3687257|USSR|D014586|1000|MH|Forced Non-Leaf Node Lookup:ussr||MM|282^4^0
+10.2307/3687260|Pennsylvania|D010414|456|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|514^12^0
+10.2307/3687260|Europe|D005060|1407|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM;RC|109^6^0
+10.2307/3687260|North America|D009656|1269|MH|RtM via: North America;Forced Non-Leaf Node Lookup:north america|TI|MM;RC|120^13^0
+10.2307/3687260|Illinois|D007087|285|MH|RtM via: Illinois (geographic location);Forced Non-Leaf Node Lookup:illinois|TI|MM|384^8^0
+10.2307/3687246|*Magnesium|D008274|8021|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM;RC|1306^9^0
+10.2307/3687246|*Trace Elements|D014131|7989|MH|RtM via: Trace Elements;Forced Leaf Node Lookup:trace elements;checkForceMH Boosted|TI|MM;RC|1066^14^0;606^13^0;459^14^0;123^14^0
+10.2307/3687246|*Calcite|D002119|5044|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Calcite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:calcite|TI|MM;RC|1324^7^0
+10.2307/3687246|*Plankton|D010933|3040|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM;RC|1460^8^0
+10.2307/3687246|*Microscopy, Electron, Scanning|D008855|1497|MH|Forced Leaf Node Lookup:scanning electron microscope|TI|MM;RC|331^28^0
+10.2307/3687246|*X-Rays|D014965|1281|MH|Forced Leaf Node Lookup:x-rays|TI|MM;RC|434^5^0
+10.2307/3687246|Gulf of Mexico|D060851|1276|MH|RtM via: Gulf of Mexico;Forced Leaf Node Lookup:gulf of mexico|TI|MM|283^14^0
+10.2307/3687246|*Electrons|D004583|1273|MH|Forced Leaf Node Lookup:electrons|TI|MM|31^8^0;364^8^0
+10.2307/3687246|*Solubility|D012995|1273|MH|Forced Leaf Node Lookup:dissolution|TI|MM|1214^11^0
+10.2307/3687246|*Electron Probe Microanalysis|D004577|6669|MH|RtM via: Electron Probe Microanalysis|TI|MM;RC|31^28^0
+10.2307/3687246|*Preservation, Biological|D011309|1698|MH|RtM via: Biologic Preservation|TI|MM|1404^12^0
+10.2307/3687246|*Biological Transport|D001692|1218|MH|RtM via: Cell secretion;RtM via: Import into cell;RtM via: import across plasma membrane|TI|MM|1332^8^0;834^6^0
+10.2307/3687246|*Biochemical Phenomena|D001669|1182|MH|RtM via: Cell secretion;RtM via: Resistance Process;RtM via: import across plasma membrane|TI|MM|1332^8^0;1200^10^0;834^6^0
+10.2307/3687274|Humans|D006801|7203193|CT|Forced Humans: university|TI|MM;RC
+10.2307/3687274|Animals|D000818|7203193|CT|Sable;CT Treecode Lookup: B01.050.150.900.649.313.750 (Sable)||MM;RC
+10.2307/3687274|*Sand|D000080463|584050|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|722^4^0
+10.2307/3687274|*Trees|D014197|583717|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|752^5^0
+10.2307/3687274|*Soil|D012987|299879|MH|RtM via: Soil;RtM via: Peat;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM;RC|595^5^0;328^4^0;337^4^0
+10.2307/3687274|*Sable|D045969|291071|ET|Entry Term Replacement for "Mustelidae";RtM via: Sables;checkForceMH Boosted;Forced Non-Leaf Node Lookup:sables|TI|MM;RC|28^5^0
+10.2307/3687274|*Universities|D014495|290879|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM;RC|967^10^0
+10.2307/3687274|Nova Scotia|D009674|290834|MH|RtM via: Nova Scotia;Forced Leaf Node Lookup:nova scotia|TI|MM;RC|140^11^0
+10.2307/3687274|*Spores|D013170|2289|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|845^6^0
+10.2307/3687274|*Pollen|D011058|1368|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|834^6^0;491^6^0;907^6^0
+10.2307/3687274|*Islands|D062312|1335|MH|RtM via: Islands|TI|MM|765^6^0;609^6^0;34^6^0
+10.2307/3687205|Animals|D000818|3458|CT|Dinosaurs;CT Treecode Lookup: B01.050.150.900.833 (Dinosaurs)||RC
+10.2307/3687205|*Rivers|D045483|1621|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|979^5^0;490^5^0;194^5^0;681^5^0;1084^5^0
+10.2307/3687205|Alberta|D000416|385|MH|RtM via: Alberta province;Forced Leaf Node Lookup:alberta|TI|MM;RC|526^7^0;362^7^0;128^7^0;654^7^0
+10.2307/3687205|Dinosaurs|D025061|2458|MH|||RC
+10.2307/3687205|Fossils|D005580|925|MH|||RC
+10.2307/3687205|*City Planning|D002958|420|MH|RtM via: zoning|TI|MM|852^8^0;750^8^0
+10.2307/3687207|Animals|D000818|4279|CT|CT Text Lookup: horns|TI|MM;RC|318^5^0
+10.2307/3687207|*Dinoflagellate|D004141|2579|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|865^1^0;889^15^0;670^14^0;111^14^0
+10.2307/3687207|*Plankton|D010933|1967|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM;RC|715^10^0
+10.2307/3687207|Gabon|D005681|392|MH|RtM via: Gabon;Forced Leaf Node Lookup:gabon|TI|MM|179^5^0
+10.2307/3687207|*Biological Evolution|D005075|3279|MH|RtM via: Biological Evolution|TI|MM;RC|232^12^0
+10.2307/3687207|Phylogeny|D010802|544|MH|||RC
+10.2307/3687207|*Cysts|D003560|54|MH|RtM via: Simple cyst;RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|282^6^1;301^5^1;685^5^0;126^5^0
+10.2307/3687213|*Temperature|D013696|6930|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|146^11^0;262^12^0
+10.2307/3687213|*Lignite|D003031|4233|ET|Entry Term Replacement for "Coal";RtM via: Lignite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lignites|TI|MM;RC|135^7^0
+10.2307/3687213|*Hot Temperature|D006358|4254|MH|RtM via: High temperature of physical object|TI|MM;RC|257^17^0
+10.2307/3687213|*Fixations, Carbon|D057486|2961|ET|Entry Term Replacement for "Carbon Cycle";RtM via: carbon fixation|TI|MM|430^12^0
+10.2307/3687213|*Carbon|D002244|2493|MH|RtM via: Carbon;Forced Non-Leaf Node Lookup:carbon|TI|MM;RC|393^13^0;303^13^0;55^13^0;436^6^0
+10.2307/3687213|*Spores|D013170|2046|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|233^6^0;83^6^0
+10.2307/3687213|*Pollen|D011058|1665|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|222^6^0;72^6^0
+10.2307/3687213|Fibrinogen|D005340|1000|MH|Forced Non-Leaf Node Lookup:factor i||MM|189^8^0
+10.2307/3687240|*Dinoflagellates|D004141|1341|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM|86^15^0
+10.2307/3687240|*Cell Membrane|D002462|1449|MH|RtM via: dinoflagellate cingulum;RtM via: dinoflagellate sulcus|TI|MM|350^8^0;374^6^0
+10.2307/3687240|*Cerebral Cortex|D002540|1065|MH|RtM via: Operculum|TI|MM|294^9^0;268^9^0
+10.2307/3687240|*Nerve Net|D009415|903|MH|RtM via: Structure of cingulum|TI|MM|350^8^0
+10.2307/3687240|*White Matter|D066127|834|MH|RtM via: Structure of cingulum|TI|MM|350^8^0
+10.2307/3687240|*Cysts|D003560|78|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|178^4^0;108^5^0;167^5^0
+10.2307/3687206|Oklahoma|D009825|131|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|379^8^0
+10.2307/3687206|Biological Evolution|D005075|412|MH|||RC
+10.2307/3687206|Phylogeny|D010802|310|MH|||RC
+10.2307/3687206|Fresh Water|D005618|203|MH|Forced Non-Leaf Node Lookup:freshwaters||MM;RC|527^10^0
+10.2307/3687206|*Sutures|D013537|72|MH|RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|185^7^0;151^6^0
+10.2307/3687206|*Cysts|D003560|39|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|405^5^0;288^5^0;95^5^0
+10.2307/3687228|Animals|D000818|8821|CT|Ursidae;CT Treecode Lookup: B01.050.150.900.649.313.750 (Ursidae)||MM;RC
+10.2307/3687228|*Ursidae|D001503|1478|MH|RtM via: Ursidae Family;Forced Leaf Node Lookup:bear;checkForceMH Boosted|TI|MM|351^4^0
+10.2307/3687228|*Spores|D013170|7821|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM;RC|417^6^0;331^6^0;36^6^0;477^5^0
+10.2307/3687228|*Reproduction|D012098|1470|MH|RtM via: spore dispersal|TI|MM;RC|467^15^0
+10.2307/3687228|*Plant Structures|D018514|696|MH|RtM via: Cone (plant)|TI|MM|438^4^0;299^4^0;139^4^0
+10.2307/3687228|*Plants|D010944|600|MH|RtM via: Plants|TI|MM;RC|832^6^0
+10.2307/3687204|*Conifers|D064028|17813|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;RtM via: Gymnosperm;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|594^8^0;82^11^0
+10.2307/3687204|*Gymnosperms|D032462|16763|ET|Entry Term Replacement for "Cycadopsida";RtM via: Division Coniferophyta (organism);RtM via: Cycadopsida;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gymnosperms|TI|MM;RC|594^8^0;82^11^0
+10.2307/3687204|*Ferns|D029624|8264|MH|RtM via: Ferns;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ferns|TI|MM;RC|621^5^0
+10.2307/3687204|*Seasons|D012621|4442|MH|RtM via: Seasonal Variation;Forced Leaf Node Lookup:seasonal variations|TI|MM;RC|413^19^0
+10.2307/3687204|*Atmosphere|D001272|4749|MH|RtM via: Atmosphere, planetary;Forced Non-Leaf Node Lookup:atmospheres|TI|MM;RC|937^10^0
+10.2307/3687204|*Seed|D012639|1914|ET|Entry Term Replacement for "Seeds";RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seed|TI|MM;RC|616^4^0
+10.2307/3687204|*Rains|D011891|1731|ET|Entry Term Replacement for "Rain";RtM via: Rain|TI|MM|390^5^0
+10.2307/3687243|*Mirabilis|D039282|320|MH|Forced Leaf Node Lookup:mirabilis;checkForceMH Boosted|TI|MM|256^9^0;346^9^0
+10.2307/3687243|*Urinary Bladder|D001743|178|MH|RtM via: Urinary Bladder;Forced Leaf Node Lookup:bladder|TI|MM|49^7^0
+10.2307/3687243|RNA, Ribosomal, 16S|D012336|553|MH|||RC
+10.2307/3687243|*Proteus mirabilis|D011513|348|MH|RtM via: Proteus mirabilis|TI|MM|343^1^1;346^9^1;253^1^1;256^9^1
+10.2307/3687287|*Conifer|D064028|6834|ET|Entry Term Replacement for "Tracheophyta";RtM via: Tracheophyta;checkForceMH Boosted;Forced Non-Leaf Node Lookup:conifers|TI|MM;RC|263^7^0
+10.2307/3687287|*Quercus|D029963|3806|MH|Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM;RC|409^3^0
+10.2307/3687287|Michigan|D008824|1806|MH|RtM via: Michigan (geographic location);Forced Leaf Node Lookup:michigan|TI|MM|68^8^0
+10.2307/3687287|*Forests|D065928|16287|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|316^6^0;241^7^0;280^7^0;358^7^0;421^7^0;444^7^0
+10.2307/3687287|*Pinus|D028223|7299|MH|RtM via: Pinus <genus>|TI|MM;RC|353^4^0
+10.2307/3687287|*Pollen|D011058|1929|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|494^6^0;154^6^0;47^6^0;137^6^0;569^6^0
+10.2307/3687286|Humans|D006801|1000|CT|Forced Humans:D Transients and Migrants||MM
+10.2307/3687286|*Dinoflagellate|D004141|12850|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Peridinium limbatum;RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|232^19^0;377^15^0;293^14^0;28^10^0
+10.2307/3687286|*Fossils|D005580|8443|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|417^6^0;185^6^0
+10.2307/3687286|*Transients and Migrants|D014171|1360|MH|RtM via: Migrants;Forced Leaf Node Lookup:migrants|TI|MM|585^8^0
+10.2307/3687286|Vermont|D014707|1333|MH|RtM via: Vermont;Forced Leaf Node Lookup:vermont|TI|MM|110^7^0
+10.2307/3687286|*Freshwater|D005618|5601|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM;RC|549^10^0;366^10^0;282^10^0;69^10^0
+10.2307/3687286|*Habitat|D017753|3627|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|560^7^0
+10.2307/3687286|*Physiological Phenomena|D010829|801|MH|RtM via: Reflecting|TI|MM|520^8^0
+10.2307/3687227|*Wetlands|D053833|25183|MH|RtM via: Marshes;RtM via: Swamp;Forced Leaf Node Lookup:marshes;Forced Leaf Node Lookup:swamps|TI|MM;RC|423^5^0;146^7^0;99^5^0;174^6^0
+10.2307/3687227|*Carex Plant|D031255|14975|MH|RtM via: Carex Genus;Forced Leaf Node Lookup:carex;checkForceMH Boosted|TI|MM;RC|532^5^0;124^5^0
+10.2307/3687227|*Peat|D012987|10081|ET|Entry Term Replacement for "Soil";RtM via: Peat;checkForceMH Boosted;Forced Non-Leaf Node Lookup:peat|TI|MM;RC|459^5^0;367^4^0;55^4^0
+10.2307/3687227|*Taxodium|D032489|6821|MH|RtM via: Taxodium;Forced Leaf Node Lookup:taxodiums;checkForceMH Boosted|TI|MM|165^8^0
+10.2307/3687227|*Nyssa|D031655|5945|MH|RtM via: Nyssa;Forced Leaf Node Lookup:nyssa;checkForceMH Boosted|TI|MM|155^5^0
+10.2307/3687227|*Panicum|D008897|5834|MH|RtM via: Panicum;Forced Leaf Node Lookup:panicum;checkForceMH Boosted|TI|MM|451^7^0;115^7^0
+10.2307/3687227|*Nymphaea|D030721|5714|MH|RtM via: Nymphaea;Forced Leaf Node Lookup:nymphaea;checkForceMH Boosted|TI|MM|519^8^0;105^8^0
+10.2307/3687227|*Trees|D014197|5432|MH|Forced Leaf Node Lookup:tree;checkForceMH Boosted|TI|MM;RC|195^4^0
+10.2307/3687227|*Islands|D062312|4642|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|200^7^0
+10.2307/3687227|*Forested Areas|D065928|13050|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forested areas|TI|MM;RC|271^14^0
+10.2307/3687227|*Pollen|D011058|3111|MH|RtM via: tree pollen allergenic extracts;RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|195^4^1;230^6^1;490^6^0
+10.2307/3687227|*Spore|D013170|2457|ET|Entry Term Replacement for "Spores";RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|241^5^0
+10.2307/3687227|*Tracheophyta|D064028|2232|MH|RtM via: Woodwardia|TI|MM|436^10^0;135^10^0
+10.2307/3687248|*Fossils|D005580|4289|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|645^6^0
+10.2307/3687248|*Carya|D031325|4141|MH|RtM via: Carya;Forced Leaf Node Lookup:caryas;checkForceMH Boosted|TI|MM;RC|601^5^0
+10.2307/3687248|*Juglandaceae|D029525|3803|MH|RtM via: Juglandaceae;RtM via: Engelhardia;RtM via: Alfaroa;checkForceMH Boosted;Forced Non-Leaf Node Lookup:juglandaceae|TI|MM;RC|367^12^0;585^11^0;399^11^0;411^7^0
+10.2307/3687248|North America|D009656|1245|MH|RtM via: North America;Forced Non-Leaf Node Lookup:north america|TI|MM;RC|83^13^0
+10.2307/3687248|*Pollen|D011058|996|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|222^6^0;42^6^0
+10.2307/3687248|*Phylogeny|D010802|840|MH|RtM via: Phylogeny|TI|MM;RC|555^8^0;257^8^0
+10.2307/3687248|Europe|D005060|582|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|101^6^0
+10.2307/3687293|Israel|D007557|364|MH|RtM via: Israel;Forced Leaf Node Lookup:israel|TI|MM|123^6^0
+10.2307/3687293|Fossils|D005580|1929|MH|||RC
+10.2307/3687293|Paleontology|D010163|1837|MH|||RC
+10.2307/3687300|Humans|D006801|15581728|CT|Forced Humans: students|TI|MM
+10.2307/3687300|*Fossils|D005580|667199|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|508^6^0;68^6^0
+10.2307/3687300|*Dinoflagellates|D004141|663071|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM;RC|515^15^0;75^15^0
+10.2307/3687300|*Paleontology|D010163|713370|MH|RtM via: Paleontology|TI|MM;RC|355^15^0
+10.2307/3687300|*Eating|D004435|336|MH|RtM via: Adequate Daily Fluid Intake;RtM via: Adequate Daily Salt Intake|TI|MM|644^8^0
+10.2307/3687300|*Students|D013334|333|MH|RtM via: student;Forced Non-Leaf Node Lookup:students|TI|MM|485^8^0
+10.2307/3687300|*Survey|D011795|264|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|160^6^0
+10.2307/3687300|*Cyst|D003560|27|ET|Entry Term Replacement for "Cysts";RtM via: Cyst;Forced Non-Leaf Node Lookup:cyst|TI|MM|614^4^0;680^4^0
+10.2307/3687239|*Coal|D003031|12198|MH|RtM via: Bituminous Coal;RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coals|TI|MM;RC|164^10^1;176^4^1;1520^5^0;1300^4^0;766^5^0;511^4^0
+10.2307/3687239|*Fossils|D005580|3795|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|414^7^0
+10.2307/3687239|*Sand|D000080463|2193|MH|RtM via: Sand;checkForceMH Boosted|TI|MM|364^5^0
+10.2307/3687239|*Hydrodynamics|D057446|1521|MH|RtM via: Hydrodynamics;Forced Leaf Node Lookup:hydrodynamics|TI|MM|1584^12^0
+10.2307/3687239|Pennsylvania|D010414|1263|MH|RtM via: Pennsylvania;Forced Leaf Node Lookup:pennsylvania|TI|MM|277^12^0
+10.2307/3687239|*Minerals|D008903|3387|MH|RtM via: Shale|TI|MM;RC|1509^6^0;755^6^0;84^6^0
+10.2307/3687239|pyrite|C011342|2860|NM|RtM via: ferrous disulfide|TI|MM|127^7^0
+10.2307/3687239|*Iron|D007501|2859|HM|RtM via: ferrous disulfide|TI|MM;RC|127^7^0
+10.2307/3687239|*Sulfides|D013440|1689|HM|RtM via: ferrous disulfide|TI|MM;RC|127^7^0
+10.2307/3687239|*Spores|D013170|831|MH|RtM via: Plant spore;RtM via: Reproduction spores;Forced Non-Leaf Node Lookup:spores|TI|MM|819^6^0
+10.2307/3687239|USSR|D014586|1000|MH|Forced Non-Leaf Node Lookup:ussr||MM|1030^4^0
+10.2307/3687239|Canada|D002170|165|MH|RtM via: Canada|TI|MM|998^6^0
+10.2307/3687239|Western Europe|D005060|81|ET|Entry Term Replacement for "Europe";RtM via: Western Europe|TI|MM|1006^14^0
+10.2307/3687214|*Coal|D003031|3085|MH|RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coal|TI|MM;RC|604^4^0;500^4^0;309^4^0;82^4^0;554^4^0
+10.2307/3687214|Oklahoma|D009825|2242|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|508^8^0
+10.2307/3687214|Kansas|D007615|1873|MH|RtM via: Kansas (geographic location);Forced Leaf Node Lookup:kansas|TI|MM|518^6^0
+10.2307/3687214|Missouri|D008923|1873|MH|RtM via: Missouri;Forced Leaf Node Lookup:missouri|TI|MM|529^8^0
+10.2307/3687214|Texas|D013781|1327|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM;RC|138^5^0
+10.2307/3687214|Illinois|D007087|2934|MH|RtM via: Illinois (geographic location);Forced Non-Leaf Node Lookup:illinois|TI|MM;RC|562^8^0
+10.2307/3687214|*Minerals|D008903|681|MH|RtM via: Shale|TI|MM;RC|777^5^0;583^5^0
+10.2307/3687214|Canada|D002170|69|MH|RtM via: Canada;Forced Non-Leaf Node Lookup:canada|TI|MM|857^6^0
+10.2307/3687220|Animals|D000818|1885|CT|Spiders;CT Treecode Lookup: B01.050.500.131 (Spiders)||MM;RC
+10.2307/3687220|Humans|D006801|1885|CT|Continental Population Groups;CT Treecode Lookup: M01.686 (Continental Population Groups)||MM
+10.2307/3687220|*Dinoflagellates|D004141|157|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM|121^15^0
+10.2307/3687220|Australia|D001315|77|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM;RC|103^10^0
+10.2307/3687220|*Spiders|D013112|885|MH|RtM via: Verrucosa|TI|MM;RC|955^9^0;588^9^0
+10.2307/3687220|Animal Distribution|D063147|102|MH|||RC
+10.2307/3687220|*Physiological Phenomena|D010829|48|MH|RtM via: Reflecting|TI|MM|803^9^0;333^7^0
+10.2307/3687220|*Continental Population Groups|D044469|3|MH|RtM via: Australian|TI|MM|103^10^0
+10.2307/3687247|*Lakes|D060106|4176|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|683^4^0
+10.2307/3687247|*Dinoflagellates|D004141|3372|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;RtM via: Pyxidinopsis psilata;RtM via: Spiniferites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM|624^15^0;28^15^0;537^22^0;578^12^0
+10.2307/3687247|Black Sea|D059038|1506|MH|RtM via: Black Sea;Forced Leaf Node Lookup:black sea|TI|MM;RC|826^9^0;366^9^0;101^9^0
+10.2307/3687247|*Water, Saline|D000068357|7986|ET|Entry Term Replacement for "Saline Waters";RtM via: Saline Waters;RtM via: Brackish Water;Forced Non-Leaf Node Lookup:saline waters|TI|MM|767^12^0;347^14^0
+10.2307/3687247|*Physical Phenomena|D055585|612|MH|RtM via: Flow|TI|MM|812^4^0
+10.2307/3687247|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM;RC|356^5^0

@@ -31,7 +31,7 @@ def get_x2_score(suffa, suffb):
 
 
 def get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2, fullname1, fullname2, mesh1, mesh2, langa, langb):
-    x3 = len(set(title1.split(' ')) & set(title2.split(' ')))
+    x3 = len(list(set(title1.split(' ')) & set(title2.split(' '))))
     if(journal_name1 == journal_name2):
         x4 = 1
     else:
@@ -43,11 +43,11 @@ def get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2,
     x6 = len(list(set(mesh1) & set(mesh2)))
 
     
-    if(langa == langb and langa != 'eng'):
+    if(set(langa.split(" ")) == set(langb.split(" ")) and (langa != 'eng' or langa!= 'en')):
         x7 = 3
-    elif(langa == langb and langa == 'eng'):
+    elif(set(langa.split(" ")) == set(langb.split(" ")) and (langa == 'eng' or langa == 'en')):
         x7 = 2
-    elif(langa != langb and (langa == 'eng' or langb == 'eng')):
+    elif(set(langa.split(" ")) != set(langb.split(" ")) and (langa == 'eng' or langb == 'eng' or langa == 'en' or langb == 'en' )):
         x7 = 1
     else:
         x7 = 0
@@ -798,11 +798,12 @@ x7_nm = {}
 
 
 nicknames = load_nicknames()
-# get_name_set_pair_count()
-# get_article_match_set_pair_count()
-# get_article_non_match_set_pair_count()
-# get_firstname_match_set_pair_count()
-# get_firstname_non_match_set_pair_count()
+get_name_set_pair_count()
+get_firstname_match_set_pair_count()
+get_firstname_non_match_set_pair_count()
+get_article_match_set_pair_count()
+get_article_non_match_set_pair_count()
+
 
 
 test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')

@@ -234,9 +234,9 @@
 30002456|*Bays|D061006|14177|MH|Forced Leaf Node Lookup:bay|TI|MM|105^3^0
 30002456|Imaging, Three-Dimensional|D021621|61724|MH|||RC
 30002456|Image Processing, Computer-Assisted|D007091|36928|MH|||RC
-30002273|*Water|D014867|12661|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|245^5^0
-30002273|Intimate Partner Violence|D000066511|38911|MH|||RC
-30002273|Attitude of Health Personnel|D001291|27617|MH|||RC
+30002273|*Water|D014867|13753|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|245^5^0
+30002273|Intimate Partner Violence|D000066511|41939|MH|||RC
+30002273|Attitude of Health Personnel|D001291|33044|MH|||RC
 30002152|*Facies|D019066|19836|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|198^6^0
 30002152|Genome-Wide Association Study|D055106|58344|MH|||RC
 30002152|White Matter|D066127|43895|MH|||RC
@@ -313,10 +313,10 @@
 30002361|DNA (Cytosine-5-)-Methyltransferase 1|D000076123|112255|MH|||RC
 30002361|DNA (Cytosine-5-)-Methyltransferases|D004248|101474|MH|||RC
 30002361|*Computer Program|D012984|2943|ET|Entry Term Replacement for "Software";RtM via: Computer software;Forced Non-Leaf Node Lookup:computer programs|TI|MM|69^16^0
-30002198|*Rivers|D045483|62611|MH|RtM via: Rivers;RtM via: Streams;Forced Leaf Node Lookup:streams;Forced Leaf Node Lookup:rivers|TI|MM|315^6^0;404^7^0;466^7^0;515^7^0;561^7^0
-30002198|*AT-Hook Motifs|D024761|31163|MH|Forced Leaf Node Lookup:at hooks|TI|MM|209^7^0
-30002198|Prediabetic State|D011236|100326|MH|||RC
-30002198|Diabetes Mellitus|D003920|98817|MH|||RC
+30002198|*Rivers|D045483|62194|MH|RtM via: Rivers;RtM via: Streams;Forced Leaf Node Lookup:streams;Forced Leaf Node Lookup:rivers|TI|MM|315^6^0;404^7^0;466^7^0;515^7^0;561^7^0
+30002198|*AT-Hook Motifs|D024761|30959|MH|Forced Leaf Node Lookup:at hooks|TI|MM|209^7^0
+30002198|Prediabetic State|D011236|99858|MH|||RC
+30002198|Diabetes Mellitus|D003920|98385|MH|||RC
 30002159|Animals|D000818|153693|CT|Corals;CT Treecode Lookup: B01.050.500.308 (Corals)||MM;RC
 30002159|*Foraminifera|D056908|34904|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:foraminifera;checkForceMH Boosted|TI|MM|332^12^0
 30002159|*Corals|D037421|17614|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|321^6^0
@@ -371,12 +371,12 @@
 30002222|Podocytes|D050199|69011|MH|||RC
 30002222|Phosphatidylinositol 3-Kinases|D019869|52082|MH|||RC
 30002222|*Islands|D062312|402|MH|RtM via: Islands|TI|MM|245^6^0
-30002267|*Facies|D019066|17162|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|643^6^0
-30002267|Ireland|D007494|16187|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|90^7^0
-30002267|*Volcanic Eruptions|D018707|15986|MH|Forced Leaf Node Lookup:volcanism|TI|MM|310^9^0
-30002267|Lipid Bilayers|D008051|61451|MH|||RC
-30002267|Microscopy, Fluorescence|D008856|57266|MH|||RC
-30002267|*Islands|D062312|363|MH|RtM via: Islands|TI|MM|299^6^0
+30002267|*Facies|D019066|17151|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|643^6^0
+30002267|Ireland|D007494|16176|MH|RtM via: Ireland;Forced Leaf Node Lookup:ireland|TI|MM|90^7^0
+30002267|*Volcanic Eruptions|D018707|15975|MH|Forced Leaf Node Lookup:volcanism|TI|MM|310^9^0
+30002267|Lipid Bilayers|D008051|61431|MH|||RC
+30002267|Microscopy, Fluorescence|D008856|57209|MH|||RC
+30002267|*Islands|D062312|360|MH|RtM via: Islands|TI|MM|299^6^0
 30002153|*Facies|D019066|88797|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|380^6^0
 30002153|*Limestone|D002119|88191|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|331^10^0;118^10^0
 30002153|Methyl Ethers|D008738|400438|MH|||RC

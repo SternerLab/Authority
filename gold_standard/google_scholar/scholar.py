@@ -21,7 +21,7 @@ def put_titles_in_db(titles, name, name_id):
     # query1 = "select * from google_scholar"
     # cursor.execute(query1)
     # print(list(cursor.fetchall()))
-    query = "SELECT id, fullname FROM articles where UPPER(full_title) in " + "( "
+    query = "SELECT id, fullname FROM Articles_2_ab where UPPER(full_title) in " + "( "
     for title in titles:
         title = title.replace('\'', '\'\'').upper()
         query += "\'"+title+"\'" + ","
@@ -103,7 +103,7 @@ if os.path.exists(filename_log):
 
 print("index_from",index_from)
 print('results_'+index_from+'_'+index_to+'.csv')
-database_path = "../../database/jstor-authority.db"
+database_path = "../../database/jstor-authority-backup.db"
 cnx = sqlite3.connect(database_path)
 cursor = cnx.cursor()
 
@@ -113,7 +113,7 @@ create_table_query = "CREATE TABLE IF NOT EXISTS google_scholar (name_id VARCHAR
 cursor.execute(create_table_query)
 
 
-query = 'select distinct(fullname) from articles'
+query = 'select distinct(fullname) from Articles_2_ab'
 cursor.execute(query)
 authors=list(cursor.fetchall())
 print(len(authors))

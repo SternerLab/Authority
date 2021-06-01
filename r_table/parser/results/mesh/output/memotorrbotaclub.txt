@@ -1,0 +1,76 @@
+43390659|Humans|D006801|21421|CT|Forced Leaf Node Lookup:humans;CT Text Lookup: human|TI|MM|1262^5^0
+43390659|Animals|D000818|21421|CT|Life Cycle;CT Treecode Lookup: B05.500 (Life Cycle);Life Cycle;CT Treecode Lookup: G07.345.500.550.500 (Life Cycle)|TI|MM
+43390659|*Fossils|D005580|13961|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|336^7^0;107^6^0
+43390659|*Germ Cells, Plant|D055993|4969|MH|RtM via: Gametophytes;Forced Leaf Node Lookup:gametophytes|TI|MM|391^11^0
+43390659|*Rest|D012146|3091|MH|RtM via: Rest;Forced Leaf Node Lookup:rests|TI|MM|85^5^0
+43390659|*Plants|D010944|20421|MH|RtM via: Algae;RtM via: Plants|TI|MM;RC|209^5^0;792^6^0;330^5^0;78^6^0
+43390659|*Bryophyta|D044002|16431|MH|RtM via: Mosses|TI|MM;RC|1009^10^0;874^10^0;571^10^0;410^10^0;315^9^0;35^10^0
+43390659|*Plants, Land|D019669|7857|ET|Entry Term Replacement for "Embryophyta";RtM via: Embryophyta;Forced Non-Leaf Node Lookup:land plants|TI|MM|358^11^0
+43390659|*Agriculture|D000383|2814|MH|RtM via: Agriculture|TI|MM;RC|1287^12^0
+43390659|*Forests|D065928|2433|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|1119^7^0
+43390659|*Life Cycle|D008018|819|ET|Entry Term Replacement for "Life Cycle Stages";RtM via: Life Cycle Stages;Forced Non-Leaf Node Lookup:life cycles|TI|MM|301^10^0
+43390659|Genetic Variation|D014644|1000|MH|Forced Non-Leaf Node Lookup:genetic diversity||MM|969^17^0
+43390659|Biological Products|D001688|1000|MH|Forced Non-Leaf Node Lookup:natural products||MM|844^16^0
+43390662|*Gravitropism|D018522|55273|MH|RtM via: Gravitropism;Forced Leaf Node Lookup:gravitropisms|TI|MM;RC|794^12^0
+43390662|*Bryopsida|D019068|21584|MH|RtM via: Ceratodon;Forced Leaf Node Lookup:ceratodons;checkForceMH Boosted|TI|MM;RC|36^9^0
+43390662|*Amyloplasts|D018087|30303|ET|Entry Term Replacement for "Plastids";RtM via: Amyloplasts;Forced Non-Leaf Node Lookup:amyloplasts|TI|MM;RC|1409^10^0;1248^10^0;1064^11^0;940^10^0;819^10^0;449^11^0
+43390662|*Microtubules|D008870|7755|MH|RtM via: Microtubules;Forced Non-Leaf Node Lookup:microtubules|TI|MM;RC|1459^12^0;1299^12^0;1197^12^0;1167^11^0
+43390662|*Cell Nucleus|D002467|4278|MH|RtM via: Cell Nucleus|TI|MM|1046^7^0
+43390662|*Centrifugation|D002498|2313|MH|RtM via: Centrifugation;Forced Non-Leaf Node Lookup:centrifugation|TI|MM;RC|652^14^0
+43390662|Nutrients|D000078622|1000|MH|Forced Non-Leaf Node Lookup:nutrients||MM|83^8^0
+43390660|*Bryopsida|D019068|22740|MH|RtM via: Physcomitrella patens;Forced Leaf Node Lookup:physcomitrellas;checkForceMH Boosted|TI|MM;RC|62^21^0
+43390660|*Plant Growth Regulators|D010937|17016|MH|RtM via: Plant Growth Regulators;Forced Leaf Node Lookup:phytohormones;checkForceMH Boosted|TI|MM;RC|112^12^0
+43390660|*Auxins|D007210|15549|ET|Entry Term Replacement for "Indoleacetic Acids";RtM via: Auxins;checkForceMH Boosted;Forced Non-Leaf Node Lookup:auxins|TI|MM;RC|248^6^0
+43390660|*Eukaryotic Cells|D005057|4668|MH|RtM via: Eukaryotic Cells;Forced Leaf Node Lookup:eukaryotic cells|TI|MM|1052^16^0
+43390660|*Gametophytes|D055993|7773|ET|Entry Term Replacement for "Germ Cells, Plant";RtM via: Gametophytes|TI|MM;RC|283^12^0
+43390660|*Bryophyta|D044002|2439|MH|RtM via: Mosses|TI|MM|1120^4^0
+43390660|*Genetic Testing|D005820|1947|MH|RtM via: Genetic screening method|TI|MM|317^16^0
+43390660|*Replicon|D012093|1710|MH|RtM via: Replicon;Forced Non-Leaf Node Lookup:replicons|TI|MM|1342^8^0
+43390660|*Hormone|D006728|903|ET|Entry Term Replacement for "Hormones";RtM via: Hormones;Forced Non-Leaf Node Lookup:hormone|TI|MM|147^7^0
+43390660|*Plasmid|D010957|825|ET|Entry Term Replacement for "Plasmids";RtM via: Plasmids;Forced Non-Leaf Node Lookup:plasmids|TI|MM|1227^7^0;987^7^0;951^7^0
+43390660|*Morphogenesis|D009024|552|MH|RtM via: Morphogenesis;Forced Non-Leaf Node Lookup:morphogenesis|TI|MM|1521^13^0;430^13^0;296^13^0
+43390660|Genes, Developmental|D050437|1000|MH|Forced Non-Leaf Node Lookup:developmental genes||MM|500^19^0
+43390660|Molecular Biology|D008967|1000|MH|Forced Non-Leaf Node Lookup:molecular genetics||MM|709^18^0
+43390660|Computers|D003201|1000|MH|Forced Non-Leaf Node Lookup:computers||MM|1389^8^0
+43390661|*Alleles|D000483|9749|MH|RtM via: Alleles;Forced Leaf Node Lookup:alleles|TI|MM;RC|612^7^0
+43390661|*Genetic Markers|D005819|7097|MH|RtM via: Genetic Marker Expression;RtM via: Genetic Markers;Forced Leaf Node Lookup:genetic markers|TI|MM|21^15^0
+43390661|*Population Density|D011156|5111|MH|RtM via: Population Size;Forced Leaf Node Lookup:population sizes|TI|MM|1151^15^0
+43390661|*Haploidy|D006238|4808|MH|RtM via: Haploidy;Forced Leaf Node Lookup:haploids|TI|MM|147^7^0
+43390661|*Mosses|D044002|4649|ET|Entry Term Replacement for "Bryophyta";RtM via: Mosses;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mosses|TI|MM|1694^10^0;1405^6^0;1622^6^0
+43390661|*Pedigree|D010375|2843|MH|Forced Leaf Node Lookup:genetic identity|TI|MM|303^16^0
+43390661|*Genetic Polymorphism|D011110|9702|ET|Entry Term Replacement for "Polymorphism, Genetic";RtM via: Genetic Polymorphism;Forced Non-Leaf Node Lookup:genetic polymorphisms|TI|MM;RC|452^20^0
+43390661|*Polyploid|D011123|8598|ET|Entry Term Replacement for "Polyploidy";RtM via: Polyploidy;Forced Non-Leaf Node Lookup:polyploids|TI|MM;RC|872^9^0
+43390661|*Genetic Drift|D040961|7155|MH|RtM via: Genetic Drift|TI|MM|1354^23^0
+43390661|*DNA Mutational Analysis|D004252|2826|MH|RtM via: Genetic Variation Analysis|TI|MM|1256^17^0
+43390661|Electrophoresis|D004586|999|MH|Forced Non-Leaf Node Lookup:electrophoresis||MM;RC|64^15^0
+43390661|Starch|D013213|1000|MH|Forced Non-Leaf Node Lookup:starch||MM|53^6^0
+43390663|Animals|D000818|72113|CT|Forced Non-Leaf Node Lookup:animals||MM|411^7^0
+43390663|*Tubulin|D014404|71113|MH|RtM via: Tubulin;Forced Leaf Node Lookup:tubulin;checkForceMH Boosted|TI|MM;RC|1324^7^0
+43390663|*Microtubule-Organizing Center|D022101|54083|MH|RtM via: Microtubule-Organizing Center;Forced Lookup:microtubule organizing center|TI|MM;RC|851^29^0;882^4^0
+43390663|*Cytokinesis|D048749|53849|MH|RtM via: Cytokinesis;RtM via: Cytokinesis of the fertilized ovum;Forced Leaf Node Lookup:cytokinesis|TI|MM;RC|925^11^0;552^11^0
+43390663|*Nuclear Envelope|D009685|33566|MH|RtM via: Nuclear Envelope;Forced Leaf Node Lookup:nuclear envelopes|TI|MM;RC|1159^16^0
+43390663|*Plant Cells|D059828|24740|MH|RtM via: Plant Cells;Forced Leaf Node Lookup:plant cells|TI|MM|1272^11^0
+43390663|*Microtubules|D008870|53547|MH|RtM via: Microtubules;RtM via: cortical microtubule;Forced Non-Leaf Node Lookup:microtubules|TI|MM;RC|170^12^0;575^21^0;584^12^0;992^11^0
+43390663|*Cytoskeleton|D003599|22596|MH|RtM via: preprophase band|TI|MM;RC|150^16^0
+43390663|*Mitosis|D008938|20202|MH|RtM via: Mitosis;Forced Non-Leaf Node Lookup:mitosis|TI|MM;RC|540^7^0
+43390663|*Plastids|D018087|19047|MH|RtM via: plastid envelope;Forced Non-Leaf Node Lookup:plastids|TI|MM;RC|1111^16^0
+43390663|*Interphase|D007399|11760|MH|RtM via: Interphase;Forced Non-Leaf Node Lookup:interphases|TI|MM|138^10^0
+43390663|*Endoplasmic Reticulum|D004721|5244|MH|RtM via: Endoplasmic Reticulum;Forced Non-Leaf Node Lookup:endoplasmic reticulum|TI|MM|1064^21^0
+43390663|*Plants, Land|D019669|5076|ET|Entry Term Replacement for "Embryophyta";RtM via: Embryophyta;Forced Non-Leaf Node Lookup:land plants|TI|MM|1392^11^0;479^11^0;250^11^0
+43390664|*Meristem|D018519|19434|MH|RtM via: Meristem;Forced Leaf Node Lookup:meristems|TI|MM;RC|1641^9^0;1470^9^0;950^12^0;1775^9^0
+43390664|*Auxin|D007210|18522|ET|Entry Term Replacement for "Indoleacetic Acids";RtM via: Auxins;checkForceMH Boosted;Forced Non-Leaf Node Lookup:auxins|TI|MM;RC|2505^5^0;2356^5^0;2145^5^0
+43390664|*Plant Development|D063245|17928|MH|RtM via: Plant Morphogenesis;Forced Leaf Node Lookup:plant morphogenesis|TI|MM;RC|874^19^0
+43390664|*Phylogeny|D010802|12507|MH|RtM via: Phylogeny;RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogeny|TI|MM;RC|898^9^0;684^9^0;111^9^0;1170^12^0
+43390664|arabinogalactan proteins|C006619|11686|NM|RtM via: arabinogalactan proteins;Forced SCR Leaf Node Lookup:arabinogalactan proteins|TI|MM|2625^4^0;2206^4^0;2173^24^0
+43390664|*Plant Cells|D059828|8394|MH|RtM via: Plant Cells;Forced Leaf Node Lookup:plant cells|TI|MM|2343^11^0
+43390664|*Biotin|D001710|4872|MH|RtM via: biotin;checkForceMH Boosted|TI|MM|2514^4^1;2525^6^1
+43390664|ethylene|C036216|15382|NM|RtM via: ethylene|TI|MM|2152^8^0
+43390664|*Ethylenes|D005030|15381|MH|RtM via: Ethylenes;RtM via: ethylene;Forced Non-Leaf Node Lookup:ethylenes|TI|MM;RC|2152^8^0;2464^8^0
+43390664|*Mucoproteins|D009088|11685|HM|RtM via: arabinogalactan proteins|TI|MM|2625^4^0;2206^4^0;2173^24^0
+43390664|*Plant Proteins|D010940|10176|HM|RtM via: arabinogalactan proteins|TI|MM;RC|2625^4^0;2206^4^0;2173^24^0
+43390664|*Morphogenesis|D009024|6660|MH|RtM via: Morphogenesis;Forced Non-Leaf Node Lookup:morphogenesis|TI|MM;RC|93^13^0
+43390664|*Cell Division|D002455|4239|MH|RtM via: Cell division;Forced Non-Leaf Node Lookup:cell divisions|TI|MM;RC|1814^13^0;76^13^0
+43390664|*Plants, Land|D019669|4125|ET|Entry Term Replacement for "Embryophyta";RtM via: Embryophyta;Forced Non-Leaf Node Lookup:land plants|TI|MM|1081^11^0
+43390664|*Plasma Membranes|D002462|2556|ET|Entry Term Replacement for "Cell Membrane";RtM via: Plasma membrane;Forced Non-Leaf Node Lookup:plasma membranes|TI|MM;RC|2285^16^0
+43390664|*Matrices, Extracellular|D005109|1368|ET|Entry Term Replacement for "Extracellular Matrix";RtM via: Extracellular Matrix;Forced Non-Leaf Node Lookup:extracellular matrices|TI|MM|2306^22^0
+43390664|*Cell Proliferation|D049109|705|MH|RtM via: Cell Proliferation;Forced Non-Leaf Node Lookup:cell proliferation;Forced Non-Leaf Node Lookup:proliferation|TI|MM|752^18^0;156^18^0;1999^13^0
