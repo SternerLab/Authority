@@ -1,4 +1,4 @@
 create view article_m_records as 
 select * from articles
 order by random()
-limit 300000;
+limit 600000;

@@ -103,7 +103,7 @@ if os.path.exists(filename_log):
 
 print("index_from",index_from)
 print('results_'+index_from+'_'+index_to+'.csv')
-database_path = "../../database/jstor-authority-backup.db"
+database_path = "../../database/test3.db"
 cnx = sqlite3.connect(database_path)
 cursor = cnx.cursor()
 

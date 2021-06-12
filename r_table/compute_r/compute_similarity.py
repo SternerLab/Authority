@@ -64,7 +64,7 @@ def get_x10_score(firstname1, firstname2):
     firstname2_withoutspace_hyphen = firstname2_withoutspace_hyphen.replace(hyphen,"")
 
     # 11: exact match,
-    if(firstname1 == firstname2):
+    if(firstname1 == firstname2 and len(firstname1) > 1):
         score = 11
 
     # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
@@ -102,8 +102,8 @@ def get_x10_score(firstname1, firstname2):
     # 2: 3-letter initials match (e.g., jean francois g vs. jfg)
     elif (firstname1==''.join([_name[0] for _name in firstname2.split(' ')]) or firstname2==''.join([_name[0] for _name in firstname1.split(' ')])):
         score = 2
-    # 1: one or both names are missing,
-    elif (len(firstname1)==0 or len(firstname2)==0):
+    # 1: same first initial if one of them only has initial given,
+    elif (firstname1[0] == firstname2[0] and (len(firstname1) == 1 or len(firstname2) == 1)):
         score = 1
     # 0: otherwise.
     else:
@@ -317,8 +317,10 @@ def compute_x1(match):
         print("is match?", is_match_set)
         init2a = match[rowheadings['middle_initial1']].lower().replace('.','')
         init2b = match[rowheadings['middle_initial2']].lower().replace('.','')
+        print(init2a)
+        print(init2b)
      
-        get_x1_score(init2a, init2b)
+        value = get_x1_score(init2a, init2b)
 
         if(is_match_set):
             if(value in x1_m):
@@ -341,10 +343,10 @@ def compute_x2(match):
     is_match_set = is_match(match)
     if is_match_set is not None:
         print("is match?", is_match_set)
-        suffa = match[rowheadings['suffix1']].lower()
-        suffb = match[rowheadings['suffix2']].lower()
+        suffa = match[rowheadings['suffix1']].lower().replace('.','')
+        suffb = match[rowheadings['suffix2']].lower().replace('.','')
 
-        get_x2_score(suffa, suffb)
+        value = get_x2_score(suffa, suffb)
 
         if(is_match_set):
             if(value in x2_m):
@@ -522,7 +524,7 @@ def compute_x1_x2_all():
         c = 0
         for match in name_set:
             try:
-#                 compute_x1(match)
+                compute_x1(match)
                 compute_x2(match)
                 # mark_as_done(match, 'name_set')
             except Exception as e:
@@ -798,11 +800,11 @@ x7_nm = {}
 
 
 nicknames = load_nicknames()
-get_name_set_pair_count()
-get_firstname_match_set_pair_count()
-get_firstname_non_match_set_pair_count()
-get_article_match_set_pair_count()
-get_article_non_match_set_pair_count()
+# get_name_set_pair_count()
+# get_firstname_match_set_pair_count()
+# get_firstname_non_match_set_pair_count()
+# get_article_match_set_pair_count()
+# get_article_non_match_set_pair_count()
 
 
 
@@ -814,13 +816,13 @@ compute_x1_x2_all()
 # compute_xa_individual_all_nonmatches()
 
 
-compute_xa_allmatches()
-compute_xa_allnonmatches()
-compute_x10_allmatches()
-compute_x10_allnonmatches()
+# compute_xa_allmatches()
+# compute_xa_allnonmatches()
+# compute_x10_allmatches()
+# compute_x10_allnonmatches()
 # reset_coauth_analysis()
-compute_x10_all() 
-compute_x10_(test_pair)
+# compute_x10_all() 
+# compute_x10_(test_pair)
 
 # add_total_profiles_to_score_files()
 # print(compute_coauth_intersection(["Saddie Gilbert", "Moody Marshmellow", "F Noname", "Check Case"],["Fu Noname", "M. Marshmellow", "CHECK CASE"],"Love Coder","Hate Coder"))

@@ -99,7 +99,7 @@ with open(results_folder+'/x2_m.json') as json_file:
     x2_m = json.load(json_file) 
 with open(results_folder+'/xa_m.json') as json_file: 
     xa_m = json.load(json_file) 
-with open(results_folder+'/xa_nm.json') as json_file: 
+with open(results_folder+'/xa_nm_184000000.json') as json_file: 
     xa_nm = json.load(json_file) 
 with open(results_folder+'/x2_nm.json') as json_file: 
     x2_nm = json.load(json_file) 
@@ -119,15 +119,15 @@ with open(results_folder+'/x6_m.json') as json_file:
 with open(results_folder+'/x7_m.json') as json_file: 
     x7_m = json.load(json_file) 
     
-with open(results_folder+'/x3_nm_45000000.json') as json_file: 
+with open(results_folder+'/x3_nm_184000000.json') as json_file: 
     x3_nm = json.load(json_file) 
-with open(results_folder+'/x4_nm_45000000.json') as json_file: 
+with open(results_folder+'/x4_nm_184000000.json') as json_file: 
     x4_nm = json.load(json_file) 
-with open(results_folder+'/x5_nm_45000000.json') as json_file: 
+with open(results_folder+'/x5_nm_184000000.json') as json_file: 
     x5_nm = json.load(json_file) 
-with open(results_folder+'/x6_nm_45000000.json') as json_file: 
+with open(results_folder+'/x6_nm_184000000.json') as json_file: 
     x6_nm = json.load(json_file) 
-with open(results_folder+'/x7_nm_45000000.json') as json_file: 
+with open(results_folder+'/x7_nm_184000000.json') as json_file: 
     x7_nm = json.load(json_file)  
 
 r_xa = {}
