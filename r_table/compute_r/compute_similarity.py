@@ -6,6 +6,7 @@ import sys
 sys.path.append('../')
 # from SQL.SQLClient import SQLClient
 from SQL.sqlite_client import sqlite_client
+import csv
 
 
 def get_x1_score(init2a, init2b):
@@ -319,7 +320,6 @@ def compute_x1(match):
         init2b = match[rowheadings['middle_initial2']].lower().replace('.','')
         print(init2a)
         print(init2b)
-     
         value = get_x1_score(init2a, init2b)
 
         if(is_match_set):
@@ -523,6 +523,35 @@ def compute_x1_x2_all():
         computed_count =len(name_set)
         c = 0
         for match in name_set:
+            try:
+                compute_x1(match)
+                compute_x2(match)
+                # mark_as_done(match, 'name_set')
+            except Exception as e:
+                print(e)
+        offset+=limit
+        if(len(name_set)==0):
+            break
+
+        print('computed x1, x2 for ',str(computed_count),' profiles')
+
+        
+def compute_x1_x2_balanced():
+#          #write to a file and use it later
+#         with open('results/x1_temp_matches.csv', 'w') as f:
+#             csvwriter = csv.writer(f) 
+#             csvwriter.writerow([init2a,init2b])
+    count = get_name_set_pair_count()
+    offset = 0
+    computed_count = 0
+
+    while(1):
+        name_set = sql_client.execute_and_fetch('select * from name_set' +
+        ' limit ' + str(limit) + ' offset ' + str(offset))
+        computed_count =len(name_set)
+        c = 0
+        for match in name_set:
+            if(ismat)
             try:
                 compute_x1(match)
                 compute_x2(match)
