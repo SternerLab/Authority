@@ -535,12 +535,10 @@ def compute_x1_x2_all():
 
         print('computed x1, x2 for ',str(computed_count),' profiles')
 
-        
-def compute_x1_x2_balanced():
-#          #write to a file and use it later
-#         with open('results/x1_temp_matches.csv', 'w') as f:
-#             csvwriter = csv.writer(f) 
-#             csvwriter.writerow([init2a,init2b])
+
+def store_x1_x2_balanced():
+    sql_client.execute("create table IF NOT EXISTS name_matches (init2a VARCHAR(255) NOT NULL, init2b VARCHAR(255) NOT NULL, suffa VARCHAR(255) NOT NULL, suffb VARCHAR(255) NOT NULL)")
+    sql_client.execute("create table  IF NOT EXISTS name_non_matches (init2a VARCHAR(255) NOT NULL, init2b VARCHAR(255) NOT NULL, suffa VARCHAR(255) NOT NULL, suffb VARCHAR(255) NOT NULL)")
     count = get_name_set_pair_count()
     offset = 0
     computed_count = 0
@@ -551,20 +549,22 @@ def compute_x1_x2_balanced():
         computed_count =len(name_set)
         c = 0
         for match in name_set:
-            if(ismat)
-            try:
-                compute_x1(match)
-                compute_x2(match)
-                # mark_as_done(match, 'name_set')
-            except Exception as e:
-                print(e)
+            if(is_match(match)):
+                write_to_db("name_matches", match)
+            else:
+                write_to_db("name_non_matches", match)
         offset+=limit
         if(len(name_set)==0):
             break
 
-        print('computed x1, x2 for ',str(computed_count),' profiles')
-        
-        
+def write_to_db(table_name, value):
+    init2a = value[rowheadings['middle_initial1']].lower().replace('.','')
+    init2b = value[rowheadings['middle_initial2']].lower().replace('.','')
+    suffa = value[rowheadings['suffix1']].lower().replace('.','')
+    suffb = value[rowheadings['suffix2']].lower().replace('.','')
+    sql_client.insert_row("insert into {} (init2a, init2b, suffa, suffb) values (?,?,?,?)".format(table_name), [init2a, init2b, suffa, suffb])
+
+
 def compute_x10_allmatches():
     count = get_firstname_match_set_pair_count()
     offset = 0
@@ -838,8 +838,10 @@ nicknames = load_nicknames()
 
 
 test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')
+print(sql_client.execute_and_fetch("select * from name_non_matches"))
+store_x1_x2_balanced()
+# compute_x1_x2_all()
 
-compute_x1_x2_all()
 
 # compute_xa_individual_all_matches()
 # compute_xa_individual_all_nonmatches()
