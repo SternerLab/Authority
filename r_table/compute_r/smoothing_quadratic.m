@@ -1,7 +1,7 @@
 format long
 json_data_rxa = get_json_object('results/r_xa.json'); 
 json_data_xa_m = get_json_object('results/xa_m.json');
-json_data_xa_nm = get_json_object('results/xa_nm.json');
+json_data_xa_nm = get_json_object('results/xa_nm_184000000.json');
 n = length(fieldnames(json_data_rxa));
 A = read_from_txt("results/A_matrix.txt");
 H = construct_H(json_data_xa_m, json_data_xa_nm, json_data_rxa);
