@@ -536,6 +536,59 @@ def compute_x1_x2_all():
         print('computed x1, x2 for ',str(computed_count),' profiles')
 
 
+def compute_x1_x2_balanced():
+    matches_query = "select * from name_matches"
+    non_matches_query = "select * from name_non_matches order by random() limit 10000"
+
+    match_set = sql_client.execute_and_fetch(matches_query)
+    for match in match_set:
+        try:
+            x1_value = get_x1_score(match[0], match[1])
+
+            if(x1_value in x1_m):
+                x1_m[x1_value] += 1
+            else:
+                x1_m[x1_value] = 1
+
+            x2_value = get_x2_score(match[2], match[3])
+
+            if(x2_value in x2_m):
+                x2_m[x2_value] += 1
+            else:
+                x2_m[x2_value] = 1
+        
+            with open('results/x1_m_3k_10k.json', 'w') as fp:
+                json.dump(x1_m, fp)
+            with open('results/x2_m_3k_10k.json', 'w') as fp:
+                json.dump(x2_m, fp)
+        except Exception as e:
+            print(e)
+    
+    non_match_set = sql_client.execute_and_fetch(non_matches_query)
+    for match in non_match_set:
+        try:
+            x1_value = get_x1_score(match[0], match[1])
+
+            if(x1_value in x1_nm):
+                x1_nm[x1_value] += 1
+            else:
+                x1_nm[x1_value] = 1
+        
+            x2_value = get_x2_score(match[2], match[3])
+
+            if(x2_value in x2_nm):
+                x2_nm[x2_value] += 1
+            else:
+                x2_nm[x2_value] = 1
+        
+            with open('results/x1_nm_3k_10k.json', 'w') as fp:
+                json.dump(x1_nm, fp)
+            with open('results/x2_nm_3k_10k.json', 'w') as fp:
+                json.dump(x2_nm, fp)
+        except Exception as e:
+            print(e)
+       
+
 def store_x1_x2_balanced():
     sql_client.execute("create table IF NOT EXISTS name_matches (init2a VARCHAR(255) NOT NULL, init2b VARCHAR(255) NOT NULL, suffa VARCHAR(255) NOT NULL, suffb VARCHAR(255) NOT NULL)")
     sql_client.execute("create table  IF NOT EXISTS name_non_matches (init2a VARCHAR(255) NOT NULL, init2b VARCHAR(255) NOT NULL, suffa VARCHAR(255) NOT NULL, suffb VARCHAR(255) NOT NULL)")
@@ -838,9 +891,9 @@ nicknames = load_nicknames()
 
 
 test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')
-print(sql_client.execute_and_fetch("select * from name_non_matches"))
-store_x1_x2_balanced()
-# compute_x1_x2_all()
+# print(sql_client.execute_and_fetch("select * from name_non_matches"))
+# store_x1_x2_balanced()
+compute_x1_x2_balanced()
 
 
 # compute_xa_individual_all_matches()

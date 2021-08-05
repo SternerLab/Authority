@@ -17,7 +17,7 @@ def compute_r_x1():
     for key in list(set(x1_m.keys()) & set(x1_nm.keys())):
         r_x1[key] = (x1_m[key] / total_m)/(x1_nm[key]/ total_nm)
     
-    with open(results_folder+'/r_x1.json', 'w') as f:
+    with open(results_folder+'/r_x1_3k_10k.json', 'w') as f:
         json.dump(r_x1, f)
 
 
@@ -33,7 +33,7 @@ def compute_r_x2():
     for key in list(set(x2_m.keys()) & set(x2_nm.keys())):
         r_x2[key] = (x2_m[key] / total_m)/(x2_nm[key]/ total_nm)
     
-    with open(results_folder+'/r_x2.json', 'w') as f:
+    with open(results_folder+'/r_x2_3k_10k.json', 'w') as f:
         json.dump(r_x2, f)
         
 def compute_r_x(jsondata_m, jsondata_nm, filename):
@@ -91,17 +91,17 @@ def sort_r_xa():
     return sorting.monotonic_sort(r_xa.keys())
 
 
-with open(results_folder+'/x1_m.json') as json_file: 
+with open(results_folder+'/x1_m_3k_10k.json') as json_file: 
     x1_m = json.load(json_file) 
-with open(results_folder+'/x1_nm.json') as json_file: 
+with open(results_folder+'/x1_nm_3k_10k.json') as json_file: 
     x1_nm = json.load(json_file) 
-with open(results_folder+'/x2_m.json') as json_file: 
+with open(results_folder+'/x2_m_3k_10k.json') as json_file: 
     x2_m = json.load(json_file) 
 with open(results_folder+'/xa_m.json') as json_file: 
     xa_m = json.load(json_file) 
 with open(results_folder+'/xa_nm_184000000.json') as json_file: 
     xa_nm = json.load(json_file) 
-with open(results_folder+'/x2_nm.json') as json_file: 
+with open(results_folder+'/x2_nm_3k_10k.json') as json_file: 
     x2_nm = json.load(json_file) 
 with open(results_folder+'/x10_m.json') as json_file: 
     x10_m = json.load(json_file) 
