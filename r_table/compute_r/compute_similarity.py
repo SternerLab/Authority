@@ -194,7 +194,7 @@ def load_nicknames():
     # with open('nicknames.json', 'w') as fp:
     #     json.dump(nicknames, fp)
     # print(len(nicknames.keys()))
-    with open('nicknames.json','r') as f:
+    with open('r_table/nicknames.json','r') as f: #change this todo
         nicknames = json.load(f)
     return nicknames        
 
@@ -813,7 +813,7 @@ def compute_xa_individual_all_nonmatches():
         write_to_json(x7_nm,'results/x7_nm_'+str(offset)+'.json')
 
 
-sql_client = sqlite_client('../../database/jstor-authority.db')
+sql_client = sqlite_client('../database/jstor-authority.db') #todo change this
 
 
 rowheadings = {}

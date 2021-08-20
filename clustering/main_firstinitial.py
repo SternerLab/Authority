@@ -5,14 +5,33 @@ import statistics
 import random
 import clustering as clustering
 import sqlite3
-import sorting as sorting
 import ast
 import sys
 sys.path.append('../r_table/compute_r')
+sys.path.append('../r_table/')
 import time
 import compute_similarity as similarity_util
 
 
+def compare(str_x, str_y):
+    # print("str", str_x, str_y)
+    x = json.loads(str_x) #converst string representation of list to list
+    y = json.loads(str_y)
+    x_less_than_y_count = 0
+    x_greater_than_y_count = 0
+    for i in range(0, len(x)):
+        if(x[i] <= y[i]):
+            x_less_than_y_count+=1
+        if(x[i] >= y[i]):
+            x_greater_than_y_count+=1
+    if x_less_than_y_count == len(x):
+        return -1
+    elif x_greater_than_y_count == len(x):
+        return 1
+    else:
+        return 0
+    
+    
 def create_blocks(cnx, query, group_by_list):
     df = pd.read_sql(query, cnx)
     group_by = df.groupby(group_by_list)
@@ -247,7 +266,7 @@ def extrapolate(key):
         min_key = -1
         _list = list(r_xa.keys())
         for i in range(0, len(_list)):
-            if sorting.compare(str(key),_list[i]) > 0:
+            if compare(str(key),_list[i]) > 0:
                 diff = get_difference(str(key), _list[i])
                 if diff < min_dist:
                     # print(key,_list[i],diff)
@@ -348,7 +367,7 @@ def triplet_corrections(prob, df_group):
 
 def updated_prior(prob):
     keys = [key for key, values in prob.items() if values >= 0.5]
-    return len(keys) / float(len(prob.items()))
+    return len(keys) / float(len(prob.items())+1)
 
 
 def pairwise_probability_compute(pm, prob, df_group):
@@ -442,7 +461,7 @@ with open('r_table/r_x10.json') as json_file:
 # prob = {}
 nicknames = similarity_util.load_nicknames()
 cluster_json = {}
-print(type(block_groups))
+# print(type(block_groups))
 
 index_from = sys.argv[1]
 index_to = sys.argv[2]
