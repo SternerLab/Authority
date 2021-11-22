@@ -74,7 +74,7 @@ def parse(xmlfile, mesh_file):
 
     journal_meta = article.find('./front/journal-meta')
     journal_name = journal_meta.find('./journal-title-group/journal-title').text
-    year = article_meta.find('./pub-date/year').text
+    year = int(article_meta.find('./pub-date/year').text)
 
     language = ''
     custom_meta_group = article_meta.find('./custom-meta-group')
