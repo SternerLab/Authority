@@ -94,7 +94,7 @@ def write_to_file(data_dict,authornames_to_article_ids,clusters,_id,filename):
     with open(filename, "w") as f:
         json.dump(data_dict,f)
 
-cnx = sqlite3.connect('../../Authority/database/test3-Copy1.db')
+cnx = sqlite3.connect('../../database/jstor-authority.db')
 cursor = cnx.cursor()
 
 #remove duplicates from clusters db
@@ -116,7 +116,7 @@ clusters_data = pd.read_sql_query("SELECT * from clusters_all", cnx)
 # print(type(fake_gs_data))
 # print(fake_gs_data)
 # search_gs_query = "select name_id, replace(fullname, '  ', ' ') as full_name, ids from google_scholar_new where lower(full_name) like '"
-search_gs_query = "select name_id, full_name, ids from google_scholar_no_dups where lower(full_name) like '"
+search_gs_query = "select name_id, full_name, ids from google_scholar_new where lower(full_name) like '"
 total_clusters = 0
 total_lumps = 0
 total_splits = 0
@@ -215,13 +215,13 @@ for index,row in clusters_data.iterrows():
             j+=1
         i+=1
     
-    print(author_to_cluster_map)
-    print(cluster_to_author_map)
-    print("...")
+#     print(author_to_cluster_map)
+#     print(cluster_to_author_map)
+#     print("...")
 
    
     
-
+    isdup = False
     #compute splits and lumps
     for val_ in cluster_to_author_map:
         if len(cluster_to_author_map[val_]) > 1:
@@ -231,11 +231,12 @@ for index,row in clusters_data.iterrows():
                 if len(authornames_to_article_ids[val]) > 1 and have_common_articles(authornames_to_article_ids[val]):
 
                     duplicate_author_profiles_on_gs+=1
+                    isdup = True
                     duplicate_author_names.append(val)
                     total_lumps-=1
                     #remove duplicate profile for further evaluation
                     for authid, authname in authorid_to_name.items():
-                        if authname == val: 
+                        if authname == val and authid in author_to_ids: 
                             del author_to_ids[authid]
                     with open("duplicate_author_profiles.txt", "a+") as f:
                         f.write(val+" : "+str(authornames_to_article_ids[val]))
@@ -247,10 +248,11 @@ for index,row in clusters_data.iterrows():
             write_to_file(splits_data,authornames_to_article_ids,clusters,total_splits,"splitting_data_gs.json")
 
     #compute splits and lumps per block
-    for val in cluster_to_author_map:
-        if len(cluster_to_author_map[val]) > 1:
-            total_lumping_blocks+=1
-            break
+    if isdup == False: #consider only non duplicate profiles.
+        for val in cluster_to_author_map:
+            if len(cluster_to_author_map[val]) > 1:
+                total_lumping_blocks+=1
+                break
     
     for val in author_to_cluster_map:
         if len(author_to_cluster_map[val]) > 1:
@@ -296,7 +298,7 @@ for index,row in clusters_data.iterrows():
     authors_ids_indices = list(range(len(list(author_ids_list))))
     author_ids_indices_pairs = get_pairs(authors_ids_indices)
     for pair in author_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         non_matching_pairs.extend(get_pairs_from_two_lists(list(author_ids_list)[pair[0]],list(author_ids_list)[pair[1]]))
     
     cluster_ids_list = cluster_to_ids.values()
@@ -307,7 +309,7 @@ for index,row in clusters_data.iterrows():
     clusters_indices = list(range(len(list(cluster_ids_list))))
     cluster_ids_indices_pairs = get_pairs(clusters_indices)
     for pair in cluster_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         clsuter_different_group_pairs.extend(get_pairs_from_two_lists((list(cluster_ids_list))[pair[0]],(list(cluster_ids_list))[pair[1]]))
 
    

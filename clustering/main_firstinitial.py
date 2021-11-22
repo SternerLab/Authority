@@ -1,3 +1,4 @@
+# coding=utf-8
 import pandas as pd
 import itertools as itertools
 import json
@@ -7,10 +8,369 @@ import clustering as clustering
 import sqlite3
 import ast
 import sys
-sys.path.append('../r_table/compute_r')
-sys.path.append('../r_table/')
 import time
-import compute_similarity as similarity_util
+
+
+def load_nicknames():
+    # with open('nick_names.txt', 'r') as f:
+    #     lines = f.readlines()
+    nicknames = {}
+    # for line in lines:
+    #     split_line = line.split("  ")
+    #     try:
+    #         if '/' not in split_line:
+    #             nicknames[split_line[0].strip().lower()] = [x.strip().lower() for x in split_line[1].split(',')]
+    #     except Exception as e:
+    #         pass
+    # with open('nicknames.json', 'w') as fp:
+    #     json.dump(nicknames, fp)
+    # print(len(nicknames.keys()))
+    with open('r_table/nicknames.json','r') as f: #change this todo
+        nicknames = json.load(f)
+    return nicknames        
+
+
+def oneeditdistance(s1,s2):
+	# Find lengths of given strings 
+	m = len(s1) 
+	n = len(s2) 
+
+	# If difference between lengths is more than 1, 
+	# then strings can't be at one distance 
+	if abs(m - n) > 1: 
+		return False 
+
+	count = 0 # Count of isEditDistanceOne 
+
+	i = 0
+	j = 0
+	while i < m and j < n: 
+		# If current characters dont match 
+		if s1[i] != s2[j]: 
+			if count == 1: 
+				return False 
+
+			# If length of one string is 
+			# more, then only possible edit 
+			# is to remove a character 
+			if m > n: 
+				i+=1
+			elif m < n: 
+				j+=1
+			else: # If lengths of both strings is same 
+				i+=1
+				j+=1
+			# Increment count of edits 
+			count+=1
+		else: # if current characters match 
+			i+=1
+			j+=1
+	# if last character is extra in any string 
+	if i < m or j < n: 
+		count+=1
+
+	return count == 1
+
+
+def nickname_match(firstname1, firstname2):
+    if (firstname1 in nicknames and firstname2 in nicknames[firstname1]) or \
+        (firstname2 in nicknames and firstname1 in nicknames[firstname2]):
+        return True
+    return False
+
+
+def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
+    coauth_intersection = 0
+    
+#     with open("results/coauth_analysis.json","r") as f:
+#         total_coauth_intersections = json.load(f)
+    
+    coauth1 = [x.replace(".","").lower() for x in coauth1]
+    coauth2 = [x.replace(".","").lower() for x in coauth2]
+    fullname1 = fullname1.replace(".","").lower()
+    fullname2 = fullname2.replace(".","").lower()
+    
+
+    for auth1 in coauth1:
+        if auth1 in coauth2:
+#             total_coauth_intersections["coauth_intersections_full"]+=1
+            coauth_intersection+=1
+        elif (auth1.split(" ")[0] in [x.split(" ")[0] for x in coauth2] and \
+            auth1.split(" ")[len(auth1.split(" "))-1] in [x.split(" ")[len(x.split(" "))-1] for x in coauth2]):
+#             total_coauth_intersections["coauth_intersections_firstname_lastname"]+=1
+            coauth_intersection+=1
+    
+#     with open("results/coauth_analysis.json","w") as f:
+#         json.dump(total_coauth_intersections,f)
+        
+    if(fullname1 == fullname2):
+        return coauth_intersection-1
+    else:
+        return coauth_intersection
+    
+
+def compute_x10_(match):
+    is_match_set = is_match(match)
+    compute_x10(match, is_match_set)
+    
+    
+def compute_x10(match, is_match_set):
+    if is_match_set is not None:
+        print("is match?", is_match_set)
+        firstname1 = match[rowheadings['first_name1']]
+        firstname2 = match[rowheadings['first_name2']]
+        firstname1 = firstname1.replace(".","").lower()
+        firstname2 = firstname2.replace(".","").lower()
+        print(firstname1)
+        print(firstname2)
+
+        score = get_x10_score(firstname1, firstname2)
+
+
+        if(is_match_set):
+            if score not in x10_m:
+                x10_m[score] = 0
+            x10_m[score]+=1
+        else:
+            if score not in x10_nm:
+                x10_nm[score] = 0
+            x10_nm[score]+=1
+
+        with open('results/x10_m.json', 'w') as fp:
+            json.dump(x10_m, fp)
+        with open('results/x10_nm.json', 'w') as fp:
+            json.dump(x10_nm, fp)
+
+
+def compute_x1(match):
+    is_match_set = is_match(match)
+    if (is_match_set is not None):
+        print("is match?", is_match_set)
+        init2a = match[rowheadings['middle_initial1']].lower().replace('.','')
+        init2b = match[rowheadings['middle_initial2']].lower().replace('.','')
+        print(init2a)
+        print(init2b)
+        value = get_x1_score(init2a, init2b)
+
+        if(is_match_set):
+            if(value in x1_m):
+                x1_m[value] += 1
+            else:
+                x1_m[value] = 1
+        else:
+            if(value in x1_nm):
+                x1_nm[value] += 1
+            else:
+                x1_nm[value] = 1
+
+        with open('results/x1_m.json', 'w') as fp:
+            json.dump(x1_m, fp)
+        with open('results/x1_nm.json', 'w') as fp:
+            json.dump(x1_nm, fp)
+
+
+def compute_x2(match):
+    is_match_set = is_match(match)
+    if is_match_set is not None:
+        print("is match?", is_match_set)
+        suffa = match[rowheadings['suffix1']].lower().replace('.','')
+        suffb = match[rowheadings['suffix2']].lower().replace('.','')
+
+        value = get_x2_score(suffa, suffb)
+
+        if(is_match_set):
+            if(value in x2_m):
+                x2_m[value] += 1
+            else:
+                x2_m[value] = 1
+        else:
+            if(value in x2_nm):
+                x2_nm[value] += 1
+            else:
+                x2_nm[value] = 1
+
+        with open('results/x2_m.json', 'w') as fp:
+            json.dump(x2_m, fp)
+        with open('results/x2_nm.json', 'w') as fp:
+            json.dump(x2_nm, fp)
+
+        
+def compute_xa(match, is_match_set= True):
+    fullname1 = match[rowheadings['fullname1']].lower()
+    fullname2 = match[rowheadings['fullname2']].lower()
+    coautha = match[rowheadings['authors1']].lower()
+    coauthb = match[rowheadings['authors2']].lower()
+    coauth1 = coautha.split(',')
+    coauth2 = coauthb.split(',')
+    journal_name1 = match[rowheadings['journal_name1']].lower()
+    journal_name2 = match[rowheadings['journal_name2']].lower()
+    mesh1 = match[rowheadings['mesh_terms1']].lower().split(',')
+    mesh2 = match[rowheadings['mesh_terms2']].lower().split(',')
+    langa = match[rowheadings['language1']].lower()
+    langb = match[rowheadings['language2']].lower()
+    title1 = match[rowheadings['title1']].lower()
+    title2 = match[rowheadings['title2']].lower()
+
+    
+    x3,x4, x5, x6, x7 = get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2, fullname1, fullname2, mesh1, mesh2, langa, langb)
+    
+    value = str([x3, x4, x5, x6, x7])
+    if(is_match_set):
+        if(value in xa_m):
+            xa_m[value] += 1
+        else:
+            xa_m[value] = 1
+    else:
+        if(value in xa_nm):
+            xa_nm[value] += 1
+        else:
+            xa_nm[value] = 1
+    
+    if(is_match_set):
+        if(x3 in x3_m):
+            x3_m[x3] += 1
+        else:
+            x3_m[x3] = 1
+        if(x4 in x4_m):
+            x4_m[x4] += 1
+        else:
+            x4_m[x4] = 1
+        if(x5 in x5_m):
+            x5_m[x5] += 1
+        else:
+            x5_m[x5] = 1
+        if(x6 in x6_m):
+            x6_m[x6] += 1
+        else:
+            x6_m[x6] = 1
+        if(x7 in x7_m):
+            x7_m[x7] += 1
+        else:
+            x7_m[x7] = 1
+    else:
+        if(x3 in x3_nm):
+            x3_nm[x3] += 1
+        else:
+            x3_nm[x3] = 1
+        if(x4 in x4_nm):
+            x4_nm[x4] += 1
+        else:
+            x4_nm[x4] = 1
+        if(x5 in x5_nm):
+            x5_nm[x5] += 1
+        else:
+            x5_nm[x5] = 1
+        if(x6 in x6_nm):
+            x6_nm[x6] += 1
+        else:
+            x6_nm[x6] = 1
+        if(x7 in x7_nm):
+            x7_nm[x7] += 1
+        else:
+            x7_nm[x7] = 1
+            
+            
+def get_x1_score(init2a, init2b):
+    if((init2a == "" and init2b == "")):
+        value = 2
+    elif((init2a != "" and init2b !="")):
+        if(init2a == init2b): #todo: mid1 O mid2 Ø fullname1 Arne O. Mooers fullname2 Arne Ø. Mooers
+            value = 3
+        else:
+            value = 0
+    elif(init2a=="" or init2b == ""):
+        value = 1
+    
+    return value
+
+
+def get_x2_score(suffa, suffb):
+    if((suffa !="" and suffb !="" and suffa == suffb)):
+        value = 1
+    else:
+        value = 0
+    return value
+
+
+def get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2, fullname1, fullname2, mesh1, mesh2, langa, langb):
+    x3 = len(list(set(title1.split(' ')) & set(title2.split(' '))))
+    if(journal_name1 == journal_name2):
+        x4 = 1
+    else:
+        x4 = 0
+    
+    coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
+    x5 = coauth_intersection
+
+    x6 = len(list(set(mesh1) & set(mesh2)))
+
+    
+    if(set(langa.split(" ")) == set(langb.split(" ")) and (langa != 'eng' or langa!= 'en')):
+        x7 = 3
+    elif(set(langa.split(" ")) == set(langb.split(" ")) and (langa == 'eng' or langa == 'en')):
+        x7 = 2
+    elif(set(langa.split(" ")) != set(langb.split(" ")) and (langa == 'eng' or langb == 'eng' or langa == 'en' or langb == 'en' )):
+        x7 = 1
+    else:
+        x7 = 0
+    
+    return x3,x4,x5,x6,x7
+
+
+def get_x10_score(firstname1, firstname2):
+    score = 0
+    hyphen='-'
+    firstname1_withoutspace_hyphen = firstname1.replace(" ","")
+    firstname1_withoutspace_hyphen = firstname1_withoutspace_hyphen.replace(hyphen,"")
+    firstname2_withoutspace_hyphen = firstname2.replace(" ","")
+    firstname2_withoutspace_hyphen = firstname2_withoutspace_hyphen.replace(hyphen,"")
+
+    # 11: exact match,
+    if(firstname1 == firstname2 and len(firstname1) > 1):
+        score = 11
+
+    # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
+    # francois vs. jean francois),
+    elif(firstname1_withoutspace_hyphen == firstname2_withoutspace_hyphen):
+        score = 10
+
+    # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
+    # jean-f),
+    elif(hyphen in firstname1 and hyphen in firstname2):
+        if(len(firstname1.split(hyphen)[1]) or len(firstname2.split(hyphen)[1])):
+            if (firstname1.split(hyphen)[1][0] == firstname2.split(hyphen)[1][0]):
+                score = 9
+    # 8: hyphenated name with initial vs. name (jean-f vs. jean),
+    elif((hyphen in firstname1 and len(firstname1.split(hyphen)[1])==1) or (hyphen in firstname2 and len(firstname2.split(hyphen)[1])==1)):
+        if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
+            score = 8
+    # 7: hyphenated name vs. first name only (jean-francois vs. jean)
+    elif(hyphen in firstname1 or hyphen in firstname2):
+        if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
+            score = 7
+    # 6: nickname match (dave vs. david)
+    elif nickname_match(firstname1, firstname2):
+        score = 6
+    # 5: oneeditdistance(deletion:bjoernvs.bjorn,replacement:bjoernvs.bjaern,
+    # or flip order of two characters: bjoern vs. bjeorn)
+    elif oneeditdistance(firstname1,firstname2):
+        score = 5
+    # 4: name matches first part of other name and length > 2 (zak vs. zakaria) 
+    elif (len(firstname1)>2 and len(firstname2)>2 and (firstname1 in firstname2 or firstname2 in firstname1)):
+        score = 4
+    # 3: name matches first part of other name and length = 2 (th vs. thomas) 
+    elif ((len(firstname1)==2 or len(firstname2)==2) and (firstname1 in firstname2 or firstname2 in firstname1)):
+        score = 3
+    # 2: 3-letter initials match (e.g., jean francois g vs. jfg)
+    elif (firstname1==''.join([_name[0] for _name in firstname2.split(' ')]) or firstname2==''.join([_name[0] for _name in firstname1.split(' ')])):
+        score = 2
+    # 1: same first initial if one of them only has initial given,
+    elif (firstname1[0] == firstname2[0] and (len(firstname1) == 1 or len(firstname2) == 1)):
+        score = 1
+    # 0: otherwise.
+    else:
+        score = 0
+    return score
 
 
 def compare(str_x, str_y):
@@ -36,25 +396,7 @@ def create_blocks(cnx, query, group_by_list):
     df = pd.read_sql(query, cnx)
     group_by = df.groupby(group_by_list)
     return group_by
-
-
-def load_nicknames():
-    # with open('nick_names.txt', 'r') as f:
-    #     lines = f.readlines()
-    nicknames = {}
-    # for line in lines:
-    #     split_line = line.split("  ")
-    #     try:
-    #         if '/' not in split_line:
-    #             nicknames[split_line[0].strip().lower()] = [x.strip().lower() for x in split_line[1].split(',')]
-    #     except Exception as e:
-    #         pass
-    # with open('nicknames.json', 'w') as fp:
-    #     json.dump(nicknames, fp)
-    # print(len(nicknames.keys()))
-    with open('nicknames.json','r') as f:
-        nicknames = json.load(f)
-    return nicknames        
+      
 
 
 def oneeditdistance(s1,s2):
@@ -141,7 +483,7 @@ def compute_x10_(match):
     firstname2 = match['first_name'][1]
     firstname1 = firstname1.replace(".","").lower()
     firstname2 = firstname2.replace(".","").lower()
-    score = similarity_util.get_x10_score(firstname1, firstname2)
+    score = get_x10_score(firstname1, firstname2)
 
     if score not in x10:
         x10[score] = 0
@@ -152,7 +494,7 @@ def compute_x10_(match):
 def compute_x1(row):
     init2a = row["middle_initial"][0].lower().replace('.','')
     init2b = row["middle_initial"][1].lower().replace('.','')
-    value = similarity_util.get_x1_score(init2a, init2b)
+    value = get_x1_score(init2a, init2b)
 
     if(value in x1):
         x1[value] += 1
@@ -166,7 +508,7 @@ def compute_x2(row):
     suffa = row['suffix'][0].lower()
     suffb = row['suffix'][1].lower()
 
-    value = similarity_util.get_x2_score(suffa, suffb)
+    value = get_x2_score(suffa, suffb)
     if(value in x2):
         x2[value] += 1
     else:
@@ -379,7 +721,7 @@ def pairwise_probability_compute(pm, prob, df_group):
         total_count = 0
         for row in df.iterrows():
             total_count += 1
-            _x1 = (similarity_util.compute_x1(row[1]))
+            _x1 = (compute_x1(row[1]))
             _x2 = (compute_x2(row[1]))
             _xa = (compute_xa(row[1]))
             _x10 = (compute_x10_(row[1]))
@@ -435,6 +777,7 @@ if not os.path.exists('results'):
 cnx = sqlite3.connect('../database/jstor-authority.db')
 cursor = cnx.cursor()
 
+
 query = 'SELECT * FROM articles'
 group_by_list = ['last_name', 'first_initial']
 block_groups = create_blocks(cnx, query, group_by_list)
@@ -459,7 +802,7 @@ with open('r_table/r_x10.json') as json_file:
     r_x10 = json.load(json_file)
 
 # prob = {}
-nicknames = similarity_util.load_nicknames()
+nicknames = load_nicknames()
 cluster_json = {}
 # print(type(block_groups))
 
@@ -470,15 +813,18 @@ total = 0
 # for group_name, df_group in block_groups:
 for group_name in names[int(index_from):int(index_to)]:
     prob = {}
-    df_group = block_groups.get_group(group_name)
-    
-    with open('results/cluster_authors'+index_from+'_'+index_to+'.txt', 'a+') as f:
-        f.write(group_name[0]+' '+group_name[1])
-        f.write('\n')
-    n = df_group.shape[0]
-    authors_list = ','.join(set(x.lower().strip().replace('  ',' ') for x in df_group['fullname'].to_list()))
-    authors_count = len(authors_list)
-    total+=1
+    try:
+        df_group = block_groups.get_group(group_name)
+        print(group_name[0]+' '+group_name[1])
+        with open('results/cluster_authors'+index_from+'_'+index_to+'.txt', 'a+') as f:
+            f.write(group_name[0]+' '+group_name[1])
+            f.write('\n')
+        n = df_group.shape[0]
+        authors_list = ','.join(set(x.lower().strip().replace('  ',' ') for x in df_group['fullname'].to_list()))
+        authors_count = len(authors_list)
+        total+=1
+    except Exception as e:
+        print(e)
     if n > 1:
         try:
             pm = 1/ (1+(10**-1.194)*(n**0.7975))

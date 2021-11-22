@@ -1,0 +1,13 @@
+CLARK_A:2:['42770452;43235702']:1:a. g. clark,a. m. clark
+MacDonald_M:21:['10.2307/4510849;2433037;2557044;2556687;3554603;10.2307/3284464;40601158;4299253;10.2307/3894476;23311621;10.2307/3893981;10.2307/3676262;10.2307/3675985;2433038;40606628;10.2307/3869344;42568923;23389825;23389827;23390593;23389484']:1:meredith macdonald,marwen macdonald,mary v. macdonald,m. v. macdonald,m. macdonald,m. e. macdonald,mrs. roger n. macdonald,michael a. macdonald,michelina macdonald,m. a. macdonald,margaret h. macdonald
+Botosaneanu_L:2:['41781540;20104080']:1:l. botosaneanu
+Deschamp_P:2:['2443509;2443492']:1:paula a. deschamp
+Howard_E:6:['2457361;20440556;23379019;4281191;40925496;10.2307/2387873']:1:edgar b. howard,elizabeth howard,erica a. howard,elizabeth s. howard,elizabeth a. howard,e.a. howard
+SCHLEGEL_M:3:['43674126;43673848;43673913']:1:matilde schlegel,mathilde schlegel
+Schlegel_M:9:['10.2307/3277038;10.2307/3801280;3783614;41332031;43673907;23673728;23673964;43673847;43674126']:1:martin schlegel,matilde schlegel,mathilde schlegel,mike schlegel,michael w. schlegel
+MacLean_S:29:['10.2307/2266094;10.2307/1368494;10.2307/4083846;4220795;3682243;10.2307/1551481;3881983;10.2307/3543820;10.2307/3544317;10.2307/2423790;2460227;10.2307/4083642;10.2307/3544063;10.2307/1550365;10.2307/1551168;10.2307/1550724;10.2307/1550723;10.2307/1550867;10.2307/1550679;20112569;4085843;4085407;10.2307/3565514;10.2307/1938461;4218494;10.2307/3279549;10.2307/3279632;10.2307/3279903;10.2307/3225398']:1:stephen f. maclean jr.,s. f. maclean jr.,s. f. maclean,sharon a. maclean
+Danilov_S:2:['4294817;41766901']:1:sergei m. danilov,sergei n. danilov
+VERDAGUER_D:2:['42795873;42797634']:1:dolors verdaguer
+WRIGHT_I:2:['42801295;42796026']:1:ian j. wright
+BONGERS_F:2:['42796661;42801295']:1:frans bongers
+POORTER_L:3:['42796661;42801295;43576115']:1:lourens poorter

@@ -94,7 +94,7 @@ def write_to_file(data_dict,authornames_to_article_ids,clusters,_id,filename):
     with open(filename, "w") as f:
         json.dump(data_dict,f)
 
-cnx = sqlite3.connect('../../Authority/database/test3-Copy1.db')
+cnx = sqlite3.connect('../../database/jstor-authority.db')
 cursor = cnx.cursor()
 
 #remove duplicates from clusters db
@@ -115,7 +115,7 @@ cursor = cnx.cursor()
 clusters_data = pd.read_sql_query("SELECT * from clusters_all", cnx)
 # print(type(fake_gs_data))
 # print(fake_gs_data)
-search_gs_query = "select name_id, replace(fullname, '  ', ' ') as full_name, ids from bhl where lower(full_name) like '"
+search_gs_query = "select name_id, replace(fullname, '  ', ' ') as full_name, ids from bhl_no_dups where lower(full_name) like '"
 total_clusters = 0
 total_lumps = 0
 total_splits = 0
@@ -213,9 +213,9 @@ for index,row in clusters_data.iterrows():
             j+=1
         i+=1
     
-    print(author_to_cluster_map)
-    print(cluster_to_author_map)
-    print("...")
+#     print(author_to_cluster_map)
+#     print(cluster_to_author_map)
+#     print("...")
 
     #compute splits and lumps
     for val_ in cluster_to_author_map:
@@ -279,7 +279,7 @@ for index,row in clusters_data.iterrows():
     authors_ids_indices = list(range(len(list(author_ids_list))))
     author_ids_indices_pairs = get_pairs(authors_ids_indices)
     for pair in author_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         non_matching_pairs.extend(get_pairs_from_two_lists(list(author_ids_list)[pair[0]],list(author_ids_list)[pair[1]]))
     
     cluster_ids_list = cluster_to_ids.values()
@@ -290,7 +290,7 @@ for index,row in clusters_data.iterrows():
     clusters_indices = list(range(len(list(cluster_ids_list))))
     cluster_ids_indices_pairs = get_pairs(clusters_indices)
     for pair in cluster_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         clsuter_different_group_pairs.extend(get_pairs_from_two_lists((list(cluster_ids_list))[pair[0]],(list(cluster_ids_list))[pair[1]]))
 
    

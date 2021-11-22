@@ -2,6 +2,7 @@ import sqlite3
 import json
 import pandas as pd
 import ast
+import sys
 
 
 import itertools
@@ -15,7 +16,7 @@ def get_pairs(list_):
 def get_pairs_from_two_lists(lista, listb):
     return list(itertools.product(lista, listb))
 
-cnx = sqlite3.connect('../../Authority/database/test3-Copy1.db')
+cnx = sqlite3.connect('../../database/jstor-authority.db')
 cursor = cnx.cursor()
 
 search_self_query = "select * from self_citations where ids like \'%,%\' and lower(full_name) like '"
@@ -28,11 +29,15 @@ TP =0
 TN = 0
 FP = 0
 FN = 0
+index_from = sys.argv[1]
+index_to = sys.argv[2]
+tot = 0
 
-for index,row in clusters_data.iterrows():
+for index,row in clusters_data[int(index_from):int(index_to)].iterrows():
     #we consider only splitting scenario. self citation data has pair(s) of articles attributed to an author. 
     #we check if each pair belong to a same cluster.
     clusters = ast.literal_eval(row["clusters"])
+    tot+=1
     i = 0
     cluster_to_author_map = {} 
     author_to_cluster_map = {} 
@@ -80,9 +85,9 @@ for index,row in clusters_data.iterrows():
             j+=1
         i+=1
     
-    print(author_to_cluster_map)
-    print(cluster_to_author_map)
-    print("...")
+#     print(author_to_cluster_map)
+#     print(cluster_to_author_map)
+#     print("...")
 
     #compute splits
     for val in author_to_cluster_map:
@@ -108,7 +113,7 @@ for index,row in clusters_data.iterrows():
     authors_ids_indices = list(range(len(list(author_ids_list))))
     author_ids_indices_pairs = get_pairs(authors_ids_indices)
     for pair in author_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         non_matching_pairs.extend(get_pairs_from_two_lists(list(author_ids_list)[pair[0]],list(author_ids_list)[pair[1]]))
     
     cluster_ids_list = cluster_to_ids.values()
@@ -119,7 +124,7 @@ for index,row in clusters_data.iterrows():
     clusters_indices = list(range(len(list(cluster_ids_list))))
     cluster_ids_indices_pairs = get_pairs(clusters_indices)
     for pair in cluster_ids_indices_pairs:
-        print(pair[0])
+#         print(pair[0])
         clsuter_different_group_pairs.extend(get_pairs_from_two_lists((list(cluster_ids_list))[pair[0]],(list(cluster_ids_list))[pair[1]]))
 
    
@@ -133,18 +138,31 @@ for index,row in clusters_data.iterrows():
             FN+=1
         elif pair in non_matching_pairs:
             TN+=1
+    with open("evaluation_results_"+index_from+"_"+index_to+".txt", "w+") as f:
+        f.write("total clusters: "+str(len(clusters_data))+"\n")
+        f.write("total splitting: "+str(total_splits)+"\n")
+        f.write("total splitting blocks: "+str(total_splitting_blocks)+"\n")
+        f.write("author names found in self citations: "+str(authors_found_in_self_citations)+"\n")
+        f.write("TP: "+str(TP)+"\n")
+        f.write("FP: "+str(FP)+"\n")
+        f.write("FN: "+ str(FN)+"\n")
+        f.write("TN: "+ str(TN)+"\n")
+        f.write("total processed: "+ str(tot)+"\n")
+        
     
 print("total clusters: ", str(len(clusters_data)))
 print("total splitting: ", str(total_splits))
 print("total splitting blocks: ", str(total_splitting_blocks))
 print("author names found in self citations: ", str(authors_found_in_self_citations))
 
-with open("evaluation_results.txt", "w+") as f:
+with open("evaluation_results_"+index_from+"_"+index_to+".txt", "w+") as f:
     f.write("total clusters: "+str(len(clusters_data))+"\n")
     f.write("total splitting: "+str(total_splits)+"\n")
     f.write("total splitting blocks: "+str(total_splitting_blocks)+"\n")
     f.write("author names found in self citations: "+str(authors_found_in_self_citations)+"\n")
-    f.write("TP: ", str(TP))
-    f.write("FP: ", str(FP))
-    f.write("FN: ", str(FN))
-    f.write("TN: ", str(TN))
+    f.write("TP: "+str(TP)+"\n")
+    f.write("FP: "+str(FP)+"\n")
+    f.write("FN: "+ str(FN)+"\n")
+    f.write("TN: "+ str(TN)+"\n")
+    f.write("total processed: "+ str(tot)+"\n")
+    f.write("done")

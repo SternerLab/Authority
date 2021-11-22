@@ -1,7 +1,7 @@
 import sqlite3
 import sys
 
-cnx = sqlite3.connect('../Authority/database/test3-Copy1.db')
+cnx = sqlite3.connect('../database/jstor-authority.db')
 cursor = cnx.cursor()
 
 cluster_file_path = sys.argv[1]
@@ -34,6 +34,6 @@ for cluster in clusters:
             with open('results/exceptions.txt', 'a+') as f:
                 f.write(cluster)
                 f.write('\n')
-#             sleep(20)
+            sleep(20)
             print("")
 

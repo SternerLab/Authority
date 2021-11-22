@@ -1,0 +1,5 @@
+Kimoto_T:3:['4315681;20171494;20170472']:1:tetsuo kimoto,takashi kimoto
+Wakabayashi_T:3:['23381394;24875616;4315681']:1:takashi wakabayashi,toshie wakabayashi,tomoko wakabayashi
+MARTÍNEZ-CORTINA_C:2:['42764540;42764384']:1:carmen martínez-cortina
+SANZ_A:4:['23692193;23691870;42764540;42764384']:1:a. sanz,amparo sanz
+Fernández_H:8:['23369538;10.2307/1222492;4293569;42883534;43185810;27756359;4314799;4315731']:1:h. s. nava fernández,hugo r. fernández,hector r. fernández,helena fernández,hugo rafael fernández,h. fernández

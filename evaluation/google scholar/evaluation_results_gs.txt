@@ -1,0 +1,16 @@
+total clusters: 159006
+total splitting: 9
+total lumping: 1039
+total splitting blocks: 9
+total lumping blocks: 1037
+lumping_based_on_name: 95537
+splitting_based_on_name: 8
+authors_per_block_avg: 2
+authors_per_block_max: 237
+authors per block min: 1
+author names found in google scholar: 20446
+duplicate author profiles found in google scholar: 212
+TP: 291938
+FP: 18028
+FN: 238
+TN: 5198

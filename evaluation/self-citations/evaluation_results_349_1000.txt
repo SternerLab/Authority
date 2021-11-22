@@ -1,0 +1,10 @@
+total clusters: 159006
+total splitting: 0
+total splitting blocks: 0
+author names found in self citations: 316
+TP: 163
+FP: 266
+FN: 0
+TN: 80
+total processed: 651
+done
