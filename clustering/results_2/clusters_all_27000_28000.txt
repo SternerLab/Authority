@@ -1,3 +1,0 @@
-Beaucourt_N:3:['20061124;3244140;3244825']:1:nathalie beaucourt
-HARRINGTON_A:4:['43043318;43043811;43043083;43043561']:1:alice b. harrington
-McGrath_C:6:['10.2307/20094442;25602309;3882213;4292862;1468072;3548040']:1:claire c. mcgrath,chris mcgrath,charles m. mcgrath,c. j. mcgrath

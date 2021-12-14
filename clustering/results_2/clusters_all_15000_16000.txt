@@ -1,4 +1,0 @@
-Partington_A:2:['biolenviprocria.114B.1.53;10.2307/2402145']:1:adam partington,a. partington
-Murray_C:17:['2440345;41242853;20869956;40928262;4276248;41490514;3682445;1593501;24715100;biolenviprocria.114B.1.53;biolenviprocria.115B.3.143;40835755;4034217;24635720;20870156;43287304;41515026']:1:christopher murray,clare murray,c. murray,christopher m. murray,colleen murray,ciarán murray,christopher g. murray,carson murray,carol lebeda murray,carole murray,cathryn clarke murray
-Paradis_E:17:['4220405;2655770;2647274;2655769;2463483;2585269;4135379;23485151;3448991;4627132;41460064;29782954;24032803;10.2307/3809012;10.2307/5801;3547419;10.2307/177100']:1:e. paradis,emmanuel paradis
-Camloh_M:3:['4293866;10.2307/1547346;10.2307/1547456']:1:marjana camloh

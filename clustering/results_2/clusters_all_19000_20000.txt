@@ -1,9 +1,0 @@
-Bisazza_A:5:['4600810;40213154;10.2307/1446400;3449260;40645493']:1:angelo bisazza,a. bisazza
-WATTS_S:2:['43740308;42753995']:1:susan watts,s. watts
-RODRIGUEZ_J:2:['23690409;42753995']:1:j. l. rodriguez
-EVANS_S:3:['42908837;42568672;42753995']:1:susan e. evans,s. m. evans,sarah e. evans
-Muehlbauer_F:6:['4255647;4255566;10.2307/2419075;23674556;10.2307/2419244;2474347']:1:f. j. muehlbauer,fred j. muehlbauer
-Chase_R:10:['10.2307/3223703;10.2307/4040534;10.2307/4073290;10.2307/4074932;42939775;30085055;30064005;25063761;4601944;4602141']:1:richard m. chase,r. b. chase,ronald b. chase,robert s. chase jr.,richard w. chase,r.g. chase,r. m. chase,ronald chase
-GOSSUIN_F:2:['20792817;20792793']:1:françoise gossuin,f. gossuin
-Foster_T:10:['10.2307/2420563;20171365;23322902;10.2307/1930587;20062337;4034191;41679660;3871622;25224315;10.2307/3870746']:1:toshi foster,toshi m. foster,theda a. foster,tammy e. foster,thural dale foster,tim foster,t. dale foster
-Maheswaran_S:13:['10.2307/1591397;10.2307/1589427;10.2307/1589807;10.2307/1589809;10.2307/1589832;10.2307/1589924;10.2307/1591242;10.2307/1589037;10.2307/1589271;10.2307/1589224;10.2307/1589655;10.2307/1589767;10.2307/1589653']:1:samuel k. maheswaran,s. k. maheswaran

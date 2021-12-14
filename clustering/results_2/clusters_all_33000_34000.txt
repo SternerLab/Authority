@@ -1,9 +1,0 @@
-de Souza_A:18:['25434313;24587680;30043203;23264900;41433899;42569101;41433900;23721569;3285922;23668875;10.2307/3869315;10.2307/4135566;taxon.62.4.723;2560210;23492631;23492392;23495989;23493257']:1:andréa lúcia teixeira de souza,a.a. de souza,anete pereira de souza,adriano m. de souza,abigail freire ribeiro de souza,alexandre fadigas de souza,abigail baptista de souza,andré rodrigues de souza,a. p. de souza,agostinho lopes de souza,amancio de souza
-Martins_R:14:['4277731;25085586;25085276;25085644;30043203;10.2307/3761343;2663951;2559736;2999829;10.1086/681086;3218402;25742960;41998953;41999045']:1:r. s. martins,renata martins,rosemary a. martins,renato t. martins,r.b. martins,rogério parentoni martins,rogério p. martins,rogerio parentoni martins
-Heldmann_J:2:['41416446;1552187']:1:jennifer heldmann,jennifer l. heldmann
-Pollard_W:3:['4263946;25256246;1552187']:1:wayne h. pollard,william e. pollard
-McKay_C:9:['10.2307/3224615;40343493;41416446;1552187;23469191;41489079;25153391;4251023;4251022']:1:christopher p. mckay,charles r. mckay,c. p. mckay,christopher mckay
-Toon_O:2:['41416446;1552187']:1:owen b. toon
-Hallett_J:11:['41717077;10.2307/3503954;2641844;2460487;10.2307/1382778;10.2307/3809244;2460277;4219806;10.2307/1938867;10.2307/3544642;10.2307/3544580']:1:jennifer c. hallett,james g. hallett
-DHAWAN_A:4:['42756926;42758588;42754257;42757664']:1:a. k. dhawan
-Riehl_L:2:['2439362;4258531']:1:louis a. riehl,l. a. riehl

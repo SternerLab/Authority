@@ -1,6 +1,0 @@
-Marsh_T:11:['25661023;3588989;10.2307/1592204;4287694;23597847;10.2307/1467811;10.2307/2422542;10.2307/4076505;10.2307/4076134;10.2307/4074870;10.2307/4079179']:1:terrence g. marsh,tom c. marsh,theresa d. marsh,thompson g. marsh,t. l. marsh,terence l. marsh,trisha e. marsh
-Haritani_M:4:['10.2307/1590291;10.2307/1592433;10.2307/1593040;1593560']:1:makoto haritani,m. haritani
-Kajigaya_H:4:['40801729;10.2307/1590291;10.2307/1590638;10.2307/1590792']:1:hiroshi kajigaya,h. kajigaya
-Akashi_T:7:['23380510;3872099;10.2307/1590291;41433905;4629732;4279003;40537663']:1:t. akashi,tomoyoshi akashi,tomohiro akashi
-Kamemura_M:2:['10.2307/1590792;10.2307/1590291']:1:m. kamemura
-Tanahara_N:2:['10.2307/1590792;10.2307/1590291']:1:n. tanahara
