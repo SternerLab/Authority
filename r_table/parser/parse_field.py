@@ -28,12 +28,17 @@ def parse_and_store_field(xmlfile):
     tree = ET.parse(xmlfile)
     article = tree.getroot()
     article_meta = article.find('./front/article-meta')
-    id = article_meta.find('./article-id').text
-    year = int(article_meta.find('./pub-date/year').text)
-    update_db_query = "update articles set year = {} where id = {}".format(year, id)
-    sql_client.execute(update_db_query)
-
-
+    id_ = article_meta.find('./article-id').text
+    year = article_meta.find('./pub-date/year').text
+    try:
+        year = int(year)
+        update_db_query = "update articles set year = {} where id like '{}'".format(year, id_)
+        sql_client.execute(update_db_query)
+    except Exception as e:
+        print(str(e))
+        print(year)
+        print("update articles set year = {} where id like '{}'".format(year, id_))
+    
 
 #parse xml files and store them in database
 def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
