@@ -74,7 +74,7 @@ def parse(xmlfile, mesh_file):
 
     journal_meta = article.find('./front/journal-meta')
     journal_name = journal_meta.find('./journal-title-group/journal-title').text
-    year = article_meta.find('./pub-date/year').text
+    year = int(article_meta.find('./pub-date/year').text)
 
     language = ''
     custom_meta_group = article_meta.find('./custom-meta-group')
@@ -88,7 +88,7 @@ def parse(xmlfile, mesh_file):
     for author in author_list:
         first_initial = '' if len(author.given_name) == 0 else author.given_name[0]
         middle_initial = '' if len(author.middle_name) == 0 else author.middle_name[0]
-        article_record_list.append(Article(unique_id, i, author.surname, first_initial, middle_initial, author.suffix, article_title_processed, journal_name, author.full_name, author.given_name, author.middle_name, language, ",".join(author_name_list), article_title, year))
+        article_record_list.append(Article(unique_id, i, author.surname, first_initial, middle_initial, author.suffix, article_title_processed, journal_name, author.full_name, author.given_name, author.middle_name, language, ",".join(author_name_list), "", "", article_title, year))
         i+=1
     return article_record_list
 

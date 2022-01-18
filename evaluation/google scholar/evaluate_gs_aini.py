@@ -94,7 +94,7 @@ def write_to_file(data_dict,authornames_to_article_ids,clusters,_id,filename):
     with open(filename, "w") as f:
         json.dump(data_dict,f)
 
-cnx = sqlite3.connect('../../database/jstor-authority.db')
+cnx = sqlite3.connect('../../database/jstor-authority-old-for-plots.db')
 cursor = cnx.cursor()
 
 #remove duplicates from clusters db
@@ -113,11 +113,11 @@ cursor = cnx.cursor()
 #case 3: block with two author names and not name variants. No issues. Seemingly different must not form a single cluster. lumping should be considered here.
 
 #following code to retrieve clusters based on all forename initials and last name (AINI).
-query = "select distinct id as clusters, fullname, first_initial, middle_initial, last_name from articles"
+query = "select distinct id as clusters, fullname as authors, first_initial, middle_initial, last_name from articles"
 old_data = pd.read_sql_query(query,cnx)
 data = old_data
 data['clusters'] = data.groupby(["first_initial", "middle_initial", "last_name"])['clusters'].transform(lambda x : ';'.join(x))
-data['authors'] = data.groupby(["first_initial", "middle_initial", "last_name"])['fullname'].transform(lambda x : ','.join(x))
+data['authors'] = data.groupby(["first_initial", "middle_initial", "last_name"])['authors'].transform(lambda x : ','.join(x))
 data = data.drop_duplicates()
 clusters_data = data
 
@@ -150,8 +150,8 @@ for index,row in clusters_data.iterrows():
     # author_name_1 : 1,2,3,4 author_name_2 : 5,6,7. get clusters row["clusters"]. 
     #create map cluster_group_1: 1,2, 4. cluster_group_2: 3,5,6,7. splitting case.
 
-    clusters = ast.literal_eval(row["clusters"])
-    print(clusters)
+    clusters = row["clusters"].split(',')
+#     print(clusters)
     i = 0
     cluster_to_author_map = {}
     author_to_cluster_map = {}
@@ -164,8 +164,8 @@ for index,row in clusters_data.iterrows():
         i+=1
     
     duplicate_author_names = []
-    author_names = row["authors"].strip().split(',')
-    print(author_names)
+    author_names = list(set(row["authors"].strip().split(',')))
+#     print(author_names)
     j = 0
     for author in author_names:
         auth_query = search_gs_query+author.strip().replace('\'', '\'\'')+"'"
@@ -189,7 +189,7 @@ for index,row in clusters_data.iterrows():
 
     # print(cluster_to_ids)
     # print(author_to_ids)
-    # print("...")
+    print("...")
     
     #remove duplicate author profile data
     for val in authornames_to_article_ids:
@@ -227,10 +227,10 @@ for index,row in clusters_data.iterrows():
     
 #     print(author_to_cluster_map)
 #     print(cluster_to_author_map)
-#     print("...")
+    print("***")
 
    
-    
+
     isdup = False
     #compute splits and lumps
     for val_ in cluster_to_author_map:
@@ -282,6 +282,7 @@ for index,row in clusters_data.iterrows():
     authors_per_block_avg += total_authors
     authors_per_block_max = max(total_authors, authors_per_block_max)
     authors_per_block_min = min(total_authors, authors_per_block_min)
+    print("lumping splitting")
 
      # todo: remove duplicate authors. Let say same individual created two different profiles on google scholar (how do we know same? if they share common papers.)
     # remove both profiles for evaluation. 
@@ -334,59 +335,76 @@ for index,row in clusters_data.iterrows():
         elif pair in non_matching_pairs:
             TN+=1
     
-
-
-
-
-    
-
-    
+    print("tpfp")
 
 
 
     
-print("total clusters: ", str(len(clusters_data)))
-print("total splitting: ", str(total_splits))
-print("total lumping: ", str(total_lumps))
-print("total splitting blocks: ", str(total_splitting_blocks))
-print("total lumping blocks: ", str(total_lumping_blocks))
-print("lumping_based_on_name: ", str(lumping_based_on_name))
-print("splitting_based_on_name: ", str(splitting_based_on_name))
-print("authors_per_block_avg: ", str(int(authors_per_block_avg/len(clusters_data))))
-print("authors_per_block_max: ", str(authors_per_block_max))
-print("authors per block min: ", str(authors_per_block_min))
-print("author names found in google scholar: ", str(authors_found_in_google_scholar))
-print("duplicate author profiles found in google scholar: ", str(duplicate_author_profiles_on_gs))
-print("TP: ", str(TP))
-print("FP: ", str(FP))
-print("FN: ", str(FN))
-print("TN: ", str(TN))
-# print("accuracy: ", str())
-S = TP+FP+TN+FN
 
-with open("evaluation_results_gs.txt", "w+") as f:
-    f.write("total clusters: "+str(len(clusters_data))+"\n")
-    f.write("total splitting: "+str(total_splits)+"\n")
-    f.write("total lumping: "+str(total_lumps)+"\n")
-    f.write("total splitting blocks: "+str(total_splitting_blocks)+"\n")
-    f.write("total lumping blocks: "+str(total_lumping_blocks )+"\n")
-    f.write("lumping_based_on_name: "+str(lumping_based_on_name)+"\n")
-    f.write("splitting_based_on_name: "+str(splitting_based_on_name)+"\n")
-    f.write("authors_per_block_avg: "+str(int(authors_per_block_avg/len(clusters_data)))+"\n")
-    f.write("authors_per_block_max: "+str(authors_per_block_max)+"\n")
-    f.write("authors per block min: "+str(authors_per_block_min)+"\n")
-    f.write("author names found in google scholar: "+str(authors_found_in_google_scholar)+"\n")
-    f.write("duplicate author profiles found in google scholar: "+str(duplicate_author_profiles_on_gs)+"\n")
-    f.write("TP: "+str(TP)+"\n")
-    f.write("FP: "+str(FP)+"\n")
-    f.write("FN: "+str(FN)+"\n")
-    f.write("TN: "+str(TN)+"\n")
-#     f.write("Precision: "+str(TP/(TP+FP))+"\n")
-#     f.write("Recall: "+str(TP/(TP+FN))+"\n")
-#     f.write("Accuracy: "+str((TP+TN)/S)+"\n")
-#     f.write("PLER: "+str(FP/(TP+FP))+"\n")
-#     f.write("PSER: "+str(FN /(TN + FN ))+"\n")
-#     f.write("PER: "+str((FP + FN )/S)+"\n")
+    S = TP+FP+TN+FN
+    
+    try:
+#         accuracy = (TP+TN)/S
+#         print("accuracy : ",accuracy)
+#         pairwise_precision = TP/(TP+FP)
+#         print("pairwise_precision : ",pairwise_precision)
+#         pairwise_recall = TP/(TP+FN)
+#         print("pairwise_recall : ",pairwise_recall)
+#         pairwise_f1 = (2*pairwise_precision*pairwise_recall)/(pairwise_recall+pairwise_precision)
+#         print("pairwise_f1 : ",pairwise_f1)
+#         ler = FP/(TP+FP)
+#         print("pairwise lumping error rate : ",ler)
+#         ser = FN/(TN+FN)
+#         print("pairwise splitting error rate : ",ser)
+#         er = (FP+FN)/S
+#         print("pairwise error rate : ",er)
+
+
+
+        print("total clusters: ", str(len(clusters_data)))
+        print("total splitting: ", str(total_splits))
+        print("total lumping: ", str(total_lumps))
+        print("total splitting blocks: ", str(total_splitting_blocks))
+        print("total lumping blocks: ", str(total_lumping_blocks))
+        print("lumping_based_on_name: ", str(lumping_based_on_name))
+        print("splitting_based_on_name: ", str(splitting_based_on_name))
+        print("authors_per_block_avg: ", str(int(authors_per_block_avg/len(clusters_data))))
+        print("authors_per_block_max: ", str(authors_per_block_max))
+        print("authors per block min: ", str(authors_per_block_min))
+        print("author names found in google scholar: ", str(authors_found_in_google_scholar))
+        print("duplicate author profiles found in google scholar: ", str(duplicate_author_profiles_on_gs))
+        print("TP: ", str(TP))
+        print("FP: ", str(FP))
+        print("FN: ", str(FN))
+        print("TN: ", str(TN))
+        # print("accuracy: ", str())
+
+
+        with open("evaluation_results_gs_aini.txt", "w+") as f:
+            f.write("total clusters: "+str(len(clusters_data))+"\n")
+            f.write("total splitting: "+str(total_splits)+"\n")
+            f.write("total lumping: "+str(total_lumps)+"\n")
+            f.write("total splitting blocks: "+str(total_splitting_blocks)+"\n")
+            f.write("total lumping blocks: "+str(total_lumping_blocks )+"\n")
+            f.write("lumping_based_on_name: "+str(lumping_based_on_name)+"\n")
+            f.write("splitting_based_on_name: "+str(splitting_based_on_name)+"\n")
+            f.write("authors_per_block_avg: "+str(int(authors_per_block_avg/len(clusters_data)))+"\n")
+            f.write("authors_per_block_max: "+str(authors_per_block_max)+"\n")
+            f.write("authors per block min: "+str(authors_per_block_min)+"\n")
+            f.write("author names found in google scholar: "+str(authors_found_in_google_scholar)+"\n")
+            f.write("duplicate author profiles found in google scholar: "+str(duplicate_author_profiles_on_gs)+"\n")
+            f.write("TP: "+str(TP)+"\n")
+            f.write("FP: "+str(FP)+"\n")
+            f.write("FN: "+str(FN)+"\n")
+            f.write("TN: "+str(TN)+"\n")
+#             f.write("Precision: "+pairwise_precision+"\n")
+#             f.write("Recall: "+pairwise_recall+"\n")
+#             f.write("Accuracy: "+accuracy+"\n")
+#             f.write("PLER: "+ler+"\n")
+#             f.write("PSER: "+ser+"\n")
+#             f.write("PER: "+er+"\n")
+    except Exception as e:
+        print(e)
     
     
 

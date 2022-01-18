@@ -22,3 +22,4 @@ done parsing zip: ../../data/receipt-id-561931-jcodes-ghij-part-001.zip  time_ta
 done parsing zip: ../../data/receipt-id-561931-jcodes-ghij-part-002.zip  time_taken:  ---seconds ---34854.48428463936
 done parsing zip: ../../data/receipt-id-561931-jcodes-klmnop-part-001.zip  time_taken:  ---seconds ---47702.67441654205
 done parsing zip: ../../data/receipt-id-561931-jcodes-klmnop-part-002.zip  time_taken:  ---seconds ---44665.50953602791
+done parsing zip: ../../data/qrstuvwyz.zip  time_taken:  ---seconds ---50096.71284413338
