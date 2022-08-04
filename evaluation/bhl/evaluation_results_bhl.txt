@@ -1,0 +1,16 @@
+total clusters: 159006
+total splitting: 1
+total lumping: 143
+total splitting blocks: 1
+total lumping blocks: 143
+lumping_based_on_name: 95537
+splitting_based_on_name: 8
+authors_per_block_avg: 2
+authors_per_block_max: 237
+authors per block min: 1
+author names found in bhl: 3246
+duplicate author profiles found in bhl: 0
+TP: 6995
+FP: 477
+FN: 6
+TN: 49

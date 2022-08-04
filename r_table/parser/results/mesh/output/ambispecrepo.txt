@@ -1,0 +1,1030 @@
+25099537|3,7,11,15-tetramethylhexadec-2-enal|C586672|53245|NM|RtM via: 3,7,11,15-tetramethylhexadec-2-enal;Forced SCR Leaf Node Lookup:phytal|TI|MM|197^6^0
+25099537|*Fisheries|D005398|34563|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fishery|TI|MM|169^7^0
+25099537|*Plankton|D010933|30933|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|187^8^0
+25099537|Russia|D012426|26778|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|251^7^0
+25099537|Sweden|D013548|26391|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|85^7^0
+25099537|Tooth Wear|D057085|150264|MH|||RC
+25099537|Tooth|D014070|80791|MH|||RC
+25099537|*Aldehydes|D000447|53244|HM|RtM via: 3,7,11,15-tetramethylhexadec-2-enal|TI|MM|197^6^0
+25099537|*Diterpenes|D004224|53055|HM|RtM via: 3,7,11,15-tetramethylhexadec-2-enal|TI|MM|197^6^0
+25099308|Humans|D006801|30064|CT|K562 Cells;CT Treecode Lookup: A11.251.210.190.510 (K562 Cells);K562 Cells;CT Treecode Lookup: A11.251.860.180.510 (K562 Cells);K562 Cells;CT Treecode Lookup: A11.443.240.497.480 (K562 Cells)||RC
+25099308|Animals|D000818|30064|CT|Crustacea;CT Treecode Lookup: B01.050.500.131 (Crustacea);CT Text Lookup: fish|TI|MM;RC|2139^4^0
+25099308|Adult|D000328|30064|CT|Forced Leaf Node Lookup:adults|TI|MM|2352^6^0;2120^5^0
+25099308|*Fucus|D044645|17241|MH|RtM via: Fucus;Forced Leaf Node Lookup:fucus;checkForceMH Boosted|TI|MM|2915^5^0;1768^5^0;1869^5^0;2932^5^0
+25099308|*Petroleum Pollution|D059392|16284|MH|RtM via: Petroleum Pollution;Forced Leaf Node Lookup:oil pollutions;Forced Leaf Node Lookup:oil spills|TI|MM|2226^13^0;1640^9^0;840^13^0;503^9^0;92^13^0
+25099308|*Ecosystem|D017753|8703|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|1263^9^0;791^9^0;308^9^0
+25099308|*Laboratories|D007753|8214|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|957^10^0;172^10^0
+25099308|*Water|D014867|8085|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|2545^5^0;1426^5^0;139^5^0;1449^5^0
+25099308|*Plastic|D010969|8001|ET|Entry Term Replacement for "Plastics";RtM via: Plastics;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plastics|TI|MM|1524^7^0;1005^7^0
+25099308|Russia|D012426|7605|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|3080^7^0
+25099308|Sweden|D013548|7341|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|131^7^0
+25099308|Cisplatin|D002945|29064|MH|||RC
+25099308|K562 Cells|D020014|15448|MH|||RC
+25099308|*Crustacea|D003445|4077|MH|RtM via: Class crustacea;RtM via: Subphylum Crustacea|TI|MM|2177^11^0
+25099308|*Toxicity Tests, Acute|D023382|2115|MH|RtM via: Toxicity Tests, Acute;Forced Non-Leaf Node Lookup:acute toxicity tests|TI|MM|2096^20^0
+25099308|*Brackish Water|D000068357|2064|ET|Entry Term Replacement for "Saline Waters";RtM via: Brackish Water;Forced Non-Leaf Node Lookup:brackish waters|TI|MM|1144^14^0
+25099308|*Reproduction|D012098|2046|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|2494^12^0
+25099308|*Biota|D058448|1224|MH|RtM via: Biological Community;Forced Non-Leaf Node Lookup:biota|TI|MM|1513^5^0
+25099308|*Air Pollution|D000397|711|MH|RtM via: Air Pollution;Forced Non-Leaf Node Lookup:air pollutions|TI|MM|149^13^0
+25099310|*Nitrates|D009566|23910|MH|RtM via: Nitrates;Forced Leaf Node Lookup:nitrate;checkForceMH Boosted|TI|MM|1459^7^0;1425^7^0
+25099310|*Ammonia|D000641|23001|MH|RtM via: ammonia;Forced Leaf Node Lookup:ammonia;checkForceMH Boosted|TI|MM|1332^7^0;1224^7^0
+25099310|*Hydrogen Sulfide|D006862|22257|MH|RtM via: Hydrogen Sulfide;Forced Leaf Node Lookup:hydrogen sulfide;checkForceMH Boosted|TI|MM|727^16^0;417^16^0;544^16^0;827^16^0
+25099310|*Phosphate|D010710|14835|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|1003^9^0;916^9^0
+25099310|*Phosphorus|D010758|13146|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1199^10^0
+25099310|*Oxygen|D010100|12558|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|1478^6^0;691^6^0;526^6^0;406^6^0
+25099310|*Water|D014867|11481|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|940^5^0;514^5^0;291^5^0;146^5^0
+25099310|*Seasons|D012621|11040|MH|RtM via: Seasonal Variation;Forced Leaf Node Lookup:seasonal variations|TI|MM|1619^19^0
+25099310|*Salinity|D054712|10824|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|644^8^0;260^8^0
+25099310|Russia|D012426|10815|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1932^7^0
+25099310|Cognition|D003071|27243|MH|||RC
+25099310|Marijuana Abuse|D002189|26707|MH|||RC
+25099310|*Water, Saline|D000068357|990|ET|Entry Term Replacement for "Saline Waters";RtM via: Saline Waters;Forced Non-Leaf Node Lookup:saline waters|TI|MM|220^12^0
+25099310|*Nutrient|D000078622|954|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|97^8^0
+25099310|*Silicate|D017640|444|ET|Entry Term Replacement for "Silicates";RtM via: Silicates;Forced Non-Leaf Node Lookup:silicates|TI|MM|1186^8^0;1075^8^0
+25099597|Humans|D006801|158893|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099597|*Detergents|D003902|53901|MH|Forced Leaf Node Lookup:detergents;checkForceMH Boosted|TI|MM|294^10^0;415^10^0;514^9^0
+25099597|*Salts|D012492|38841|MH|RtM via: Salts;Forced Leaf Node Lookup:salts;checkForceMH Boosted|TI|MM|913^5^0
+25099597|*Emulsions|D004655|38286|MH|RtM via: Emulsions;RtM via: Drug emulsion;Forced Leaf Node Lookup:emulsions|TI|MM|1461^9^0;672^9^0;446^9^0;266^8^0
+25099597|*Petroleum Pollution|D059392|37413|MH|RtM via: Petroleum Pollution;Forced Leaf Node Lookup:oil spills|TI|MM|1195^9^0;1072^10^0
+25099597|polyurethane foam|C028279|36373|NM|RtM via: polyurethane foam;Forced SCR Leaf Node Lookup:polyurethane foam|TI|MM|1227^17^0
+25099597|*Ships|D012767|19068|MH|RtM via: Ships;Forced Leaf Node Lookup:ships|TI|MM|184^5^0
+25099597|*Temperature|D013696|19068|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|809^11^0
+25099597|*Surface Active Agents|D013501|19059|ET|Entry Term Replacement for "Surface-Active Agents";RtM via: Surface-Active Agents;checkForceMH Boosted;Forced Non-Leaf Node Lookup:surface-active agents|TI|MM|893^3^0;737^21^0
+25099597|*Water|D014867|19056|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1137^5^0;247^5^0;1384^5^0
+25099597|*Laboratories|D007753|18783|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|1250^10^0;606^10^0
+25099597|Russia|D012426|17970|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1732^7^0
+25099597|*Patient Discharge|D010351|17967|MH|Forced Leaf Node Lookup:discharge|TI|MM|143^9^0
+25099597|*Salinity|D054712|17967|MH|Forced Leaf Node Lookup:salinity|TI|MM|1390^8^0
+25099597|Multiple Endocrine Neoplasia Type 1|D018761|157893|MH|||RC
+25099597|*Polyurethanes|D011140|36372|HM|RtM via: polyurethane foam|TI|MM|1227^17^0
+25099597|*Seawater|D012623|2337|MH|RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|926^9^0;788^9^0;199^9^0
+25099580|*Rivers|D045483|4366|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|1606^6^0
+25099580|*Pollutants|D004785|3718|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|766^8^0
+25099580|*Biomass|D018533|3682|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|1015^7^0;605^7^0
+25099580|*Population Density|D011156|3676|MH|RtM via: Population Density;Forced Leaf Node Lookup:population density|TI|MM|992^18^0
+25099580|Russia|D012426|3319|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1798^7^0
+25099580|Dermatitis, Phototoxic|D017484|24922|MH|||RC
+25099580|*Central Nervous System Agents|D002491|1857|MH|RtM via: Stimulant|TI|MM|348^9^0
+25099580|*Aquatic Organisms|D059001|1647|MH|RtM via: water organism|TI|MM|936^15^0
+25099580|*Environmental Pollution|D004787|1500|MH|RtM via: Pollution|TI|MM|1530^9^0;1036^9^0;766^8^0;224^9^0;138^9^0
+25099580|*Eutrophication|D005068|1236|MH|RtM via: Eutrophication;Forced Non-Leaf Node Lookup:eutrophications|TI|MM|1477^14^0;1276^14^0;149^14^0
+25099580|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|936^5^0
+25099605|*Water|D014867|30504|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|561^5^0;69^5^0;169^5^0
+25099605|Cardiac Resynchronization Therapy|D058406|188540|MH|||RC
+25099605|Ventricular Remodeling|D020257|141729|MH|||RC
+25099526|Male|D008297|552712|CT|Urologic Surgical Procedures, Male;CT Treecode Lookup: E04.950.774.860 (Urologic Surgical Procedures, Male)||RC
+25099526|*Sewage|D012722|116864|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|862^6^0;544^6^0
+25099526|lignosulfuric acid|C001545|115941|NM|Forced SCR Leaf Node Lookup:lignosulphonates|TI|MM|240^16^0;315^16^0;348^16^0;500^16^0;713^16^0;995^16^0;1193^16^0
+25099526|*Lignin|D008031|115940|MH|RtM via: Lignin;Forced Leaf Node Lookup:lignins|TI|MM|1085^6^0;1047^6^0
+25099526|*Adsorption|D000327|60382|MH|RtM via: Adsorption (natural process);Forced Leaf Node Lookup:adsorptions|TI|MM|892^10^0
+25099526|*Viscosity|D014783|59983|MH|RtM via: Viscosity;Forced Leaf Node Lookup:viscosity|TI|MM|774^9^0
+25099526|*Salinity|D054712|59869|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|747^8^0
+25099526|*Temperature|D013696|59233|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|789^11^0;592^11^0
+25099526|*Water|D014867|58426|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|763^5^0;427^5^0;836^5^0
+25099526|Russia|D012426|57562|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1533^7^0
+25099526|Urethral Stricture|D014525|551712|MH|||RC
+25099526|Urologic Surgical Procedures, Male|D013521|326384|MH|||RC
+25099526|*Seawater|D012623|2925|MH|RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|558^9^0;57^9^0
+25099526|*Bacteria|D001419|1437|MH|RtM via: Bacteria;RtM via: Bacterial;Forced Non-Leaf Node Lookup:bacteria|TI|MM|661^8^0;477^9^0;158^9^0
+25099526|*Sulfites|D013447|516|MH|RtM via: Sulfites;Forced Non-Leaf Node Lookup:sulphites|TI|MM|1076^8^0;1038^8^0
+25099526|Geologic Sediments|D019015|1000|MH|Forced Non-Leaf Node Lookup:suspended sediments||MM|372^19^0
+25099524|Humans|D006801|1000|CT|Forced Humans:D Farmers||MM
+25099524|*Farmers|D000067565|13754|MH|RtM via: Farmers;Forced Leaf Node Lookup:farmers|TI|MM|271^6^0
+25099524|*Half-Life|D006207|13694|MH|RtM via: Half-Life;Forced Leaf Node Lookup:half lifes|TI|MM|190^9^0
+25099524|Russia|D012426|12749|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1471^7^0
+25099524|*Ships|D012767|12665|MH|RtM via: Ships;Forced Leaf Node Lookup:ships|TI|MM|644^5^0
+25099524|*Salinity|D054712|12422|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1065^8^0;557^8^0
+25099524|Sweden|D013548|12362|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|630^7^0
+25099524|Non-alcoholic Fatty Liver Disease|D065626|55269|MH|||RC
+25099524|Renal Insufficiency, Chronic|D051436|23518|MH|||RC
+25099524|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|512^5^0
+25099614|Animals|D000818|101567|CT|CT Text Lookup: fish|TI|MM;RC|34^4^0
+25099614|*Seasons|D012621|48000|MH|RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|788^6^0;398^7^0
+25099614|Florida|D005431|23574|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|646^7^0;52^7^0
+25099614|Gulf of Mexico|D060851|23574|MH|RtM via: Gulf of Mexico;Forced Leaf Node Lookup:gulf of mexico|TI|MM|45^2^1;60^4^1;68^6^1
+25099614|Retinal Degeneration|D012162|100567|MH|||RC
+25099614|Retinal Ganglion Cells|D012165|70737|MH|||RC
+25099617|Humans|D006801|298970|CT|Carcinoma, Lobular;CT Treecode Lookup: C17.800.090 (Carcinoma, Lobular);Carcinoma, Ductal, Breast;CT Treecode Lookup: C17.800.090 (Carcinoma, Ductal, Breast)||RC
+25099617|Animals|D000818|298970|CT|Gills;CT Treecode Lookup: A13.421 (Gills);CT Text Lookup: gills|TI|MM;RC|598^5^0
+25099617|*Cadmium|D002104|84404|MH|Forced Leaf Node Lookup:cd;checkForceMH Boosted|TI|MM|99^2^0
+25099617|*Lead|D007854|84404|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|103^2^0
+25099617|*Mercury|D008628|46060|MH|RtM via: mercury;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mercury|TI|MM|440^7^0;107^2^0
+25099617|*Gills|D005880|44095|MH|RtM via: Gill structure;Forced Leaf Node Lookup:gills|TI|MM|598^5^0
+25099617|*Pollutants|D004785|43957|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|33^10^0
+25099617|*Aquatic Organisms|D059001|43558|MH|RtM via: Marine Organisms;Forced Leaf Node Lookup:marine organisms|TI|MM|362^16^0
+25099617|Carcinoma, Lobular|D018275|297970|MH|||RC
+25099617|Carcinoma, Ductal, Breast|D018270|190115|MH|||RC
+25099617|Breast Neoplasms|D001943|1000|MH|Neoplasm Coordination Rule: Carcinoma, Ductal, Breast;Neoplasm Coordination Rule: Carcinoma, Lobular;Other Coordination Rule: Carcinoma, Lobular||MM
+25099617|*Fishes|D005399|1908|MH|RtM via: Fishes;Forced Non-Leaf Node Lookup:fishes|TI|MM|607^6^0;177^6^0
+25099617|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zn||MM|91^2^0
+25099312|*Pollutants|D004785|8584|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|75^10^0
+25099312|Russia|D012426|8068|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|991^7^0
+25099312|Doping in Sports|D004300|99997|MH|||RC
+25099312|International Agencies|D007390|23091|MH|||RC
+25099312|*Waters, Sea|D012623|132|ET|Entry Term Replacement for "Seawater";RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|264^10^0
+25099312|North Sea|D009659|0|MH|RtM via: North Sea|TI|MM|258^9^0
+25099602|opoka|C029019|30543|NM|RtM via: opaline silica;Forced SCR Leaf Node Lookup:opaline silica|TI|MM|1175^14^0;670^14^0
+25099602|*Plankton|D010933|16180|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|1337^8^0
+25099602|*Titanium|D014025|15013|MH|RtM via: titanium;Forced Titanium: Ti;checkForceMH Boosted|TI|MM|820^2^0
+25099602|Computational Biology|D019295|54517|MH|||RC
+25099602|Gene Regulatory Networks|D053263|40670|MH|||RC
+25099602|*Silicon Dioxide|D012822|30542|HM|RtM via: opaline silica|TI|MM|1175^14^0;670^14^0
+25099602|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|1483^5^0
+25099590|*Detergents|D003902|99138|MH|Forced Leaf Node Lookup:detergents;checkForceMH Boosted|TI|MM|419^10^0;740^10^0
+25099590|*Phenol|D019800|50370|MH|RtM via: phenol;checkForceMH Boosted|TI|MM|468^6^0
+25099590|*Salinity|D054712|50274|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|293^8^0
+25099590|*Pollutants|D004785|50145|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|374^9^0
+25099590|*Laboratories|D007753|49992|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|117^10^0
+25099590|*Oxygen|D010100|49851|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|684^6^0;512^6^0
+25099590|*Kinetics|D007700|49761|MH|RtM via: Kinetics;Forced Leaf Node Lookup:kinetics|TI|MM|265^8^0
+25099590|Russia|D012426|49572|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|884^7^0
+25099590|Tissue Plasminogen Activator|D010959|506410|MH|||RC
+25099590|Fibrinolytic Agents|D005343|341524|MH|||RC
+25099590|*Seawater|D012623|483|MH|RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|309^9^0;101^9^0
+25099322|Humans|D006801|265266|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099322|*Patient Discharge|D010351|74636|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|185^10^0
+25099322|*Pollutants|D004785|74072|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|124^10^0
+25099322|*Water Quality|D060753|73898|MH|RtM via: Water Quality;Forced Leaf Node Lookup:water quality|TI|MM|155^13^0
+25099322|Russia|D012426|73076|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|896^7^0
+25099322|*Motivation|D009042|73073|MH|Forced Leaf Node Lookup:expectations|TI|MM|457^11^0
+25099322|Anesthetics, Intravenous|D018686|264266|MH|||RC
+25099322|Desflurane|D000077335|193051|MH|||RC
+25099322|*Probabilities|D011336|2463|ET|Entry Term Replacement for "Probability";RtM via: Probability;Forced Non-Leaf Node Lookup:probabilities|TI|MM|270^13^0
+25099322|*Mathematical Models|D008962|918|ET|Entry Term Replacement for "Models, Theoretical";RtM via: Mathematical Model;Forced Non-Leaf Node Lookup:mathematical models|TI|MM|81^19^0
+25099578|Russia|D012426|20921|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|825^7^0
+25099578|*Nitrogen|D009584|20789|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|540^8^0;281^8^0
+25099578|*Water|D014867|20738|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|307^5^0
+25099578|Reimbursement, Incentive|D012052|117848|MH|||RC
+25099578|Economics, Hospital|D004469|68929|MH|||RC
+25099326|Humans|D006801|107880|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099326|*Sewage|D012722|51894|MH|RtM via: Environmental sludge;Forced Leaf Node Lookup:sewage;Forced Leaf Node Lookup:sludge;checkForceMH Boosted|TI|MM|420^6^0;110^6^0;445^6^0
+25099326|*Chlorine|D002713|36432|MH|RtM via: Dietary Chlorine;RtM via: chloride ion;RtM via: chlorine;Forced Leaf Node Lookup:chlorine;checkForceMH Boosted|TI|MM|688^8^0
+25099326|*DDT|D003634|31740|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|391^3^0
+25099326|*Phosphorus|D010758|22785|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|495^10^0;226^10^0
+25099326|*Nitrogen|D009584|21318|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|212^8^0
+25099326|*Pollutants|D004785|18702|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|791^10^0;76^10^0
+25099326|*Alkali|D000468|18594|ET|Entry Term Replacement for "Alkalies";RtM via: Alkalies;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alkalis|TI|MM|698^6^0
+25099326|*Patient Discharge|D010351|17154|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharge|TI|MM|778^9^0;474^9^0;273^9^0;194^9^0;63^9^0;612^9^0;634^9^0
+25099326|Russia|D012426|16257|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1025^7^0
+25099326|Sweden|D013548|15870|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|92^7^0
+25099326|Hyperthermia, Induced|D006979|106880|MH|||RC
+25099326|Computer Simulation|D003198|28340|MH|||RC
+25099326|*Heavy Metals|D019216|3507|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|286^12^0;404^12^0
+25099528|*Rivers|D045483|24926|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|82^6^0
+25099528|Russia|D012426|24920|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|333^7^0
+25099528|*Pollutants|D004785|24911|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|21^10^0
+25099528|Arthrogryposis|D001176|117434|MH|||RC
+25099528|Pedigree|D010375|63370|MH|||RC
+25099528|*Atmosphere|D001272|309|MH|RtM via: Atmosphere, planetary;Forced Non-Leaf Node Lookup:atmospheres|TI|MM|101^10^0
+25099530|*Rivers|D045483|14905|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|888^6^0;610^6^0;327^6^0;216^6^0;47^5^0
+25099530|Sweden|D013548|13837|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|1004^6^0;346^6^0;235^6^0;131^6^0;687^7^0;602^7^0
+25099530|*Phosphorus|D010758|11768|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|968^10^0;795^10^0;568^10^0;77^10^0
+25099530|*Nitrogen|D009584|10277|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|958^8^0;768^8^0;549^8^0;67^8^0
+25099530|Russia|D012426|7211|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1473^7^0
+25099530|Ceramics|D002516|31647|MH|||RC
+25099530|Materials Testing|D008422|13813|MH|||RC
+25099579|*Carbon Dioxide|D002245|91736|MH|RtM via: carbon dioxide;Forced Leaf Node Lookup:carbon dioxide;checkForceMH Boosted|TI|MM|26^14^0
+25099579|*Protons|D011522|91469|MH|RtM via: Protons;Forced Leaf Node Lookup:hydrogen ions;checkForceMH Boosted|TI|MM|324^13^0
+25099579|*Phosphates|D010710|50128|MH|RtM via: Phosphates;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|197^10^0
+25099579|*Phosphorus|D010758|47830|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|521^10^0;394^10^0;500^10^0
+25099579|*Gases|D005740|46279|MH|RtM via: Gases;checkForceMH Boosted|TI|MM|51^7^0
+25099579|*Seaweed|D012624|45835|MH|RtM via: Seaweed;checkForceMH Boosted;Forced Non-Leaf Node Lookup:seaweed|TI|MM|773^7^0
+25099579|Russia|D012426|45598|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|965^7^0
+25099579|*Solubility|D012995|45595|MH|Forced Leaf Node Lookup:dissolution|TI|MM|182^11^0
+25099579|Kidney Transplantation|D016030|245614|MH|||RC
+25099579|Graft Survival|D006085|227063|MH|||RC
+25099595|Humans|D006801|509285|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099595|*Industrial Waste|D007220|99205|MH|RtM via: Industrial Waste;Forced Leaf Node Lookup:industrial wastes;checkForceMH Boosted|TI|MM|359^17^0
+25099595|*Waste Water|D062065|98026|MH|RtM via: Waste Water;Forced Leaf Node Lookup:waste waters;checkForceMH Boosted|TI|MM|2171^12^0;753^12^0
+25099595|*Sewage|D012722|97504|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|1468^6^0;1337^6^0;1041^6^0;1566^6^0
+25099595|*Patient Discharge|D010351|95248|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|1900^9^0;1478^10^0;1394^10^0;646^9^0;481^10^0;75^10^0
+25099595|*Detergents|D003902|94282|MH|Forced Leaf Node Lookup:detergents;checkForceMH Boosted|TI|MM|1950^10^0
+25099595|*Cities|D002947|48560|MH|RtM via: Towns;Forced Leaf Node Lookup:towns|TI|MM|1807^5^0;1675^5^0;1355^5^0;832^4^0;518^5^0
+25099595|*Rivers|D045483|48398|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|2086^6^0;1379^6^0;913^6^0
+25099595|*Poison|D011042|48167|ET|Entry Term Replacement for "Poisons";RtM via: Poisons;checkForceMH Boosted;Forced Non-Leaf Node Lookup:poisons|TI|MM|659^6^0
+25099595|Russia|D012426|47681|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2455^7^0
+25099595|*Water|D014867|47675|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|146^5^0
+25099595|*Phenols|D010636|47579|MH|RtM via: Phenols;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|1962^7^0
+25099595|Tissue Plasminogen Activator|D010959|508285|MH|||RC
+25099595|Fibrinolytic Agents|D005343|341746|MH|||RC
+25099595|*Water Supply|D014881|1779|MH|RtM via: Water Supply;Forced Non-Leaf Node Lookup:water supply|TI|MM|308^12^0
+25099595|*Petroleum|D010578|1065|MH|RtM via: Petroleum;Forced Non-Leaf Node Lookup:petroleums|TI|MM|1974^18^0
+25099595|Soviet Union|D014586|480|ET|Entry Term Replacement for "USSR";RtM via: USSR|TI|MM|1607^12^0;997^12^0
+25099587|Pregnancy|D011247|275141|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378.630 (Prenatal Diagnosis)||RC
+25099587|Female|D005260|275141|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378 (Prenatal Diagnosis)||RC
+25099587|Humans|D006801|1000|CT|Forced Treecode Turn Back On: G08.686.784.769 (Pregnancy)||MM
+25099587|Trisomy|D014314|274141|MH|||RC
+25099587|Prenatal Diagnosis|D011296|229474|MH|||RC
+25099583|Animals|D000818|65498|CT|Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);CT Text Lookup: vertebrates|TI|MM;RC|343^11^0
+25099583|*DDT|D003634|13282|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|62^3^0;591^3^0
+25099583|Russia|D012426|7028|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|752^7^0
+25099583|Creutzfeldt-Jakob Syndrome|D007562|64498|MH|||RC
+25099583|PrPSc Proteins|D018620|40320|MH|||RC
+25099583|*Vertebrates|D014714|888|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|343^11^0
+25099583|*Niche, Ecological|D017753|87|ET|Entry Term Replacement for "Ecosystem";RtM via: Niche, Ecological;Forced Non-Leaf Node Lookup:ecological niche|TI|MM|241^17^0
+25099577|Humans|D006801|376711840|CT|Forced Humans: man|TI|MM;RC
+25099577|Russia|D012426|15241760|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|256^7^0
+25099577|*Aquatic Organisms|D059001|15241742|MH|RtM via: Aquatic Organisms;Forced Leaf Node Lookup:aquatic organisms|TI|MM|133^17^0
+25099577|Creutzfeldt-Jakob Syndrome|D007562|256699|MH|||RC
+25099577|PrPSc Proteins|D018620|218580|MH|||RC
+25099540|Russia|D012426|33601|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|458^7^0
+25099540|Eicosapentaenoic Acid|D015118|107361|MH|||RC
+25099540|Dietary Fats|D004041|98064|MH|||RC
+25099540|*Information Systems|D007256|291|MH|RtM via: Information Systems;Forced Non-Leaf Node Lookup:information systems|TI|MM|95^19^0
+25099316|*Polymethyl Methacrylate|D019904|33866|MH|RtM via: Plexiglas;RtM via: Plexiglass;Forced Leaf Node Lookup:plexiglass;checkForceMH Boosted|TI|MM|259^10^0
+25099316|*Ammonia|D000641|31511|MH|RtM via: ammonia;Forced Leaf Node Lookup:ammonia;checkForceMH Boosted|TI|MM|1759^7^0;1609^7^0;1364^7^0;1153^7^0;1004^7^0;785^7^0;681^7^0;543^7^0;438^7^0;358^7^0
+25099316|*Water|D014867|16264|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1801^5^0;314^5^0;284^5^0
+25099316|*Temperature|D013696|16255|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|1570^11^0;1068^11^0;517^11^0;923^11^0
+25099316|*Nitrogen|D009584|15994|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|388^8^0;53^8^0
+25099316|Spina Bifida Occulta|D016136|176172|MH|||RC
+25099316|Spinal Cord Diseases|D013118|52735|MH|||RC
+25099316|*Redox|D010084|1221|ET|Entry Term Replacement for "Oxidation-Reduction";RtM via: Oxidation;RtM via: Oxidation-Reduction;Forced Non-Leaf Node Lookup:oxidizing;Forced Non-Leaf Node Lookup:redox|TI|MM|130^9^0;109^5^0
+25099608|Animals|D000818|36172|CT|Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods)|TI|MM
+25099608|Humans|D006801|1000|CT|Forced Humans:D Sexual and Gender Minorities||MM
+25099608|*Temperature|D013696|9708|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|835^11^0
+25099608|*Gastropods|D049851|9636|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|352^10^0;156^10^0
+25099608|*Water|D014867|9555|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|789^5^0
+25099608|Bermuda|D001605|9390|MH|RtM via: Bermuda;Forced Leaf Node Lookup:bermuda|TI|MM|329^7^0
+25099608|Heart Valve Diseases|D006349|35172|MH|||RC
+25099608|Outpatient Clinics, Hospital|D010044|17917|MH|||RC
+25099608|*Cluster Analysis|D016000|1491|MH|RtM via: statistical cluster;Forced Non-Leaf Node Lookup:cluster analysis|TI|MM|941^16^0
+25099608|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|1184^5^0
+25099608|Sexual and Gender Minorities|D000072339|1000|MH|Forced Non-Leaf Node Lookup:gay||MM|320^3^0
+25099333|*Laboratories|D007753|89583|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratories;Forced Leaf Node Lookup:laboratory|TI|MM|2524^12^0;2180^10^0;2214^12^0;1588^10^0;1501^12^0;1341^12^0;1261^12^0;762^12^0;645^12^0;224^10^0
+25099333|Sweden|D013548|88395|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|238^6^0;2206^7^0;73^7^0
+25099333|*Pollutants|D004785|44769|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|2292^8^0
+25099333|*Water|D014867|44769|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1191^5^0;354^5^0;991^5^0;1430^5^0
+25099333|Russia|D012426|44478|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2956^7^0
+25099333|Germany, West|D005860|44199|MH|RtM via: Germany, West;Forced Leaf Node Lookup:federal republic of germany|TI|MM|725^27^0
+25099333|*Limit of Detection|D057230|44196|MH|Forced Leaf Node Lookup:detection limits|TI|MM|1065^16^0
+25099333|Hepatitis B Surface Antigens|D006514|312513|MH|||RC
+25099333|Hepatitis B Antibodies|D006510|252783|MH|||RC
+25099333|Spectrum Analysis|D013057|1000|MH|Forced Non-Leaf Node Lookup:spectroscopy||MM|472^12^0;846^12^0
+25099333|Denmark|D003718|1000|MH|Forced Non-Leaf Node Lookup:denmark||MM|709^7^0
+25099586|*Trace Elements|D014131|46444|MH|RtM via: Trace Elements;Forced Leaf Node Lookup:trace element;checkForceMH Boosted|TI|MM|217^13^0
+25099586|*Salinity|D054712|23525|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|294^8^0
+25099586|*Water|D014867|23348|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|318^5^0;184^5^0
+25099586|Russia|D012426|23168|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|586^7^0
+25099586|Cytomegalovirus Infections|D003586|144388|MH|||RC
+25099586|Cytomegalovirus|D003587|97641|MH|||RC
+25099586|*Redox|D010084|381|ET|Entry Term Replacement for "Oxidation-Reduction";RtM via: Oxidation-Reduction;Forced Non-Leaf Node Lookup:redox|TI|MM|394^5^0
+25099586|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|268^6^0
+25099586|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zn||MM|101^2^0;123^2^0;500^2^0;517^2^0
+25099585|*Benzo(a)pyrene|D001564|47163|MH|RtM via: Benzo(a)pyrene;Forced Leaf Node Lookup:benzo(a)pyrene;checkForceMH Boosted|TI|MM|514^14^0
+25099585|*Phenols|D010636|24114|MH|RtM via: Phenols;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|602^7^0;127^7^0
+25099585|*Pollutants|D004785|24030|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|141^7^0
+25099585|*Oxygen|D010100|23505|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|291^6^0
+25099585|Russia|D012426|23193|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|725^7^0
+25099585|Cytomegalovirus Infections|D003586|144388|MH|||RC
+25099585|Cytomegalovirus|D003587|97641|MH|||RC
+25099582|*Ecosystem|D017753|26467|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|189^9^0
+25099582|*Pollutants|D004785|25867|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|1167^10^0
+25099582|*Feedback|D005246|25675|MH|RtM via: Feedback - evaluative response process;RtM via: Feedback - system communication;Forced Leaf Node Lookup:feedbacks|TI|MM|1021^8^0
+25099582|Russia|D012426|25576|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1671^7^0
+25099582|Fanconi Anemia Complementation Group N Protein|D000076164|163356|MH|||RC
+25099582|Germ-Line Mutation|D018095|113494|MH|||RC
+25099582|*Reproduction|D012098|1722|MH|RtM via: Reproduction;Forced Non-Leaf Node Lookup:reproduction|TI|MM|709^12^0;516^12^0
+25099582|*Water Pollution|D014876|1011|MH|RtM via: Water Pollution;Forced Non-Leaf Node Lookup:water pollutions|TI|MM|1461^15^0
+25099582|Fibrinogen|D005340|1000|MH|Forced Non-Leaf Node Lookup:factor i||MM|561^8^0
+25099315|*Nickel|D009532|32179|MH|RtM via: nickel;Forced Leaf Node Lookup:nickel;checkForceMH Boosted|TI|MM|644^6^0;390^6^0
+25099315|*Copper|D003300|31489|MH|RtM via: copper;Forced Leaf Node Lookup:copper;checkForceMH Boosted|TI|MM|560^6^0;398^6^0
+25099315|*Zinc|D015032|29786|MH|RtM via: Dietary Zinc;RtM via: zinc;checkForceMH Boosted;Forced Non-Leaf Node Lookup:zinc|TI|MM|568^4^0;406^4^0
+25099315|*Cadmium|D002104|29779|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;checkForceMH Boosted|TI|MM|412^7^0
+25099315|*Manganese|D008345|28888|MH|RtM via: manganese;Forced Leaf Node Lookup:manganese;checkForceMH Boosted|TI|MM|1431^9^0;616^9^0;365^9^0
+25099315|*Iron|D007501|25055|MH|RtM via: ferric cation;RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|1420^6^0;627^4^0;376^4^0
+25099315|*Sewage|D012722|24424|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|926^6^0
+25099315|*Water|D014867|22760|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|2642^5^0;1265^5^0
+25099315|*Cobalt|D003035|22073|MH|RtM via: cobalt;checkForceMH Boosted;Forced Non-Leaf Node Lookup:cobalt|TI|MM|633^6^0;382^6^0
+25099315|Sweden|D013548|20893|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|2740^6^0;2634^7^0
+25099315|*Chromium|D002857|20708|MH|RtM via: chromium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chromium|TI|MM|550^8^0;355^8^0
+25099315|*Phosphorus|D010758|17741|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|604^10^0;333^10^0
+25099315|*Carbon|D002244|17174|MH|RtM via: Carbon;checkForceMH Boosted;Forced Non-Leaf Node Lookup:carbon|TI|MM|2074^6^0;532^6^0;325^6^0
+25099315|*Nitrogen|D009584|17090|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|540^8^0;345^8^0
+25099315|*Oxygen|D010100|13358|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|728^6^0
+25099315|*Pollutants|D004785|12221|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|822^8^0
+25099315|*Wind|D014919|11810|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM|175^4^0
+25099315|Russia|D012426|10706|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|3460^7^0
+25099311|Animals|D000818|87122|CT|Zooplankton;CT Treecode Lookup: B05.080.500.980 (Zooplankton)|TI|MM
+25099311|*Zooplankton|D015048|41608|MH|RtM via: Zooplankton;Forced Leaf Node Lookup:zooplankton;checkForceMH Boosted|TI|MM|976^11^0
+25099311|Russia|D012426|20819|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1847^7^0
+25099311|*Temperature|D013696|20606|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|1077^11^0;696^11^0
+25099311|Marijuana Abuse|D002189|86122|MH|||RC
+25099311|Smoking|D012907|28380|MH|||RC
+25099311|*Waters, Sea|D012623|1770|ET|Entry Term Replacement for "Seawater";RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|1469^10^0
+25099311|*Bacteria|D001419|333|MH|RtM via: Bacteria;Forced Non-Leaf Node Lookup:bacteria|TI|MM|992^8^0
+25099311|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|68^6^0
+25099311|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|918^5^0;1032^5^0
+25099532|Russia|D012426|11032|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|313^7^0
+25099532|Renal Veins|D012082|92846|MH|||RC
+25099532|Vena Cava, Inferior|D014682|60768|MH|||RC
+10.2307/25099572|*Lignin|D008031|6235|MH|RtM via: Lignin;Forced Leaf Node Lookup:lignins;checkForceMH Boosted|TI|MM|480^6^0
+10.2307/25099572|*Detergents|D003902|5530|MH|Forced Leaf Node Lookup:detergents;checkForceMH Boosted|TI|MM|488^10^0;803^10^0;1076^10^0
+10.2307/25099572|*Pollutants|D004785|4985|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|454^8^0
+10.2307/25099572|*Ammonium|D064751|4970|ET|Entry Term Replacement for "Ammonium Compounds";RtM via: ammonium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ammonium|TI|MM|706^8^0
+10.2307/25099572|*Nitrogen|D009584|4640|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|715^8^0
+10.2307/25099572|*Oxygen|D010100|4004|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|611^6^0;332^6^0
+10.2307/25099572|*Phenols|D010636|3920|MH|RtM via: Phenols;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|471^7^0
+10.2307/25099572|Russia|D012426|3254|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1287^7^0
+10.2307/25099572|North Sea|D009659|2909|MH|RtM via: North Sea;Forced Leaf Node Lookup:north sea|TI|MM;RC|767^9^0;358^9^0;264^9^0
+10.2307/25099572|*Oceans and Seas|D009792|21831|MH|RtM via: Open sea;RtM via: Sea|TI|MM;RC|110^8^0;1055^3^0;869^3^0;939^5^0;655^3^0;447^3^0;382^3^0
+10.2307/25099572|*Waters, Sea|D012623|16662|ET|Entry Term Replacement for "Seawater";RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM;RC|773^10^0;270^10^0;115^10^0
+10.2307/25099572|*Heavy Metals|D019216|5640|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|514^12^0
+10.2307/25099572|*Environmental Pollution|D004787|3747|MH|RtM via: Pollution|TI|MM|1031^9^0;845^9^0;532^9^0;454^8^0;93^9^0
+10.2307/25099572|*Oxygen Deficiency|D000860|843|ET|Entry Term Replacement for "Hypoxia";RtM via: Hypoxia;Forced Non-Leaf Node Lookup:oxygen deficiency|TI|MM|611^17^0
+10.2307/25099572|Baltic States|D001454|1011|MH|RtM via: Baltic States|TI|MM|1048^6^0;862^6^0;440^6^0;375^6^0
+25099337|*Water|D014867|39769|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|940^5^0;367^5^0
+25099337|Anxiety|D001007|270308|MH|||RC
+25099337|Depression|D003863|201301|MH|||RC
+25099337|*Mathematical Model|D008962|2238|ET|Entry Term Replacement for "Models, Theoretical";RtM via: Mathematical Model;Forced Non-Leaf Node Lookup:mathematical model|TI|MM|756^18^0;47^21^0
+25099328|Humans|D006801|240960|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099328|*Sewage|D012722|82019|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|1123^6^0;964^6^0
+25099328|*Chlorine|D002713|82013|MH|RtM via: Dietary Chlorine;RtM via: chloride ion;RtM via: chlorine;Forced Leaf Node Lookup:chlorine;checkForceMH Boosted|TI|MM|1466^8^0
+25099328|*Waste Water|D062065|81617|MH|RtM via: Waste Water;Forced Leaf Node Lookup:waste waters;checkForceMH Boosted|TI|MM|1550^11^0
+25099328|*Patient Discharge|D010351|80288|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|1498^9^0;1187^10^0
+25099328|*Rest|D012146|42268|MH|RtM via: Rest;Forced Leaf Node Lookup:rests|TI|MM|757^5^0
+25099328|*Mercury|D008628|40603|MH|RtM via: mercury;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mercury|TI|MM|1453^7^0
+25099328|Russia|D012426|40024|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1955^7^0
+25099328|Sweden|D013548|40024|MH|RtM via: Sweden;Forced Leaf Node Lookup:sweden|TI|MM|24^6^0
+25099328|*Environmental Policy|D058735|40021|MH|Forced Leaf Node Lookup:environmental policy|TI|MM|472^20^0
+25099328|Erythrocyte Deformability|D004907|239960|MH|||RC
+25099328|Erythrocyte Aggregation|D004903|181781|MH|||RC
+25099328|*Agriculture|D000383|2418|MH|RtM via: Agriculture;Forced Non-Leaf Node Lookup:agriculture|TI|MM|526^11^0
+25099534|Animals|D000818|37839|CT|Zooplankton;CT Treecode Lookup: B05.080.500.980 (Zooplankton)||MM;RC
+25099534|*Rivers|D045483|36839|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM;RC|799^6^0;1371^5^0
+25099534|*Zooplankton|D015048|30788|MH|RtM via: Zooplankton;Forced Leaf Node Lookup:zooplankton;checkForceMH Boosted|TI|MM;RC|1284^11^0;990^11^0
+25099534|*Phytoplankton|D010839|29857|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM;RC|883^13^0
+25099534|*Water|D014867|12610|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|651^5^0;482^5^0;228^5^0;1454^5^0;1468^5^0
+25099534|*Temperature|D013696|11929|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|1097^11^0
+25099534|*Pollutants|D004785|11767|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM;RC|577^10^0
+25099534|*Salinity|D054712|9490|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1068^8^0
+25099534|*Fisheries|D005398|8887|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fisheries|TI|MM|73^9^0
+25099534|Russia|D012426|7459|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1713^7^0
+25099534|*Bays|D061006|7262|MH|Forced Leaf Node Lookup:bay|TI|MM;RC|840^3^0
+25099534|*Freshwater|D005618|30462|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;RtM via: River water|TI|MM;RC|1448^11^0;1371^12^0
+25099534|*Water Pollution|D014876|18060|MH|RtM via: Water Pollution|TI|MM;RC|215^9^1;228^5^1
+25099534|*Seasons|D012621|9924|MH|RtM via: Summer;RtM via: spring (season)|TI|MM;RC|345^6^0;970^6^0
+25099534|*Bacteria|D001419|1611|MH|RtM via: Bacteria;Forced Non-Leaf Node Lookup:bacteria|TI|MM|388^8^0
+25099534|*Nutrients|D000078622|1359|MH|RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|1408^9^0
+25099534|Baltic States|D001454|1623|MH|RtM via: Baltic States|TI|MM|113^6^0
+25099539|*Meteorology|D055904|7413|MH|RtM via: Meteorology;Forced Leaf Node Lookup:meteorology|TI|MM|255^11^0
+25099539|*Fisheries|D005398|7110|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fishery|TI|MM|409^7^0
+25099539|*Hydrology|D062070|6519|MH|RtM via: Hydrology;Forced Leaf Node Lookup:hydrology|TI|MM|268^9^0
+25099539|*Water|D014867|5955|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|279^5^0
+25099539|*Ecosystem|D017753|5766|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM|564^10^0
+25099539|Russia|D012426|5445|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|669^7^0
+25099539|Radio Waves|D011846|23342|MH|||RC
+25099527|Humans|D006801|152810|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099527|*Salts|D012492|48504|MH|RtM via: Salts;Forced Leaf Node Lookup:salts;checkForceMH Boosted|TI|MM|151^5^0
+25099527|*Patient Discharge|D010351|25254|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharge|TI|MM|327^9^0
+25099527|Russia|D012426|24564|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1253^7^0
+25099527|*Phosphorus|D010758|24228|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1073^10^0;340^10^0
+25099527|Denmark|D003718|24177|MH|Forced Leaf Node Lookup:danish|TI|MM|606^6^0
+25099527|Antidepressive Agents|D000928|151810|MH|||RC
+25099527|Depressive Disorder, Major|D003865|117411|MH|||RC
+25099527|*Nutrient|D000078622|387|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|142^8^0
+25099527|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|925^6^0
+25099527|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|63^5^0;959^5^0
+25099314|Humans|D006801|26171|CT|Self Care;CT Treecode Lookup: N02.421.784 (Self Care)||RC
+25099314|*Pilot Projects|D010865|11338|MH|RtM via: Pilot Projects;Forced Lookup:pilot study;Forced Leaf Node Lookup:pilot study|TI|MM|929^11^0;710^11^0;451^11^0
+25099314|Russia|D012426|5012|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1852^7^0
+25099314|*Water|D014867|4892|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1110^5^0;78^5^0;898^5^0;1281^5^0
+25099314|North Sea|D009659|4748|MH|RtM via: North Sea;Forced Leaf Node Lookup:north sea|TI|MM|1152^9^0
+25099314|Mobile Applications|D063731|25171|MH|||RC
+25099314|Self Care|D012648|17869|MH|||RC
+25099314|*Physical Phenomena|D055585|1839|MH|RtM via: Force|TI|MM|1589^5^0
+25099314|Denmark|D003718|1000|MH|Forced Non-Leaf Node Lookup:denmark||MM|948^7^0
+25099592|monuron|C100088|98907|NM|RtM via: monuron;Forced SCR Leaf Node Lookup:monuron|TI|MM|593^7^0
+25099592|*Algicide|D006540|48661|ET|Entry Term Replacement for "Herbicides";RtM via: Algicides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:algicides|TI|MM|570^8^0
+25099592|*Water|D014867|48619|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|349^5^0;495^5^0
+25099592|*Plankton|D010933|48442|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|171^8^0
+25099592|*Ponds|D061005|48439|MH|RtM via: Natural pond;Forced Leaf Node Lookup:pond|TI|MM|374^4^0
+25099592|*Pollutants|D004785|48115|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|220^10^0
+25099592|Russia|D012426|47992|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1064^7^0
+25099592|Tissue Plasminogen Activator|D010959|508137|MH|||RC
+25099592|Fibrinolytic Agents|D005343|341641|MH|||RC
+25099592|*Methylurea Compounds|D008782|98906|HM|RtM via: monuron|TI|MM|593^7^0
+25099592|*Computers|D003201|123|MH|RtM via: Computers;Forced Non-Leaf Node Lookup:computers|TI|MM|908^9^0
+25099542|Humans|D006801|118385848|CT|Forced Humans: human|TI|MM;RC
+25099542|*Tritium|D014316|9649327|MH|RtM via: Tritium;Forced Leaf Node Lookup:tritium;checkForceMH Boosted|TI|MM|386^7^0
+25099542|*Phosphorus|D010758|4825337|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|517^10^0
+25099542|*Waste Products|D014866|4825166|MH|RtM via: Waste Products;checkForceMH Boosted;Forced Non-Leaf Node Lookup:waste products|TI|MM|790^14^0
+25099542|*Oxygen|D010100|4825145|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|509^6^0
+25099542|*Water|D014867|4824926|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|754^5^0;110^5^0
+25099542|*Salinity|D054712|4824839|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|120^8^0
+25099542|Russia|D012426|4824647|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|944^7^0
+25099542|Denmark|D003718|4824365|MH|Forced Leaf Node Lookup:danish|TI|MM|202^6^0
+25099542|Constipation|D003248|71708|MH|||RC
+25099542|Probiotics|D019936|25661|MH|||RC
+25099542|*Personal Satisfaction|D010549|3939|MH|RtM via: Satisfaction|TI|MM|267^9^0
+25099542|*Human Activity|D006802|642|ET|Entry Term Replacement for "Human Activities";RtM via: Human Activities;Forced Non-Leaf Node Lookup:human activity|TI|MM|810^14^0
+25099305|Animals|D000818|27472|CT|Flounder;CT Treecode Lookup: B01.050.150.900.493 (Flounder);Mammals;CT Treecode Lookup: B01.050.150.900.649 (Mammals)|TI|MM
+25099305|*Magnesium|D008274|19524|MH|RtM via: Dietary Magnesium;RtM via: magnesium;Forced Leaf Node Lookup:magnesium;checkForceMH Boosted|TI|MM|407^9^0
+25099305|*Flounder|D005432|14874|MH|RtM via: Flounder;RtM via: Flounder (Dietary);RtM via: Platichthys flesus;Forced Leaf Node Lookup:pleuronectes;Forced Leaf Node Lookup:flounders;checkForceMH Boosted|TI|MM|460^9^0;47^9^0;681^19^0;58^19^0
+25099305|*Cadmium|D002104|13563|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;Forced Leaf Node Lookup:cd;checkForceMH Boosted|TI|MM|596^7^0;481^7^0;251^7^0;143^7^0;36^7^0;632^7^0;180^2^0;194^2^0;521^2^0;736^2^0;801^2^0
+25099305|*Potassium|D011188|10461|MH|RtM via: potassium;RtM via: potassium ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:potassium|TI|MM|396^9^0
+25099305|*Water|D014867|4896|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|158^5^0
+25099305|Russia|D012426|4275|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|923^7^0
+25099305|Epilepsy, Post-Traumatic|D004834|26472|MH|||RC
+25099305|Genetic Predisposition to Disease|D020022|6964|MH|||RC
+25099305|*Calcium, Dietary|D002136|5160|MH|RtM via: Calcium, Dietary|TI|MM|387^7^0
+25099305|*Phosphates|D010710|2823|MH|RtM via: Phosphates;RtM via: phosphate ion;Forced Non-Leaf Node Lookup:inorganic phosphates|TI|MM|421^24^0
+25099305|*Hyperglycemia|D006943|606|MH|RtM via: Hyperglycemia;Forced Non-Leaf Node Lookup:hyperglycemias|TI|MM|343^13^0
+25099305|*Mammals|D008322|606|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM|649^7^0
+25099305|*Anemia|D000740|426|MH|RtM via: Anemia;Forced Non-Leaf Node Lookup:anemias|TI|MM|333^6^0
+25099612|Animals|D000818|101616|CT|Copepoda;CT Treecode Lookup: B01.050.500.131 (Copepoda);Nematoda;CT Treecode Lookup: B01.050.500.500 (Nematoda)|TI|MM
+25099612|*Copepoda|D033342|67019|MH|RtM via: Copepoda;Forced Leaf Node Lookup:copepods;checkForceMH Boosted|TI|MM|498^8^0
+25099612|*Nitrogen|D009584|33502|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|784^8^0
+25099612|Iceland|D007055|33490|MH|RtM via: Iceland;Forced Leaf Node Lookup:iceland|TI|MM|286^7^0
+25099612|Deoxycytidine|D003841|100616|MH|||RC
+25099612|Vitamin D Deficiency|D014808|97756|MH|||RC
+25099612|*Nematoda|D009348|447|MH|RtM via: Nematodes;RtM via: Phylum Nematoda;Forced Non-Leaf Node Lookup:nematodes|TI|MM|476^9^0
+25099612|Carbon|D002244|1000|MH|Forced Non-Leaf Node Lookup:carbon||MM|770^6^0
+25099301|Humans|D006801|137029456|CT|Forced Humans: individuals|TI|MM;RC
+25099301|Animals|D000818|137029456|CT|Parasites;CT Treecode Lookup: B01.050.500.714 (Parasites)|TI|MM
+25099301|*Radioactive Waste|D011850|11034469|MH|RtM via: Radioactive Waste;Forced Leaf Node Lookup:radioactive wastes;checkForceMH Boosted|TI|MM|643^17^0
+25099301|*Parasites|D010271|11034223|MH|RtM via: Parasites;Forced Leaf Node Lookup:parasites;checkForceMH Boosted|TI|MM|1533^9^0
+25099301|*Respect|D000078682|5518544|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|989^7^0
+25099301|*Water Quality|D060753|5518115|MH|RtM via: Water Quality;Forced Leaf Node Lookup:water quality|TI|MM|2431^13^0
+25099301|*Nuclear Power Plants|D055848|5517845|MH|RtM via: Nuclear Power Plants;Forced Leaf Node Lookup:nuclear power plants|TI|MM|86^20^0
+25099301|*Hot Temperature|D006358|5517824|MH|RtM via: Heat (physical force);Forced Leaf Node Lookup:heat|TI|MM|1876^4^0;1561^4^0;1520^4^0;768^4^0;872^4^0;572^4^0;507^4^0;25^4^0;762^4^0
+25099301|*Ecosystem|D017753|5517815|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|1373^9^0;288^9^0
+25099301|*Fossils|D005580|5517776|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|67^6^0
+25099301|*Pollutants|D004785|5517716|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|600^9^0
+25099301|*Waste Products|D014866|5517545|MH|RtM via: Waste Products;checkForceMH Boosted|TI|MM|655^14^0
+25099301|*Biocides|D004202|5517422|ET|Entry Term Replacement for "Disinfectants";RtM via: Biocides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:biocides|TI|MM|671^8^0
+25099301|*Oxygen|D010100|5517152|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|2033^6^0;1747^6^0
+25099301|*Radius|D011884|5516867|MH|RtM via: Bone structure of radius;Forced Leaf Node Lookup:radius|TI|MM|457^6^0
+25099301|Russia|D012426|5516777|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2817^7^0
+25099301|*Temperature|D013696|5516774|MH|Forced Leaf Node Lookup:temperatures|TI|MM|1212^12^0
+25099301|Psychotic Disorders|D011618|150356|MH|||RC
+25099301|Hospitals, Psychiatric|D006778|105593|MH|||RC
+25099301|*Burn|D002056|1797|ET|Entry Term Replacement for "Burns";RtM via: Burn injury;Forced Non-Leaf Node Lookup:burn|TI|MM|1952^4^0
+25099301|*Attention|D001288|1470|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|524^9^0
+25099301|*Communities, Biological|D058448|1410|ET|Entry Term Replacement for "Biota";RtM via: Biological Community;Forced Non-Leaf Node Lookup:biological communities|TI|MM|254^22^0
+25099301|*Heavy Metals|D019216|1362|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|629^12^0
+25099301|*Nutrient|D000078622|711|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|683^8^0
+25099533|Humans|D006801|55379|CT|Occupational Health Services;CT Treecode Lookup: N02.421.143 (Occupational Health Services)||RC
+25099533|Animals|D000818|55379|CT|Zooplankton;CT Treecode Lookup: B05.080.500.980 (Zooplankton)||MM
+25099533|*Zooplankton|D015048|28817|MH|RtM via: Zooplankton;Forced Leaf Node Lookup:zooplankton;checkForceMH Boosted|TI|MM|589^11^0
+25099533|*Waste Water|D062065|27626|MH|RtM via: Waste Water;Forced Leaf Node Lookup:waste waters;checkForceMH Boosted|TI|MM|540^12^0
+25099533|*Rivers|D045483|14743|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|933^5^0
+25099533|*Lakes|D060106|14674|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|843^4^0
+25099533|*Salinity|D054712|14557|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|275^8^0
+25099533|*Phosphate|D010710|14491|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|776^9^0;998^9^0
+25099533|Russia|D012426|13615|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1245^7^0
+25099533|Occupational Health Services|D009786|54379|MH|||RC
+25099533|Occupational Diseases|D009784|25555|MH|||RC
+25099533|*Seawater|D012623|435|MH|RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|449^9^0
+25099533|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|192^6^0;368^6^0;661^6^0
+25099533|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|821^5^0
+25099332|*Phosphorus|D010758|47826|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|277^10^0
+25099332|*Nitrogen|D009584|47637|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|264^8^0
+25099332|*Biomass|D018533|47178|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|497^7^0
+25099332|*Water|D014867|46611|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|476^5^0
+25099332|*Pseudomonas|D011549|46065|MH|RtM via: Pseudomonas;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pseudomonas|TI|MM|1184^11^0
+25099332|*Pollutants|D004785|45588|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|467^8^0
+25099332|*Laboratories|D007753|45579|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|864^10^0
+25099332|Russia|D012426|44814|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1407^7^0
+25099332|Antimalarials|D000962|265038|MH|||RC
+25099332|Plasmodium berghei|D010962|187742|MH|||RC
+25099332|*Oxidation-Reduction|D010084|1881|MH|RtM via: Oxidation;Forced Non-Leaf Node Lookup:oxidizing|TI|MM|89^9^0;672^9^0
+25099332|*Hydrocarbons|D006838|1638|MH|RtM via: Hydrocarbons;Forced Non-Leaf Node Lookup:hydrocarbons|TI|MM|692^11^0;556^12^0;660^11^0;77^11^0
+25099332|*Mycobacterium|D009161|915|MH|RtM via: Genus Mycobacterium;Forced Non-Leaf Node Lookup:mycobacterium|TI|MM|1169^13^0
+25099332|Chromatography|D002845|999|MH|Forced Non-Leaf Node Lookup:chromatography||MM;RC|782^14^0
+25099332|Spectrophotometry|D013053|1000|MH|Forced Non-Leaf Node Lookup:spectrophotometry||MM|756^17^0
+25099332|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|570^6^0
+10.2307/25099603|*Carbon|D002244|5708|MH|RtM via: Carbon;checkForceMH Boosted;Forced Non-Leaf Node Lookup:carbon|TI|MM;RC|647^6^0;418^6^0
+10.2307/25099603|*Plankton|D010933|4214|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|366^10^0;114^10^0
+10.2307/25099603|*Particulate Matter|D052638|3431|MH|RtM via: Particulate Matter;checkForceMH Boosted|TI|MM;RC|377^3^0;29^11^1;49^6^1
+10.2307/25099603|*Sargassum|D044647|2482|MH|RtM via: Sargassum;Forced Leaf Node Lookup:sargassum;checkForceMH Boosted|TI|MM|469^9^0
+10.2307/25099603|*Chemoautotrophy|D052837|3042|ET|Entry Term Replacement for "Chemoautotrophic Growth";RtM via: Chemoautotrophy|TI|MM|667^15^0;213^16^0
+10.2307/25099603|Geologic Sediments|D019015|1586|MH|Forced Non-Leaf Node Lookup:marine sediments||MM;RC|296^16^0
+25099529|Humans|D006801|114692|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099529|*Phosphorus|D010758|38330|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|330^10^0
+25099529|*Nitrogen|D009584|36725|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|317^8^0
+25099529|*Patient Discharge|D010351|36577|MH|Forced Leaf Node Lookup:discharge|TI|MM;RC|50^9^0;283^9^0;400^9^0;545^9^0
+25099529|Russia|D012426|34757|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|647^7^0
+25099529|Sweden|D013548|34370|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|497^7^0;87^7^0
+25099529|Craniocerebral Trauma|D006259|101981|MH|||RC
+25099529|Accidental Falls|D000058|98264|MH|||RC
+25099529|*Heavy Metal|D019216|834|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|388^11^0
+25099324|*Salinity|D054712|37275|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|806^8^0;316^8^0
+25099324|*Temperature|D013696|36534|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|793^11^0;303^11^0
+25099324|*Water Movements|D014872|36495|MH|RtM via: Water Movements;Forced Leaf Node Lookup:water movements|TI|MM|708^14^0
+25099324|Russia|D012426|36219|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1156^7^0
+25099324|Genetic Predisposition to Disease|D020022|134195|MH|||RC
+25099324|Genetic Association Studies|D056726|120427|MH|||RC
+25099324|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|329^6^0;819^6^0
+25099324|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|153^5^0;207^5^0;441^5^0;544^5^0
+25099321|Humans|D006801|716708|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099321|*Phosphorus|D010758|68339|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1087^10^0;966^10^0
+25099321|*Nitrogen|D009584|66452|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|981^8^0;1102^8^0
+25099321|*Lakes|D060106|65471|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|277^4^0
+25099321|*Water|D014867|64427|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1323^5^0;1080^5^0;959^5^0
+25099321|Russia|D012426|64061|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1867^7^0
+25099321|*Bays|D061006|64058|MH|Forced Leaf Node Lookup:bay|TI|MM|296^3^0;1136^3^0
+25099321|*Patient Discharge|D010351|64058|MH|Forced Leaf Node Lookup:discharge|TI|MM|945^9^0
+25099321|Spondylolisthesis|D013168|715708|MH|||RC
+25099321|Spinal Fusion|D013123|271703|MH|||RC
+25099318|*Rotation|D012399|32982|MH|RtM via: Musculoskeletal rotation;Forced Leaf Node Lookup:rotation|TI|MM|519^8^0
+25099318|*Water|D014867|29826|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|548^5^0
+25099318|*Titanium|D014025|29595|MH|RtM via: titanium;Forced Titanium: Ti;checkForceMH Boosted|TI|MM|816^2^0
+25099318|Spinal Stenosis|D013130|291361|MH|||RC
+25099318|Lumbar Vertebrae|D008159|66100|MH|||RC
+25099318|*Research Design|D012107|23868|MH|RtM via: Sedimentation procedure|TI|MM;RC|219^13^0
+25099299|Russia|D012426|31852|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1429^7^0
+25099299|*Rivers|D045483|31423|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|394^5^0;322^5^0
+25099299|*Water|D014867|31180|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|851^5^0;593^5^0;245^5^0
+25099299|Stress Disorders, Post-Traumatic|D013313|139528|MH|||RC
+25099299|Cognitive Behavioral Therapy|D015928|80922|MH|||RC
+25099299|*Microbiological Processes|D008827|669|ET|Entry Term Replacement for "Microbiological Phenomena";RtM via: Microbiological Processes;Forced Non-Leaf Node Lookup:microbiological processes|TI|MM|975^25^0
+25099299|*Bacteria|D001419|147|MH|RtM via: Bacteria;Forced Non-Leaf Node Lookup:bacteria|TI|MM|830^8^0;712^8^0;651^8^0;576^8^0;457^8^0;224^8^0
+25099299|Oxidation-Reduction|D010084|1000|MH|Forced Non-Leaf Node Lookup:oxidizing||MM|820^9^0
+25099299|Biology|D001695|1000|MH|Forced Non-Leaf Node Lookup:biology||MM|103^7^0
+25099588|Pregnancy|D011247|275338|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378.630 (Prenatal Diagnosis)||RC
+25099588|Female|D005260|275338|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378 (Prenatal Diagnosis)||RC
+25099588|Humans|D006801|1000|CT|Forced Treecode Turn Back On: G08.686.784.769 (Pregnancy)||MM
+25099588|*Laboratories|D007753|55511|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|516^10^0
+25099588|*Ecosystem|D017753|54158|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|745^9^0;444^9^0
+25099588|Russia|D012426|53828|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1183^7^0
+25099588|Sweden|D013548|53558|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|530^7^0
+25099588|Trisomy|D014314|274338|MH|||RC
+25099588|Prenatal Diagnosis|D011296|229624|MH|||RC
+25099588|*Communication|D003142|2763|MH|RtM via: Communication;Forced Non-Leaf Node Lookup:communication|TI|MM|356^13^0
+25099588|*Chlorophyta|D000460|873|MH|RtM via: Cladophora;Forced Non-Leaf Node Lookup:green alga|TI|MM|1124^10^0;756^10^0;734^10^0
+25099591|*Ecosystem|D017753|115096|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM|935^10^0;82^9^0
+25099591|*Computers, Analog|D003202|60158|MH|RtM via: Computers, Analog;Forced Leaf Node Lookup:analog computers|TI|MM|1085^16^0;480^16^0
+25099591|*Plankton|D010933|58166|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|56^8^0
+25099591|*Water|D014867|57644|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|76^5^0
+25099591|Russia|D012426|57467|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1373^7^0
+25099591|Tissue Plasminogen Activator|D010959|507577|MH|||RC
+25099591|Fibrinolytic Agents|D005343|341591|MH|||RC
+25099307|Animals|D000818|20658|CT|Eels;CT Treecode Lookup: B01.050.150.900.493 (Eels);Pike;CT Treecode Lookup: B01.050.150.900.493 (Pike);Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes)|TI|MM
+25099307|*DDT|D003634|19658|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|164^3^0;592^3^0;796^3^0;961^3^0
+25099307|*Eels|D004524|13966|MH|RtM via: Eels;checkForceMH Boosted;Forced Non-Leaf Node Lookup:eels|TI|MM|667^3^0;623^3^0;204^4^0;30^3^0
+25099307|*Pike|D017859|10915|ET|Entry Term Replacement for "Esocidae";RtM via: Esocidae;checkForceMH Boosted|TI|MM|631^4^0;217^5^0;21^4^0
+25099307|Russia|D012426|10099|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1431^7^0
+25099307|*Water|D014867|9973|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1181^5^0;1196^5^0
+25099307|*Bays|D061006|9829|MH|Forced Leaf Node Lookup:bay|TI|MM|1102^3^0
+25099307|Sweden|D013548|9829|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|689^7^0;345^7^0;110^7^0
+25099307|Prescription Drugs|D055553|14263|MH|||RC
+25099307|Qualitative Research|D036301|12383|MH|||RC
+25099307|*Seafood|D017747|10881|MH|RtM via: Herring (Dietary);RtM via: Northern pike - dietary (substance)|TI|MM|931^7^0;631^4^0;217^5^0;21^4^0
+25099307|*Fishes|D005399|8247|MH|RtM via: Clupea harengus (organism);RtM via: Clupeidae;RtM via: Herring;RtM via: Fishes;Forced Non-Leaf Node Lookup:fishes|TI|MM|931^7^0;745^6^0
+25099589|Humans|D006801|80418874|CT|Forced Humans: man|TI|MM;RC
+25099589|Pregnancy|D011247|80418874|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378.630 (Prenatal Diagnosis)||RC
+25099589|Female|D005260|80418874|CT|Prenatal Diagnosis;CT Treecode Lookup: E01.370.378 (Prenatal Diagnosis)||RC
+25099589|*Ecosystem|D017753|6678233|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM|577^18^0;355^10^0;51^9^0
+25099589|*Laboratories|D007753|3341026|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|627^10^0
+25099589|Russia|D012426|3339424|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|745^7^0
+25099589|Trisomy|D014314|274282|MH|||RC
+25099589|Prenatal Diagnosis|D011296|229656|MH|||RC
+25099304|Animals|D000818|27691|CT|Forced Non-Leaf Node Lookup:animals||MM|24^7^0;807^7^0;1297^7^0;1462^6^0;1680^6^0;2237^6^0
+25099304|*Environmental Pollutants|D004785|4598|MH|RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:environmental pollutants|TI|MM|870^10^0;769^24^0;120^24^0
+25099304|*Water|D014867|4253|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1038^5^0;823^5^0;1282^5^0
+25099304|*Laboratories|D007753|3680|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|1147^10^0;609^10^0;442^10^0
+25099304|Russia|D012426|3560|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2650^7^0
+25099304|Sweden|D013548|3284|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|469^7^0
+25099304|Epilepsy, Post-Traumatic|D004834|26691|MH|||RC
+25099304|Genetic Predisposition to Disease|D020022|6979|MH|||RC
+25099304|*Hydrocarbons, Chlorinated|D006843|2313|MH|RtM via: Hydrocarbons, Chlorinated;Forced Non-Leaf Node Lookup:chlorinated hydrocarbons|TI|MM|71^24^0
+25099304|*Brackish Water|D000068357|2028|ET|Entry Term Replacement for "Saline Waters";RtM via: Brackish Water;Forced Non-Leaf Node Lookup:brackish waters|TI|MM|416^14^0
+25099304|*Freshwater|D005618|1755|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM|2277^10^0
+25099304|*Heavy Metals|D019216|1197|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|97^12^0
+25099304|*Toxicity Tests|D018675|1173|MH|RtM via: Toxicity Tests;Forced Non-Leaf Node Lookup:toxicity tests|TI|MM|2162^14^0;2036^14^0;339^14^0
+25099320|Pedicle Screws|D065289|99648|MH|||RC
+25099320|Lumbar Vertebrae|D008159|69479|MH|||RC
+25099320|*Waters, Sea|D012623|60|ET|Entry Term Replacement for "Seawater";RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|116^10^0
+25099302|Animals|D000818|415959|CT|Perches;CT Treecode Lookup: B01.050.150.900.493 (Perches);Flounder;CT Treecode Lookup: B01.050.150.900.493 (Flounder);Scorpions;CT Treecode Lookup: B01.050.500.131 (Scorpions);Gills;CT Treecode Lookup: A13.421 (Gills);CT Text Lookup: fish|TI|MM;RC|1489^4^0
+25099302|*Perches|D010471|128015|MH|RtM via: Gymnocephalus cernuus (organism);RtM via: Perca fluviatilis;Forced Leaf Node Lookup:perch;checkForceMH Boosted|TI|MM|2689^5^0;2633^5^0;2327^5^0
+25099302|*Flounder|D005432|124754|MH|RtM via: Flounder;RtM via: Flounder (Dietary);Forced Leaf Node Lookup:flounders;checkForceMH Boosted|TI|MM|2676^8^0
+25099302|*Scorpions|D012605|120449|MH|RtM via: Scorpions;Forced Leaf Node Lookup:scorpions;checkForceMH Boosted|TI|MM|2733^8^0
+25099302|*Nuclear Power Plants|D055848|119006|MH|RtM via: Nuclear Power Plants;Forced Leaf Node Lookup:nuclear power plants|TI|MM|1111^19^0;129^20^0
+25099302|Sweden|D013548|118829|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|1134^6^0;121^7^0
+25099302|*Swimming|D013550|64222|MH|RtM via: Swimming;Forced Leaf Node Lookup:swimming|TI|MM|1692^17^0;1538^17^0;649^8^0
+25099302|*Temperature|D013696|63973|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|3785^11^0;3600^11^0;2995^11^0;2534^11^0;2152^11^0;1785^11^0;1582^11^0;587^11^0;433^11^0;1630^11^0;3033^11^0
+25099302|*Heating|D006361|62464|MH|RtM via: Heating;Forced Leaf Node Lookup:heating|TI|MM|2269^7^0
+25099302|*Gills|D005880|62455|MH|RtM via: Gill structure;Forced Leaf Node Lookup:gill|TI|MM|2506^4^0;1313^4^0;906^4^0
+25099302|*Water|D014867|61537|MH|RtM via: Cold water;RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|3339^10^0;2699^10^0;1920^10^0;490^10^0;3240^5^0;2571^5^0;2192^5^0;2085^5^0;1889^5^0;1257^5^0;269^5^0;495^5^0;1925^5^0;2704^5^0;3344^5^0
+25099302|*Fisheries|D005398|60919|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fishery|TI|MM|21^7^0
+25099302|*Laboratories|D007753|60253|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratory|TI|MM|512^10^0
+25099302|*Emigration and Immigration|D004641|59794|MH|RtM via: Emigration;Forced Leaf Node Lookup:emigrations|TI|MM|2051^10^0
+25099302|Russia|D012426|59671|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|4158^7^0
+25099302|*Respect|D000078682|59485|MH|RtM via: Respect;Forced Leaf Node Lookup:respect|TI|MM|344^7^0
+25099302|*Bays|D061006|59413|MH|Forced Leaf Node Lookup:bay|TI|MM|1225^3^0;1330^3^0
+25099302|Huntingtin Protein|D000071058|414959|MH|||RC
+25099302|Huntington Disease|D006816|236213|MH|||RC
+25099302|Eels|D004524|1000|MH|Forced Non-Leaf Node Lookup:eel||MM|2719^3^0
+25099336|*Pollutants|D004785|54050|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|606^8^0
+25099336|*Pesticides|D010575|53456|MH|RtM via: Pesticides;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pesticides|TI|MM|195^10^0
+25099336|*Phenols|D010636|53114|MH|RtM via: Phenols;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|152^7^0
+25099336|*Phytoplankton|D010839|52856|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|631^13^0
+25099336|*Fisheries|D005398|52730|MH|RtM via: Fisheries;Forced Leaf Node Lookup:fisheries|TI|MM|429^9^0
+25099336|Russia|D012426|52373|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1044^7^0
+25099336|Plasmodium falciparum|D010963|296026|MH|||RC
+25099336|Malaria, Falciparum|D016778|259937|MH|||RC
+25099336|*Heavy Metals|D019216|1341|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|348^12^0
+25099336|*Oceanography|D009791|507|MH|RtM via: Oceanography;Forced Non-Leaf Node Lookup:oceanography|TI|MM|443^12^0;247^13^0
+25099336|*Research Institute|D000047|447|ET|Entry Term Replacement for "Academies and Institutes";RtM via: Research Institutes;RtM via: Institutes;Forced Non-Leaf Node Lookup:research institutes|TI|MM|400^18^0;261^9^0
+25099336|Chromatography|D002845|1000|MH|Forced Non-Leaf Node Lookup:chromatography||MM|75^14^0
+25099336|Seawater|D012623|1000|MH|Forced Non-Leaf Node Lookup:sea waters||MM|512^9^0
+25099317|Humans|D006801|14631025|CT|Forced Humans: individuals|TI|MM;RC
+25099317|*Seasons|D012621|1350318|MH|RtM via: Seasonal Variation;RtM via: spring (season);RtM via: Seasons;RtM via: Summer;Forced Leaf Node Lookup:seasonal variations;Forced Leaf Node Lookup:seasons|TI|MM;RC|1379^18^0;1244^6^0;570^7^0;1077^6^0
+25099317|*Temperature|D013696|1258428|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|2120^11^0;1960^11^0;1746^11^0;1648^11^0;1592^12^0;1525^12^0;400^11^0;1992^12^0;2084^12^0;1827^11^0
+25099317|*Polymethyl Methacrylate|D019904|1251531|MH|RtM via: Plexiglas;RtM via: Plexiglass;Forced Leaf Node Lookup:plexiglass;checkForceMH Boosted|TI|MM|202^10^0
+25099317|*Water|D014867|654600|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM;RC|2594^5^0;1986^5^0;1855^5^0;1586^5^0;1519^5^0;1466^5^0;655^5^0;394^5^0;185^5^0;111^5^0;237^5^0;2078^5^0
+25099317|*Kinetics|D007700|628914|MH|RtM via: Kinetics;Forced Leaf Node Lookup:kinetics|TI|MM|2976^8^0;477^8^0
+25099317|Russia|D012426|625422|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|3961^7^0
+25099317|Greenhouse Effect|D017752|157851|MH|||RC
+25099317|*Climate|D002980|83052|MH|RtM via: Seasonal variation (climate)|TI|MM;RC|1379^18^0
+25099317|*Sulfates|D013431|5850|MH|RtM via: Sulfates, Inorganic;Forced Non-Leaf Node Lookup:sulfates|TI|MM|3177^7^0;2691^7^0;2495^7^0;1142^7^0;413^7^0;31^7^0;351^7^0;446^7^0;499^7^0;962^7^0;1326^7^0;1553^7^0;1688^7^0;1780^7^0;1903^7^0;2022^7^0;2194^7^0;2404^7^0;2643^7^0;2787^7^0;2873^7^0;2998^7^0
+25099317|*Bacteria|D001419|4791|MH|RtM via: Bacteria;Forced Non-Leaf Node Lookup:bacteria|TI|MM|2319^8^0;463^8^0;2211^8^0;2962^8^0
+25099317|*Desulfovibrio|D003901|3981|MH|RtM via: Sulfate-reducing bacteria;Forced Non-Leaf Node Lookup:desulfovibrio|TI|MM|2988^27^0;2194^25^0;489^27^0;446^25^0;21^27^0;2221^13^0;3680^13^0
+25099317|*Sulfides|D013440|2421|MH|RtM via: Sulfides;Forced Non-Leaf Node Lookup:sulfides|TI|MM|2898^7^0;2726^7^0;2558^7^0;2944^7^0
+25099317|*Oxidation-Reduction|D010084|1806|MH|RtM via: sulfate reduction;Forced Non-Leaf Node Lookup:oxidizing|TI|MM|2865^15^0;2787^17^0;2643^17^0;2404^17^0;2022^17^0;1903^17^0;1780^17^0;1688^17^0;1553^17^0;1326^17^0;954^15^0;351^17^0;2952^9^0
+25099575|Russia|D012426|60264|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1459^7^0
+25099575|*Salinity|D054712|59949|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|808^8^0
+25099575|*Rivers|D045483|59808|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|766^6^0;409^6^0
+25099575|Fanconi Anemia Complementation Group N Protein|D000076164|387313|MH|||RC
+25099575|BRCA2 Protein|D024682|198530|MH|||RC
+25099575|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|277^5^0
+25099575|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|753^5^0;1086^5^0
+25099300|Humans|D006801|166704|CT|Mental Health Services;CT Treecode Lookup: F04.408 (Mental Health Services);Mental Health Services;CT Treecode Lookup: N02.421.461 (Mental Health Services);Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099300|*Sewage|D012722|57444|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|2402^6^0;174^6^0;301^6^0
+25099300|*Patient Discharge|D010351|37014|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|190^10^0;36^10^0
+25099300|*Phosphorus|D010758|32139|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|2553^10^0;2376^10^0
+25099300|*Phytoplankton|D010839|31464|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|964^13^0
+25099300|*Nitrogen Fixation|D009586|31374|MH|RtM via: Nitrogen Fixation;Forced Leaf Node Lookup:nitrogen fixation|TI|MM|1805^17^0
+25099300|*Phosphate|D010710|30315|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|2543^9^0;253^9^0
+25099300|*Nitrogen|D009584|30033|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|1980^8^0;1499^8^0;368^8^0
+25099300|*Lakes|D060106|29688|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|1872^4^0;489^4^0;215^4^0;21^4^0
+25099300|*Water|D014867|28560|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|2409^5^0;2168^5^0;1996^5^0;181^5^0
+25099300|*Acetylene|D000114|28401|MH|RtM via: acetylene;checkForceMH Boosted|TI|MM|1417^9^0;1326^9^0;760^9^0;847^9^0;668^9^0
+25099300|Russia|D012426|28023|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|3092^7^0
+25099300|Mental Health Services|D008605|165704|MH|||RC
+25099300|Health Services Needs and Demand|D006301|86437|MH|||RC
+25099300|*Brackish Water|D000068357|2472|ET|Entry Term Replacement for "Saline Waters";RtM via: Brackish Water;Forced Non-Leaf Node Lookup:brackish waters|TI|MM|91^14^0
+25099300|*Blue Green Algae|D000458|2439|ET|Entry Term Replacement for "Cyanobacteria";RtM via: Cyanobacteria;Forced Non-Leaf Node Lookup:blue-green algae|TI|MM|1787^16^0;1082^16^0
+25099300|*Mineral|D008903|924|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|1972^7^0;2143^7^0
+25099300|Nitrogenase|D009591|1000|MH|Forced Non-Leaf Node Lookup:nitrogenase||MM|720^11^0;1107^11^0
+25099300|Nutrients|D000078622|1000|MH|Forced Non-Leaf Node Lookup:nutrients||MM|2151^9^0
+25099609|Animals|D000818|120171|CT|Isopoda;CT Treecode Lookup: B01.050.500.131 (Isopoda);Amphipoda;CT Treecode Lookup: B01.050.500.131 (Amphipoda);Copepoda;CT Treecode Lookup: B01.050.500.131 (Copepoda);Otters;CT Treecode Lookup: B01.050.150.900.649.313.750 (Otters);Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods);Nematoda;CT Treecode Lookup: B01.050.500.500 (Nematoda)|TI|MM
+25099609|*Isopoda|D033321|38146|MH|RtM via: Isopoda;Forced Leaf Node Lookup:isopods;checkForceMH Boosted|TI|MM|799^7^0
+25099609|*Amphipoda|D033304|37825|MH|RtM via: Amphipoda;Forced Leaf Node Lookup:amphipods;checkForceMH Boosted|TI|MM|808^9^0
+25099609|*Copepoda|D033342|37492|MH|RtM via: Copepoda;Forced Leaf Node Lookup:copepods;checkForceMH Boosted|TI|MM|333^8^0
+25099609|*Otters|D010041|37213|MH|RtM via: Otter (organism);Forced Leaf Node Lookup:otters;checkForceMH Boosted|TI|MM|476^5^0
+25099609|Puerto Rico|D011647|19970|MH|RtM via: Puerto Rico;Forced Leaf Node Lookup:puerto rico|TI|MM|947^11^0;46^11^0
+25099609|*Wood|D014934|18962|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|674^4^0
+25099609|*Oxygen|D010100|18785|MH|RtM via: oxygen;checkForceMH Boosted|TI|MM|215^10^0
+25099609|*Gastropods|D049851|18629|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|700^10^0
+25099609|*Water|D014867|18566|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|233^5^0
+25099609|Education, Medical, Continuing|D004502|119171|MH|||RC
+25099609|Clinical Competence|D002983|51659|MH|||RC
+25099609|*Nematoda|D009348|810|MH|RtM via: Nematodes;RtM via: Phylum Nematoda;Forced Non-Leaf Node Lookup:nematodes|TI|MM|306^9^0
+25099525|Humans|D006801|37606|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge)||MM;RC
+25099525|*Pollutants|D004785|10691|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|361^10^0
+25099525|*Patient Discharge|D010351|10124|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|295^10^0;131^10^0
+25099525|Russia|D012426|9863|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|841^7^0
+25099525|Body Mass Index|D015992|36606|MH|||RC
+25099525|Obesity|D009765|29054|MH|||RC
+25099525|*Oxygen Deficiency|D000860|1989|ET|Entry Term Replacement for "Hypoxia";RtM via: Hypoxia;Forced Non-Leaf Node Lookup:oxygen deficiency|TI|MM|683^17^0
+25099615|*Petroleum|D010578|20413|MH|RtM via: Petroleum;checkForceMH Boosted;Forced Non-Leaf Node Lookup:petroleums|TI|MM|327^9^0;168^9^0
+25099615|Proto-Oncogene Proteins c-cbl|D050721|49207|MH|||RC
+25099615|Focal Adhesion Kinase 2|D051418|41424|MH|||RC
+25099615|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|133^5^0;321^5^0;405^5^0
+25099601|*Foraminifera|D056908|37720|MH|RtM via: Foraminifera;Forced Leaf Node Lookup:forams;checkForceMH Boosted|TI|MM|1827^6^0;1193^6^0;1016^6^0
+25099601|*Diatoms|D017377|37075|MH|RtM via: Diatoms;Forced Leaf Node Lookup:diatoms;checkForceMH Boosted|TI|MM|1067^7^0
+25099601|opoka|C029019|36923|NM|RtM via: opaline silica;Forced SCR Leaf Node Lookup:opaline silica|TI|MM|1051^14^0
+25099601|*Clay|D000077215|35617|MH|RtM via: clay;Forced Leaf Node Lookup:clay;checkForceMH Boosted|TI|MM|883^4^0
+25099601|*Aragonite|D002119|21023|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Aragonite;RtM via: Calcite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:aragonite|TI|MM|1939^9^0;1513^9^0;1981^7^0;1818^8^0;1170^7^0
+25099601|*Plankton|D010933|19406|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|1236^8^0;21^10^0
+25099601|*Phosphorus|D010758|19112|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|257^10^0
+25099601|*Carbon|D002244|18887|MH|RtM via: Carbon;checkForceMH Boosted;Forced Non-Leaf Node Lookup:carbon|TI|MM|281^6^0
+25099601|*Water|D014867|18467|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1338^5^0;711^5^0;495^5^0;194^5^0
+25099601|*Solubility|D012995|17555|MH|Forced Leaf Node Lookup:dissolution|TI|MM|1900^11^0
+25099601|Barium Sulfate|D001466|114575|MH|||RC
+25099601|Intestinal Obstruction|D007415|92594|MH|||RC
+25099601|*Silicon Dioxide|D012822|36922|HM|RtM via: opaline silica|TI|MM|1051^14^0
+25099601|*Burial|D002048|195|MH|RtM via: Burial;Forced Non-Leaf Node Lookup:burials|TI|MM|1770^6^0
+25099543|*Edible Grain|D002523|92532|MH|RtM via: Cereals;Forced Leaf Node Lookup:cereals;checkForceMH Boosted|TI|MM|944^7^0
+25099543|*Emulsions|D004655|86472|MH|RtM via: Drug emulsion;RtM via: Emulsions;Forced Leaf Node Lookup:emulsions|TI|MM|669^8^0;493^9^0
+25099543|Russia|D012426|42345|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1133^7^0
+25099543|Waist Circumference|D055105|143255|MH|||RC
+25099543|Body Mass Index|D015992|105137|MH|||RC
+25099543|*Sugars|D000073893|6198|MH|RtM via: raw sugar;Forced Non-Leaf Node Lookup:sugars|TI|MM|931^9^0;935^5^0
+25099543|*Freshwater|D005618|687|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:fresh waters|TI|MM|358^11^0
+25099543|*Petroleum|D010578|384|MH|RtM via: Petroleum;Forced Non-Leaf Node Lookup:petroleums|TI|MM|106^18^0
+25099543|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|424^5^0
+25099611|Animals|D000818|98796|CT|Ascidians;CT Treecode Lookup: B01.050.150.200 (Ascidians);Ascidians;CT Treecode Lookup: B01.050.500.272 (Ascidians)|TI|MM
+25099611|*Water|D014867|14469|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|745^5^0;63^5^0;925^5^0
+25099611|*Ascidians|D014561|14466|ET|Entry Term Replacement for "Urochordata";RtM via: Ascidiacea;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ascidians|TI|MM|858^9^0;797^9^0;98^9^0
+25099611|Hypercalcemia|D006934|97796|MH|||RC
+25099611|Denosumab|D000069448|75669|MH|||RC
+25099611|*Miniaturization|D008904|288|MH|RtM via: Miniaturization;Forced Non-Leaf Node Lookup:miniaturizations|TI|MM|389^15^0
+25099611|*Gonads|D006066|282|MH|RtM via: Gonadal structure;Forced Non-Leaf Node Lookup:gonads|TI|MM|351^6^0
+25099611|Eating|D004435|1000|MH|Forced Non-Leaf Node Lookup:food intake||MM|891^11^0
+25099325|Russia|D012426|65640|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1118^7^0
+25099325|Spinal Stenosis|D013130|340563|MH|||RC
+25099325|Spinal Fusion|D013123|248232|MH|||RC
+25099325|*Gravitation|D006112|765|MH|RtM via: Gravitation;Forced Non-Leaf Node Lookup:gravitation|TI|MM|497^11^0
+25099325|*Thermodynamic|D013816|246|ET|Entry Term Replacement for "Thermodynamics";RtM via: Thermodynamics;Forced Non-Leaf Node Lookup:thermodynamics|TI|MM|262^13^0
+25099313|Sweden|D013548|28390|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|616^6^0;361^7^0
+25099313|Finland|D005387|21755|MH|RtM via: Finland;Forced Leaf Node Lookup:finland|TI|MM;RC|298^7^0
+25099313|*Temperature|D013696|12935|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|2454^11^0;797^11^0;549^11^0;2305^11^0
+25099313|Russia|D012426|12818|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2981^7^0
+25099313|*Salinity|D054712|12695|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|2467^8^0
+25099313|*Water|D014867|12293|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|2004^5^0;459^5^0;116^5^0;2037^5^0
+25099313|Alcohol Drinking|D000428|34112|MH|||RC
+25099313|Beer|D001515|25693|MH|||RC
+25099313|*Research Institute|D000047|3855|ET|Entry Term Replacement for "Academies and Institutes";RtM via: Research Institutes;RtM via: Institutes;Forced Non-Leaf Node Lookup:research institutes|TI|MM|276^18^0;401^9^0
+25099313|*Nutrients|D000078622|912|MH|RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|2480^9^0;126^9^0
+25099327|*Rivers|D045483|45061|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|467^5^0;355^6^0;240^5^0;416^6^0;591^5^0
+25099327|Sweden|D013548|42859|MH|RtM via: Sweden;RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish;Forced Leaf Node Lookup:sweden|TI|MM|374^6^0;232^7^0;435^6^0
+25099327|*Lead|D007854|42856|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|82^2^0;666^2^0;907^2^0;1107^2^0;1138^2^0
+25099327|*Iron|D007501|23345|MH|RtM via: iron;checkForceMH Boosted;Forced Non-Leaf Node Lookup:iron|TI|MM|458^4^0
+25099327|Russia|D012426|21698|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1301^7^0
+25099327|*Bays|D061006|21428|MH|Forced Leaf Node Lookup:bay|TI|MM|96^3^0;505^3^0
+25099327|Tissue Engineering|D023822|101001|MH|||RC
+25099327|Tissue Scaffolds|D054457|82893|MH|||RC
+25099327|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zn||MM|79^2^0
+25099331|*Solvents|D012997|58242|MH|RtM via: Solvents;checkForceMH Boosted;Forced Non-Leaf Node Lookup:solvents|TI|MM;RC|945^8^0
+25099331|*Polychlorinated Biphenyls|D011078|48558|MH|RtM via: Polychlorinated Biphenyls;Forced Leaf Node Lookup:pcbs;checkForceMH Boosted|TI|MM|274^4^0
+25099331|*Corn Oil|D003314|48375|MH|RtM via: corn oil;Forced Leaf Node Lookup:maize oils;checkForceMH Boosted|TI|MM|308^9^0;177^9^0
+25099331|*Dieldrin|D004026|46347|MH|RtM via: Dieldrin;Forced Leaf Node Lookup:dieldrin;checkForceMH Boosted|TI|MM|246^8^0
+25099331|*DDT|D003634|44592|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|256^3^0
+25099331|*Dichlorodiphenyl Dichloroethylene|D003633|44592|MH|Forced Leaf Node Lookup:dde;checkForceMH Boosted|TI|MM|266^3^0
+25099331|*Dichlorodiphenyldichloroethane|D003632|44592|MH|Forced Leaf Node Lookup:ddd;checkForceMH Boosted|TI|MM|261^3^0
+25099331|*Hexachlorobenzene|D006581|44592|MH|Forced Leaf Node Lookup:hcb;checkForceMH Boosted|TI|MM|226^3^0;1291^3^0
+25099331|*Reagents|D007202|29460|ET|Entry Term Replacement for "Indicators and Reagents";RtM via: Reagents;checkForceMH Boosted|TI|MM|958^8^0
+25099331|*Laboratories|D007753|23169|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratories|TI|MM|405^12^0;104^12^0
+25099331|Russia|D012426|22554|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1487^7^0
+25099331|Quantum Dots|D045663|96821|MH|||RC
+25099331|Carbon|D002244|76224|MH|||RC
+25099331|*Gas Chromatography|D002849|4311|ET|Entry Term Replacement for "Chromatography, Gas";RtM via: Gas Chromatography;Forced Non-Leaf Node Lookup:gas chromatography|TI|MM|1053^19^0;634^18^0;489^19^0
+25099576|Animals|D000818|187779|CT|Zooplankton;CT Treecode Lookup: B05.080.500.980 (Zooplankton)||MM;RC
+25099576|*Hydrogen Sulfide|D006862|35188|MH|RtM via: Hydrogen Sulfide;Forced Leaf Node Lookup:hydrogen sulphide;checkForceMH Boosted|TI|MM|876^17^0
+25099576|*Zooplankton|D015048|34837|MH|RtM via: Zooplankton;Forced Leaf Node Lookup:zooplankton;checkForceMH Boosted|TI|MM|713^11^0
+25099576|*Water|D014867|17978|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|813^5^0;544^5^0;680^5^0;852^5^0
+25099576|*Plankton|D010933|17627|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|128^8^0
+25099576|*Humus|D012987|17498|ET|Entry Term Replacement for "Soil";RtM via: Humus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:humus|TI|MM|819^5^0;550^5^0
+25099576|Russia|D012426|17081|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1059^7^0
+25099576|*Anaerobiosis|D000693|17078|MH|Forced Leaf Node Lookup:anaerobic|TI|MM|182^9^0
+25099576|Creutzfeldt-Jakob Syndrome|D007562|186779|MH|||RC
+25099576|Prions|D011328|66960|MH|||RC
+25099330|*Chlorophyll A|D000077194|76674|MH|RtM via: Chlorophyll A;Forced Lookup:chlorophyll a;Forced Leaf Node Lookup:chlorophyll a;checkForceMH Boosted|TI|MM|900^13^0;354^13^0
+25099330|*Laboratories|D007753|49277|MH|RtM via: Laboratory;Forced Leaf Node Lookup:laboratories;Forced Leaf Node Lookup:laboratory|TI|MM|1001^12^0;824^12^0;716^10^0;1041^12^0
+25099330|*Phytoplankton|D010839|28045|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|673^13^0;285^13^0;44^13^0
+25099330|*Biomass|D018533|26896|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|1109^7^0;313^7^0;468^7^0
+25099330|*Chlorophyll|D002734|26161|MH|RtM via: chlorophyll;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chlorophyll|TI|MM|68^11^0
+25099330|*Water|D014867|26074|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|401^5^0
+25099330|*Reproducibility of Results|D015203|24815|MH|Forced Lookup:reliability|TI|MM;RC|173^11^0
+25099330|Russia|D012426|23905|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1740^7^0
+25099330|Compressive Strength|D019245|124206|MH|||RC
+25099330|Finite Element Analysis|D020342|93952|MH|||RC
+25099330|*Cell Volume|D048429|8958|ET|Entry Term Replacement for "Cell Size";RtM via: Cell Volume;Forced Non-Leaf Node Lookup:cell volumes|TI|MM|780^11^0;322^11^0
+25099604|Pregnancy|D011247|58506|CT|Pregnancy Complications, Cardiovascular;CT Treecode Lookup: C13.703.634 (Pregnancy Complications, Cardiovascular);Pregnancy Complications, Cardiovascular;CT Treecode Lookup: C14.583 (Pregnancy Complications, Cardiovascular);Pregnancy Outcome;CT Treecode Lookup: E01.789.700 (Pregnancy Outcome);Pregnancy Outcome;CT Treecode Lookup: G08.686.784.769.496 (Pregnancy Outcome)||RC
+25099604|Female|D005260|58506|CT|Pregnancy Complications, Cardiovascular;CT Treecode Lookup: C13.703.634 (Pregnancy Complications, Cardiovascular);Pregnancy Complications, Cardiovascular;CT Treecode Lookup: C14.583 (Pregnancy Complications, Cardiovascular);Pregnancy Outcome;CT Treecode Lookup: E01.789.700 (Pregnancy Outcome);Pregnancy Outcome;CT Treecode Lookup: G08.686.784.769.496 (Pregnancy Outcome)||RC
+25099604|Animals|D000818|58506|CT|Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes)|TI|MM
+25099604|*Biomass|D018533|11560|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|676^7^0
+25099604|Pregnancy Complications, Cardiovascular|D011249|57506|MH|||RC
+25099604|Pregnancy Outcome|D011256|51251|MH|||RC
+25099604|*Body Weight|D001835|3120|MH|RtM via: Body Weight|TI|MM|855^6^0
+25099604|*Fishes|D005399|474|MH|RtM via: Fishes;Forced Non-Leaf Node Lookup:fishes|TI|MM|631^6^0
+25099329|Humans|D006801|20647738|CT|Forced Humans: people|TI|MM;RC
+25099329|*Sewage|D012722|1673462|MH|RtM via: Environmental sludge;Forced Leaf Node Lookup:sludge;checkForceMH Boosted|TI|MM|777^6^0
+25099329|*Waste Water|D062065|1673168|MH|RtM via: Waste Water;Forced Leaf Node Lookup:waste waters;checkForceMH Boosted|TI|MM|851^11^0
+25099329|*Pollutants|D004785|836593|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|568^10^0
+25099329|Russia|D012426|836566|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1228^7^0
+25099329|*Patient Discharge|D010351|836179|MH|Forced Leaf Node Lookup:discharge|TI|MM|754^9^0
+25099329|Sweden|D013548|836179|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|312^7^0;83^7^0;117^7^0
+25099329|Models, Cardiovascular|D008955|55290|MH|||RC
+25099329|Blood Flow Velocity|D001783|49617|MH|||RC
+25099329|*Air Pollution|D000397|507|MH|RtM via: Air Pollution;Forced Non-Leaf Node Lookup:air pollutions|TI|MM|863^13^0
+25099329|*Government|D006076|456|MH|RtM via: Government;Forced Non-Leaf Node Lookup:governments|TI|MM|267^10^0
+25099329|*Cooking|D003296|315|MH|RtM via: Cooking (activity);Forced Non-Leaf Node Lookup:cooking|TI|MM|660^7^0
+25099329|*Forest|D065928|252|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|91^6^0
+25099303|*Closterium|D058119|51764|MH|RtM via: Closterium;Forced Leaf Node Lookup:closterium;checkForceMH Boosted|TI|MM|1002^10^0
+25099303|*Cadmium|D002104|50678|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;checkForceMH Boosted|TI|MM|64^7^0
+25099303|*Lead|D007854|48452|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|1146^2^0
+25099303|*Mercury|D008628|26629|MH|RtM via: mercury;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mercury|TI|MM|389^7^0;49^7^0
+25099303|*Phytoplankton|D010839|26485|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|738^13^0;141^13^0
+25099303|*Carbon|D002244|24925|MH|RtM via: Carbon;checkForceMH Boosted;Forced Non-Leaf Node Lookup:carbon|TI|MM|225^6^0
+25099303|*Temperature|D013696|24511|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|243^12^0
+25099303|Russia|D012426|24229|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1377^7^0
+25099303|*Bays|D061006|24226|MH|Forced Leaf Node Lookup:bay|TI|MM|181^3^0
+25099303|Pensions|D010415|229962|MH|||RC
+25099303|Sick Leave|D018582|124201|MH|||RC
+25099303|*Photosynthesis|D010788|1113|MH|RtM via: Photosynthesis;Forced Non-Leaf Node Lookup:photosynthesis|TI|MM|460^14^0;111^14^0
+25099613|Humans|D006801|111975|CT|CT Text Lookup: individuals|TI|MM;RC|322^11^0
+25099613|*Bays|D061006|27573|MH|Forced Leaf Node Lookup:bay|TI|MM|69^3^0;1279^3^0
+25099613|Electrophysiologic Techniques, Cardiac|D022062|110975|MH|||RC
+25099613|Fluoroscopy|D005471|73607|MH|||RC
+25099610|Animals|D000818|151239|CT|Forced Non-Leaf Node Lookup:animals||MM|713^7^0
+25099610|Health Care Reform|D018166|150239|MH|||RC
+25099610|State Medicine|D013222|105398|MH|||RC
+25099610|*Surveys|D011795|654|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM|167^7^0
+25099610|*Photographies|D010781|288|ET|Entry Term Replacement for "Photography";RtM via: Photography|TI|MM|154^12^0
+25099573|*Nitrates|D009566|33847|MH|RtM via: Nitrates;Forced Leaf Node Lookup:nitrate;checkForceMH Boosted|TI|MM|1215^7^0
+25099573|*Nitrogen Compounds|D017672|19184|MH|RtM via: Nitrogen Compounds, Inorganic;RtM via: Nitrogen Compounds, Unspecified;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen compounds|TI|MM|642^18^0
+25099573|*Phosphorus|D010758|19178|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1714^10^0;1373^10^0;452^10^0;145^10^0
+25099573|*Nitrogen|D009584|18590|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|1278^8^0;467^8^0;160^8^0;1226^8^0
+25099573|*Phosphate|D010710|18326|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|1129^9^0
+25099573|*Humus|D012987|17054|ET|Entry Term Replacement for "Soil";RtM via: Humus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:humus|TI|MM|1676^5^0
+25099573|*Seasons|D012621|16913|MH|RtM via: Summer;RtM via: Seasons;Forced Leaf Node Lookup:seasons|TI|MM|880^6^0;763^7^0
+25099573|*Water|D014867|16625|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1396^5^0;1259^5^0;948^5^0;731^5^0;1052^5^0;1483^5^0
+25099573|Russia|D012426|15641|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2025^7^0
+25099573|Delivery of Health Care, Integrated|D019033|68104|MH|||RC
+25099573|Patient Care Management|D010346|61565|MH|||RC
+25099573|*Seawater|D012623|1014|MH|RtM via: Seawater;Forced Non-Leaf Node Lookup:sea waters|TI|MM|91^9^0
+25099573|*Nutrients|D000078622|957|MH|RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|671^9^0;364^8^0
+25099573|Oxidation-Reduction|D010084|1000|MH|Forced Non-Leaf Node Lookup:oxidizing||MM|1024^9^0
+25099573|Carbon|D002244|1000|MH|Forced Non-Leaf Node Lookup:carbon||MM|1354^6^0
+25099573|Oxygen|D010100|1000|MH|Forced Non-Leaf Node Lookup:oxygen||MM|1242^6^0
+25099606|*Bays|D061006|58653|MH|Forced Leaf Node Lookup:bay|TI|MM|53^3^0;500^3^0
+25099606|Thromboembolism|D013923|372949|MH|||RC
+25099606|Warfarin|D014859|234035|MH|||RC
+25099606|Geologic Sediments|D019015|1000|MH|Forced Non-Leaf Node Lookup:sediment characteristics||MM|272^24^0
+25099618|*Water|D014867|39248|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|235^5^0
+25099618|*Body Burden|D001822|38951|MH|RtM via: Body Burden;Forced Leaf Node Lookup:body burdens|TI|MM|501^12^0
+25099618|New York City|D009519|38792|MH|RtM via: New York City;Forced Leaf Node Lookup:new york city|TI|MM|407^13^0
+25099618|Glioma|D005910|378189|MH|||RC
+25099618|Brain Neoplasms|D001932|191298|MH|||RC
+25099618|*Heavy Metal|D019216|177|ET|Entry Term Replacement for "Metals, Heavy";RtM via: Metals, Heavy;Forced Non-Leaf Node Lookup:heavy metals|TI|MM|489^11^0
+25099594|Russia|D012426|76142|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|900^7^0
+25099594|Tissue Plasminogen Activator|D010959|506392|MH|||RC
+25099594|Fibrinolytic Agents|D005343|341497|MH|||RC
+25099593|Russia|D012426|113633|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|227^7^0
+25099593|Tissue Plasminogen Activator|D010959|506356|MH|||RC
+25099593|Fibrinolytic Agents|D005343|341458|MH|||RC
+25099593|*Physical Processes|D055585|213|ET|Entry Term Replacement for "Physical Phenomena";RtM via: Physical Phenomenon or Property;Forced Non-Leaf Node Lookup:physical processes|TI|MM|111^18^0
+25099593|USSR|D014586|1000|MH|Forced Non-Leaf Node Lookup:ussr||MM|167^4^0
+25099541|Humans|D006801|82045822|CT|Forced Humans: human|TI|MM;RC
+25099541|Female|D005260|82045822|CT|Maternal Nutritional Physiological Phenomena;CT Treecode Lookup: G07.203.650.566 (Maternal Nutritional Physiological Phenomena)||RC
+25099541|*Hydrodynamics|D057446|6614376|MH|RtM via: Hydrodynamics;Forced Leaf Node Lookup:hydrodynamics|TI|MM|1164^12^0;681^12^0;590^13^0
+25099541|*Patient Discharge|D010351|6613539|MH|RtM via: Patient Discharge;Forced Leaf Node Lookup:discharged|TI|MM|1041^10^0;409^9^0
+25099541|*Pollutants|D004785|3324915|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM;RC|1108^10^0
+25099541|*Ecosystem|D017753|3308163|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM|666^9^0;472^9^0;298^9^0;25^9^0
+25099541|*Wind|D014919|3307956|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM|863^4^0
+25099541|*Water|D014867|3307293|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|907^5^0
+25099541|*Salinity|D054712|3307116|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|921^8^0
+25099541|Russia|D012426|3306711|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1429^7^0
+25099541|Denmark|D003718|3306329|MH|Forced Leaf Node Lookup:danish|TI|MM;RC|942^6^0
+25099541|Waist Circumference|D055105|56477|MH|||RC
+25099541|Maternal Nutritional Physiological Phenomena|D039382|50793|MH|||RC
+25099541|*Activities, Human|D006802|3450|ET|Entry Term Replacement for "Human Activities";RtM via: Human Activities;Forced Non-Leaf Node Lookup:human activities|TI|MM|112^16^0
+25099541|*Biological Model|D008954|1614|ET|Entry Term Replacement for "Models, Biological";RtM via: Biological Models;Forced Non-Leaf Node Lookup:biological models|TI|MM|972^16^0
+25099596|*Rivers|D045483|144211|MH|RtM via: Rivers;RtM via: Streams;Forced Leaf Node Lookup:streams;Forced Leaf Node Lookup:rivers|TI|MM|85^6^0;204^6^0;270^6^0
+25099596|Russia|D012426|72326|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|329^7^0
+25099596|*Pollutant|D004785|72128|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|64^9^0
+25099596|Tissue Plasminogen Activator|D010959|509282|MH|||RC
+25099596|Fibrinolytic Agents|D005343|341776|MH|||RC
+25099535|Animals|D000818|110056|CT|Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes);CT Text Lookup: fish|TI|MM;RC|791^4^0
+25099535|*DDT|D003634|43420|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|69^3^0;233^3^0
+25099535|Russia|D012426|22097|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1141^7^0
+25099535|Sweden|D013548|21710|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|614^7^0;414^7^0;42^7^0
+25099535|Introduced Species|D058865|109056|MH|||RC
+25099535|Ecosystem|D017753|52441|MH|||RC
+25099535|*Fishes|D005399|48675|MH|RtM via: Clupea harengus (organism);RtM via: Clupeidae;RtM via: Fishes;RtM via: Herring|TI|MM|120^7^0;791^4^0
+25099535|*Habits|D006184|1725|MH|RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|836^6^0
+25099298|Humans|D006801|82554|CT|Rehabilitation, Vocational;CT Treecode Lookup: E02.760 (Rehabilitation, Vocational);Rehabilitation, Vocational;CT Treecode Lookup: N02.421.784 (Rehabilitation, Vocational)||RC
+25099298|*Nitrates|D009566|24532|MH|RtM via: Nitrates;Forced Leaf Node Lookup:nitrate;checkForceMH Boosted|TI|MM|2196^7^0;1026^7^0
+25099298|*Sewage|D012722|23428|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|209^6^0
+25099298|*Edetic Acid|D004492|22408|MH|Forced Leaf Node Lookup:edta;checkForceMH Boosted|TI|MM|1056^4^0
+25099298|*Chelators|D002614|19970|ET|Entry Term Replacement for "Chelating Agents";RtM via: Metal Chelating Agents;RtM via: Metal Chelator;RtM via: Metal Chelator [EPC];RtM via: Metal chelating activity;RtM via: Chelating Agents;RtM via: Chelating Activity;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chelators|TI|MM|2704^15^0;1707^8^1;1722^5^1;2807^8^0;2208^8^0;2019^8^0;1046^8^0;1081^8^0;619^9^0
+25099298|*Phosphorus|D010758|16439|MH|RtM via: phosphorus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphorus|TI|MM|1869^10^0;1417^10^0;1306^10^0;463^10^0
+25099298|*Trace Elements|D014131|15932|MH|RtM via: Trace Elements;RtM via: Trace metal;checkForceMH Boosted|TI|MM|2833^14^0;576^14^0;2217^12^0;2028^12^0;1716^11^0
+25099298|*Phosphate|D010710|15233|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|3096^9^0;2962^9^0;2691^9^0;2399^9^0;2265^9^0;2077^9^0;1993^9^0;1859^9^0;1296^9^0;1035^9^0
+25099298|*Nitrogen|D009584|14642|MH|RtM via: nitrogen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:nitrogen|TI|MM|2546^8^0;2421^8^0;1828^8^0;1404^8^0;1329^8^0;478^8^0;2472^8^0
+25099298|*Carbon|D002244|13352|MH|RtM via: Carbon;checkForceMH Boosted;Forced Non-Leaf Node Lookup:carbon|TI|MM|1942^6^0
+25099298|*Phytoplankton|D010839|13256|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|903^13^0
+25099298|Russia|D012426|11207|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|3747^7^0
+25099298|Planktothrix agardhii|C000644429|11205|NM|RtM via: Planktothrix agardhii;Forced New Lookup:oscillatoria agardhii|TI|MM|3526^21^0;2114^21^0
+25099298|Rehabilitation, Vocational|D012050|81554|MH|||RC
+25099298|Job Application|D007586|23086|MH|||RC
+25099298|*Iron|D007501|2664|MH|RtM via: iron;Forced Non-Leaf Node Lookup:iron|TI|MM|1096^7^1;1124^2^1;1072^4^0
+25099298|*Mineral|D008903|2613|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|2413^7^0;1820^7^0;1321^7^0;1587^7^0;2464^7^0
+25099298|*Waters, Brackish|D000068357|2574|ET|Entry Term Replacement for "Saline Waters";RtM via: Brackish Water;Forced Non-Leaf Node Lookup:brackish waters|TI|MM|941^15^0
+25099298|*Freshwater|D005618|1449|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:fresh waters|TI|MM|1768^11^0
+25099298|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|426^5^0;1353^5^0
+25099298|Zinc|D015032|1000|MH|Forced Non-Leaf Node Lookup:zn||MM|1128^2^0;3323^2^0
+25099536|*Sewage|D012722|32999|MH|RtM via: Sewage;Forced Leaf Node Lookup:sewage;checkForceMH Boosted|TI|MM|823^6^0
+25099536|*Detergents|D003902|31478|MH|Forced Leaf Node Lookup:detergents;checkForceMH Boosted|TI|MM|1330^10^0
+25099536|*Lead|D007854|31478|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|1292^2^0
+25099536|*Pollutants|D004785|17446|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted|TI|MM|662^8^0
+25099536|*Nitrogen Compounds|D017672|17278|MH|RtM via: Nitrogen Compounds, Inorganic;RtM via: Nitrogen Compounds, Unspecified;checkForceMH Boosted|TI|MM|1177^18^0
+25099536|*Wind|D014919|17188|MH|RtM via: Environmental Wind;Forced Leaf Node Lookup:wind|TI|MM|1545^4^0
+25099536|*Temperature|D013696|16981|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|1532^11^0
+25099536|*Salinity|D054712|16591|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1508^8^0
+25099536|*Heating|D006361|16447|MH|RtM via: Heating;Forced Leaf Node Lookup:heating|TI|MM|1084^7^0
+25099536|*Radioactive Pollutants|D011848|16444|MH|RtM via: Radioactive Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:radioactive pollutants|TI|MM|1342^22^0
+25099536|*Hydrodynamics|D057446|16360|MH|RtM via: Hydrodynamics;Forced Leaf Node Lookup:hydrodynamics|TI|MM|280^12^0
+25099536|*Phosphates|D010710|16309|MH|RtM via: Phosphates;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|1197^10^0
+25099536|*Phenols|D010636|16306|MH|RtM via: Phenols;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|1301^7^0
+25099536|*Oxygen|D010100|16075|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|1219^6^0;1239^6^0
+25099536|*Smell|D012903|16006|MH|RtM via: Smell Perception;Forced Leaf Node Lookup:smell|TI|MM|1067^5^0
+25099536|Russia|D012426|15742|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1828^7^0
+25099536|*Color|D003116|15739|MH|Forced Leaf Node Lookup:colours|TI|MM|1005^6^0
+25099536|Juvenile Delinquency|D007604|80914|MH|||RC
+25099536|*Mercury|D008628|2436|MH|RtM via: mercury;Forced Non-Leaf Node Lookup:hg|TI|MM|1296^2^0
+25099536|*Atmospheric Pressure|D001274|1884|MH|RtM via: Atmospheric Pressure;Forced Non-Leaf Node Lookup:atmospheric pressure|TI|MM|1564^20^0
+25099536|*Mineral|D008903|1029|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|1169^7^0;199^7^0
+25099536|*Petroleum|D010578|1002|MH|RtM via: Petroleum;Forced Non-Leaf Node Lookup:petroleums|TI|MM|1310^18^0
+25099536|Seawater|D012623|1000|MH|Forced Non-Leaf Node Lookup:sea waters||MM|100^10^0
+25099536|Nitrogen|D009584|1000|MH|Forced Non-Leaf Node Lookup:nitrogen||MM|1177^8^0
+25099536|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|576^5^0;1015^5^0;1061^5^0;1518^5^0
+25099536|Hydrogen-Ion Concentration|D006863|1000|MH|Forced Non-Leaf Node Lookup:ph||MM|1153^2^0;1746^2^0
+25099306|Humans|D006801|117737|CT|Oncology Nursing;CT Treecode Lookup: N02.421.533 (Oncology Nursing);CT Text Lookup: individuals|TI|MM;RC|1156^11^0
+25099306|Animals|D000818|117737|CT|Predatory Behavior;CT Treecode Lookup: F01.145.113.111 (Predatory Behavior);Predatory Behavior;CT Treecode Lookup: F01.145.113.252 (Predatory Behavior)||MM|721^7^0
+25099306|*Cadmium|D002104|71357|MH|RtM via: cadmium;Forced Leaf Node Lookup:cadmium;checkForceMH Boosted|TI|MM|1477^7^0;1375^7^0;849^7^0;576^7^0;227^7^0;74^7^0
+25099306|*Pollutant|D004785|36604|ET|Entry Term Replacement for "Environmental Pollutants";RtM via: Environmental Pollutants;checkForceMH Boosted;Forced Non-Leaf Node Lookup:pollutants|TI|MM|1736^9^0;1820^9^0
+25099306|*Predatory Behavior|D011235|36481|MH|RtM via: Predatory Behavior;Forced Leaf Node Lookup:predation|TI|MM|1785^9^0
+25099306|*Salinity|D054712|35959|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|536^8^0;491^8^0;297^8^0;246^10^0;42^8^0
+25099306|*Temperature|D013696|35881|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|767^11^0;613^11^0
+25099306|*Water|D014867|35560|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1453^5^0;761^5^0;864^5^0
+25099306|Russia|D012426|34930|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2236^7^0
+25099306|Communication|D003142|116737|MH|||RC
+25099306|Oncology Nursing|D009859|116114|MH|||RC
+25099306|*Cyprinidae|D003530|3321|MH|RtM via: Alburnus alburnus;RtM via: Minnows;RtM via: Phoxinus phoxinus;Forced Non-Leaf Node Lookup:minnows|TI|MM|2076^17^0;1021^17^0;123^6^0;1857^17^0;131^17^0
+25099306|*Freshwater|D005618|999|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:fresh waters;Forced Non-Leaf Node Lookup:freshwaters|TI|MM|420^11^0;367^10^0;102^10^0
+25099309|*Phenol|D019800|44075|MH|RtM via: phenol;Forced Leaf Node Lookup:phenol;checkForceMH Boosted|TI|MM|285^6^0;338^6^0
+25099309|*Phenols|D010636|22348|MH|RtM via: Phenols;RtM via: Substance with phenol structure;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phenols|TI|MM|398^7^0;285^6^0;109^8^0;407^7^0
+25099309|Russia|D012426|21760|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|707^7^0
+25099309|Alcoholism|D000437|69095|MH|||RC
+25099309|Substance Abuse Treatment Centers|D016320|68430|MH|||RC
+25099581|*Fisheries|D005398|23369|MH|RtM via: Fisheries;Forced Lookup:over-fishing;Forced Leaf Node Lookup:fishery|TI|MM|1588^7^0;1436^12^0
+25099581|*Salinity|D054712|16787|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|422^8^0;568^8^0
+25099581|*Oxygen|D010100|16757|MH|RtM via: oxygen;checkForceMH Boosted;Forced Non-Leaf Node Lookup:oxygen|TI|MM|582^6^0
+25099581|*Plankton|D010933|16664|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|847^8^0
+25099581|*Water|D014867|16493|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|443^5^0;562^5^0
+25099581|Russia|D012426|16223|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1886^7^0
+25099581|*Conservation of Natural Resources|D003247|15941|MH|Forced Lookup:over-fishing|TI|MM|1436^12^0
+25099581|Intestinal Obstruction|D007415|82971|MH|||RC
+25099581|Abdominal Pain|D015746|69419|MH|||RC
+25099581|*Nutrients|D000078622|669|MH|RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|761^9^0
+25099616|Humans|D006801|168251692|CT|Forced Humans: man|TI|MM;RC
+25099616|Male|D008297|168251692|CT|CT Text Lookup: man|TI|MM;RC|1337^3^0
+25099616|*Radioactive Waste|D011850|14884190|MH|RtM via: Radioactive Waste;Forced Leaf Node Lookup:radioactive wastes;checkForceMH Boosted|TI|MM|107^17^0
+25099616|*Intention|D033182|7441972|MH|RtM via: Intention - mental process;Forced Leaf Node Lookup:intentions|TI|MM|435^9^0
+25099616|*Food Chain|D020387|7441468|MH|RtM via: Food Chain;Forced Leaf Node Lookup:food chains|TI|MM|1482^10^0
+25099616|*Water|D014867|7441432|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1888^5^0;1513^5^0
+25099616|Epidermal Growth Factor|D004815|17215748|MH|||RC
+25099616|ErbB Receptors|D066246|95543|MH|||RC
+25099616|*Nuclear Energy|D009678|2265|MH|RtM via: Nuclear Energy;Forced Non-Leaf Node Lookup:nuclear energy|TI|MM|89^14^0
+25099616|*Radionuclides|D011868|2040|ET|Entry Term Replacement for "Radioisotopes";RtM via: Radioisotopes;Forced Non-Leaf Node Lookup:radionuclides|TI|MM|1320^13^0
+25099616|*Probability|D011336|939|MH|RtM via: Probability;Forced Non-Leaf Node Lookup:probability|TI|MM|1194^11^0
+25099616|*Burial|D002048|36|MH|RtM via: Burial;Forced Non-Leaf Node Lookup:burials|TI|MM|1946^6^0;201^6^0
+25099323|*Temperature|D013696|30947|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|106^11^0;287^11^0
+25099323|*Salinity|D054712|30665|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|119^8^0;303^8^0
+25099323|Russia|D012426|29678|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|946^7^0
+25099323|*Seasons|D012621|29408|MH|Forced Leaf Node Lookup:seasonal|TI|MM|501^8^0
+25099323|Scoliosis|D012600|162248|MH|||RC
+25099323|Ribs|D012272|79623|MH|||RC
+25099323|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|147^5^0
+25099335|Animals|D000818|222300|CT|Alouatta;CT Treecode Lookup: B01.050.150.900.649.313.988.400.600 (Alouatta)||RC
+25099335|Russia|D012426|24290|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1126^7^0
+25099335|Plasmodium|D010961|221300|MH|||RC
+25099335|Alouatta|D000508|127406|MH|||RC
+25099607|Animals|D000818|181957|CT|Molluscs;CT Treecode Lookup: B01.050.500.644 (Molluscs);Bivalve;CT Treecode Lookup: B01.050.500.644 (Bivalve)|TI|MM
+25099607|*Biomass|D018533|19210|MH|RtM via: Biomass;Forced Leaf Node Lookup:biomass|TI|MM|683^7^0
+25099607|Workers' Compensation|D014942|180957|MH|||RC
+25099607|Occupational Injuries|D060051|104186|MH|||RC
+25099607|*Bivalve|D049872|447|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|209^7^0
+25099607|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|667^5^0
+25099584|Animals|D000818|365306|CT|CT Text Lookup: fish|TI|MM;RC|291^4^0
+25099584|*DDT|D003634|66240|MH|Forced Leaf Node Lookup:ddt;checkForceMH Boosted|TI|MM|138^3^0;329^3^0
+25099584|*Dichlorodiphenyl Dichloroethylene|D003633|66240|MH|Forced Leaf Node Lookup:dde;checkForceMH Boosted|TI|MM|161^3^0
+25099584|*Dichlorodiphenyldichloroethane|D003632|66240|MH|Forced Leaf Node Lookup:ddd;checkForceMH Boosted|TI|MM|169^3^0
+25099584|*Plankton|D010933|33669|MH|RtM via: Plankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:plankton|TI|MM|300^8^0
+25099584|Russia|D012426|33390|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|573^7^0
+25099584|Growth Differentiation Factors|D055412|364306|MH|||RC
+25099584|Parabiosis|D010227|153553|MH|||RC
+25099574|Humans|D006801|118983|CT|Lookup: Aged Rule||MM;RC
+25099574|Adult|D000328|118983|CT|Forced Leaf Node Lookup:adults;CT Text Lookup: adult|TI|MM;RC|640^5^0
+25099574|Animals|D000818|118983|CT|Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes)|TI|MM
+25099574|*Petroleum Pollution|D059392|31570|MH|RtM via: Petroleum Pollution;Forced Leaf Node Lookup:oil pollutions;Forced Leaf Node Lookup:oil spills|TI|MM|487^9^0;364^9^0;159^13^0
+25099574|*Mineral Oil|D008899|31201|MH|RtM via: mineral oil;Forced Leaf Node Lookup:mineral oil;checkForceMH Boosted|TI|MM|727^11^0
+25099574|*Ships|D012767|16688|MH|RtM via: Ships;Forced Leaf Node Lookup:ship|TI|MM|415^4^0;273^4^0
+25099574|Sweden|D013548|16100|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|214^7^0;107^7^0
+25099574|Finland|D005387|16091|MH|RtM via: Finnish ethnic group;Forced Leaf Node Lookup:finnish|TI|MM|453^7^0
+25099574|*Phytoplankton|D010839|15812|MH|RtM via: Phytoplankton;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phytoplankton|TI|MM|1248^13^0;580^13^0
+25099574|Russia|D012426|15761|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|1621^7^0
+25099574|*Alloys|D000497|15503|MH|RtM via: Alloys;checkForceMH Boosted;Forced Non-Leaf Node Lookup:alloys|TI|MM|316^6^0
+25099574|*Limit of Detection|D057230|15476|MH|Forced Leaf Node Lookup:detection limits|TI|MM|973^15^0
+25099574|Parental Leave|D016524|117983|MH|||RC
+25099574|Sick Leave|D018582|29994|MH|||RC
+25099574|*Seaweed|D012624|312|MH|RtM via: Seaweed;Forced Non-Leaf Node Lookup:seaweed|TI|MM|595^8^0
+25099574|*Fishes|D005399|285|MH|RtM via: Fishes;Forced Non-Leaf Node Lookup:fishes|TI|MM|618^4^0;646^6^0
+25099574|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|746^5^0
+25099538|Humans|D006801|31674|CT|Patient Discharge;CT Treecode Lookup: E02.760 (Patient Discharge);Patient Discharge;CT Treecode Lookup: N02.421.585 (Patient Discharge);Home Care Services;CT Treecode Lookup: N02.421.143 (Home Care Services)||RC
+25099538|Sweden|D013548|13681|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|117^7^0
+25099538|Russia|D012426|13447|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|367^7^0
+25099538|Patient Discharge|D010351|30674|MH|||RC
+25099538|Home Care Services|D006699|28912|MH|||RC
+25099531|*Nitrates|D009566|49182|MH|RtM via: Nitrates;Forced Leaf Node Lookup:nitrate;checkForceMH Boosted|TI|MM|365^7^0
+25099531|*Phosphate|D010710|26004|ET|Entry Term Replacement for "Phosphates";RtM via: Phosphates;RtM via: phosphate ion;checkForceMH Boosted;Forced Non-Leaf Node Lookup:phosphates|TI|MM|354^9^0
+25099531|*Ammonium|D064751|25560|ET|Entry Term Replacement for "Ammonium Compounds";RtM via: ammonium;checkForceMH Boosted;Forced Non-Leaf Node Lookup:ammonium|TI|MM|377^8^0
+25099531|*Water|D014867|23700|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|310^5^0;288^5^0
+25099531|Russia|D012426|23223|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|600^7^0
+25099531|Sweden|D013548|23220|MH|RtM via: Swedish ethnic group;Forced Leaf Node Lookup:swedish|TI|MM|272^7^0
+25099531|Tibial Fractures|D013978|124358|MH|||RC
+25099531|Fracture Fixation, Internal|D005593|51536|MH|||RC

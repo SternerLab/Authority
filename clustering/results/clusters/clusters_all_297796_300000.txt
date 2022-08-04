@@ -1,0 +1,271 @@
+Weimer_M:5:['4274107;4045549;4045175;4044227;4044664']:1:monte r. weimer
+Doucette_L:2:['24872839;41500037']:1:l. i. doucette,lisa i. doucette
+Zubo_Y:2:['40066242;23274698']:1:yan o. zubo
+GARRICK_A:2:['24052613;24052772']:1:a.s. garrick,a. s. garrick
+Magnin_N:2:['4278054;4280716']:1:noël c. magnin
+Colepicolo_P:2:['4276293;43191787']:1:pio colepicolo
+Andreu_B:2:['10.2307/1486122;30135272']:1:bernard andreu
+Lynes_M:3:['4164392;4274047;4272762']:1:michael p. lynes,michael a. lynes
+Havecker_E:2:['25680054;4281918']:1:ericka r. havecker
+Chacón_E:3:['40305418;3672754;30054427']:1:elias chacón,eduardo chacón,elías chacón
+Trickett_R:2:['10.2307/4115519;10.2307/4117321']:1:robert s. trickett,r. s. trickett
+Bozilova_E:11:['2588731;23419849;23419848;43554387;43554174;23419227;23885155;23417664;23417338;23416231;23416270']:1:elissaveta bozilova,e. d. bozilova
+Tonkov_S:10:['2588731;23419849;23419848;43554161;23885155;43554174;23419227;23417338;43554387;23419899']:1:spassimir tonkov,s. b. tonkov
+Kirienko_D:2:['23274720;41435402']:1:daniel r. kirienko,daniel hill kirienko
+Masuda_J:2:['4216097;23389753']:1:junzo masuda,jun-ichiro masuda
+MEED_H:2:['42790756;42790777']:1:h. p. meed
+Seifert_M:2:['3785075;23598434']:1:megan l. seifert,michael seifert
+Hrusa_F:2:['41425447;41425768']:1:fred hrusa
+Fenn_K:2:['4163872;40343457']:1:kathleen fenn,katherine h. fenn
+Stauble_E:2:['2431305;2430512']:1:e. j. stauble
+Knox_H:2:['23431871', '20520016']:2:henrietta knox,henry b. knox
+Beirne_J:3:['41434008;20494294;20494295']:1:john j. beirne,j. j. beirne
+Nordin_P:2:['4268165;4268906']:1:philip nordin
+Ericson_D:2:['10.2307/3543581;10.2307/1484180']:1:david b. ericson,d. ericson
+Herbert_N:2:['10.2307/3670607;30160569']:1:nancy h. herbert,neill a. herbert
+Orlowski_S:2:['10.2307/3225198;41435087']:1:stanley j. orlowski,sara k. orlowski
+Hamelin_J:3:['40235292;24125322;25153153']:1:j. hamelin,jérôme hamelin
+Dufaÿ_M:2:['40005676;40005557']:1:mathilde dufaÿ
+Dalby_D:2:['2485022;20146232']:1:d. h. dalby
+Ruiz-Santaella_J:2:['23389123;4539596']:1:j. p. ruiz-santaella,juan pedro ruiz-santaella
+Scavetta_R:2:['4277139;10.2307/3870800']:1:robert d. scavetta
+Magombo_Z:2:['3093935;10.2307/3393130']:1:zacharia l. k. magombo
+Goodchild_D:3:['4269381;4261694;4261830']:1:d. j. goodchild,david j. goodchild
+Dalen_J:2:['3547071;3674272']:1:j. l. dalen,john dalen
+Getsinger_K:3:['25177086;3987972;25195008']:1:kurt d. getsinger
+Guimaraes_J:2:['23361678;25078904']:1:jorge a. guimaraes,jean r. d. guimaraes
+Mollenhauer_D:3:['23675274;10.2307/3668655;23381296']:1:d. mollenhauer,dieter mollenhauer
+Sheng_H:2:['23469189;23655536']:1:hua-fang sheng,h. m. sheng
+Goffart_A:2:['24866275;10.2307/3668656']:1:anne goffart,a. goffart
+Onsrud_M:2:['24865038;24831737']:1:maren s. r. onsrud
+Saracino_A:2:['3694308;20050456']:1:antonio saracino,a. saracino
+Roots_E:2:['10.2307/3504469;mammalianspecies.39.804.1']:1:ellen h. roots
+Šafář_J:2:['41435616;23598631']:1:jan šafář
+Cattonaro_F:3:['23598631;41435616;23643709']:1:federica cattonaro
+ST. JOHN_T:2:['42934265;42934350']:1:t. v. st. john
+Kopecký_D:2:['23655914;23598631']:1:d. kopecký,david kopecký
+Leclerc-Cessac_E:2:['24125424;24123982']:1:e. leclerc-cessac
+Kositsup_B:2:['4279350;4280271']:1:boonthida kositsup
+Paschold_A:2:['23598580;43190724']:1:anja paschold
+Pančić_J:2:['43804314;43804328']:1:josef pančić
+Kumosinski_T:2:['4271523;4274854']:1:thomas f. kumosinski
+Fernández-Barbero_G:2:['41434502;43190501']:1:gemma fernández-barbero
+Drobner_U:2:['10.2307/3546969;42948330']:1:ute drobner
+FRENEY_J:2:['42931977;42939338']:1:j. r. freney
+MacArthur_L:2:['24871814;24875496']:1:lachlan d. macarthur
+MALL_T:2:['42933360;42556655']:1:t. p. mall
+Rajashekhar_M:2:['25152994;10.2307/3759941']:1:m. rajashekhar
+Avisar_D:3:['40065921;40065920;40538043']:1:dror avisar
+Van Zant_K:3:['3687425;3687522;3687445']:1:kent l. van zant
+Yonekura_Y:2:['24130003;42953092']:1:yusuke yonekura
+Aksa_D:2:['24130003;42953092']:1:darul aksa
+Hocker_K:2:['30136798;30135116']:1:katherine m. hocker
+Ballance_G:3:['4276424;4278334;4277378']:1:g. murray ballance
+Thiel_V:2:['25256176;25153442']:1:vera thiel
+Goday_A:2:['10.2307/3869755;4271620']:1:adela goday
+Sánchez-Martínez_D:2:['4270222;4271620']:1:demetrio sánchez-martínez
+Brandner_K:2:['41812049;40066058']:1:katrin brandner
+Mély_Y:2:['41812049;40066058']:1:yves mély
+Ingelbrecht_I:2:['4278728;10.2307/3868957']:1:ivan l. w. ingelbrecht,ivan l. ingelbrecht
+Große_W:3:['20046097;23370973;23370495']:1:wolfgang große,w. große
+Neudecker_C:2:['10.2307/3543373;4215032']:1:christian neudecker
+Sińska_I:2:['23370830;23374474']:1:irena sińska
+Iverson_W:2:['10.2307/3536519;4250712']:1:w. p. iverson,wayne f. iverson
+Marras_A:2:['23387710;23386013']:1:anna maria marras
+Saeki_K:2:['43191376;4629773']:1:kazuhiko saeki,kenichi saeki
+Levesley_A:2:['41549807;4279662']:1:aurora levesley
+MEAD_D:3:['42939475;42946958;42946957']:1:d. j. mead,d.j. mead
+Polidori_E:2:['40983905;1513846']:1:emanuela polidori,e. polidori
+Sattarzadeh_A:2:['41434218;23598250']:1:amirali sattarzadeh
+Cavdek_V:2:['30158516;30158515']:1:vandy cavdek
+Chouikha_I:2:['23389633;23389484']:1:imed b. chouikha
+Cordts_S:2:['4130834;3784487']:1:simone cordts,steven d. cordts
+Saggese_E:4:['10.2307/4040513;10.2307/4040440;4270384;4270385']:1:edward j. saggese
+Spletzer_K:2:['4270384;4270385']:1:kathleen m. spletzer
+Piekos_B:3:['4275102;4277046;10.2307/3869868']:1:barry piekos
+Wybenga_J:2:['42931757;4259373']:1:j. m. wybenga
+Perdomo_H:2:['24637451;43924163']:1:haybrig perdomo
+GONZALEZ-LOPEZ_J:2:['42938722;42937597']:1:j. gonzalez-lopez
+Bergquist_R:2:['10.2307/3757964;10.2307/3757784']:1:r. r. bergquist
+Khanh_T:2:['23362495;25148487']:1:tran dang khanh
+de Araujo Mariath_J:2:['23500685;42568934']:1:jorge ernesto de araujo mariath
+Bear_F:2:['4258251;4258351']:1:firman e. bear,f. e. bear
+Matre_P:2:['23390760;41434590']:1:polina matre
+Nagasato_C:3:['23390417;23391763;43565300']:1:chikako nagasato
+Motomura_T:3:['23390417;23391763;43565300']:1:taizo motomura
+Wewer_V:2:['41550413;41812277']:1:vera wewer
+Sellam_O:2:['40536978;20076922']:1:olivier sellam
+Hildreth_N:2:['10.2307/3504260;10.2307/3504134']:1:nancy j. hildreth
+Barrios-Masias_F:2:['24369171;24366804']:1:f. h. barrios-masias,felipe h. barrios-masias
+Frottin_F:2:['40537507;41433874']:1:frédéric frottin
+COX_J:2:['24061146;41933190']:1:james a. cox,j. e. cox
+Spies_R:2:['24837826;24824949']:1:robert b. spies
+Theodorou_C:2:['2557312;2434854']:1:costas theodorou,c. theodorou
+Papi_M:2:['3871602;4280309']:1:maura papi
+Tateishi_Y:2:['10.2307/4110990;3093979']:1:yoichi tateishi,y. tateishi
+Samarajeewa_P:2:['23385429;23385202']:1:p.k. samarajeewa
+Harris-Coward_P:2:['20619186;23253127']:1:pamela y. harris-coward,p. harris-coward
+Zonneveld_K:2:['40984160;27756780']:1:karin zonneveld
+Leo_P:2:['4262275;4262144']:1:pietro de leo
+Nakayama_A:2:['4280531;20077080']:1:akira nakayama
+Vallés_M:2:['23380178;10.2307/3869176']:1:maria pilar vallés,m. pilar vallés
+Chikowo_R:3:['24370624;24124385;42951535']:1:regis chikowo,r. chikowo
+Yamaoka_S:2:['20077309;23598262']:1:shohei yamaoka
+Carr_H:2:['40066078;10.2307/3858514']:1:herman carr,h. arnold carr
+Verdu_I:2:['42684783;43565279']:1:isabelle verdu,i. gimenez verdu
+SPURR_D:2:['42936701;42936020']:1:d. t. spurr
+SEDUN_F:2:['42684710;42936020']:1:f. s. sedun,f.s. sedun
+Herlitzius_H:2:['4215489;4216931']:1:h. herlitzius,hans herlitzius
+Pitkänen_S:2:['20050492;20050874']:1:sari pitkänen
+Besagni_C:2:['41550413;23392085']:1:céline besagni
+Ajani_Y:2:['25066011;43288940']:1:yousef ajani
+Porto_P:3:['23434712;23490859;23490937']:1:pábio porto,p. campos porto
+Sackin_M:3:['10.2307/2412292;2430728;10.2307/2412718']:1:m. j. sackin
+Stapley_E:3:['10.2307/3755463;10.2307/3755662;4250786']:1:e. o. stapley,edward o. stapley
+do Nascimento_J:3:['23385059;23386177;23387327']:1:joão roberto oliveira do nascimento,joão r.o. do nascimento
+Cordenunsi_B:3:['23385059;23386177;23387327']:1:beatriz rosana cordenunsi,beatriz r. cordenunsi
+Puschmann_R:2:['4268383;4269644']:1:rolf puschmann
+Pichelin_D:2:['4270463;4269557']:1:dominique pichelin
+Hirota_A:2:['40536913;20077093']:1:atsuko hirota
+Rakotoarivelo_F:2:['23209441;41679270']:1:fanny p. rakotoarivelo,fanny rakotoarivelo
+Faliniaina_L:2:['23209441;41679270']:1:lucien faliniaina
+Wollgiehn_R:2:['23377480;23375356']:1:r. wollgiehn
+Palaniappan_K:2:['4281194']:1:kannapan palaniappan,krishnan k. palaniappan
+Nara_M:2:['3515656;10.2307/3515386']:1:masakazu nara
+Gansa_A:2:['4258939;4259121']:1:a. n. gansa
+Geiger_A:2:['3782889;41489180']:1:anthony e. geiger,anne geiger
+Pao_L:2:['4273421;4275828']:1:lily i. pao
+Furey_M:2:['23380710;20455892']:1:m.j. furey iii,maria a. furey
+Onyeocha_I:2:['4275507;23385330']:1:ignatius onyeocha
+Soressi_G:2:['42877911;23389750']:1:g. p. soressi,gian piero soressi
+Lomax_B:2:['30224676;newphytologist.196.2.397']:1:barry h. lomax,b. h. lomax
+GREENLAND_D:2:['42932059;42931837']:1:d. j. greenland
+Motes_M:2:['23489200;20649589']:1:martin motes,m. motes
+Giannopolitis_C:5:['4042898;42684056;42684055;4264725;4264724']:1:c. n. giannopolitis,constantine n. giannopolitis
+MacNeill_C:2:['41424964;41424126']:1:c. don macneill
+Flores-Flores_J:2:['20051183;23362592']:1:josé luis flores-flores,j. l. flores-flores
+ALLINSON_D:2:['42936283;42935329']:1:d. w. allinson
+Nawaschin_M:2:['23841647;23356655']:1:m. s. nawaschin,m. nawaschin
+SUBRAHMANYAM_P:2:['42938062;42938858']:1:p. subrahmanyam
+Vink_J:2:['23264326;23388931']:1:josefien vink,joseph p. vink
+de Vos_W:2:['42949888;25153267']:1:willem m. de vos
+Venegoni_A:2:['4274758;4275368']:1:alberto venegoni
+Tweedy_J:5:['4041689;4042110;10.2307/4040929;4041854;4260961']:1:james a. tweedy,j. a. tweedy
+Gourrierec_J:2:['newphytologist.198.1.59;newphytologist.193.2.504']:1:j. le gourrierec,josé le gourrierec
+Swaminathan_S:4:['40537508;4265186;4264510;4264781']:1:santhanam swaminathan,sivakumar swaminathan
+Liberman_M:2:['23385001;23383057']:1:m. liberman,michèle liberman
+Yomo_H:4:['23366456;4263195;23370776;4263446']:1:harugoro yomo
+Huestis_D:2:['3878021;20062530']:1:diana l. huestis
+Haloui_N:2:['42685214;42685346']:1:n. haloui,n. e. el haloui
+Otalora_M:2:['taxon.62.6.1333;20444796']:1:monica otalora,monica garcia otalora
+Klöck_G:2:['23379358;4274321']:1:gerd klöck
+Gutiérrez-Nava_M:2:['4130797;4281764']:1:maría de la luz gutiérrez-nava
+Pawełkiewicz_J:2:['23373344;23374447']:1:jerzy pawełkiewicz,j. pawełkiewicz
+TEANEY_G:2:['42939022;42938166']:1:george b. teaney iii
+Glaser_E:2:['4271568;20076654']:1:elzbieta glaser,e. glaser
+Trier_T:2:['10.2307/3546009;30164269']:1:terry m. trier
+Cozens_G:2:['42950765;24121188']:1:g.d. cozens,g. cozens
+Schiff_M:2:['3871621;20205900']:1:michael schiff
+Contreras_S:2:['23433216;24825624']:1:s. contreras
+Strieker_C:3:['41413440;4042273;4042617']:1:craig a. strieker,c. f. strieker
+Acosta-Gallegos_J:2:['24129126;4627244']:1:j.a. acosta-gallegos,jorge a. acosta-gallegos
+Erlandsson_A:3:['10.2307/3566063;4219956;4219655']:1:ann erlandsson
+BERI_V:3:['42936938;42935165;42933571']:1:viraj beri,v. beri
+Krstulović_N:2:['24832617;24849697']:1:nada krstulović,n. krstulović
+Puppi_G:2:['40305756;42947618']:1:gigliola puppi
+de Goes_M:2:['23500286;40300878']:1:monique britto de goes
+Urrutia_R:2:['24872565;10.2307/3668652']:1:roberto urrutia,r. urrutia
+da S.L. Sternberg_L:2:['23378215;42949905']:1:l. da s.l. sternberg,leonel da s.l. sternberg
+Haderlie_L:12:['4043355;4042981;4264919;3987342;4043690;4043855;4044324;4044325;4043371;4044077;4044224;4044060']:1:lloyd c. haderlie,l. c. haderlie
+Edgerton_L:2:['42877994;4258087']:1:l. j. edgerton
+Bidzinski_P:2:['newphytologist.198.1.59;41433853']:1:przemyslaw bidzinski
+Lambs_L:2:['24122559;41500642']:1:luc lambs
+de Haan_M:2:['3668494;41058281']:1:myriam de haan
+Mireles_L:2:['3987639;4273596']:1:linda c. mireles
+Tighe_S:2:['42939484;42947774']:1:s.w. tighe,s. w. tighe
+Gillis_M:3:['42947774;25153329;10.2307/3668750']:1:m. gillis,monique gillis
+Kabat_S:3:['43309723;23314754;23313677']:1:steven m. kabat,steven m kabat
+Héral_M:2:['24855787;24847607']:1:m. héral
+Martinez-Ferri_E:2:['1513968;2588904']:1:elsa martinez-ferri
+Perez-Corona_E:2:['1513968;2588904']:1:esther perez-corona
+Shephard_K:2:['30158440;30155823']:1:k. l. shephard,kerry l. shephard
+Addiscott_T:2:['24124917;42946601']:1:t.m. addiscott
+Döring_E:2:['20443367;27756881']:1:elke döring
+Dokainish_M:2:['10.2307/3514603;3595511']:1:m. a. dokainish,mohamed a. dokainish
+Luftensteiner_H:3:['20145758;23642478;23642496']:1:horst w. luftensteiner
+Gwizdala_M:2:['41433497;41550411']:1:michal gwizdala
+Didier_P:3:['40066058;4274995;10.2307/3225723']:1:p. didier,pascal didier,pierre didier
+Zeinalov_Y:2:['23386985;23386475']:1:y. zeinalov
+Self_G:4:['42947913;2559102;4222424;4221894']:1:g.k. self,g. k. self
+Klekowski_R:2:['4215996;4216012']:1:r. z. klekowski
+Bellinger_B:2:['24130149;41693854']:1:brent j. bellinger,brian s. bellinger
+Muangprom_A:3:['27756361;4629737;23390115']:1:amorntip muangprom
+Tate_M:2:['25680904;4269106']:1:max e. tate,max tate
+Ramadan_T:2:['23388534;2588296']:1:t. ramadan
+Tiano_P:2:['4251425;40802275']:1:piero tiano,p. tiano
+Kelderer_M:2:['24124252;24370322']:1:markus kelderer,m. kelderer
+Lamoureux_E:2:['24864182;23469142']:1:elizabeth m. lamoureux,edouard d. r. lamoureux
+Valdes_B:2:['3995983;41692830']:1:billy m. valdes,b. valdes
+Royaert_S:2:['3872212;20076740']:1:stefan royaert
+SHAVIV_A:2:['42939010;42938300']:1:a. shaviv
+Geslot_A:2:['2588591;23642509']:1:alain geslot
+CHECKAI_R:2:['42936490;42936489']:1:r.t. checkai
+HELMKE_P:2:['42936490;42936489']:1:p.a. helmke
+Etherington_G:2:['20869178;newphytologist.199.3.650']:1:graham etherington,graham j. etherington
+JOHANSON_J:2:['42934412;42934413']:1:j. b. johanson
+ROLFE_B:3:['42935743;42939173;42937528']:1:b.g. rolfe
+Schulze-Menz_G:2:['10.2307/3995103;4603609']:1:g. k. schulze-menz
+Chardot_T:2:['4274163;4274795']:1:thierry p. chardot
+Kernan_A:2:['4272648;4272308']:1:andrea kernan
+Lysek_G:4:['23366957;23366947;23372122;23375198']:1:g. lysek,gernot lysek
+Okorokova-Façanha_A:3:['4280607;4280829;23391596']:1:anna l. okorokova-façanha
+Schomann_H:2:['24832672;43261679']:1:hans schomann,hartmut schomann
+Peisker_D:2:['23884132;40537685']:1:daniel peisker
+Whalen_P:2:['10.2307/1485228;1486226']:1:patricia a. whalen
+Spolter_H:2:['4259098;4259159']:1:herbert spolter
+Ashforth_E:2:['24873485;24875555']:1:elizabeth ashforth,elizabeth j. ashforth
+van der Hoeven_R:2:['4279098;10.2307/3871121']:1:rutger s. van der hoeven
+Kurita_H:2:['3687608;4097057']:1:hiroshi kurita
+Tzortziou_M:2:['24874653;mounresedeve.30.4.401']:1:maria tzortziou
+Valdiya_K:2:['10.2307/3673618;10.2307/3673588']:1:k. s. valdiya
+Buggle_K:3:['20494509;20518900;20518901']:1:k. buggle
+SENESI_N:2:['42934105;42938623']:1:n. senesi
+Chupeau_M:2:['40065318;23598286']:1:marie-christine chupeau
+Lackey_G:2:['4266432;24830268']:1:gregory j. lackey,gary d. lackey
+Mutterlose_J:2:['27670569;10.2307/1486125']:1:jörg mutterlose
+Knorre_A:2:['40310190;20445801']:1:anastasia a. knorre
+Edvardsen_B:2:['24863790;24864817']:1:bente edvardsen
+McGREGOR_A:3:['42931961;42932633;42932028']:1:a. j. mcgregor
+Goffinet_G:2:['24857479;10.2307/3226167']:1:gérard goffinet,g. goffinet
+Luongo_T:2:['42951963;24125339']:1:thomas luongo,t. luongo
+Neiswander_C:2:['4257504;25077141']:1:c. r. neiswander
+Duarte_W:2:['24827788;24855129']:1:w. e. duarte,william e. duarte
+Betts_K:2:['4045327;4268638']:1:kevin j. betts
+Gouhier-Darimont_C:2:['25609613;40065433']:1:caroline gouhier-darimont
+Lurquin_P:3:['4044472;4268037;23377052']:1:p. f. lurquin,paul f. lurquin
+Litten_W:2:['10.2307/3759721;10.2307/3793089']:1:walter litten
+Benoit_L:3:['4251231;23362983;4164466']:1:lori k. benoit,l. benoit
+Shrode_J:3:['30155663;30155710;30152557']:1:joy b. shrode
+Brandsberg_J:3:['10.2307/3757129;10.2307/3757913;10.2307/3757323']:1:john w. brandsberg
+Torres-Contreras_J:2:['1513858;43565271']:1:javier torres-contreras
+VERMA_T:2:['42935538;42934284']:1:t. s. verma
+Babikian_L:2:['30152727;30155428']:1:levon g. babikian
+Schlüter_K:4:['42684288;43214194;43214097;43214714']:1:k. schlüter
+Carrillo_L:2:['40537974;24872976']:1:laura carrillo
+Huh_H:2:['24857278;24857895']:1:h. t. huh
+Vongraven_D:2:['10.2307/3676761;41932780']:1:dag vongraven
+Cinti_S:4:['24130846;42873618;42872839;42873747']:1:s. cinti,susanna cinti
+Pande_Y:2:['10.2307/3543884;4214870']:1:y. d. pande
+Bi_Z:3:['43190934;20616989;4164610']:1:zhonglin bi,zhong-lin bi,zhen bi
+WITKAMP_M:2:['42931946;42932306']:1:m. witkamp,martin witkamp
+Bätzing_W:2:['10.2307/3673985;3674076']:1:werner bätzing
+Kang_W:2:['41489312;41489372']:1:wenjun kang
+Blumenthal_S:2:['4277751;23388380']:1:sonal s. d. blumenthal,sonal blumenthal
+Krämer_I:3:['24130746;43215350;43215349']:1:i. krämer,inga krämer
+Tempé_J:2:['4273815;4273128']:1:jacques tempé
+Blacklock_G:3:['10.2307/1520941;40263732;10.2307/3672357']:1:gene blacklock,gene w. blacklock
+Chícharo_L:2:['24871159;24825545']:1:luis chícharo
+Wenzhöfer_F:3:['24866553;24866331;24873149']:1:frank wenzhöfer,f. wenzhöfer
+Stallknecht_G:2:['4262968;4265177']:1:gilbert f. stallknecht,g. f. stallknecht
+Golan_Y:2:['23882419;30156097']:1:yehudit golan,yelena golan
+Boas_F:3:['23356559;43227825;43225259']:1:friedrich boas

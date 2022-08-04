@@ -1,0 +1,42 @@
+42791645|*Asparagales|D000070381|222|MH|RtM via: Haworthia|TI|MM|49^9^0
+42791645|*Name|D009275|147|ET|Entry Term Replacement for "Names";RtM via: Name;RtM via: Person Name|TI|MM|143^4^0;44^4^0
+42791531|*Asparagales|D000070381|327|MH|RtM via: Haworthia reticulata|TI|MM|30^20^0
+42791531|*Name|D009275|75|ET|Entry Term Replacement for "Names";RtM via: Name;RtM via: Person Name|TI|MM|25^4^0
+42791531|*Publications|D011642|21|MH|RtM via: Scientific Publication|TI|MM|301^9^0
+42789945|*Biological Phenomena|D001686|78|MH|RtM via: cellular entity retention|TI|MM|25^9^0
+42789945|*Name|D009275|39|ET|Entry Term Replacement for "Names";RtM via: Name;RtM via: Person Name|TI|MM|42^4^0
+42791047|*Prevalence|D015995|282|MH|RtM via: Statistical Prevalence;Forced Leaf Node Lookup:prevalences|TI|MM|157^10^0
+42791047|*Habitat|D017753|2337|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|53^7^0
+42791047|*Hybridization, Genetic|D006824|756|MH|RtM via: Crossbreeding|TI|MM|239^13^0
+42791047|*Habit|D006184|309|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|62^5^0
+42791047|*Nucleic Acid Hybridization|D009693|243|MH|RtM via: Nucleic acid hybridization procedure|TI|MM|239^13^0
+42791047|*Attention|D001288|42|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|131^9^0
+42789042|Kenya|D007630|5677|MH|RtM via: Kenya;Forced Leaf Node Lookup:kenya|TI|MM;RC|114^5^0
+42789042|Tanzania|D013636|1879|MH|RtM via: Tanzania;Forced Leaf Node Lookup:tanzania|TI|MM;RC|101^8^0
+42789042|*Asclepiadaceae|D029062|382|ET|Entry Term Replacement for "Apocynaceae";RtM via: Apocynaceae;RtM via: Echidnopsis;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asclepiadaceae|TI|MM|68^14^0;55^11^0
+42789042|*Magnoliopsida|D019684|90|MH|RtM via: Family Asclepiadaceae - milkweed|TI|MM|68^14^0
+42790032|Berberis|D028142|169|MH|||RC
+42790032|Milk Thistle|D020944|99|MH|||RC
+42790032|*Biological Phenomena|D001686|39|MH|RtM via: cellular entity retention|TI|MM|65^9^0
+42790946|*Asclepiadaceae|D029062|9689|ET|Entry Term Replacement for "Apocynaceae";RtM via: Apocynaceae;RtM via: Caralluma;checkForceMH Boosted;Forced Non-Leaf Node Lookup:asclepiadaceae|TI|MM;RC|49^14^0;38^9^0
+42790946|*Magnoliopsida|D019684|903|MH|RtM via: Family Asclepiadaceae - milkweed|TI|MM|49^14^0
+42790946|India|D007194|171|MH|RtM via: India;Forced Non-Leaf Node Lookup:india|TI|MM;RC|81^5^0
+42789818|*Mesembryanthemum|D035723|44|MH|RtM via: Mesembryanthemum;Forced Leaf Node Lookup:mesembryanthemums;checkForceMH Boosted|TI|MM|55^16^0
+42789818|Species Specificity|D013045|32|MH|||RC
+42789818|Phylogeny|D010802|28|MH|||RC
+42789818|*Social Segregation|D000072699|9|MH|RtM via: Racial Segregation|TI|MM|192^10^0
+42791257|*Plant Leaves|D018515|3186|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaves|TI|MM;RC|167^6^0
+42791257|*Habitats|D017753|1815|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|71^8^0
+42791257|*Asparagales|D000070381|666|MH|RtM via: Haworthia|TI|MM|352^9^0
+42791257|*Research|D012106|285|MH|RtM via: Study|TI|MM|85^7^0
+42789971|*Biological Phenomena|D001686|465|MH|RtM via: Tissue Growth|TI|MM|202^4^0
+42789971|*Asparagales|D000070381|57|MH|RtM via: Haworthia|TI|MM|186^9^0
+42789952|Infant|D007223|20831|CT|Nurseries, Infant;CT Treecode Lookup: J03.160.500 (Nurseries, Infant);Nurseries, Infant;CT Treecode Lookup: N02.278.617 (Nurseries, Infant);Nurseries, Infant;CT Treecode Lookup: N02.421.143.098.500 (Nurseries, Infant)|TI|MM
+42789952|Humans|D006801|20831|CT|Nurseries, Infant;CT Treecode Lookup: N02.421.143 (Nurseries, Infant)|TI|MM
+42789952|*Fusarium|D005670|19831|MH|RtM via: Fusarium oxysporum;Forced Leaf Node Lookup:fusariums;checkForceMH Boosted|TI|MM;RC|384^18^0;456^8^0
+42789952|*Cactus|D029421|2489|ET|Entry Term Replacement for "Cactaceae";RtM via: Cactaceae;RtM via: Echinocactus grusonii;checkForceMH Boosted|TI|MM|477^5^0;42^21^0
+42789952|*Orange|D032084|2048|ET|Entry Term Replacement for "Citrus sinensis";RtM via: Orange (fruit);checkForceMH Boosted|TI|MM|170^6^0
+42789952|Fusarium oxysporum|C000677527|1419|NM|Forced New Lookup:fusarium oxysporum|TI|MM|384^18^0
+42789952|*Nurseries, Infant|D009724|1418|MH|Forced Leaf Node Lookup:nurseries|TI|MM|90^9^0
+42789952|*Fungus|D005658|7431|ET|Entry Term Replacement for "Fungi";RtM via: Fungi;Forced Non-Leaf Node Lookup:fungus|TI|MM;RC|304^6^0
+42789952|*Mycelium|D025282|1566|MH|RtM via: Mycelium;Forced Non-Leaf Node Lookup:myceliums|TI|MM|282^15^0;289^8^0

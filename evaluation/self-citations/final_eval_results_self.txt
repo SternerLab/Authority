@@ -1,0 +1,1 @@
+{"total clusters": 159006, "total splitting": 15, "total splitting blocks": 15, "author names found in self citations": 25684, "TP": 12108, "FP": 11119, "FN": 10, "TN": 2932, "total processed": 159006}

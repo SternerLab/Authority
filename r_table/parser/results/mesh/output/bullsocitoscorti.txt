@@ -1,0 +1,4 @@
+42887622|*Fabaceae|D007887|297|MH|RtM via: Sulla (plant)|TI|MM|366^5^0
+42887622|*Ascomycota|D001203|99|MH|RtM via: Terriera|TI|MM|204^8^0
+42887629|Animals|D000818|1276|CT|Charadriiformes;CT Treecode Lookup: B01.050.150.900.248 (Charadriiformes)|TI|MM
+42887629|*Charadriiformes|D046091|276|MH|RtM via: Alle|TI|MM|886^4^0

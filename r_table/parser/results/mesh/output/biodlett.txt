@@ -1,0 +1,420 @@
+10.2307/2999752|*Islands|D062312|3840|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|122^6^0;769^7^0
+10.2307/2999752|*Limestone|D002119|1251|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|750^9^0
+10.2307/2999752|New Caledonia|D009510|1140|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|31^13^0
+10.2307/2999752|*Forest|D065928|14274|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|424^6^0;725^6^0;794^6^0
+10.2307/2999752|Trees|D014197|1726|MH|||RC
+10.2307/2999752|*Water Supplies|D014881|1587|ET|Entry Term Replacement for "Water Supply";RtM via: Water Supply;Forced Non-Leaf Node Lookup:water supplies|TI|MM|302^14^0
+10.2307/2999714|Animals|D000818|6496|CT|CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|87^7^0
+10.2307/2999714|*Incidence|D015994|557|MH|RtM via: Incidence;Forced Leaf Node Lookup:incidences|TI|MM|506^9^0
+10.2307/2999714|*Plants|D010944|5496|MH|RtM via: Plants|TI|MM;RC|99^6^0
+10.2307/2999714|Biodiversity|D044822|1787|MH|||RC
+10.2307/2999714|Europe|D005060|1029|MH|RtM via: Europe;Forced Non-Leaf Node Lookup:europe|TI|MM|199^6^0
+10.2307/2999769|Animals|D000818|11950|CT|Mammal;CT Treecode Lookup: B01.050.150.900.649 (Mammal);CT Text Lookup: mammal;CT Text Lookup: oryctolagus cuniculus;CT Text Lookup: rabbit|TI|MM;RC|90^6^0;335^21^0;317^6^0
+10.2307/2999769|Rabbits|D011817|11950|CT|RtM via: Old World rabbit;RtM via: Rabbits;Forced Leaf Node Lookup:oryctolagus cuniculus;Forced Leaf Node Lookup:rabbits;CT Text Lookup: oryctolagus cuniculus;CT Text Lookup: rabbit|TI|MM;RC|335^21^0;317^6^0
+10.2307/2999769|*Soil|D012987|3619|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM|427^4^0
+10.2307/2999769|*Grassland|D065948|2376|MH|Forced Leaf Node Lookup:grasslands|TI|MM;RC|244^9^0
+10.2307/2999769|*Herbivory|D060434|10950|MH|RtM via: Herbivory|TI|MM;RC|78^11^0
+10.2307/2999769|*Mammal|D008322|7977|ET|Entry Term Replacement for "Mammals";RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM;RC|90^6^0
+10.2307/2999769|*Plant|D010944|7428|ET|Entry Term Replacement for "Plants";RtM via: Plants;Forced Non-Leaf Node Lookup:herbaceous|TI|MM;RC|745^5^0;45^10^0
+10.2307/2999769|*Seeds|D012639|5331|MH|RtM via: Plant seeds;Forced Non-Leaf Node Lookup:seeds|TI|MM;RC|783^4^0;432^4^0;294^5^0;64^5^0
+10.2307/2999767|Humans|D006801|8985886|CT|Forced Humans: individuals|TI|MM;RC
+10.2307/2999767|*Trees|D014197|729952|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM|963^5^0
+10.2307/2999767|*Sample Size|D018401|363968|MH|RtM via: Sample Size;Forced Leaf Node Lookup:sample sizes|TI|MM|310^11^0;732^11^0
+10.2307/2999767|Bolivia|D001838|363611|MH|Forced Leaf Node Lookup:bolivian|TI|MM|942^8^0
+10.2307/2999767|*Biodiversity|D044822|10437|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|421^12^0;164^12^0
+10.2307/2999767|*Distributions, Statistical|D016008|1116|ET|Entry Term Replacement for "Statistical Distributions";RtM via: Statistical Distributions;Forced Non-Leaf Node Lookup:statistical distributions|TI|MM|701^25^0
+10.2307/2999642|*Cost-Benefit Analysis|D003362|481|MH|RtM via: Cost Effectiveness;Forced Leaf Node Lookup:cost-effectiveness|TI|MM|646^18^0
+10.2307/2999642|Biodiversity|D044822|1195|MH|||RC
+10.2307/2999642|Ecosystem|D017753|1086|MH|||RC
+10.2307/2999642|*Sound|D013016|417|MH|RtM via: Sound - physical agent|TI|MM|64^5^0
+10.2307/2999761|Animals|D000818|8383|CT|Mammals;CT Treecode Lookup: B01.050.150.900.649 (Mammals);Vertebrate;CT Treecode Lookup: B01.050.150.900 (Vertebrate);CT Text Lookup: mammal|TI|MM;RC|506^7^0
+10.2307/2999761|*Biodiversity|D044822|7383|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|80^12^0
+10.2307/2999761|*Mammals|D008322|6201|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM;RC|506^7^0
+10.2307/2999761|*Vertebrate|D014714|2817|ET|Entry Term Replacement for "Vertebrates";RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|702^10^0
+10.2307/2999761|*Body Size|D049628|1473|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM|271^9^0
+10.2307/2999761|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|65^10^0
+10.2307/2999674|*Ecosystem|D017753|17696|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|167^10^0
+10.2307/2999674|*Islands|D062312|16919|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|64^7^0
+10.2307/2999674|*Tracheophyta|D064028|6684|MH|RtM via: Tracheophyta|TI|MM;RC|441^15^0
+10.2307/2999674|Conservation of Natural Resources|D003247|1886|MH|||RC
+10.2307/2999760|Humans|D006801|16129783|CT|Forced Humans: people|TI|MM
+10.2307/2999760|*Ecosystem|D017753|666307|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM;RC|777^9^0
+10.2307/2999760|*Goals|D006040|649639|MH|Forced Leaf Node Lookup:goal|TI|MM|757^4^0
+10.2307/2999760|*Biodiversity|D044822|23220|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|369^12^0;115^12^0
+10.2307/2999760|*Motivation|D009042|16002|MH|RtM via: Act Mood - Goal|TI|MM|757^4^0
+10.2307/2999760|*Eating|D004435|711|MH|RtM via: Adequate Daily Fluid Intake;RtM via: Adequate Daily Salt Intake|TI|MM|910^8^0
+10.2307/2999760|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|564^10^0
+10.2307/2999777|*Parks, Recreational|D000068316|3354|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|531^14^0
+10.2307/2999777|*Forests|D065928|11547|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|456^7^0
+10.2307/2999777|*Biodiversity|D044822|10965|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|491^12^0
+10.2307/2999777|Software|D012984|1000|MH|Forced Non-Leaf Node Lookup:software||MM|160^8^0
+10.2307/2999755|Animals|D000818|28056|CT|Lizards;CT Treecode Lookup: B01.050.150.900.833 (Lizards);Rodents;CT Treecode Lookup: B01.050.150.900.649.313.992 (Rodents)||MM;RC
+10.2307/2999755|*Lizards|D008116|27056|MH|RtM via: Nannoscincus;RtM via: Skink;RtM via: Family Gekkonidae;RtM via: Geckos;RtM via: Lizards;RtM via: Eugongylus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lizards|TI|MM;RC|800^12^0;126^6^0;546^6^0;91^6^0;1435^7^0;1225^6^0;855^7^0;671^7^0;47^6^0;747^10^0
+10.2307/2999755|New Zealand|D009520|4730|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|490^11^0
+10.2307/2999755|*Rodents|D012377|3581|ET|Entry Term Replacement for "Rodentia";RtM via: Rodent;checkForceMH Boosted|TI|MM|1140^7^0
+10.2307/2999755|New Caledonia|D009510|2231|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|866^13^0;320^13^0
+10.2307/2999755|Australia|D001315|2042|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM;RC|506^10^0;814^10^0
+10.2307/2999755|*Habitat|D017753|7521|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|1096^7^0
+10.2307/2999755|Pacific Islands|D010139|2574|MH|RtM via: Pacific Islands|TI|MM;RC|214^15^0
+10.2307/2999695|*Extinction, Biological|D053476|54612|MH|RtM via: Extinction, Species;RtM via: Extinction, Mass;Forced Leaf Node Lookup:species extinctions;Forced Leaf Node Lookup:mass extinctions|TI|MM;RC|636^19^0;691^15^0
+10.2307/2999695|*Ecosystem|D017753|45279|MH|RtM via: Ecosystem;RtM via: Habitat;Forced Lookup:ecosystems|TI|MM;RC|806^10^0;469^9^0;397^7^0
+10.2307/2999695|*Rainforest|D065947|12783|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|266^11^0
+10.2307/2999695|*Biodiversity|D044822|32010|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|763^12^0;436^12^0
+10.2307/2999695|*Ecology|D004463|9858|MH|RtM via: Ecology|TI|MM|503^12^0
+10.2307/2999695|*Biochemical Phenomena|D001669|414|MH|RtM via: Resistance Process|TI|MM|533^10^0
+10.2307/2999688|Cats|D002415|7219|CT|RtM via: Felis catus;Forced Leaf Node Lookup:cats|TI|MM|502^4^0
+10.2307/2999688|Animals|D000818|7219|CT|RtM via: Felis catus;Sigmodontinae;CT Treecode Lookup: B01.050.150.900.649.313.992 (Sigmodontinae)|TI|MM;RC|502^4^0
+10.2307/2999688|*Museums|D009144|1723|MH|RtM via: Museums;Forced Leaf Node Lookup:museums|TI|MM|262^6^0
+10.2307/2999688|*Islands|D062312|1170|MH|Forced Leaf Node Lookup:islands|TI|MM;RC|617^7^0
+10.2307/2999688|Mexico|D008800|790|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM;RC|184^6^0
+10.2307/2999688|*Sigmodontinae|D016205|6219|MH|RtM via: Neotoma bunkeri;Forced Non-Leaf Node Lookup:neotoma|TI|MM;RC|142^15^0;134^7^0
+10.2307/2999688|*Body Size|D049628|2676|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM;RC|361^9^0
+10.2307/2999688|*Anthropology|D000883|1266|MH|RtM via: Anthropology|TI|MM|100^15^0
+10.2307/2999688|*Geraniaceae|D031314|1083|MH|RtM via: California (plant)|TI|MM|640^10^0
+10.2307/2999688|*Habitat|D017753|867|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|556^7^0
+10.2307/2999688|*Biology|D001695|600|MH|RtM via: systematic biology;Forced Non-Leaf Node Lookup:biology|TI|MM|272^18^0;283^7^0
+10.2307/2999688|California|D002140|3|MH|RtM via: California|TI|MM|640^10^0
+10.2307/2999648|Animals|D000818|32371|CT|Reptiles;CT Treecode Lookup: B01.050.150.900.833 (Reptiles);Amphibians;CT Treecode Lookup: B01.050.150.900.090 (Amphibians);Butterflies;CT Treecode Lookup: B01.050.500.131 (Butterflies);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);CT Text Lookup: mammal|TI|MM;RC|92^7^0
+10.2307/2999648|*Butterflies|D002080|24864|MH|RtM via: Butterflies;Forced Lookup:butterflies;Forced Leaf Node Lookup:butterflies;checkForceMH Boosted|TI|MM;RC|127^11^0
+10.2307/2999648|Mexico|D008800|5167|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|457^6^0;175^6^0
+10.2307/2999648|*Reptiles|D012104|31371|MH|RtM via: Reptiles;Forced Non-Leaf Node Lookup:reptiles|TI|MM;RC|101^8^0
+10.2307/2999648|*Amphibians|D000663|28911|MH|RtM via: Amphibians;Forced Non-Leaf Node Lookup:amphibians|TI|MM;RC|111^10^0
+10.2307/2999648|*Birds|D001717|17736|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|85^5^0
+10.2307/2999648|*Habitats|D017753|14937|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|503^8^0
+10.2307/2999648|*Mammals|D008322|13914|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM;RC|92^7^0
+10.2307/2999668|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.150.900.248 (Birds)||MM
+10.2307/2999668|*Fossils|D005580|14073|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|1348^6^0
+10.2307/2999668|*Phylogeny|D010802|11172|MH|RtM via: Molecular Phylogenetics;Forced Leaf Node Lookup:phylogeny|TI|MM;RC|1292^19^0;1302^9^0
+10.2307/2999668|Antarctic Regions|D000864|4749|MH|RtM via: Antarctica;Forced Leaf Node Lookup:antarctica|TI|MM|123^10^0
+10.2307/2999668|Asia|D001208|6558|MH|RtM via: Asia;Forced Non-Leaf Node Lookup:asia|TI|MM;RC|114^4^0
+10.2307/2999668|Africa|D000349|5799|MH|RtM via: Africa;Forced Non-Leaf Node Lookup:africa|TI|MM;RC|341^6^0
+10.2307/2999668|North America|D009656|5631|MH|RtM via: North America;Forced Non-Leaf Node Lookup:north america|TI|MM;RC|556^13^0;422^13^0;251^13^0
+10.2307/2999668|South America|D013020|4803|MH|RtM via: South America;Forced Non-Leaf Node Lookup:south america|TI|MM;RC|278^13^0
+10.2307/2999668|*Birds|D001717|2094|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM|1319^5^0;60^4^0;214^4^0
+10.2307/2999668|Australia|D001315|2175|MH|RtM via: Australia|TI|MM|515^9^0;408^9^0;364^9^0
+10.2307/2999734|Animals|D000818|14409|CT|Butterflies;CT Treecode Lookup: B01.050.500.131 (Butterflies);Diapause;CT Treecode Lookup: G07.345.500.550.500 (Diapause)||MM;RC
+10.2307/2999734|*Butterflies|D002080|13409|MH|RtM via: Butterflies;Forced Lookup:butterflies;Forced Leaf Node Lookup:butterflies;Forced Leaf Node Lookup:butterfly;checkForceMH Boosted|TI|MM;RC|952^9^0;587^9^0;283^9^0;410^11^0
+10.2307/2999734|*Forestry|D016468|4775|MH|RtM via: Forestry;Forced Leaf Node Lookup:forestry|TI|MM|126^8^0
+10.2307/2999734|*Oviposition|D010058|3026|MH|RtM via: Oviposition;Forced Leaf Node Lookup:ovipositions|TI|MM|685^11^0
+10.2307/2999734|*Plants, Food|D010945|2108|ET|Entry Term Replacement for "Plants, Edible";RtM via: Plants, Edible;checkForceMH Boosted;Forced Non-Leaf Node Lookup:food plants|TI|MM|672^11^0
+10.2307/2999734|*Copyright|D003309|1943|MH|RtM via: Copyright;Forced Leaf Node Lookup:copyrights|TI|MM|351^9^0
+10.2307/2999734|*Cities|D002947|3825|MH|RtM via: Cities|TI|MM;RC|250^4^0
+10.2307/2999734|*Reproduction|D012098|3375|MH|RtM via: flowering|TI|MM;RC|774^9^0
+10.2307/2999734|*Diapause|D000074767|1761|MH|RtM via: Diapause;Forced Non-Leaf Node Lookup:diapause|TI|MM|698^8^0
+10.2307/2999734|*Nutrient|D000078622|282|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|813^8^0
+10.2307/2999734|*Computer Program|D012984|144|ET|Entry Term Replacement for "Software";RtM via: Computer software;Forced Non-Leaf Node Lookup:computer programs|TI|MM|319^16^0
+10.2307/2999734|Europe|D005060|399|MH|RtM via: Europe|TI|MM|621^6^0
+10.2307/2999643|Bees|D001516|75859|CT|RtM via: Apidae;RtM via: Bees;Forced Leaf Node Lookup:apidae;Forced Leaf Node Lookup:bee|TI|MM;RC|281^6^0;876^3^0;251^7^0
+10.2307/2999643|Animals|D000818|75859|CT|RtM via: Apidae;RtM via: Bees;Diptera;CT Treecode Lookup: B01.050.500.131 (Diptera)|TI|MM;RC|281^6^0;876^3^0;251^7^0
+10.2307/2999643|*Plant Nectar|D057048|55040|MH|RtM via: Plant Nectar;Forced Leaf Node Lookup:nectars;checkForceMH Boosted|TI|MM;RC|824^6^0
+10.2307/2999643|*Ecosystem|D017753|16847|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|941^10^0;739^9^0;366^10^0
+10.2307/2999643|Chile|D002677|6295|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM;RC|380^5^0
+10.2307/2999643|*Pollination|D054817|74859|MH|RtM via: Pollination|TI|MM;RC|607^10^0;511^10^0;335^10^0;69^10^0
+10.2307/2999643|*Pollen|D011058|12747|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM;RC|771^6^0
+10.2307/2999643|*Diptera|D004175|9687|MH|RtM via: Bombyliidae;RtM via: Family Syrphidae|TI|MM;RC|443^11^0;470^9^0
+10.2307/2999643|*Geraniaceae|D031314|2265|MH|RtM via: California (plant)|TI|MM|390^10^0
+10.2307/2999643|*Reward|D012201|132|MH|RtM via: Rewards;Forced Non-Leaf Node Lookup:rewards|TI|MM|790^6^0
+10.2307/2999643|California|D002140|3|MH|RtM via: California|TI|MM|390^10^0
+10.2307/2999687|*Gene Pool|D005788|6113|MH|RtM via: Gene Pool;Forced Leaf Node Lookup:gene pools|TI|MM|601^10^0
+10.2307/2999687|*Diversity, Biological|D044822|21645|ET|Entry Term Replacement for "Biodiversity";RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biological diversity|TI|MM;RC|1236^20^0
+10.2307/2999687|*Habitat|D017753|15897|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|882^7^0
+10.2307/2999687|*Crops, Agricultural|D018556|5562|MH|RtM via: Agricultural Crops|TI|MM;RC|277^5^0
+10.2307/2999687|Conservation of Natural Resources|D003247|3579|MH|Forced Non-Leaf Node Lookup:land management||MM;RC|490^15^0
+10.2307/2999687|*Biotechnology|D001709|1350|MH|RtM via: Biotechnology;Forced Non-Leaf Node Lookup:biotechnology|TI|MM|315^13^0
+10.2307/2999687|Genetic Variation|D014644|385|MH|Forced Non-Leaf Node Lookup:genetic variations||MM;RC|696^17^0
+10.2307/2999657|*Population Density|D011156|3982|MH|RtM via: Population Size;Forced Leaf Node Lookup:population sizes|TI|MM;RC|471^15^0
+10.2307/2999657|Extinction, Biological|D053476|1043|MH|||RC
+10.2307/2999657|*Statistical Distributions|D016008|762|MH|RtM via: Discrete Distribution|TI|MM|148^12^1;168^10^1
+10.2307/2999704|Animals|D000818|12361|CT|CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|120^7^0
+10.2307/2999704|*Temperature|D013696|4693|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|629^11^0;848^11^0
+10.2307/2999704|*Geography|D005843|11361|MH|RtM via: Geography|TI|MM;RC|192^12^0
+10.2307/2999704|*Biological Evolution|D005075|11016|MH|RtM via: Biological Evolution|TI|MM;RC|1135^12^0
+10.2307/2999704|*Water|D014867|477|MH|RtM via: Cold water;Forced Non-Leaf Node Lookup:water|TI|MM|527^10^0;532^5^0
+10.2307/2999732|Humans|D006801|60084922|CT|Forced Humans: families|TI|MM;RC
+10.2307/2999732|Animals|D000818|60084922|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)||MM;RC
+10.2307/2999732|*Islands|D062312|2426441|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|1001^6^0;1084^6^0;807^6^0;976^7^0;644^6^0;532^7^0;67^6^0
+10.2307/2999732|Phylogeography|D058974|39391|MH|||RC
+10.2307/2999732|*Bird|D001717|6972|ET|Entry Term Replacement for "Birds";RtM via: Aves;Forced Non-Leaf Node Lookup:bird|TI|MM;RC|836^5^0;504^5^0;82^4^0
+10.2307/2999732|*Regression Analysis|D012044|963|MH|RtM via: Regression Analysis;Forced Non-Leaf Node Lookup:regression analysis|TI|MM|1136^19^0
+10.2307/2999721|Animals|D000818|20236|CT|CT Text Lookup: mammalian|TI|MM;RC|118^9^0
+10.2307/2999721|*Isoenzymes|D007527|5295|MH|RtM via: Alloenzymes;Forced Leaf Node Lookup:allozymes|TI|MM;RC|478^8^0
+10.2307/2999721|*Genetics, Population|D005828|19236|MH|RtM via: Genetics, Population|TI|MM;RC|914^19^0
+10.2307/2999721|*Carnivory|D060435|2214|MH|RtM via: Carnivory|TI|MM|253^11^0
+10.2307/2999721|*Heterozygote|D006579|2091|MH|RtM via: Heterozygote|TI|MM;RC|529^14^0
+10.2307/2999721|*Reproduction|D012098|1659|MH|RtM via: conjugation with cellular fusion;RtM via: mating;RtM via: parasexual conjugation with cellular fusion|TI|MM|267^6^0
+10.2307/2999721|Genetic Variation|D014644|1570|MH|Forced Non-Leaf Node Lookup:genetic variations;Forced Non-Leaf Node Lookup:genetic diversity||MM;RC|926^17^0;66^17^0;1127^17^0
+10.2307/2999721|*Body Size|D049628|1413|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM|197^9^0
+10.2307/2999644|Animals|D000818|21982|CT|Butterflies;CT Treecode Lookup: B01.050.500.131 (Butterflies)||MM;RC
+10.2307/2999644|*Genetic Drift|D040961|20982|MH|RtM via: Genetic Drift;Forced Leaf Node Lookup:genetic drift|TI|MM;RC|852^13^0
+10.2307/2999644|*Phylogeny|D010802|19848|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM;RC|888^12^0
+10.2307/2999644|*Butterflies|D002080|19053|MH|RtM via: Pararge xiphioides;RtM via: Butterflies;Forced Lookup:butterflies;Forced Leaf Node Lookup:butterflies;Forced Leaf Node Lookup:butterfly;checkForceMH Boosted|TI|MM|64^18^0;986^11^0;53^9^0
+10.2307/2999644|*Founder Effect|D018703|8271|MH|RtM via: Founder Effect;Forced Leaf Node Lookup:founder effect|TI|MM|822^14^0
+10.2307/2999644|Spain|D013030|7554|MH|RtM via: Canary Islands;RtM via: Gran Canaria;RtM via: La Palma;RtM via: Tenerife;RtM via: Gomera;Forced Leaf Node Lookup:canary islands|TI|MM;RC|114^14^0;132^12^0;170^8^0;146^8^0;159^6^0
+10.2307/2999644|*Wood|D014934|4080|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|48^4^0
+10.2307/2999644|*Islands|D062312|13788|MH|RtM via: Islands|TI|MM;RC|564^6^0
+10.2307/2999644|Genetics, Population|D005828|3769|MH|||RC
+10.2307/2999644|*Phenotypic Variation|D000073537|1542|ET|Entry Term Replacement for "Biological Variation, Population";RtM via: Phenotypic Variation;Forced Non-Leaf Node Lookup:phenotypic variations|TI|MM|1032^20^0
+10.2307/2999715|*Soil|D012987|6166|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM;RC|588^4^0;662^5^0;321^4^0
+10.2307/2999715|*Climate Change|D057231|6049|MH|RtM via: Climate Change;Forced Lookup:climate change|TI|MM;RC|545^15^0
+10.2307/2999715|*Geographic Information Systems|D040362|1301|MH|Forced Leaf Node Lookup:gis|TI|MM;RC|413^3^0;725^3^0;863^3^0
+10.2307/2999715|*Golf|D006055|982|MH|RtM via: Golf;Forced Leaf Node Lookup:golf|TI|MM;RC|116^4^0;371^4^0;893^4^0
+10.2307/2999715|*Food|D005502|384|MH|RtM via: Sandwich|TI|MM|798^8^0;133^8^0
+10.2307/2999715|Environmental Monitoring|D004784|363|MH|||RC
+10.2307/2999715|*Ownership|D010067|309|MH|RtM via: possession|TI|MM|216^10^0
+10.2307/2999715|*Orchidaceae|D029595|213|MH|RtM via: Himantoglossum hircinum|TI|MM|58^23^0
+10.2307/2999697|*Bryopsida|D019068|17916|MH|RtM via: Bryum pseudotriquetrum;RtM via: Ceratodon purpureus;RtM via: Grimmia;Forced Leaf Node Lookup:ceratodons;checkForceMH Boosted|TI|MM;RC|86^22^0;147^19^0;61^7^0
+10.2307/2999697|*Isoenzymes|D007527|2952|MH|RtM via: Isoenzymes;Forced Leaf Node Lookup:isozymes|TI|MM|423^8^0;32^7^0;588^8^0
+10.2307/2999697|*Islands|D062312|2562|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|1099^7^0;227^7^0;344^7^0
+10.2307/2999697|Antarctic Regions|D000864|2172|MH|RtM via: Antarctica;Forced Leaf Node Lookup:antarctica|TI|MM;RC|248^10^0
+10.2307/2999697|*Bryophyta|D044002|12825|MH|RtM via: Mosses|TI|MM;RC|275^4^0;198^4^0
+10.2307/2999697|*Polymorphism, Genetic|D011110|408|MH|RtM via: Genetic Polymorphism|TI|MM|454^13^0
+10.2307/2999697|*Excipients|D005079|129|MH|RtM via: Dispersing Excipient|TI|MM|956^9^0
+10.2307/2999697|*Publications|D011642|105|MH|RtM via: Card (document)|TI|MM|80^4^0
+10.2307/2999665|*Technology Transfer|D018581|5106|MH|RtM via: Technology Transfer;Forced Leaf Node Lookup:technology transfers|TI|MM;RC|717^19^0
+10.2307/2999665|*Uncertainty|D035501|1893|MH|RtM via: Uncertainty;Forced Leaf Node Lookup:uncertainty|TI|MM|374^11^0
+10.2307/2999665|*Motivation|D009042|1509|MH|RtM via: Incentives;Forced Leaf Node Lookup:incentives|TI|MM|1529^9^0
+10.2307/2999665|*Biodiversity|D044822|7656|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|1377^12^0;57^12^0;1543^12^0
+10.2307/2999665|*Sale|D003132|2847|ET|Entry Term Replacement for "Commerce";RtM via: Sales - occupational activity;RtM via: Vendors|TI|MM|584^4^0;126^4^0;1152^7^0
+10.2307/2999665|*Technology|D013672|1620|MH|RtM via: Technology;Forced Non-Leaf Node Lookup:technology|TI|MM|1193^10^0;912^10^0;675^10^0;1237^10^0;1271^10^0;1401^10^0
+10.2307/2999665|Perception|D010465|1000|MH|Forced Non-Leaf Node Lookup:perception||MM|238^10^0
+10.2307/2999665|*Longitudinal Studies|D008137|51|MH|RtM via: Continuous|TI|MM|1461^7^0
+10.2307/2999742|*Altitude|D000531|4989|MH|RtM via: Altitude;Forced Leaf Node Lookup:altitudes|TI|MM;RC|762^8^0
+10.2307/2999742|Israel|D007557|912|MH|RtM via: Israel;Forced Leaf Node Lookup:israel|TI|MM|231^6^0
+10.2307/2999742|*Plant|D010944|8010|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|667^5^0;71^5^0
+10.2307/2999742|Biodiversity|D044822|1837|MH|||RC
+10.2307/2999742|Plant Dispersal|D063148|1000|MH|Forced Non-Leaf Node Lookup:plant dispersals||MM|543^15^0
+10.2307/2999706|*Biodiversity|D044822|26499|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|1773^12^0;1113^10^0;775^10^0;184^12^0
+10.2307/2999706|*Habitats|D017753|24555|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|978^8^0
+10.2307/2999658|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500 (Invertebrates)||MM
+10.2307/2999658|*Aquatic Organisms|D059001|5610|MH|RtM via: Invertebrates, Marine|TI|MM;RC|1313^20^0
+10.2307/2999658|Atlantic Ocean|D001267|4218|MH|RtM via: Atlantic Ocean;Forced Non-Leaf Node Lookup:atlantic ocean|TI|MM;RC|100^14^0
+10.2307/2999658|*Acclimatization|D000064|1032|MH|RtM via: Acclimatization|TI|MM|1088^10^0
+10.2307/2999658|Invertebrates|D007448|999|MH|Forced Non-Leaf Node Lookup:invertebrates||MM;RC|1320^13^0
+10.2307/2999733|Animals|D000818|20356|CT|Insect;CT Treecode Lookup: B01.050.500.131 (Insect)||MM;RC
+10.2307/2999733|*Ecosystem|D017753|16562|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|121^10^0
+10.2307/2999733|South Africa|D013019|3203|MH|RtM via: South Africa;Forced Leaf Node Lookup:south africa|TI|MM;RC|135^12^0
+10.2307/2999733|*Plant Galls|D010941|19356|ET|Entry Term Replacement for "Plant Tumors";RtM via: Plant Tumors|TI|MM;RC|459^11^0
+10.2307/2999733|*Insect|D007313|16836|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM;RC|736^7^0;548^7^0;350^3^0;184^6^0
+10.2307/2999733|*Climate|D002980|10869|MH|RtM via: Climate|TI|MM;RC|305^7^0
+10.2307/2999733|*Plant|D010944|10296|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|605^5^0;380^5^0;52^5^0
+10.2307/2999751|Humans|D006801|6671128|CT|Forced Humans: human|TI|MM
+10.2307/2999751|*Rainforest|D065947|277978|MH|RtM via: Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|376^11^0
+10.2307/2999751|*Forest|D065928|14796|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|408^6^0
+10.2307/2999751|*Plant|D010944|7821|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|139^5^0
+10.2307/2999751|*Activities, Human|D006802|4248|ET|Entry Term Replacement for "Human Activities";RtM via: Human Activities;Forced Non-Leaf Node Lookup:human activities|TI|MM|215^16^0
+10.2307/2999696|Animals|D000818|5590|CT|Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds);CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|44^6^0;131^7^0
+10.2307/2999696|*Birds|D001717|4590|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|196^4^0;275^5^0
+10.2307/2999696|*Body Size|D049628|3846|MH|RtM via: Body Size;Forced Non-Leaf Node Lookup:body sizes|TI|MM;RC|336^9^0;435^9^0
+10.2307/2999696|*Probability|D011336|654|MH|RtM via: Probability;Forced Non-Leaf Node Lookup:probability|TI|MM|400^11^0
+10.2307/2999649|Animals|D000818|4378|CT|Odonata;CT Treecode Lookup: B01.050.500.131 (Odonata)||MM;RC
+10.2307/2999649|*Odonata|D063191|2238|MH|RtM via: Odonata;Forced Leaf Node Lookup:odonata;checkForceMH Boosted|TI|MM;RC|192^7^0
+10.2307/2999649|*Bias|D015982|3378|MH|RtM via: Bias (Epidemiology)|TI|MM;RC|282^4^0;115^4^0
+10.2307/2999649|*Research Design|D012107|1794|MH|RtM via: Test Method|TI|MM;RC|304^6^0
+10.2307/2999649|*Health Services|D006296|492|MH|RtM via: Test Method|TI|MM|304^6^0
+10.2307/2999649|*Survey|D011795|291|ET|Entry Term Replacement for "Surveys and Questionnaires";RtM via: Surveys|TI|MM;RC|76^6^0
+10.2307/2999723|Animals|D000818|19681|CT|Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird)||MM;RC
+10.2307/2999723|United States|D014481|19681|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM;RC|1598^13^0;199^13^0
+10.2307/2999723|*Benchmarking|D019985|2068|MH|RtM via: Benchmarks;Forced Leaf Node Lookup:metrics|TI|MM|1494^7^0;886^7^0
+10.2307/2999723|*Bird|D001717|18681|ET|Entry Term Replacement for "Birds";RtM via: Aves;Forced Non-Leaf Node Lookup:bird|TI|MM;RC|1674^4^0;1431^4^0;1021^4^0;265^4^0;153^4^0
+10.2307/2999723|*Ecology|D004463|9681|MH|RtM via: Ecology|TI|MM|1845^7^0
+10.2307/2999754|Animals|D000818|2469|CT|Spider;CT Treecode Lookup: B01.050.500.131 (Spider)||MM;RC
+10.2307/2999754|*Spider|D013112|1469|ET|Entry Term Replacement for "Spiders";RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM;RC|72^6^0
+10.2307/2999754|New Caledonia|D009510|74|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|88^13^0
+10.2307/2999754|Biological Evolution|D005075|37|MH|||RC
+10.2307/2999659|Humans|D006801|1133242|CT|Forced Humans: human|TI|MM
+10.2307/2999659|Animals|D000818|1133242|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species);Birds;CT Treecode Lookup: B01.050.150.900.248 (Birds)||MM;RC
+10.2307/2999659|*Endangered Species|D056727|133582|MH|RtM via: Threatened Species;Forced Leaf Node Lookup:threatened species;checkForceMH Boosted|TI|MM;RC|262^10^1;278^7^1;81^18^0
+10.2307/2999659|*Birds|D001717|12786|MH|RtM via: Aves;Forced Non-Leaf Node Lookup:birds|TI|MM;RC|531^5^0;193^5^0;273^4^0
+10.2307/2999659|*Activities, Human|D006802|6111|ET|Entry Term Replacement for "Human Activities";RtM via: Human Activities;Forced Non-Leaf Node Lookup:human activities|TI|MM|630^16^0
+10.2307/2999778|Animals|D000818|31696|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species);Snails;CT Treecode Lookup: B01.050.500.644 (Snails)||MM;RC
+10.2307/2999778|*Islands|D062312|30696|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|1024^6^0;818^7^0;618^7^0;454^6^0;432^6^0;409^7^0;215^7^0;120^7^0;288^7^0
+10.2307/2999778|*Endangered Species|D056727|28647|MH|RtM via: Threatened Species;Forced Leaf Node Lookup:threatened species;checkForceMH Boosted|TI|MM;RC|1083^18^0;696^18^0;498^18^0;331^18^0;173^10^1;190^7^1;68^10^1;97^7^1
+10.2307/2999778|*Trees|D014197|25341|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|797^5^0
+10.2307/2999778|*Soils|D012987|7419|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|863^5^0
+10.2307/2999778|*Lakes|D060106|6162|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|151^4^0
+10.2307/2999778|Sweden|D013548|4482|MH|RtM via: Sweden;Forced Leaf Node Lookup:sweden|TI|MM|165^6^0
+10.2307/2999778|*Forest|D065928|23109|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|1010^6^0;766^6^0;79^6^0;141^6^0
+10.2307/2999778|*Snails|D012908|3723|MH|RtM via: Snails;Forced Non-Leaf Node Lookup:snails|TI|MM;RC|727^6^0;184^5^0;91^5^0
+10.2307/2999756|Animals|D000818|8293|CT|Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);Bird;CT Treecode Lookup: B01.050.150.900.248 (Bird);CT Text Lookup: vertebrates|TI|MM;RC|558^11^0
+10.2307/2999756|*Fossils|D005580|5872|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM;RC|551^6^0
+10.2307/2999756|New Caledonia|D009510|2515|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|808^13^0
+10.2307/2999756|New Zealand|D009520|2008|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM;RC|228^11^0
+10.2307/2999756|Australia|D001315|1205|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM;RC|363^10^0
+10.2307/2999756|*Biodiversity|D044822|7293|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|720^12^0
+10.2307/2999756|*Vertebrates|D014714|5664|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM;RC|558^11^0
+10.2307/2999756|*Bird|D001717|5046|ET|Entry Term Replacement for "Birds";RtM via: Aves;Forced Non-Leaf Node Lookup:bird|TI|MM;RC|611^4^0
+10.2307/2999756|Melanesia|D008542|990|MH|RtM via: Melanesian (ethnic group)|TI|MM|415^10^0
+10.2307/2999756|*Policy|D057766|414|MH|RtM via: Policy;Forced Non-Leaf Node Lookup:policy|TI|MM|798^6^0
+10.2307/2999669|Humans|D006801|74097895|CT|Forced Humans: human-induced;Forced Leaf Node Lookup:human-induced;Forced Leaf Node Lookup:humans;checkForceMH Boosted|TI|MM|522^13^0;373^5^0
+10.2307/2999669|*Edible Grain|D002523|5332874|MH|RtM via: Cereals;Forced Leaf Node Lookup:cereals;checkForceMH Boosted|TI|MM|1527^6^0
+10.2307/2999669|*Global Warming|D057232|2670898|MH|RtM via: Global Warming;Forced Leaf Node Lookup:global warming|TI|MM|205^14^0
+10.2307/2999669|*Temperature|D013696|2666467|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|448^12^0
+10.2307/2999669|*Adaptation, Physiological|D000222|48258|MH|RtM via: Adaptation|TI|MM|1076^5^0
+10.2307/2999669|*Biodiversity|D044822|21918|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biological diversity|TI|MM;RC|1489^12^0;1328^20^0
+10.2307/2999669|*Crops, Agricultural|D018556|18978|MH|RtM via: Agricultural Crops|TI|MM;RC|1228^5^0
+10.2307/2999669|*Climate Change|D057231|17529|MH|RtM via: Climate Change|TI|MM;RC|235^15^0
+10.2307/2999669|Genetic Variation|D014644|10439|MH|Forced Non-Leaf Node Lookup:genetic diversity||MM;RC|172^17^0
+10.2307/2999669|Near East|D008877|138|ET|Entry Term Replacement for "Middle East";RtM via: Near East|TI|MM|1409^9^0
+10.2307/2999731|*Biodiversity|D044822|9528|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biological diversity|TI|MM;RC|448^12^0;419^20^0;56^12^0;169^12^0
+10.2307/2999731|Conservation of Natural Resources|D003247|1486|MH|||RC
+10.2307/2999731|*Data Management|D000079803|1464|MH|RtM via: Databases|TI|MM|261^9^0
+10.2307/2999731|*Policy Making|D011050|684|MH|RtM via: Policy Making|TI|MM|198^6^1;214^6^1
+10.2307/2999731|*Information System|D007256|675|ET|Entry Term Replacement for "Information Systems";RtM via: Information Systems;Forced Non-Leaf Node Lookup:information system|TI|MM|474^18^0
+10.2307/2999731|*Internet|D020407|246|MH|RtM via: Internet;Forced Non-Leaf Node Lookup:internet|TI|MM|97^8^0
+10.2307/2999731|Decision Making|D003657|1000|MH|Forced Non-Leaf Node Lookup:decision making||MM;RC|205^15^0
+10.2307/2999731|Policy|D057766|1000|MH|Forced Non-Leaf Node Lookup:policy||MM|198^6^0
+10.2307/2999675|Switzerland|D013557|616|MH|RtM via: Switzerland;Forced Leaf Node Lookup:switzerland|TI|MM;RC|55^11^0
+10.2307/2999675|*Plant|D010944|2376|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|174^5^0
+10.2307/2999675|*Data Management|D000079803|1341|MH|RtM via: Databases|TI|MM|224^8^0
+10.2307/2999675|*Biometry|D001699|912|MH|RtM via: Science of Statistics|TI|MM|1082^13^0
+10.2307/2999675|*Causality|D015984|720|MH|RtM via: Due to|TI|MM|296^9^0
+10.2307/2999759|*Developed Countries|D019049|351|MH|Forced Leaf Node Lookup:developed nations|TI|MM|31^17^0
+10.2307/2999759|*Biodiversity|D044822|6186|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|94^12^0
+10.2307/2999759|Conservation of Natural Resources|D003247|908|MH|||RC
+10.2307/2999759|*Motivation|D009042|66|MH|RtM via: Incentives|TI|MM|123^11^0
+10.2307/2999776|*Rainforest|D065947|10696|MH|RtM via: Tropical Rainforest;Forced Leaf Node Lookup:tropical rainforests|TI|MM|854^19^0
+10.2307/2999776|*Temperature|D013696|6028|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|162^11^0
+10.2307/2999776|*Seasons|D012621|4534|MH|Forced Leaf Node Lookup:seasonal|TI|MM|683^8^0
+10.2307/2999776|*Biomes|D017753|30105|ET|Entry Term Replacement for "Ecosystem";RtM via: Biome;Forced Non-Leaf Node Lookup:biomes|TI|MM;RC|284^6^0
+10.2307/2999776|*Biodiversity|D044822|27993|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|927^12^0
+10.2307/2999776|*Climate|D002980|24270|MH|RtM via: Climate|TI|MM;RC|727^7^0;692^8^0
+10.2307/2999776|*Plant|D010944|9855|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|987^5^0;921^5^0;522^5^0;73^5^0
+10.2307/2999762|Humans|D006801|20379046|CT|Forced Humans: university|TI|MM
+10.2307/2999762|Animals|D000818|20379046|CT|Chiroptera;CT Treecode Lookup: B01.050.150.900.649.313.937 (Chiroptera)||MM;RC
+10.2307/2999762|*Chiroptera|D002685|4127660|MH|RtM via: Chiroptera;RtM via: Megachiroptera;RtM via: Suborder Microchiroptera;RtM via: Macroglossus minimus;RtM via: Rhinolophus acuminatus;RtM via: Rousettus leschenaultii;RtM via: Taphozous longimanus;Forced Leaf Node Lookup:rhinolophus;Forced Leaf Node Lookup:rousettus;Forced Leaf Node Lookup:bats;checkForceMH Boosted|TI|MM;RC|32^3^0;678^4^0;361^14^0;383^15^0;534^20^0;580^22^0;476^23^0;445^20^0
+10.2307/2999762|*Islands|D062312|826714|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM;RC|713^6^0;106^7^0;426^7^0
+10.2307/2999762|*Expeditions|D005101|822838|MH|RtM via: Expeditions;Forced Leaf Node Lookup:expeditions|TI|MM|78^11^0
+10.2307/2999762|*Universities|D014495|822709|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|62^10^0
+10.2307/2999762|Species Specificity|D013045|156401|MH|||RC
+10.2307/2999762|Sequence Analysis, DNA|D017422|2750|MH|||RC
+10.2307/2999762|*Record|D011996|69|ET|Entry Term Replacement for "Records";RtM via: Records|TI|MM|298^8^0
+10.2307/2999724|Animals|D000818|53801|CT|Insects;CT Treecode Lookup: B01.050.500.131 (Insects)||MM;RC
+10.2307/2999724|*Trees|D014197|52801|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|899^5^0
+10.2307/2999724|*Soil|D012987|25613|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|966^4^0
+10.2307/2999724|*Taiga|D066188|24389|MH|RtM via: Taiga;Forced Leaf Node Lookup:taigas|TI|MM|376^5^0
+10.2307/2999724|*Baccharis|D031175|23266|MH|RtM via: Baccharis concinna;Forced Leaf Node Lookup:baccharis;checkForceMH Boosted|TI|MM;RC|1115^18^0
+10.2307/2999724|*Rainforest|D065947|23165|MH|RtM via: Tropical Rainforest;Forced Leaf Node Lookup:rain forests|TI|MM|354^20^0;363^11^0
+10.2307/2999724|*Humidity|D006813|22097|MH|RtM via: Exposure to Humidity;RtM via: Humidity;Forced Leaf Node Lookup:humidity|TI|MM|161^8^0
+10.2307/2999724|*Altitude|D000531|21662|MH|RtM via: Altitude;Forced Leaf Node Lookup:altitudes|TI|MM;RC|730^8^0
+10.2307/2999724|*Sand|D000080463|13937|MH|RtM via: Sand;checkForceMH Boosted|TI|MM|984^5^0
+10.2307/2999724|*Grassland|D065948|13138|MH|Forced Leaf Node Lookup:savannas|TI|MM;RC|345^7^0
+10.2307/2999724|*Temperature|D013696|12788|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|148^11^0
+10.2307/2999724|*Censuses|D019352|10811|MH|RtM via: Censuses;Forced Leaf Node Lookup:census|TI|MM|878^6^0
+10.2307/2999724|Brazil|D001938|10058|MH|RtM via: Brazil;RtM via: brazilian;Forced Leaf Node Lookup:brazil|TI|MM;RC|804^6^0;661^9^0
+10.2307/2999724|*Forest|D065928|44865|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|400^6^0
+10.2307/2999724|*Insects|D007313|22686|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM;RC|841^6^0;712^7^0;121^7^0
+10.2307/2999724|*Habitats|D017753|19041|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|639^8^0;619^8^0
+10.2307/2999724|*Plants|D010944|15930|MH|RtM via: Plants|TI|MM;RC|1091^5^0;1063^6^0
+10.2307/2999724|*Tundra|D065929|12861|MH|RtM via: Tundra;Forced Non-Leaf Node Lookup:tundras|TI|MM|383^6^0
+10.2307/2999724|*Nutrient|D000078622|1005|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|991^8^0
+10.2307/2999743|Animals|D000818|41863|CT|Insects;CT Treecode Lookup: B01.050.500.131 (Insects);Thysanoptera;CT Treecode Lookup: B01.050.500.131 (Thysanoptera);Aphids;CT Treecode Lookup: B01.050.500.131 (Aphids);Coccoidea;CT Treecode Lookup: B01.050.500.131 (Coccoidea);Hymenoptera;CT Treecode Lookup: B01.050.500.131 (Hymenoptera);Mites;CT Treecode Lookup: B01.050.500.131 (Mites);Coleoptera;CT Treecode Lookup: B01.050.500.131 (Coleoptera);Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera);Tephritidae;CT Treecode Lookup: B01.050.500.131 (Tephritidae);Nematocera;CT Treecode Lookup: B01.050.500.131 (Nematocera)||MM;RC
+10.2307/2999743|*Herbivory|D060434|22985|MH|RtM via: Herbivory;Forced Leaf Node Lookup:herbivores|TI|MM;RC|1341^10^0;564^10^0
+10.2307/2999743|*Altitude|D000531|18364|MH|RtM via: Low altitude;RtM via: Altitude;Forced Leaf Node Lookup:altitudes|TI|MM;RC|1150^15^0;1086^8^0;601^8^0;507^8^0;123^8^0;1156^9^0;1000^8^0
+10.2307/2999743|*Thysanoptera|D061149|18067|MH|RtM via: Thysanoptera;Forced Leaf Node Lookup:thysanoptera;checkForceMH Boosted|TI|MM|654^12^0
+10.2307/2999743|*Aphids|D001042|16954|MH|RtM via: Aphids;Forced Leaf Node Lookup:aphididae;checkForceMH Boosted|TI|MM|823^9^0
+10.2307/2999743|*Hymenoptera|D006927|15593|MH|RtM via: Hymenoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hymenoptera|TI|MM|721^11^0
+10.2307/2999743|*Mites|D008925|13733|MH|RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mites|TI|MM;RC|953^5^0;474^5^0
+10.2307/2999743|*Coleoptera|D001517|12833|MH|RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coleoptera|TI|MM|891^10^0
+10.2307/2999743|*Lepidoptera|D007915|11990|MH|RtM via: Lepidoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:lepidoptera|TI|MM|755^11^0
+10.2307/2999743|*Islands|D062312|10817|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|217^7^0
+10.2307/2999743|*Tephritidae|D033621|8279|MH|RtM via: Tephritidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:tephritidae|TI|MM|789^11^0
+10.2307/2999743|Indonesia|D007214|6278|MH|RtM via: Indonesians;Forced Leaf Node Lookup:indonesians|TI|MM|330^10^0;206^10^0
+10.2307/2999743|*Insects|D007313|40863|ET|Entry Term Replacement for "Insecta";RtM via: Insecta;Forced Non-Leaf Node Lookup:insects|TI|MM;RC|462^7^0
+10.2307/2999743|*Biodiversity|D044822|11406|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|1312^12^0
+10.2307/2999743|*Nematocera|D000074703|4104|MH|RtM via: Cecidomyiidae|TI|MM|618^13^0
+10.2307/2999667|Animals|D000818|74764|CT|CT Text Lookup: animal;CT Text Lookup: animals|TI|MM;RC|1170^7^0
+10.2307/2999667|*Trees|D014197|73764|MH|RtM via: Trees (plant);Forced Leaf Node Lookup:trees;checkForceMH Boosted|TI|MM;RC|387^5^0;109^5^0
+10.2307/2999667|*Ecosystem|D017753|38337|MH|RtM via: Ecosystem;Forced Lookup:ecosystem|TI|MM;RC|923^9^0;1188^9^0
+10.2307/2999667|*Temperature|D013696|12138|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|661^11^0
+10.2307/2999667|*Tropical Climates|D014329|39837|ET|Entry Term Replacement for "Tropical Climate";RtM via: Tropical Climate|TI|MM;RC|307^17^0
+10.2307/2999667|*Biodiversity|D044822|34476|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|938^12^0;347^12^0;1248^12^0
+10.2307/2999667|*Plants|D010944|15060|MH|RtM via: Plants|TI|MM;RC|1159^6^0
+10.2307/2999667|*Plant Development|D063245|13491|MH|RtM via: Plant Development|TI|MM;RC|135^6^1;152^5^1
+10.2307/2999667|*Photosynthesis|D010788|8304|MH|RtM via: Photosynthesis;Forced Non-Leaf Node Lookup:photosynthesis|TI|MM;RC|833^14^0
+10.2307/2999667|*Plant Leaves|D018515|7725|MH|RtM via: Plant Leaves;Forced Non-Leaf Node Lookup:leaf|TI|MM;RC|69^4^0
+10.2307/2999667|*Vertebrate|D014714|2220|ET|Entry Term Replacement for "Vertebrates";RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|959^10^0
+10.2307/2999667|Australia|D001315|372|MH|RtM via: Australia|TI|MM|708^9^0;336^9^0
+10.2307/2999676|Animals|D000818|4435|CT|Beetle;CT Treecode Lookup: B01.050.500.131 (Beetle)||MM;RC
+10.2307/2999676|*Beetle|D001517|3435|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM;RC|406^6^0;61^6^0
+10.2307/2999676|Ecosystem|D017753|677|MH|||RC
+10.2307/2999676|Biodiversity|D044822|586|MH|||RC
+10.2307/2999676|*Feces|D005243|513|MH|RtM via: Feces|TI|MM;RC|401^4^0;56^4^0
+10.2307/2999750|New Caledonia|D009510|539|MH|Forced Leaf Node Lookup:new caledonia|TI|MM;RC|521^13^0
+10.2307/2999750|*Plant|D010944|6447|ET|Entry Term Replacement for "Plants";RtM via: Algae;RtM via: Plants|TI|MM;RC|434^5^0;578^5^0
+10.2307/2999750|*Geology|D005844|1278|MH|RtM via: Geology|TI|MM;RC|161^10^0
+10.2307/2999750|*Knowledge|D019359|639|MH|RtM via: Knowledge|TI|MM|269^9^0
+10.2307/2999713|Animals|D000818|9919|CT|Nematoda;CT Treecode Lookup: B01.050.500.500 (Nematoda)||MM;RC
+10.2307/2999713|*Biodiversity|D044822|8919|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|752^12^0;273^12^0;47^12^0
+10.2307/2999713|*Nematoda|D009348|7611|MH|RtM via: Nematodes;RtM via: Phylum Nematoda;Forced Non-Leaf Node Lookup:nematodes|TI|MM;RC|766^9^0;293^8^0;63^8^0
+10.2307/2999770|Humans|D006801|1000|CT|Forced Humans:D Transients and Migrants||MM
+10.2307/2999770|*Transients and Migrants|D014171|660|MH|RtM via: Migrants;Forced Leaf Node Lookup:migrants|TI|MM|641^8^0
+10.2307/2999770|*Biodiversity|D044822|8961|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|72^12^0;331^12^0
+10.2307/2999770|Ecosystem|D017753|1121|MH|||RC
+10.2307/2999770|*Environmental Pollution|D004787|1062|MH|RtM via: Pollution|TI|MM|865^9^0
+10.2307/2999770|*Biological Phenomena|D001686|735|MH|RtM via: Tissue Growth|TI|MM|927^7^0
+10.2307/2999770|*Nutrient|D000078622|189|ET|Entry Term Replacement for "Nutrients";RtM via: Nutrients;Forced Non-Leaf Node Lookup:nutrients|TI|MM|840^8^0
+10.2307/2999703|*Forest|D065928|11769|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM;RC|456^6^0;124^6^0;253^6^0
+10.2307/2999703|*Biodiversity|D044822|9237|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|635^12^0;483^12^0
+10.2307/2999703|*Fund|D005376|699|ET|Entry Term Replacement for "Financial Management";RtM via: Funds;Forced Non-Leaf Node Lookup:fund|TI|MM|48^4^0
+10.2307/2999705|Humans|D006801|41628|CT|CT Text Lookup: human|TI|MM;RC|32^5^0
+10.2307/2999705|*Acquired Immunodeficiency Syndrome|D000163|40628|MH|RtM via: Acquired Immunodeficiency Syndrome;Forced Leaf Node Lookup:acquired immune deficiency syndrome;Forced Leaf Node Lookup:aids|TI|MM;RC|826^35^0;863^4^0
+10.2307/2999705|*Goals|D006040|3898|MH|Forced Leaf Node Lookup:goal|TI|MM|182^4^0
+10.2307/2999705|*HIV Infections|D015658|21441|MH|RtM via: HIV;Forced Non-Leaf Node Lookup:hiv-positive|TI|MM;RC|237^3^0;32^28^0;520^12^0;62^3^0
+10.2307/2999705|*HIV Seropositivity|D006679|14571|MH|RtM via: HIV Seropositivity|TI|MM;RC|520^12^0
+10.2307/2999705|*Genes, Viral|D005814|4308|MH|RtM via: Genes, Viral;Forced Non-Leaf Node Lookup:viral genes|TI|MM;RC|729^11^0;592^11^0
+10.2307/2999705|HIV|D006678|3058|MH|Forced Non-Leaf Node Lookup:human immunodeficiency virus||MM;RC|32^28^0
+10.2307/2999705|*Technology|D013672|267|MH|RtM via: Technology;Forced Non-Leaf Node Lookup:technology|TI|MM|143^10^0
+10.2307/2999705|Immunity|D007109|1000|MH|Forced Non-Leaf Node Lookup:immune function||MM|417^15^0
+10.2307/2999707|Cattle|D002417|13736|CT|RtM via: Cattle;Forced Leaf Node Lookup:cattle;CT Text Lookup: cattle|TI|MM;RC|909^6^0;557^6^0
+10.2307/2999707|Animals|D000818|13736|CT|RtM via: Cattle;Mites;CT Treecode Lookup: B01.050.500.131 (Mites);CT Text Lookup: cattle|TI|MM;RC|909^6^0;557^6^0
+10.2307/2999707|*Droughts|D055864|12736|MH|RtM via: Droughts;Forced Leaf Node Lookup:droughts|TI|MM;RC|1014^7^0;761^7^0;296^7^0;184^7^0;378^7^0;867^7^0;1079^7^0
+10.2307/2999707|*Soil|D012987|8215|MH|RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soil|TI|MM;RC|886^4^0;1106^4^0
+10.2307/2999707|*Temperature|D013696|6697|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM;RC|249^11^0;341^11^0
+10.2307/2999707|*Mites|D008925|6535|MH|RtM via: Mites;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mites|TI|MM;RC|670^4^0;476^5^0;50^5^0
+10.2307/2999707|*Grassland|D065948|5005|MH|Forced Leaf Node Lookup:grasslands|TI|MM;RC|571^10^0;693^9^0
+10.2307/2999707|*Hot Temperature|D006358|3397|MH|RtM via: Heat (physical force);Forced Leaf Node Lookup:heat|TI|MM|200^4^0
+10.2307/2999707|*Forests|D065928|5388|MH|RtM via: Forests;Forced Non-Leaf Node Lookup:forests|TI|MM|524^7^0
+10.2307/2999707|Ecosystem|D017753|1146|MH|||RC
+10.2307/2999707|*Drug Tolerance|D004361|252|MH|RtM via: Drug Tolerance|TI|MM|387^9^0;261^9^0;28^9^0
+10.2307/2999707|*Foods, Specialized|D019648|183|MH|RtM via: frosties|TI|MM|193^5^0
+10.2307/2999650|Animals|D000818|18109|CT|Spider;CT Treecode Lookup: B01.050.500.131 (Spider);Beetle;CT Treecode Lookup: B01.050.500.131 (Beetle);Arthropods;CT Treecode Lookup: B01.050.500.131 (Arthropods)||MM;RC
+10.2307/2999650|*Spider|D013112|9468|ET|Entry Term Replacement for "Spiders";RtM via: Spiders;checkForceMH Boosted;Forced Non-Leaf Node Lookup:spiders|TI|MM;RC|324^6^0;90^6^0
+10.2307/2999650|*Beetle|D001517|7872|ET|Entry Term Replacement for "Coleoptera";RtM via: Order Coleoptera;checkForceMH Boosted;Forced Non-Leaf Node Lookup:beetles|TI|MM;RC|79^6^0;265^6^0
+10.2307/2999650|*Arthropods|D001181|7737|MH|RtM via: Arthropods;checkForceMH Boosted;Forced Non-Leaf Node Lookup:arthropods|TI|MM|782^10^0
+10.2307/2999650|*Farms|D000072480|3579|MH|RtM via: Farming environment;Forced Leaf Node Lookup:farm|TI|MM|119^4^0
+10.2307/2999650|*Habitat|D017753|17109|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM;RC|633^7^0
+10.2307/2999650|*Woodlands|D065928|15885|ET|Entry Term Replacement for "Forests";RtM via: Forests;Forced Non-Leaf Node Lookup:woodlands|TI|MM;RC|304^8^0;368^9^0;209^8^0;493^8^0;552^8^0;624^8^0
+10.2307/2999720|Animals|D000818|32675|CT|Endangered Species;CT Treecode Lookup: B01.050.050 (Endangered Species)||MM;RC
+10.2307/2999720|*Endangered Species|D056727|31675|MH|RtM via: Endangered Species;Forced Leaf Node Lookup:endangered species;checkForceMH Boosted|TI|MM;RC|1629^18^0
+10.2307/2999720|*Phylogeny|D010802|15953|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM;RC|2270^12^0
+10.2307/2999720|*Population Density|D011156|9731|MH|RtM via: Population Size;Forced Leaf Node Lookup:population sizes|TI|MM|935^15^0
+10.2307/2999720|*Quantitative Trait Loci|D040641|8219|MH|RtM via: Quantitative Trait Loci;Forced Leaf Node Lookup:quantitative trait loci|TI|MM|1269^23^0
+10.2307/2999720|*Isoenzymes|D007527|7253|MH|RtM via: Alloenzymes;Forced Leaf Node Lookup:allozymes|TI|MM;RC|1166^8^0;1093^8^0;210^8^0;1237^8^0
+10.2307/2999720|Plant Breeding|D000069600|6223|MH|Replacement of Breeding Plants Found||MM
+10.2307/2999720|*Genetics, Population|D005828|25770|MH|RtM via: Genetics, Population;Forced Non-Leaf Node Lookup:population genetics|TI|MM;RC|1496^18^0
+10.2307/2999720|*Natural Selection|D012641|20022|ET|Entry Term Replacement for "Selection, Genetic";RtM via: Natural Selection;Forced Non-Leaf Node Lookup:natural selection|TI|MM;RC|518^17^0
+10.2307/2999720|*Genotype|D005838|9177|MH|RtM via: Genotype;Forced Non-Leaf Node Lookup:genotypes|TI|MM;RC|442^8^0
+10.2307/2999720|Genetic Variation|D014644|3910|MH|Forced Non-Leaf Node Lookup:genetic diversity||MM;RC|59^17^0;304^17^0;585^17^0;998^17^0;1435^17^0;2065^17^0
+10.2307/2999753|Animals|D000818|24202|CT|Moth;CT Treecode Lookup: B01.050.500.131 (Moth);Lepidoptera;CT Treecode Lookup: B01.050.500.131 (Lepidoptera)||MM;RC
+10.2307/2999753|*Ecosystem|D017753|17427|MH|RtM via: Ecosystem;Forced Lookup:ecosystems|TI|MM;RC|942^10^0
+10.2307/2999753|*Moth|D009036|5808|ET|Entry Term Replacement for "Moths";RtM via: Moths;checkForceMH Boosted;Forced Non-Leaf Node Lookup:moth|TI|MM;RC|618^4^0;536^4^0;380^4^0;147^4^0
+10.2307/2999753|*Soils|D012987|5115|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|810^5^0
+10.2307/2999753|New Caledonia|D009510|2313|MH|RtM via: New Caledonia;Forced Leaf Node Lookup:new caledonia|TI|MM;RC|95^13^0
+10.2307/2999753|Australia|D001315|2309|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM;RC|237^10^0
+10.2307/2999753|*Biodiversity|D044822|23202|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|127^12^0
+10.2307/2999753|*Acclimatization|D000064|1692|MH|RtM via: Acclimatization|TI|MM|752^10^0
+10.2307/2999753|*Adaptation, Physiological|D000222|1191|MH|RtM via: Adaptation|TI|MM|752^10^0
+10.2307/2999753|*Mineral|D008903|465|ET|Entry Term Replacement for "Minerals";RtM via: Minerals;Forced Non-Leaf Node Lookup:minerals|TI|MM|791^7^0
+10.2307/2999753|*Attention|D001288|66|MH|RtM via: Attention;Forced Non-Leaf Node Lookup:attention|TI|MM|575^9^0
+10.2307/2999666|*Plant|D010944|7617|ET|Entry Term Replacement for "Plants";RtM via: Plants|TI|MM;RC|927^5^0;747^5^0;39^5^0
+10.2307/2999666|Biodiversity|D044822|2110|MH|||RC
+10.2307/2999666|*Physical Phenomena|D055585|441|MH|RtM via: Energy, Physics|TI|MM|302^6^0
+10.2307/2999666|*Multivariate Analysis|D015999|396|MH|RtM via: multiple regression|TI|MM|599^19^0
+10.2307/2999666|Positron-Emission Tomography|D049268|1000|MH|Forced Non-Leaf Node Lookup:pet||MM|284^3^0;419^3^0;916^3^0
+10.2307/2999666|Africa, Southern|D000353|3|MH|RtM via: Africa, Southern|TI|MM|230^15^0
+10.2307/2999694|*Social Conditions|D012924|1168|MH|RtM via: Living Conditions;Forced Leaf Node Lookup:living conditions|TI|MM|922^17^0;510^17^0
+10.2307/2999694|*Biodiversity|D044822|9669|MH|RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biodiversity|TI|MM;RC|313^12^0;51^12^0
+10.2307/2999694|*Biological Adaptation|D000220|2298|ET|Entry Term Replacement for "Adaptation, Biological";RtM via: Biological Adaptation;Forced Non-Leaf Node Lookup:biological adaptation|TI|MM|1082^22^0;397^22^0
+10.2307/2999694|*Adaptation, Physiological|D000222|2199|MH|RtM via: Adaptation|TI|MM;RC|580^5^0;95^11^0
+10.2307/2999694|*Phenotype|D010641|1443|MH|RtM via: Trait|TI|MM;RC|226^6^0
+10.2307/2999694|*Longitudinal Studies|D008137|138|MH|RtM via: Continuous|TI|MM|560^11^0

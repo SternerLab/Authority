@@ -1,0 +1,721 @@
+1315648|United States|D014481|37319|CT|Forced Leaf Node Lookup:american|TI|MM|56^8^0
+1315648|Animals|D000818|37319|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica);Corals;CT Treecode Lookup: B01.050.500.308 (Corals)|TI|MM
+1315648|*Thoracica|D001468|13734|MH|RtM via: Thoracica;Forced Leaf Node Lookup:barnacles;checkForceMH Boosted|TI|MM|765^9^0
+1315648|*Longevity|D008136|7140|MH|RtM via: Life Span;RtM via: Longevity;Forced Leaf Node Lookup:life spans|TI|MM|468^9^0
+1315648|*Corals|D037421|6642|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|787^6^0
+1315648|6-Ketoprostaglandin F1 alpha|D015121|36319|MH|||RC
+1315648|Umbilical Veins|D014471|13033|MH|||RC
+1315634|*Islands|D062312|12359|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|772^7^0;127^6^0
+1315634|Endothelium, Vascular|D004730|48995|MH|||RC
+1315634|Lipoproteins, LDL|D008077|32793|MH|||RC
+1315634|North America|D009656|1000|MH|Forced Non-Leaf Node Lookup:north america||MM|1166^13^0
+4095813|United States|D014481|93520|CT|Forced Leaf Node Lookup:american|TI|MM|1492^8^0
+4095813|Animals|D000818|93520|CT|Sharks;CT Treecode Lookup: B01.050.150.900.493 (Sharks)||MM
+4095813|Iran|D007492|22806|MH|RtM via: Iran;Forced Lookup:iranian;Forced Leaf Node Lookup:iran|TI|MM|584^4^0;228^4^0;2616^7^0
+4095813|*Limestone|D002119|12336|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|632^10^0;737^9^0
+4095813|Colorado|D003120|11832|MH|RtM via: Colorado;Forced Leaf Node Lookup:colorado|TI|MM|2753^8^0
+4095813|Montana|D009009|11832|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|2882^7^0
+4095813|*Arm|D001132|11403|MH|Forced Leaf Node Lookup:arm|TI|MM|1025^3^0
+4095813|Australia|D001315|11403|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|1551^10^0
+4095813|China|D002681|11403|MH|Forced Leaf Node Lookup:chinese|TI|MM|1539^7^0
+4095813|Cecal Neoplasms|D002430|92520|MH|||RC
+4095813|Appendicitis|D001064|54950|MH|||RC
+4095813|Sharks|D012754|1000|MH|Forced Non-Leaf Node Lookup:sharks||MM|1696^5^0
+1315574|*Phylogeny|D010802|34044|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic analyses;Forced Leaf Node Lookup:phylogenetic analysis|TI|MM|1156^21^0;322^21^0
+1315574|*Lakes|D060106|12646|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|190^4^0
+1315574|Xylose|D014994|48227|MH|||RC
+1315574|Hexokinase|D006593|45283|MH|||RC
+1315574|*Thorax|D013909|354|MH|RtM via: Chest;Forced Non-Leaf Node Lookup:thorax|TI|MM|24^6^0
+1315574|North America|D009656|3|MH|RtM via: North America|TI|MM|878^13^0
+1315574|Scotland|D012606|3|MH|RtM via: Scotland|TI|MM|896^8^0
+1315604|Animals|D000818|43117|CT|Thoracica;CT Treecode Lookup: B01.050.500.131 (Thoracica)||MM;RC
+1315604|*Thoracica|D001468|27369|MH|RtM via: Menesiniella;RtM via: Tamiosoma;RtM via: Balanus;Forced Leaf Node Lookup:balanus;checkForceMH Boosted|TI|MM|220^12^0;556^9^0;178^9^0;346^7^0;424^7^0
+1315604|Maryland|D008396|13452|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM|677^8^0;781^8^0
+1315604|North Carolina|D009657|13452|MH|RtM via: North Carolina;Forced Leaf Node Lookup:north carolina|TI|MM|882^14^0
+1315604|Virginia|D014768|13452|MH|RtM via: Virginia;Forced Leaf Node Lookup:virginia|TI|MM|728^8^0
+1315604|Florida|D005431|13197|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|603^7^0
+1315604|*Fossils|D005580|12447|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|490^6^0
+1315604|Synaptic Transmission|D009435|42117|MH|||RC
+1315604|Cyclic GMP|D006152|27567|MH|||RC
+1315604|Europe|D005060|429|MH|RtM via: Europe|TI|MM|1080^6^0
+1315604|California|D002140|0|MH|RtM via: California|TI|MM|834^10^0
+40926424|*Limestone|D002119|1862|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|323^9^0
+40926424|China|D002681|1475|MH|RtM via: China;Forced Leaf Node Lookup:chinese|TI|MM;RC|2169^5^0;2119^5^0;2253^7^0
+40926424|*Physical Phenomena|D055585|1350|MH|RtM via: Sedimentation process;RtM via: Affinity|TI|MM|1962^13^0;2147^8^0
+40926424|*Preservation, Biological|D011309|1329|MH|RtM via: Biologic Preservation|TI|MM;RC|310^9^0
+40926424|*Minerals|D008903|1011|MH|RtM via: Shale|TI|MM|479^5^0
+40926424|*Time Perception|D013998|774|MH|RtM via: Time Interval|TI|MM|1813^13^0
+40926424|India|D007194|432|MH|RtM via: India|TI|MM|2240^5^0
+1315632|United States|D014481|23824|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american;Forced Non-Leaf Node Lookup:united states|TI|MM|875^13^0;1578^8^0;1356^8^0;843^8^0
+1315632|Humans|D006801|1000|CT|Forced Humans:D Immigrants||MM
+1315632|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.131.365.190 (Decapoda)||MM
+1315632|Mexico|D008800|22824|MH|RtM via: Mexico;Forced Lookup:baja california;Forced Leaf Node Lookup:baja california;Forced Leaf Node Lookup:mexico|TI|MM|905^6^0;194^6^0;173^15^0
+1315632|*Fossils|D005580|9111|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|40^6^0
+1315632|Adenosine Triphosphate|D000255|20073|MH|||RC
+1315632|Energy Metabolism|D004734|18847|MH|||RC
+1315632|*Immigrants|D054242|1299|ET|Entry Term Replacement for "Emigrants and Immigrants";RtM via: Immigrant (person);Forced Non-Leaf Node Lookup:immigrants|TI|MM|1457^10^0
+1315632|Decapoda|D033364|1000|MH|Forced Non-Leaf Node Lookup:decapod crustaceans;Forced Non-Leaf Node Lookup:decapoda;Forced Non-Leaf Node Lookup:decapods||MM|47^19^0;1685^19^0;733^8^0;2091^8^0;791^7^0;1946^7^0
+1315632|South America|D013020|1000|MH|Forced Non-Leaf Node Lookup:south america||MM|943^13^0
+1315632|Central America|D002489|1566|MH|RtM via: Central America|TI|MM|1475^16^0;913^15^0
+1315632|Caribbean|D017691|1518|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|894^9^0
+1315632|*Longitudinal Studies|D008137|114|MH|RtM via: Continuous|TI|MM|654^7^0
+1315629|Animals|D000818|66832|CT|Tarsiidae;CT Treecode Lookup: B01.050.150.900.649.313.988.400.800 (Tarsiidae);CT Text Lookup: primate|TI|MM;RC|119^8^0
+1315629|*Tarsiidae|D016699|36298|MH|RtM via: Genus Tarsius;RtM via: Tarsiidae;Forced Leaf Node Lookup:tarsiers;checkForceMH Boosted|TI|MM|106^7^0
+1315629|*Paleontology|D010163|18473|MH|RtM via: Paleontology;Forced Leaf Node Lookup:paleontology|TI|MM|2967^12^0
+1315629|*Genetic Speciation|D049810|17873|MH|RtM via: Genetic Speciation;Forced Leaf Node Lookup:cladogenesis|TI|MM|1969^12^0;1354^12^0
+1315629|Wyoming|D014959|17423|MH|RtM via: Wyoming;Forced Leaf Node Lookup:wyoming|TI|MM|327^7^0
+1315629|Polychlorinated Dibenzodioxins|D000072317|65832|MH|||RC
+1315629|Benzoflavones|D001571|61758|MH|||RC
+1315560|*Primula|D031825|68936|MH|RtM via: Primula;RtM via: Primula obconica;Forced Leaf Node Lookup:primroses;checkForceMH Boosted|TI|MM|1337^8^0
+1315560|*Canes|D002183|34054|MH|RtM via: CANE, INCLUDES CANES OF ALL MATERIALS, ADJUSTABLE OR FIXED, WITH TIP;Forced Leaf Node Lookup:cane|TI|MM|640^4^0;223^4^0;172^4^0
+1315560|Arkansas|D001131|33973|MH|RtM via: Arkansas;Forced Leaf Node Lookup:arkansas|TI|MM|1217^8^0;139^8^0
+1315560|*Golf|D006055|33973|MH|Forced Leaf Node Lookup:golf|TI|MM|1360^4^0
+1315560|*Grassland|D065948|33973|MH|Forced Leaf Node Lookup:prairies|TI|MM|196^7^0;391^7^0;650^7^0
+1315560|Oklahoma|D009825|33973|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|1399^8^0
+1315560|Renin|D012083|148475|MH|||RC
+1315560|Enalapril|D004656|122516|MH|||RC
+1315560|Europe|D005060|3|MH|RtM via: Europe|TI|MM|1955^6^0
+4095815|Animals|D000818|41164|CT|Dinosaurs;CT Treecode Lookup: B01.050.150.900.833 (Dinosaurs)|TI|MM
+4095815|*Dinosaurs|D025061|24021|MH|RtM via: Dinosaurs;Forced Leaf Node Lookup:dinosaurs;checkForceMH Boosted|TI|MM|1782^9^0
+4095815|*Appendix|D001065|16872|MH|RtM via: Appendix;Forced Leaf Node Lookup:appendix|TI|MM|1081^8^0
+4095815|*Osteology|D059166|13686|MH|RtM via: Osteology;Forced Leaf Node Lookup:osteology|TI|MM|840^9^0;271^12^0
+4095815|*Fossils|D005580|11607|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|2467^6^0;2197^6^0;1543^6^0;1221^6^0;922^6^0;758^6^0
+4095815|*Rivers|D045483|10188|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|195^5^0
+4095815|*Phylogeny|D010802|9801|MH|RtM via: Phylogenetic Analysis;Forced Lookup:phylogenetic|TI|MM|1124^12^0
+4095815|Montana|D009009|9378|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|1331^7^0;214^7^0
+4095815|Pancreatitis|D010195|40164|MH|||RC
+4095815|Pancreas|D010179|29087|MH|||RC
+4095815|*Dissection|D004210|3636|MH|RtM via: Tissue Dissection;Forced Non-Leaf Node Lookup:dissections|TI|MM|706^10^0;530^10^0
+4095815|*Skeleton|D012863|3033|MH|RtM via: Skeleton;Forced Non-Leaf Node Lookup:skeletons|TI|MM|2213^9^0;1559^9^0;1434^8^0;1207^8^0
+4095815|*Longitudinal Studies|D008137|654|MH|RtM via: Continuous|TI|MM|2450^7^0
+4095815|North America|D009656|3|MH|RtM via: North America|TI|MM|2226^13^0
+1315582|Animals|D000818|45382|CT|Nephropidae;CT Treecode Lookup: B01.050.500.131 (Nephropidae)||MM;RC
+1315582|*Nephropidae|D008121|21759|MH|RtM via: Metanephrops;Forced Leaf Node Lookup:lobster;checkForceMH Boosted|TI|MM|1413^12^0;1097^12^0;250^12^0;735^7^0
+1315582|Antarctic Regions|D000864|9480|MH|RtM via: Antarctica;Forced Leaf Node Lookup:antarctica|TI|MM|1344^10^0;682^10^0;206^10^0
+1315582|Calcimycin|D000001|44382|MH|||RC
+1315582|Tetradecanoylphorbol Acetate|D013755|21928|MH|||RC
+1315582|*Habitats|D017753|153|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|1462^8^0
+30219176|Female|D005260|344304|CT|Polycystic Ovary Syndrome;CT Treecode Lookup: C13.351.500.056 (Polycystic Ovary Syndrome)||RC
+30219176|Humans|D006801|344304|CT|Polycystic Ovary Syndrome;CT Treecode Lookup: C13.351.500.056 (Polycystic Ovary Syndrome)||RC
+30219176|Animals|D000818|344304|CT|Larva;CT Treecode Lookup: B05.500 (Larva);Larva;CT Treecode Lookup: G07.345.500.550.500 (Larva);Arthropods;CT Treecode Lookup: B01.050.500.131 (Arthropods)||MM
+30219176|*Sex Characteristics|D012727|37593|MH|RtM via: sexual dimorphism (cellular);Forced Leaf Node Lookup:dimorphism|TI|MM|1017^10^0
+30219176|*Larva|D007814|34470|MH|RtM via: Larva;checkForceMH Boosted;Forced Non-Leaf Node Lookup:larva|TI|MM|1172^5^0
+30219176|*Arthropods|D001181|34197|MH|RtM via: Arthropods;checkForceMH Boosted;Forced Non-Leaf Node Lookup:arthropods|TI|MM|63^10^0
+30219176|*Exoskeleton Device|D000067190|33789|MH|RtM via: Exoskeleton;Forced Leaf Node Lookup:exoskeleton|TI|MM|1123^11^0
+30219176|British Columbia|D001955|33174|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|554^16^0
+30219176|*Explosions|D005107|33171|MH|Forced Leaf Node Lookup:explosions|TI|MM|450^9^0
+30219176|Cyproterone Acetate|D017373|343304|MH|||RC
+30219176|Polycystic Ovary Syndrome|D011085|50528|MH|||RC
+30219176|*Thorax|D013909|2820|MH|RtM via: Chest;Forced Non-Leaf Node Lookup:thorax|TI|MM|1342^6^0
+30219176|China|D002681|12|MH|RtM via: China|TI|MM|755^5^0
+1315516|Animals|D000818|61695|CT|Forced Lookup:metazoan;Corals;CT Treecode Lookup: B01.050.500.308 (Corals)|TI|MM;RC|77^8^0
+1315516|*Corals|D037421|13297|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1288^6^0;812^6^0
+1315516|*Fossils|D005580|13087|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|247^6^0
+1315516|Inorganic Pyrophosphatase|D043564|60695|MH|||RC
+1315516|Vacuoles|D014617|57198|MH|||RC
+1315516|*Accidents|D000059|48|MH|RtM via: Accidents;Forced Non-Leaf Node Lookup:accidents|TI|MM|1022^9^0
+1315516|Growth and Development|D048788|1000|MH|Forced Non-Leaf Node Lookup:growth and development||MM|42^22^0
+1315516|Genetic Variation|D014644|1000|MH|Forced Non-Leaf Node Lookup:genetic variations||MM|559^17^0
+1315516|Clone Cells|D002999|1000|MH|Forced Non-Leaf Node Lookup:clones||MM|135^5^0
+1315646|Pakistan|D010154|17604|MH|RtM via: Pakistan;Forced Leaf Node Lookup:pakistan|TI|MM|1168^8^0
+1315646|Sicily|D012802|17604|MH|RtM via: Sicily;Forced Leaf Node Lookup:sicily|TI|MM|1239^6^0
+1315646|Platelet Aggregation|D010974|95231|MH|||RC
+1315646|Epinephrine|D004837|51496|MH|||RC
+1315646|North America|D009656|3|MH|RtM via: North America|TI|MM|1066^13^0
+1315492|Western Australia|D014904|9996|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|1218^17^0;812^17^0;387^17^0;82^17^0
+1315492|Australia|D001315|9993|MH|Forced Leaf Node Lookup:australian;Geo Lookup:australian|TI;AB|MM|449^10^0
+1315492|Respiratory Syncytial Viruses|D012136|34511|MH|||RC
+1315492|Macrophages, Alveolar|D016676|28193|MH|||RC
+1315492|Europe|D005060|3|MH|RtM via: Europe|TI|MM|1078^6^0;775^6^0;482^6^0;241^6^0
+1315492|North Africa|D000352|3|ET|Entry Term Replacement for "Africa, Northern";RtM via: Africa, Northern;RtM via: Sahara|TI|MM|1159^12^0;493^12^0;252^12^0;1142^6^0
+1315585|United States|D014481|433920|CT|Forced Leaf Node Lookup:american|TI|MM|639^8^0
+1315585|Animals|D000818|433920|CT|Gastropod;CT Treecode Lookup: B01.050.500.644 (Gastropod);Bivalves;CT Treecode Lookup: B01.050.500.644 (Bivalves)|TI|MM
+1315585|*Gastropod|D049851|62918|ET|Entry Term Replacement for "Gastropoda";RtM via: Euspira;RtM via: Polinices;RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|1555^7^0;1544^9^0;1445^9^0
+1315585|*Islands|D062312|48083|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|686^7^0
+1315585|*Refugium|D000068236|47894|MH|RtM via: Refugium;Forced Leaf Node Lookup:refugium|TI|MM|850^8^0
+1315585|Svalbard|D013538|46883|MH|RtM via: Svalbard;Forced Leaf Node Lookup:svalbard|TI|MM|695^8^0
+1315585|Alaska|D000413|46787|MH|RtM via: Alaska;Forced Leaf Node Lookup:alaska|TI|MM|104^6^0
+1315585|*Water|D014867|46679|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|286^5^0
+1315585|Canada|D002170|46586|MH|RtM via: Canadian;Forced Leaf Node Lookup:canadian;Geo Lookup:canadian|TI;AB|MM|670^8^0
+1315585|Ganciclovir|D015774|432920|MH|||RC
+1315585|Cytomegalovirus Infections|D003586|236754|MH|||RC
+1315585|*Bivalves|D049872|18231|ET|Entry Term Replacement for "Bivalvia";RtM via: Caryocorbula;RtM via: Corbula;RtM via: Jupiteria;RtM via: Nucula;RtM via: Nuculana;RtM via: Yoldia;RtM via: Gari (invertebrate);RtM via: Cyrtodaria;RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|1679^12^0;1670^7^0;1872^9^0;1835^6^0;1862^8^0;2002^6^0;1367^6^0;1739^4^0;1342^4^0;1719^10^0;1584^7^0;1170^8^0;1333^8^0;1634^7^0
+1315585|*Biota|D058448|321|MH|RtM via: Biological Community;Forced Non-Leaf Node Lookup:biota|TI|MM|292^5^0
+1315585|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|82^5^0;211^5^0;323^5^0;455^5^0;504^5^0;567^5^0;773^5^0;813^5^0;831^5^0;982^5^0;1075^5^0
+1315585|Europe|D005060|1989|MH|RtM via: Europe|TI|MM|722^6^0
+1315520|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.644.400.750 (Snail)||MM
+1315520|*Calcium|D002118|41946|MH|Forced Leaf Node Lookup:calcium;checkForceMH Boosted|TI|MM;RC|2268^7^0
+1315520|*Soils|D012987|14591|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|2295^5^0;2128^5^0
+1315520|*Phylogeny|D010802|14285|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|1300^9^0
+1315520|Bermuda|D001605|13829|MH|RtM via: Bermuda;Forced Leaf Node Lookup:bermuda|TI|MM|155^7^0
+1315520|Egtazic Acid|D004533|51571|MH|||RC
+1315520|NADP|D009249|49321|MH|||RC
+1315520|*Carbonate|D002254|2064|ET|Entry Term Replacement for "Carbonates";RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|2174^9^0
+1315520|*Snail|D012908|888|ET|Entry Term Replacement for "Snails";RtM via: Snails;Forced Non-Leaf Node Lookup:snails|TI|MM|144^5^0
+1315520|Body Weight|D001835|1000|MH|Forced Non-Leaf Node Lookup:body weights||MM|826^11^0
+1315522|Horses|D006736|50583|CT|RtM via: Equus caballus;Forced Leaf Node Lookup:horses|TI|MM|1426^6^0
+1315522|Animals|D000818|50583|CT|RtM via: Equus caballus;Catfish;CT Treecode Lookup: B01.050.150.900.493 (Catfish);CT Text Lookup: animal;CT Text Lookup: animals;CT Text Lookup: fish;CT Text Lookup: horns;CT Text Lookup: mammal;CT Text Lookup: vertebrates|TI|MM;RC|1426^6^0;247^7^0;478^4^0;1400^5^0;1364^7^0;30^11^0
+1315522|*Seasons|D012621|15227|MH|RtM via: Seasons;RtM via: Winter;RtM via: Summer;Forced Leaf Node Lookup:seasons|TI|MM|1228^6^0;836^6^0;713^6^0;1473^6^0;1346^6^0;912^6^0;793^6^0
+1315522|*Lakes|D060106|12248|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|1006^4^0
+1315522|*Catfish|D002397|11381|ET|Entry Term Replacement for "Catfishes";RtM via: Siluriformes;checkForceMH Boosted;Forced Non-Leaf Node Lookup:catfish|TI|MM|1288^7^0
+1315522|*Fossils|D005580|11306|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|382^6^0;451^6^0
+1315522|*Dentition|D003817|9881|MH|Forced Leaf Node Lookup:dentitions|TI|MM|1410^10^0;1442^10^0
+1315522|Nebraska|D009329|9881|MH|RtM via: Nebraska (geographic location);Forced Leaf Node Lookup:nebraska|TI|MM|1562^8^0;1170^8^0
+1315522|Wyoming|D014959|9881|MH|RtM via: Wyoming;Forced Leaf Node Lookup:wyoming|TI|MM|573^7^0
+1315522|Electron Transport|D004579|49583|MH|||RC
+1315522|Electron Transport Complex IV|D003576|35270|MH|||RC
+1315522|*Mammals|D008322|8022|MH|RtM via: Mammals;Forced Non-Leaf Node Lookup:mammals|TI|MM|1364^7^0
+1315522|*Population Dynamics|D011157|2736|MH|RtM via: Population Dynamics;Forced Non-Leaf Node Lookup:population dynamics|TI|MM|359^19^0
+1315522|*Carbonate|D002254|2391|ET|Entry Term Replacement for "Carbonates";RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|975^9^0
+1315522|*Vertebrae|D013131|843|ET|Entry Term Replacement for "Spine";RtM via: Bone structure of spine;Forced Non-Leaf Node Lookup:vertebrae|TI|MM|1296^9^0
+4095817|Humans|D006801|1000|CT|Forced Humans:D Survivors||MM
+4095817|*Facies|D019066|24934|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|1878^6^0;1184^6^0
+4095817|*Extinction, Biological|D053476|24349|MH|RtM via: Extinction, Mass;Forced Leaf Node Lookup:mass extinctions|TI|MM|1524^15^0;350^15^0
+4095817|Abdominal Injuries|D000007|313966|MH|||RC
+4095817|Wounds, Nonpenetrating|D014949|170066|MH|||RC
+4095817|*Disasters|D004190|1005|MH|RtM via: Disasters;Forced Non-Leaf Node Lookup:disasters|TI|MM|1631^8^0
+4095817|*Carbonates|D002254|516|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|2112^9^0;1941^10^0;1811^9^0
+4095817|*Survivors|D017741|315|MH|RtM via: Survivors;Forced Non-Leaf Node Lookup:survivors|TI|MM|550^9^0
+1315539|United States|D014481|80745|CT|RtM via: United States;RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|1248^13^0;5093^8^0;4494^8^0;3927^8^0;3548^8^0;2776^8^0
+1315539|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.644.080.660 (Chlamys)||MM
+1315539|aluminum sulfate|C041524|33820|NM|RtM via: alum, potassium;RtM via: aluminum potassium sulfate;RtM via: aluminum sulfate;Forced SCR Leaf Node Lookup:alum|TI|MM|1129^4^0
+1315539|*Sand|D000080463|33279|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|2111^4^0
+1315539|*Quercus|D029963|31938|MH|Forced Leaf Node Lookup:oak;checkForceMH Boosted|TI|MM|2101^3^0
+1315539|*Fossils|D005580|18519|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1072^6^0;737^6^0;424^6^0
+1315539|*Islands|D062312|17577|MH|RtM via: Islands;Forced Leaf Node Lookup:islands|TI|MM|4844^6^0;4638^7^0
+1315539|*Phylogeny|D010802|16773|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|4406^8^0;4066^12^0;2932^8^0;2691^12^0;2193^12^0;2010^9^0
+1315539|Florida|D005431|16491|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|5428^7^0;320^7^0
+1315539|*Rivers|D045483|16311|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|2249^5^0
+1315539|Gulf of Mexico|D060851|15969|MH|RtM via: Gulf of Mexico;Forced Leaf Node Lookup:gulf of mexico|TI|MM|2579^14^0;200^14^0;277^14^0
+1315539|Nucleic Acid Conformation|D009690|79745|MH|||RC
+1315539|Base Sequence|D001483|34632|MH|||RC
+1315539|*Alum Compounds|D000534|33819|HM|RtM via: alum, potassium;RtM via: aluminum potassium sulfate;RtM via: aluminum sulfate|TI|MM|1129^4^0
+1315539|CHD8 protein, human|C523331|32404|NM|RtM via: CHD8 protein, human|TI|MM|2404^6^0
+1315539|*DNA-Binding Proteins|D004268|32403|HM|RtM via: CHD8 protein, human|TI|MM;RC|2404^6^0
+1315539|*Transcription Factors|D014157|8820|HM|RtM via: CHD8 protein, human|TI|MM|2404^6^0
+1315539|*Chlamys|D049897|8250|ET|Entry Term Replacement for "Pectinidae";RtM via: Argopecten irradians;RtM via: Argopecten gibbus;RtM via: Aequipecten;RtM via: Chlamys;RtM via: Scallop;Forced Non-Leaf Node Lookup:scallops;Forced Non-Leaf Node Lookup:chlamys|TI|MM|107^20^0;5121^17^0;685^17^0;46^17^0;5065^11^0;5182^7^0;4916^7^0;3892^7^0;3736^7^0;3178^7^0;2850^7^0;97^8^0;5273^10^0;4987^10^0;2050^10^0;512^10^0;2919^7^0;3151^7^0;3341^7^0;3848^7^0
+1315539|*Electronic|D004581|1323|ET|Entry Term Replacement for "Electronics";RtM via: Electronics discipline;Forced Non-Leaf Node Lookup:electronics|TI|MM|1575^10^0
+1315539|*Digital Computer|D003201|549|ET|Entry Term Replacement for "Computers";RtM via: Computers, Digital;Forced Non-Leaf Node Lookup:digital computers|TI|MM|1586^16^0
+1315626|2-methylfuran|C029060|40180|NM|RtM via: Silvan;Forced SCR Leaf Node Lookup:sylvan|TI|MM|2167^6^0
+1315626|*Aprepitant|D000077608|37554|MH|Forced Leaf Node Lookup:emend;checkForceMH Boosted|TI|MM|1335^5^0;1830^5^0
+1315626|Kansas|D007615|19506|MH|RtM via: Kansas (geographic location);Forced Leaf Node Lookup:kansas|TI|MM|2264^6^0
+1315626|Oklahoma|D009825|19506|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|2206^8^0
+1315626|Missouri|D008923|19377|MH|RtM via: Missouri;Forced Leaf Node Lookup:missouri|TI|MM|236^8^0;153^8^0
+1315626|Reactive Oxygen Species|D017382|41457|MH|||RC
+1315626|*Furans|D005663|40179|HM|RtM via: Silvan|TI|MM|2167^6^0
+1315626|North America|D009656|3|MH|RtM via: North America|TI|MM|2458^13^0
+1315530|United States|D014481|125230|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|1676^8^0;121^8^0
+1315530|Nevada|D009505|22863|MH|RtM via: Nevada <Geographic Area>;Forced Leaf Node Lookup:nevada|TI|MM|189^6^0
+1315530|Utah|D014589|22863|MH|RtM via: Utah;Forced Leaf Node Lookup:utah|TI|MM|197^4^0
+1315530|Idaho|D007061|22434|MH|RtM via: Idaho (geographic location);Forced Leaf Node Lookup:idaho|TI|MM|203^5^0
+1315530|Montana|D009009|22434|MH|RtM via: Montana (geographic location);Forced Leaf Node Lookup:montana|TI|MM|214^7^0
+1315530|New Mexico|D009516|22008|MH|RtM via: New Mexico;Forced Leaf Node Lookup:new mexico|TI|MM|177^10^0
+1315530|Receptors, Thyroid Hormone|D011988|124230|MH|||RC
+1315530|Proto-Oncogenes|D011519|45934|MH|||RC
+1315530|Europe|D005060|3|MH|RtM via: Europe|TI|MM|1881^6^0;1436^6^0
+1315579|Greenland|D006116|6547|MH|RtM via: Greenland;Forced Leaf Node Lookup:greenland|TI|MM|1996^9^0
+1315579|*Plankton|D010933|6472|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|1785^10^0
+1315579|Siberia|D012800|6403|MH|RtM via: Siberia;Forced Leaf Node Lookup:siberia|TI|MM|2460^7^0;1876^7^0
+1315579|Russia|D012426|6400|MH|RtM via: Russians;Forced Leaf Node Lookup:russians|TI|MM|2237^7^0
+1315579|Democratic Republic of the Congo|D015023|6145|MH|RtM via: Democratic Republic of the Congo;Forced Leaf Node Lookup:zaire|TI|MM|2126^5^0
+1315579|*Bays|D061006|6142|MH|Forced Leaf Node Lookup:bay|TI|MM|1530^3^0
+1315579|Simplexvirus|D018139|74307|MH|||RC
+1315579|Herpes Simplex|D006561|37302|MH|||RC
+1315579|*Diagnostic Tests, Routine|D003955|1275|MH|RtM via: Lysergic acid diethylamide measurement|TI|MM|182^4^0
+1315579|*Microbiota|D064307|711|MH|RtM via: Microbiota (environment);Forced Non-Leaf Node Lookup:microbiotas|TI|MM|485^10^0
+1315579|*Carbonate|D002254|96|ET|Entry Term Replacement for "Carbonates";RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|262^9^0
+1315579|*Islands|D062312|582|MH|RtM via: Islands|TI|MM|124^6^0
+1315602|Oklahoma|D009825|17157|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|125^8^0
+1315602|Insulin-Like Growth Factor II|D007335|63569|MH|||RC
+1315602|Insulin-Like Growth Factor I|D007334|41742|MH|||RC
+1315589|Animals|D000818|447935|CT|Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates)|TI|MM
+1315589|*Clay|D000077215|83801|MH|RtM via: clay;Forced Leaf Node Lookup:clays;checkForceMH Boosted|TI|MM|497^5^0;78^5^0
+1315589|*Spores, Fungal|D013172|83771|MH|RtM via: Spores, Fungal;Forced Leaf Node Lookup:fungal spores;checkForceMH Boosted|TI|MM|318^13^0
+1315589|Netherlands|D009426|53950|MH|RtM via: Netherlands;Forced Leaf Node Lookup:netherlands|TI|MM|943^11^0
+1315589|*Sand|D000080463|46537|MH|RtM via: Sand;checkForceMH Boosted|TI|MM|1799^5^0
+1315589|*Global Warming|D057232|44362|MH|RtM via: Global Warming;Forced Leaf Node Lookup:global warming|TI|MM|1518^14^0
+1315589|*Dinoflagellates|D004141|43882|ET|Entry Term Replacement for "Dinoflagellida";RtM via: Dinophyceae;RtM via: Trinovantedinium;RtM via: Selenopemphix;checkForceMH Boosted;Forced Non-Leaf Node Lookup:dinoflagellates|TI|MM|2232^14^0;2104^14^0;1689^15^0;1194^15^0;757^15^0;413^15^0;146^15^0;2366^16^0;2178^16^0;2253^13^0
+1315589|*Soils|D012987|42961|ET|Entry Term Replacement for "Soil";RtM via: Soil;checkForceMH Boosted;Forced Non-Leaf Node Lookup:soils|TI|MM|1805^5^0
+1315589|*Temperature|D013696|42904|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|1598^12^0;1392^12^0
+1315589|*Foraminifera|D056908|42706|MH|RtM via: Foraminifera;checkForceMH Boosted|TI|MM|673^13^0
+1315589|*Plankton|D010933|42448|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|662^10^0
+1315589|*Bays|D061006|42076|MH|RtM via: Inlets (geographic);Forced Leaf Node Lookup:inlets|TI|MM|1950^5^0;1625^5^0;548^5^0
+1315589|*Tropical Climate|D014329|41209|MH|Forced Leaf Node Lookup:tropical conditions|TI|MM|1348^19^0
+1315589|Spores, Protozoan|D033761|43597|MH|Spores Specifics:Spores||MM
+1315589|Carcinoma, Hepatocellular|D006528|446935|MH|||RC
+1315589|Liver Neoplasms|D008113|334141|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+1315589|*Invertebrates|D007448|1677|MH|RtM via: Invertebrates;Forced Non-Leaf Node Lookup:invertebrates|TI|MM|247^13^0
+1315589|*Cysts|D003560|1674|MH|RtM via: Cyst;Forced Non-Leaf Node Lookup:cysts|TI|MM|1261^5^0
+1315589|*Pollen|D011058|1428|MH|RtM via: Pollen;Forced Non-Leaf Node Lookup:pollen|TI|MM|1074^6^0;825^6^0;310^6^0
+1315589|*Freshwater|D005618|1071|ET|Entry Term Replacement for "Fresh Water";RtM via: Fresh Water;Forced Non-Leaf Node Lookup:freshwaters|TI|MM|1761^10^0;235^10^0;262^10^0;1715^10^0
+1315607|*Limestone|D002119|42405|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|781^9^0;562^9^0;99^9^0
+1315607|Antarctic Regions|D000864|37713|MH|RtM via: Antarctic (geographic area);RtM via: Antarctica;Forced Leaf Node Lookup:antarctic|TI|MM|682^9^0
+1315607|Synapses|D013569|113579|MH|||RC
+1315607|Receptors, N-Methyl-D-Aspartate|D016194|75189|MH|||RC
+1315607|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|650^5^0
+1315607|Water|D014867|1000|MH|Forced Non-Leaf Node Lookup:water||MM|503^5^0
+1315548|*Constriction|D003250|24927|MH|RtM via: Constriction procedure;Forced Leaf Node Lookup:constrictions|TI|MM|1911^13^0
+1315548|*Sex Characteristics|D012727|24687|MH|RtM via: sexual dimorphism (cellular);Forced Leaf Node Lookup:dimorphism|TI|MM|2790^10^0
+1315548|*Explosive|D053834|24330|ET|Entry Term Replacement for "Explosive Agents";RtM via: Explosive Agents;checkForceMH Boosted|TI|MM|1567^9^0
+1315548|Iran|D007492|23415|MH|RtM via: Iran;Forced Leaf Node Lookup:iran|TI|MM|2452^4^0
+1315548|Texas|D013781|23415|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|2442^5^0
+1315548|NADH, NADPH Oxidoreductases|D009247|86791|MH|||RC
+1315548|Superoxides|D013481|82149|MH|||RC
+1315548|*Sutures|D013537|435|MH|RtM via: Surgical sutures;RtM via: Suture Joint;Forced Non-Leaf Node Lookup:sutures|TI|MM|3413^6^0;2853^7^0;2091^7^0;1411^7^0
+1315548|*Ribs|D012272|219|MH|RtM via: Bone structure of rib;Forced Non-Leaf Node Lookup:ribs|TI|MM|1817^4^0
+1315548|China|D002681|0|MH|RtM via: China|TI|MM|1648^5^0
+1315642|United States|D014481|28570|CT|Forced Leaf Node Lookup:american|TI|MM|1496^8^0
+1315642|Animals|D000818|28570|CT|Animal Shells;CT Treecode Lookup: A13.080 (Animal Shells);Decapoda;CT Treecode Lookup: B01.050.500.131 (Decapoda)|TI|MM
+1315642|*Temperature|D013696|12800|MH|RtM via: Temperature;Forced Leaf Node Lookup:temperatures|TI|MM|1069^11^0
+1315642|*Salinity|D054712|12674|MH|RtM via: Salinity;Forced Leaf Node Lookup:salinity|TI|MM|1082^8^0
+1315642|*Animal Shells|D060105|12176|MH|RtM via: Animal Shells;Forced Leaf Node Lookup:carapaces|TI|MM|664^9^0
+1315642|*Water|D014867|11792|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|487^5^0
+1315642|Hungary|D006814|10901|MH|RtM via: Hungary;Forced Leaf Node Lookup:hungary|TI|MM|909^7^0
+1315642|North Carolina|D009657|10901|MH|RtM via: North Carolina;Forced Leaf Node Lookup:north carolina|TI|MM|243^14^0
+1315642|*Feasibility Studies|D005240|10898|MH|Forced Leaf Node Lookup:feasibility|TI|MM|1365^11^0
+1315642|Hypertension|D006973|27570|MH|||RC
+1315642|Sodium|D012964|22875|MH|||RC
+1315642|Decapoda|D033364|1000|MH|Forced Non-Leaf Node Lookup:decapod crustaceans;Forced Non-Leaf Node Lookup:decapods||MM|46^19^0;815^7^0
+1315642|Oceans and Seas|D009792|1000|MH|Forced Non-Leaf Node Lookup:oceans||MM|965^5^0;1096^5^0;1322^5^0
+1315642|Atlantic Ocean|D001267|3|MH|RtM via: Atlantic Ocean|TI|MM|1468^14^0
+1315642|Italy|D007558|3|MH|RtM via: Italy|TI|MM|875^5^0
+1315512|Caliciviridae|D002139|52787|MH|||RC
+1315512|Picornaviridae Infections|D010850|10406|MH|||RC
+1315512|*Standardization|D012015|930|ET|Entry Term Replacement for "Reference Standards";RtM via: Standardization;Forced Non-Leaf Node Lookup:standardization|TI|MM|877^15^0;476^15^0
+1315495|Glomus Tumor|D005918|135168|MH|||RC
+1315495|Soft Tissue Neoplasms|D012983|36619|MH|||RC
+1315495|*Margins of Excision|D000072662|2799|MH|RtM via: Surgical margins|TI|MM|1328^7^0
+1315495|Australia|D001315|600|MH|RtM via: Australia|TI|MM|1424^9^0
+1315495|*Islands|D062312|336|MH|RtM via: Islands|TI|MM|174^6^0
+1315596|Humans|D006801|13522267|CT|Forced Humans: university|TI|MM;RC
+1315596|Spain|D013030|599221|MH|RtM via: Spain;Forced Leaf Node Lookup:spain|TI|MM|578^5^0
+1315596|*Universities|D014495|598831|MH|RtM via: Universities;Forced Leaf Node Lookup:university|TI|MM|67^10^0
+1315596|Morocco|D009018|598795|MH|RtM via: Morocco;Forced Leaf Node Lookup:morocco|TI|MM|517^7^0
+1315596|United Kingdom|D006113|598792|MH|Forced Lookup:britain|TI|MM|585^7^0
+1315596|Itraconazole|D017964|372490|MH|||RC
+1315596|Mycoses|D009181|248810|MH|||RC
+1315596|Sardinia|D007558|429|ET|Entry Term Replacement for "Italy";RtM via: Sardinia|TI|MM|504^8^0
+1315518|Animals|D000818|65464|CT|Strongylocentrotus;CT Treecode Lookup: B01.050.500.408 (Strongylocentrotus)||MM;RC
+1315518|*Strongylocentrotus|D047269|14148|MH|RtM via: Strongylocentrotus pallidus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:strongylocentrotus|TI|MM|321^27^0
+1315518|Cell Fractionation|D002458|64464|MH|||RC
+1315518|Cell Membrane|D002462|52975|MH|||RC
+1315518|*Digital Computer|D003201|3003|ET|Entry Term Replacement for "Computers";RtM via: Computers, Digital;Forced Non-Leaf Node Lookup:digital computers|TI|MM|1040^16^0
+1315518|*Mathematical Model|D008962|2055|ET|Entry Term Replacement for "Models, Theoretical";RtM via: Mathematical Model;Forced Non-Leaf Node Lookup:mathematical model|TI|MM|953^18^0
+1315563|Humans|D006801|116883352|CT|Forced Humans: people|TI|MM;RC
+1315563|Receptors, Adrenergic, beta|D011943|52486|MH|||RC
+1315563|Myocardium|D009206|34723|MH|||RC
+1315563|England|D004739|3|MH|RtM via: England|TI|MM|159^7^0
+1315563|Germany|D005858|3|MH|RtM via: Germany|TI|MM|171^7^0
+1315563|People's Republic of China|D002681|3|ET|Entry Term Replacement for "China";RtM via: China|TI|MM|453^26^0
+1315519|Animals|D000818|60254|CT|Mercenaria;CT Treecode Lookup: B01.050.500.644 (Mercenaria);Corals;CT Treecode Lookup: B01.050.500.308 (Corals)|TI|MM
+1315519|*Fossils|D005580|21918|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1653^7^0;112^6^0
+1315519|*Mercenaria|D049891|12309|MH|RtM via: Mercenaria mercenaria;RtM via: Mercenaria (eukaryote);Forced Leaf Node Lookup:mercenarias|TI|MM|161^21^0;1214^10^0;855^10^0;172^10^0
+1315519|*Corals|D037421|11679|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1911^6^0
+1315519|Bacterial Chromatophores|D020130|59254|MH|||RC
+1315519|Rhodospirillum rubrum|D012247|43469|MH|||RC
+1315519|Homicide|D006708|1000|MH|Forced Non-Leaf Node Lookup:killings||MM|453^7^0
+1315519|Massachusetts|D008404|3|MH|RtM via: Massachusetts (geographic location)|TI|MM|276^13^0
+1315536|Texas|D013781|7835|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|537^5^0
+1315536|Inositol 1,4,5-Trisphosphate|D015544|46283|MH|||RC
+1315536|Phosphotransferases|D010770|28252|MH|||RC
+1315536|*Pyrenes|D011721|558|MH|RtM via: Pyrenes;RtM via: pyrene;Forced Non-Leaf Node Lookup:pyrenes|TI|MM|1336^6^0
+1315551|Animals|D000818|157329|CT|Starfish;CT Treecode Lookup: B01.050.500.408 (Starfish);Holothuroidea;CT Treecode Lookup: B01.050.500.408 (Holothuroidea);Corals;CT Treecode Lookup: B01.050.500.308 (Corals)||MM;RC
+1315551|lead sulfide|C018391|40781|NM|RtM via: galena;Forced SCR Leaf Node Lookup:galena|TI|MM|79^6^0
+1315551|*Starfish|D013215|22388|MH|RtM via: Starfish;checkForceMH Boosted;Forced Non-Leaf Node Lookup:starfish|TI|MM|1607^8^0
+1315551|*Holothuroidea|D012616|21284|ET|Entry Term Replacement for "Sea Cucumbers";RtM via: Sea Cucumbers;checkForceMH Boosted;Forced Non-Leaf Node Lookup:holothuroideas|TI|MM|311^13^0
+1315551|*Limestone|D002119|21044|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|2106^9^0
+1315551|*Corals|D037421|20729|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1925^6^0
+1315551|*Microscopy, Electron, Scanning|D008855|19901|MH|RtM via: Scanning Electron Microscopy;Forced Leaf Node Lookup:scanning electron microscopy|TI|MM|1313^28^0
+1315551|*Facies|D019066|19550|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|2130^6^0
+1315551|Wisconsin|D014922|19313|MH|RtM via: Wisconsin;Forced Leaf Node Lookup:wisconsin|TI|MM|137^9^0
+1315551|Carcinogenicity Tests|D015197|156329|MH|||RC
+1315551|Carcinogens|D002273|67521|MH|||RC
+1315551|*Lead|D007854|40780|HM|RtM via: galena|TI|MM|79^6^0
+1315551|*Sulfides|D013440|38971|HM|RtM via: galena|TI|MM|79^6^0
+1315551|*Mollusks|D008974|7716|ET|Entry Term Replacement for "Mollusca";RtM via: Mollusca;Forced Non-Leaf Node Lookup:mollusks|TI|MM|1958^8^0
+1315551|*Echinoidea|D012617|3969|ET|Entry Term Replacement for "Sea Urchins";RtM via: Sea urchin (invertebrate);Forced Non-Leaf Node Lookup:echinoideas|TI|MM|286^10^0
+1315551|*Green Algae|D000460|1143|ET|Entry Term Replacement for "Chlorophyta";RtM via: Chlorophyta;Forced Non-Leaf Node Lookup:green algae|TI|MM|2016^11^0
+1315551|North America|D009656|747|MH|RtM via: North America|TI|MM|1137^13^0
+1315551|Illinois|D007087|462|MH|RtM via: Illinois (geographic location)|TI|MM|110^8^0
+1315551|Scotland|D012606|3|MH|RtM via: Scotland|TI|MM|1649^8^0
+1315524|Animals|D000818|138762|CT|Gills;CT Treecode Lookup: A13.421 (Gills);CT Text Lookup: animal|TI|MM;RC|2452^6^0
+1315524|*Gills|D005880|22692|MH|RtM via: Gill structure;Forced Leaf Node Lookup:gill|TI|MM|3250^4^0
+1315524|*Water|D014867|20403|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|821^5^0
+1315524|*Foramen Magnum|D005539|19389|MH|RtM via: Structure of foramen magnum;Forced Leaf Node Lookup:foramen magnums|TI|MM|2700^14^0
+1315524|*Depression|D003863|19131|MH|Forced Leaf Node Lookup:depressions|TI|MM|799^11^0
+1315524|omega-N-Methylarginine|D019323|137762|MH|||RC
+1315524|Nitric Oxide|D009569|52438|MH|||RC
+1315524|*Respiration|D012119|1902|MH|RtM via: Respiration;Forced Non-Leaf Node Lookup:respiration|TI|MM|619^11^0
+1315524|*Locomotion|D008124|1368|MH|RtM via: Locomotion;Forced Non-Leaf Node Lookup:locomotion|TI|MM|524^10^0
+1315524|*Genital|D005835|939|ET|Entry Term Replacement for "Genitalia";RtM via: Genitalia;Forced Non-Leaf Node Lookup:genitals|TI|MM|1766^7^0;1971^7^0
+1315524|*Epiphyses|D004838|738|MH|RtM via: Epiphysis of bone;Forced Non-Leaf Node Lookup:epiphyses|TI|MM|2914^9^0;2818^9^0
+1315524|*Habitats|D017753|651|ET|Entry Term Replacement for "Ecosystem";RtM via: Habitat;Forced Non-Leaf Node Lookup:habitats|TI|MM|4193^8^0
+1315521|Animals|D000818|40408|CT|CT Text Lookup: animal|TI|MM;RC|1374^6^0
+1315521|*Viscera|D014781|19251|MH|RtM via: Viscera;Forced Leaf Node Lookup:viscera|TI|MM|1086^7^0
+1315521|*Calcite|D002119|17337|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Calcite;checkForceMH Boosted;Forced Non-Leaf Node Lookup:calcite|TI|MM|214^7^0;179^7^0
+1315521|*Dye|D004396|17316|ET|Entry Term Replacement for "Coloring Agents";RtM via: Dyes;checkForceMH Boosted|TI|MM|1675^4^0;613^4^0
+1315521|Transcription, Genetic|D014158|39408|MH|||RC
+1315521|Tretinoin|D014212|35838|MH|||RC
+1315521|*Regression Analysis|D012044|672|MH|RtM via: Regression Analysis;Forced Non-Leaf Node Lookup:regression analysis|TI|MM|472^19^0
+1315545|*Bromides|D001965|39539|MH|RtM via: Bromides;Forced Leaf Node Lookup:bromides;checkForceMH Boosted|TI|MM|930^7^0
+1315545|*Quartz|D011791|38777|MH|RtM via: Quartz;Forced Leaf Node Lookup:quartz;checkForceMH Boosted|TI|MM|150^6^0
+1315545|*Tulipa|D031447|38294|MH|RtM via: Tulip plant;Forced Leaf Node Lookup:tulips;checkForceMH Boosted|TI|MM|666^5^0
+1315545|Newfoundland and Labrador|D009523|19576|MH|RtM via: Newfoundland (geographic location);Forced Leaf Node Lookup:newfoundland|TI|MM|625^12^0
+1315545|Quebec|D011792|19576|MH|RtM via: Quebec;Forced Leaf Node Lookup:quebec|TI|MM|614^6^0
+1315545|Utah|D014589|19450|MH|RtM via: Utah;Forced Leaf Node Lookup:utah|TI|MM|526^4^0
+1315545|Nevada|D009505|19447|MH|RtM via: Nevada <Geographic Area>;Forced Leaf Node Lookup:nevada|TI|MM|543^6^0
+1315545|Oklahoma|D009825|19147|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|68^8^0
+1315545|Pyrethrins|D011722|178694|MH|||RC
+1315545|Insecticides|D007306|58367|MH|||RC
+1315545|*Carbonates|D002254|1773|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|127^10^0
+1315592|Animals|D000818|550164|CT|Forced Non-Leaf Node Lookup:animals||MM|1573^7^0;1295^6^0
+1315592|phosphorite|C090013|108891|NM|Forced SCR Leaf Node Lookup:phosphorite|TI|MM|416^11^0
+1315592|*Fossils|D005580|53353|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1302^7^0;1148^7^0;35^7^0
+1315592|Carcinoma, Hepatocellular|D006528|549164|MH|||RC
+1315592|Liver Neoplasms|D008113|420561|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+1315592|*Minerals|D008903|108890|HM|RtM via: Shale|TI|MM|1485^6^0
+1315592|*Rhodophyta|D000461|4851|MH|RtM via: Rhodophyta;Forced Non-Leaf Node Lookup:rhodophyta|TI|MM|1130^10^0
+1315592|*Cyanobacteria|D000458|1158|MH|RtM via: Cyanobacteria;Forced Non-Leaf Node Lookup:cyanobacteria|TI|MM|580^13^0
+1315592|*Carbonates|D002254|876|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|283^10^0
+1315592|*Diversity, Biological|D044822|744|ET|Entry Term Replacement for "Biodiversity";RtM via: Biodiversity;Forced Non-Leaf Node Lookup:biological diversity|TI|MM|150^20^0
+1315592|*Weather|D014887|471|MH|RtM via: Weather;Forced Non-Leaf Node Lookup:weather|TI|MM|383^7^0
+1315592|China|D002681|1731|MH|RtM via: China|TI|MM|106^5^0
+1315509|Animals|D000818|123223|CT|Coral;CT Treecode Lookup: B01.050.500.308 (Coral);Ostrea;CT Treecode Lookup: B01.050.500.644 (Ostrea)||MM;RC
+1315509|United States|D014481|123223|CT|Forced Leaf Node Lookup:american|TI|MM|1412^8^0;1584^8^0
+1315509|*Sand|D000080463|40238|MH|RtM via: Sand;Forced Leaf Node Lookup:sand;checkForceMH Boosted|TI|MM|1021^4^0
+1315509|*Silica|D012822|24967|ET|Entry Term Replacement for "Silicon Dioxide";RtM via: silicon dioxide;checkForceMH Boosted;Forced Non-Leaf Node Lookup:silica|TI|MM|675^6^0
+1315509|*Artifacts|D016477|21283|MH|RtM via: Morphologic artifacts;Forced Leaf Node Lookup:artifacts|TI|MM|2149^8^0
+1315509|*Coral|D037421|20695|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1142^5^0;925^5^0
+1315509|*Ostrea|D049895|20521|MH|RtM via: Ostrea edulis;Forced Leaf Node Lookup:true oysters|TI|MM|2488^11^0
+1315509|*Porosity|D016062|20470|MH|RtM via: Porosity;Forced Leaf Node Lookup:porosity|TI|MM|620^8^0
+1315509|*Extinction, Biological|D053476|20080|MH|RtM via: Extinction, Mass;Forced Leaf Node Lookup:mass extinctions|TI|MM|2082^15^0
+1315509|calcium magnesium carbonate|C028042|19700|NM|Forced SCR Leaf Node Lookup:dolomite|TI|MM|1189^8^0
+1315509|Oregon|D009922|19699|MH|RtM via: Oregon (geographic location);Forced Leaf Node Lookup:oregon|TI|MM|111^6^0
+1315509|N-Formylmethionine Leucyl-Phenylalanine|D009240|122223|MH|||RC
+1315509|Luminol|D008165|64041|MH|||RC
+1315509|*Carbonate|D002254|1962|ET|Entry Term Replacement for "Carbonates";RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|1011^9^0;662^9^0;300^9^0
+1315509|*Pectinidae|D049897|1749|MH|RtM via: Scallop;Forced Non-Leaf Node Lookup:pectinidae|TI|MM|1525^10^0
+1315509|*Documentation|D004282|741|MH|RtM via: Documentation;Forced Non-Leaf Node Lookup:documentations|TI|MM|1475^13^0
+1315509|*Biota|D058448|591|MH|RtM via: Biological Community;Forced Non-Leaf Node Lookup:biota|TI|MM|1717^5^0;877^5^0;147^5^0
+1315509|*Islands|D062312|396|MH|RtM via: Islands|TI|MM|180^6^0
+1315515|*Phylogeny|D010802|17785|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|20^9^0
+1315515|3',5'-Cyclic-GMP Phosphodiesterases|D015106|166971|MH|||RC
+1315515|3',5'-Cyclic-AMP Phosphodiesterases|D015105|86182|MH|||RC
+1315515|*Natural Selection|D012641|1293|ET|Entry Term Replacement for "Selection, Genetic";RtM via: Natural Selection;Forced Non-Leaf Node Lookup:natural selection|TI|MM|994^17^0
+1315500|Animals|D000818|88470|CT|Rumen;CT Treecode Lookup: A13.869 (Rumen)||RC
+1315500|Humans|D006801|88470|CT|African Americans;CT Treecode Lookup: M01.686 (African Americans)||MM
+1315500|*Limestone|D002119|15608|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|1091^9^0;301^9^0;37^9^0;73^9^0;352^9^0
+1315500|*Fossils|D005580|13904|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|202^6^0
+1315500|New York|D009518|13526|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|1188^8^0;999^8^0
+1315500|Tennessee|D013714|13523|MH|RtM via: Tennessee;Forced Leaf Node Lookup:tennessee|TI|MM|1299^9^0;1112^9^0;696^9^0;181^9^0
+1315500|*African Americans|D001741|13262|MH|RtM via: African American;Forced Leaf Node Lookup:blacks|TI|MM|1164^5^0;729^5^0;84^5^0
+1315500|Vermont|D014707|13214|MH|RtM via: Vermont;Forced Leaf Node Lookup:vermont|TI|MM|1012^7^0
+1315500|*Rivers|D045483|13211|MH|Forced Leaf Node Lookup:rivers|TI|MM|132^5^0
+1315500|Rumen|D012417|87470|MH|||RC
+1315500|Monensin|D008985|76100|MH|||RC
+1315500|*Invertebrate|D007448|5211|ET|Entry Term Replacement for "Invertebrates";RtM via: Invertebrates;Forced Non-Leaf Node Lookup:invertebrates|TI|MM|209^12^0
+1315500|North America|D009656|3|MH|RtM via: North America|TI|MM|757^13^0
+1315594|*Dolichos|D031294|206802|MH|RtM via: Dolichos;Forced Leaf Node Lookup:dolichos;checkForceMH Boosted|TI|MM|1923^8^0
+1315594|*Facies|D019066|105780|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|1120^6^0
+1315594|*Eukaryotes|D056890|105039|ET|Entry Term Replacement for "Eukaryota";RtM via: Eukaryota;checkForceMH Boosted;Forced Non-Leaf Node Lookup:eukaryotes|TI|MM|1660^10^0;1345^10^0
+1315594|*Plankton|D010933|104904|MH|RtM via: Plankton;checkForceMH Boosted|TI|MM|392^10^0
+1315594|*Trichomes|D064201|103404|MH|RtM via: Trichomes;Forced Leaf Node Lookup:trichomes|TI|MM|524^9^0;611^9^0
+1315594|Siberia|D012800|103305|MH|RtM via: Siberia;Forced Leaf Node Lookup:siberia|TI|MM|920^7^0;139^7^0
+1315594|Carcinoma, Hepatocellular|D006528|664941|MH|||RC
+1315594|Liver Neoplasms|D008113|517632|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+1315594|*Cell Differentiation|D002454|1107|MH|RtM via: Cell Differentiation process;Forced Non-Leaf Node Lookup:cell differentiations|TI|MM|1561^20^0
+1315594|*Cyanobacteria|D000458|1101|MH|RtM via: Cyanobacteria;Forced Non-Leaf Node Lookup:cyanobacteria|TI|MM|1536^13^0;495^13^0;549^14^0;266^13^0
+1315594|*Carbonates|D002254|600|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|41^10^0
+1315594|China|D002681|429|MH|RtM via: China|TI|MM|889^5^0
+1315594|India|D007194|429|MH|RtM via: India|TI|MM|896^5^0
+1315594|Canada|D002170|3|MH|RtM via: Canada|TI|MM|881^6^0
+4095819|Animals|D000818|196284|CT|Mytilus;CT Treecode Lookup: B01.050.500.644 (Mytilus);Coral;CT Treecode Lookup: B01.050.500.308 (Coral)|TI|MM
+4095819|*Mytilus|D049878|38793|MH|RtM via: Mytilus;checkForceMH Boosted;Forced Non-Leaf Node Lookup:mytilus|TI|MM|1069^7^0
+4095819|*Coral|D037421|38400|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1786^5^0
+4095819|*Posidonia|D035961|38391|ET|Entry Term Replacement for "Alismatales";RtM via: Posidonia;checkForceMH Boosted;Forced Non-Leaf Node Lookup:posidonias|TI|MM|1485^9^0;1226^9^0
+4095819|British Columbia|D001955|37962|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|329^16^0
+4095819|Glucose Tolerance Test|D005951|195284|MH|||RC
+4095819|Blood Glucose|D001786|122408|MH|||RC
+1315533|Humans|D006801|118961500|CT|Forced Humans: families|TI|MM;RC
+1315533|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500 (Invertebrate)||MM
+1315533|*Clay|D000077215|9719711|MH|RtM via: clay;Forced Leaf Node Lookup:clays;checkForceMH Boosted|TI|MM|95^5^0
+1315533|Minnesota|D008910|4860151|MH|RtM via: Minnesota;Forced Leaf Node Lookup:minnesota|TI|MM|721^9^0
+1315533|New York|D009518|4860151|MH|RtM via: New York (geographic location);Forced Leaf Node Lookup:new york|TI|MM|708^8^0
+1315533|Kentucky|D007629|4860046|MH|RtM via: Kentucky (geographic area);Forced Leaf Node Lookup:kentucky|TI|MM|932^8^0;735^8^0;159^8^0;870^8^0
+1315533|*Fossils|D005580|4859875|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|186^6^0
+1315533|*Limestone|D002119|4859869|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|996^9^0;81^9^0;1054^9^0
+1315533|Heparin|D006493|43301|MH|||RC
+1315533|Muscle, Smooth, Vascular|D009131|32993|MH|||RC
+1315533|*Invertebrate|D007448|6021|ET|Entry Term Replacement for "Invertebrates";RtM via: Invertebrates;Forced Non-Leaf Node Lookup:invertebrates|TI|MM|193^12^0
+30219602|Animals|D000818|235130|CT|Bryozoa;CT Treecode Lookup: B01.050.500.217 (Bryozoa)||MM;RC
+30219602|United States|D014481|235130|CT|RtM via: Americas Ethnicity;Forced Leaf Node Lookup:american|TI|MM|4737^8^0;4515^8^0;4387^8^0;3729^8^0;2901^8^0;1873^8^0;1677^8^0;954^8^0;767^8^0;3029^8^0
+30219602|*Bryozoa|D002013|75417|MH|RtM via: Bryozoa;RtM via: Adeonellopsis;RtM via: Reptadeonella;RtM via: Escharoides;Forced Leaf Node Lookup:bryozoas;checkForceMH Boosted|TI|MM|198^7^0;4543^13^0;4145^13^0;1259^13^0;103^13^0;4765^13^0;4164^13^0;1278^13^0;141^13^0;4348^11^0;4132^11^0;1246^11^0;69^11^0
+30219602|*Phylogeny|D010802|61194|MH|RtM via: Phylogeny;Forced Lookup:phylogenetic;Forced Leaf Node Lookup:phylogenetic relationships|TI|MM|1198^26^0
+30219602|Cuba|D003462|30579|MH|RtM via: Cuba;Forced Leaf Node Lookup:cuba|TI|MM|4693^4^0
+30219602|Dominican Republic|D004293|30579|MH|RtM via: Dominican Republic;Forced Leaf Node Lookup:dominican republic|TI|MM|4799^18^0;4619^18^0;4467^18^0;2635^18^0;2377^18^0;2168^18^0;2433^18^0;2732^18^0;4841^18^0
+30219602|Haiti|D006205|30579|MH|RtM via: Haiti;Forced Leaf Node Lookup:haiti|TI|MM|2191^5^0
+30219602|Jamaica|D007563|30579|MH|RtM via: Jamaica;Forced Leaf Node Lookup:jamaica|TI|MM|4702^7^0
+30219602|Cabo Verde|D055726|30153|MH|RtM via: Cape Verde;Forced Leaf Node Lookup:cape verde|TI|MM|3600^18^0
+30219602|Czech Republic|D018153|30153|MH|RtM via: Czech Republic;Forced Leaf Node Lookup:czech republic|TI|MM|3202^14^0
+30219602|Greece|D006115|30153|MH|RtM via: Greece;Forced Leaf Node Lookup:greece|TI|MM|3113^6^0
+30219602|Costa Rica|D003364|29727|MH|RtM via: Costa Rica;Forced Leaf Node Lookup:costa rica|TI|MM|4869^10^0;4658^10^0;2655^10^0;2453^10^0
+30219602|Venezuela|D014687|29301|MH|RtM via: Venezuela;Forced Leaf Node Lookup:venezuela|TI|MM|2602^9^0;2331^9^0;2130^9^0
+30219602|*Islands|D062312|29298|MH|Forced Leaf Node Lookup:islands|TI|MM|3611^7^0
+30219602|Intervertebral Disc|D007403|234130|MH|||RC
+30219602|Intervertebral Disc Degeneration|D055959|203779|MH|||RC
+30219602|Europe|D005060|2436|MH|RtM via: Europe|TI|MM|1036^6^0
+30219602|Africa|D000349|2010|MH|RtM via: Africa|TI|MM|1047^6^0
+30219602|Africa, West|D000354|1281|ET|Entry Term Replacement for "Africa, Western";RtM via: Africa, Western|TI|MM|3580^11^0
+30219602|Southeastern United States|D015144|513|MH|RtM via: Southeastern United States|TI|MM|4889^26^0
+1315650|Animals|D000818|76248|CT|Didelphidae;CT Treecode Lookup: B01.050.150.900.649.573 (Didelphidae);Marsupials;CT Treecode Lookup: B01.050.150.900.649.573 (Marsupials);CT Text Lookup: mammal|TI|MM;RC|4637^6^0
+1315650|Colombia|D003105|49327|MH|RtM via: Colombia;Forced Leaf Node Lookup:colombian|TI|MM|955^8^0;827^8^0;378^8^0;2175^9^0
+1315650|*Didelphidae|D009893|27875|ET|Entry Term Replacement for "Opossums";RtM via: Didelphidae;checkForceMH Boosted;Forced Non-Leaf Node Lookup:didelphidae|TI|MM|4949^11^0
+1315650|*Marsupials|D008394|26303|ET|Entry Term Replacement for "Marsupialia";RtM via: Superorder Marsupalia (organism);checkForceMH Boosted;Forced Non-Leaf Node Lookup:marsupials|TI|MM|4832^9^0;114^10^0
+1315650|*Phylogeny|D010802|26084|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|3737^9^0
+1315650|*Fossils|D005580|26036|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|2593^7^0;2642^7^0
+1315650|Argentina|D001118|24986|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|2817^9^0;486^9^0
+1315650|*Dentition|D003817|24086|MH|Forced Leaf Node Lookup:dentitions|TI|MM|4038^9^0
+1315650|Blood Pressure|D001794|75248|MH|||RC
+1315650|Angiotensin II|D000804|60451|MH|||RC
+1315650|*Phenotypic Plasticity|D000222|1623|ET|Entry Term Replacement for "Adaptation, Physiological";RtM via: Phenotypic Plasticity;Forced Non-Leaf Node Lookup:phenotypic plasticity|TI|MM|3903^21^0
+1315650|*Molars|D008963|267|ET|Entry Term Replacement for "Molar";RtM via: Molar tooth;Forced Non-Leaf Node Lookup:molars|TI|MM|4874^6^0
+1315650|South America|D013020|1455|MH|RtM via: South America|TI|MM|128^13^0
+1315527|mica|C011934|29972|NM|RtM via: mica;Forced SCR Leaf Node Lookup:mica|TI|MM|684^4^0
+1315527|Alprostadil|D000527|62937|MH|||RC
+1315527|Receptors, Prostaglandin E|D018078|43125|MH|||RC
+1315527|*Aluminum Silicates|D000538|29971|HM|RtM via: mica|TI|MM|684^4^0
+1315527|*Zingiberales|D019862|912|MH|RtM via: Canna genus;Forced Non-Leaf Node Lookup:canna|TI|MM|999^5^0
+1315527|California|D002140|0|MH|RtM via: California|TI|MM|189^10^0
+1315498|Animals|D000818|28060|CT|RtM via: Rattus;RtM via: Rattus norvegicus;Louse;CT Treecode Lookup: B01.050.500.131 (Louse);Invertebrates;CT Treecode Lookup: B01.050.500 (Invertebrates)|TI|MM;RC|1196^3^0;488^3^0;24^3^0
+1315498|Rats|D051381|28060|CT|RtM via: Rattus;RtM via: Rattus norvegicus;Forced Non-Leaf Node Lookup:rat|TI|MM|1196^3^0;488^3^0;24^3^0
+1315498|*Water|D014867|7576|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1247^5^0
+1315498|*Louse|D008003|7534|ET|Entry Term Replacement for "Phthiraptera";RtM via: Lice;checkForceMH Boosted|TI|MM|3368^9^0
+1315498|*Fossils|D005580|6985|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|409^7^0
+1315498|*Limestone|D002119|6949|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|847^9^0;439^10^0;270^9^0;33^9^0
+1315498|Indonesia|D007214|6583|MH|RtM via: Timor;Forced Leaf Node Lookup:timor|TI|MM|725^5^0
+1315498|Bolivia|D001838|6283|MH|RtM via: Bolivia;Forced Leaf Node Lookup:bolivia|TI|MM|970^7^0
+1315498|Peru|D010568|6283|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|961^4^0
+1315498|Thailand|D013785|6283|MH|RtM via: Thailand;Forced Leaf Node Lookup:thailand;Geo Lookup:buri|TI;AB|MM|472^8^0;130^8^0
+1315498|Pakistan|D010154|5857|MH|RtM via: Pakistan;Forced Leaf Node Lookup:pakistan|TI|MM|777^8^0
+1315498|Western Australia|D014904|5857|MH|RtM via: Western Australia;Forced Leaf Node Lookup:western australia|TI|MM|685^17^0
+1315498|Yugoslavia|D015022|5857|MH|RtM via: Yugoslavia;Forced Leaf Node Lookup:yugoslavia|TI|MM|884^10^0
+1315498|Texas|D013781|5854|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|1079^5^0
+1315498|*Tropical Climate|D014329|5854|MH|Forced Leaf Node Lookup:tropical conditions|TI|MM|1639^19^0
+1315498|Peroxidases|D010544|27060|MH|||RC
+1315498|Streptomyces|D013302|23931|MH|||RC
+1315498|*Invertebrates|D007448|4929|MH|RtM via: Craniidae;RtM via: Brachiopoda|TI|MM|1973^9^0;3106^11^0;1750^10^0;1117^11^0;547^11^0;70^11^0
+1315498|*Muscles|D009132|2421|MH|RtM via: Muscle attachment;RtM via: Muscle Tissue;Forced Non-Leaf Node Lookup:muscles|TI|MM|3015^17^0;2619^6^0;2474^7^0;2544^7^0
+1315498|*Habits|D006184|54|MH|RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|1103^6^0
+1315503|Florida|D005431|8857|MH|RtM via: Florida;Forced Leaf Node Lookup:florida|TI|MM|491^7^0
+1315503|Georgia|D005845|8857|MH|RtM via: Georgia, USA;Forced Leaf Node Lookup:georgia|TI|MM|102^7^0
+1315503|Maryland|D008396|8857|MH|RtM via: Maryland (geographic location);Forced Leaf Node Lookup:maryland|TI|MM|90^8^0
+1315503|Amino Acid Sequence|D000595|21109|MH|||RC
+1315503|Polyenes|D011090|12385|MH|||RC
+1315503|Massachusetts|D008404|3|MH|RtM via: Massachusetts (geographic location)|TI|MM|518^13^0
+4095811|*Fossils|D005580|20462|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|2369^6^0
+4095811|*Parks, Recreational|D000068316|20396|MH|RtM via: National Parks;Forced Leaf Node Lookup:national parks|TI|MM|246^13^0
+4095811|Tunisia|D014416|20273|MH|RtM via: Tunisia;Forced Leaf Node Lookup:tunisia|TI|MM|2560^7^0
+4095811|Texas|D013781|20270|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|271^5^0
+4095811|Anesthesia, Endotracheal|D000770|78094|MH|||RC
+4095811|Intubation, Intratracheal|D007442|64541|MH|||RC
+1315613|Spain|D013030|15781|MH|RtM via: Spain;Forced Leaf Node Lookup:spain|TI|MM|133^5^0
+1315613|*Bays|D061006|14281|MH|Forced Leaf Node Lookup:bay|TI|MM|59^3^0
+1315613|Progesterone|D011374|67731|MH|||RC
+1315613|Estradiol|D004958|64866|MH|||RC
+1315613|Northern Europe|D005060|2910|ET|Entry Term Replacement for "Europe";RtM via: Northern Europe;RtM via: Western Europe|TI|MM|854^15^0;745^14^0
+1315613|France|D005602|2010|MH|RtM via: France|TI|MM|164^6^0
+1315517|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500 (Brachiopoda)||MM
+1315517|*Phylogeny|D010802|11200|MH|RtM via: Phylogeny;RtM via: Phylogenetic Inference;Forced Leaf Node Lookup:phylogenies|TI|MM|1309^11^0;866^8^0;689^17^0
+1315517|Guanosine 5'-O-(3-Thiotriphosphate)|D016244|52697|MH|||RC
+1315517|Guanosine Triphosphate|D006160|33560|MH|||RC
+1315517|*Brachiopoda|D007448|7527|ET|Entry Term Replacement for "Invertebrates";RtM via: Brachiopoda;Forced Non-Leaf Node Lookup:brachiopodas|TI|MM|224^11^0
+1315517|*Skeletons|D012863|1047|ET|Entry Term Replacement for "Skeleton";RtM via: Skeleton;Forced Non-Leaf Node Lookup:skeletons|TI|MM|75^9^0
+1315517|*Probability|D011336|435|MH|RtM via: Probability;Forced Non-Leaf Node Lookup:probability|TI|MM|674^11^0
+1315576|Animals|D000818|50583|CT|Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods)||MM;RC
+1315576|*Gastropods|D049851|18260|ET|Entry Term Replacement for "Gastropoda";RtM via: Neritoidea;RtM via: Pleurotomarioidea;RtM via: Trochoidea <genus>;RtM via: Trochoidea <superfamily>;RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|1043^10^0;1024^17^0;1055^10^0;1587^9^0;1120^9^0;294^10^0;1749^9^0
+1315576|*Facies|D019066|16610|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|180^6^0
+1315576|Colorado|D003120|16136|MH|RtM via: Colorado;Forced Leaf Node Lookup:colorado|TI|MM|1890^8^0
+1315576|New Mexico|D009516|16133|MH|RtM via: New Mexico;Forced Leaf Node Lookup:new mexico|TI|MM|1900^10^0;85^10^0
+1315576|Phospholipases A2|D054467|46214|MH|||RC
+1315576|North America|D009656|3|MH|RtM via: North America|TI|MM|1833^13^0
+1315576|Appalachian Region|D001061|0|MH|RtM via: Appalachian Region|TI|MM|1680^11^1;1698^7^1
+1315587|*Water|D014867|22868|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|321^5^0
+1315587|British Columbia|D001955|22781|MH|RtM via: British Columbia;Forced Leaf Node Lookup:british columbia|TI|MM|172^16^0
+1315587|Herpesviridae|D006564|240332|MH|||RC
+1315587|Herpesviridae Infections|D006566|108786|MH|||RC
+1315599|United States|D014481|14911|CT|Forced Leaf Node Lookup:american|TI|MM|134^8^0
+1315599|Nevada|D009505|3673|MH|RtM via: Nye County, NV;RtM via: Nevada <Geographic Area>;Forced Leaf Node Lookup:nevada|TI|MM|86^10^0;413^3^0;53^6^0;98^6^0
+1315599|Propranolol|D011433|13911|MH|||RC
+1315599|Receptors, Adrenergic, beta|D011943|13327|MH|||RC
+1315599|North America|D009656|3|MH|RtM via: North America|TI|MM|351^13^0
+1315620|Animals|D000818|193266|CT|Hydrozoans;CT Treecode Lookup: B01.050.500.308 (Hydrozoans);Gastropod;CT Treecode Lookup: B01.050.500.644 (Gastropod);Coral;CT Treecode Lookup: B01.050.500.308 (Coral)||MM;RC
+1315620|United States|D014481|193266|CT|Forced Leaf Node Lookup:american|TI|MM|519^8^0;1595^8^0;2343^8^0
+1315620|*Hydrozoans|D037402|33932|ET|Entry Term Replacement for "Hydrozoa";RtM via: Hydrozoa;checkForceMH Boosted;Forced Non-Leaf Node Lookup:hydrozoans|TI|MM|1418^9^0;209^10^0
+1315620|*Gastropod|D049851|32309|ET|Entry Term Replacement for "Gastropoda";RtM via: Gastropoda;RtM via: Tethys;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|2284^10^0;2120^9^0;297^10^0;2272^6^0;1817^6^0;1551^6^0;637^6^0;577^6^0
+1315620|*Coral|D037421|30872|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|1248^6^0;1176^5^0;168^6^0
+1315620|Mexico|D008800|30686|MH|RtM via: Mexico;Forced Leaf Node Lookup:mexico|TI|MM|93^6^0
+1315620|Nevada|D009505|30035|MH|RtM via: Nevada <Geographic Area>;Forced Leaf Node Lookup:nevada|TI|MM|1236^6^0;1107^6^0;868^6^0
+1315620|Peru|D010568|29834|MH|RtM via: Peru;Forced Leaf Node Lookup:peru|TI|MM|2220^4^0;2108^4^0;987^4^0
+1315620|Sicily|D012802|29831|MH|RtM via: Sicily;Forced Leaf Node Lookup:sicily|TI|MM|1997^6^0
+1315620|Insulin Secretion|D000078790|192266|MH|||RC
+1315620|Islets of Langerhans|D007515|154831|MH|||RC
+1315620|*Bivalves|D049872|1101|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|2009^8^0;309^8^0
+1315620|Europe|D005060|387|MH|RtM via: central europe|TI|MM|1373^14^0
+1315620|California|D002140|204|MH|RtM via: California|TI|MM|923^10^0
+1315623|*Extinction, Biological|D053476|108498|MH|RtM via: Extinction, Mass;Forced Leaf Node Lookup:mass extinctions|TI|MM|1056^15^0
+1315623|*Rivers|D045483|106872|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|121^5^0
+1315623|Carcinoma, Hepatocellular|D006528|652805|MH|||RC
+1315623|Liver Neoplasms|D008113|495161|MH|Neoplasm Coordination Rule: Carcinoma, Hepatocellular||MM;RC
+1315623|*Islands|D062312|909|MH|RtM via: Islands|TI|MM|192^6^0
+4095807|Humans|D006801|145946728|CT|Forced Humans: families|TI|MM;RC
+4095807|Animals|D000818|145946728|CT|Polyplacophora;CT Treecode Lookup: B01.050.500.644 (Polyplacophora)|TI|MM
+4095807|*Mirabilis|D039282|11746471|MH|RtM via: Mirabilis;Forced Leaf Node Lookup:mirabilis;checkForceMH Boosted|TI|MM|600^9^0
+4095807|*Polyplacophora|D049916|11746306|MH|RtM via: Chiton;RtM via: Polyplacophora;Forced Leaf Node Lookup:chitons;checkForceMH Boosted|TI|MM|892^7^0
+4095807|Kentucky|D007629|5874050|MH|RtM via: Kentucky (geographic area);Forced Leaf Node Lookup:kentucky|TI|MM|918^8^0;103^8^0
+4095807|Minnesota|D008910|5873879|MH|RtM via: Minnesota;Forced Leaf Node Lookup:minnesota|TI|MM|161^9^0
+4095807|Wisconsin|D014922|5873879|MH|RtM via: Wisconsin;Forced Leaf Node Lookup:wisconsin|TI|MM|146^9^0
+4095807|Virginia|D014768|5873453|MH|RtM via: Virginia;Forced Leaf Node Lookup:virginia|TI|MM|659^8^0;136^8^0
+4095807|New Mexico|D009516|5873153|MH|RtM via: New Mexico;Forced Leaf Node Lookup:new mexico|TI|MM|838^10^0
+4095807|Thymectomy|D013934|467751|MH|||RC
+4095807|Myasthenia Gravis|D009157|157252|MH|||RC
+4095807|*Flower|D035264|15|ET|Entry Term Replacement for "Flowers";RtM via: Flowers;Forced Non-Leaf Node Lookup:flowers|TI|MM|820^6^0
+4095807|Australia|D001315|3|MH|RtM via: Australia|TI|MM|784^9^0
+1315656|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.644.080 (Bivalves)||MM
+1315656|*Rivers|D045483|6701|MH|RtM via: Rivers;Forced Leaf Node Lookup:rivers|TI|MM|3108^5^0;2933^5^0;2580^5^0;2434^5^0;2484^5^0
+1315656|*Facies|D019066|6575|MH|RtM via: Facies;Forced Leaf Node Lookup:facies|TI|MM|2226^6^0
+1315656|*Water|D014867|6374|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|3020^5^0
+1315656|*Fossils|D005580|6368|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|3071^7^0;2962^7^0;2845^7^0;191^7^0
+1315656|Alaska|D000413|5753|MH|RtM via: Alaska;Forced Leaf Node Lookup:alaska|TI|MM|112^6^0
+1315656|Japan|D007564|5753|MH|RtM via: Japan;Forced Leaf Node Lookup:japan|TI|MM|2303^5^0;1675^5^0
+1315656|Siberia|D012800|5753|MH|RtM via: Siberia;Forced Leaf Node Lookup:siberia|TI|MM|1693^7^0
+1315656|Sulfatases|D013429|26225|MH|||RC
+1315656|Mucins|D009077|7273|MH|||RC
+1315656|*Bivalves|D049872|663|ET|Entry Term Replacement for "Bivalvia";RtM via: Class Bivalvia;Forced Non-Leaf Node Lookup:bivalves|TI|MM|510^8^0;221^8^0
+1315656|Europe|D005060|1281|MH|RtM via: Europe|TI|MM|1997^6^0
+1315656|Germany|D005858|855|MH|RtM via: Germany|TI|MM|2313^7^0
+1315656|North America|D009656|429|MH|RtM via: North America|TI|MM|2038^13^0
+1315644|Humans|D006801|216413272|CT|Forced Humans: families|TI|MM;RC
+1315644|Animals|D000818|1000|CT|Forced Treecode Turn Back On: B01.050.500.131.365.190 (Decapoda)||MM
+1315644|Argentina|D001118|8704063|MH|RtM via: Country of Argentina;Forced Leaf Node Lookup:argentina|TI|MM|493^9^0;202^9^0
+1315644|Chile|D002677|8704063|MH|RtM via: Chile;Forced Leaf Node Lookup:chile|TI|MM|752^5^0
+1315644|Antarctic Regions|D000864|8703757|MH|RtM via: Antarctica;Forced Leaf Node Lookup:antarctica|TI|MM|759^10^0
+1315644|New Zealand|D009520|8703757|MH|RtM via: New Zealand;Forced Leaf Node Lookup:new zealand|TI|MM|775^11^0
+1315644|Baroreflex|D017704|233496|MH|||RC
+1315644|Sympathetic Nervous System|D013564|143132|MH|||RC
+1315644|Decapoda|D033364|1000|MH|Forced Non-Leaf Node Lookup:decapod crustaceans;Forced Non-Leaf Node Lookup:decapods||MM|70^19^0;224^8^0
+1315572|*Chalk|D002119|17868|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Chalk;checkForceMH Boosted;Forced Non-Leaf Node Lookup:chalk|TI|MM|38^5^0
+1315572|Alabama|D000407|17649|MH|RtM via: Alabama;Forced Leaf Node Lookup:alabama|TI|MM|47^7^0
+1315572|Mississippi|D008922|17649|MH|RtM via: Mississippi (geographic location);Forced Leaf Node Lookup:mississippi|TI|MM|59^11^0
+1315572|*Grassland|D065948|17220|MH|Forced Leaf Node Lookup:prairies|TI|MM|24^7^0
+1315572|Antithrombin III|D000990|61984|MH|||RC
+1315572|Blood Coagulation|D001777|24312|MH|||RC
+4095809|Animals|D000818|367858|CT|Reptiles;CT Treecode Lookup: B01.050.150.900.833 (Reptiles);Vertebrates;CT Treecode Lookup: B01.050.150.900 (Vertebrates);Fishes;CT Treecode Lookup: B01.050.150.900.493 (Fishes)|TI|MM
+4095809|*Fossils|D005580|24529|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1103^6^0
+4095809|*Limestone|D002119|22375|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|667^9^0;196^9^0;60^9^0;231^9^0
+4095809|Colorado|D003120|22093|MH|RtM via: Colorado;Forced Leaf Node Lookup:colorado|TI|MM|693^8^0;150^8^0
+4095809|*Grassland|D065948|22093|MH|Forced Leaf Node Lookup:grasslands|TI|MM|124^9^0
+4095809|Echovirus Infections|D004457|366858|MH|||RC
+4095809|Enterovirus B, Human|D029822|32247|MH|||RC
+4095809|*Reptiles|D012104|3141|MH|RtM via: Reptiles;Forced Non-Leaf Node Lookup:reptiles|TI|MM|610^8^0
+4095809|*Vertebrates|D014714|1917|MH|RtM via: Vertebrates;Forced Non-Leaf Node Lookup:vertebrates|TI|MM|1346^10^0;839^10^0;364^10^0;316^11^0
+4095809|*Fishes|D005399|1239|MH|RtM via: Fishes;Forced Non-Leaf Node Lookup:fishes|TI|MM|586^6^0
+4095809|North America|D009656|459|MH|RtM via: North America|TI|MM|1422^13^0
+1315617|*Limestone|D002119|98350|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|216^9^0
+1315617|*Wood|D014934|97834|MH|RtM via: Wood material;Forced Leaf Node Lookup:wood|TI|MM|495^4^0
+1315617|Arkansas|D001131|97780|MH|RtM via: Arkansas;Forced Leaf Node Lookup:arkansas|TI|MM|141^8^0
+1315617|Oklahoma|D009825|97780|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|114^8^0
+1315617|Ganciclovir|D015774|668562|MH|||RC
+1315617|Cytomegalovirus Infections|D003586|368761|MH|||RC
+1315557|Animals|D000818|102982|CT|Coral;CT Treecode Lookup: B01.050.500.308 (Coral)||MM;RC
+1315557|calcium magnesium carbonate|C028042|33351|NM|RtM via: dolomite;Forced SCR Leaf Node Lookup:dolomite|TI|MM|186^8^0;225^8^0
+1315557|*Coral|D037421|16804|ET|Entry Term Replacement for "Anthozoa";RtM via: Coral;checkForceMH Boosted;Forced Non-Leaf Node Lookup:corals|TI|MM|3281^6^0;2493^5^0;1339^6^0;920^6^0;251^6^0;2069^5^0
+1315557|*Water|D014867|16537|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|1583^5^0;1405^5^0;1156^5^0;888^5^0
+1315557|*Fossils|D005580|16507|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|3874^6^0
+1315557|New Mexico|D009516|16366|MH|RtM via: New Mexico;Forced Leaf Node Lookup:new mexico|TI|MM|2932^10^0;105^10^0
+1315557|Texas|D013781|16366|MH|RtM via: Texas;Forced Leaf Node Lookup:texas|TI|MM|2943^5^0;132^5^0
+1315557|*Patella|D010329|16228|MH|RtM via: Patella;Forced Leaf Node Lookup:patellas|TI|MM|699^7^0;341^7^0
+1315557|*Bays|D061006|16165|MH|Forced Leaf Node Lookup:bay|TI|MM|3122^3^0
+1315557|Manitoba|D008350|16165|MH|RtM via: Manitoba;Forced Leaf Node Lookup:manitoba|TI|MM|2878^8^0
+1315557|Receptors, Retinoic Acid|D018168|101982|MH|||RC
+1315557|Retinoids|D012176|69371|MH|||RC
+1315557|*Calcium Carbonate|D002119|33350|HM|RtM via: dolomite|TI|MM|186^8^0
+1315557|*Magnesium|D008274|32825|HM|RtM via: dolomite|TI|MM|186^8^0
+1315653|*Water|D014867|69561|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|566^5^0
+1315653|Arkansas|D001131|68658|MH|RtM via: Arkansas;Forced Leaf Node Lookup:arkansas|TI|MM|177^8^0
+1315653|Diet, Reducing|D004038|416635|MH|||RC
+1315653|Weight Loss|D015431|274420|MH|||RC
+1315636|United States|D014481|49894|CT|RtM via: United States;Forced Non-Leaf Node Lookup:united states|TI|MM|713^2^1;720^13^1;737^7^1
+1315636|Myocardial Contraction|D009200|48894|MH|||RC
+1315636|Xanthine Oxidase|D014969|23018|MH|||RC
+1315636|*Habit|D006184|171|ET|Entry Term Replacement for "Habits";RtM via: Behaviorial Habits;Forced Non-Leaf Node Lookup:habits|TI|MM|963^5^0
+1315639|Ohio|D009820|7109|MH|RtM via: Ohio;Forced Leaf Node Lookup:ohio|TI|MM|100^4^0
+1315639|Amino Acid Sequence|D000595|16344|MH|||RC
+1315639|Cloning, Molecular|D003001|14099|MH|||RC
+1315639|Europe|D005060|321|MH|RtM via: Europe|TI|MM|518^6^0
+1315639|North America|D009656|318|MH|RtM via: North America|TI|MM|751^13^0;557^13^0
+1315610|*Cicer|D029863|67274|MH|RtM via: Cicer;Forced Leaf Node Lookup:cicers;checkForceMH Boosted|TI|MM|1156^5^0
+1315610|*Uranium|D014501|67085|MH|RtM via: uranium;Forced Leaf Node Lookup:uranium;checkForceMH Boosted|TI|MM|1899^7^0
+1315610|*Fossils|D005580|33754|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|628^7^0
+1315610|Acromegaly|D000172|251183|MH|||RC
+1315610|Growth Hormone|D013006|118024|MH|||RC
+1315610|*Carbonates|D002254|618|MH|RtM via: Carbonates;Forced Non-Leaf Node Lookup:carbonates|TI|MM|688^10^0
+1315610|China|D002681|3|MH|RtM via: China|TI|MM|483^5^0
+1315610|Europe|D005060|3|MH|RtM via: Europe|TI|MM|2323^6^0
+30219695|Humans|D006801|262495696|CT|Forced Humans: families|TI|MM;RC
+30219695|*Paleontology|D010163|10937729|MH|RtM via: Paleontology;Forced Leaf Node Lookup:paleontology|TI|MM|322^12^0
+30219695|*Limestone|D002119|10632992|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|450^9^0;433^10^0;203^9^0;470^9^0
+30219695|*Fossils|D005580|10632614|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|2157^6^0;542^6^0
+30219695|*Intercalators|D007364|10632602|ET|Entry Term Replacement for "Intercalating Agents";RtM via: Intercalating Agents;checkForceMH Boosted|TI|MM|213^14^0
+30219695|Ukraine|D014455|10632002|MH|RtM via: Ukraine;Forced Leaf Node Lookup:ukraine|TI|MM|79^7^0
+30219695|Moscow|D009031|10631987|MH|RtM via: Moscow;Forced Leaf Node Lookup:moscow|TI|MM|2009^6^0;1706^6^0
+30219695|*Coal|D003031|10631933|MH|RtM via: Coal;checkForceMH Boosted;Forced Non-Leaf Node Lookup:coal|TI|MM|241^4^0
+30219695|Pilocarpine|D010862|183393|MH|||RC
+30219695|Muscarinic Agonists|D018721|85350|MH|||RC
+30219695|Russia|D012426|588|MH|RtM via: Russia|TI|MM|1720^6^0
+1315506|*Limestone|D002119|26572|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|1667^9^0;510^9^0;142^9^0;34^9^0
+1315506|Arkansas|D001131|23086|MH|RtM via: Izard County, AR;RtM via: Searcy County, AR;RtM via: Arkansas;Forced Leaf Node Lookup:arkansas|TI|MM|277^14^0;320^13^0;192^8^0
+1315506|Oklahoma|D009825|22312|MH|RtM via: Oklahoma (geographic location);Forced Leaf Node Lookup:oklahoma|TI|MM|451^8^0
+1315506|United Kingdom|D006113|22018|MH|RtM via: Great Britain;Forced Lookup:britain|TI|MM|1476^13^0;1482^7^0
+1315506|Calcium-Transporting ATPases|D000252|110557|MH|||RC
+1315506|Ca(2+) Mg(2+)-ATPase|D017301|106501|MH|||RC
+1315506|Czechoslovakia|D003604|0|MH|RtM via: CZECHOSLOVAKIAN|TI|MM|1880^15^0
+30219692|Animals|D000818|473776|CT|CT Text Lookup: fish|TI|MM;RC|1330^4^0
+30219692|*Rivers|D045483|153660|MH|RtM via: Streams;RtM via: Rivers;Forced Leaf Node Lookup:streams;Forced Leaf Node Lookup:rivers|TI|MM|1436^7^0;1260^5^0;1448^6^0;297^5^0
+30219692|*Lakes|D060106|52136|MH|RtM via: Lake (environment);Forced Leaf Node Lookup:lake|TI|MM|1388^4^0
+30219692|*Fossils|D005580|51926|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1381^6^0;264^6^0
+30219692|Wyoming|D014959|50255|MH|RtM via: Wyoming;Forced Leaf Node Lookup:wyoming|TI|MM|327^7^0
+30219692|Cholagogues and Choleretics|D002756|472776|MH|||RC
+30219692|Ursodeoxycholic Acid|D014580|385683|MH|||RC
+30219692|*Skull|D012886|2064|MH|RtM via: Bone structure of cranium;Forced Non-Leaf Node Lookup:skulls|TI|MM|741^5^0
+30219692|Asia|D001208|1281|MH|RtM via: Asia|TI|MM|1616^4^0
+30219692|Australia|D001315|1281|MH|RtM via: Australia|TI|MM|1625^9^0;518^9^0
+30219692|Europe|D005060|1281|MH|RtM via: Europe|TI|MM|1608^6^0;507^6^0
+30219692|North America|D009656|1281|MH|RtM via: North America|TI|MM|1593^13^0;413^13^0
+1315542|*Fossils|D005580|18242|MH|RtM via: Fossils;Forced Leaf Node Lookup:fossils|TI|MM|1297^6^0;324^6^0
+1315542|*Phylogeny|D010802|17669|MH|RtM via: Phylogeny;Forced Leaf Node Lookup:phylogeny|TI|MM|437^9^0
+1315542|*Water|D014867|17222|MH|RtM via: water;checkForceMH Boosted;Forced Non-Leaf Node Lookup:water|TI|MM|77^5^0
+1315542|Gulf of Mexico|D060851|16907|MH|RtM via: Gulf of Mexico;Forced Leaf Node Lookup:gulf of mexico|TI|MM|398^14^0
+1315542|Microsomes, Liver|D008862|133307|MH|||RC
+1315542|Cytochrome P-450 Enzyme System|D003577|67391|MH|||RC
+1315542|*Catalysis|D002384|26577|MH|RtM via: Catalysis;Forced Non-Leaf Node Lookup:catalyzed|TI|MM;RC|940^9^0
+1315542|*Geography|D005843|1377|MH|RtM via: Geography;Forced Non-Leaf Node Lookup:geography|TI|MM|468^9^0
+1315542|Caribbean|D017691|855|ET|Entry Term Replacement for "Caribbean Region";RtM via: Caribbean region|TI|MM|422^9^0
+1315542|Caribbean Islands|D014900|855|ET|Entry Term Replacement for "West Indies";RtM via: Caribbean Islands|TI|MM|749^17^0;422^9^0
+1315542|Panama|D010176|3|MH|RtM via: Panama|TI|MM|565^6^0
+1315542|Southeastern United States|D015144|3|MH|RtM via: Southeastern United States|TI|MM|888^26^0
+1315554|*Limestone|D002119|19779|ET|Entry Term Replacement for "Calcium Carbonate";RtM via: Limestone;checkForceMH Boosted;Forced Non-Leaf Node Lookup:limestone|TI|MM|1274^9^0;197^9^0
+1315554|Nevada|D009505|19473|MH|RtM via: Nevada <Geographic Area>;Forced Leaf Node Lookup:nevada|TI|MM|1303^6^0
+1315554|Utah|D014589|19377|MH|RtM via: Utah;Forced Leaf Node Lookup:utah|TI|MM|1628^4^0;1243^4^0;271^4^0
+1315554|Mammary Tumor Virus, Mouse|D008324|179529|MH|||RC
+1315554|Antigens, Viral|D000956|42087|MH|||RC
+1315554|North America|D009656|639|MH|RtM via: North America|TI|MM|936^13^0
+1315615|*Lead|D007854|27666|MH|Forced Leaf Node Lookup:pb;checkForceMH Boosted|TI|MM|326^2^0
+1315615|Myocardial Reperfusion|D015425|155088|MH|||RC
+1315615|Myocardial Infarction|D009203|35429|MH|||RC
+1315566|Animals|D000818|206818|CT|Gastropods;CT Treecode Lookup: B01.050.500.644 (Gastropods)||MM;RC
+1315566|*Nitella|D044443|67982|MH|RtM via: Nitella;Forced Leaf Node Lookup:nitellas;checkForceMH Boosted|TI|MM|1148^7^0
+1315566|*Gastropods|D049851|38329|ET|Entry Term Replacement for "Gastropoda";RtM via: Orcula;RtM via: Gastropoda;checkForceMH Boosted;Forced Non-Leaf Node Lookup:gastropods|TI|MM|1003^6^0;405^9^0;324^10^0;35^9^0;449^9^0
+1315566|*Extinction, Biological|D053476|34420|MH|RtM via: Extinction, Mass;Forced Leaf Node Lookup:mass extinctions|TI|MM|544^15^0;160^15^0
+1315566|China|D002681|0|MH|RtM via: China;Geo Lookup:guangxi;Forced Non-Leaf Node Lookup:china|TI;AB|MM|285^5^0;359^5^0
+1315566|Organoplatinum Compounds|D009944|205818|MH|||RC
+1315566|Cisplatin|D002945|196830|MH|||RC
