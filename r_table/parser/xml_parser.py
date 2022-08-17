@@ -1,5 +1,5 @@
 import traceback
-import xml.etree.ElementTree as ET 
+import xml.etree.ElementTree as ET
 from collections import Counter
 from zipfile import ZipFile
 import time
@@ -9,7 +9,6 @@ import nltk
 # nltk.download('all')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
-import mysql.connector
 import re
 import requests
 
@@ -38,7 +37,7 @@ def get_authors(article_meta):
                 middle_name = " ".join(given_name_list[1:]).replace(',','')
                 given_name = given_name_list[0].replace(',','')
                 surname = surname.text.replace(',','')
-                fullname = given_name + " "+ middle_name +" "+ surname 
+                fullname = given_name + " "+ middle_name +" "+ surname
                 if suffix is not None:
                     suffix = suffix.text.replace(',','')
                     fullname += " "+ suffix
@@ -50,7 +49,7 @@ def get_authors(article_meta):
                 fullname = string_name.text.replace(',', '')
                 given_name, middle_name, surname, suffix = parse_name(fullname)
                 author = Author(given_name, middle_name, surname, suffix, fullname)
-                
+
 
             if author is not None:
                 author_list.append(author)
@@ -69,7 +68,7 @@ def parse(xmlfile, mesh_file):
     unique_id = article_meta.find('./article-id').text
 
     add_to_mesh_input_file(unique_id,abstract, mesh_file)
-    
+
     article_title_processed = remove_stop_words(article_title, 'title')
 
     journal_meta = article.find('./front/journal-meta')
@@ -120,7 +119,7 @@ def parse_name(name):
             i=1
             for i in range(1, name_size-1):
                 middle += name_split[i]+" "
-            return name_split[0], middle, name_split[name_size-1], '' 
+            return name_split[0], middle, name_split[name_size-1], ''
 
 
 def remove_stop_words(text, field):
@@ -134,14 +133,14 @@ def remove_stop_words(text, field):
     elif field == "affiliation":
         affiliation_stop_words = ["university","medicine","medical","usa","hospital","school","institute","center","research","science","college","health","new","laboratory","division","national"]
         stop_words = set.union(set(stopwords.words('english')), set(affiliation_stop_words))
-    word_tokens = word_tokenize(text) 
+    word_tokens = word_tokenize(text)
     filtered_sentence = []
     for word in word_tokens:
         if(word not in stop_words and len(word)>1 and word.isalnum()):
             filtered_sentence.append(word)
-    final_sentence = '' 
-  
-    for w in filtered_sentence: 
+    final_sentence = ''
+
+    for w in filtered_sentence:
         final_sentence += w + " "
     return final_sentence
 

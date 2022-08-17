@@ -16,11 +16,11 @@ def parse_arguments():
 
 def store_to_db(sql_client, output_file):
     output_str = ""
-    
+
     with open('mesh_log.txt', 'a+') as f:
         f.write(output_file)
         f.write('\n')
-        
+
     with open(output_file, 'r', encoding='windows-1252') as f:
         output_str_list = f.readlines()
         f.close()

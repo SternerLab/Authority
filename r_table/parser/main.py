@@ -7,9 +7,13 @@ sys.path.append('../')
 from SQL.sqlite_client import sqlite_client
 import xml_parser as xml_parser
 import os
-import shutil 
+import shutil
 import time
 
+import nltk
+nltk.download('all')
+
+from pathlib import Path
 
 #parse command line arguments. usage: python .\main.py --zip_file ./systzool.zip
 def parse_arguments():
@@ -25,6 +29,9 @@ def parse_arguments():
 #parse xml files and store them in database
 def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
     with ZipFile(zip_file, 'r') as zip_obj:
+        temp = Path('temp')
+        temp.mkdir(exist_ok=True)
+
         listOfFiles = zip_obj.namelist()
 
         for file in listOfFiles:
@@ -37,14 +44,14 @@ def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
 #                         os.makedirs(filename)
                     articles = xml_parser.parse('./temp/'+file, filename)
                     insert_article_to_db(articles, sql_client, file)
-                    
+
                 except Exception as e:
                     print(str(e))
                     with open("file_parsing_exceptions.txt","a+") as f:
                         f.write('Exception parsing zip file '+zip_file+' and file '+file+'\n')
                         f.write("------------------------------------------------------\n")
-                        
-        shutil.rmtree('temp') 
+
+        shutil.rmtree('temp')
 
 
 def insert_article_to_db(articles, sql_client, file):
@@ -74,14 +81,14 @@ def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
                     mesh_filename = filepath.split('/')[5] #todo: remove parsing folders.
                     filename = mesh_folder+"/"+mesh_filename+".txt"
                     articles = xml_parser.parse(filepath, filename)
-                    insert_article_to_db(articles, sql_client, file) 
+                    insert_article_to_db(articles, sql_client, file)
                 except Exception as e:
                     print(str(e))
                     with open("file_parsing_exceptions_"+folder+"_.txt","a+") as f:
                         f.write('Exception parsing folder '+folder+' and file '+filepath+'\n')
                         f.write("------------------------------------------------------\n")
-                        
-                
+
+
 
 start_time = time.time()
 
@@ -114,7 +121,7 @@ elif folder is not None:
         with open("parserlog.txt", "a+") as f:
             f.write("done parsing folder: "+folder+"  time_taken:  "+time_taken+"\n")
     else:
-        print("folder doesnot exists")
+        print("folder does not exist")
 else:
     print("provide zip file or folder file to parse")
 
