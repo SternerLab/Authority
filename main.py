@@ -8,7 +8,7 @@ install(show_locals=False)
 from rich import print
 from rich.pretty import pprint
 
-pprint(os.environ)
+# pprint(os.environ)
 
 def script_selector(script, *args):
     script_file = 'scripts/' + script + '.py'
