@@ -181,7 +181,7 @@ def is_match(match):
 def load_nicknames():
     # with open('nick_names.txt', 'r') as f:
     #     lines = f.readlines()
-    nicknames = {}
+    # nicknames = {}
     # for line in lines:
     #     split_line = line.split("  ")
     #     try:
@@ -192,7 +192,7 @@ def load_nicknames():
     # with open('nicknames.json', 'w') as fp:
     #     json.dump(nicknames, fp)
     # print(len(nicknames.keys()))
-    with open('r_table/nicknames.json','r') as f: #change this todo
+    with open('nicknames.json','r') as f: #change this todo?
         nicknames = json.load(f)
     return nicknames
 
@@ -811,7 +811,7 @@ def compute_xa_individual_all_nonmatches():
         write_to_json(x7_nm,'results/x7_nm_'+str(offset)+'.json')
 
 
-sql_client = sqlite_client('../database/jstor-authority.db') #todo change this
+sql_client = sqlite_client('../../database/jstor-authority.db') #todo change this
 
 
 rowheadings = {}
@@ -890,7 +890,7 @@ nicknames = load_nicknames()
 
 test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')
 # print(sql_client.execute_and_fetch("select * from name_non_matches"))
-# store_x1_x2_balanced()
+store_x1_x2_balanced()
 compute_x1_x2_balanced()
 
 

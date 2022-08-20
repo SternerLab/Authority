@@ -1,2 +1,4 @@
 temp
-results
+results/
+results/mesh/*.txt
+

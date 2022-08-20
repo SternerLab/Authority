@@ -19,5 +19,5 @@ for filename in "$input_path"*; do
         python "../../mesh_abstracts_preprocessor.py" --file $filename
         java -cp ../classes:../lib/skrAPI.jar:../lib/commons-logging-1.2.jar:../lib/httpclient-cache-4.5.13.jar:../lib/httpclient-4.5.13.jar:../lib/httpcore-4.4.13.jar:../lib/httpmime-4.5.13.jar GenericBatch $filename > $output_file_name
     fi
-    
+
 done

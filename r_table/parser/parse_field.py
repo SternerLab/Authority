@@ -7,9 +7,9 @@ sys.path.append('../')
 from SQL.sqlite_client import sqlite_client
 import xml_parser as xml_parser
 import os
-import shutil 
+import shutil
 import time
-import xml.etree.ElementTree as ET 
+import xml.etree.ElementTree as ET
 
 
 
@@ -38,7 +38,7 @@ def parse_and_store_field(xmlfile):
         print(str(e))
         print(year)
         print("update articles set year = {} where id like '{}'".format(year, id_))
-    
+
 
 #parse xml files and store them in database
 def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
@@ -55,8 +55,8 @@ def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
                     with open("file_parsing_exceptions.txt","a+") as f:
                         f.write('Exception parsing zip file '+zip_file+' and file '+file+'\n')
                         f.write("------------------------------------------------------\n")
-                        
-        shutil.rmtree('temp') 
+
+        shutil.rmtree('temp')
 
 
 def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
@@ -74,8 +74,8 @@ def parse_xml_files_to_database_from_folder(folder, sql_client, mesh_folder):
                     with open("file_parsing_exceptions_"+folder+"_.txt","a+") as f:
                         f.write('Exception parsing folder '+folder+' and file '+filepath+'\n')
                         f.write("------------------------------------------------------\n")
-                        
-                
+
+
 
 start_time = time.time()
 

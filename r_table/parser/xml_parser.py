@@ -1,27 +1,19 @@
-import traceback
 import xml.etree.ElementTree as ET
-from collections import Counter
-from zipfile import ZipFile
-import time
-import os
 import json
 import nltk
 # nltk.download('all')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import re
-import requests
 
 from models.Article import Article
 from models.Author import Author
-
 
 def get_authors(article_meta):
     contrib_group = article_meta.find('./contrib-group')
     author_list = []
     author_name_list = []
 
-    article_record_list = []
     if contrib_group is not None:
         string_names = contrib_group.findall('./contrib')
         for name in string_names:
@@ -54,6 +46,8 @@ def get_authors(article_meta):
             if author is not None:
                 author_list.append(author)
                 author_name_list.append(fullname)
+            else:
+                assert name.text.strip() == '', f'{name.text} incorrectly parsed'
 
     return author_list, author_name_list
 
@@ -98,7 +92,7 @@ def parse_name(name):
     name_split = name.split(' ')
     name_size = len(name_split)
     if(name_size < 2):
-        print(name + "no last/first name")
+        print(f'{name}: no last/first name')
         return '','',name,''
     if(name_size == 2):
         return name_split[0],'',name_split[1],''
@@ -110,13 +104,11 @@ def parse_name(name):
     else:
         if(name_split[name_size-1] == "Jr." or name_split[name_size-1] == "Sr." or suffix_pattern.match(name_split[name_size-1])):
             middle = ''
-            i=1
             for i in range(1, name_size-2):
                 middle += name_split[i]+" "
             return name_split[0], middle, name_split[name_size-2], name_split[name_size-1]
         else:
             middle = ''
-            i=1
             for i in range(1, name_size-1):
                 middle += name_split[i]+" "
             return name_split[0], middle, name_split[name_size-1], ''

@@ -27,46 +27,46 @@ def load_nicknames():
     # print(len(nicknames.keys()))
     with open('r_table/nicknames.json','r') as f: #change this todo
         nicknames = json.load(f)
-    return nicknames        
+    return nicknames
 
 
 def oneeditdistance(s1,s2):
-	# Find lengths of given strings 
-	m = len(s1) 
-	n = len(s2) 
+	# Find lengths of given strings
+	m = len(s1)
+	n = len(s2)
 
-	# If difference between lengths is more than 1, 
-	# then strings can't be at one distance 
-	if abs(m - n) > 1: 
-		return False 
+	# If difference between lengths is more than 1,
+	# then strings can't be at one distance
+	if abs(m - n) > 1:
+		return False
 
-	count = 0 # Count of isEditDistanceOne 
+	count = 0 # Count of isEditDistanceOne
 
 	i = 0
 	j = 0
-	while i < m and j < n: 
-		# If current characters dont match 
-		if s1[i] != s2[j]: 
-			if count == 1: 
-				return False 
+	while i < m and j < n:
+		# If current characters dont match
+		if s1[i] != s2[j]:
+			if count == 1:
+				return False
 
-			# If length of one string is 
-			# more, then only possible edit 
-			# is to remove a character 
-			if m > n: 
+			# If length of one string is
+			# more, then only possible edit
+			# is to remove a character
+			if m > n:
 				i+=1
-			elif m < n: 
+			elif m < n:
 				j+=1
-			else: # If lengths of both strings is same 
+			else: # If lengths of both strings is same
 				i+=1
 				j+=1
-			# Increment count of edits 
+			# Increment count of edits
 			count+=1
-		else: # if current characters match 
+		else: # if current characters match
 			i+=1
 			j+=1
-	# if last character is extra in any string 
-	if i < m or j < n: 
+	# if last character is extra in any string
+	if i < m or j < n:
 		count+=1
 
 	return count == 1
@@ -81,15 +81,15 @@ def nickname_match(firstname1, firstname2):
 
 def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
     coauth_intersection = 0
-    
+
 #     with open("results/coauth_analysis.json","r") as f:
 #         total_coauth_intersections = json.load(f)
-    
+
     coauth1 = [x.replace(".","").lower() for x in coauth1]
     coauth2 = [x.replace(".","").lower() for x in coauth2]
     fullname1 = fullname1.replace(".","").lower()
     fullname2 = fullname2.replace(".","").lower()
-    
+
 
     for auth1 in coauth1:
         if auth1 in coauth2:
@@ -99,21 +99,21 @@ def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
             auth1.split(" ")[len(auth1.split(" "))-1] in [x.split(" ")[len(x.split(" "))-1] for x in coauth2]):
 #             total_coauth_intersections["coauth_intersections_firstname_lastname"]+=1
             coauth_intersection+=1
-    
+
 #     with open("results/coauth_analysis.json","w") as f:
 #         json.dump(total_coauth_intersections,f)
-        
+
     if(fullname1 == fullname2):
         return coauth_intersection-1
     else:
         return coauth_intersection
-    
+
 
 def compute_x10_(match):
     is_match_set = is_match(match)
     compute_x10(match, is_match_set)
-    
-    
+
+
 def compute_x10(match, is_match_set):
     if is_match_set is not None:
         print("is match?", is_match_set)
@@ -194,7 +194,7 @@ def compute_x2(match):
         with open('results/x2_nm.json', 'w') as fp:
             json.dump(x2_nm, fp)
 
-        
+
 def compute_xa(match, is_match_set= True):
     fullname1 = match[rowheadings['fullname1']].lower()
     fullname2 = match[rowheadings['fullname2']].lower()
@@ -211,9 +211,9 @@ def compute_xa(match, is_match_set= True):
     title1 = match[rowheadings['title1']].lower()
     title2 = match[rowheadings['title2']].lower()
 
-    
+
     x3,x4, x5, x6, x7 = get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2, fullname1, fullname2, mesh1, mesh2, langa, langb)
-    
+
     value = str([x3, x4, x5, x6, x7])
     if(is_match_set):
         if(value in xa_m):
@@ -225,7 +225,7 @@ def compute_xa(match, is_match_set= True):
             xa_nm[value] += 1
         else:
             xa_nm[value] = 1
-    
+
     if(is_match_set):
         if(x3 in x3_m):
             x3_m[x3] += 1
@@ -268,8 +268,8 @@ def compute_xa(match, is_match_set= True):
             x7_nm[x7] += 1
         else:
             x7_nm[x7] = 1
-            
-            
+
+
 def get_x1_score(init2a, init2b):
     if((init2a == "" and init2b == "")):
         value = 2
@@ -280,7 +280,7 @@ def get_x1_score(init2a, init2b):
             value = 0
     elif(init2a=="" or init2b == ""):
         value = 1
-    
+
     return value
 
 
@@ -298,13 +298,13 @@ def get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2,
         x4 = 1
     else:
         x4 = 0
-    
+
     coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
     x5 = coauth_intersection
 
     x6 = len(list(set(mesh1) & set(mesh2)))
 
-    
+
     if(set(langa.split(" ")) == set(langb.split(" ")) and (langa != 'eng' or langa!= 'en')):
         x7 = 3
     elif(set(langa.split(" ")) == set(langb.split(" ")) and (langa == 'eng' or langa == 'en')):
@@ -313,7 +313,7 @@ def get_xa_score(title1, title2, journal_name1, journal_name2, coauth1, coauth2,
         x7 = 1
     else:
         x7 = 0
-    
+
     return x3,x4,x5,x6,x7
 
 
@@ -355,10 +355,10 @@ def get_x10_score(firstname1, firstname2):
     # or flip order of two characters: bjoern vs. bjeorn)
     elif oneeditdistance(firstname1,firstname2):
         score = 5
-    # 4: name matches first part of other name and length > 2 (zak vs. zakaria) 
+    # 4: name matches first part of other name and length > 2 (zak vs. zakaria)
     elif (len(firstname1)>2 and len(firstname2)>2 and (firstname1 in firstname2 or firstname2 in firstname1)):
         score = 4
-    # 3: name matches first part of other name and length = 2 (th vs. thomas) 
+    # 3: name matches first part of other name and length = 2 (th vs. thomas)
     elif ((len(firstname1)==2 or len(firstname2)==2) and (firstname1 in firstname2 or firstname2 in firstname1)):
         score = 3
     # 2: 3-letter initials match (e.g., jean francois g vs. jfg)
@@ -390,52 +390,52 @@ def compare(str_x, str_y):
         return 1
     else:
         return 0
-    
-    
+
+
 def create_blocks(cnx, query, group_by_list):
     df = pd.read_sql(query, cnx)
     group_by = df.groupby(group_by_list)
     return group_by
-      
+
 
 
 def oneeditdistance(s1,s2):
-	# Find lengths of given strings 
-	m = len(s1) 
-	n = len(s2) 
+	# Find lengths of given strings
+	m = len(s1)
+	n = len(s2)
 
-	# If difference between lengths is more than 1, 
-	# then strings can't be at one distance 
-	if abs(m - n) > 1: 
-		return False 
+	# If difference between lengths is more than 1,
+	# then strings can't be at one distance
+	if abs(m - n) > 1:
+		return False
 
-	count = 0 # Count of isEditDistanceOne 
+	count = 0 # Count of isEditDistanceOne
 
 	i = 0
 	j = 0
-	while i < m and j < n: 
-		# If current characters dont match 
-		if s1[i] != s2[j]: 
-			if count == 1: 
-				return False 
+	while i < m and j < n:
+		# If current characters dont match
+		if s1[i] != s2[j]:
+			if count == 1:
+				return False
 
-			# If length of one string is 
-			# more, then only possible edit 
-			# is to remove a character 
-			if m > n: 
+			# If length of one string is
+			# more, then only possible edit
+			# is to remove a character
+			if m > n:
 				i+=1
-			elif m < n: 
+			elif m < n:
 				j+=1
-			else: # If lengths of both strings is same 
+			else: # If lengths of both strings is same
 				i+=1
 				j+=1
-			# Increment count of edits 
+			# Increment count of edits
 			count+=1
-		else: # if current characters match 
+		else: # if current characters match
 			i+=1
 			j+=1
-	# if last character is extra in any string 
-	if i < m or j < n: 
+	# if last character is extra in any string
+	if i < m or j < n:
 		count+=1
 
 	return count == 1
@@ -450,15 +450,15 @@ def nickname_match(firstname1, firstname2):
 
 def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
     coauth_intersection = 0
-    
+
 #     with open("results/coauth_analysis.json","r") as f:
 #         total_coauth_intersections = json.load(f)
-    
+
     coauth1 = [x.replace(".","").lower() for x in coauth1]
     coauth2 = [x.replace(".","").lower() for x in coauth2]
     fullname1 = fullname1.replace(".","").lower()
     fullname2 = fullname2.replace(".","").lower()
-    
+
 
     for auth1 in coauth1:
         if auth1 in coauth2:
@@ -468,16 +468,16 @@ def compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2):
             auth1.split(" ")[len(auth1.split(" "))-1] in [x.split(" ")[len(x.split(" "))-1] for x in coauth2]):
 #             total_coauth_intersections["coauth_intersections_firstname_lastname"]+=1
             coauth_intersection+=1
-    
+
 #     with open("results/coauth_analysis.json","w") as f:
 #         json.dump(total_coauth_intersections,f)
-        
+
     if(fullname1 == fullname2):
         return coauth_intersection-1
     else:
         return coauth_intersection
-    
-    
+
+
 def compute_x10_(match):
     firstname1 = match['first_name'][0]
     firstname2 = match['first_name'][1]
@@ -489,8 +489,8 @@ def compute_x10_(match):
         x10[score] = 0
     x10[score]+=1
     return score
-        
-    
+
+
 def compute_x1(row):
     init2a = row["middle_initial"][0].lower().replace('.','')
     init2b = row["middle_initial"][1].lower().replace('.','')
@@ -524,7 +524,7 @@ def compute_xa(row):
     coauth1 = coautha.split(',')
     coauth2 = coauthb.split(',')
     title1 = row['title'][0].lower()
-    title2 = row['title'][1].lower() 
+    title2 = row['title'][1].lower()
     langa = row['language'][0].lower()
     langb = row['language'][1].lower()
     mesh1 = row['mesh_terms'][0].lower()
@@ -548,7 +548,7 @@ def lookup(input):
     keya = str(input[2])
     key10 = str(input[3])
     value = None
-    
+
     if(key1 in r_x1 and key2 in r_x2 and keya in r_xa and key10 in r_x10):
         value= r_x1[key1]*r_x2[key2]*r_xa[keya]*r_x10[key10]
     else:
@@ -585,7 +585,7 @@ def extrapolate(key):
 #     xnew  (min{9, x3}, min{1, x4}, min{7, x5}, min{9, x6},
 # min{12, x8}, min{1, x9}),
     x_new = []
-#     upper_profiles = ['[9, 0, 0, 10]', '[6, 1, 0, 15]', '[9, 1, 0, 8]', '[11, 1, 0, 6]', '[8, 1, 0, 9]', '[7, 1, 
+#     upper_profiles = ['[9, 0, 0, 10]', '[6, 1, 0, 15]', '[9, 1, 0, 8]', '[11, 1, 0, 6]', '[8, 1, 0, 9]', '[7, 1,
 # 0, 12]', '[10, 1, 0, 7]', '[14, 1, 0, 5]']
     key = json.loads(key)
     upper_profile_key = get_upper_profile_key()
@@ -595,7 +595,7 @@ def extrapolate(key):
     x_new.append(min(upper_profile_key[3], key[3]))
     x_new.append(min(upper_profile_key[4], key[4]))
 
-    
+
     # print(str(x_new)," extrapolated key ", str(key))
     if str(x_new) in r_xa:
         return r_xa[str(x_new)]
@@ -673,7 +673,7 @@ def triplet_corrections(prob, df_group):
                     p_ij = probabilities[0]
                     p_jk = probabilities[1]
                     p_ik = probabilities[2]
-                    
+
                     w_ij = 1 / (p_ij * (1-p_ij))
                     w_jk = 1 / (p_jk * (1-p_jk))
                     w_ik = 1 / (p_ik * (1-p_ik))
@@ -692,14 +692,14 @@ def triplet_corrections(prob, df_group):
                     add_to_prob_dict(key_jk, q_jk, new_prob)
             except Exception as e:
                 print(str(e))
-        
+
         for key in new_prob.keys():
             adj_edges = new_prob[key]
             prob[key] = sum(adj_edges) / float(len(adj_edges))
 
         if violations == 0:
             break
-        
+
         with open('results/updated_prob_triplet_'+index_from+'_'+index_to+'.json', 'w') as f:
             json.dump(prob, f)
         iterations+=1
@@ -714,7 +714,7 @@ def updated_prior(prob):
 
 def pairwise_probability_compute(pm, prob, df_group):
     author_key = None
-    
+
     try:
         df = df_group.apply(lambda x: list(itertools.combinations(x, 2)), result_type='expand')
         count = 0
@@ -744,7 +744,7 @@ def pairwise_probability_compute(pm, prob, df_group):
             json.dump(prob, f)
     except Exception as e:
         print("exception ",str(e))
-    
+
     # print(count)
     # print(total_count)
     return prob, author_key
@@ -768,7 +768,7 @@ def insert_cluster_records(first_initial_last_name, total_records,clusters, tota
                 f.write('\n')
 #             sleep(20)
             print("")
-        
+
 
 import os
 if not os.path.exists('results'):
@@ -792,13 +792,13 @@ x2 = {}
 xa = {}
 x10 = {}
 
-with open('r_table/r_x1.json') as json_file: 
-    r_x1 = json.load(json_file) 
-with open('r_table/r_x2.json') as json_file: 
-    r_x2 = json.load(json_file) 
-with open('r_table/r_final.json') as json_file: 
-    r_xa = json.load(json_file) 
-with open('r_table/r_x10.json') as json_file: 
+with open('r_table/r_x1.json') as json_file:
+    r_x1 = json.load(json_file)
+with open('r_table/r_x2.json') as json_file:
+    r_x2 = json.load(json_file)
+with open('r_table/r_final.json') as json_file:
+    r_xa = json.load(json_file)
+with open('r_table/r_x10.json') as json_file:
     r_x10 = json.load(json_file)
 
 # prob = {}
@@ -828,21 +828,21 @@ for group_name in names[int(index_from):int(index_to)]:
     if n > 1:
         try:
             pm = 1/ (1+(10**-1.194)*(n**0.7975))
-            
+
             initial_prob, auth_key = pairwise_probability_compute(pm, prob, df_group)
 
             pm = updated_prior(initial_prob)
-            
+
             prob, auth_key = pairwise_probability_compute(pm, initial_prob, df_group)
-            
+
             triplet_prob = triplet_corrections(prob, df_group)
-            
+
             pm = updated_prior(triplet_prob)
             prob, auth_key = pairwise_probability_compute(pm, triplet_prob, df_group)
             final_prob = triplet_corrections(prob, df_group)
             clusters = clustering.get_clusters(final_prob, group_name[0], group_name[1])
             cluster_json[group_name[0]+'_'+group_name[1]+'_'+str(n)] = len(clusters)
-                
+
 
             with open('results/clusters_all_'+index_from+'_'+index_to+'.txt', 'a+') as cluster_file:
                 print("file")

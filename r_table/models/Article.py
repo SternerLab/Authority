@@ -1,9 +1,9 @@
 class Article:
     def __init__(self,
         id,
-        position, 
-        last_name, 
-        first_initial, 
+        position,
+        last_name,
+        first_initial,
         middle_initial,
         suffix,
         title,
@@ -36,5 +36,5 @@ class Article:
         self.year = year
 
 
-    def __repr__(self):
+    def __repr__(self): # Not what this function is meant for for sure
         return  self.id, str(self.position), self.last_name ,self.first_initial , self.middle_initial, self.suffix , self.title , self.journal_name , self.fullname , self.first_name , self.middle_name , self.language , self.authors, self.mesh_terms, self.affiliation_terms, self.full_title, self.year

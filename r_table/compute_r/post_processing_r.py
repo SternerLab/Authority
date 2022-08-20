@@ -47,7 +47,7 @@ def interpolate(r_xa_sorted):
     # upper_profile = json.loads(upper_profile_key) #converts string representation of list to list
     # print(upper_profile)
     # upper_profiles = ["[6, 1, 0, 15]", "[7, 1, 0, 12]"]
-#     ['[9, 0, 0, 10]', '[6, 1, 0, 15]', '[9, 1, 0, 8]', '[11, 1, 0, 6]', '[8, 1, 0, 9]', '[7, 1, 
+#     ['[9, 0, 0, 10]', '[6, 1, 0, 15]', '[9, 1, 0, 8]', '[11, 1, 0, 6]', '[8, 1, 0, 9]', '[7, 1,
 # 0, 12]', '[10, 1, 0, 7]', '[14, 1, 0, 5]']
     upper_profiles = get_upper_profiles(list(r_xa_sorted.keys()))
 
@@ -62,7 +62,7 @@ def interpolate(r_xa_sorted):
     count = 0
     print(x3_max, x4_max, x5_max, x6_max, x7_max)
     for i in range(0, 1):
-        #total possibilities 
+        #total possibilities
         # upper_profile = json.loads(upper_profiles[i])
         for x3 in range(1, x3_max+1):
             for x4 in range(0, x4_max+1):
@@ -106,7 +106,7 @@ def insert_if_max(list_, key):
     insert = False
     insert_count = 0
     remove_elements = []
-    
+
     if len(list_) == 0:
         insert = True
     for i in range(len(list_)):
@@ -132,7 +132,7 @@ def max_element(key, list_):
         if sorting.compare(key, list_[i]) > 0:
             return i, True
     return -1, True
-    
+
 
 
 def assign_smoothened_values():

@@ -7,9 +7,9 @@ import collections
 
 
 '''
-Let TP = total number of pairs (of author names) correctly put into same cluster, 
+Let TP = total number of pairs (of author names) correctly put into same cluster,
 TN = total number of pairs correctly put into different clusters,
- FP = total number of pairs incorrectly put into same cluster and 
+ FP = total number of pairs incorrectly put into same cluster and
  FN = total number of pairs incorrectly put into different clusters. Let S = TP + TN + FP + FN .
 1. Accuracy=(TP+TN/S). It is the ratio of the number of correctly clustered pairs to the total number of pairs.
 2. Pairwise precision pp = TP/(TP + FP). It is the fraction of pairs in a cluster being co-referent.
@@ -25,7 +25,7 @@ ferent clusters.
 
 lets say we have <id1,id2>;<id3,id4,id5> clusters
 gold standard: <id1, id2>, <id1,id3>. (lumping and splitting)
-TP = 1 
+TP = 1
 TN = 1
 FP = 0
 FN = 1
@@ -33,12 +33,12 @@ S = 3
 
 Accuracy = 2/3
 pp = 1
-pr = 1/2 
+pr = 1/2
 
 gs and bhl
 1.get matching pairs of gold standard data. example: auth1_id1 : p1,p2,p3 and auth1_id2 : p4,p5,p6. pairs => p1,p2; p2,p3; p1,p3; p4,p5; p5,p6; p2,p6
 2. get non matching pairs of gold standard data. example: p1,p4; p1,p5; p1,p6; p2,p4; p2,p5; p2,p6; p3,p4; p3,p5; p3,p6;
-3.check if matching pair in single cluster: 
+3.check if matching pair in single cluster:
     yes=> TP+=1 (no splitting)
     no=> FN+=1 (splitting)
 check if non matching pair in single cluster:
@@ -46,7 +46,7 @@ check if non matching pair in single cluster:
     no=> TN+=1 (no lumping)
 
 
-or for each cluster:
+for for each cluster:
     get gold standard data of authors
     create matching and non matching pairs
     get matching pairs and non matching pairs of clusters:
@@ -58,7 +58,7 @@ or for each cluster:
 '''
 import itertools
 
-  
+
 
 def get_pairs(list_):
     return itertools.combinations(list_, 2)
@@ -72,7 +72,7 @@ def have_common_articles(list_):
     final_list = []
     for val in list_:
         list_val = val.split(',')
-        
+
         final_list.extend(list_val)
     if len(final_list) == len(set(final_list)):
         return False
@@ -80,7 +80,7 @@ def have_common_articles(list_):
 
 
 def write_to_file(data_dict,authornames_to_article_ids,clusters,_id,filename):
-    author_data = {} 
+    author_data = {}
     cluster_and_author_data = {}
     for author_name in authornames_to_article_ids.keys():
         # author_name = author_names[author_id]
@@ -139,7 +139,7 @@ FN = 0
 
 for index,row in clusters_data.iterrows():
     #say more than one profile for a same author name. map author id -> db ids.
-    # author_name_1 : 1,2,3,4 author_name_2 : 5,6,7. get clusters row["clusters"]. 
+    # author_name_1 : 1,2,3,4 author_name_2 : 5,6,7. get clusters row["clusters"].
     #create map cluster_group_1: 1,2, 4. cluster_group_2: 3,5,6,7. splitting case.
 
     clusters = ast.literal_eval(row["clusters"])
@@ -153,7 +153,7 @@ for index,row in clusters_data.iterrows():
     for cluster in clusters:
         cluster_to_ids[i] = cluster.split(';')
         i+=1
-    
+
     duplicate_author_names = []
     author_names = row["authors"].strip().split(',')
     j = 0
@@ -180,18 +180,18 @@ for index,row in clusters_data.iterrows():
     # print(cluster_to_ids)
     # print(author_to_ids)
     # print("...")
-    
+
     #remove duplicate author profile data
     for val in authornames_to_article_ids:
         if len(authornames_to_article_ids[val]) > 1 and have_common_articles(authornames_to_article_ids[val]):
             duplicate_author_profiles_on_gs+=1
             for authid, authname in authorid_to_name.items():
-                if authname == val and authid in author_to_ids.keys(): 
+                if authname == val and authid in author_to_ids.keys():
                     del author_to_ids[authid]
             with open("duplicate_author_profiles_gs.txt", "a+") as f:
                 f.write(val+" : "+str(authornames_to_article_ids[val]))
                 f.write("\n")
-                
+
     # check author ids in same group. if not splitting case. check if a cluster has only one author ids. no->lumping case
     # to check: author_name_1: cluster_1, cluster_2 ; author_name_2:cluster_2 ; cluster_1: author_1 ; cluster_2: author_1, author_2 ;
     # splitting, no splitting or lumping; no splitting or lumping; lumping
@@ -214,13 +214,13 @@ for index,row in clusters_data.iterrows():
                         author_to_cluster_map[author_id].add(i)
             j+=1
         i+=1
-    
+
 #     print(author_to_cluster_map)
 #     print(cluster_to_author_map)
 #     print("...")
 
-   
-    
+
+
     isdup = False
     #compute splits and lumps
     for val_ in cluster_to_author_map:
@@ -236,12 +236,12 @@ for index,row in clusters_data.iterrows():
                     total_lumps-=1
                     #remove duplicate profile for further evaluation
                     for authid, authname in authorid_to_name.items():
-                        if authname == val and authid in author_to_ids: 
+                        if authname == val and authid in author_to_ids:
                             del author_to_ids[authid]
                     with open("duplicate_author_profiles.txt", "a+") as f:
                         f.write(val+" : "+str(authornames_to_article_ids[val]))
                         f.write("\n")
-    
+
     for val in author_to_cluster_map:
         if len(author_to_cluster_map[val]) > 1:
             total_splits+=1
@@ -253,7 +253,7 @@ for index,row in clusters_data.iterrows():
             if len(cluster_to_author_map[val]) > 1:
                 total_lumping_blocks+=1
                 break
-    
+
     for val in author_to_cluster_map:
         if len(author_to_cluster_map[val]) > 1:
             total_splitting_blocks+=1
@@ -274,15 +274,15 @@ for index,row in clusters_data.iterrows():
     authors_per_block_min = min(total_authors, authors_per_block_min)
 
      # todo: remove duplicate authors. Let say same individual created two different profiles on google scholar (how do we know same? if they share common papers.)
-    # remove both profiles for evaluation. 
-    # example: 
+    # remove both profiles for evaluation.
+    # example:
     # profile1 -> author_name1 : id1 : paper1, paper2, paper3.
     # profile2 -> author_name1 : id2 : paper1
     # remove id1, id2 for evaluation
-    # we have author name - papers, ids - papers. common author names from first map. check one profile's papers subset to other. 
+    # we have author name - papers, ids - papers. common author names from first map. check one profile's papers subset to other.
     # if yes, remove corresponding ids from author_to_ids map
-     
-    
+
+
 
 
     #evaluation using accuracy, precision, recall
@@ -300,7 +300,7 @@ for index,row in clusters_data.iterrows():
     for pair in author_ids_indices_pairs:
 #         print(pair[0])
         non_matching_pairs.extend(get_pairs_from_two_lists(list(author_ids_list)[pair[0]],list(author_ids_list)[pair[1]]))
-    
+
     cluster_ids_list = cluster_to_ids.values()
 
     for value in cluster_ids_list:
@@ -312,7 +312,7 @@ for index,row in clusters_data.iterrows():
 #         print(pair[0])
         clsuter_different_group_pairs.extend(get_pairs_from_two_lists((list(cluster_ids_list))[pair[0]],(list(cluster_ids_list))[pair[1]]))
 
-   
+
     for pair in cluster_same_group_pairs:
         if pair in matching_pairs:
             TP+=1
@@ -323,18 +323,18 @@ for index,row in clusters_data.iterrows():
             FN+=1
         elif pair in non_matching_pairs:
             TN+=1
-    
 
 
 
 
-    
-
-    
 
 
 
-    
+
+
+
+
+
 print("total clusters: ", str(len(clusters_data)))
 print("total splitting: ", str(total_splits))
 print("total lumping: ", str(total_lumps))
@@ -377,11 +377,11 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #     f.write("PLER: "+str(FP/(TP+FP))+"\n")
 #     f.write("PSER: "+str(FN /(TN + FN ))+"\n")
 #     f.write("PER: "+str((FP + FN )/S)+"\n")
-    
-    
 
 
-        
+
+
+
 #started at 12:50
 
 
@@ -422,7 +422,7 @@ with open("evaluation_results_gs.txt", "w+") as f:
 
 # import sqlite3
 # import json
-# import ast 
+# import ast
 # import sys
 
 # cnx = sqlite3.connect('test3.db')
@@ -474,7 +474,7 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #                 with open('bhl_authors.txt', 'a+') as f:
 #                     f.write(name)
 #                     f.write('\n')
-        
+
 #             # print(result)
 #             # break
 #             cluster_author = {}
@@ -493,7 +493,7 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #                             author_cluster[res[0]].add(i) #add cluster group id to author map
 #                             cluster_author[i].add(res[0])
 #                     i+=1
-        
+
 #             for key,value in cluster_author.items():
 #                 if len(value) > 1:
 #                     lumping+=1
@@ -501,13 +501,13 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #             for key,value in author_cluster.items():
 #                 if len(value) > 1:
 #                     splitting+=1
-        
+
 #         # if int(cluster_list[3]) > 1:
 #         #     if len(result) > 0:
 #         #         print(result)
 #         #         db_ids = result[0][0].split(',')
 #         #         cluster_groups = ast.literal_eval(cluster_list[2])
-                
+
 #         #         check = {}
 #         #         i=0
 #         #         for cluster_group in cluster_groups:
@@ -521,7 +521,7 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #         #             bad_cluster_list.append(cluster)
 #         #             actual_cluster_list.append(result[0][0])
 
-                    
+
 #     except Exception as e:
 #         print(e)
 #         print(new_query)
@@ -547,5 +547,5 @@ with open("evaluation_results_gs.txt", "w+") as f:
 #     print("total results found in bhl", ids_found_in_gs)
 # # print("total results found in gs", ids_found_in_gs)
 
-                
+
 

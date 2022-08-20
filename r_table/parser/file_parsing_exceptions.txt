@@ -1,6 +1,0 @@
-Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-001.zip and file jnortamerbentsoc/2009/28/2/10.1899/jnortamerbentsoc.28.issue-2/10.1899/08-118.1/10.1899/08-118.1.xml
-------------------------------------------------------
-Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file jnortamerbentsoc/2008/27/2/10.1899/jnortamerbentsoc.27.issue-2/10.1899/08-025.1/10.1899/08-025.1.xml
-------------------------------------------------------
-Exception parsing zip file ../../data/receipt-id-561931-jcodes-ghij-part-002.zip and file javianmedsurg/2006/20/2/i40008847/40236523/40236523.xml
-------------------------------------------------------

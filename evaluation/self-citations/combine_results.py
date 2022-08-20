@@ -4,7 +4,7 @@ import json
 
 # res = {}
 # for filename in glob.glob('*.txt'):
-#     with open(os.path.join(os.getcwd(), filename), 'r') as f: 
+#     with open(os.path.join(os.getcwd(), filename), 'r') as f:
 #         lines = f.readlines()
 #         for line in lines:
 #             values = line.split(": ")
@@ -21,10 +21,10 @@ import json
 
 # with open(os.path.join(os.getcwd(), 'final_eval_results_self.txt'), 'w+') as f:
 #     f.write(json.dumps(res))
-        
+
 res = {}
 for filename in glob.glob('*aini*.txt'):
-    with open(os.path.join(os.getcwd(), filename), 'r') as f: 
+    with open(os.path.join(os.getcwd(), filename), 'r') as f:
         lines = f.readlines()
         for line in lines:
             values = line.split(": ")
@@ -41,10 +41,10 @@ for filename in glob.glob('*aini*.txt'):
 
 with open(os.path.join(os.getcwd(), 'final_eval_results_self_aini.txt'), 'w+') as f:
     f.write(json.dumps(res))
-    
+
 res = {}
 for filename in glob.glob('*fini*.txt'):
-    with open(os.path.join(os.getcwd(), filename), 'r') as f: 
+    with open(os.path.join(os.getcwd(), filename), 'r') as f:
         lines = f.readlines()
         for line in lines:
             values = line.split(": ")

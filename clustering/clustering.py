@@ -25,7 +25,7 @@ def product(pairs, last_name, first_initial, probabilities):
                 # print(pji_key)
                 # print(probabilities[pji_key])
             else:
-                print("key doesnt exit")
+                print("key doesnt exist")
                 print(pij_key)
                 print(pji_key)
     return product
@@ -120,7 +120,7 @@ def get_clusters(probabilities, last_name, first_initial):
     clusters = []
     clusters_prev = []
     for key in probabilities.keys():
-        key_list = key.strip(']').strip('[').split(',') 
+        key_list = key.strip(']').strip('[').split(',')
         clusters.append(key_list[0].strip().replace("\'", ""))
         clusters.append(key_list[1].strip().replace("\'", ""))
     clusters = list(set(clusters))

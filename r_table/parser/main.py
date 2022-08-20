@@ -11,7 +11,7 @@ import shutil
 import time
 
 import nltk
-nltk.download('all')
+# nltk.download('all')
 
 from pathlib import Path
 
