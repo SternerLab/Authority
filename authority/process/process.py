@@ -6,9 +6,6 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import re
 
-# from models.Article import Article
-# from models.Author import Author
-
 from rich.pretty import pprint
 
 class IncompleteEntry(Exception):
@@ -16,9 +13,9 @@ class IncompleteEntry(Exception):
 
 def process(entry):
     ''' Take a raw JSON article and add stop-worded title and processed author names '''
-    # pprint(entry)
-    process_authors(entry)
-    process_title(entry)
+    entry['article']['authors'] = process_authors(entry)
+    pprint(entry['article']['authors'])
+    entry['article']['title'] = process_title(entry)
     return entry
 
 def process_title(entry):
@@ -26,20 +23,35 @@ def process_title(entry):
     return title
 
 def process_name(name):
-    if isinstance(name, dict):
+    ''' Process the name data for a single author into a common format,
+        accounting for edge cases '''
+    if isinstance(name, dict): # If name split is annotated
         given   = name['given-names']
-        surname = name['surname']
-        print(f'given: "{given}" surname: "{surname}"')
-    else:
-        print(f'partial: {name}')
+        last    = name['surname']
+        # print(f'given: "{given}" surname: "{surname}"')
+        first, *mid = re.split('[ .,]+', given)
+    else: # If the name split is unannotated
+        # print(f'partial: {name}')
+        try:
+            first, *mid, last = re.split('[ .,]+', name)
+        except ValueError:
+            raise IncompleteEntry(name)
 
-    return dict(key='')
+    first_initial = first[0].lower()
+    middle = ' '.join(mid)
+    # print(f'first: "{first:20}" middle: "{middle:15}" last: "{last:20}"')
+    return dict(key=f'{first_initial}{last.lower()}',
+                first_initial=first_initial,
+                first=first.lower(),
+                middle=middle.lower(),
+                last=last.lower())
 
 def process_authors(entry):
-    meta    = entry['article']['front']['article-meta']
+    ''' Process the author data of an article into a common format,
+        accounting for edge cases'''
+    meta = entry['article']['front']['article-meta']
     try:
-        pprint(meta)
-        groups  = meta['contrib-group']
+        groups = meta['contrib-group']
         if isinstance(groups, dict): # Typical case where only one contrib group
             groups = [groups]        # General case with multiple possible contrib
         for group in groups:
