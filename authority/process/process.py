@@ -6,8 +6,53 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import re
 
-from models.Article import Article
-from models.Author import Author
+# from models.Article import Article
+# from models.Author import Author
+
+from rich.pretty import pprint
+
+class IncompleteEntry(Exception):
+    pass
+
+def process(entry):
+    ''' Take a raw JSON article and add stop-worded title and processed author names '''
+    # pprint(entry)
+    process_authors(entry)
+    process_title(entry)
+    return entry
+
+def process_title(entry):
+    title = ''
+    return title
+
+def process_name(name):
+    if isinstance(name, dict):
+        given   = name['given-names']
+        surname = name['surname']
+        print(f'given: "{given}" surname: "{surname}"')
+    else:
+        print(f'partial: {name}')
+
+    return dict(key='')
+
+def process_authors(entry):
+    meta    = entry['article']['front']['article-meta']
+    try:
+        pprint(meta)
+        groups  = meta['contrib-group']
+        if isinstance(groups, dict): # Typical case where only one contrib group
+            groups = [groups]        # General case with multiple possible contrib
+        for group in groups:
+            contrib = group['contrib']
+            authors = []
+            if not isinstance(contrib, list): # Edge case for single-author papers
+                contrib = [contrib]
+            for author in contrib:
+                name   = author['string-name']
+                authors.append(process_name(name))
+    except KeyError:
+        raise IncompleteEntry() # How best to handle this?
+    return authors
 
 '''
 def get_authors(article_meta):
