@@ -1,20 +1,18 @@
-import argparse
+# import argparse
 from zipfile import ZipFile
 import json
 
-import sys
-sys.path.append('../')
-from SQL.sqlite_client import sqlite_client
-import xml_parser as xml_parser
+# import sys
+# sys.path.append('../')
+# from SQL.sqlite_client import sqlite_client
+# import xml_parser as xml_parser
 import os
 import shutil
 import time
 
-import nltk
-# nltk.download('all')
-
 from pathlib import Path
 
+'''
 #parse command line arguments. usage: python .\main.py --zip_file ./systzool.zip
 def parse_arguments():
     parser = argparse.ArgumentParser()
@@ -24,36 +22,23 @@ def parse_arguments():
     zip_file = args.zip_file
     folder = args.folder
     return zip_file, folder
+'''
 
-
-#parse xml files and store them in database
-def parse_xml_files_to_database_from_zip(zip_file, sql_client, mesh_folder):
+def iter_xml_files(zip_file):
     with ZipFile(zip_file, 'r') as zip_obj:
         temp = Path('temp')
         temp.mkdir(exist_ok=True)
-
-        listOfFiles = zip_obj.namelist()
-
-        for file in listOfFiles:
-            if(file.endswith('.xml')):
-                zip_obj.extract(file, 'temp')
-                try:
-                    mesh_filename = file.split('/')[0]
-                    filename = mesh_folder+"/"+mesh_filename+".txt"
-#                     if not os.path.exists(filename):
-#                         os.makedirs(filename)
-                    articles = xml_parser.parse('./temp/'+file, filename)
-                    insert_article_to_db(articles, sql_client, file)
-
-                except Exception as e:
-                    print(str(e))
-                    with open("file_parsing_exceptions.txt","a+") as f:
-                        f.write('Exception parsing zip file '+zip_file+' and file '+file+'\n')
-                        f.write("------------------------------------------------------\n")
-
-        shutil.rmtree('temp')
+        try:
+            listOfFiles = zip_obj.namelist()
+            for file in listOfFiles:
+                if file.endswith('.xml'):
+                    zip_obj.extract(file, 'temp')
+                    yield f'./temp/{file}'
+        finally:
+            shutil.rmtree('temp')
 
 
+'''
 def insert_article_to_db(articles, sql_client, file):
     insert_articles_query = "INSERT INTO articles (id, position, last_name, first_initial, middle_initial, suffix, title, journal_name, fullname, first_name, middle_name, language, authors, mesh_terms, affiliation,full_title,year) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
     for article in articles:
@@ -125,3 +110,4 @@ elif folder is not None:
 else:
     print("provide zip file or folder file to parse")
 
+'''

@@ -890,13 +890,11 @@ nicknames = load_nicknames()
 
 test_pair = ('1305255', 1, 'Erwin', 'D', 'H', '', 'permian gastropoda southwestern united states subulitacea ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,New Mexico,Texas,*Gastropod,Clinical Nursing Research,*Tetraodontiformes,*Nasal Septum', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea', '1305376', 1, 'Erwin', 'D', 'H', '', 'genus glyptospira gastropoda trochacea permian southwestern united states ', 'Journal of Paleontology', 'Douglas H. Erwin', 'Douglas', 'H.', 'eng', 'Douglas H. Erwin', 'Animals,*Phylogeny,Texas,Arizona,New Mexico,Nevada,*Gastropod,*Cingulata,*Limestone,Wounds, Penetrating,Wounds, Nonpenetrating,Southwestern United States,*Bird', '', 'Permian Gastropoda of the Southwestern United States: Subulitacea')
 # print(sql_client.execute_and_fetch("select * from name_non_matches"))
-store_x1_x2_balanced()
-compute_x1_x2_balanced()
-
+# store_x1_x2_balanced()
+# compute_x1_x2_balanced()
 
 # compute_xa_individual_all_matches()
 # compute_xa_individual_all_nonmatches()
-
 
 # compute_xa_allmatches()
 # compute_xa_allnonmatches()

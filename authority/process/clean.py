@@ -9,6 +9,7 @@ import re
 from models.Article import Article
 from models.Author import Author
 
+'''
 def get_authors(article_meta):
     contrib_group = article_meta.find('./contrib-group')
     author_list = []
@@ -112,7 +113,7 @@ def parse_name(name):
             for i in range(1, name_size-1):
                 middle += name_split[i]+" "
             return name_split[0], middle, name_split[name_size-1], ''
-
+'''
 
 def remove_stop_words(text, field):
     text = text.lower()
@@ -137,6 +138,7 @@ def remove_stop_words(text, field):
     return final_sentence
 
 
+'''
 def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
     if(abstract is not None):
         abstract_text = abstract.text
@@ -145,3 +147,4 @@ def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
             with open(mesh_filename, "a+") as f:
                 f.write(unique_id+'|'+value)
                 f.write('\n')
+'''

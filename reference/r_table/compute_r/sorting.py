@@ -10,10 +10,10 @@ def monotonic_sort(_list):
     adj_list = {}
     for value in pre_sorted_list:
         adj_list[value] = []
-    
+
     adj_list = generate_directed_graph(pre_sorted_list, adj_list)
     return construct_matrix(adj_list, _list)
-    
+
 
 def construct_matrix(adj_list, pre_sorted_list):
     n = len(pre_sorted_list)
@@ -30,7 +30,7 @@ def construct_matrix(adj_list, pre_sorted_list):
         # break
     # print(final_mat)
     return final_mat
-    
+
 
 def generate_directed_graph(pre_sorted_list, adj_list):
     for i in range(0, len(pre_sorted_list)):

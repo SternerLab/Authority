@@ -1,18 +1,27 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
 import xmltodict, json
+import itertools
 
-filename = 'xml_article_data/micr/1955/1/1/i265301/1484407/1484407.xml'
+from authority.process.files import iter_xml_files
 
 def run():
-    print('Inserting an XML article into MongoDB', flush=True)
+    print('Inserting articles into MongoDB', flush=True)
+    zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
+    limit = 1000
     client = MongoClient('localhost', 27017)
-
     database = client.articles
-
     collect = database.main
 
-    with open(filename, 'r') as infile:
-        collect.insert_one(xmltodict.parse(infile.read()))
+    collect.drop() # Clear!
 
-    pprint(collect.find_one())
+    for filename in itertools.islice(iter_xml_files(zip_filename), limit):
+        with open(filename, 'r') as infile:
+            collect.insert_one(xmltodict.parse(infile.read()))
+
+    count = 0
+    for article in collect.find():
+        count += 1
+        if count % 100 == 0:
+            pprint(article)
+    print(f'Inserted {count} articles!', flush=True)
