@@ -17,4 +17,6 @@ def run():
         pprint(article['authors'])
         for cluster in get_clusters(article):
             pprint(cluster)
-            scholar_authors.insert_one(cluster)
+            scholar_authors.update_one(
+                    {'scholar_id' : cluster['scholar_id']},
+                    {'$set' : cluster}, True)
