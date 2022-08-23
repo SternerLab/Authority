@@ -20,6 +20,7 @@ def process(entry):
     return entry
 
 def process_title(meta):
+    ''' Process the title of a JSTOR article in JSON form, from metadata '''
     title = meta['title-group']['article-title']
     if isinstance(title, dict):
         title = title['#text']
@@ -28,6 +29,7 @@ def process_title(meta):
     return remove_stop_words(title)
 
 def process_abstract(meta):
+    ''' Process the abstract of a JSTOR article in JSON form, from metadata '''
     try:
         abstract = meta['abstract']['p']
         if isinstance(abstract, dict):
@@ -74,14 +76,19 @@ def process_name(name):
             first, *mid, last = re.split('[ .,]+', name)
         except ValueError:
             raise IncompleteEntry(f'incomplete name {name}')
+    return construct_name(first, mid, last)
 
+def construct_name(first, mid, last):
     first_initial = first[0].lower() if len(first) > 0 else ''
     middle = ' '.join(mid)
-    return dict(key=f'{first_initial}{last.lower()}',
-                first_initial=first_initial,
-                first=first.lower(),
-                middle=middle.lower(),
-                last=last.lower())
+
+    first  = first.lower().strip()
+    middle = middle.lower().strip()
+    last   = last.lower().strip()
+
+    return dict(key=f'{first_initial}{last}', first_initial=first_initial,
+                first=first, middle=middle, last=last,
+                full=' '.join((first, middle, last)).title())
 
 
 stop_words_by_field = dict(
@@ -94,6 +101,7 @@ def remove_stop_words(text, field='default'):
     stop_words = stop_words_by_field[field]
     filtered = ' '.join(word for word in word_tokenize(text.lower())
                         if word not in stop_words and len(word) > 1 and word.isalnum())
+    return filtered
 
 
 '''

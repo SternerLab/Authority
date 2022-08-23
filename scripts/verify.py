@@ -5,13 +5,13 @@ def run():
     print('Checking articles in MongoDB', flush=True)
     client = MongoClient('localhost', 27017)
 
-    database = client.articles
+    jstor_database = client.jstor_database
 
-    collect = database.main
+    collect = jstor_database.articles
 
     count = 0
     for article in collect.find():
         count += 1
-        pprint(article['article']['authors'])
-        pprint(article['article']['title'])
+        pprint(article['authors'])
+        pprint(article['title'])
     print(f'Inserted {count} articles!', flush=True)

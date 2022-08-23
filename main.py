@@ -15,7 +15,7 @@ def script_selector(script, *args):
     if os.path.isfile(script_file):
         module = import_module('scripts.' + script, package='.')
         code = module.run(*args)
-        print('Finished!', flush=True)
+        print(f'Finished running script {script_file}!', flush=True)
         if code is not None and code != 0:
             return code
     return 0
