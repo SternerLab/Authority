@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from rich.pretty import pprint
 import xmltodict, json
 import itertools
+import pymongo
 
 from authority.process.files import iter_xml_files
 from authority.process.process import process, IncompleteEntry # hmm
@@ -9,23 +10,48 @@ from authority.process.process import process, IncompleteEntry # hmm
 def run():
     print('Inserting articles into MongoDB', flush=True)
     zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
-    limit = 10000
+    limit = 1000
     client = MongoClient('localhost', 27017)
-    database = client.articles
-    collect = database.main
+    jstor_articles = client.jstor_articles
+    articles       = jstor_articles.articles
+    incomplete     = jstor_articles.incomplete
 
-    collect.drop() # Clear!
+    client.drop_database('blocks') # Clear!
+    blocks = client.blocks
 
+    # Hmmm, questionable
+    incomplete.drop()
+    articles.drop() # Clear!
+
+    articles.create_index([('author.key', pymongo.ASCENDING)])
+    block_keys.create_index([('key', pymongo.ASCENDING)], unique=True)
+
+    incomplete_count = 0
     for filename in itertools.islice(iter_xml_files(zip_filename), limit):
         with open(filename, 'r') as infile:
+            article = xmltodict.parse(infile.read())['article']
             try:
-                collect.insert_one(process(xmltodict.parse(infile.read())))
-            except IncompleteEntry:
-                pass # TODO count these to report in paper
-    1/0
+                processed = process(article)
+                inserted = articles.insert_one(processed)
+                for author in processed['authors']:
+                    blocks[author['key']].insert_one(
+                            dict(mongo_id=inserted.inserted_id))
+            except IncompleteEntry as e:
+                article['reason'] = str(e)
+                incomplete.insert_one(article)
+                incomplete_count += 1
 
     count = 0
-    for article in collect.find():
+    for article in articles.find():
         count += 1
-        pprint(article['article']['front']['article-meta']['contrib-group']['contrib'])
     print(f'Inserted {count} articles!', flush=True)
+    print(f'Skipped {incomplete} articles', flush=True)
+    for article in incomplete.find():
+        print(article['reason'])
+    print('Blocks by key:')
+    for block_key in blocks.list_collection_names():
+        matches = 0
+        for i in blocks[block_key].find():
+            matches += 1
+        print(block_key, matches)
+

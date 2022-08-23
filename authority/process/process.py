@@ -13,102 +13,98 @@ class IncompleteEntry(Exception):
 
 def process(entry):
     ''' Take a raw JSON article and add stop-worded title and processed author names '''
-    entry['article']['authors'] = process_authors(entry)
-    pprint(entry['article']['authors'])
-    entry['article']['title'] = process_title(entry)
+    meta = entry['front']['article-meta']
+    entry['authors']  = process_authors(meta)
+    entry['title']    = process_title(meta)
+    entry['abstract'] = process_abstract(meta)
     return entry
 
-def process_title(entry):
-    title = ''
-    return title
+def process_title(meta):
+    title = meta['title-group']['article-title']
+    if isinstance(title, dict):
+        title = title['#text']
+    if title is None:
+        raise IncompleteEntry('no title')
+    return remove_stop_words(title)
+
+def process_abstract(meta):
+    try:
+        abstract = meta['abstract']['p']
+        if isinstance(abstract, dict):
+            abstract = abstract['#text']
+        elif isinstance(abstract, list):
+            abstract = '\n'.join(
+                    element if not isinstance(element, dict) else element['#text']
+                    for element in abstract)
+        return remove_stop_words(abstract)
+    except KeyError:
+        # raise IncompleteEntry('no abstract')
+        # Since many articles are without abstracts, allow this to be empty.
+        return '' # Not all articles have abstracts, best way to handle this?
+
+
+def process_authors(meta):
+    ''' Process the author data of an article into a common format,
+        accounting for edge cases'''
+    try:
+        groups = meta['contrib-group']
+    except KeyError:
+        raise IncompleteEntry(f'no author data') # How best to handle this?
+    if isinstance(groups, dict): # Typical case where only one contrib group
+        groups = [groups]        # General case with multiple possible contrib
+    for group in groups:
+        contrib = group['contrib']
+        authors = []
+        if not isinstance(contrib, list): # Edge case for single-author papers
+            contrib = [contrib]
+        for author in contrib:
+            name   = author['string-name']
+            authors.append(process_name(name))
+    return authors
 
 def process_name(name):
     ''' Process the name data for a single author into a common format,
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
-        given   = name['given-names']
+        given   = name.get('given-names', '')
         last    = name['surname']
-        # print(f'given: "{given}" surname: "{surname}"')
         first, *mid = re.split('[ .,]+', given)
     else: # If the name split is unannotated
-        # print(f'partial: {name}')
         try:
             first, *mid, last = re.split('[ .,]+', name)
         except ValueError:
-            raise IncompleteEntry(name)
+            raise IncompleteEntry(f'incomplete name {name}')
 
-    first_initial = first[0].lower()
+    first_initial = first[0].lower() if len(first) > 0 else ''
     middle = ' '.join(mid)
-    # print(f'first: "{first:20}" middle: "{middle:15}" last: "{last:20}"')
     return dict(key=f'{first_initial}{last.lower()}',
                 first_initial=first_initial,
                 first=first.lower(),
                 middle=middle.lower(),
                 last=last.lower())
 
-def process_authors(entry):
-    ''' Process the author data of an article into a common format,
-        accounting for edge cases'''
-    meta = entry['article']['front']['article-meta']
-    try:
-        groups = meta['contrib-group']
-        if isinstance(groups, dict): # Typical case where only one contrib group
-            groups = [groups]        # General case with multiple possible contrib
-        for group in groups:
-            contrib = group['contrib']
-            authors = []
-            if not isinstance(contrib, list): # Edge case for single-author papers
-                contrib = [contrib]
-            for author in contrib:
-                name   = author['string-name']
-                authors.append(process_name(name))
-    except KeyError:
-        raise IncompleteEntry() # How best to handle this?
-    return authors
+
+stop_words_by_field = dict(
+    default=set(stopwords.words('english')),
+    mesh=["human","male","female","animal","adult","support non-u.s. gov’t","middle age","aged","english abstract","support u.s. gov’t p.h.s.","case report","rats","comparative study","adolescence","child","mice","time factors","child preschool","pregnancy","united states","infant","molecular sequencedata","kinetics","support u.s. gov’t non-p.h.s.","infant newborn"],
+    affiliation=set.union(set(stopwords.words('english')),
+        set(["university","medicine","medical","usa","hospital","school","institute","center","research","science","college","health","new","laboratory","division","national"])))
+
+def remove_stop_words(text, field='default'):
+    stop_words = stop_words_by_field[field]
+    filtered = ' '.join(word for word in word_tokenize(text.lower())
+                        if word not in stop_words and len(word) > 1 and word.isalnum())
+
 
 '''
-def get_authors(article_meta):
-    contrib_group = article_meta.find('./contrib-group')
-    author_list = []
-    author_name_list = []
-
-    if contrib_group is not None:
-        string_names = contrib_group.findall('./contrib')
-        for name in string_names:
-            given_name = name.find('./string-name/given-names')
-            surname = name.find('./string-name/surname')
-            suffix = name.find('./string-name/suffix')
-
-            string_name = name.find('./string-name')
-            fullname = ""
-            author = None
-            if(given_name is not None and surname is not None):
-                given_name_list = given_name.text.split(" ")
-                middle_name = " ".join(given_name_list[1:]).replace(',','')
-                given_name = given_name_list[0].replace(',','')
-                surname = surname.text.replace(',','')
-                fullname = given_name + " "+ middle_name +" "+ surname
-                if suffix is not None:
-                    suffix = suffix.text.replace(',','')
-                    fullname += " "+ suffix
-                else:
-                    suffix = ""
-                author = Author(given_name, middle_name, surname, suffix, fullname)
-
-            if(given_name is None and surname is None and string_name is not None):
-                fullname = string_name.text.replace(',', '')
-                given_name, middle_name, surname, suffix = parse_name(fullname)
-                author = Author(given_name, middle_name, surname, suffix, fullname)
-
-
-            if author is not None:
-                author_list.append(author)
-                author_name_list.append(fullname)
-            else:
-                assert name.text.strip() == '', f'{name.text} incorrectly parsed'
-
-    return author_list, author_name_list
-
+def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
+    if(abstract is not None):
+        abstract_text = abstract.text
+        if abstract_text != "":
+            value = (abstract_text.encode("ascii", "ignore")).decode("utf-8")
+            with open(mesh_filename, "a+") as f:
+                f.write(unique_id+'|'+value)
+                f.write('\n')
 
 def parse(xmlfile, mesh_file):
     tree = ET.parse(xmlfile)
@@ -143,7 +139,6 @@ def parse(xmlfile, mesh_file):
         i+=1
     return article_record_list
 
-
 def parse_name(name):
     suffix_pattern = re.compile('\s[IVX][IVX]+')
     name = name.strip().replace(',','')
@@ -170,38 +165,5 @@ def parse_name(name):
             for i in range(1, name_size-1):
                 middle += name_split[i]+" "
             return name_split[0], middle, name_split[name_size-1], ''
-'''
 
-def remove_stop_words(text, field):
-    text = text.lower()
-    stop_words = []
-    #todo: consider other languages too
-    if field == 'title':
-        stop_words = set(stopwords.words('english'))
-    elif field == 'mesh':
-        stop_words = ["human","male","female","animal","adult","support non-u.s. gov’t","middle age","aged","english abstract","support u.s. gov’t p.h.s.","case report","rats","comparative study","adolescence","child","mice","time factors","child preschool","pregnancy","united states","infant","molecular sequencedata","kinetics","support u.s. gov’t non-p.h.s.","infant newborn"]
-    elif field == "affiliation":
-        affiliation_stop_words = ["university","medicine","medical","usa","hospital","school","institute","center","research","science","college","health","new","laboratory","division","national"]
-        stop_words = set.union(set(stopwords.words('english')), set(affiliation_stop_words))
-    word_tokens = word_tokenize(text)
-    filtered_sentence = []
-    for word in word_tokens:
-        if(word not in stop_words and len(word)>1 and word.isalnum()):
-            filtered_sentence.append(word)
-    final_sentence = ''
-
-    for w in filtered_sentence:
-        final_sentence += w + " "
-    return final_sentence
-
-
-'''
-def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
-    if(abstract is not None):
-        abstract_text = abstract.text
-        if abstract_text != "":
-            value = (abstract_text.encode("ascii", "ignore")).decode("utf-8")
-            with open(mesh_filename, "a+") as f:
-                f.write(unique_id+'|'+value)
-                f.write('\n')
 '''
