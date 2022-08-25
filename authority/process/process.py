@@ -64,7 +64,7 @@ def process_authors(meta):
             authors.append(process_name(name))
     return authors
 
-suffix_pattern   = re.compile('([IVX]|(jr)|(sr))+')
+suffix_pattern   = re.compile('^([IVX]|(jr)|(sr))+$')
 name_sep_pattern = re.compile('[ .,]+')
 
 def process_name(name):
@@ -83,19 +83,25 @@ def process_name(name):
                 *mid, last = mid
             else:
                 suffix = ''
-        except ValueError:
+        except ValueError as e:
             raise IncompleteEntry(f'incomplete name {name}')
     return construct_name(first, mid, last, suffix)
 
+def initial(name):
+    return name[0].lower() if len(name) > 0 else ''
+
 def construct_name(first, mid, last, suffix):
-    first_initial = first[0].lower() if len(first) > 0 else ''
+    first_initial = initial(first)
     middle = ' '.join(mid)
 
     first  = first.lower().strip()
     middle = middle.lower().strip()
     last   = last.lower().strip()
 
-    return dict(key=f'{first_initial}{last}', first_initial=first_initial,
+    return dict(key=f'{first_initial}{last}',
+                first_initial=first_initial,
+                middle_initial=initial(middle),
+                last_initial=initial(last),
                 first=first, middle=middle, last=last,
                 full=' '.join((first, middle, last, suffix)).title(),
                 suffix=suffix)
