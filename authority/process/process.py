@@ -25,6 +25,8 @@ def process(entry):
     entry['abstract'] = process_abstract(meta)
     entry['language'] = process_language(meta)
     process_mappings(entry)
+    entry['affiliation'] = ''
+    # entry['mesh'] = ''
     # TODO affiliation, mesh
     return entry
 
