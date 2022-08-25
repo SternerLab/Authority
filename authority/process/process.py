@@ -11,13 +11,48 @@ from rich.pretty import pprint
 class IncompleteEntry(Exception):
     pass
 
+NESTED_MAPPING = {
+    'front.journal-meta.journal-title-group.journal-title' : 'journal',
+    'front.article-meta.pub-date.year' : 'year',
+        }
+
 def process(entry):
     ''' Take a raw JSON article and add stop-worded title and processed author names '''
+    pprint(entry)
     meta = entry['front']['article-meta']
     entry['authors']  = process_authors(meta)
     entry['title']    = process_title(meta)
     entry['abstract'] = process_abstract(meta)
+    entry['language'] = process_language(meta)
+    process_mappings(entry)
+    # TODO affiliation, mesh
     return entry
+
+def process_mappings(entry):
+    ''' Remap nested keys to top-level keys with NESTED_MAPPING global dict (above) '''
+    for k, v in NESTED_MAPPING.items():
+        try:
+            sub = entry
+            for sk in k.split('.'):
+                if isinstance(sub, list):
+                    # A rather big assumption: we care about the first entry for either journal title or year
+                    sub = sub[0]
+                sub = sub[sk]
+            entry[v] = sub
+        except:
+            raise IncompleteEntry(f'key {k} could not be remapped to {v}')
+
+lang_split = re.compile('[ -]')
+LANG_MAPPING = {'en' : 'eng'} # can expand as needed
+def process_language(meta):
+    ''' Attempt to extract the language(s) field from the article if it is present
+        and then re-map it according to the LANG_MAPPING dictionary '''
+    try:
+        langs = lang_split.split(meta['custom-meta-group']['custom-meta']['meta-value'])
+    except KeyError:
+        langs = ['eng'] # A rather big assumption: non-labelled articles are in english?
+    langs = [LANG_MAPPING.get(k, k) for k in langs]
+    return langs
 
 def process_title(meta):
     ''' Process the title of a JSTOR article in JSON form, from metadata '''
@@ -59,15 +94,15 @@ def process_authors(meta):
         authors = []
         if not isinstance(contrib, list): # Edge case for single-author papers
             contrib = [contrib]
-        for author in contrib:
+        for i, author in enumerate(contrib):
             name   = author['string-name']
-            authors.append(process_name(name))
+            authors.append(process_name(name, i))
     return authors
 
 suffix_pattern   = re.compile('^([IVX]|(jr)|(sr))+$')
 name_sep_pattern = re.compile('[ .,]+')
 
-def process_name(name):
+def process_name(name, order):
     ''' Process the name data for a single author into a common format,
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
@@ -85,12 +120,12 @@ def process_name(name):
                 suffix = ''
         except ValueError as e:
             raise IncompleteEntry(f'incomplete name {name}')
-    return construct_name(first, mid, last, suffix)
+    return construct_name(first, mid, last, suffix, order)
 
 def initial(name):
     return name[0].lower() if len(name) > 0 else ''
 
-def construct_name(first, mid, last, suffix):
+def construct_name(first, mid, last, suffix, order):
     first_initial = initial(first)
     middle = ' '.join(mid)
 
@@ -104,7 +139,8 @@ def construct_name(first, mid, last, suffix):
                 last_initial=initial(last),
                 first=first, middle=middle, last=last,
                 full=' '.join((first, middle, last, suffix)).title(),
-                suffix=suffix)
+                suffix=suffix,
+                order=order)
 
 
 stop_words_by_field = dict(

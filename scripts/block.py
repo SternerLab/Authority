@@ -62,4 +62,12 @@ def run():
         ]
         result = articles.aggregate(pipeline)
         pprint(list(itertools.islice(result, 5)))
+
+    pipeline = [
+        {'$unwind' : '$authors'},
+        {'$group': {'_id': {'language' : '$language'}, 'count': {'$sum': 1}}},
+        {'$sort': SON([('count', -1), ('_id', -1)])}
+    ]
+    result = articles.aggregate(pipeline)
+    pprint(list(itertools.islice(result, 20)))
     1/0
