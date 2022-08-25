@@ -12,5 +12,8 @@ def run():
     scholar_authors  = scholar_db.authors
     articles         = jstor_database.articles
 
+    count = 0
     for cluster in scholar_authors.find():
         pprint(cluster)
+        count += 1
+    print(f'There are {count} reference clusters in the google scholar authors collection')

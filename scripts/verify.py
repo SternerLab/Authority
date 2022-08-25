@@ -6,7 +6,6 @@ def run():
     client = MongoClient('localhost', 27017)
 
     jstor_database = client.jstor_database
-
     collect = jstor_database.articles
 
     count = 0
@@ -14,4 +13,4 @@ def run():
         count += 1
         pprint(article['authors'])
         pprint(article['title'])
-    print(f'Inserted {count} articles!', flush=True)
+    print(f'Counted {count} articles!', flush=True)

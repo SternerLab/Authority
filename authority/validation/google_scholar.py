@@ -64,9 +64,12 @@ def get_papers_by_author(reference_author, reference_title, author_limit=10,
         else:
             title_matches  = [title_close_match(title, reference_title) for title in titles]
         if any(title_matches):
+            if not strict:
+                titles.append(reference_title) # so that a strict match is guaranteed
             yield dict(scholar_id=author['scholar_id'], author=reference_author, titles=titles)
             break
 
+# Could be used later, but isn't necessary for now
 # def get_papers_by_title(reference_title, reference_authors, paper_limit=10, strict=False):
 #     ''' Search for a paper and resolve it by matching title and author names '''
 #     pprint(reference_title)

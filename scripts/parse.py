@@ -10,18 +10,12 @@ from authority.process.process import process, IncompleteEntry # hmm
 def run():
     print('Inserting articles into MongoDB', flush=True)
     zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
-    limit = 5
+    limit = 1000
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     incomplete     = jstor_database.incomplete
-
-    client.drop_database('blocks') # Clear!
     blocks = client.blocks
-
-    # Hmmm, questionable
-    incomplete.drop()
-    articles.drop() # Clear!
 
     articles.create_index([('author.key', pymongo.ASCENDING)])
 
@@ -31,7 +25,6 @@ def run():
             article = xmltodict.parse(infile.read())['article']
             try:
                 processed = process(article)
-                pprint(processed)
                 inserted = articles.insert_one(processed)
                 for author in processed['authors']:
                     blocks[author['key']].insert_one(
