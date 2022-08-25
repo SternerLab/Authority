@@ -64,21 +64,30 @@ def process_authors(meta):
             authors.append(process_name(name))
     return authors
 
+suffix_pattern   = re.compile('([IVX]|(jr)|(sr))+')
+name_sep_pattern = re.compile('[ .,]+')
+
 def process_name(name):
     ''' Process the name data for a single author into a common format,
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
         given   = name.get('given-names', '')
         last    = name['surname']
-        first, *mid = re.split('[ .,]+', given)
+        suffix  = name.get('suffix', '')
+        first, *mid = name_sep_pattern.split(given)
     else: # If the name split is unannotated
         try:
-            first, *mid, last = re.split('[ .,]+', name)
+            first, *mid, last = name_sep_pattern.split(name)
+            if suffix_pattern.match(last):
+                suffix = last
+                *mid, last = mid
+            else:
+                suffix = ''
         except ValueError:
             raise IncompleteEntry(f'incomplete name {name}')
-    return construct_name(first, mid, last)
+    return construct_name(first, mid, last, suffix)
 
-def construct_name(first, mid, last):
+def construct_name(first, mid, last, suffix):
     first_initial = first[0].lower() if len(first) > 0 else ''
     middle = ' '.join(mid)
 
@@ -88,7 +97,8 @@ def construct_name(first, mid, last):
 
     return dict(key=f'{first_initial}{last}', first_initial=first_initial,
                 first=first, middle=middle, last=last,
-                full=' '.join((first, middle, last)).title())
+                full=' '.join((first, middle, last, suffix)).title(),
+                suffix=suffix)
 
 
 stop_words_by_field = dict(
@@ -102,76 +112,3 @@ def remove_stop_words(text, field='default'):
     filtered = ' '.join(word for word in word_tokenize(text.lower())
                         if word not in stop_words and len(word) > 1 and word.isalnum())
     return filtered
-
-
-'''
-def add_to_mesh_input_file(unique_id, abstract, mesh_filename):
-    if(abstract is not None):
-        abstract_text = abstract.text
-        if abstract_text != "":
-            value = (abstract_text.encode("ascii", "ignore")).decode("utf-8")
-            with open(mesh_filename, "a+") as f:
-                f.write(unique_id+'|'+value)
-                f.write('\n')
-
-def parse(xmlfile, mesh_file):
-    tree = ET.parse(xmlfile)
-    article = tree.getroot()
-    article_meta = article.find('./front/article-meta')
-
-    article_title = article_meta.find('./title-group/article-title').text
-    abstract = article_meta.find('./abstract/p')
-    unique_id = article_meta.find('./article-id').text
-
-    add_to_mesh_input_file(unique_id,abstract, mesh_file)
-
-    article_title_processed = remove_stop_words(article_title, 'title')
-
-    journal_meta = article.find('./front/journal-meta')
-    journal_name = journal_meta.find('./journal-title-group/journal-title').text
-    year = int(article_meta.find('./pub-date/year').text)
-
-    language = ''
-    custom_meta_group = article_meta.find('./custom-meta-group')
-    if custom_meta_group is not None:
-        custom_meta = custom_meta_group.find('./custom-meta')
-        language = custom_meta.find('meta-value').text
-
-    author_list, author_name_list = get_authors(article_meta)
-    article_record_list = []
-    i = 1
-    for author in author_list:
-        first_initial = '' if len(author.given_name) == 0 else author.given_name[0]
-        middle_initial = '' if len(author.middle_name) == 0 else author.middle_name[0]
-        article_record_list.append(Article(unique_id, i, author.surname, first_initial, middle_initial, author.suffix, article_title_processed, journal_name, author.full_name, author.given_name, author.middle_name, language, ",".join(author_name_list), "", "", article_title, year))
-        i+=1
-    return article_record_list
-
-def parse_name(name):
-    suffix_pattern = re.compile('\s[IVX][IVX]+')
-    name = name.strip().replace(',','')
-    name_split = name.split(' ')
-    name_size = len(name_split)
-    if(name_size < 2):
-        print(f'{name}: no last/first name')
-        return '','',name,''
-    if(name_size == 2):
-        return name_split[0],'',name_split[1],''
-    if(name_size == 3):
-        if(name_split[2] == "Jr." or name_split[2] == "Sr." or suffix_pattern.match(name_split[2])):
-            return name_split[0],'',name_split[1], name_split[2]
-        else:
-            return name_split[0],name_split[1], name_split[2], ''
-    else:
-        if(name_split[name_size-1] == "Jr." or name_split[name_size-1] == "Sr." or suffix_pattern.match(name_split[name_size-1])):
-            middle = ''
-            for i in range(1, name_size-2):
-                middle += name_split[i]+" "
-            return name_split[0], middle, name_split[name_size-2], name_split[name_size-1]
-        else:
-            middle = ''
-            for i in range(1, name_size-1):
-                middle += name_split[i]+" "
-            return name_split[0], middle, name_split[name_size-1], ''
-
-'''

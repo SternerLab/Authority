@@ -3,3 +3,4 @@ database
 *.ipynb_checkpoints*
 xml_article_data/
 custom_mongo.sh
+geckodriver.log
