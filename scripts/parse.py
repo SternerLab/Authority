@@ -12,10 +12,10 @@ def run():
     zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
     limit = 1000
     client = MongoClient('localhost', 27017)
+    client.drop_database('jstor_database')
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     incomplete     = jstor_database.incomplete
-    blocks = client.blocks
 
     articles.create_index([('author.key', pymongo.ASCENDING)])
 
@@ -26,9 +26,6 @@ def run():
             try:
                 processed = process(article)
                 inserted = articles.insert_one(processed)
-                for author in processed['authors']:
-                    blocks[author['key']].insert_one(
-                            dict(mongo_id=inserted.inserted_id))
             except IncompleteEntry as e:
                 article['reason'] = str(e)
                 incomplete.insert_one(article)
@@ -41,10 +38,3 @@ def run():
     print(f'Skipped {incomplete} articles', flush=True)
     for article in incomplete.find():
         print(article['reason'])
-    print('Blocks by key:')
-    for block_key in blocks.list_collection_names():
-        matches = 0
-        for i in blocks[block_key].find():
-            matches += 1
-        print(block_key, matches)
-
