@@ -26,7 +26,7 @@ def main(args):
     if os.path.isfile(script_file):
         script_selector(*args)
     else:
-        print('Script {script_file} not found!')
+        print(f'Script {script_file} not found!')
 
 if __name__ == '__main__':
     main(sys.argv[1:])
