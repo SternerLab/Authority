@@ -77,10 +77,11 @@ def run():
         result = articles.aggregate(pipeline)
         reference_sets[set_name].insert_many(result)
         result = articles.aggregate(pipeline)
-        pprint(list(itertools.islice(result, 5)))
+        # pprint(list(itertools.islice(result, 5)))
 
     ''' Create non-matching set by sampling articles with different last names '''
-    # n_pairs = reference_sets['first_initial:middle_initial:last:suffix'].count_documents({})
+    match = 'first_initial:middle_initial:last:suffix'
+    # n_pairs = reference_sets[match].count_documents({})
     n_pairs = 100
     samples = reference_sets['last'].aggregate(
         [{'$sample' : {'size' : n_pairs}},
@@ -89,7 +90,14 @@ def run():
              'output'   : {'ids' : {'$push' : '$ids'}}}}
          ]
     )
-    pprint(list(itertools.islice(samples, 5)))
+    #pprint(list(itertools.islice(samples, 5)))
+
+    for group in reference_sets[match].find():
+        ids = group['ids']
+        pprint(ids)
+        a, b, *rest = ids
+        break
+        1/0
 
     '''
     matches: last name, first and middle initial, and suffix equal
