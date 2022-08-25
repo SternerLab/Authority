@@ -18,7 +18,6 @@ NESTED_MAPPING = {
 
 def process(entry):
     ''' Take a raw JSON article and add stop-worded title and processed author names '''
-    pprint(entry)
     meta = entry['front']['article-meta']
     entry['authors']  = process_authors(meta)
     entry['title']    = process_title(meta)
@@ -26,8 +25,7 @@ def process(entry):
     entry['language'] = process_language(meta)
     process_mappings(entry)
     entry['affiliation'] = ''
-    # entry['mesh'] = ''
-    # TODO affiliation, mesh
+    entry['mesh'] = ''
     return entry
 
 def process_mappings(entry):

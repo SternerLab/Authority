@@ -54,20 +54,24 @@ def run():
     blocks = reference_sets.blocks
 
 
-    for by in (('last',), ('key',), ('first', 'last'), ('first_initial', 'last')):
-        pipeline = [
-            {'$unwind' : '$authors'},
-            {'$group': {'_id': {k : f'$authors.{k}' for k in by}, 'count': {'$sum': 1}}},
-            {'$sort': SON([('count', -1), ('_id', -1)])}
-        ]
-        result = articles.aggregate(pipeline)
-        pprint(list(itertools.islice(result, 5)))
+    # for by in (('last',), ('key',), ('first', 'last'), ('first_initial', 'last')):
+    #     pipeline = [
+    #         {'$unwind' : '$authors'},
+    #         {'$group': {'_id': {k : f'$authors.{k}' for k in by}, 'count': {'$sum': 1}}},
+    #         {'$sort': SON([('count', -1), ('_id', -1)])}
+    #     ]
+    #     result = articles.aggregate(pipeline)
+    #     pprint(list(itertools.islice(result, 5)))
 
     pipeline = [
         {'$unwind' : '$authors'},
-        {'$group': {'_id': {'language' : '$language'}, 'count': {'$sum': 1}}},
+        {'$group': {'_id': {'key' : '$authors.key'},
+            'count': {'$sum': 1},
+            'titles' : {'$push' : '$title'},
+            'ids'    : {'$push' : '$_id'},
+            }},
         {'$sort': SON([('count', -1), ('_id', -1)])}
     ]
     result = articles.aggregate(pipeline)
-    pprint(list(itertools.islice(result, 20)))
+    pprint(list(itertools.islice(result, 5)))
     1/0
