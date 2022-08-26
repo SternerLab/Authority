@@ -4,3 +4,4 @@ database
 xml_article_data/
 custom_mongo.sh
 geckodriver.log
+umls_credentials.json
