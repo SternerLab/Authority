@@ -15,14 +15,12 @@ def run():
     match_coll = 'first_initial:middle_initial:last:suffix'
     matches = reference_sets[match_coll]
     for group in matches.find():
-        ids = group['ids']
-        pprint(ids)
-        a, b, *rest = ids
-
+        a, b, *rest = group['ids']
+        auth_a, auth_b, *rest = group['authors']
         doc_a = articles.find_one({'_id' : a})
         doc_b = articles.find_one({'_id' : b})
-        pprint(doc_a)
-        pprint(doc_b)
+        doc_a.update(**auth_a)
+        doc_b.update(**auth_b)
 
         pprint(compare(doc_a, doc_b))
 

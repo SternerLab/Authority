@@ -71,6 +71,7 @@ def run():
                 'count'  : {'$sum': 1},
                 'titles' : {'$push' : '$title'},
                 'ids'    : {'$push' : '$_id'},
+                'authors': {'$push' : '$authors'}
                 }},
             {'$sort': SON([('count', -1), ('_id', -1)])}
         ]

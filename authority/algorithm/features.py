@@ -39,8 +39,9 @@ def x4(a, b):
 
 def x5(a, b):
     ''' Feature based on intersection between coauthors '''
-    # coauth_intersection = compute_coauth_intersection(coauth1, coauth2, fullname1, fullname2)
-    # x5 = coauth_intersection
+    keys_a = {auth['key'] for auth in a['authors']}
+    keys_b = {auth['key'] for auth in b['authors']}
+    return len(keys_a & keys_b) # Technically intersection between authors
 
 def x6(a, b):
     ''' Feature based on words in common between mesh terms '''
