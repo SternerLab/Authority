@@ -26,16 +26,12 @@ def run():
         doc_b = articles.find_one({'_id' : b})
         pprint(auth_a)
         pprint(auth_b)
-        pprint(rest)
-        pprint(doc_a['authors'])
-        pprint(doc_b['authors'])
-        doc_a.update(**auth_a)
-        doc_b.update(**auth_b)
+        doc_a.update(**auth_a[0])
+        doc_b.update(**auth_b[0])
 
         print(doc_a['title'])
         print(doc_b['title'])
         pprint(compare(doc_a, doc_b))
         print()
-        1/0
 
     1/0
