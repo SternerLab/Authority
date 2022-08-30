@@ -81,35 +81,21 @@ def run():
         # pprint(list(itertools.islice(result, 5)))
 
     ''' Create non-matching set by sampling articles with different last names '''
-    match = 'first_initial:middle_initial:last:suffix'
-    # n_pairs = reference_sets[match].count_documents({})
-    n_pairs = 100
-    samples = reference_sets['last'].aggregate(
-        [{'$sample' : {'size' : n_pairs}},
-         {'$unwind' : '$ids'},
-         {'$bucketAuto' : {'groupBy' : '$_id', 'buckets' : n_pairs // 2,
-             'output'   : {'ids' : {'$push' : '$ids'}}}}
-         ]
-    )
-    #pprint(list(itertools.islice(samples, 5)))
+    match_criteria = 'first_initial:middle_initial:last:suffix'
+    n_pairs = reference_sets[match_criteria].count_documents({})
 
-    for group in reference_sets[match].find():
-        ids = group['ids']
-        pprint(ids)
-        a, b, *rest = ids
-        break
-        1/0
+    sampled_sets = [('last', 'non_match')]
+    for ref_key, new_key in sampled_sets:
+        samples = reference_sets[ref_key].aggregate(
+            [{'$sample' : {'size' : n_pairs}},
+             {'$unwind' : '$ids'},
+             {'$bucketAuto' : {'groupBy' : '$_id', 'buckets' : n_pairs // 2,
+                 'output'   : {'ids' : {'$push' : '$ids'},
+                               'authors': {'$push' : '$authors'}
+                     }}}
+             ]
+        )
+        reference_sets[new_key].insert_many(samples)
 
-    '''
-    matches: last name, first and middle initial, and suffix equal
-    non-matches: last name and pubmed id not equal
-
-    'names' meaning full names?
-    name_mixed_set: select 1,000 names, and do all pairwise comparisons within this set
-        name_attribute_match_set: extract article pairs with co-authors in common,
-            two or more affiliation words, or two or more mesh terms in common
-        name_attr_nonmatch_set: pairs with nothing but first author name in common
-    '''
-
-
-    1/0
+    ''' Create the mixed name set?
+    reference_sets['last'] IS the mixed-name set, we need to do pairwise comparison on all pairs of IDs within this set'''

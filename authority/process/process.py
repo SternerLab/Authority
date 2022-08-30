@@ -4,6 +4,7 @@ import nltk
 # nltk.download('all')
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+from textblob import TextBlob
 import re
 
 from rich.pretty import pprint
@@ -50,8 +51,12 @@ def process_language(meta):
     try:
         langs = lang_split.split(meta['custom-meta-group']['custom-meta']['meta-value'])
     except KeyError:
+        pprint(meta)
+        print('No language detected!!')
+        1/0
         langs = ['eng'] # A rather big assumption: non-labelled articles are in english?
     langs = [LANG_MAPPING.get(k, k) for k in langs]
+    pprint(langs)
     return langs
 
 def process_title(meta):
@@ -102,6 +107,9 @@ def process_authors(meta):
 suffix_pattern   = re.compile('^([IVX]|(jr)|(sr))+$')
 name_sep_pattern = re.compile('[ .,]+')
 
+def filter_empty(elements):
+    return (el for el in elements if el != '')
+
 def process_name(name, order):
     ''' Process the name data for a single author into a common format,
         accounting for edge cases '''
@@ -110,12 +118,19 @@ def process_name(name, order):
         last    = name['surname']
         suffix  = name.get('suffix', '')
         first, *mid = name_sep_pattern.split(given)
+        # print(first, 'mid', *mid, 'last', last, 'suffix', suffix)
     else: # If the name split is unannotated
         try:
-            first, *mid, last = name_sep_pattern.split(name)
+            first, *mid, last = filter_empty(name_sep_pattern.split(name))
             if suffix_pattern.match(last):
+                print('MATCHED SUFFIX')
+                print(first, *mid, last)
                 suffix = last
+                print('SUFFIX:', last)
                 *mid, last = mid
+                print('MID: ', *mid)
+                print('LAST: ', last)
+                1/0
             else:
                 suffix = ''
         except ValueError as e:
