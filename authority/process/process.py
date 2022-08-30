@@ -53,10 +53,10 @@ def process_language(meta):
     except KeyError:
         pprint(meta)
         print('No language detected!!')
-        1/0
-        langs = ['eng'] # A rather big assumption: non-labelled articles are in english?
+        1/0 # If the language is missing, then use google translate API to detect it
+        # https://stackoverflow.com/questions/39142778/how-to-determine-the-language-of-a-piece-of-text
+        # langs = ['eng'] # A rather big assumption: non-labelled articles are in english?
     langs = [LANG_MAPPING.get(k, k) for k in langs]
-    pprint(langs)
     return langs
 
 def process_title(meta):
@@ -122,15 +122,9 @@ def process_name(name, order):
     else: # If the name split is unannotated
         try:
             first, *mid, last = filter_empty(name_sep_pattern.split(name))
-            if suffix_pattern.match(last):
-                print('MATCHED SUFFIX')
-                print(first, *mid, last)
+            if suffix_pattern.match(last.lower()):
                 suffix = last
-                print('SUFFIX:', last)
                 *mid, last = mid
-                print('MID: ', *mid)
-                print('LAST: ', last)
-                1/0
             else:
                 suffix = ''
         except ValueError as e:
@@ -154,7 +148,7 @@ def construct_name(first, mid, last, suffix, order):
                 last_initial=initial(last),
                 first=first, middle=middle, last=last,
                 full=' '.join((first, middle, last, suffix)).title(),
-                suffix=suffix,
+                suffix=suffix.lower().strip(),
                 order=order)
 
 
