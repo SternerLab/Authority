@@ -36,17 +36,20 @@ def run():
     features       = client.features
     feature_groups = client.feature_groups
 
+    ''' Create feature vectors for the pair collections '''
     for ref_key in pairs.list_collection_names():
         print(ref_key)
         features[ref_key].insert_many(
             compare_pair(pair, articles) for pair in pairs[ref_key].find())
 
+    ''' Sum feature vectors by reference set, to estimate frequency '''
     pipelines = [(i, [{'$group': {
                         '_id'    : {f'x{i}' : f'$features.x{i}'},
                         'count'  : {'$sum': 1},
                         }},
                       {'$sort': SON([('_id', 1)])}
                       ]) for i in range(1, 8)]
+    possible = set()
     for ref_key in features.list_collection_names():
         print(ref_key)
         for i, pipeline in pipelines:
@@ -54,5 +57,30 @@ def run():
             feature_groups[group_key].insert_many(
                 features[ref_key].aggregate(pipeline))
             for group in feature_groups[group_key].find():
+                for k, v in group['_id'].items():
+                    possible.add((k, v))
                 pprint(group)
+    pprint(possible)
+
+    def get_count(group, k, v):
+        result = group.find_one({'_id' : {k : v}})
+        if result is None:
+            return 0
+        else:
+            return result['count']
+
+    total_matches     = features['match'].count_documents(filter={})
+    total_non_matches = features['non_match'].count_documents(filter={})
+    ''' Compute r scores by comparing match and non-match frequencies '''
+    for i in range(1, 8):
+        match_group     = feature_groups[f'match_x{i}']
+        non_match_group = feature_groups[f'non_match_x{i}']
+        for k, v in possible:
+            match_count     = get_count(match_group, k, v)
+            non_match_count = get_count(non_match_group, k, v)
+            try:
+                print(f'{k}={v}: {(match_count / total_matches) / (non_match_count / total_non_matches)}')
+            except ZeroDivisionError:
+                print(f'{k}={v}: undefined')
+
 
