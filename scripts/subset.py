@@ -55,13 +55,17 @@ def run():
     reference_sets = client.reference_sets
 
     ''' Create matching based on different criteria '''
-    criteria = [('first',),
+    criteria = [# ('first',),
                 ('last',),
-                ('first', 'last'),
+                # ('first', 'last'),
                 ('first_initial', 'last'),                             # candidates
                 ('first_initial', 'middle_initial', 'last', 'suffix'), # matches
-                ('full',)
+                # ('full',)
                 ]
+
+    push_group = {'group' : {'$push' : {'title' : '$title',
+        'authors' : '$authors', 'ids' : '$_id'}}}
+
     for fields in criteria:
         set_name = ':'.join(fields)
         pipeline = [
@@ -69,16 +73,12 @@ def run():
             {'$group': {
                 '_id'    : {k : f'$authors.{k}' for k in fields},
                 'count'  : {'$sum': 1},
-                'titles' : {'$push' : '$title'},
-                'ids'    : {'$push' : '$_id'},
-                'authors': {'$push' : '$authors'}
+                **push_group,
                 }},
             {'$sort': SON([('count', -1), ('_id', -1)])}
         ]
         result = articles.aggregate(pipeline)
         reference_sets[set_name].insert_many(result)
-        result = articles.aggregate(pipeline)
-        # pprint(list(itertools.islice(result, 5)))
 
     ''' Create non-matching set by sampling articles with different last names '''
     match_criteria = 'first_initial:middle_initial:last:suffix'
@@ -88,14 +88,10 @@ def run():
     for ref_key, new_key in sampled_sets:
         samples = reference_sets[ref_key].aggregate(
             [{'$sample' : {'size' : n_pairs}},
-             {'$unwind' : '$ids'},
+             {'$unwind' : '$group'},
              {'$bucketAuto' : {'groupBy' : '$_id', 'buckets' : n_pairs // 2,
-                 'output'   : {'ids' : {'$push' : '$ids'},
-                               'authors': {'$push' : '$authors'}
-                     }}}
+                 'output'   : { 'group' : {'$push' : '$group'}}
+                     }}
              ]
         )
         reference_sets[new_key].insert_many(samples)
-
-    ''' Create the mixed name set?
-    reference_sets['last'] IS the mixed-name set, we need to do pairwise comparison on all pairs of IDs within this set'''
