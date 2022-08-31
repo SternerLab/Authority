@@ -5,6 +5,15 @@ import itertools
 
 from authority.algorithm.compare import compare
 
+def compare_pair(pair, articles):
+    a, b = pair['pair']
+    doc_a = articles.find_one({'_id' : a['ids']})
+    doc_b = articles.find_one({'_id' : b['ids']})
+    doc_a.update(**a['authors'])
+    doc_b.update(**b['authors'])
+    feature_dict = compare(doc_a, doc_b)
+    return dict(pair=[a, b], features=feature_dict)
+
 def run():
     ''' Calculate the features for the different sets in the database
         for features x1, x2, and x7, there are bounds,
@@ -19,24 +28,31 @@ def run():
     client         = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
-    reference_sets = client.reference_sets
+    pairs          = client.reference_sets_pairs
 
-    match_coll = 'first_initial:middle_initial:last:suffix'
-    matches = reference_sets[match_coll]
-    for group in matches.find():
-        try:
-            a, b, *rest = group['ids']
-        except ValueError:
-            break
-        auth_a, auth_b, *rest = group['authors']
-        doc_a = articles.find_one({'_id' : a})
-        doc_b = articles.find_one({'_id' : b})
-        doc_a.update(**auth_a)
-        doc_b.update(**auth_b)
+    client.drop_database('features')
+    client.drop_database('feature_groups')
 
-        print(doc_a['title'])
-        print(doc_b['title'])
-        pprint(compare(doc_a, doc_b))
-        print()
+    features       = client.features
+    feature_groups = client.feature_groups
 
-    1/0
+    for ref_key in pairs.list_collection_names():
+        print(ref_key)
+        features[ref_key].insert_many(
+            compare_pair(pair, articles) for pair in pairs[ref_key].find())
+
+    pipelines = [(i, [{'$group': {
+                        '_id'    : {f'x{i}' : f'$features.x{i}'},
+                        'count'  : {'$sum': 1},
+                        }},
+                      {'$sort': SON([('_id', 1)])}
+                      ]) for i in range(1, 8)]
+    for ref_key in features.list_collection_names():
+        print(ref_key)
+        for i, pipeline in pipelines:
+            group_key = f'{ref_key}_x{i}'
+            feature_groups[group_key].insert_many(
+                features[ref_key].aggregate(pipeline))
+            for group in feature_groups[group_key].find():
+                pprint(group)
+

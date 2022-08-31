@@ -55,19 +55,17 @@ def run():
     reference_sets = client.reference_sets
 
     ''' Create matching based on different criteria '''
-    criteria = [# ('first',),
-                ('last',),
-                # ('first', 'last'),
-                ('first_initial', 'last'),                             # candidates
-                ('first_initial', 'middle_initial', 'last', 'suffix'), # matches
-                # ('full',)
-                ]
+
+    criteria = {
+            'last'  : ('last',),
+            'block' : ('first_initial', 'last'),
+            'match' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
+    }
 
     push_group = {'group' : {'$push' : {'title' : '$title',
         'authors' : '$authors', 'ids' : '$_id'}}}
 
-    for fields in criteria:
-        set_name = ':'.join(fields)
+    for name, fields in criteria.items():
         pipeline = [
             {'$unwind' : '$authors'},
             {'$group': {
@@ -77,12 +75,10 @@ def run():
                 }},
             {'$sort': SON([('count', -1), ('_id', -1)])}
         ]
-        result = articles.aggregate(pipeline)
-        reference_sets[set_name].insert_many(result)
+        reference_sets[name].insert_many(articles.aggregate(pipeline))
 
     ''' Create non-matching set by sampling articles with different last names '''
-    match_criteria = 'first_initial:middle_initial:last:suffix'
-    n_pairs = reference_sets[match_criteria].count_documents({})
+    n_pairs = reference_sets['match'].count_documents({})
 
     sampled_sets = [('last', 'non_match')]
     for ref_key, new_key in sampled_sets:

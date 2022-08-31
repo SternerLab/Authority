@@ -24,20 +24,3 @@ def run():
             doc_b.update(**b['authors'])
             pprint(compare(doc_a, doc_b))
             break
-
-        # try:
-        #     a, b, *rest = group['ids']
-        # except ValueError:
-        #     continue
-        # auth_a, auth_b, *rest = group['authors']
-        # pprint(auth_a)
-        # pprint(auth_b)
-        # doc_a.update(**auth_a[0])
-        # doc_b.update(**auth_b[0])
-
-        # print(doc_a['title'])
-        # print(doc_b['title'])
-        # pprint(compare(doc_a, doc_b))
-        # print()
-
-    1/0
