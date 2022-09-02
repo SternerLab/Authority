@@ -10,7 +10,7 @@ from authority.process.process import process, IncompleteEntry # hmm
 def run():
     print('Inserting articles into MongoDB', flush=True)
     zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
-    limit = 1000
+    limit = 8192
     client = MongoClient('localhost', 27017)
     client.drop_database('jstor_database')
     jstor_database = client.jstor_database
