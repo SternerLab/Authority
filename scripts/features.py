@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from rich.pretty import pprint
 from bson.son import SON
 import itertools
+from collections import defaultdict
 
 from authority.algorithm.compare import compare
 
@@ -32,9 +33,11 @@ def run():
 
     client.drop_database('features')
     client.drop_database('feature_groups')
+    client.drop_database('possible_features')
 
     features       = client.features
     feature_groups = client.feature_groups
+    possible_features = client.possible_features.possible_features
 
     ''' Create feature vectors for the pair collections '''
     for ref_key in pairs.list_collection_names():
@@ -49,7 +52,7 @@ def run():
                         }},
                       {'$sort': SON([('_id', 1)])}
                       ]) for i in range(1, 8)]
-    possible = set()
+    possible = defaultdict(set)
     for ref_key in features.list_collection_names():
         print(ref_key)
         for i, pipeline in pipelines:
@@ -58,29 +61,7 @@ def run():
                 features[ref_key].aggregate(pipeline))
             for group in feature_groups[group_key].find():
                 for k, v in group['_id'].items():
-                    possible.add((k, v))
+                    possible[k].add(v)
                 pprint(group)
     pprint(possible)
-
-    def get_count(group, k, v):
-        result = group.find_one({'_id' : {k : v}})
-        if result is None:
-            return 0
-        else:
-            return result['count']
-
-    total_matches     = features['match'].count_documents(filter={})
-    total_non_matches = features['non_match'].count_documents(filter={})
-    ''' Compute r scores by comparing match and non-match frequencies '''
-    for i in range(1, 8):
-        match_group     = feature_groups[f'match_x{i}']
-        non_match_group = feature_groups[f'non_match_x{i}']
-        for k, v in possible:
-            match_count     = get_count(match_group, k, v)
-            non_match_count = get_count(non_match_group, k, v)
-            try:
-                print(f'{k}={v}: {(match_count / total_matches) / (non_match_count / total_non_matches)}')
-            except ZeroDivisionError:
-                print(f'{k}={v}: undefined')
-
-
+    possible_features.insert_many(dict(k=k, v=list(v)) for k, v in possible.items())

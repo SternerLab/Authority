@@ -20,6 +20,7 @@ skr-web-api = {git = "https://github.com/lhncbc/skr_web_python_api.git", rev = "
 requests-html = "^0.10.0"
 textblob = "^0.17.1"
 snakeviz = "^2.1.1"
+scipy = "^1.9.1"
 
 [tool.poetry.dev-dependencies]
 

@@ -642,6 +642,17 @@ typing-extensions = "*"
 tor = ["stem"]
 
 [[package]]
+name = "scipy"
+version = "1.9.1"
+description = "SciPy: Scientific Library for Python"
+category = "main"
+optional = false
+python-versions = ">=3.8,<3.12"
+
+[package.dependencies]
+numpy = ">=1.18.5,<1.25.0"
+
+[[package]]
 name = "selenium"
 version = "4.4.3"
 description = ""
@@ -1002,7 +1013,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10,<3.11"
-content-hash = "9d4c18ece93f0ac23638bd8ab3c4beae7bd10d16172ddd161361c09236938654"
+content-hash = "45dd8c5b7b962e0718bb0be7eab2eb2534f87db5504905cb656f2876d5c89392"
 
 [metadata.files]
 alabaster = []
@@ -1126,6 +1137,7 @@ requests = []
 requests-html = []
 rich = []
 scholarly = []
+scipy = []
 selenium = []
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
