@@ -62,8 +62,13 @@ def process_language(meta):
 def process_title(meta):
     ''' Process the title of a JSTOR article in JSON form, from metadata '''
     title = meta['title-group']['article-title']
-    if isinstance(title, dict):
-        title = title['#text']
+    try:
+        if isinstance(title, dict):
+            title = title['#text']
+    except KeyError:
+        print('bad title')
+        pprint(title)
+        raise IncompleteEntry('bad title')
     if title is None:
         raise IncompleteEntry('no title')
     return remove_stop_words(title)
@@ -100,8 +105,14 @@ def process_authors(meta):
         if not isinstance(contrib, list): # Edge case for single-author papers
             contrib = [contrib]
         for i, author in enumerate(contrib):
-            name   = author['string-name']
-            authors.append(process_name(name, i))
+            try:
+                name   = author['string-name']
+                authors.append(process_name(name, i))
+            except KeyError:
+                print('bad author name')
+                pprint(author)
+        if not authors:
+            raise IncompleteEntry('bad author name(s)')
     return authors
 
 suffix_pattern   = re.compile('^([IVX]|(jr)|(sr))+$')
@@ -114,11 +125,19 @@ def process_name(name, order):
     ''' Process the name data for a single author into a common format,
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
-        given   = name.get('given-names', '')
-        last    = name['surname']
-        suffix  = name.get('suffix', '')
-        first, *mid = name_sep_pattern.split(given)
-        # print(first, 'mid', *mid, 'last', last, 'suffix', suffix)
+        given = name.get('given-names', '')
+        try:
+            last = name['surname']
+        except KeyError:
+            raise IncompleteEntry(f'no surname: {name}')
+        suffix = name.get('suffix', '')
+
+        try:
+            first, *mid = name_sep_pattern.split(given)
+        except TypeError:
+            print('bad name split')
+            pprint(name)
+            raise IncompleteEntry('bad name split')
     else: # If the name split is unannotated
         try:
             first, *mid, last = filter_empty(name_sep_pattern.split(name))

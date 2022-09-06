@@ -73,9 +73,10 @@ def run():
                 'count'  : {'$sum': 1},
                 **push_group,
                 }},
-            {'$sort': SON([('count', -1), ('_id', -1)])}
+            # {'$sort': SON([('count', -1), ('_id', -1)])}
         ]
-        reference_sets[name].insert_many(articles.aggregate(pipeline))
+        # print(name)
+        reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     ''' Create non-matching set by sampling articles with different last names '''
     n_pairs = reference_sets['match'].count_documents({})
