@@ -177,8 +177,15 @@ stop_words_by_field = dict(
     affiliation=set.union(set(stopwords.words('english')),
         set(["university","medicine","medical","usa","hospital","school","institute","center","research","science","college","health","new","laboratory","division","national"])))
 
-def remove_stop_words(text, field='default'):
+def remove_stop_words(words_or_text, field='default'):
+    ''' Remove stop words from either a string or list of words, returning either a string or a generator
+        The field keyword argument controls which stopwords are used. '''
+    is_text    = isinstance(words_or_text, str)
     stop_words = stop_words_by_field[field]
-    filtered = ' '.join(word for word in word_tokenize(text.lower())
-                        if word not in stop_words and len(word) > 1 and word.isalnum())
-    return filtered
+    words      = word_tokenize(words_or_text.lower()) if is_text else words_or_text
+    filtered   = (word for word in words if word not in stop_words and len(word) > 1 and word.isalnum())
+
+    if is_text:
+        return ' '.join(filtered)
+    else:
+        return filtered
