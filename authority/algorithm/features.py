@@ -5,6 +5,14 @@ def _word_intersection(s1, s2):
 def _coauthor_intersection(a, b):
     return 0
 
+# Just do this globally, pretty painless
+import json as _json
+with open('authority/algorithm/nicknames.json', 'r') as _infile:
+    _nicknames = {k : set(v) for k, v in _json.load(_infile).items()}
+
+def _nickname_match(a, b):
+    return b in _nicknames.get(a, {}) or a in _nicknames.get(b, {})
+
 import Levenshtein as _lev
 
 ''' Features as individual functions '''
@@ -121,7 +129,7 @@ def x10(a, b):
         else:
             # 7: hyphenated name vs. first name only (jean-francois vs. jean)
             return 7
-    elif nickname_match(a_first, b_first):
+    elif _nickname_match(a_first, b_first):
         # 6: nickname match (dave vs. david)
         return 6
     elif _lev.distance(a_first, b_first) == 1:
