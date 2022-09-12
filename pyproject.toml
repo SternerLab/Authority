@@ -21,6 +21,7 @@ requests-html = "^0.10.0"
 textblob = "^0.17.1"
 snakeviz = "^2.1.1"
 scipy = "^1.9.1"
+Levenshtein = "^0.20.3"
 
 [tool.poetry.dev-dependencies]
 

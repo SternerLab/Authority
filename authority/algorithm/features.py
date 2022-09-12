@@ -5,6 +5,8 @@ def _word_intersection(s1, s2):
 def _coauthor_intersection(a, b):
     return 0
 
+import Levenshtein as _lev
+
 ''' Features as individual functions '''
 def x1(a, b):
     ''' Feature based on middle initials of each author '''
@@ -43,9 +45,17 @@ def x5(a, b):
     keys_b = {auth['key'] for auth in b['authors']}
     return len(keys_a & keys_b) # Technically intersection between authors
 
+def _get_mesh(x):
+    fetched = x.get('mesh', [])
+    if isinstance(fetched, str):
+        return []
+    else:
+        assert isinstance(fetched, list)
+        return fetched
+
 def x6(a, b):
     ''' Feature based on words in common between mesh terms '''
-    return _word_intersection(a['mesh'], b['mesh'])
+    return len(set(_get_mesh(a)) & set(_get_mesh(b)))
 
 def x7(a, b):
     ''' Feature based on common languages, favoring a non-english language match '''
@@ -76,58 +86,61 @@ def x9(a, b):
     return 1 if (not aff_a or not aff_b) else 0
 
 
-# Reference only
-# def get_x10_score(firstname1, firstname2):
-#     score = 0
-#     hyphen='-'
-#     firstname1_withoutspace_hyphen = firstname1.replace(" ","")
-#     firstname1_withoutspace_hyphen = firstname1_withoutspace_hyphen.replace(hyphen,"")
-#     firstname2_withoutspace_hyphen = firstname2.replace(" ","")
-#     firstname2_withoutspace_hyphen = firstname2_withoutspace_hyphen.replace(hyphen,"")
-#
-#     # 11: exact match,
-#     if(firstname1 == firstname2 and len(firstname1) > 1):
-#         score = 11
-#
-#     # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
-#     # francois vs. jean francois),
-#     elif(firstname1_withoutspace_hyphen == firstname2_withoutspace_hyphen):
-#         score = 10
-#
-#     # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
-#     # jean-f),
-#     elif(hyphen in firstname1 and hyphen in firstname2):
-#         if(len(firstname1.split(hyphen)[1]) or len(firstname2.split(hyphen)[1])):
-#             if (firstname1.split(hyphen)[1][0] == firstname2.split(hyphen)[1][0]):
-#                 score = 9
-#     # 8: hyphenated name with initial vs. name (jean-f vs. jean),
-#     elif((hyphen in firstname1 and len(firstname1.split(hyphen)[1])==1) or (hyphen in firstname2 and len(firstname2.split(hyphen)[1])==1)):
-#         if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
-#             score = 8
-#     # 7: hyphenated name vs. first name only (jean-francois vs. jean)
-#     elif(hyphen in firstname1 or hyphen in firstname2):
-#         if (firstname1.split(hyphen)[0] == firstname2.split(hyphen)[0]):
-#             score = 7
-#     # 6: nickname match (dave vs. david)
-#     elif nickname_match(firstname1, firstname2):
-#         score = 6
-#     # 5: oneeditdistance(deletion:bjoernvs.bjorn,replacement:bjoernvs.bjaern,
-#     # or flip order of two characters: bjoern vs. bjeorn)
-#     elif oneeditdistance(firstname1,firstname2):
-#         score = 5
-#     # 4: name matches first part of other name and length > 2 (zak vs. zakaria)
-#     elif (len(firstname1)>2 and len(firstname2)>2 and (firstname1 in firstname2 or firstname2 in firstname1)):
-#         score = 4
-#     # 3: name matches first part of other name and length = 2 (th vs. thomas)
-#     elif ((len(firstname1)==2 or len(firstname2)==2) and (firstname1 in firstname2 or firstname2 in firstname1)):
-#         score = 3
-#     # 2: 3-letter initials match (e.g., jean francois g vs. jfg)
-#     elif (firstname1==''.join([_name[0] for _name in firstname2.split(' ')]) or firstname2==''.join([_name[0] for _name in firstname1.split(' ')])):
-#         score = 2
-#     # 1: same first initial if one of them only has initial given,
-#     elif (firstname1[0] == firstname2[0] and (len(firstname1) == 1 or len(firstname2) == 1)):
-#         score = 1
-#     # 0: otherwise.
-#     else:
-#         score = 0
-#     return score
+def x10(a, b):
+    clean = lambda s : s.replace(' ', '').replace('-', '')
+    a_first = a['first']
+    b_first = b['first']
+    a_clean = clean(a_first)
+    b_clean = clean(b_first)
+    hyphen_a = '-' in a_first
+    hyphen_b = '-' in b_first
+    if hyphen_a:
+        a_pre, a_post = a_first.split('-')
+    else:
+        a_pre = a_first; a_post = ''
+    if hyphen_b:
+        b_pre, b_post = b_first.split('-')
+    else:
+        b_pre = b_first; b_post = ''
+
+    if a_first == b_first and len(a_first) > 1:
+        # 11: exact match
+        return 11
+    elif a_clean == b_clean:
+        # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
+        # francois vs. jean francois),
+        return 10
+    elif hyphen_a and hyphen_b and a_pre == b_pre and b_post[0] == a_post[0]:
+        # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
+        # jean-f),
+        return 9
+    elif hyphen_a != hyphen_b and a_pre == b_pre:
+        if 1 in {len(a_post), len(b_post)}:
+            # 8: hyphenated name with initial vs. name (jean-f vs. jean),
+            return 8
+        else:
+            # 7: hyphenated name vs. first name only (jean-francois vs. jean)
+            return 7
+    elif nickname_match(a_first, b_first):
+        # 6: nickname match (dave vs. david)
+        return 6
+    elif _lev.distance(a_first, b_first) == 1:
+        # 5: oneeditdistance(deletion:bjoernvs.bjorn,replacement:bjoernvs.bjaern,
+        # or flip order of two characters: bjoern vs. bjeorn)
+        return 5
+    elif a_first in b_first or b_first in a_first:
+        l_a = len(a_first); l_b = len(b_first)
+        if l_a > 2 and l_b > 2:
+            # 4: name matches first part of other name and length > 2 (zak vs. zakaria)
+            return 4
+        if l_a == l_b == 2:
+            # 3: name matches first part of other name and length = 2 (th vs. thomas)
+            return 3
+    elif a_first[0] == b_first[0] and (a['middle_initial'] == b['middle_initial']):
+        # This case doesn't make sense, since our first names are parsed as single or hyphenated words only, so we can check "middle" names instead
+        return 2
+    elif a_first[0] == b_first[0] and len(a_first) == 1 or len(b_first) == 1:
+        # 1: same first initial if one of them only has initial given,
+        return 1
+    else:
+        return 0
