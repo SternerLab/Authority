@@ -9,7 +9,8 @@ from itertools import islice
 from authority.process.process import remove_stop_words
 import unicodedata
 from collections import defaultdict
-from multiprocessing import Pool
+from concurrent.futures import ThreadPoolExecutor
+# from multiprocessing import Pool
 
 mesh_format = '''UI  - {article_id}
 TI  - {title}
@@ -81,19 +82,17 @@ def run():
     articles       = jstor_database.articles
     article_cursor = articles.find(batch_size=batch_size)
 
-    with Pool(distribute) as pool:
-        try:
+    try:
+        with ThreadPoolExecutor(max_workers=distribute) as pool:
             while True:
                 print('Creating batches', flush=True)
                 batches = [get_batch(article_cursor, batch_size)
                            for d in range(distribute)]
                 print('Distributing...', flush=True)
-                result = pool.imap_unordered(fetch_mesh, batches, batch_size)
+                result = pool.map(fetch_mesh, batches)
 
                 for mesh_output in result:
-                    pprint(mesh_output)
-                    1/0
                     insert_mesh_output(articles, mesh_output)
                 print('Update finished!', flush=True)
-        except StopIteration:
-            print('Finished all batches!', flush=True)
+    except StopIteration:
+        print('Finished all batches!', flush=True)
