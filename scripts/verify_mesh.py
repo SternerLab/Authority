@@ -10,7 +10,7 @@ def run():
 
     count = 0
     for article in collect.find():
-        if 'mesh' in article:
+        if 'mesh' in article and article['mesh'] != '':
             count += 1
             # pprint(article['authors'])
             pprint(article['title'])
