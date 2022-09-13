@@ -35,13 +35,25 @@ def get_batch(article_cursor, batch_size):
 
 def parse_mesh_output(content):
     mesh_output = defaultdict(set)
-    lines = content.decode('utf-8', errors='replace').split('\n')
+    try:
+        lines = content.decode('utf-8', errors='replace').split('\n')
+    except AttributeError:
+        lines = content.split('\n')
     for i, line in enumerate(lines):
         if len(line.strip()) == 0 or '|' not in line:
             continue
         id_cell, *cells = line.split('|')
         mesh_output[id_cell].update(remove_stop_words(cells, 'mesh'))
     return mesh_output
+
+def insert_mesh_output(articles, mesh_output):
+    for mongo_id, words in mesh_output.items():
+        print('Updating', mongo_id)
+        pprint(words)
+        articles.update_one(
+            {'_id' : ObjectId(mongo_id)},
+            {'$set' : {'mesh' : list(words)}})
+
 
 # See https://github.com/lhncbc/skr_web_python_api/blob/main/examples/generic_batch.py
 with open('umls_credentials.json', 'r') as infile:
@@ -69,7 +81,6 @@ def run():
     articles       = jstor_database.articles
     article_cursor = articles.find(batch_size=batch_size)
 
-    print('Creating pool', flush=True)
     with Pool(distribute) as pool:
         try:
             while True:
@@ -80,12 +91,9 @@ def run():
                 result = pool.imap_unordered(fetch_mesh, batches, batch_size)
 
                 for mesh_output in result:
-                    for mongo_id, words in mesh_output.items():
-                        print('Updating', mongo_id)
-                        pprint(words)
-                        articles.update_one(
-                            {'_id' : ObjectId(mongo_id)},
-                            {'$set' : {'mesh' : list(words)}})
+                    pprint(mesh_output)
+                    1/0
+                    insert_mesh_output(articles, mesh_output)
                 print('Update finished!', flush=True)
         except StopIteration:
             print('Finished all batches!', flush=True)
