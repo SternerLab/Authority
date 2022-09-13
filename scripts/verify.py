@@ -8,6 +8,10 @@ def run():
     jstor_database = client.jstor_database
     collect = jstor_database.articles
 
+    n = collect.count_documents({})
+    print(f'{n} articles!')
+    1/0
+
     count = 0
     for article in collect.find():
         count += 1

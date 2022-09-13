@@ -31,7 +31,7 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     article_cursor = articles.find()
-    batch_size = 4
+    batch_size = 128
     while True:
         batch = islice(article_cursor, batch_size)
         abstracts = []

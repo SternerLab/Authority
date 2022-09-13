@@ -89,6 +89,6 @@ def run():
              {'$bucketAuto' : {'groupBy' : '$_id', 'buckets' : n_pairs // 2,
                  'output'   : { 'group' : {'$push' : '$group'}}
                      }}
-             ]
+             ], allowDiskUse=True
         )
         reference_sets[new_key].insert_many(samples)

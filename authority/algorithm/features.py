@@ -144,11 +144,12 @@ def x10(a, b):
         if l_a == l_b == 2:
             # 3: name matches first part of other name and length = 2 (th vs. thomas)
             return 3
-    elif a_first[0] == b_first[0] and (a['middle_initial'] == b['middle_initial']):
-        # This case doesn't make sense, since our first names are parsed as single or hyphenated words only, so we can check "middle" names instead
-        return 2
-    elif a_first[0] == b_first[0] and len(a_first) == 1 or len(b_first) == 1:
-        # 1: same first initial if one of them only has initial given,
-        return 1
+
+        if a_first[0] == b_first[0] and (a['middle_initial'] == b['middle_initial']):
+            # This case doesn't make sense, since our first names are parsed as single or hyphenated words only, so we can check "middle" names instead
+            return 2
+        if a_first[0] == b_first[0] and len(a_first) == 1 or len(b_first) == 1:
+            # 1: same first initial if one of them only has initial given,
+            return 1
     else:
         return 0

@@ -61,8 +61,9 @@ def process_language(meta):
 
 def process_title(meta):
     ''' Process the title of a JSTOR article in JSON form, from metadata '''
-    title = meta['title-group']['article-title']
+    title = None
     try:
+        title = meta['title-group']['article-title']
         if isinstance(title, dict):
             title = title['#text']
     except KeyError:

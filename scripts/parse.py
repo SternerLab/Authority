@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich.progress import track
 import xmltodict, json
 import itertools
 import pymongo
@@ -10,7 +11,9 @@ from authority.process.process import process, IncompleteEntry # hmm
 def run():
     print('Inserting articles into MongoDB', flush=True)
     zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
-    limit = 8192
+    # limit = 8192
+    # limit = 16384
+    limit = 131072
     client = MongoClient('localhost', 27017)
     client.drop_database('jstor_database')
     jstor_database = client.jstor_database
@@ -20,7 +23,8 @@ def run():
     articles.create_index([('author.key', pymongo.ASCENDING)])
 
     incomplete_count = 0
-    for filename in itertools.islice(iter_xml_files(zip_filename), limit):
+    for filename in track(itertools.islice(iter_xml_files(zip_filename), limit),
+                          description='Parsing XML into MongoDB..', total=limit):
         with open(filename, 'r') as infile:
             article = xmltodict.parse(infile.read())['article']
             try:
@@ -35,6 +39,6 @@ def run():
     for article in articles.find():
         count += 1
     print(f'Inserted {count} articles!', flush=True)
-    print(f'Skipped {incomplete} articles', flush=True)
+    print(f'Skipped {incomplete_count} articles', flush=True)
     for article in incomplete.find():
         print(article['reason'])

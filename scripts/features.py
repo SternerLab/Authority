@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich.progress import track
 from bson.son import SON
 import itertools
 from collections import defaultdict
@@ -43,7 +44,9 @@ def run():
     for ref_key in pairs.list_collection_names():
         print(ref_key)
         features[ref_key].insert_many(
-            compare_pair(pair, articles) for pair in pairs[ref_key].find())
+            compare_pair(pair, articles) for pair in track(pairs[ref_key].find(),
+                description=f'Calculating features for {ref_key}',
+                total=pairs[ref_key].count_documents({})))
 
     ''' Sum feature vectors by reference set, to estimate frequency '''
     pipelines = [(i, [{'$group': {
@@ -51,7 +54,7 @@ def run():
                         'count'  : {'$sum': 1},
                         }},
                       {'$sort': SON([('_id', 1)])}
-                      ]) for i in range(1, 8)]
+                      ]) for i in range(1, 11)]
     possible = defaultdict(set)
     for ref_key in features.list_collection_names():
         print(ref_key)
