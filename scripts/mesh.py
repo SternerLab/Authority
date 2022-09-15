@@ -9,8 +9,6 @@ from itertools import islice
 from authority.process.process import remove_stop_words
 import unicodedata
 from collections import defaultdict
-from concurrent.futures import ThreadPoolExecutor
-# from multiprocessing import Pool
 
 mesh_format = '''UI  - {article_id}
 TI  - {title}
@@ -24,14 +22,17 @@ def fix_unicode(s):
 def get_batch(article_cursor, batch_size):
     abstracts = []
     while len(abstracts) < batch_size:
-        article = next(article_cursor)
-        if len(article['abstract']) > 0:
-            abstracts.append(
-                (mesh_format.format(
-                    article_id=article["_id"],
-                    title=fix_unicode(article['title']),
-                    abstract=fix_unicode(article['abstract'])),
-                 article['_id']))
+        try:
+            article = next(article_cursor)
+            if len(article['abstract']) > 0:
+                abstracts.append(
+                    (mesh_format.format(
+                        article_id=article["_id"],
+                        title=fix_unicode(article['title']),
+                        abstract=fix_unicode(article['abstract'])),
+                     article['_id']))
+        except StopIteration:
+            break
     return abstracts
 
 def parse_mesh_output(content):
@@ -74,25 +75,21 @@ def fetch_mesh(batch):
     return parse_mesh_output(response.content)
 
 def run():
-    distribute     = 8 # Use 8 processes
-    batch_size     = 4
+    distribute     = 1
+    batch_size     = 2048
 
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     article_cursor = articles.find(batch_size=batch_size)
 
-    try:
-        with ThreadPoolExecutor(max_workers=distribute) as pool:
-            while True:
-                print('Creating batches', flush=True)
-                batches = [get_batch(article_cursor, batch_size)
-                           for d in range(distribute)]
-                print('Distributing...', flush=True)
-                result = pool.map(fetch_mesh, batches)
-
-                for mesh_output in result:
-                    insert_mesh_output(articles, mesh_output)
-                print('Update finished!', flush=True)
-    except StopIteration:
-        print('Finished all batches!', flush=True)
+    while True:
+        print('Creating batches', flush=True)
+        batch = get_batch(article_cursor, batch_size)
+        if len(batch) == 0:
+            break
+        print('Distributing...', flush=True)
+        mesh_output = fetch_mesh(batch)
+        insert_mesh_output(articles, mesh_output)
+        print('Update finished!', flush=True)
+    print('Finished all batches!', flush=True)

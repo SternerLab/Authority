@@ -5,6 +5,9 @@ from bson.son import SON
 import itertools
 import scipy
 import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 import itertools
 
@@ -39,8 +42,10 @@ def run():
     total_matches     = features['match'].count_documents(filter={})
     total_non_matches = features['non_match'].count_documents(filter={})
 
-    limits  = dict(x3=7, x4=1, x5=7, x6=7, x9=1)
-    r_table = {k : np.zeros(l + 1) for k, l in limits.items()}
+    limits  = dict(x3=7, x4=1, x5=7, x6=7)
+    r_values = {k : np.zeros(l + 1) for k, l in limits.items()}
+    pairs = []
+    smooth_pairs = []
 
     ''' Compute r scores by comparing match and non-match frequencies '''
     for p in possible_features.find():
@@ -57,12 +62,14 @@ def run():
             non_match_count = get_count(non_match_group, k, v)
             try:
                 r = (match_count / total_matches) / (non_match_count / total_non_matches)
-                # print(f'{k:3} = {v:2}: {r:4.4f}')
+                # print(f'{k:3} = {v:2}: {r:4.4f} (empirical)')
                 rs[i] = r
                 w[i]  = match_count + non_match_count
+                print(k, v, match_count, non_match_count, w[i], r)
+                if k != 'x7':
+                    pairs.append((k, v, r))
             except ZeroDivisionError:
                 print(f'{k}={v}: undefined') # will stay at initial 0 state
-        # print(rs)
         def objective(x):
             return w @ (rs - x)**2
 
@@ -73,13 +80,32 @@ def run():
         rh = scipy.optimize.minimize(objective, x, method='slsqp',
                 constraints=[dict(type='ineq', fun=constraint)])['x']
         for i, (ro, rs, v) in enumerate(zip(rs, rh, vs)):
-            if v is None:
-                print(f'{k:3} = None: {rs:4.4f} ({ro:4.4f})')
-            else:
-                print(f'{k:3} = {v:2}: {rs:4.4f} ({ro:4.4f})')
+            # if v is None:
+            #     print(f'{k:3} = None: {rs:4.4f} ({ro:4.4f})')
+            # else:
+            #     print(f'{k:3} = {v:2}: {rs:4.4f} ({ro:4.4f})')
             if k in limits and v <= limits[k]:
-                r_table[k][v] = rs
-    pprint(r_table)
+                r_values[k][v] = rs
+            smooth_pairs.append((k, v, rs))
+
+    for source, ps in (('empirical', pairs), ('smoothed', smooth_pairs)):
+        pprint(r_values)
+        long = dict(feature=[p[0] for p in ps],
+                    value=[p[1]   for p in ps],
+                    r=[p[2]       for p in ps])
+        df = pd.DataFrame(long)
+        print(df)
+        fig = sns.lineplot(df, x='value', y='r', hue='feature', style='feature')
+        fig.set_title(f'{source.title()} R Values')
+        fig.figure.savefig(f'plots/{source}_full.png')
+        fig.set_xlim(0, 5)
+        fig.set_ylim(0, 10)
+        fig.figure.savefig(f'plots/{source}_lim.png')
+        del fig
+        # fig.set_yscale('log')
+        # print(dir(fig))
+
+        # plt.show()
     1/0
 
     ''' Interpolation '''
