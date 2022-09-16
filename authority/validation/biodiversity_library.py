@@ -26,7 +26,7 @@ def lookup(author, key=None):
 
 
 def parse(metadata):
-    pprint(metadata)
+    # pprint(metadata)
     metadata['author_id'] = metadata['AuthorID']
     metadata['author']    = parse_bhl_name(metadata['Name'])
     metadata['titles']    = [remove_stop_words(pub['Title'])

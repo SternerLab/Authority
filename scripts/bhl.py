@@ -33,7 +33,7 @@ def run():
         credentials = json.load(infile)
     api_key = credentials['api_key']
 
-    threads    = 8
+    threads    = 2
     batch_size = 8
 
     tracked_cursor = track(collect.find(), total=n)
