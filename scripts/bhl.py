@@ -1,17 +1,30 @@
 from pymongo import MongoClient
-from rich.pretty import pprint
+from rich.pretty   import pprint
+from rich.progress import track
 import requests
 import json
 
+from authority.validation.biodiversity_library import lookup, parse
+from concurrent.futures import ThreadPoolExecutor as Pool
 
-author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
-metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
+import itertools
+import functools
+
+def process_article(article, key=None):
+    print(article['title'])
+    for author in article['authors']:
+        for result in lookup(author['full'], key=key):
+            pprint(result['author_id'])
+            pprint(result['author'])
+            pprint(result['titles'])
+            yield result
 
 def run():
     print('Checking articles in MongoDB', flush=True)
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     collect = jstor_database.articles
+    n = collect.count_documents({})
 
     bhl_database = client.bhl_database
     bhl = bhl_database.bhl
@@ -20,24 +33,16 @@ def run():
         credentials = json.load(infile)
     api_key = credentials['api_key']
 
-    for article in collect.find():
-        print(article['title'])
-        for author in article['authors']:
-            print('    ', author['full'])
-            url = author_search_url.format(key=api_key, author=author['full'])
-            response = requests.get(url).json()
-            if response['Status'] == 'ok':
-                for bhl_author in response['Result']:
-                    pprint(bhl_author)
-                    author_id = bhl_author['AuthorID']
-                    metadata = requests.get(
-                        metadata_url.format(key=api_key, idn=author_id)).json()
-                    if metadata['Status'] == 'ok':
-                        pprint(metadata['Result'])
-        print()
+    threads    = 8
+    batch_size = 8
 
-    # pprint(article['authors'])
-    # pprint(article['title'])
-    # pprint(article['journal'])
-    # pprint(article)
-    # print(f'Counted {count} articles!', flush=True)
+    tracked_cursor = track(collect.find(), total=n)
+    mapped_func    = functools.partial(process_article, key=api_key)
+    with Pool(max_workers=threads) as pool:
+        while True:
+            batch = list(itertools.islice(tracked_cursor, batch_size))
+            if len(batch) == 0:
+                break
+            for results in pool.map(mapped_func, batch):
+                for result in results:
+                    bhl.insert_one(result)

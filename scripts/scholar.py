@@ -12,11 +12,12 @@ def run():
     scholar_authors  = scholar_db.authors
     articles         = jstor_database.articles
 
-    for article in articles.find():
-        pprint(article['title'])
-        pprint(article['authors'])
-        for cluster in get_clusters(article):
-            pprint(cluster)
-            scholar_authors.update_one(
-                    {'scholar_id' : cluster['scholar_id']},
-                    {'$set' : cluster}, True)
+    with articles.find(no_cursor_timeout=True) as article_cursor:
+        for article in article_cursor:
+            pprint(article['title'])
+            pprint(article['authors'])
+            for cluster in get_clusters(article):
+                pprint(cluster)
+                scholar_authors.update_one(
+                        {'scholar_id' : cluster['scholar_id']},
+                        {'$set' : cluster}, True)

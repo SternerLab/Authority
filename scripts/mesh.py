@@ -75,14 +75,12 @@ def fetch_mesh(batch):
     return parse_mesh_output(response.content)
 
 def run():
-    distribute     = 1
-    batch_size     = 2048
+    batch_size     = 10000
 
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
-    article_cursor = articles.find(batch_size=batch_size, no_cursor_timeout=True)
-    try:
+    with articles.find(no_cursor_timeout=True) as article_cursor:
         while True:
             print('Creating batches', flush=True)
             batch = get_batch(article_cursor, batch_size)
@@ -93,5 +91,3 @@ def run():
             insert_mesh_output(articles, mesh_output)
             print('Update finished!', flush=True)
         print('Finished all batches!', flush=True)
-    finally:
-        article_cursor.close()

@@ -6,8 +6,8 @@ import re
 
 from ..process.process import process_name, construct_name, remove_stop_words
 
-pg = scholarly.ProxyGenerator()
-scholar.use_proxy(pg)
+# pg = scholarly.ProxyGenerator()
+# scholar.use_proxy(pg)
 
 def title_words_iou_score(words_a, words_b):
     return len(words_a & words_b) / len(words_a | words_b)
