@@ -5,4 +5,5 @@ xml_article_data/
 custom_mongo.sh
 geckodriver.log
 umls_credentials.json
+bhl_credentials.json
 mesh_pre_fetched_txt

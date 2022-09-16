@@ -81,15 +81,17 @@ def run():
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
-    article_cursor = articles.find(batch_size=batch_size)
-
-    while True:
-        print('Creating batches', flush=True)
-        batch = get_batch(article_cursor, batch_size)
-        if len(batch) == 0:
-            break
-        print('Distributing...', flush=True)
-        mesh_output = fetch_mesh(batch)
-        insert_mesh_output(articles, mesh_output)
-        print('Update finished!', flush=True)
-    print('Finished all batches!', flush=True)
+    article_cursor = articles.find(batch_size=batch_size, no_cursor_timeout=True)
+    try:
+        while True:
+            print('Creating batches', flush=True)
+            batch = get_batch(article_cursor, batch_size)
+            if len(batch) == 0:
+                break
+            print('Distributing...', flush=True)
+            mesh_output = fetch_mesh(batch)
+            insert_mesh_output(articles, mesh_output)
+            print('Update finished!', flush=True)
+        print('Finished all batches!', flush=True)
+    finally:
+        article_cursor.close()
