@@ -39,7 +39,8 @@ def run():
     xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i)
 
     computed_ratios = compute_ratios(features, feature_groups_a)
-    smoothed = smooth(computed_ratios)
-    interpolated = interpolate(smoothed)
+    smoothed        = smooth(computed_ratios)
+    interpolated    = interpolate(smoothed)
+
     pprint(interpolated)
 
