@@ -5,22 +5,7 @@ from bson.son import SON
 import itertools
 from collections import defaultdict
 
-from authority.algorithm.compare import compare
-
-x_a = [3, 4, 5, 6]
-limits  = dict(x3=7, x4=1, x5=7, x6=7)
-excluded_features = {8, 9}
-
-def compare_pair(pair, articles):
-    a, b = pair['pair']
-    doc_a = articles.find_one({'_id' : a['ids']})
-    doc_b = articles.find_one({'_id' : b['ids']})
-    doc_a.update(**a['authors'])
-    doc_b.update(**b['authors'])
-    feature_dict = compare(doc_a, doc_b)
-    for k, l in limits.items():
-        feature_dict[k] = min(feature_dict[k], l)
-    return dict(pair=[a, b], features=feature_dict)
+from authority.algorithm.compare import compare_pair, x_a, limits, excluded
 
 def run():
     ''' Calculate the features for the different sets in the database
