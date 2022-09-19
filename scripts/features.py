@@ -7,6 +7,10 @@ from collections import defaultdict
 
 from authority.algorithm.compare import compare
 
+x_a = [3, 4, 5, 6]
+limits  = dict(x3=7, x4=1, x5=7, x6=7)
+excluded_features = {8, 9}
+
 def compare_pair(pair, articles):
     a, b = pair['pair']
     doc_a = articles.find_one({'_id' : a['ids']})
@@ -14,6 +18,8 @@ def compare_pair(pair, articles):
     doc_a.update(**a['authors'])
     doc_b.update(**b['authors'])
     feature_dict = compare(doc_a, doc_b)
+    for k, l in limits.items():
+        feature_dict[k] = min(feature_dict[k], l)
     return dict(pair=[a, b], features=feature_dict)
 
 def run():
@@ -34,11 +40,13 @@ def run():
 
     client.drop_database('features')
     client.drop_database('feature_groups')
+    client.drop_database('feature_groups_a')
+    client.drop_database('feature_groups_i')
     client.drop_database('possible_features')
 
     features       = client.features
-    feature_groups = client.feature_groups
-    possible_features = client.possible_features.possible_features
+    feature_groups_a = client.feature_groups_a
+    feature_groups_i = client.feature_groups_i
 
     ''' Create feature vectors for the pair collections '''
     for ref_key in pairs.list_collection_names():
@@ -49,7 +57,6 @@ def run():
                 total=pairs[ref_key].count_documents({})))
 
     ''' Group by features x_a '''
-    x_a = [3, 4, 5, 6]
     pipeline = [{'$group': {
                  '_id'    : {f'x{i}' : f'$features.x{i}'
                              for i in x_a},
@@ -57,26 +64,19 @@ def run():
                  }},
                  {'$sort': SON([('_id', 1)])}]
     for ref_key in features.list_collection_names():
-        feature_groups[ref_key].insert_many(
+        feature_groups_a[ref_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
     # ''' Sum feature vectors by reference set, to estimate frequency '''
-    # pipelines = [(i, [{'$group': {
-    #                     '_id'    : {f'x{i}' : f'$features.x{i}'},
-    #                     'count'  : {'$sum': 1},
-    #                     }},
-    #                   {'$sort': SON([('_id', 1)])}
-    #                   ]) for i in range(1, 11)]
-    # possible = defaultdict(set)
-    # for ref_key in features.list_collection_names():
-    #     print(ref_key)
-    #     for i, pipeline in pipelines:
-    #         group_key = f'{ref_key}_x{i}'
-    #         feature_groups[group_key].insert_many(
-    #             features[ref_key].aggregate(pipeline))
-    #         for group in feature_groups[group_key].find():
-    #             for k, v in group['_id'].items():
-    #                 possible[k].add(v)
-    #             pprint(group)
-    # pprint(possible)
-    # possible_features.insert_many(dict(k=k, v=list(v)) for k, v in possible.items())
+    pipelines = [(i, [{'$group': {
+                        '_id'    : {f'x{i}' : f'$features.x{i}'},
+                        'count'  : {'$sum': 1},
+                        }},
+                      {'$sort': SON([('_id', 1)])}
+                      ]) for i in range(1, 11)
+                         if i not in x_a and i not in excluded_features]
+    for ref_key in features.list_collection_names():
+        for i, pipeline in pipelines:
+            group_key = f'{ref_key}_x{i}'
+            feature_groups_i[group_key].insert_many(
+                features[ref_key].aggregate(pipeline))

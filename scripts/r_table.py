@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 from collections import OrderedDict
 
 import itertools
+from .features import x_a, limits
 
 def run():
     ''' Calculate the features for the different sets in the database
@@ -29,9 +30,8 @@ def run():
     pairs          = client.reference_sets_pairs
 
     features       = client.features
-    feature_groups = client.feature_groups
-    possible_features = client.possible_features.possible_features
-    r_table_coll   = client.r_table.r_table
+    feature_groups_a = client.feature_groups_a
+    r_table_coll     = client.r_table.r_table
 
     def get_count(group, feature):
         result = group.find_one({'_id' : feature})
@@ -43,15 +43,13 @@ def run():
     total_matches     = features['match'].count_documents(filter={})
     total_non_matches = features['non_match'].count_documents(filter={})
 
-    x_a = [3, 4, 5, 6]
-    limits  = dict(x3=7, x4=1, x5=7, x6=7)
 
     ''' Compute r scores by comparing match and non-match frequencies '''
     # unique_features = OrderedDict()
     unique_features = []
     for ref_key in features.list_collection_names():
-        for group in feature_groups[ref_key].find():
-            key = tuple(sorted(group['_id'].values()))
+        for group in feature_groups_a[ref_key].find():
+            key = tuple(group['_id'].values())
             # unique_features[key] = group['_id']
             unique_features.append(key)
     sorted_features = [{f'x{i}' : f for i, f in zip(x_a, fs)}
@@ -61,20 +59,24 @@ def run():
     rs = []
     ws = []
 
+    computed_features = OrderedDict()
+
     for i, feature in enumerate(sorted_features):
-        match_group     = feature_groups[f'match']
-        non_match_group = feature_groups[f'non_match']
+        match_group     = feature_groups_a[f'match']
+        non_match_group = feature_groups_a[f'non_match']
 
         match_count     = get_count(match_group, feature)
         non_match_count = get_count(non_match_group, feature)
         try:
             r = (match_count / total_matches) / (non_match_count / total_non_matches)
-            print(r, match_count, non_match_count)
             rs.append(r)
             ws.append(match_count + non_match_count)
+            key = tuple(feature.values())
+            computed_features[key] = r
         except ZeroDivisionError:
             pass
 
+    ''' Smoothing '''
     x  = np.zeros(len(rs))
     ws = np.array(ws)
     rs = np.array(rs)
@@ -90,42 +92,37 @@ def run():
     rh = scipy.optimize.minimize(objective, x, method='slsqp',
             constraints=[dict(type='ineq', fun=constraint)])['x']
     pprint(rh)
+
+    for i, k in enumerate(computed_features):
+        computed_features[k] = rh[i]
+
+    ''' Interpolation '''
+
+    interpolated = np.zeros(tuple((l + 1 for l in limits.values())))
+    profiles = list(computed_features.items())
+    pprint(profiles)
+    lower_profile, lower_r = profiles[0]
+    upper_profile, upper_r = profiles[-1]
+    print('lower', lower_profile, lower_r)
+    print('upper', upper_profile, upper_r)
+
+    i = 0
+    preceeding = None
+    preceeding_r = lower_r
+    succeeding = lower_profile
+    succeeding_r = lower_r
+
+    for key in itertools.product(*(np.arange(l + 1) for l in limits.values())):
+        x3, x4, x5, x6 = key
+        if key > succeeding:
+            if (i + 1) < len(profiles):
+                preceeding, preceeding_r = profiles[i]
+                succeeding, succeeding_r = profiles[i + 1]
+                i += 1
+            else:
+                preceeding, preceeding_r = profiles[-1]
+                succeeding, succeeding_r = profiles[-1]
+        interpolated[x3, x4, x5, x6] = (preceeding_r + succeeding_r) / 2
+    pprint(interpolated)
+
     1/0
-    # for i, (ro, rs, v) in enumerate(zip(rs, rh, vs)):
-    #     # if v is None:
-    #     #     print(f'{k:3} = None: {rs:4.4f} ({ro:4.4f})')
-    #     # else:
-    #     #     print(f'{k:3} = {v:2}: {rs:4.4f} ({ro:4.4f})')
-    #     if k in limits and v <= limits[k]:
-    #         r_values[k][v] = rs
-    #     smooth_pairs.append((k, v, rs))
-
-    # for source, ps in (('empirical', pairs), ('smoothed', smooth_pairs)):
-    #     pprint(r_values)
-    #     long = dict(feature=[p[0] for p in ps],
-    #                 value=[p[1]   for p in ps],
-    #                 r=[p[2]       for p in ps])
-    #     df = pd.DataFrame(long)
-    #     print(df)
-    #     fig = sns.lineplot(df, x='value', y='r', hue='feature', style='feature')
-    #     fig.set_title(f'{source.title()} R Values')
-    #     fig.figure.savefig(f'plots/{source}_full.png')
-    #     fig.set_xlim(0, 5)
-    #     fig.set_ylim(0, 10)
-    #     fig.figure.savefig(f'plots/{source}_lim.png')
-    #     del fig
-    #     # fig.set_yscale('log')
-    #     # print(dir(fig))
-
-    #     # plt.show()
-    # 1/0
-
-    # ''' Interpolation '''
-    # for (x3, x4, x5, x6, x9) in itertools.product(
-    #         *(range(l) for l in limits)):
-
-    #     print(x3, x4, x5, x6, x9)
-
-
-
-
