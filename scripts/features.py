@@ -48,23 +48,35 @@ def run():
                 description=f'Calculating features for {ref_key}',
                 total=pairs[ref_key].count_documents({})))
 
-    ''' Sum feature vectors by reference set, to estimate frequency '''
-    pipelines = [(i, [{'$group': {
-                        '_id'    : {f'x{i}' : f'$features.x{i}'},
-                        'count'  : {'$sum': 1},
-                        }},
-                      {'$sort': SON([('_id', 1)])}
-                      ]) for i in range(1, 11)]
-    possible = defaultdict(set)
+    ''' Group by features x_a '''
+    x_a = [3, 4, 5, 6]
+    pipeline = [{'$group': {
+                 '_id'    : {f'x{i}' : f'$features.x{i}'
+                             for i in x_a},
+                 'count'  : {'$sum': 1},
+                 }},
+                 {'$sort': SON([('_id', 1)])}]
     for ref_key in features.list_collection_names():
-        print(ref_key)
-        for i, pipeline in pipelines:
-            group_key = f'{ref_key}_x{i}'
-            feature_groups[group_key].insert_many(
-                features[ref_key].aggregate(pipeline))
-            for group in feature_groups[group_key].find():
-                for k, v in group['_id'].items():
-                    possible[k].add(v)
-                pprint(group)
-    pprint(possible)
-    possible_features.insert_many(dict(k=k, v=list(v)) for k, v in possible.items())
+        feature_groups[ref_key].insert_many(
+            features[ref_key].aggregate(pipeline))
+
+    # ''' Sum feature vectors by reference set, to estimate frequency '''
+    # pipelines = [(i, [{'$group': {
+    #                     '_id'    : {f'x{i}' : f'$features.x{i}'},
+    #                     'count'  : {'$sum': 1},
+    #                     }},
+    #                   {'$sort': SON([('_id', 1)])}
+    #                   ]) for i in range(1, 11)]
+    # possible = defaultdict(set)
+    # for ref_key in features.list_collection_names():
+    #     print(ref_key)
+    #     for i, pipeline in pipelines:
+    #         group_key = f'{ref_key}_x{i}'
+    #         feature_groups[group_key].insert_many(
+    #             features[ref_key].aggregate(pipeline))
+    #         for group in feature_groups[group_key].find():
+    #             for k, v in group['_id'].items():
+    #                 possible[k].add(v)
+    #             pprint(group)
+    # pprint(possible)
+    # possible_features.insert_many(dict(k=k, v=list(v)) for k, v in possible.items())
