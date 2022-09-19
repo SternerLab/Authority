@@ -75,7 +75,8 @@ def fetch_mesh(batch):
     return parse_mesh_output(response.content)
 
 def run():
-    batch_size     = 10000
+    # batch_size     = 10000
+    batch_size     = 60000
 
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
@@ -90,4 +91,5 @@ def run():
             mesh_output = fetch_mesh(batch)
             insert_mesh_output(articles, mesh_output)
             print('Update finished!', flush=True)
+            break
         print('Finished all batches!', flush=True)

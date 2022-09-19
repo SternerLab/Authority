@@ -13,8 +13,8 @@ def run():
         if 'mesh' in article and article['mesh'] != '':
             count += 1
             # pprint(article['authors'])
-            pprint(article['title'])
-            pprint(article['mesh'])
+            # pprint(article['title'])
+            # pprint(article['mesh'])
             # pprint(article)
 
     print(f'Counted {count} articles!', flush=True)
