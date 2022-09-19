@@ -9,6 +9,7 @@ def compare(a, b):
 x_a = [3, 4, 5, 6]
 limits  = dict(x3=7, x4=1, x5=7, x6=7)
 excluded_features = {8, 9}
+x_i = [i for i in range(1, 11) if i not in x_a and i not in excluded_features]
 
 def compare_pair(pair, articles):
     a, b = pair['pair']

@@ -12,7 +12,8 @@ from collections import OrderedDict
 
 import itertools
 
-from authority.algorithm import compute_ratios, smooth, interpolate
+from authority.algorithm import compute_ratios, compute_xi_ratios, smooth, interpolate
+from authority.algorithm.compare import *
 
 def run():
     ''' Calculate the features for the different sets in the database
@@ -32,7 +33,10 @@ def run():
 
     features       = client.features
     feature_groups_a = client.feature_groups_a
+    feature_groups_i = client.feature_groups_i
     r_table_coll     = client.r_table.r_table
+
+    xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i)
 
     computed_ratios = compute_ratios(features, feature_groups_a)
     smoothed = smooth(computed_ratios)

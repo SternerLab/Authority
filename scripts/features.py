@@ -5,18 +5,17 @@ from bson.son import SON
 import itertools
 from collections import defaultdict
 
-from authority.algorithm.compare import compare_pair, x_a, limits, excluded
+from authority.algorithm.compare import compare_pair, x_a, x_i, limits, excluded
+
+def make_group_pipeline(feature_dict):
+    pipeline = [{'$group': {
+                 '_id'    : feature_dict,
+                 'count'  : {'$sum': 1},
+                 }},
+                 {'$sort': SON([('_id', 1)])}]
 
 def run():
-    ''' Calculate the features for the different sets in the database
-        for features x1, x2, and x7, there are bounds,
-        but for features x3-x6, x8, and x9, there are not tight bounds
-        so first independent r(x_i) is estimated for bounded features,
-            by using a simple ratio of means between matches and non-matches
-        and then r(x_i) is estimated for unbounded features
-            using smoothing, interpolation, and extrapolation..
-        then, r(x_i) for all i can be computed by multiplying each component r(x_i)
-    '''
+    ''' Calculate the features for the different sets in the database '''
 
     client         = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
@@ -24,10 +23,8 @@ def run():
     pairs          = client.reference_sets_pairs
 
     client.drop_database('features')
-    client.drop_database('feature_groups')
     client.drop_database('feature_groups_a')
     client.drop_database('feature_groups_i')
-    client.drop_database('possible_features')
 
     features       = client.features
     feature_groups_a = client.feature_groups_a
@@ -42,24 +39,13 @@ def run():
                 total=pairs[ref_key].count_documents({})))
 
     ''' Group by features x_a '''
-    pipeline = [{'$group': {
-                 '_id'    : {f'x{i}' : f'$features.x{i}'
-                             for i in x_a},
-                 'count'  : {'$sum': 1},
-                 }},
-                 {'$sort': SON([('_id', 1)])}]
+    pipeline = make_group_pipeline({f'x{i}' : f'$features.x{i}' for i in x_a})
     for ref_key in features.list_collection_names():
         feature_groups_a[ref_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
     # ''' Sum feature vectors by reference set, to estimate frequency '''
-    pipelines = [(i, [{'$group': {
-                        '_id'    : {f'x{i}' : f'$features.x{i}'},
-                        'count'  : {'$sum': 1},
-                        }},
-                      {'$sort': SON([('_id', 1)])}
-                      ]) for i in range(1, 11)
-                         if i not in x_a and i not in excluded_features]
+    pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
     for ref_key in features.list_collection_names():
         for i, pipeline in pipelines:
             group_key = f'{ref_key}_x{i}'

@@ -113,11 +113,13 @@ def x10(a, b):
 
     if a_first == b_first and len(a_first) > 1:
         # 11: exact match
-        return 11
+        # return 11
+        return 10 # swapped
     elif a_clean == b_clean:
         # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
         # francois vs. jean francois),
-        return 10
+        # return 10
+        return 11 # swapped
     elif hyphen_a and hyphen_b and a_pre == b_pre and b_post[0] == a_post[0]:
         # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
         # jean-f),
