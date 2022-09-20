@@ -9,3 +9,6 @@ def run():
     n = bhl.count_documents({})
 
     print(f'Found {n} BHL clusters')
+    for doc in bhl.find():
+        pprint(doc)
+        break

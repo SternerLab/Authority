@@ -2,8 +2,10 @@ from pymongo import MongoClient
 from rich.pretty import pprint
 from rich import print
 from bson.son import SON
+from bson.binary import Binary
 import itertools
 import scipy
+import pickle
 import numpy as np
 import pandas as pd
 import seaborn as sns
@@ -34,13 +36,21 @@ def run():
     features       = client.features
     feature_groups_a = client.feature_groups_a
     feature_groups_i = client.feature_groups_i
-    r_table_coll     = client.r_table.r_table
+
+    client.drop_database('r_table')
+    r_table          = client.r_table.r_table
 
     xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i)
+    xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
+    r_table.insert_one(dict(xi_ratios=xi_ratios))
 
     computed_ratios = compute_ratios(features, feature_groups_a)
     smoothed        = smooth(computed_ratios)
     interpolated    = interpolate(smoothed)
 
-    pprint(interpolated)
-
+    xa_ratios = [dict(key=k, value=v) for k, v in computed_ratios.items()]
+    smoothed  = [dict(key=k, value=v) for k, v in smoothed.items()]
+    r_table.insert_one(dict(xa_ratios=xa_ratios))
+    r_table.insert_one(dict(smoothed_xa_ratios=smoothed))
+    binary_interpolated = Binary(pickle.dumps(interpolated), subtype=128)
+    r_table.insert_one(dict(interpolated_xa_ratios=binary_interpolated))
