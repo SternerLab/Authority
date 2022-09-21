@@ -10,7 +10,6 @@ def run():
 
     n = collect.count_documents({})
     print(f'{n} articles!')
-    1/0
 
     count = 0
     for article in collect.find():
@@ -19,4 +18,5 @@ def run():
         pprint(article['title'])
         pprint(article['journal'])
         pprint(article)
+        break
     print(f'Counted {count} articles!', flush=True)

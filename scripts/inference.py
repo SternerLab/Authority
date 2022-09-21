@@ -15,6 +15,9 @@ import itertools
 
 from authority.algorithm.compare import compare_pair, x_i, x_a
 
+def estimate_prior(n):
+    return 1 / (1 + 10**-1.194 * n**0.7975)
+
 def inference(ratio, prior):
     return 1 / (1 + (1 - prior) / (prior * ratio))
 
@@ -39,14 +42,15 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     pairs          = client.reference_sets_pairs
+    subsets        = client.reference_sets
 
-    r_table          = client.r_table.r_table
+    r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
 
-    match_prior = 1/11 # for testing, bad :)
     for pair in pairs['block'].find():
         try:
-            pprint(pair)
+            n = pair['n'] # Defined for all but non-match sets
+            match_prior = estimate_prior(n)
             compared = compare_pair(pair, articles)
             features = compared['features']
             print(infer_from_feature(features, interpolated, xi_ratios, match_prior))

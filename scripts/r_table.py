@@ -31,6 +31,7 @@ def run():
     client         = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
+    subsets        = client.reference_sets
     pairs          = client.reference_sets_pairs
 
     features       = client.features
@@ -54,3 +55,5 @@ def run():
     r_table.insert_one(dict(smoothed_xa_ratios=smoothed))
     binary_interpolated = Binary(pickle.dumps(interpolated), subtype=128)
     r_table.insert_one(dict(interpolated_xa_ratios=binary_interpolated))
+
+

@@ -13,6 +13,11 @@ def run():
     articles       = jstor_database.articles
     reference_sets_pairs = client.reference_sets_pairs
 
+    # for ref_key in ref_keys:
+    for ref_key in reference_sets_pairs.list_collection_names():
+        print(ref_key, reference_sets_pairs[ref_key].count_documents({}))
+
+
     for ref_key in reference_sets_pairs.list_collection_names():
         print(ref_key)
         for pair in reference_sets_pairs[ref_key].find():

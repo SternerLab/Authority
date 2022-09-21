@@ -1,6 +1,7 @@
 from pymongo import MongoClient
+import pymongo
 from rich.pretty import pprint
-from rich.progress import Progress, BarColumn, TextColumn
+from rich.progress import track
 from rich import print
 from bson.son import SON
 import itertools
@@ -8,23 +9,20 @@ import itertools
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
-def sample_pairs(collection, max_samples=float('inf')):
-    with Progress(BarColumn(), TextColumn('{task.completed}')) as progress:
-        task = progress.add_task('',
-            total=(max_samples if isinstance(max_samples, int) else None))
-        count = 0
-        cursor = collection.find()
-        try:
-            while count < max_samples:
-                group = next(cursor)['group']
-                for pair in itertools.combinations(group, r=2):
-                    yield pair
-                    progress.update(task, advance=1)
-                    count += 1
-                    if count == max_samples:
-                        break
-        except StopIteration:
-            pass
+def sample_pairs(group_doc):
+    group     = group_doc['group']
+    group_id  = group_doc['_id']
+    n         = group_doc.get('n', None)
+    for pair in itertools.combinations(group, r=2):
+        yield dict(group_id=group_id, n=n, pair=list(pair))
+
+def sample_grouped_pairs(database, ref_key):
+    total = database[ref_key].count_documents({})
+    for group_doc in track(database[ref_key].find(), total=total):
+        if ref_key == 'non_match':
+            pprint(group_doc)
+        group_id = group_doc['_id']
+        yield group_id, sample_pairs(group_doc)
 
 def run():
     ''' Use the reference sets to create pairs of articles in a new database '''
@@ -34,17 +32,30 @@ def run():
 
     client.drop_database('reference_sets_pairs')
     reference_sets_pairs = client.reference_sets_pairs
+    reference_sets_group_lookup = client.reference_sets_group_lookup
     reference_sets = client.reference_sets
 
     total  = articles.count_documents({})
-    factor = 2 # an arbitrary factor
 
-    for ref_key in reference_sets.list_collection_names():
-        print(f'Sampling pairs from {ref_key}')
-        reference_sets_pairs[ref_key].insert_many(
-            dict(pair=list(pair))
-            for pair in sample_pairs(reference_sets[ref_key],
-                max_samples=total * factor))
+    ref_keys = ('block', 'match', 'non_match')
 
-    for ref_key in reference_sets.list_collection_names():
-        print(ref_key, reference_sets_pairs[ref_key].count_documents({}), 'pairs')
+    for ref_key in ref_keys:
+        print(f'Sampling pairs from {ref_key}', flush=True)
+        if ref_key == 'non_match':
+            limit = 128000
+        else:
+            limit = float('inf')
+        inserted = 0
+        for group_id, grouped_pairs in sample_grouped_pairs(reference_sets, ref_key):
+            try:
+                result = reference_sets_pairs[ref_key].insert_many(grouped_pairs)
+                inserted += len(result.inserted_ids)
+                reference_sets_group_lookup[ref_key].insert_one(
+                        dict(group_id=group_id, pair_ids=result.inserted_ids))
+            except pymongo.errors.InvalidOperation:
+                pass # Only one element in group, cannot make pairs
+            if inserted > limit:
+                break
+
+    for ref_key in ref_keys:
+        print(ref_key, reference_sets_pairs[ref_key].count_documents({}))
