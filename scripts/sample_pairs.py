@@ -12,17 +12,16 @@ import itertools
 def sample_pairs(group_doc):
     group     = group_doc['group']
     group_id  = group_doc['_id']
-    n         = group_doc.get('n', None)
+    n         = group_doc.get('count', None)
     for pair in itertools.combinations(group, r=2):
         yield dict(group_id=group_id, n=n, pair=list(pair))
 
 def sample_grouped_pairs(database, ref_key):
     total = database[ref_key].count_documents({})
     for group_doc in track(database[ref_key].find(), total=total):
-        if ref_key == 'non_match':
-            pprint(group_doc)
         group_id = group_doc['_id']
-        yield group_id, sample_pairs(group_doc)
+        n  = group_doc.get('count', None)
+        yield group_id, n, sample_pairs(group_doc)
 
 def run():
     ''' Use the reference sets to create pairs of articles in a new database '''
@@ -31,6 +30,7 @@ def run():
     articles       = jstor_database.articles
 
     client.drop_database('reference_sets_pairs')
+    client.drop_database('reference_sets_group_lookup')
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
     reference_sets = client.reference_sets
@@ -42,16 +42,17 @@ def run():
     for ref_key in ref_keys:
         print(f'Sampling pairs from {ref_key}', flush=True)
         if ref_key == 'non_match':
-            limit = 128000
+            limit = 1000000
         else:
             limit = float('inf')
         inserted = 0
-        for group_id, grouped_pairs in sample_grouped_pairs(reference_sets, ref_key):
+        for group_id, n, grouped_pairs in sample_grouped_pairs(reference_sets, ref_key):
             try:
                 result = reference_sets_pairs[ref_key].insert_many(grouped_pairs)
                 inserted += len(result.inserted_ids)
                 reference_sets_group_lookup[ref_key].insert_one(
-                        dict(group_id=group_id, pair_ids=result.inserted_ids))
+                        dict(group_id=group_id, pair_ids=result.inserted_ids,
+                             n=n))
             except pymongo.errors.InvalidOperation:
                 pass # Only one element in group, cannot make pairs
             if inserted > limit:

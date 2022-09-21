@@ -5,7 +5,7 @@ from bson.son import SON
 import itertools
 from collections import defaultdict
 
-from authority.algorithm.compare import compare_pair, x_a, x_i, limits, excluded
+from authority.algorithm.compare import compare_pair, x_a, x_i, limits
 
 def make_group_pipeline(feature_dict):
     pipeline = [{'$group': {
