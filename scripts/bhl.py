@@ -13,6 +13,7 @@ import functools
 def process_article(article, key=None):
     print(article['title'])
     for author in article['authors']:
+        print(author['key'])
         for result in lookup(author['full'], key=key):
             pprint(result['author_id'])
             pprint(result['author'])
