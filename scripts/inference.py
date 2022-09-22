@@ -56,6 +56,7 @@ def run():
     pairs          = client.reference_sets_pairs
     lookup         = client.reference_sets_group_lookup
     subsets        = client.reference_sets
+    inferred       = client.inferred
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
@@ -94,7 +95,6 @@ def run():
             new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
                            np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
 
-            print(new_prior)
             new_table = np.full((m, m), np.nan)
             np.fill_diagonal(new_table, 1.)
             for i, j, feature in cached_features:
@@ -102,7 +102,14 @@ def run():
                 new_table[i, j] = p
 
             print(group_id)
-            print('custom', custom_cluster_alg(new_table))
+            cluster_labels = custom_cluster_alg(new_table)
+            print('custom', cluster_labels)
+            binary_probs   = Binary(pickle.dumps(new_table), subtype=128)
+            inferred[ref_key].insert_one(dict(
+                cluster_labels={str(k) : int(cluster_labels[i])
+                                for k, i in id_lookup.items()},
+                probs=binary_probs, prior=new_prior,
+                group_id=group_id))
     except KeyboardInterrupt:
         pass
 

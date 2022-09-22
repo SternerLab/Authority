@@ -4,36 +4,37 @@ from rich.progress import track
 import xmltodict, json
 import itertools
 import pymongo
+from pathlib import Path
 
 from authority.process.files import iter_xml_files
 from authority.process.process import process, IncompleteEntry # hmm
 
 def run():
     print('Inserting articles into MongoDB', flush=True)
-    zip_filename = 'xml_article_data/receipt-id-561931-jcodes-klmnop-part-002.zip'
-    # limit = 8192
-    # limit = 16384
-    limit = 131072
-    client = MongoClient('localhost', 27017)
-    client.drop_database('jstor_database')
-    jstor_database = client.jstor_database
-    articles       = jstor_database.articles
-    incomplete     = jstor_database.incomplete
-
-    articles.create_index([('author.key', pymongo.ASCENDING)])
-
     incomplete_count = 0
-    for filename in track(itertools.islice(iter_xml_files(zip_filename), limit),
-                          description='Parsing XML into MongoDB..', total=limit):
-        with open(filename, 'r') as infile:
-            article = xmltodict.parse(infile.read())['article']
-            try:
-                processed = process(article)
-                inserted = articles.insert_one(processed)
-            except IncompleteEntry as e:
-                article['reason'] = str(e)
-                incomplete.insert_one(article)
-                incomplete_count += 1
+    xml_dir = Path('xml_article_data/')
+    for zip_filename in xml_dir.glob('*.zip'):
+        print(zip_filename)
+        client = MongoClient('localhost', 27017)
+        client.drop_database('jstor_database')
+        jstor_database = client.jstor_database
+        articles       = jstor_database.articles
+        incomplete     = jstor_database.incomplete
+
+        articles.create_index([('author.key', pymongo.ASCENDING)])
+
+        iterator = iter_xml_files(zip_filename)
+        total = next(iterator) # first element is number of files in zip
+        for filename in track(iterator, description='Parsing..', total=total):
+            with open(filename, 'r') as infile:
+                article = xmltodict.parse(infile.read())['article']
+                try:
+                    processed = process(article)
+                    inserted = articles.insert_one(processed)
+                except IncompleteEntry as e:
+                    article['reason'] = str(e)
+                    incomplete.insert_one(article)
+                    incomplete_count += 1
 
     count = 0
     for article in articles.find():

@@ -30,6 +30,7 @@ def iter_xml_files(zip_file):
         temp.mkdir(exist_ok=True)
         try:
             listOfFiles = zip_obj.namelist()
+            yield len(listOfFiles)
             for file in listOfFiles:
                 if file.endswith('.xml'):
                     zip_obj.extract(file, 'temp')
