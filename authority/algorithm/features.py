@@ -120,7 +120,8 @@ def x10(a, b):
         # francois vs. jean francois),
         # return 10
         return 11 # swapped
-    elif hyphen_a and hyphen_b and a_pre == b_pre and b_post[0] == a_post[0]:
+    elif (hyphen_a and hyphen_b and a_pre == b_pre and
+          len(a_post) > 0 and len(b_post) > 0 and b_post[0] == a_post[0]):
         # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
         # jean-f),
         return 9

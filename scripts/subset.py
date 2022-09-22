@@ -63,7 +63,8 @@ def run():
     }
 
     push_group = {'group' : {'$push' : {'title' : '$title',
-        'authors' : '$authors', 'ids' : '$_id'}}}
+                                        'authors' : '$authors',
+                                        'ids' : '$_id'}}}
 
     for name, fields in criteria.items():
         pipeline = [

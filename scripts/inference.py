@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich.progress import track
 from rich import print
 from bson.son import SON
 from bson.binary import Binary
@@ -60,7 +61,8 @@ def run():
     xi_ratios, interpolated = get_r_table_data(r_table)
 
     ref_key = 'block'
-    for pair_lookup in lookup[ref_key].find():
+    total = lookup[ref_key].count_documents({})
+    for pair_lookup in track(lookup[ref_key].find(), total=total):
         group_id = pair_lookup['group_id']
         group = next(subsets[ref_key].find({'_id' : group_id}))
 
