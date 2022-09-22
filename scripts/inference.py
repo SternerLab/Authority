@@ -15,6 +15,7 @@ import itertools
 
 from authority.algorithm.compare import compare_pair, x_i, x_a
 from authority.algorithm.triplet_violations import fix_triplet_violations
+from authority.algorithm.clustering import cluster as custom_cluster_alg
 
 from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import pairwise_distances
@@ -91,7 +92,9 @@ def run():
                 n_clusters=None, distance_threshold=0.05)
         cluster_labels = cluster.fit_predict(1 - fixed_table)
         print(group_id)
-        print(cluster_labels)
+        print('sklearn', cluster_labels)
+
+        print('custom', custom_cluster_alg(fixed_table))
 
 
 
