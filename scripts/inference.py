@@ -59,44 +59,48 @@ def run():
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
+    try:
 
-    ref_key = 'block'
-    total = lookup[ref_key].count_documents({})
-    for pair_lookup in track(lookup[ref_key].find(), total=total):
-        group_id = pair_lookup['group_id']
-        group = next(subsets[ref_key].find({'_id' : group_id}))
+        ref_key = 'block'
+        total = lookup[ref_key].count_documents({})
+        for pair_lookup in track(lookup[ref_key].find(), total=total):
+            group_id = pair_lookup['group_id']
+            group = next(subsets[ref_key].find({'_id' : group_id}))
 
-        pair_ids = pair_lookup['pair_ids']
-        match_prior = estimate_prior(pair_lookup['n'])
-        id_lookup = dict()
+            pair_ids = pair_lookup['pair_ids']
+            match_prior = estimate_prior(pair_lookup['n'])
+            id_lookup = dict()
 
-        for i, _id in enumerate(set(doc['ids'] for doc in group['group'])):
-            id_lookup[_id] = i
+            for i, _id in enumerate(set(doc['ids'] for doc in group['group'])):
+                id_lookup[_id] = i
 
-        m = len(id_lookup)
-        if m == 1:
-            continue
+            m = len(id_lookup)
+            if m == 1:
+                continue
 
-        table = np.zeros((m, m))
+            table = np.zeros((m, m))
 
 
-        for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
-            compared = compare_pair(pair, articles)
-            features = compared['features']
-            p = infer_from_feature(features, interpolated, xi_ratios, match_prior)
-            i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
-            table[i, j] = p
+            for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
+                compared = compare_pair(pair, articles)
+                features = compared['features']
+                p = infer_from_feature(features, interpolated, xi_ratios, match_prior)
+                i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
+                table[i, j] = p
 
-        fixed_table = fix_triplet_violations(table)
+            fixed_table = fix_triplet_violations(table)
 
-        # Not the method in the paper at all
-        cluster = AgglomerativeClustering(affinity='precomputed', linkage='single',
-                n_clusters=None, distance_threshold=0.05)
-        cluster_labels = cluster.fit_predict(1 - fixed_table)
-        print(group_id)
-        print('sklearn', cluster_labels)
+            # Not the method in the paper at all
+            cluster = AgglomerativeClustering(affinity='precomputed', linkage='single',
+                    n_clusters=None, distance_threshold=0.05)
+            cluster_labels = cluster.fit_predict(-(fixed_table / (1 - fixed_table)))
 
-        print('custom', custom_cluster_alg(fixed_table))
+            print(group_id)
+            print('sklearn probs', cluster_labels)
+
+            print('custom', custom_cluster_alg(fixed_table))
+    except KeyboardInterrupt:
+        pass
 
 
 
