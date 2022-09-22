@@ -49,9 +49,8 @@ def fix_triplet_violations(table):
             base[i, j] += 1.
             base[j, k] += 1.
             base[i, k] += 1.
-    averaged = working / base
-    # averaged will be nan where base was 0.,
-    # which is where there were no triplet violations
-    # and thus should be the original table values
-    updated = np.where(np.isnan(averaged), table, averaged)
+    # base is 0. where there are no triplet violations:
+    # ignore warnings since the where statement handles these
+    with np.errstate(divide='ignore', invalid='ignore'):
+        updated = np.where(base > 0., working/base, table)
     return updated
