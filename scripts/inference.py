@@ -88,12 +88,9 @@ def run():
                 i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
                 i, j = min(i, j), max(i, j)
                 cached_features.append((i, j, features))
-                print(i, j)
                 table[i, j] = p
-            print(table)
 
             fixed_table = fix_triplet_violations(table)
-            print(fixed_table)
             new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
                            np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
 
@@ -103,7 +100,6 @@ def run():
             for i, j, feature in cached_features:
                 p = infer_from_feature(features, interpolated, xi_ratios, new_prior)
                 new_table[i, j] = p
-            print(new_table)
 
             print(group_id)
             print('custom', custom_cluster_alg(new_table))
