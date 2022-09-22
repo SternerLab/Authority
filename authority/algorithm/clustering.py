@@ -8,7 +8,8 @@ import numpy as np
 def objective(u, v, elements, probs):
     U, V = elements[u], elements[v]
     for i, j in itertools.product(U, V):
-        yield (probs[i, j] / (1 - probs[i, j])) / len(U) * len(V)
+        i, j = min(i, j), max(i, j)
+        yield (probs[i, j] / (1 - probs[i, j])) / (len(U) * len(V))
 
 def cluster(probs, epsilon=1e-8):
     c, _     = probs.shape

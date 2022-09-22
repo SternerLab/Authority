@@ -60,7 +60,6 @@ def run():
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
     try:
-
         ref_key = 'block'
         total = lookup[ref_key].count_documents({})
         for pair_lookup in track(lookup[ref_key].find(), total=total):
@@ -78,27 +77,36 @@ def run():
             if m == 1:
                 continue
 
-            table = np.zeros((m, m))
+            table = np.full((m, m), np.nan)
+            np.fill_diagonal(table, 1.)
 
-
+            cached_features = []
             for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
                 compared = compare_pair(pair, articles)
                 features = compared['features']
                 p = infer_from_feature(features, interpolated, xi_ratios, match_prior)
                 i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
+                i, j = min(i, j), max(i, j)
+                cached_features.append((i, j, features))
+                print(i, j)
                 table[i, j] = p
+            print(table)
 
             fixed_table = fix_triplet_violations(table)
+            print(fixed_table)
+            new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
+                           np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
 
-            # Not the method in the paper at all
-            cluster = AgglomerativeClustering(affinity='precomputed', linkage='single',
-                    n_clusters=None, distance_threshold=0.05)
-            cluster_labels = cluster.fit_predict(-(fixed_table / (1 - fixed_table)))
+            print(new_prior)
+            new_table = np.full((m, m), np.nan)
+            np.fill_diagonal(new_table, 1.)
+            for i, j, feature in cached_features:
+                p = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                new_table[i, j] = p
+            print(new_table)
 
             print(group_id)
-            print('sklearn probs', cluster_labels)
-
-            print('custom', custom_cluster_alg(fixed_table))
+            print('custom', custom_cluster_alg(new_table))
     except KeyboardInterrupt:
         pass
 

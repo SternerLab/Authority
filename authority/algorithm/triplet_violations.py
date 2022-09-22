@@ -34,14 +34,15 @@ def solve_triplet_violation(table, i, j, k):
 
     return q_ij, q_jk, q_ik
 
-def fix_triplet_violations(table):
-    ''' Fix triplet violations using a closed-form solution,
-        section 4 of the 2005 or 2009 papers '''
+def fix_triplet_violations_step(table):
+    ''' A single step to fix triplet violations in a probability table '''
     working = np.zeros_like(table)
     base    = np.zeros_like(table)
     m, m = table.shape
+    violations = 0
     for i, j, k in itertools.combinations(np.arange(m), r=3):
         if triplet_violation(table, i, j, k):
+            violations += 1
             q_ij, q_jk, q_ik = solve_triplet_violation(table, i, j, k)
             working[i, j] += q_ij
             working[j, k] += q_jk
@@ -53,4 +54,13 @@ def fix_triplet_violations(table):
     # ignore warnings since the where statement handles these
     with np.errstate(divide='ignore', invalid='ignore'):
         updated = np.where(base > 0., working/base, table)
-    return updated
+    return updated, violations
+
+def fix_triplet_violations(table, max_iterations=30):
+    ''' Fix triplet violations using a closed-form solution,
+        section 4 of the 2005 or 2009 papers '''
+    for _ in range(max_iterations):
+        table, violations = fix_triplet_violations_step(table)
+        if violations == 0:
+            break
+    return table
