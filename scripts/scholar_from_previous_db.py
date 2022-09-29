@@ -24,7 +24,10 @@ def expand_author_row(row, articles):
         if article is not None:
             mongo_ids.append(article['_id'])
             titles.append(article['title'])
-            dois.append(doi)
+        else: # :(
+            mongo_ids.append(None)
+            titles.append(None)
+        dois.append(doi)
     pprint(dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids))
     return dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids)
 
