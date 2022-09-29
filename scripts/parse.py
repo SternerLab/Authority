@@ -14,7 +14,10 @@ def run():
     incomplete_count = 0
     xml_dir = Path('xml_article_data/')
     for zip_filename in xml_dir.glob('*.zip'):
-        print(zip_filename)
+        if 'JSTOR' in str(zip_filename):
+            print(f'skipping {zip_filename}, which needs to be unzipped using ./run unzip')
+            continue
+        print(f'parsing {zip_filename} into mongodb')
         client = MongoClient('localhost', 27017)
         client.drop_database('jstor_database')
         jstor_database = client.jstor_database

@@ -24,15 +24,16 @@ def run():
         print(cursor.fetchall())
         cursor.execute(all_rows.format(sel))
         rows = cursor.fetchall()
-        # print(len(rows))
-        # if len(rows) >= 5:
-        try:
-            for i in range(5):
-                print(f'Ex ({i}): ', rows[i])
-        except IndexError:
-            print('{sel} has no rows')
-        print()
+        if 'scholar' in sel or 'bhl' in sel or 'self' in sel:
+            print(len(rows))
+            # if len(rows) >= 5:
+            try:
+                for i in range(5):
+                    print(f'Ex ({i}): ', rows[i])
+            except IndexError:
+                print(f'{sel} has no rows')
+                print()
 
-    authors = "SELECT last_name,first_initial,first_name,middle_name,full_title FROM articles WHERE last_name='Smith' ORDER BY last_name,first_name"
-    for last_name, first_initial, first_name, middle_name, title in cursor.execute(authors).fetchall():
-        print(f'{last_name:20} {first_initial:1} {first_name:20}:    {title[:30]}')
+    # authors = "SELECT last_name,first_initial,first_name,middle_name,full_title FROM articles WHERE last_name='Smith' ORDER BY last_name,first_name"
+    # for last_name, first_initial, first_name, middle_name, title in cursor.execute(authors).fetchall():
+    #     print(f'{last_name:20} {first_initial:1} {first_name:20}:    {title[:30]}')

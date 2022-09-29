@@ -20,6 +20,7 @@ def run():
     print(f'Found {n} BHL clusters')
     count = 0
     for doc in bhl.find():
+        # flawed lookup method, update
         jstor_article = articles.find_one({'authors.key' : doc['author']['key']})
         if jstor_article is not None:
             print(jstor_article['title'])
