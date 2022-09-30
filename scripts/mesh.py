@@ -48,13 +48,14 @@ def parse_mesh_output(content):
         mesh_output[id_cell].update(remove_stop_words(cells, 'mesh'))
     return mesh_output
 
-def insert_mesh_output(articles, mesh_output):
+def insert_mesh_output(articles, session, mesh_output):
     for mongo_id, words in mesh_output.items():
         print('Updating', mongo_id)
         pprint(words)
         articles.update_one(
             {'_id' : ObjectId(mongo_id)},
-            {'$set' : {'mesh' : list(words)}})
+            {'$set' : {'mesh' : list(words)}},
+            session=session)
 
 
 # See https://github.com/lhncbc/skr_web_python_api/blob/main/examples/generic_batch.py
@@ -75,21 +76,22 @@ def fetch_mesh(batch):
     return parse_mesh_output(response.content)
 
 def run():
-    # batch_size     = 10000
-    batch_size     = 60000
+    batch_size     = 10240
 
     client = MongoClient('localhost', 27017)
-    jstor_database = client.jstor_database
-    articles       = jstor_database.articles
-    with articles.find(no_cursor_timeout=True) as article_cursor:
-        while True:
-            print('Creating batches', flush=True)
-            batch = get_batch(article_cursor, batch_size)
-            if len(batch) == 0:
-                break
-            print('Distributing...', flush=True)
-            mesh_output = fetch_mesh(batch)
-            insert_mesh_output(articles, mesh_output)
-            print('Update finished!', flush=True)
-            break
-        print('Finished all batches!', flush=True)
+    with client.start_session(causal_consistency=True) as session:
+        jstor_database = client.jstor_database
+        articles       = jstor_database.articles
+        with articles.find(no_cursor_timeout=True, session=session) as article_cursor:
+            while True:
+                print('Creating batches', flush=True)
+                batch = get_batch(article_cursor, batch_size)
+                if len(batch) == 0:
+                    break
+                print('Distributing...', flush=True)
+                mesh_output = fetch_mesh(batch)
+
+
+                insert_mesh_output(articles, session, mesh_output)
+                print('Update finished!', flush=True)
+            print('Finished all batches!', flush=True)
