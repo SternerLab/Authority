@@ -7,17 +7,23 @@ Something like:
 --------------------------------------------------------------------------------
     Tolkien   | On hobbits |
 
-And then a condensed verious for each heuristic and algorithm
+And then a condensed version for each heuristic and algorithm
 
 Heuristics  ---> Expert Labels
 
-FILN | Authority hueristic | Authority | self-citation | google scholar | BHL
---------------------------------------------------------------------------------
-1    |                   1 |         1 |             1 |              1 | 0
-1    |                   1 |         1 |             1 |              1 | 1
-1    |                   1 |         1 |             0 |              0 | 0
+      set FILN | Authority hueristic | Authority | self-citation | google scholar | BHL
+          -----------------------------------------------------------------------------
+pair      1    |                   1 |         1 |             1 |              1 | 0
+          1    |                   1 |         1 |             1 |              1 | 1
+          1    |                   1 |         1 |             0 |              0 | 0
 ...
 
+
+Upper bound:
+all distinct
+
+Lower bound:
+first name last name all distinct
 
 '''
 

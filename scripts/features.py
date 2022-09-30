@@ -13,6 +13,7 @@ def make_group_pipeline(feature_dict):
                  'count'  : {'$sum': 1},
                  }},
                  {'$sort': SON([('_id', 1)])}]
+    return pipeline
 
 def run():
     ''' Calculate the features for the different sets in the database '''
@@ -34,7 +35,7 @@ def run():
     for ref_key in pairs.list_collection_names():
         print(ref_key)
         features[ref_key].insert_many(
-            compare_pair(pair, articles) for pair in track(pairs[ref_key].find(),
+            compare_pair(pair, articles) for pair in track(pairs[ref_key].find().limit(1000),
                 description=f'Calculating features for {ref_key}',
                 total=pairs[ref_key].count_documents({})))
 
@@ -47,7 +48,8 @@ def run():
     # ''' Sum feature vectors by reference set, to estimate frequency '''
     pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
     for ref_key in features.list_collection_names():
-        for i, pipeline in pipelines:
+        for i, pipeline in enumerate(pipelines):
             group_key = f'{ref_key}_x{i}'
+            print(group_key)
             feature_groups_i[group_key].insert_many(
                 features[ref_key].aggregate(pipeline))
