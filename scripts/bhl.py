@@ -29,6 +29,7 @@ def run():
 
     bhl_database = client.bhl_database
     bhl = bhl_database.bhl
+    bhl = client.validation.bhl
 
     with open('bhl_credentials.json', 'r') as infile:
         credentials = json.load(infile)

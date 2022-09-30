@@ -167,11 +167,13 @@ def construct_name(first, mid, last, suffix, order):
                 middle_initial=initial(middle),
                 last_initial=initial(last),
                 first=first, middle=middle, last=last,
-                full=' '.join((first, middle, last, suffix)).title().strip(),
+                full=' '.join((c for c in (first, middle, last, suffix)
+                               if len(c) > 0)
+                               ).title().strip(),
                 suffix=suffix.lower().strip(),
                 order=order)
 
-
+# TODO move these into a file, establish them from data, etc?
 stop_words_by_field = dict(
     default=set(stopwords.words('english')),
     mesh=["human","male","female","animal","adult","support non-u.s. gov’t","middle age","aged","english abstract","support u.s. gov’t p.h.s.","case report","rats","comparative study","adolescence","child","mice","time factors","child preschool","pregnancy","united states","infant","molecular sequencedata","kinetics","support u.s. gov’t non-p.h.s.","infant newborn"],

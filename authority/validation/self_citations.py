@@ -60,9 +60,8 @@ def self_citations(blocks, articles):
             for citation in citations:
                 for author in citation['authors']:
                     if author['last'] == last:
-                        key = (citation['title'], citation['year'])
-                        self_cites[key].add(entry['ids'])
+                        self_cites[citation['title']].add(
+                            (entry['title'], entry['authors']['last'], str(entry['ids'])))
                         break
         if len(self_cites) > 0:
-            pprint(block)
-            pprint(self_cites)
+            yield self_cites
