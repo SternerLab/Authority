@@ -8,10 +8,12 @@ def run():
     jstor_database = client.jstor_database
 
     features       = client.features
-    feature_groups = client.feature_groups
+    feature_groups_i = client.feature_groups_i
+    feature_groups_a = client.feature_groups_a
+
 
     for ref_key in features.list_collection_names():
         print(ref_key)
-        for group in feature_groups[ref_key].find():
-            pprint(group)
+        print('xi', feature_groups_i[ref_key].count_documents({}))
+        print('xa', feature_groups_a[ref_key].count_documents({}))
 

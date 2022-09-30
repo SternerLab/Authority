@@ -7,6 +7,7 @@ def run():
 
     jstor_database = client.jstor_database
     collect = jstor_database.articles
+    n = collect.count_documents({})
 
     count = 0
     for article in collect.find():
@@ -17,4 +18,4 @@ def run():
             # pprint(article['mesh'])
             # pprint(article)
 
-    print(f'Counted {count} articles!', flush=True)
+    print(f'Counted {count} mesh articles of {n} total documents!', flush=True)
