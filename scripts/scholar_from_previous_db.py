@@ -38,14 +38,10 @@ def run():
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database
-    scholar_db        = mongo_client.google_scholar
-    scholar_jstor_doi = scholar_db.jstor_doi
-    scholar_authors   = scholar_db.authors
+    scholar           = mongo_client.validation.google_scholar_dois
     articles          = jstor_database.articles
-
-    scholar_db.drop_collection('jstor_doi')
 
     sql_cursor.execute(all_rows.format(table))
     for row in sql_cursor.fetchall():
-        scholar_jstor_doi.insert_one(expand_author_row(row, articles))
+        scholar.insert_one(expand_author_row(row, articles))
 

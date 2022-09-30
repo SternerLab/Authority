@@ -65,10 +65,11 @@ def process_title(meta):
     try:
         title = meta['title-group']['article-title']
         if isinstance(title, dict):
-            title = title['#text']
+
+            title = title.get('#text', title.get('italic'))
+        if title is None:
+            raise IncompleteEntry('bad title')
     except KeyError:
-        print('bad title')
-        pprint(title)
         raise IncompleteEntry('bad title')
     if title is None:
         raise IncompleteEntry('no title')
@@ -110,8 +111,11 @@ def process_authors(meta):
                 name   = author['string-name']
                 authors.append(process_name(name, i))
             except KeyError:
-                print('bad author name')
-                pprint(author)
+                pass # This is an acceptable parsing error
+                # that occurs only when an *organization* authors a paper,
+                # and not individuals, which excludes it from authority
+                # print('bad author name')
+                # pprint(author)
         if not authors:
             raise IncompleteEntry('bad author name(s)')
     return authors
@@ -127,6 +131,11 @@ def process_name(name, order):
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
         given = name.get('given-names', '')
+        if isinstance(given, list): # When nicknames are present
+            # Filter parentheses, then select the first name without them.
+            given = [name for name in given if '(' not in name][0]
+        elif isinstance(given, dict):
+            given = given['#text']
         try:
             last = name['surname']
         except KeyError:

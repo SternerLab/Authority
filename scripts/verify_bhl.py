@@ -13,10 +13,12 @@ def run():
     n = bhl.count_documents({})
 
     print(f'Found {n} BHL clusters')
+    resolved = 0
     for doc in bhl.find():
         # pprint(doc['author']['key'])
         if 'jstor_article_mongo_ids' in doc:
             pprint(doc)
+            resolved += 1
 
         # for title in doc['titles']:
         #     pprint(title)
@@ -28,3 +30,4 @@ def run():
         # if jstor_article is not None:
         #     pprint(jstor_article['title'])
         #     pprint(jstor_article['authors'])
+    print(f'Out of {n} BHL documents, {resolved} were resolved to their JSTOR ids')

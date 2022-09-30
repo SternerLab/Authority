@@ -15,7 +15,7 @@ def run():
     xml_dir = Path('xml_article_data/')
     for zip_filename in xml_dir.glob('*.zip'):
         if 'JSTOR' in str(zip_filename):
-            print(f'skipping {zip_filename}, which needs to be unzipped using ./run unzip')
+            print(f'skipping {zip_filename},\n    which needs to be unzipped using ./run unzip first')
             continue
         print(f'parsing {zip_filename} into mongodb')
         client = MongoClient('localhost', 27017)
