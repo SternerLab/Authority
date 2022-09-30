@@ -13,16 +13,17 @@ def run():
     print('Inserting articles into MongoDB', flush=True)
     incomplete_count = 0
     xml_dir = Path('xml_article_data/')
+    client = MongoClient('localhost', 27017)
+    client.drop_database('jstor_database') # Be careful!
+    jstor_database = client.jstor_database
+    articles       = jstor_database.articles
+    incomplete     = jstor_database.incomplete
+
     for zip_filename in xml_dir.glob('*.zip'):
         if 'JSTOR' in str(zip_filename):
             print(f'skipping {zip_filename},\n    which needs to be unzipped using ./run unzip first')
             continue
         print(f'parsing {zip_filename} into mongodb')
-        client = MongoClient('localhost', 27017)
-        client.drop_database('jstor_database')
-        jstor_database = client.jstor_database
-        articles       = jstor_database.articles
-        incomplete     = jstor_database.incomplete
 
         articles.create_index([('author.key', pymongo.ASCENDING)])
 

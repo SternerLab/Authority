@@ -14,3 +14,6 @@ def run():
 
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
+
+    for doc in self_cites_collection.find():
+        pprint(doc)

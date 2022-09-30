@@ -6,8 +6,10 @@ import re
 
 from ..process.process import process_name, construct_name, remove_stop_words
 
-# pg = scholarly.ProxyGenerator()
-# scholar.use_proxy(pg)
+scholar.set_timeout(5)
+
+pg = scholarly.ProxyGenerator()
+scholar.use_proxy(pg)
 
 def title_words_iou_score(words_a, words_b):
     return len(words_a & words_b) / len(words_a | words_b)
@@ -33,6 +35,9 @@ def process_google_scholar_name(name, order=1):
     components = re.split('[ .,]+', name)
     if len(components) == 1:
         name = components[0]
+        first = ''
+        last = name
+        mid = ''
     else:
         first, *last = components
         if len(first) == 2:

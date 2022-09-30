@@ -53,9 +53,10 @@ def process_language(meta):
     except KeyError:
         pprint(meta)
         print('No language detected!!')
-        1/0 # If the language is missing, then use google translate API to detect it
+        # 1/0 # If the language is missing, then use google translate API to detect it
         # https://stackoverflow.com/questions/39142778/how-to-determine-the-language-of-a-piece-of-text
         # langs = ['eng'] # A rather big assumption: non-labelled articles are in english?
+        langs = []
     langs = [LANG_MAPPING.get(k, k) for k in langs]
     return langs
 
@@ -86,7 +87,7 @@ def process_abstract(meta):
                     element if not isinstance(element, dict) else element['#text']
                     for element in abstract)
         return remove_stop_words(abstract)
-    except KeyError:
+    except (KeyError, TypeError):
         # raise IncompleteEntry('no abstract')
         # Since many articles are without abstracts, allow this to be empty.
         return '' # Not all articles have abstracts, best way to handle this?
@@ -156,7 +157,7 @@ def process_name(name, order):
                 *mid, last = mid
             else:
                 suffix = ''
-        except ValueError as e:
+        except (ValueError, TypeError) as e:
             raise IncompleteEntry(f'incomplete name {name}')
     return construct_name(first, mid, last, suffix, order)
 
@@ -167,9 +168,12 @@ def construct_name(first, mid, last, suffix, order):
     first_initial = initial(first)
     middle = ' '.join(mid)
 
-    first  = first.lower().strip()
-    middle = middle.lower().strip()
-    last   = last.lower().strip()
+    try:
+        first  = first.lower().strip()
+        middle = middle.lower().strip()
+        last   = last.lower().strip()
+    except AttributeError as e:
+        raise IncompleteEntry(last)
 
     return dict(key=f'{first_initial}{last}',
                 first_initial=first_initial,

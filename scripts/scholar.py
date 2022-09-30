@@ -33,9 +33,8 @@ def run():
     scholar          = client.validation.google_scholar
     articles         = jstor_database.articles
 
-    threads = 4
+    threads = 1
     upper_bound = articles.count_documents({})
-
 
     with client.start_session(causal_consistency=True) as session:
         with Pool(max_workers=threads) as pool:

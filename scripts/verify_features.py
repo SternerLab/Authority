@@ -7,10 +7,9 @@ def run():
     client         = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
 
-    features       = client.features
+    features         = client.features
     feature_groups_i = client.feature_groups_i
     feature_groups_a = client.feature_groups_a
-
 
     for ref_key in features.list_collection_names():
         print(ref_key)
