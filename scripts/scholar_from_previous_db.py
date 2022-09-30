@@ -38,6 +38,7 @@ def run():
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database
+    mongo_client.validation.drop_collection('google_scholar_dois')
     scholar           = mongo_client.validation.google_scholar_dois
     articles          = jstor_database.articles
 

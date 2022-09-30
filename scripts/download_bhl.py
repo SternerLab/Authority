@@ -35,16 +35,18 @@ def run():
         credentials = json.load(infile)
     api_key = credentials['api_key']
 
-    threads    = 2
-    batch_size = 8
+    threads    = 8
+    batch_size = 16
 
-    tracked_cursor = track(collect.find(), total=n)
-    mapped_func    = functools.partial(process_article, key=api_key)
-    with Pool(max_workers=threads) as pool:
-        while True:
-            batch = list(itertools.islice(tracked_cursor, batch_size))
-            if len(batch) == 0:
-                break
-            for results in pool.map(mapped_func, batch):
-                for result in results:
-                    bhl.insert_one(result)
+    with client.start_session(causal_consistency=True) as session:
+        tracked_cursor = track(collect.find(no_cursor_timeout=True, session=session),
+                               total=n)
+        mapped_func    = functools.partial(process_article, key=api_key)
+        with Pool(max_workers=threads) as pool:
+            while True:
+                batch = list(itertools.islice(tracked_cursor, batch_size))
+                if len(batch) == 0:
+                    break
+                for results in pool.map(mapped_func, batch):
+                    for result in results:
+                        bhl.insert_one(result, session=session)

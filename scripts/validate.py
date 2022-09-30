@@ -13,17 +13,13 @@ def run():
     articles.create_index('title')
     articles.create_index('authors.key')
 
-    bhl_database = client.bhl_database
-    bhl = bhl_database.bhl
-    n = bhl.count_documents({})
+    val            = client.validation
+    bhl            = val.bhl
+    scholar        = val.google_scholar_doi
+    self_citations = val.self_citations
 
-    print(f'Found {n} BHL clusters')
-    count = 0
-    for doc in bhl.find():
-        # flawed lookup method, update
-        jstor_article = articles.find_one({'authors.key' : doc['author']['key']})
-        if jstor_article is not None:
-            print(jstor_article['title'])
-            count += 1
+    pprint(bhl.find_one())
+    pprint(scholar.find_one())
+    pprint(self_citations.find_one())
 
-    print(f'Found {count} corresponding JSTOR articles')
+

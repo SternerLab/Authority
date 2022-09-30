@@ -48,15 +48,15 @@ def parse_mesh_output(content):
         mesh_output[id_cell].update(remove_stop_words(cells, 'mesh'))
     return mesh_output
 
-def insert_mesh_output(articles, session, mesh_output):
+def insert_mesh_output(articles, mesh_output, session=None, use_obj_ids=True):
     for mongo_id, words in mesh_output.items():
         print('Updating', mongo_id)
         pprint(words)
-        articles.update_one(
-            {'_id' : ObjectId(mongo_id)},
-            {'$set' : {'mesh' : list(words)}},
-            session=session)
-
+        if mongo_ids:
+            query = {'_id' : ObjectId(mongo_id)},
+        else:
+            query = {'front.article-meta.article-id.#text' : doi}
+        articles.update_one(query, {'$set' : {'mesh' : list(words)}}, session=session)
 
 # See https://github.com/lhncbc/skr_web_python_api/blob/main/examples/generic_batch.py
 with open('umls_credentials.json', 'r') as infile:
@@ -90,8 +90,6 @@ def run():
                     break
                 print('Distributing...', flush=True)
                 mesh_output = fetch_mesh(batch)
-
-
-                insert_mesh_output(articles, session, mesh_output)
+                insert_mesh_output(articles, mesh_output, session=session)
                 print('Update finished!', flush=True)
             print('Finished all batches!', flush=True)
