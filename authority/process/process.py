@@ -9,6 +9,8 @@ import re
 
 from rich.pretty import pprint
 
+from .parse_citations import parse_citations
+
 class IncompleteEntry(Exception):
     pass
 
@@ -25,6 +27,7 @@ def process(entry):
     entry['abstract'] = process_abstract(meta)
     entry['language'] = process_language(meta)
     process_mappings(entry)
+    entry['citations'] = parse_citations(entry)
     entry['affiliation'] = ''
     entry['mesh'] = ''
     return entry
