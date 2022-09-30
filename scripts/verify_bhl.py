@@ -9,13 +9,22 @@ def run():
     articles.create_index('title')
     articles.create_index('authors.key')
 
-    bhl_database = client.bhl_database
-    bhl = bhl_database.bhl
+    bhl = client.validation.bhl
     n = bhl.count_documents({})
 
     print(f'Found {n} BHL clusters')
     for doc in bhl.find():
-        pprint(doc)
-        break
-        jstor_article = articles.find_one({'authors.key' : doc['author']['key']})
-    # pprint(articles.find_one({'authors.key' : 'aborstlap'}))
+        # pprint(doc['author']['key'])
+        if 'jstor_article_mongo_ids' in doc:
+            pprint(doc)
+
+        # for title in doc['titles']:
+        #     pprint(title)
+        #     jstor_article = articles.find_one({'title' : title})
+        #     if jstor_article is not None:
+        #         pprint(jstor_article['title'])
+        #         pprint(jstor_article['authors'])
+        # jstor_article = articles.find_one({'authors.key' : doc['author']['key']})
+        # if jstor_article is not None:
+        #     pprint(jstor_article['title'])
+        #     pprint(jstor_article['authors'])

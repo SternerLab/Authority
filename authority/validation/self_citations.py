@@ -64,4 +64,4 @@ def self_citations(blocks, articles):
                             (entry['title'], entry['authors']['last'], str(entry['ids'])))
                         break
         if len(self_cites) > 0:
-            yield self_cites
+            yield {k : list(v) for k, v in self_cites.items()}
