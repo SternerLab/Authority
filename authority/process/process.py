@@ -167,7 +167,7 @@ def construct_name(first, mid, last, suffix, order):
                 middle_initial=initial(middle),
                 last_initial=initial(last),
                 first=first, middle=middle, last=last,
-                full=' '.join((first, middle, last, suffix)).title(),
+                full=' '.join((first, middle, last, suffix)).title().strip(),
                 suffix=suffix.lower().strip(),
                 order=order)
 
