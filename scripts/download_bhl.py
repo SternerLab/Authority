@@ -10,7 +10,7 @@ from concurrent.futures import ThreadPoolExecutor as Pool
 import itertools
 import functools
 
-def process_article(article, key=None):
+def parse_article(article, key=None):
     print(article['title'])
     for author in article['authors']:
         print(author['key'])
@@ -41,7 +41,7 @@ def run():
     with client.start_session(causal_consistency=True) as session:
         tracked_cursor = track(collect.find(no_cursor_timeout=True, session=session),
                                total=n)
-        mapped_func    = functools.partial(process_article, key=api_key)
+        mapped_func    = functools.partial(parse_article, key=api_key)
         with Pool(max_workers=threads) as pool:
             while True:
                 batch = list(itertools.islice(tracked_cursor, batch_size))

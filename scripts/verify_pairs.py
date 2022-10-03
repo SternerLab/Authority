@@ -17,7 +17,6 @@ def run():
     for ref_key in reference_sets_pairs.list_collection_names():
         print(ref_key, reference_sets_pairs[ref_key].count_documents({}))
 
-
     for ref_key in reference_sets_pairs.list_collection_names():
         print(ref_key)
         for pair in reference_sets_pairs[ref_key].find():

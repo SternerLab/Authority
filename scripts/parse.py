@@ -6,8 +6,8 @@ import itertools
 import pymongo
 from pathlib import Path
 
-from authority.process.files import iter_xml_files
-from authority.process.process import process, IncompleteEntry # hmm
+from authority.parse.files import iter_xml_files
+from authority.parse.parse import parse, IncompleteEntry # hmm
 
 def run():
     print('Inserting articles into MongoDB', flush=True)
@@ -33,8 +33,8 @@ def run():
             with open(filename, 'r') as infile:
                 article = xmltodict.parse(infile.read())['article']
                 try:
-                    processed = process(article)
-                    inserted = articles.insert_one(processed)
+                    parsed   = parse(article)
+                    inserted = articles.insert_one(parsed)
                 except IncompleteEntry as e:
                     article['reason'] = str(e)
                     incomplete.insert_one(article)

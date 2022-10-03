@@ -38,11 +38,12 @@ def run():
     total  = articles.count_documents({})
 
     ref_keys = ('block', 'match', 'non_match')
+    ref_keys = ('non_match',)
 
     for ref_key in ref_keys:
         print(f'Sampling pairs from {ref_key}', flush=True)
         if ref_key == 'non_match':
-            limit = 1000000
+            limit = 11295361 # Arbitrary but limited
         else:
             limit = float('inf')
         inserted = 0

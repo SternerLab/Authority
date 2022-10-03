@@ -4,8 +4,8 @@ from rich.pretty import pprint
 from rich import print
 import itertools
 import pymongo
-from authority.validation.google_scholar import process_google_scholar_name
-from authority.process.process import remove_stop_words
+from authority.validation.google_scholar import parse_google_scholar_name
+from authority.parse.parse import remove_stop_words
 
 ''' Parse 24,763 google scholar articles from previous sqlite3 db '''
 
@@ -14,7 +14,7 @@ all_rows = 'SELECT * from {}'
 
 def expand_author_row(row, articles):
     _, ids, full_name, scholar_id = row
-    name = process_google_scholar_name(full_name)
+    name = parse_google_scholar_name(full_name)
     pprint(name)
     mongo_ids = []
     titles    = []

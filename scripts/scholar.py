@@ -15,7 +15,7 @@ progress_lock = Lock()
 count = 0
 
 
-def process_scholar_article(article, scholar=None, progress=None, task=None):
+def parse_scholar_article(article, scholar=None, progress=None, task=None):
     pprint(article['title'])
     pprint(article['authors'])
     for cluster in get_clusters(article):
@@ -40,7 +40,7 @@ def run():
         with Pool(max_workers=threads) as pool:
             with Progress() as progress:
                 task = progress.add_task('Parsing google scholar', total=upper_bound)
-                f = partial(process_scholar_article, scholar=scholar,
+                f = partial(parse_scholar_article, scholar=scholar,
                             progress=progress, task=task)
                 article_cursor = articles.find(no_cursor_timeout=True, session=session)
                 pool.map(f, article_cursor)

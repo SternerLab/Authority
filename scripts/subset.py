@@ -66,18 +66,18 @@ def run():
                                         'authors' : '$authors',
                                         'ids' : '$_id'}}}
 
-    for name, fields in criteria.items():
-        pipeline = [
-            {'$unwind' : '$authors'},
-            {'$group': {
-                '_id'    : {k : f'$authors.{k}' for k in fields},
-                'count'  : {'$sum': 1},
-                **push_group,
-                }},
-            # {'$sort': SON([('count', -1), ('_id', -1)])}
-        ]
-        # print(name)
-        reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
+   for name, fields in criteria.items():
+       pipeline = [
+           {'$unwind' : '$authors'},
+           {'$group': {
+               '_id'    : {k : f'$authors.{k}' for k in fields},
+               'count'  : {'$sum': 1},
+               **push_group,
+               }},
+           # {'$sort': SON([('count', -1), ('_id', -1)])}
+       ]
+       # print(name)
+       reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     ''' Create non-matching set by sampling articles with different last names '''
     n_pairs = reference_sets['match'].count_documents({})

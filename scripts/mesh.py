@@ -6,7 +6,7 @@ from rich.pretty import pprint
 from rich import print
 from itertools import islice
 
-from authority.process.process import remove_stop_words
+from authority.parse.parse import remove_stop_words
 import unicodedata
 from collections import defaultdict
 
@@ -66,7 +66,7 @@ def fetch_mesh(batch):
     print('Initializing SKR API', flush=True)
     sub = skr_web_api.Submission(credentials['email'], credentials['api_key'])
     # See https://lhncbc.nlm.nih.gov/ii/tools/MTI/help_info.html
-    sub.init_generic_batch('MTI', '--priority 0 -opt1L_DCMS -E')
+    sub.init_generic_batch('MTI', '-opt1L_DCMS -E')
     print('Setting batch file', flush=True)
     sub.set_batch_file('USERINPUT', '.\n\n'.join(a for a, _ in batch))
     print(f'Submitting article to SKR API!', flush=True)
