@@ -27,11 +27,11 @@ first name last name all distinct
 
 '''
 
-# pseudocode:
-for pair in all_pairs:
-    pair_evals = []
-    for eval_method in eval_methods:
-        classification = eval_method()
-        pair_evals.append(classification)
-    pd.add_row(pair_evals)
+# # pseudocode:
+# for pair in all_pairs:
+#     pair_evals = []
+#     for eval_method in eval_methods:
+#         classification = eval_method()
+#         pair_evals.append(classification)
+#     pd.add_row(pair_evals)
 
