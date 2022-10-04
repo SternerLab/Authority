@@ -9,8 +9,12 @@ from .compare import limits, x_a
 def preceeding_max(profiles, key):
     return np.max(np.array([r for t, r in profiles if sum(t) < sum(key)]))
 
+
 def succeeding_min(profiles, key):
-    return np.min(np.array([r for t, r in profiles if sum(t) > sum(key)]))
+    try:
+        return np.min(np.array([r for t, r in profiles if sum(t) > sum(key)]))
+    except ValueError:
+        return np.max(np.array([r for t, r in profiles]))
 
 def interpolate(computed_ratios):
     ''' Interpolation, section 2b of the 2005 paper '''
@@ -22,8 +26,12 @@ def interpolate(computed_ratios):
     for key in itertools.product(*(np.arange(l + 1) for l in limits.values())):
         x3, x4, x5, x6 = key
         if key not in profile_lookup:
-            preceeding_r = preceeding_max(profiles, key)
             succeeding_r = succeeding_min(profiles, key)
+            try:
+                preceeding_r = preceeding_max(profiles, key)
+            except ValueError:
+                # The profile is larger than all observed profiles, but has already been min-ed
+                preceeding_r = succeeding_r # So set it to the maximum profile available, succ
             interpolated[x3, x4, x5, x6] = (preceeding_r + succeeding_r) / 2
         else:
             interpolated[x3, x4, x5, x6] = profile_lookup[key]

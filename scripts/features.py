@@ -16,19 +16,25 @@ def make_group_pipeline(feature_dict):
                  '_id'    : feature_dict,
                  'count'  : {'$sum': 1},
                  }},
-                 {'$sort': SON([('_id', 1)])}]
+                 # {'$sort': SON([('_id', 1)])}
+                 ]
     return pipeline
 
-def generate(pairs, progress, task_name):
-    total = pairs.count_documents({})
+def generate(pairs, progress, task_name, limit=None):
+    if limit is not None:
+        pair_cursor = itertools.islice(pairs.find(), limit)
+        total = limit
+    else:
+        total = pairs.count_documents({})
+        pair_cursor = pairs.find()
     with progress_lock:
         task = progress.add_task(task_name, total=total)
-    for pair in pairs.find():
+    for pair in pair_cursor:
         with progress_lock:
             progress.update(task, advance=1)
             yield pair
 
-def insert_features(ref_key, client, progress):
+def insert_features(ref_key, client, progress, limit=None):
 
     jstor_database   = client.jstor_database
     articles         = jstor_database.articles
@@ -39,7 +45,7 @@ def insert_features(ref_key, client, progress):
 
     task_name = f'Calculating features for {ref_key}'
     features[ref_key].insert_many(compare_pair(pair, articles)
-            for pair in generate(pairs[ref_key], progress, task_name))
+            for pair in generate(pairs[ref_key], progress, task_name, limit))
 
     ''' Group by features x_a '''
     pipeline = make_group_pipeline({f'x{i}' : f'$features.x{i}' for i in x_a})
@@ -49,7 +55,6 @@ def insert_features(ref_key, client, progress):
     pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
     for i, pipeline in enumerate(pipelines):
         group_key = f'{ref_key}_x{i}'
-        print(group_key)
         feature_groups_i[group_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
@@ -64,9 +69,10 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
+    limit = 100000
 
     threads = 3
     with Progress() as progress:
         with Pool(max_workers=threads) as pool:
-            pool.map(partial(insert_features, client=client, progress=progress),
+            pool.map(partial(insert_features, client=client, progress=progress, limit=limit),
                      ref_keys)
