@@ -54,7 +54,7 @@ def insert_features(ref_key, client, progress, limit=None):
         features[ref_key].aggregate(pipeline))
 
     pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
-    for i, pipeline in enumerate(pipelines):
+    for i, pipeline in zip(x_i, pipelines): # Fixed!
         group_key = f'{ref_key}_x{i}'
         feature_groups_i[group_key].insert_many(
             features[ref_key].aggregate(pipeline))

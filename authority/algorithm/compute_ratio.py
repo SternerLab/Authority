@@ -16,7 +16,8 @@ def get_count(group, feature):
     else:
         return result['count']
 
-def compute_ratio(feature, feature_groups, total_matches, total_non_matches, suffix=''):
+def compute_ratio(feature, feature_groups, # match_count, non_match_count,
+                  total_matches, total_non_matches, suffix=''):
     ''' Compute r and w:
             key: feature as a tuple
             r: (match prob : non match prob) ratio
@@ -30,9 +31,10 @@ def compute_ratio(feature, feature_groups, total_matches, total_non_matches, suf
     try:
         r = (match_count / total_matches) / (non_match_count / total_non_matches)
     except ZeroDivisionError:
-        print('Undefined ratio for: ')
+        print('Undefined ratio for: ', feature)
         print(f'match count: {match_count} / {total_matches}')
         print(f'non-match count: {non_match_count} / {total_non_matches}')
+        raise
     key = tuple(feature.values())
     return key, r, match_count + non_match_count
 
@@ -55,10 +57,16 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
 
     unique_features = OrderedDict()
     for ref_key in features.list_collection_names():
+        print(ref_key + suffix)
         for group in feature_groups[ref_key + suffix].find():
-            key = tuple(group['_id'].values())
-            if None not in key: # to fix
-                unique_features[key] = None
+            # Replace None features with 0 here. Should happen earlier, but...
+            feature = group['_id']
+            key = tuple(el if el is not None else 0 for el in feature.values())
+            pprint(group)
+            unique_features[key] = feature
+            # group['count']
+    print('unique_features')
+    pprint(unique_features)
     sorted_features = [{f'x{i}' : f for i, f in zip(xs, fs)}
                        for fs in sorted(unique_features.keys())]
 
