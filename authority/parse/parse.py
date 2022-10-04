@@ -210,12 +210,17 @@ def remove_stop_words(words_or_text, field='default'):
 
 # https://stackoverflow.com/questions/60391831/python-splitting-year-number-in-brackets-in-a-string-using-regex
 # https://stackoverflow.com/questions/6711971/regular-expressions-match-anything
-author_re = r'(?P<authors>([a-zA-zÀ-ÿ\,\.\n\&\'\-(and) \(\)]*))'
-year_re   = r'\(?(?P<year>\d\d\d\d)\)?:?\.?'
-title_re  = r'(?P<title>([^\.]*))'
-other     = r'(?P<other>([.*?]*))'
+author     = r'a-zA-zÀ-ÿ,\.\&\'\- \(\);'
+author_re  = fr'(?P<authors>([{author}\n]*))'
+authorn_re = fr'(?P<authors>([{author}]*))'
+year_re    = r'\(?(?P<year>\d\d\d\d)\)?:?\.?'
+title_re   = r'(?P<title>([^\.]*))'
+other      = r'(?P<other>([.*?]*))'
+sep_re     = r'[;,]'
+sep        = re.compile(sep_re)
 
-citation_regex = re.compile(fr'{author_re}{year_re}{title_re}\.{other}')
+mid_year_citation_regex  = re.compile(fr'{author_re}{year_re}{title_re}\.{other}')
+post_year_citation_regex = re.compile(fr'{authorn_re}\n{title_re}{other}{year_re}\.')
 
 def reorder_name(name):
     try:
@@ -228,10 +233,13 @@ class CitationParseFailure(RuntimeError):
     pass
 
 def parse_citation(citation):
-    result = citation_regex.match(citation)
-    if result is None:
-        raise CitationParseFailure(str(citation_regex) + '\n' + citation)
-    authors = result.group('authors').split(',')
+    for citation_regex in (mid_year_citation_regex, post_year_citation_regex):
+        result = citation_regex.match(citation)
+        if result is not None:
+            break
+    else:
+        raise CitationParseFailure(citation)
+    authors = re.split(sep, result.group('authors'))
     authors = [process_name(reorder_name(name), i)
                for i, name in enumerate(authors)]
     return dict(title=remove_stop_words(result.group('title')),
@@ -240,6 +248,7 @@ def parse_citation(citation):
 def process_citations(article):
     failures = 0
     length   = 0
+    last_failure = None
     citations = []
     try:
         for ref in article['back']['ref-list']['ref']:
@@ -249,8 +258,9 @@ def process_citations(article):
                 if '#text' in citation:
                     citations.append(parse_citation(citation['#text']))
             except CitationParseFailure as e:
-                print(f'CitationParseFailure: {e}')
+                # print(f'CitationParseFailure: {e}')
                 failures += 1
+                last_failure = str(e)
                 # raise
             except TypeError:
                 pass
@@ -259,14 +269,17 @@ def process_citations(article):
                 if key not in {'mixed-citation'}:
                     raise
         if length > 0 and failures > 0:
-            print(f'{failures}/{length} failures')
+            # print(f'{failures}/{length} failures')
+            if length == failures:
+                print('ALL citations failed to parse, indicating a new format:')
+                print(f'CitationParseFailure: {last_failure}')
     except KeyError as e:
         key = str(e).replace('\'', '')
         if key not in {'back', 'ref-list', 'ref'}:
             raise
     except TypeError:
         pass
-    return citations
+    return citations, failures, length
 
 # testing
 # parse_citation('L. Saldyt 2022. Title. Other stuff \n here')

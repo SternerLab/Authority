@@ -11,7 +11,7 @@ def objective(u, v, elements, probs):
         i, j = min(i, j), max(i, j)
         yield (probs[i, j] / (1 - probs[i, j])) / (len(U) * len(V))
 
-def cluster(probs, epsilon=1e-8):
+def cluster(probs, stop='threshold', epsilon=1e-12):
     c, _     = probs.shape
     labels   = np.arange(c)
     elements = {i : [labels[i]] for i in range(c)}
@@ -26,9 +26,17 @@ def cluster(probs, epsilon=1e-8):
                 best = obj
                 to_merge = u, v
         u, v = to_merge
-        print('checking epsilon: ', best - prev_best)
-        if (best - prev_best) < epsilon:
-            break
+        if stop == 'compare_threshold':
+            print('checking stop condition: best=', best, 'prev_best=', prev_best)
+            print('checking epsilon: ', best - prev_best, (best - prev_best) < epsilon)
+            if (best - prev_best) < epsilon:
+                break
+        elif stop == 'threshold':
+            print('checking stop condition', best, epsilon)
+            if best < epsilon:
+                break
+        else:
+            print(f'Unknown stopping condition {stop}')
         prev_best = best
         # Merge clusters u and v
         # u < v is satisfied based on behavior of itertools.combinations!
