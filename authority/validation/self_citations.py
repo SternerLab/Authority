@@ -1,5 +1,6 @@
 from rich.pretty   import pprint
 from rich.progress import track
+from rich import print
 from collections import defaultdict
 
 from authority.parse.parse import process_citations, reorder_name
@@ -23,7 +24,7 @@ def self_citations(blocks, articles):
             # if citations:
             #     pprint(citations)
             if length > 0 and new_failures > 0:
-                print(f'Running: {failures/length:4.4f}% from {failures:4}/{length:4} failures ({new_failures:3}/{new_length:3} new)')
+                print(f'Running: {100*failures/length:4.4f}% from {failures:4}/{length:4} failures ({new_failures:3}/{new_length:3} new)')
 
             for citation in citations:
                 for author in citation['authors']:

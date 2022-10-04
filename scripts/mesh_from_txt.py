@@ -37,7 +37,7 @@ def insert_mesh(filename, articles=None, progress=None, task=None):
     insert_mesh_output(articles, mesh_output, progress, task)
 
 def run():
-    threads = 8
+    threads = 16
 
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database
