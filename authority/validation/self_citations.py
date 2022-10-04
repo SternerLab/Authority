@@ -12,10 +12,12 @@ def self_citations(blocks, articles):
         for entry in block['group']:
             last      = entry['authors']['last']
             article   = articles.find_one({'_id' : entry['ids']})
-            if 'citations' in article:
-                citations = article['citations']
-            else:
-                citations = process_citations(article)
+            # if 'citations' in article:
+            #     citations = article['citations']
+            # else:
+            citations = process_citations(article)
+            # if citations:
+            #     pprint(citations)
 
             for citation in citations:
                 for author in citation['authors']:

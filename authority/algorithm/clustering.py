@@ -26,6 +26,7 @@ def cluster(probs, epsilon=1e-8):
                 best = obj
                 to_merge = u, v
         u, v = to_merge
+        print('checking epsilon: ', best - prev_best)
         if (best - prev_best) < epsilon:
             break
         prev_best = best

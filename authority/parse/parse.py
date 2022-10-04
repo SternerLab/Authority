@@ -7,6 +7,7 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 import re
 
+from rich import print
 from rich.pretty import pprint
 
 class IncompleteEntry(Exception):
@@ -209,12 +210,12 @@ def remove_stop_words(words_or_text, field='default'):
 
 # https://stackoverflow.com/questions/60391831/python-splitting-year-number-in-brackets-in-a-string-using-regex
 # https://stackoverflow.com/questions/6711971/regular-expressions-match-anything
-author_re = r'(?P<authors>([a-zA-Z\. ]*))'
-year_re   = r'(?P<year>\d\d\d\d)'
-title_re  = r'(?P<title>([a-zA-Z ]*))'
+author_re = r'(?P<authors>([a-zA-zÀ-ÿ\,\.\n\&\'\-(and) \(\)]*))'
+year_re   = r'\(?(?P<year>\d\d\d\d)\)?:?\.?'
+title_re  = r'(?P<title>([^\.]*))'
 other     = r'(?P<other>([.*?]*))'
 
-citation_regex = re.compile(fr'{author_re}{year_re}\.{title_re}\.{other}')
+citation_regex = re.compile(fr'{author_re}{year_re}{title_re}\.{other}')
 
 def reorder_name(name):
     try:
@@ -223,10 +224,13 @@ def reorder_name(name):
     except ValueError:
         return dict(surname=name)
 
+class CitationParseFailure(RuntimeError):
+    pass
+
 def parse_citation(citation):
     result = citation_regex.match(citation)
     if result is None:
-        raise KeyError
+        raise CitationParseFailure(str(citation_regex) + '\n' + citation)
     authors = result.group('authors').split(',')
     authors = [process_name(reorder_name(name), i)
                for i, name in enumerate(authors)]
@@ -234,13 +238,33 @@ def parse_citation(citation):
                 authors=authors, year=int(result.group('year')))
 
 def process_citations(article):
+    failures = 0
+    length   = 0
     citations = []
     try:
         for ref in article['back']['ref-list']['ref']:
-            citation = ref['mixed-citation']
-            if '#text' in citation:
-                citations.append(parse_citation(citation['#text']))
-    except (KeyError, TypeError): # Missing citations
+            try:
+                citation = ref['mixed-citation']
+                length += 1
+                if '#text' in citation:
+                    citations.append(parse_citation(citation['#text']))
+            except CitationParseFailure as e:
+                print(f'CitationParseFailure: {e}')
+                failures += 1
+                # raise
+            except TypeError:
+                pass
+            except KeyError as e:
+                key = str(e).replace('\'', '')
+                if key not in {'mixed-citation'}:
+                    raise
+        if length > 0 and failures > 0:
+            print(f'{failures}/{length} failures')
+    except KeyError as e:
+        key = str(e).replace('\'', '')
+        if key not in {'back', 'ref-list', 'ref'}:
+            raise
+    except TypeError:
         pass
     return citations
 
