@@ -1,4 +1,5 @@
 from rich.pretty import pprint
+from rich.progress import track
 from rich import print
 import scipy
 import numpy as np
@@ -54,13 +55,15 @@ def fix_triplet_violations_step(table):
     # ignore warnings since the where statement handles these
     with np.errstate(divide='ignore', invalid='ignore'):
         updated = np.where(base > 0., working/base, table)
+        updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
     return updated, violations
 
 def fix_triplet_violations(table, max_iterations=30):
     ''' Fix triplet violations using a closed-form solution,
         section 4 of the 2005 or 2009 papers '''
-    for _ in range(max_iterations):
+    for i in range(max_iterations):
         table, violations = fix_triplet_violations_step(table)
+        print(f'Iteration {i} of triplet violations: violations = {violations}')
         if violations == 0:
             break
     return table

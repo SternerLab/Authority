@@ -97,15 +97,20 @@ def run():
                 cached_features.append((i, j, features))
                 table[i, j] = p
 
-            fixed_table = fix_triplet_violations(table)
-            new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
-                           np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
-
-            new_table = np.full((m, m), np.nan)
-            np.fill_diagonal(new_table, 1.)
-            for i, j, feature in cached_features:
-                p = infer_from_feature(features, interpolated, xi_ratios, new_prior)
-                new_table[i, j] = p
+            # Disable triplet violation correction, prior estimation, and recalculation
+            # Set tables and priors to unchanged values for consistency
+            new_table = table
+            fixed_table = table
+            new_prior = match_prior
+            # fixed_table = fix_triplet_violations(table)
+            # print(fixed_table)
+            # new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
+            #                np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
+            # new_table = np.full((m, m), np.nan)
+            # np.fill_diagonal(new_table, 1.)
+            # for i, j, feature in cached_features:
+            #     p = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+            #     new_table[i, j] = p
 
             print(group_id)
             cluster_labels = custom_cluster_alg(new_table)
@@ -117,9 +122,10 @@ def run():
             inferred[ref_key].insert_one(dict(
                 cluster_labels={str(k) : int(cluster_labels[i])
                                 for k, i in id_lookup.items()},
-                probs=binary_probs, prior=new_prior,
+                probs=binary_probs,
                 fixed_probs=fixed_probs_binary,
                 original_probs=original_probs_binary,
+                prior=new_prior,
                 match_prior=match_prior,
                 group_id=group_id))
     except KeyboardInterrupt:
