@@ -8,8 +8,8 @@ def run():
 
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
-    # blocks         = client.reference_sets['block'] # Smaller, maybe too restrictive
-    blocks         = client.reference_sets['last'] # Much bigger
+    blocks         = client.reference_sets['block'] # Smaller, maybe too restrictive
+    # blocks         = client.reference_sets['last'] # Much bigger
 
     client.validation.drop_collection('self_citations')
     self_cites_collection = client.validation.self_citations

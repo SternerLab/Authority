@@ -207,9 +207,6 @@ def remove_stop_words(words_or_text, field='default'):
     else:
         return filtered
 
-import re
-from authority.process.process import remove_stop_words, process_name
-
 # https://stackoverflow.com/questions/60391831/python-splitting-year-number-in-brackets-in-a-string-using-regex
 # https://stackoverflow.com/questions/6711971/regular-expressions-match-anything
 author_re = r'(?P<authors>([a-zA-Z\. ]*))'

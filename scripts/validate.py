@@ -24,8 +24,8 @@ def run():
     pprint(scholar.find_one())
     pprint(self_citations.find_one())
 
-
-    for cluster in inferred_blocks.find():
+    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    for cluster in inferred_blocks.find(query):
         pprint(cluster['group_id'])
         pprint(cluster['cluster_labels'])
         probs = pickle.loads(cluster['probs'])

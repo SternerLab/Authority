@@ -10,6 +10,7 @@ def run():
     articles       = jstor_database.articles
     # blocks         = client.reference_sets['block']
     blocks         = client.reference_sets['last']
+
     self_cites_collection = client.validation.self_citations
 
     n = self_cites_collection.count_documents({})
@@ -17,3 +18,4 @@ def run():
 
     for doc in self_cites_collection.find():
         pprint(doc)
+    print(f'There are {n} self citation documents')

@@ -2,7 +2,7 @@ from rich.pretty   import pprint
 from rich.progress import track
 from collections import defaultdict
 
-from authority.process.parse_citations import parse_citations, reorder_name
+from authority.parse.parse import process_citations, reorder_name
 
 def self_citations(blocks, articles):
     ''' Extract clusters based on self-citations '''
@@ -15,7 +15,7 @@ def self_citations(blocks, articles):
             if 'citations' in article:
                 citations = article['citations']
             else:
-                citations = parse_citations(article)
+                citations = process_citations(article)
 
             for citation in citations:
                 for author in citation['authors']:
