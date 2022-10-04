@@ -63,7 +63,8 @@ def run():
     try:
         ref_key = 'block'
         total = lookup[ref_key].count_documents({})
-        for pair_lookup in track(lookup[ref_key].find(), total=total):
+        for pair_lookup in track(lookup[ref_key].find(), total=total,
+                                 description='Clustering first initial last name blocks'):
             group_id = pair_lookup['group_id']
             group = next(subsets[ref_key].find({'_id' : group_id}))
 

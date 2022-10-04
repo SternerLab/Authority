@@ -27,6 +27,7 @@ def generate(pairs, progress, task_name, limit=None):
     else:
         total = pairs.count_documents({})
         pair_cursor = pairs.find()
+    print(f'Task {task_name} has upper bound of {total} pairs!')
     with progress_lock:
         task = progress.add_task(task_name, total=total)
     for pair in pair_cursor:
@@ -69,7 +70,9 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
-    limit = 100000
+    # limit = 1000000
+    # limit = None
+    limit = 2000000 # Reasonable
 
     threads = 3
     with Progress() as progress:

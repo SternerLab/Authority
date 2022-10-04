@@ -15,6 +15,7 @@ def cluster(probs, epsilon=1e-8):
     c, _     = probs.shape
     labels   = np.arange(c)
     elements = {i : [labels[i]] for i in range(c)}
+    prev_best = -float('inf')
     for _ in range(c - 1): # Upper bound on possible merges
         # Calculate the objective and argmax of clusters
         best = -float('inf')
@@ -25,8 +26,9 @@ def cluster(probs, epsilon=1e-8):
                 best = obj
                 to_merge = u, v
         u, v = to_merge
-        if best < epsilon:
+        if (best - prev_best) < epsilon:
             break
+        prev_best = best
         # Merge clusters u and v
         # u < v is satisfied based on behavior of itertools.combinations!
         elements[u].extend(elements.pop(v))

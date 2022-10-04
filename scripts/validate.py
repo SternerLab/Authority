@@ -1,5 +1,7 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
+from rich import print
+import pickle
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -23,3 +25,8 @@ def run():
     pprint(self_citations.find_one())
 
 
+    for cluster in inferred_blocks.find():
+        pprint(cluster['group_id'])
+        pprint(cluster['cluster_labels'])
+        probs = pickle.loads(cluster['probs'])
+        print(probs)

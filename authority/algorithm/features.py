@@ -103,11 +103,13 @@ def x10(a, b):
     hyphen_a = '-' in a_first
     hyphen_b = '-' in b_first
     if hyphen_a:
-        a_pre, a_post = a_first.split('-')
+        a_pre, *a_post = a_first.split('-')
+        a_post = ''.join(a_post)
     else:
         a_pre = a_first; a_post = ''
     if hyphen_b:
-        b_pre, b_post = b_first.split('-')
+        b_pre, *b_post = b_first.split('-')
+        b_post = ''.join(b_post)
     else:
         b_pre = b_first; b_post = ''
 
