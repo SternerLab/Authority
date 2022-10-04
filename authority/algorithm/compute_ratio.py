@@ -6,6 +6,9 @@ from collections import OrderedDict
 
 from .compare import *
 
+class IncompleteRatioTable(RuntimeError):
+    pass
+
 def get_count(group, feature):
     result = group.find_one({'_id' : feature})
     if result is None:
@@ -54,6 +57,7 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
     sorted_features = [{f'x{i}' : f for i, f in zip(xs, fs)}
                        for fs in sorted(unique_features.keys())]
 
+    print('sorted features:')
     pprint(sorted_features)
 
     computed_features = OrderedDict()
@@ -64,5 +68,7 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
                                       total_non_matches, suffix=suffix)
             computed_features[key] = r, w
         except ZeroDivisionError:
-            pass
+            print('undefined!', i, feature)
+    if not computed_features:
+        raise IncompleteRatioTable('Ratio table is incomplete, consider regenerating features')
     return computed_features
