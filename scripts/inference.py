@@ -56,14 +56,19 @@ def run():
     pairs          = client.reference_sets_pairs
     lookup         = client.reference_sets_group_lookup
     subsets        = client.reference_sets
+
+    client.drop_database('inferred') # Careful!
+
     inferred       = client.inferred
+
+    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
     try:
         ref_key = 'block'
         total = lookup[ref_key].count_documents({})
-        for pair_lookup in track(lookup[ref_key].find(), total=total,
+        for pair_lookup in track(lookup[ref_key].find(query), total=total,
                                  description='Clustering first initial last name blocks'):
             group_id = pair_lookup['group_id']
             group = next(subsets[ref_key].find({'_id' : group_id}))
@@ -105,11 +110,17 @@ def run():
             print(group_id)
             cluster_labels = custom_cluster_alg(new_table)
             print('custom', cluster_labels)
-            binary_probs   = Binary(pickle.dumps(new_table), subtype=128)
+            binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
+            fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
+            original_probs_binary = Binary(pickle.dumps(table), subtype=128)
+
             inferred[ref_key].insert_one(dict(
                 cluster_labels={str(k) : int(cluster_labels[i])
                                 for k, i in id_lookup.items()},
                 probs=binary_probs, prior=new_prior,
+                fixed_probs=fixed_probs_binary,
+                original_probs=original_probs_binary,
+                match_prior=match_prior,
                 group_id=group_id))
     except KeyboardInterrupt:
         pass

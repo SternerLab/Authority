@@ -3,6 +3,9 @@ from rich.pretty   import pprint
 from rich import print
 import pickle
 
+import seaborn as sns
+import matplotlib.pyplot as plt
+
 def run():
     client = MongoClient('localhost', 27017)
 
@@ -28,5 +31,12 @@ def run():
     for cluster in inferred_blocks.find(query):
         pprint(cluster['group_id'])
         pprint(cluster['cluster_labels'])
-        probs = pickle.loads(cluster['probs'])
-        print(probs)
+        pprint(cluster.keys())
+        for prior_key in ('match_prior', 'prior'):
+            prior = cluster['prior']
+            print(f'{prior_key} : {prior:.4%}')
+        for prob_key in ('original_probs', 'fixed_probs', 'probs'):
+            probs = pickle.loads(cluster[prob_key])
+            fig = sns.heatmap(probs).get_figure()
+            fig.savefig(f'plots/{prob_key}.png')
+            plt.show()

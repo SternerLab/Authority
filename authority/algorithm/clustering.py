@@ -11,7 +11,7 @@ def objective(u, v, elements, probs):
         i, j = min(i, j), max(i, j)
         yield (probs[i, j] / (1 - probs[i, j])) / (len(U) * len(V))
 
-def cluster(probs, stop='threshold', epsilon=1e-12):
+def cluster(probs, stop='threshold', epsilon=1e-8):
     c, _     = probs.shape
     labels   = np.arange(c)
     elements = {i : [labels[i]] for i in range(c)}

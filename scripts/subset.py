@@ -57,9 +57,9 @@ def run():
     ''' Create matching based on different criteria '''
 
     criteria = {
-            'last'  : ('last',),
-            'block' : ('first_initial', 'last'),
-            'match' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
+            'last_name' : ('last',),
+            'first_initial_last_name' : ('first_initial', 'last'),
+            'full_name' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
     }
 
     push_group = {'group' : {'$push' : {'title' : '$title',
@@ -74,15 +74,16 @@ def run():
                'count'  : {'$sum': 1},
                **push_group,
                }},
+           # Sorting will eat all of your memory and make u sad :(
            # {'$sort': SON([('count', -1), ('_id', -1)])}
        ]
        # print(name)
        reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     ''' Create non-matching set by sampling articles with different last names '''
-    n_pairs = reference_sets['match'].count_documents({})
+    n_pairs = reference_sets['full_name'].count_documents({})
 
-    sampled_sets = [('last', 'non_match')]
+    sampled_sets = [('last_name', 'differing_last_name')]
     for ref_key, new_key in sampled_sets:
         samples = reference_sets[ref_key].aggregate(
             [{'$sample' : {'size' : n_pairs}},
