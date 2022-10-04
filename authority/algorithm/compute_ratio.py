@@ -27,7 +27,12 @@ def compute_ratio(feature, feature_groups, total_matches, total_non_matches, suf
 
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
-    r = (match_count / total_matches) / (non_match_count / total_non_matches)
+    try:
+        r = (match_count / total_matches) / (non_match_count / total_non_matches)
+    except ZeroDivisionError:
+        print('Undefined ratio for: ')
+        print(f'match count: {match_count} / {total_matches}')
+        print(f'non-match count: {non_match_count} / {total_non_matches}')
     key = tuple(feature.values())
     return key, r, match_count + non_match_count
 
