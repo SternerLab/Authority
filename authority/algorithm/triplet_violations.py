@@ -5,6 +5,8 @@ import scipy
 import numpy as np
 import itertools
 from collections import namedtuple
+import seaborn as sns
+import matplotlib.pyplot as plt
 
 from .compute_ratio import *
 
@@ -27,10 +29,10 @@ def correct(t):
     ''' Closed form solution given in 2009 paper, page 13'''
     w    = t.inv()
     den  = w.ij*w.ik + w.ik*w.jk + w.ij*w.jk
-    q_ij = (w.ij*(w.jk + w.ik)*t.ij + w.jk*w.ik*(1 + t.ik - p.jk))/den
-    q_jk = (w.jk*(w.ij + w.ik)*t.jk + w.ij*w.ik*(1 + t.ik - p.ij))/den
+    q_ij = (w.ij*(w.jk + w.ik)*t.ij + w.jk*w.ik*(1 + t.ik - t.jk))/den
+    q_jk = (w.jk*(w.ij + w.ik)*t.jk + w.ij*w.ik*(1 + t.ik - t.ij))/den
     q_ik = q_ij + q_jk - 1
-    return Triplet(q_ij, q_jk, q_ik)
+    return Triplet(*np.maximum(np.minimum((q_ij, q_jk, q_ik), 0.), 1.))
 
 Triplet.correct = correct
 
@@ -42,10 +44,16 @@ def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY hig
     violations = 0
     for i, j, k in itertools.combinations(np.arange(m), r=3):
         t = trip(table, i, j, k)
+        assert t.ij < 1., f'Probability violation in input triple: {t.ij}'
+        assert t.jk < 1., f'Probability violation in input triple: {t.jk}'
+        assert t.ik < 1., f'Probability violation in input triple: {t.ik}'
         if t.violation():
             violations += 1
 
             q = t.correct()
+            assert q.ij < 1., f'Probability violation in analytic solution: {q.ij}'
+            assert q.jk < 1., f'Probability violation in analytic solution: {q.jk}'
+            assert q.ik < 1., f'Probability violation in analytic solution: {q.ik}'
 
             working[i, j] += q.ij
             working[j, k] += q.jk
@@ -56,15 +64,20 @@ def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY hig
     # base is 0. where there are no triplet violations:
     print('working', working)
     print('base', base)
-    updated = np.where(base > 0., working/base, table)    # Average where we have data
+    assert (working < base).all(), 'Normalization incorrect'
+    # Average where we have data
+    updated = np.where(np.isclose(base, 0.), table, working/base)
     for i, j in itertools.combinations(np.arange(m), r=2):
-        assert not np.isnan(updated[i, j]), f'Numerical stability violation at i, j = {i, j}: {updated[i, j]}'
+        assert np.isfinite(updated[i, j]), f'Numerical stability violation at i, j = {i, j}: {updated[i, j]}'
     # Would not be needed if the above assertion holds, which we want it to!
     # updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
     print('updated', updated)
     print('Bounds: ')
+    fig = sns.heatmap(updated).get_figure()
+    plt.show()
+
     bottom, top = np.nanmin(updated), np.nanmax(updated)
-    assert bottom > 0.
+    assert bottom > 0., f'minimum {bottom} violates probability laws'
     assert top <= 1. + epsilon, f'maximum {top} violates probability laws'
     print(bottom, top)
     return updated, violations

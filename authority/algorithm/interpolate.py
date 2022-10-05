@@ -32,7 +32,8 @@ def interpolate(computed_ratios):
             except ValueError:
                 # The profile is larger than all observed profiles, but has already been min-ed
                 preceeding_r = succeeding_r # So set it to the maximum profile available, succ
-            interpolated[x3, x4, x5, x6] = (preceeding_r + succeeding_r) / 2
+            interpolated[x3, x4, x5, x6] = r = (preceeding_r + succeeding_r) / 2
         else:
-            interpolated[x3, x4, x5, x6] = profile_lookup[key]
+            interpolated[x3, x4, x5, x6] = r = profile_lookup[key]
+        assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
     return interpolated

@@ -30,6 +30,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
     non_match_count = get_count(non_match_group, feature)
     try:
         r = (match_count / total_matches) / (non_match_count / total_non_matches)
+        assert r >= 0., f'ratios should ALWAYS be positive, but got {r} from {match_count} / {total_matches} matches and {non_match_count} / {total_non_matches} non matches'
     except ZeroDivisionError:
         print('Undefined ratio for: ', feature)
         print(f'match count: {match_count} / {total_matches}')
@@ -45,6 +46,7 @@ def compute_xi_ratios(features, feature_groups, x_i):
         key = f'x{i}'
         ratios = compute_ratios(features, feature_groups, suffix=f'_{key}', xs=[i])
         for value, (r, w) in ratios.items():
+            assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
             computed_xi[(key, value)] = r
     return computed_xi
 
@@ -79,6 +81,7 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
             key, r, w = compute_ratio(feature, feature_groups,
                                       total_matches,
                                       total_non_matches, suffix=suffix)
+            assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
             computed_features[key] = r, w
         except ZeroDivisionError:
             print('undefined!', i, feature)

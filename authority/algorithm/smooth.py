@@ -25,9 +25,10 @@ def smooth(computed_ratios):
         return bound - x
 
     rh = scipy.optimize.minimize(objective, x, method='slsqp',
-            constraints=[dict(type='ineq', fun=constraint)])['x']
+            constraints=[dict(type='ineq', fun=constraint)],
+            bounds=scipy.optimize.Bounds(lb=0.0))['x']
 
     for i, k in enumerate(computed_ratios):
         computed_ratios[k] = rh[i]
-
+        assert rh[i] >= 0., f'ratios should ALWAYS be positive, but got {rh[i]}'
     return computed_ratios
