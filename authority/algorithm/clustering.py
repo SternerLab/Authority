@@ -11,6 +11,16 @@ def objective(u, v, elements, probs):
         i, j = min(i, j), max(i, j)
         yield (probs[i, j] / (1 - probs[i, j])) / (len(U) * len(V))
 
+def merge(labels, elements, u, v, c):
+    for k, l in enumerate(labels):
+        if l == v:
+            labels[k] = u
+        elif l > v:
+            labels[k] -= 1
+    elements[u].extend(elements.pop(v))
+    for i in range(v + 1, c):
+        elements[i - 1] = elements.pop(i)
+
 def cluster(probs, stop='threshold', epsilon=1e-8):
     c, _     = probs.shape
     labels   = np.arange(c)
@@ -27,9 +37,10 @@ def cluster(probs, stop='threshold', epsilon=1e-8):
                 to_merge = u, v
         u, v = to_merge
         if stop == 'compare_threshold':
+            diff = best - prev_best
             print('checking stop condition: best=', best, 'prev_best=', prev_best)
-            print('checking epsilon: ', best - prev_best, (best - prev_best) < epsilon)
-            if (best - prev_best) < epsilon:
+            print('checking epsilon: ', diff, diff < epsilon)
+            if np.isnan(diff) or diff < epsilon:
                 break
         elif stop == 'threshold':
             print('checking stop condition', best, epsilon)
@@ -40,14 +51,7 @@ def cluster(probs, stop='threshold', epsilon=1e-8):
         prev_best = best
         # Merge clusters u and v
         # u < v is satisfied based on behavior of itertools.combinations!
-        elements[u].extend(elements.pop(v))
-        for i in range(v + 1, c):
-            elements[i - 1] = elements.pop(i)
-        for k, l in enumerate(labels):
-            if l == v:
-                labels[k] = u
-            elif l > v:
-                labels[k] -= 1
+        merge(labels, elements, u, v, c)
         c -= 1
     return labels
 

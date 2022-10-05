@@ -61,8 +61,8 @@ def run():
 
     inferred       = client.inferred
 
-    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    # query = {}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    query = {}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
@@ -93,7 +93,8 @@ def run():
                 compared = compare_pair(pair, articles)
                 features = compared['features']
                 p, r = infer_from_feature(features, interpolated, xi_ratios, match_prior)
-                assert p > 0. and p < 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
+                assert r >= 0., f'Ratio {r} violates >0 constraint'
+                assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
                 i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
                 i, j = min(i, j), max(i, j)
                 cached_features.append((i, j, features))
@@ -101,17 +102,18 @@ def run():
 
             # Disable triplet violation correction, prior estimation, and recalculation
             # Set tables and priors to unchanged values for consistency
-            new_table = table
+            # new_table = table
             # fixed_table = table
-            new_prior = match_prior
+            # new_prior = match_prior
             fixed_table = fix_triplet_violations(table)
-            print(fixed_table)
             new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
                            np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
             new_table = np.full((m, m), np.nan)
             np.fill_diagonal(new_table, 1.)
             for i, j, feature in cached_features:
-                p = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                assert r >= 0., f'Ratio {r} violates >0 constraint'
+                assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
                 new_table[i, j] = p
 
             print(group_id)
