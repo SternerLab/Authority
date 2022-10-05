@@ -4,36 +4,35 @@ from rich import print
 import scipy
 import numpy as np
 import itertools
+from collections import namedtuple
 
 from .compute_ratio import *
+
+Triplet = namedtuple('Triplet', ['ij', 'jk', 'ik'])
+def trip(table, i, j, k):
+    return Triplet(table[i, j], table[j, k], table[i, k])
 
 def inv_var(p):
     return 1 / (p * (1 - p))
 
-def triplet_violation(table, i, j, k, delta=0.05):
+Triplet.inv = lambda t : Triplet(inv_var(t.ij), inv_var(t.jk), inv_var(t.ik))
+
+def violation(p, delta=0.05):
     ''' Triplet violation condition, 2009 paper, page 12'''
-    p_ij = table[i, j]
-    p_jk = table[j, k]
-    p_ik = table[i, k]
-    return p_ij + p_jk - 1 > p_ik + delta
+    return p.ij + p.jk - 1 > p.ik + delta
 
-def solve_triplet_violation(table, i, j, k):
+Triplet.violation = violation
+
+def correct(t):
     ''' Closed form solution given in 2009 paper, page 13'''
-    p_ij = table[i, j]
-    p_jk = table[j, k]
-    p_ik = table[i, k]
-
-    w_ij = inv_var(p_ij)
-    w_jk = inv_var(p_jk)
-    w_ik = inv_var(p_ik)
-
-    den = w_ij*w_ik + w_ik*w_jk + w_ij*w_jk
-
-    q_ij = (w_ij*(w_jk + w_ik)*p_ij + w_jk*w_ik*(1 + p_ik - p_jk))/den
-    q_jk = (w_jk*(w_ij + w_ik)*p_jk + w_ij*w_ik*(1 + p_ik - p_ij))/den
+    w    = t.inv()
+    den  = w.ij*w.ik + w.ik*w.jk + w.ij*w.jk
+    q_ij = (w.ij*(w.jk + w.ik)*t.ij + w.jk*w.ik*(1 + t.ik - p.jk))/den
+    q_jk = (w.jk*(w.ij + w.ik)*t.jk + w.ij*w.ik*(1 + t.ik - p.ij))/den
     q_ik = q_ij + q_jk - 1
+    return Triplet(q_ij, q_jk, q_ik)
 
-    return q_ij, q_jk, q_ik
+Triplet.correct = correct
 
 def fix_triplet_violations_step(table):
     ''' A single step to fix triplet violations in a probability table '''
@@ -42,20 +41,31 @@ def fix_triplet_violations_step(table):
     m, m = table.shape
     violations = 0
     for i, j, k in itertools.combinations(np.arange(m), r=3):
-        if triplet_violation(table, i, j, k):
+        t = trip(table, i, j, k)
+        if t.violation():
             violations += 1
-            q_ij, q_jk, q_ik = solve_triplet_violation(table, i, j, k)
-            working[i, j] += q_ij
-            working[j, k] += q_jk
-            working[i, k] += q_ik
+
+            q = t.correct()
+
+            working[i, j] += q.ij
+            working[j, k] += q.jk
+            working[i, k] += q.ik
             base[i, j] += 1.
             base[j, k] += 1.
             base[i, k] += 1.
     # base is 0. where there are no triplet violations:
     # ignore warnings since the where statement handles these
-    with np.errstate(divide='ignore', invalid='ignore'):
-        updated = np.where(base > 0., working/base, table)
-        updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
+    # with np.errstate(divide='ignore', invalid='ignore'):
+    print('working', working)
+    print('base', base)
+    updated = np.where(base > 0., working/base, table)
+    updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
+    print('updated', updated)
+    print('Bounds: ')
+    bottom, top = np.nanmin(updated), np.nanmax(updated)
+    assert bottom > 0.
+    assert top < 1.
+    print(bottom, top)
     return updated, violations
 
 def fix_triplet_violations(table, max_iterations=30):

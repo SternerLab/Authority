@@ -62,6 +62,7 @@ def run():
     inferred       = client.inferred
 
     query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    query = {}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
@@ -100,9 +101,9 @@ def run():
             # Disable triplet violation correction, prior estimation, and recalculation
             # Set tables and priors to unchanged values for consistency
             new_table = table
-            fixed_table = table
+            # fixed_table = table
             new_prior = match_prior
-            # fixed_table = fix_triplet_violations(table)
+            fixed_table = fix_triplet_violations(table)
             # print(fixed_table)
             # new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
             #                np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
