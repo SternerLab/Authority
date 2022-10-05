@@ -6,6 +6,27 @@ import itertools
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
+def create_hard_match_set(reference_sets):
+   for group_doc in reference_sets['full_name']:
+       group = group_doc['group']
+       new_groups = []
+       for summary in group:
+           if summary['mesh'] == '':
+               continue # exclude from hard matching
+           found = False
+           for new_group in new_groups:
+               for new_summary in new_group: # Ah yes nest it deep
+                   shared_mesh = set(new_summary['mesh']) & set(summary['mesh'])
+                   shared_authors = ({a['key'] for a in new_summary['authors']} &
+                                     {a['key'] for a in summary['authors']})
+                   if len(shared_mesh) >= 2 and len(shared_authors) >= 2:
+                       new_group.append(summary); found = True
+                       break
+           if not found:
+               new_groups.append([summary])
+       new_groups = [group_doc | dict(group=new_group) for new_group in new_groups]
+       yield from new_groups
+
 def run():
     ''' Description of reference sets from Manuha's code, the paper, and my understanding:
     Manuha:
@@ -64,21 +85,28 @@ def run():
 
     push_group = {'group' : {'$push' : {'title' : '$title',
                                         'authors' : '$authors',
+                                        'mesh' : '$mesh',
                                         'ids' : '$_id'}}}
 
-   for name, fields in criteria.items():
-       pipeline = [
-           {'$unwind' : '$authors'},
-           {'$group': {
-               '_id'    : {k : f'$authors.{k}' for k in fields},
-               'count'  : {'$sum': 1},
-               **push_group,
-               }},
-           # Sorting will eat all of your memory and make u sad :(
-           # {'$sort': SON([('count', -1), ('_id', -1)])}
-       ]
-       # print(name)
-       reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
+    for name, fields in criteria.items():
+        pipeline = [
+            {'$unwind' : '$authors'},
+            {'$group': {
+                '_id'    : {k : f'$authors.{k}' for k in fields},
+                'count'  : {'$sum': 1},
+                **push_group,
+                }},
+            # Sorting will eat all of your memory and make u sad :(
+            # {'$sort': SON([('count', -1), ('_id', -1)])}
+        ]
+        # print(name)
+        reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
+
+    # Check for matches and create the match set separately from mongodb aggregation
+    # "soft" rule : full name matches on first name and last initial
+    # "hard" rule : share one or more coauthor names AND two or more MeSH terms
+    reference_sets['soft_match'].insert_many(reference_sets['full_name'].find())
+    reference_sets['hard_match'].insert_many(create_hard_match_set(reference_sets))
 
     ''' Create non-matching set by sampling articles with different last names '''
     n_pairs = reference_sets['full_name'].count_documents({})
