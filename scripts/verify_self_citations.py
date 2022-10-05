@@ -1,3 +1,4 @@
+from bson.objectid import ObjectId
 from pymongo import MongoClient
 from rich.pretty   import pprint
 from rich.progress import track
@@ -17,6 +18,9 @@ def run():
 
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
+
+    print(self_cites_collection.find_one({'_id' : ObjectId('633bce7443a07b4ccc599493')}))
+    1/0
 
     running = 0
     for doc in track(self_cites_collection.find(), description='Checking ciitations', total=n):

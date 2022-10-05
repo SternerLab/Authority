@@ -61,8 +61,8 @@ def run():
 
     inferred       = client.inferred
 
-    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    # query = {}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    query = {}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
