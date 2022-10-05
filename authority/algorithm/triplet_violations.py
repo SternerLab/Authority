@@ -34,7 +34,7 @@ def correct(t):
 
 Triplet.correct = correct
 
-def fix_triplet_violations_step(table):
+def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY high
     ''' A single step to fix triplet violations in a probability table '''
     working = np.zeros_like(table)
     base    = np.zeros_like(table)
@@ -54,17 +54,18 @@ def fix_triplet_violations_step(table):
             base[j, k] += 1.
             base[i, k] += 1.
     # base is 0. where there are no triplet violations:
-    # ignore warnings since the where statement handles these
-    # with np.errstate(divide='ignore', invalid='ignore'):
     print('working', working)
     print('base', base)
-    updated = np.where(base > 0., working/base, table)
-    updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
+    updated = np.where(base > 0., working/base, table)    # Average where we have data
+    for i, j in itertools.combinations(np.arange(m), r=2):
+        assert not np.isnan(updated[i, j]), f'Numerical stability violation at i, j = {i, j}: {updated[i, j]}'
+    # Would not be needed if the above assertion holds, which we want it to!
+    # updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
     print('updated', updated)
     print('Bounds: ')
     bottom, top = np.nanmin(updated), np.nanmax(updated)
     assert bottom > 0.
-    assert top < 1.
+    assert top <= 1. + epsilon, f'maximum {top} violates probability laws'
     print(bottom, top)
     return updated, violations
 
