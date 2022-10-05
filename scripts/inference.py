@@ -61,8 +61,8 @@ def run():
 
     inferred       = client.inferred
 
-    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    query = {}
+    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    # query = {}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
@@ -99,21 +99,20 @@ def run():
                 i, j = min(i, j), max(i, j)
                 cached_features.append((i, j, features))
                 table[i, j] = p
+            1/0
 
             # Disable triplet violation correction, prior estimation, and recalculation
             # Set tables and priors to unchanged values for consistency
-            # new_table = table
-            # fixed_table = table
-            # new_prior = match_prior
             fixed_table = fix_triplet_violations(table)
             new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
                            np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
             new_table = np.full((m, m), np.nan)
             np.fill_diagonal(new_table, 1.)
-            for i, j, feature in cached_features:
+            for i, j, features in cached_features: #!!!
                 p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
                 assert r >= 0., f'Ratio {r} violates >0 constraint'
                 assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
+                print(p, r)
                 new_table[i, j] = p
 
             print(group_id)
