@@ -21,9 +21,10 @@ def insert_mesh_output(articles, mesh_output, progress, task):
     global count
     for article_id, words in mesh_output.items():
         try:
-            articles.update_one(
-                {'front' : {'article-meta' : {'article-id' : {'#text' : article_id}}}},
+            result = articles.update_one(
+                {'front.article-meta.article-id.#text' : article_id},
                 {'$set' : {'mesh' : list(words)}})
+            print(result)
             with progress_lock:
                 progress.update(task, advance=1)
                 count += 1
@@ -37,7 +38,7 @@ def insert_mesh(filename, articles=None, progress=None, task=None):
     insert_mesh_output(articles, mesh_output, progress, task)
 
 def run():
-    threads = 16
+    threads = 4
 
     client = MongoClient('localhost', 27017)
     jstor_database = client.jstor_database

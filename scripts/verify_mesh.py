@@ -13,6 +13,7 @@ def run():
     for article in collect.find():
         if 'mesh' in article and article['mesh'] != '':
             count += 1
+            pprint(article['mesh'])
             # pprint(article['authors'])
             # pprint(article['title'])
             # pprint(article['mesh'])
