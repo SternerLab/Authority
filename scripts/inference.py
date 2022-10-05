@@ -99,7 +99,6 @@ def run():
                 i, j = min(i, j), max(i, j)
                 cached_features.append((i, j, features))
                 table[i, j] = p
-            1/0
 
             # Disable triplet violation correction, prior estimation, and recalculation
             # Set tables and priors to unchanged values for consistency
@@ -112,7 +111,6 @@ def run():
                 p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
                 assert r >= 0., f'Ratio {r} violates >0 constraint'
                 assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
-                print(p, r)
                 new_table[i, j] = p
 
             print(group_id)
