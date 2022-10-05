@@ -36,7 +36,7 @@ def correct(t):
 
 Triplet.correct = correct
 
-def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY high
+def fix_triplet_violations_step(table, epsilon=1e-6):
     ''' A single step to fix triplet violations in a probability table '''
     working = np.zeros_like(table)
     base    = np.zeros_like(table)
@@ -44,16 +44,16 @@ def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY hig
     violations = 0
     for i, j, k in itertools.combinations(np.arange(m), r=3):
         t = trip(table, i, j, k)
-        assert t.ij < 1., f'Probability violation in input triple: {t.ij}'
-        assert t.jk < 1., f'Probability violation in input triple: {t.jk}'
-        assert t.ik < 1., f'Probability violation in input triple: {t.ik}'
+        assert t.ij < 1. + epsilon, f'Probability violation in input ij: {t.ij}'
+        assert t.jk < 1. + epsilon, f'Probability violation in input jk: {t.jk}'
+        assert t.ik < 1. + epsilon, f'Probability violation in input ik: {t.ik}'
         if t.violation():
             violations += 1
 
             q = t.correct()
-            assert q.ij < 1., f'Probability violation in analytic solution: {q.ij}'
-            assert q.jk < 1., f'Probability violation in analytic solution: {q.jk}'
-            assert q.ik < 1., f'Probability violation in analytic solution: {q.ik}'
+            assert q.ij < 1. + epsilon, f'Probability violation in analytic ij: {q.ij}'
+            assert q.jk < 1. + epsilon, f'Probability violation in analytic jk: {q.jk}'
+            assert q.ik < 1. + epsilon, f'Probability violation in analytic ik: {q.ik}'
 
             working[i, j] += q.ij
             working[j, k] += q.jk
@@ -62,24 +62,15 @@ def fix_triplet_violations_step(table, epsilon=1e-1): # This epsilon is VERY hig
             base[j, k] += 1.
             base[i, k] += 1.
     # base is 0. where there are no triplet violations:
-    print('working', working)
-    print('base', base)
-    assert (working < base).all(), 'Normalization incorrect'
+    assert (working < base + epsilon).all(), 'Normalization incorrect'
     # Average where we have data
-    updated = np.where(np.isclose(base, 0.), table, working/base)
+    updated = np.where(np.isclose(base, 0.), table, working/base) # order matters for warnings
+    # Check numerical stability of upper triangle of probability matrix
     for i, j in itertools.combinations(np.arange(m), r=2):
         assert np.isfinite(updated[i, j]), f'Numerical stability violation at i, j = {i, j}: {updated[i, j]}'
-    # Would not be needed if the above assertion holds, which we want it to!
-    # updated = np.where(np.isnan(updated), table, updated) # Don't allow nans
-    print('updated', updated)
-    print('Bounds: ')
-    fig = sns.heatmap(updated).get_figure()
-    plt.show()
-
     bottom, top = np.nanmin(updated), np.nanmax(updated)
     assert bottom > 0., f'minimum {bottom} violates probability laws'
     assert top <= 1. + epsilon, f'maximum {top} violates probability laws'
-    print(bottom, top)
     return updated, violations
 
 def fix_triplet_violations(table, max_iterations=30):
