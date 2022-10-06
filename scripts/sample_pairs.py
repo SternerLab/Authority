@@ -29,7 +29,7 @@ def sample_grouped_pairs(database, ref_key):
 
 def sample_for_ref_key(ref_key, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
-    if ref_key == 'non_match':
+    if ref_key == 'differing_last_name':
         limit = 11295361 # Arbitrary but limited
     else:
         limit = float('inf')
@@ -50,6 +50,8 @@ def sample_for_ref_key(ref_key, progress, reference_sets, reference_sets_group_l
                          n=n))
         except pymongo.errors.InvalidOperation:
             pass # Only one element in group, cannot make pairs
+        except pymongo.errors.DocumentTooLarge:
+            print(f'Document too large for {len(result.inserted_ids)} ids')
         if inserted > limit:
             break
         if inserted > threshold:

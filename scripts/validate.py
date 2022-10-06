@@ -49,6 +49,7 @@ def run():
         found_clusters = 0
         for mongo_id, cluster_label in cluster['cluster_labels'].items():
             cite_cluster = self_citations.find_one({'_id' : ObjectId(mongo_id)})
+            pprint(cite_cluster)
             if cite_cluster is not None:
                 found_clusters += 1
             article = articles.find_one({'_id' : ObjectId(mongo_id)})

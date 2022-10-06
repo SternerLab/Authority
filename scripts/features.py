@@ -22,18 +22,25 @@ def make_group_pipeline(feature_dict):
 
 def generate(pairs, progress, task_name, limit=None):
     if limit is not None:
-        pair_cursor = itertools.islice(pairs.find(), limit)
         total = limit
     else:
         total = pairs.count_documents({})
-        pair_cursor = pairs.find()
     print(f'Task {task_name} has upper bound of {total} pairs!')
     with progress_lock:
         task = progress.add_task(task_name, total=total)
-    for pair in pair_cursor:
-        with progress_lock:
-            progress.update(task, advance=1)
-            yield pair
+    accepted = 0
+    for pair in pairs.find():
+        if accepted == limit:
+            break
+        mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
+        if isinstance(mesh_a, list) and isinstance(mesh_b, list):
+            accepted += 1
+            with progress_lock:
+                progress.update(task, advance=1)
+                yield pair
+        else:
+            pass
+
 
 def insert_features(ref_key, client, progress, limit=None):
 
@@ -70,9 +77,9 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
-    # limit = 1000000
     # limit = None
-    limit = 2000000 # Reasonable
+    # limit = 2000000 # Reasonable
+    limit = 1000000 # stricter
 
     threads = 3
     with Progress() as progress:
