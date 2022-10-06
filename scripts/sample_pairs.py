@@ -74,8 +74,9 @@ def run():
 
     total  = articles.count_documents({})
 
-    threads = 3
-    ref_keys = ('block', 'match', 'non_match')
+    # ref_keys = reference_sets.list_collection_names()
+    ref_keys = ('hard_match', 'soft_match', 'differing_last_name', 'last_name')
+    threads = len(ref_keys)
 
     with Progress() as progress:
         with Pool(max_workers=threads) as pool:

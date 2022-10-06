@@ -7,7 +7,7 @@ import itertools
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
 def create_hard_match_set(reference_sets):
-   for group_doc in reference_sets['full_name']:
+   for group_doc in reference_sets['full_name'].find():
        group = group_doc['group']
        new_groups = []
        for summary in group:
@@ -17,13 +17,22 @@ def create_hard_match_set(reference_sets):
            for new_group in new_groups:
                for new_summary in new_group: # Ah yes nest it deep
                    shared_mesh = set(new_summary['mesh']) & set(summary['mesh'])
-                   shared_authors = ({a['key'] for a in new_summary['authors']} &
-                                     {a['key'] for a in summary['authors']})
+                   shared_authors = (set(new_summary['authors']) &
+                                     set(summary['authors']))
+                   try:
+                       shared_authors = ({new_summary['authors']['key']} &
+                                         {summary['authors']['key']})
+                   except Exception as e:
+                       pprint(summary)
+                       pprint(new_summary)
+                       raise
+
                    if len(shared_mesh) >= 2 and len(shared_authors) >= 2:
                        new_group.append(summary); found = True
                        break
            if not found:
                new_groups.append([summary])
+       group_doc.pop('_id')
        new_groups = [group_doc | dict(group=new_group) for new_group in new_groups]
        yield from new_groups
 
