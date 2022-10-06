@@ -6,13 +6,13 @@ import itertools
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
-def create_hard_match_set(reference_sets):
-   for group_doc in reference_sets['full_name'].find():
+def create_mesh_coauthor_match_set(reference_sets):
+   for group_doc in reference_sets['first_initial_last_name'].find():
        group = group_doc['group']
        new_groups = []
        for summary in group:
            if summary['mesh'] == '':
-               continue # exclude from hard matching
+               continue # exclude from matching
            found = False
            for new_group in new_groups:
                for new_summary in new_group: # Ah yes nest it deep
@@ -112,10 +112,12 @@ def run():
         reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     # Check for matches and create the match set separately from mongodb aggregation
-    # "soft" rule : full name matches on first name and last initial
-    # "hard" rule : share one or more coauthor names AND two or more MeSH terms
+    # "soft" rule          : full name matches, including suffix etc
+    # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
     reference_sets['soft_match'].insert_many(reference_sets['full_name'].find())
-    reference_sets['hard_match'].insert_many(create_hard_match_set(reference_sets))
+    reference_sets['hard_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
+    for m_type in ('hard', 'soft'):
+        reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
 
     ''' Create non-matching set by sampling articles with different last names '''
     n_pairs = reference_sets['full_name'].count_documents({})

@@ -21,6 +21,7 @@ def make_group_pipeline(feature_dict):
     return pipeline
 
 def generate(pairs, progress, task_name, limit=None):
+    ref_key = task_name.split(' ')[-1]
     if limit is not None:
         total = limit
     else:
@@ -29,17 +30,20 @@ def generate(pairs, progress, task_name, limit=None):
     with progress_lock:
         task = progress.add_task(task_name, total=total)
     accepted = 0
+    rejected = 0
     for pair in pairs.find():
         if accepted == limit:
             break
         mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
         if isinstance(mesh_a, list) and isinstance(mesh_b, list):
             accepted += 1
-            with progress_lock:
-                progress.update(task, advance=1)
-                yield pair
         else:
-            pass
+            rejected += 1
+        with progress_lock:
+            progress.update(task, advance=1)
+        yield pair
+        # TODO Rejection based on MeSH terms is intentionally ignored for now
+        print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
 def insert_features(ref_key, client, progress, limit=None):
@@ -71,17 +75,18 @@ def run():
 
     client         = MongoClient('localhost', 27017)
 
-    client.drop_database('features')
-    client.drop_database('feature_groups_a')
-    client.drop_database('feature_groups_i')
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
-    # limit = None
-    # limit = 2000000 # Reasonable
-    limit = 1000000 # stricter
 
-    threads = 3
+    client.drop_database('features')
+    client.drop_database('feature_groups_a')
+    client.drop_database('feature_groups_i')
+    # limit = None
+    limit = 2000000 # Reasonable
+    # limit = 1000000 # stricter
+
+    threads = len(ref_keys)
     with Progress() as progress:
         with Pool(max_workers=threads) as pool:
             pool.map(partial(insert_features, client=client, progress=progress, limit=limit),

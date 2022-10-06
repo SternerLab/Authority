@@ -17,7 +17,16 @@ def sample_pairs(group_doc):
     group     = group_doc['group']
     group_id  = group_doc['_id']
     n         = group_doc.get('count', None)
+    accepted  = 0
+    rejected  = 0
     for pair in itertools.combinations(group, r=2):
+        mesh_a, mesh_b = (p['mesh'] for p in pair)
+        if isinstance(mesh_a, list) and isinstance(mesh_b, list):
+            accepted += 1
+        else:
+            rejected += 1
+        print(f'Sampling rejected {rejected:6} accepted {accepted:6}')
+        # TODO Rejection based on MeSH terms is intentionally ignored for now
         yield dict(group_id=group_id, n=n, pair=list(pair))
 
 def sample_grouped_pairs(database, ref_key):
@@ -77,7 +86,8 @@ def run():
     total  = articles.count_documents({})
 
     # ref_keys = reference_sets.list_collection_names()
-    ref_keys = ('hard_match', 'soft_match', 'differing_last_name', 'last_name')
+    # ref_keys = ('match', 'hard_match', 'soft_match', 'differing_last_name', 'last_name')
+    ref_keys = ('match', 'differing_last_name', 'last_name')
     threads = len(ref_keys)
 
     with Progress() as progress:

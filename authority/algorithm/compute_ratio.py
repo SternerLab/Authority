@@ -23,8 +23,8 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
             r: (match prob : non match prob) ratio
             w: total count of feature '''
 
-    match_group     = feature_groups[f'match' + suffix]
-    non_match_group = feature_groups[f'non_match' + suffix]
+    match_group     = feature_groups[f'soft_match' + suffix]
+    non_match_group = feature_groups[f'differing_last_name' + suffix]
 
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
@@ -54,8 +54,8 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
     ''' Compute ratio of match and non-match frequencies '''
     if xs is None:
         xs = x_a
-    total_matches     = features['match'].count_documents(filter={})
-    total_non_matches = features['non_match'].count_documents(filter={})
+    total_matches     = features['soft_match'].count_documents(filter={})
+    total_non_matches = features['differing_last_name'].count_documents(filter={})
 
     unique_features = OrderedDict()
     for ref_key in features.list_collection_names():

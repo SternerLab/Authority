@@ -18,20 +18,20 @@ NESTED_MAPPING = {
     'front.article-meta.pub-date.year' : 'year',
         }
 
-def process(entry):
-    ''' Take a raw JSON article and add stop-worded title and processed author names '''
+def parse(entry):
+    ''' Take a raw JSON article and add stop-worded title and parsed author names '''
     meta = entry['front']['article-meta']
-    entry['authors']  = process_authors(meta)
-    entry['title']    = process_title(meta)
-    entry['abstract'] = process_abstract(meta)
-    entry['language'] = process_language(meta)
-    process_mappings(entry)
-    entry['citations'] = process_citations(entry)
+    entry['authors']  = parse_authors(meta)
+    entry['title']    = parse_title(meta)
+    entry['abstract'] = parse_abstract(meta)
+    entry['language'] = parse_language(meta)
+    parse_mappings(entry)
+    entry['citations'] = parse_citations(entry)
     entry['affiliation'] = ''
     entry['mesh'] = ''
     return entry
 
-def process_mappings(entry):
+def parse_mappings(entry):
     ''' Remap nested keys to top-level keys with NESTED_MAPPING global dict (above) '''
     for k, v in NESTED_MAPPING.items():
         try:
@@ -47,7 +47,7 @@ def process_mappings(entry):
 
 lang_split = re.compile('[ -]')
 LANG_MAPPING = {'en' : 'eng'} # can expand as needed
-def process_language(meta):
+def parse_language(meta):
     ''' Attempt to extract the language(s) field from the article if it is present
         and then re-map it according to the LANG_MAPPING dictionary '''
     try:
@@ -62,8 +62,8 @@ def process_language(meta):
     langs = [LANG_MAPPING.get(k, k) for k in langs]
     return langs
 
-def process_title(meta):
-    ''' Process the title of a JSTOR article in JSON form, from metadata '''
+def parse_title(meta):
+    ''' parse the title of a JSTOR article in JSON form, from metadata '''
     title = None
     try:
         title = meta['title-group']['article-title']
@@ -78,8 +78,8 @@ def process_title(meta):
         raise IncompleteEntry('no title')
     return remove_stop_words(title)
 
-def process_abstract(meta):
-    ''' Process the abstract of a JSTOR article in JSON form, from metadata '''
+def parse_abstract(meta):
+    ''' parse the abstract of a JSTOR article in JSON form, from metadata '''
     try:
         abstract = meta['abstract']['p']
         if isinstance(abstract, dict):
@@ -95,8 +95,8 @@ def process_abstract(meta):
         return '' # Not all articles have abstracts, best way to handle this?
 
 
-def process_authors(meta):
-    ''' Process the author data of an article into a common format,
+def parse_authors(meta):
+    ''' parse the author data of an article into a common format,
         accounting for edge cases'''
     try:
         groups = meta['contrib-group']
@@ -112,7 +112,7 @@ def process_authors(meta):
         for i, author in enumerate(contrib):
             try:
                 name   = author['string-name']
-                authors.append(process_name(name, i))
+                authors.append(parse_name(name, i))
             except KeyError:
                 pass # This is an acceptable parsing error
                 # that occurs only when an *organization* authors a paper,
@@ -129,8 +129,8 @@ name_sep_pattern = re.compile('[ .,]+')
 def filter_empty(elements):
     return (el for el in elements if el != '')
 
-def process_name(name, order):
-    ''' Process the name data for a single author into a common format,
+def parse_name(name, order):
+    ''' parse the name data for a single author into a common format,
         accounting for edge cases '''
     if isinstance(name, dict): # If name split is annotated
         given = name.get('given-names', '')
@@ -240,12 +240,12 @@ def parse_citation(citation):
     else:
         raise CitationParseFailure(citation)
     authors = re.split(sep, result.group('authors'))
-    authors = [process_name(reorder_name(name), i)
+    authors = [parse_name(reorder_name(name), i)
                for i, name in enumerate(authors)]
     return dict(title=remove_stop_words(result.group('title')),
                 authors=authors, year=int(result.group('year')))
 
-def process_citations(article):
+def parse_citations(article):
     failures = 0
     length   = 0
     last_failure = None
