@@ -46,6 +46,7 @@ def run():
     r_table.insert_one(dict(xi_ratios=xi_ratios))
 
     computed_ratios = compute_ratios(features, feature_groups_a)
+    pprint(computed_ratios)
     smoothed        = smooth(computed_ratios)
     interpolated    = interpolate(smoothed)
 

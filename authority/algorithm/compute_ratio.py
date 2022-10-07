@@ -3,10 +3,11 @@ from rich import print
 import scipy
 import numpy as np
 from collections import OrderedDict
+import warnings
 
 from .compare import *
 
-class IncompleteRatioTable(RuntimeError):
+class IncompleteRatioTable(Warning):
     pass
 
 def get_count(group, feature):
@@ -26,6 +27,9 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
     match_group     = feature_groups[f'soft_match' + suffix]
     non_match_group = feature_groups[f'differing_last_name' + suffix]
 
+    print('match_group', match_group.count_documents({}))
+    print('non_match_group', non_match_group.count_documents({}))
+
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
     try:
@@ -35,7 +39,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
         print('Undefined ratio for: ', feature)
         print(f'match count: {match_count} / {total_matches}')
         print(f'non-match count: {non_match_count} / {total_non_matches}')
-        raise
+        r = 0.
     key = tuple(feature.values())
     return key, r, match_count + non_match_count
 
@@ -85,6 +89,7 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
             computed_features[key] = r, w
         except ZeroDivisionError:
             print('undefined!', i, feature)
+            computed_features[key] = 0., 0
     if not computed_features:
-        raise IncompleteRatioTable('Ratio table is incomplete, consider regenerating features')
+        warnings.warn('Ratio table is incomplete, consider regenerating features', IncompleteRatioTable, stacklevel=2)
     return computed_features

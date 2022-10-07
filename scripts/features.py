@@ -32,8 +32,10 @@ def generate(pairs, progress, task_name, limit=None):
     accepted = 0
     rejected = 0
     for pair in pairs.find():
-        if accepted == limit:
+        if accepted + rejected == limit: # TODO Rejection ignored for now
             break
+        # if accepted == limit:
+        #     break
         mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
         if isinstance(mesh_a, list) and isinstance(mesh_b, list):
             accepted += 1
@@ -78,16 +80,20 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
+    print(ref_keys)
 
     client.drop_database('features')
     client.drop_database('feature_groups_a')
     client.drop_database('feature_groups_i')
+
     # limit = None
     limit = 2000000 # Reasonable
     # limit = 1000000 # stricter
+    limit = 100000
 
     threads = len(ref_keys)
     with Progress() as progress:
+        f = partial(insert_features, client=client, progress=progress, limit=limit)
         with Pool(max_workers=threads) as pool:
-            pool.map(partial(insert_features, client=client, progress=progress, limit=limit),
-                     ref_keys)
+            results = pool.map(f, ref_keys)
+            print(list(results))
