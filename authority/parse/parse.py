@@ -277,6 +277,9 @@ def parse_citations(article):
         key = str(e).replace('\'', '')
         if key not in {'back', 'ref-list', 'ref'}:
             raise
+        else:
+            pass
+            # print(f'No citations {e}')
     except TypeError:
         pass
     return citations, failures, length

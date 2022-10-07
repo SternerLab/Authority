@@ -19,13 +19,19 @@ def run():
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
 
-    print(self_cites_collection.find_one({'_id' : ObjectId('633bce7443a07b4ccc599493')}))
-    1/0
+    # print(self_cites_collection.find_one({'_id' : ObjectId('633bce7443a07b4ccc599493')}))
 
     running = 0
     for doc in track(self_cites_collection.find(), description='Checking ciitations', total=n):
         l = sum(len(v) for k, v in doc.items() if isinstance(v, list))
         pprint(doc)
+        for k, v in doc.items():
+            if k != '_id':
+                matching = articles.find_one({'title' : k})
+                if matching is not None:
+                    print(matching['authors'])
+                else:
+                    print('No matching article?')
         running += l
         print(running, 'total citations in all clusters')
 
