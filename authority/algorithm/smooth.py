@@ -15,6 +15,7 @@ def smooth(computed_ratios):
     for i, (k, (r, w)) in enumerate(computed_ratios.items()):
         ws[i] = w
         rs[i] = r
+        x[i]  = r  # This modifies the starting point of SLSQP
 
     def objective(x):
         return ws @ (rs - x)**2
@@ -24,9 +25,11 @@ def smooth(computed_ratios):
         # since this needs to be positive, it constrains to monotonicity
         return bound - x
 
+    print(f'Starting: ', x)
     rh = scipy.optimize.minimize(objective, x, method='slsqp',
             constraints=[dict(type='ineq', fun=constraint)],
             bounds=scipy.optimize.Bounds(lb=0.0))['x']
+    print('Smoothing solution: ', rh)
 
     for i, k in enumerate(computed_ratios):
         computed_ratios[k] = rh[i]
