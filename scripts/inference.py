@@ -1,4 +1,5 @@
 from pymongo import MongoClient
+import pymongo
 from rich.pretty import pprint
 from rich.progress import track
 from rich import print
@@ -60,6 +61,9 @@ def run():
     client.drop_database('inferred') # Careful!
 
     inferred       = client.inferred
+    print(f'Possible collections:')
+    for collection in lookup.list_collection_names():
+        print('    ', collection)
 
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
     query = {}
@@ -67,8 +71,10 @@ def run():
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
     try:
-        ref_key = 'block'
+        # ref_key = 'last_name'
+        ref_key = 'first_initial_last_name'
         total = lookup[ref_key].count_documents({})
+        print(f'Performing inference across {total} documents')
         for pair_lookup in track(lookup[ref_key].find(query), total=total,
                                  description='Clustering first initial last name blocks'):
             group_id = pair_lookup['group_id']
@@ -120,15 +126,22 @@ def run():
             fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
             original_probs_binary = Binary(pickle.dumps(table), subtype=128)
 
-            inferred[ref_key].insert_one(dict(
-                cluster_labels={str(k) : int(cluster_labels[i])
-                                for k, i in id_lookup.items()},
-                probs=binary_probs,
-                fixed_probs=fixed_probs_binary,
-                original_probs=original_probs_binary,
-                prior=new_prior,
-                match_prior=match_prior,
-                group_id=group_id))
+            try:
+                inferred[ref_key].insert_one(dict(
+                    cluster_labels={str(k) : int(cluster_labels[i])
+                                    for k, i in id_lookup.items()},
+                    probs=binary_probs,
+                    fixed_probs=fixed_probs_binary,
+                    original_probs=original_probs_binary,
+                    prior=new_prior,
+                    match_prior=match_prior,
+                    group_id=group_id))
+            except pymongo.errors.DocumentTooLarge:
+                inferred[ref_key].insert_one(dict(
+                    cluster_labels={str(k) : int(cluster_labels[i])
+                                    for k, i in id_lookup.items()},
+                    probs=binary_probs, prior=new_prior,
+                    match_prior=match_prior, group_id=group_id))
     except KeyboardInterrupt:
         pass
 

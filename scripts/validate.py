@@ -13,7 +13,7 @@ def run():
 
     jstor_database = client.jstor_database
     inferred       = client.inferred
-    inferred_blocks = inferred['block']
+    inferred_blocks = inferred['first_initial_last_name']
     inferred_blocks.create_index('group_id')
 
     articles = jstor_database.articles
@@ -31,7 +31,10 @@ def run():
 
     query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    query = {'group_id' : {'first_initial' : 'r', 'last' : 'short'}}
+    # # query = {'group_id' : {'first_initial' : 'r', 'last' : 'short'}}
+
+    print('Validating..')
+    print(inferred_blocks.find({}))
 
     for cluster in inferred_blocks.find(query):
         pprint(cluster['group_id'])
@@ -40,11 +43,13 @@ def run():
         for prior_key in ('match_prior', 'prior'):
             prior = cluster['prior']
             print(f'{prior_key} : {prior:.4%}')
-        for prob_key in ('original_probs', 'fixed_probs', 'probs'):
+        # for prob_key in ('probs', 'original_probs', 'fixed_probs'):
+        for prob_key in ('original_probs',):
             probs = pickle.loads(cluster[prob_key])
             fig = sns.heatmap(probs).get_figure()
             fig.savefig(f'plots/{prob_key}.png')
-            plt.show()
+            if len(cluster['cluster_labels']) > 4:
+                plt.show()
 
         found_clusters = 0
         for mongo_id, cluster_label in cluster['cluster_labels'].items():

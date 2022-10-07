@@ -58,7 +58,6 @@ def connected_components(table):
         for k in range(m):
             if components[k] == c:
                 component.append(k)
-        print(c, component)
         yield itertools.combinations(component, r=3) # Triplets in one component
 
 def fix_triplet_violations_step(table, eps=1e-6):

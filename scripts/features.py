@@ -48,7 +48,7 @@ def generate(pairs, progress, task_name, limit=None):
         print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
-def insert_features(ref_key, client, progress, limit=None):
+def insert_features(ref_key, client, progress, limit=None, batch_size=64):
 
     jstor_database   = client.jstor_database
     articles         = jstor_database.articles
@@ -58,8 +58,12 @@ def insert_features(ref_key, client, progress, limit=None):
     feature_groups_i = client.feature_groups_i
 
     task_name = f'Calculating features for {ref_key}'
-    features[ref_key].insert_many(compare_pair(pair, articles)
-            for pair in generate(pairs[ref_key], progress, task_name, limit))
+    generator = generate(pairs[ref_key], progress, task_name, limit)
+    while True:
+        batch = itertools.islice(generator, batch_size)
+        if len(batch) == 0:
+            break
+        features[ref_key].insert_many(compare_pair(pair, articles) for pair in batch)
 
     ''' Group by features x_a '''
     pipeline = make_group_pipeline({f'x{i}' : f'$features.x{i}' for i in x_a})
@@ -87,9 +91,9 @@ def run():
     client.drop_database('feature_groups_i')
 
     # limit = None
-    limit = 2000000 # Reasonable
+    # limit = 2000000 # Reasonable
     # limit = 1000000 # stricter
-    limit = 100000
+    limit = 200000
 
     threads = len(ref_keys)
     with Progress() as progress:
