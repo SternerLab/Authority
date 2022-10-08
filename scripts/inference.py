@@ -58,7 +58,7 @@ def run():
     lookup         = client.reference_sets_group_lookup
     subsets        = client.reference_sets
 
-    # client.drop_database('inferred') # Careful!
+    client.drop_database('inferred') # Careful!
 
     inferred       = client.inferred
     print(f'Possible collections:')
@@ -66,9 +66,9 @@ def run():
         print('    ', collection)
 
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    # query = {}
+    query = {}
     # budiadi
-    query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
+    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)

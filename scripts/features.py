@@ -91,9 +91,9 @@ def run():
     client.drop_database('feature_groups_i')
 
     # limit = None
-    # limit = 2000000 # Reasonable
+    limit = 2000000 # Reasonable
     # limit = 1000000 # stricter
-    limit = 200000
+    # limit = 200000
 
     threads = len(ref_keys)
     with Progress() as progress:

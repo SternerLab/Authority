@@ -85,10 +85,10 @@ def run():
 
     total  = articles.count_documents({})
 
-    # ref_keys = reference_sets.list_collection_names()
+    ref_keys = reference_sets.list_collection_names()
     # ref_keys = ('match', 'hard_match', 'soft_match', 'differing_last_name', 'last_name')
     # ref_keys = ('match', 'differing_last_name', 'last_name')
-    ref_keys = ('first_initial_last_name',)
+    # ref_keys = ('first_initial_last_name',)
     threads = len(ref_keys)
 
     with Progress() as progress:

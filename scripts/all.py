@@ -7,7 +7,8 @@ from . import (
     sample_pairs,
     features,
     ratio_table,
-    inference
+    inference,
+    validate
     )
 
 def run():
@@ -20,3 +21,4 @@ def run():
     features.run()
     ratio_table.run()
     inference.run()
+    validate.run()
