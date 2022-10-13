@@ -12,17 +12,15 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     # blocks         = client.reference_sets['block']
-    blocks         = client.reference_sets['last']
+    blocks         = client.reference_sets['last_name']
 
     self_cites_collection = client.validation.self_citations
 
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
 
-    # print(self_cites_collection.find_one({'_id' : ObjectId('633bce7443a07b4ccc599493')}))
-
     running = 0
-    for doc in track(self_cites_collection.find(), description='Checking ciitations', total=n):
+    for doc in track(self_cites_collection.find(), description='Checking citations', total=n):
         l = sum(len(v) for k, v in doc.items() if isinstance(v, list))
         pprint(doc)
         for k, v in doc.items():
