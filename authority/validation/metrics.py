@@ -2,18 +2,14 @@ import pandas as pd
 from rich import print
 from collections import namedtuple
 import numpy as np
-
-# summary = namedtuple('')
+import itertools
 
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
-def pairwise_metrics():
-    tp = 10
-    tn = 10
-    fp = 10
-    fn = 10
-    s  = tp + tn + fp + fn
-    accuracy                = (tp + tn) / s
+def pairwise_metrics(clusters, reference_clusters):
+    tp, tn, fp, fn = unpack(clusters, reference_clusters)
+    s              = tp + tn + fp + fn
+    accuracy       = (tp + tn) / s
     precision = pp = tp / (tp + fp)
     recall    = pr = tp / (tp + fn)
     f1             = (2 * pp * pr) / (pp + pr)
@@ -22,13 +18,41 @@ def pairwise_metrics():
     error          = (fp + fn) / s
     return dict(locals())
 
-def metrics():
-    total_authors = 4
-    correct_clusters = 3
-    total_clusters = 3
-    true_clusters = 3
-    clusters = [{1, 2}, {3}, {4}]
-    reference_clusters = clusters # TODO
+def unpack(clusters, reference_clusters):
+    # Calculate pairwise true/false positives/negatives
+    tp = 0
+    tn = 0
+    fp = 0
+    fn = 0
+    for i, j in itertools.product(range(article_count), repeat=2):
+        label = False
+        for ref_cluster in reference_clusters:
+            if i in ref_cluster and j in ref_cluster:
+                label = True
+                break
+        for cluster in clusters:
+            prediction = i in cluster and j in cluster
+            if prediction:
+                if label:
+                    tp += 1
+                else:
+                    fp += 1
+            else:
+                if label:
+                    fn += 1
+                else:
+                    tn += 1
+    return tp, tn, fp, fn
+
+def cluster_metrics(clusters, reference_clusters):
+    article_count    = sum(len(c) for c in clusters)
+    reference_count  = sum(len(c) for c in reference_clusters)
+    total_clusters   = len(clusters)
+    true_clusters    = len(reference_clusters)
+    correct_clusters = 0
+    for cluster in clusters:
+        if cluster in reference_clusters:
+            correct_clusters += 1
 
     cluster_precision  = cp = correct_clusters / total_clusters
     cluster_recall     = cr = correct_clusters / true_clusters
@@ -77,7 +101,3 @@ def metrics():
     b_cubed_recall    = br =  b_cubed_recall / total_authors
     b_cubed_f1             = (2 * bp * br) / (bp + br)
     return dict(locals())
-
-
-print(pairwise_metrics())
-print(metrics())
