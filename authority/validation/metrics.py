@@ -7,7 +7,7 @@ import itertools
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
 def pairwise_metrics(clusters, reference_clusters):
-    tp, tn, fp, fn = unpack(clusters, reference_clusters)
+    tp, tn, fp, fn = (np.float32(v) for v in unpack(clusters, reference_clusters))
     s              = tp + tn + fp + fn
     accuracy       = (tp + tn) / s
     precision = pp = tp / (tp + fp)
@@ -16,15 +16,18 @@ def pairwise_metrics(clusters, reference_clusters):
     lumping        = fp / (tp + fp) # Correct? was written as (fp / (tp / fp)) in paper
     splitting      = fn / (tn + fn)
     error          = (fp + fn) / s
+    del clusters, reference_clusters
     return dict(locals())
 
 def unpack(clusters, reference_clusters):
     # Calculate pairwise true/false positives/negatives
+    article_count    = sum(len(c) for c in clusters)
+    all_ids          = list(set().union(e for c in reference_clusters for e in c))
     tp = 0
     tn = 0
     fp = 0
     fn = 0
-    for i, j in itertools.product(range(article_count), repeat=2):
+    for i, j in itertools.combinations(all_ids, r=2):
         label = False
         for ref_cluster in reference_clusters:
             if i in ref_cluster and j in ref_cluster:
@@ -45,20 +48,22 @@ def unpack(clusters, reference_clusters):
     return tp, tn, fp, fn
 
 def cluster_metrics(clusters, reference_clusters):
-    article_count    = sum(len(c) for c in clusters)
-    reference_count  = sum(len(c) for c in reference_clusters)
-    total_clusters   = len(clusters)
-    true_clusters    = len(reference_clusters)
-    correct_clusters = 0
+    article_count    = np.int32(sum(len(c) for c in clusters))
+    reference_count  = np.int32(sum(len(c) for c in reference_clusters))
+    total_clusters   = np.int32(len(clusters))
+    true_clusters    = np.int32(len(reference_clusters))
+    total_authors    = np.int32(true_clusters)
+    all_ids          = list(set().union(e for c in reference_clusters for e in c))
+    correct_clusters = np.int32(0)
     for cluster in clusters:
         if cluster in reference_clusters:
             correct_clusters += 1
 
-    cluster_precision  = cp = correct_clusters / total_clusters
-    cluster_recall     = cr = correct_clusters / true_clusters
-    cluster_f1              = (2 * cp * cr) / (cp + cr)
+    cluster_precision  = cp = np.float32(correct_clusters / total_clusters)
+    cluster_recall     = cr = np.float32(correct_clusters / true_clusters)
+    cluster_f1              = np.float32((2 * cp * cr) / (cp + cr))
 
-    cluster_ratio           = total_clusters / true_clusters
+    cluster_ratio           = np.float32(total_clusters / true_clusters)
 
     cluster_purity = 0
     for i in range(total_clusters):
@@ -82,7 +87,8 @@ def cluster_metrics(clusters, reference_clusters):
 
     b_cubed_precision = 0
     b_cubed_recall    = 0
-    for s in range(1, total_authors + 1):
+    # for s in range(1, total_authors + 1):
+    for s in all_ids:
         V = contained(s, clusters)
         T = {si for si in V
              if contained(si, reference_clusters) == contained(s, reference_clusters)}
@@ -95,9 +101,20 @@ def cluster_metrics(clusters, reference_clusters):
         ref_recall    = len(U)/len(C)
         b_cubed_recall += ref_recall
 
-    del V, T, C, U, ref_recall, ref_precision, contained # Don't return these
+    # Don't return these
+    del clusters, reference_clusters, V, T, C, U, ref_recall, ref_precision, contained
 
     b_cubed_precision = bp =  b_cubed_precision / total_authors
     b_cubed_recall    = br =  b_cubed_recall / total_authors
     b_cubed_f1             = (2 * bp * br) / (bp + br)
     return dict(locals())
+
+def to_clusters(labels):
+    ''' Convert labels of the form {article_id : cluster_id} to clusters of the form
+        [{article_id..}..]'''
+    clusters = []
+    for k, v in sorted(labels.items(), key=lambda t : t[1]):
+        if len(clusters) < v + 1:
+            clusters.append(set())
+        clusters[v].add(k)
+    return clusters

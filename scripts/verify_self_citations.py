@@ -19,8 +19,11 @@ def run():
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
 
+    key = 'aaagaard'
+    query = {'author.key' : key}
+
     running = 0
-    for doc in track(self_cites_collection.find(), description='Checking citations', total=n):
+    for doc in track(self_cites_collection.find(query), description='Checking citations', total=n):
         l = sum(len(v) for k, v in doc.items() if isinstance(v, list))
         pprint(doc)
         for k, v in doc.items():
