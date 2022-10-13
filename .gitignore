@@ -7,3 +7,4 @@ geckodriver.log
 umls_credentials.json
 bhl_credentials.json
 mesh_pre_fetched_txt
+plots
