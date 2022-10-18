@@ -122,7 +122,7 @@ def run():
     ''' Create non-matching set by sampling articles with different last names '''
     n_pairs = reference_sets['full_name'].count_documents({})
 
-    sampled_sets = [('last_name', 'differing_last_name')]
+    sampled_sets = [('last_name', 'non_match')]
     for ref_key, new_key in sampled_sets:
         samples = reference_sets[ref_key].aggregate(
             [{'$sample' : {'size' : n_pairs}},

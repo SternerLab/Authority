@@ -38,10 +38,11 @@ def sample_grouped_pairs(client, database, ref_key):
             n  = group_doc.get('count', None)
             yield group_id, n, sample_pairs(group_doc)
 
-def sample_for_ref_key(client, ref_key, progress, reference_sets, reference_sets_group_lookup,
+def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
-    if ref_key == 'differing_last_name':
-        limit = 11295361 # Arbitrary but limited
+    if ref_key == 'non_match':
+        limit = reference_sets['match'].count_documents({}) # Limit to match size
+        # limit = 10000000 # Arbitrary but limited
     else:
         limit = float('inf')
 
@@ -88,10 +89,7 @@ def run():
     total  = articles.count_documents({})
 
     # ref_keys = reference_sets.list_collection_names()
-    # ref_keys = ('match', 'hard_match', 'soft_match', 'differing_last_name', 'last_name')
-    # ref_keys = ('match', 'differing_last_name', 'last_name')
-    # print(ref_keys)
-    ref_keys = ('first_initial_last_name', 'match', 'differeing_last_name')
+    ref_keys = ('first_initial_last_name', 'match', 'non_match')
     threads = len(ref_keys)
 
     with Progress() as progress:
