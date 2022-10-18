@@ -48,7 +48,7 @@ def generate(pairs, progress, task_name, limit=None):
         print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
-def insert_features(ref_key, client, progress, limit=None, batch_size=64):
+def insert_features(ref_key, client, progress, limit=None, batch_size=128):
 
     jstor_database   = client.jstor_database
     articles         = jstor_database.articles
@@ -60,7 +60,7 @@ def insert_features(ref_key, client, progress, limit=None, batch_size=64):
     task_name = f'Calculating features for {ref_key}'
     generator = generate(pairs[ref_key], progress, task_name, limit)
     while True:
-        batch = itertools.islice(generator, batch_size)
+        batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:
             break
         features[ref_key].insert_many(compare_pair(pair, articles) for pair in batch)
@@ -90,8 +90,8 @@ def run():
     client.drop_database('feature_groups_a')
     client.drop_database('feature_groups_i')
 
-    # limit = None
-    limit = 2000000 # Reasonable
+    limit = None
+    # limit = 2000000 # Reasonable
     # limit = 1000000 # stricter
     # limit = 200000
 

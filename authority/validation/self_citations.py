@@ -38,7 +38,7 @@ def resolve(cluster, self_citations):
     i = 0
     for cite in self_citations.find({'author.key' : key}):
         aid, cid = cite['article_id'], cite['citation_id']
-        if aid in article_ids and cid is not None:
+        if aid in article_ids and cid is not None and cid in article_ids:
             print(aid, cid)
             i = merge(aid, cid, resolved, i)
     return {k : v for k, v in resolved.items() if v is not None}

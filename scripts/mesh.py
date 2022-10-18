@@ -24,7 +24,9 @@ def get_batch(article_cursor, batch_size):
     while len(abstracts) < batch_size:
         try:
             article = next(article_cursor)
-            if len(article['abstract']) > 0:
+            if len(article['abstract']) > 0 and (
+                'mesh' not in article or
+                article['mesh'] == ''):
                 abstracts.append(
                     (mesh_format.format(
                         article_id=article["_id"],
