@@ -6,9 +6,6 @@ from rich import print
 from bson.son import SON
 from functools import partial
 import itertools
-from concurrent.futures import ThreadPoolExecutor as Pool
-from threading import Lock
-progress_lock = Lock()
 
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
@@ -32,8 +29,7 @@ def sample_pairs(group_doc):
 def sample_grouped_pairs(client, database, ref_key):
     total = database[ref_key].count_documents({})
     with client.start_session(causal_consistency=True) as session:
-        for group_doc in database[ref_key].find(session=session,
-                no_cursor_timeout=True):
+        for group_doc in database[ref_key].find(session=session, no_cursor_timeout=True):
             group_id = group_doc['_id']
             n  = group_doc.get('count', None)
             yield group_id, n, sample_pairs(group_doc)
@@ -48,8 +44,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
 
     task_name = f'Sampling pairs from {ref_key}'
     total = reference_sets[ref_key].count_documents({})
-    with progress_lock:
-        task  = progress.add_task(task_name, total=total)
+    task  = progress.add_task(task_name, total=total)
 
     inserted = 0
     threshold = inserted + every
@@ -69,8 +64,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
         if inserted > threshold:
             print(f'{inserted:20} in {ref_key:10} ...')
             threshold = inserted + every
-        with progress_lock:
-            progress.update(task, advance=1)
+        progress.update(task, advance=1)
 
     return inserted
 
@@ -90,16 +84,14 @@ def run():
 
     # ref_keys = reference_sets.list_collection_names()
     ref_keys = ('first_initial_last_name', 'match', 'non_match')
-    threads = len(ref_keys)
 
     with Progress() as progress:
-        with Pool(max_workers=threads) as pool:
-            f = partial(sample_for_ref_key, client=client,
+        for ref_key in ref_keys:
+            sample_for_ref_key(ref_key, client=client,
                         progress=progress,
                         reference_sets=reference_sets,
                         reference_sets_pairs=reference_sets_pairs,
                         reference_sets_group_lookup=reference_sets_group_lookup)
-            print(list(pool.map(f, ref_keys)))
 
     for ref_key in ref_keys:
         print(ref_key, reference_sets_pairs[ref_key].count_documents({}))
