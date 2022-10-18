@@ -12,10 +12,13 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     reference_sets_pairs = client.reference_sets_pairs
+    lookup               = client.reference_sets_group_lookup
+
 
     # for ref_key in ref_keys:
     for ref_key in reference_sets_pairs.list_collection_names():
         print(ref_key, reference_sets_pairs[ref_key].count_documents({}))
+        print(ref_key, 'lookup', lookup[ref_key].count_documents({}))
 
     for ref_key in reference_sets_pairs.list_collection_names():
         print(ref_key)

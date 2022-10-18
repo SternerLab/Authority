@@ -73,77 +73,79 @@ def run():
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
     try:
-        # ref_key = 'last_name'
-        ref_key = 'first_initial_last_name'
-        total = lookup[ref_key].count_documents({})
-        print(f'Performing inference across {total} documents')
-        for pair_lookup in track(lookup[ref_key].find(query), total=total,
-                                 description='Clustering first initial last name blocks'):
-            group_id = pair_lookup['group_id']
-            group = next(subsets[ref_key].find({'_id' : group_id}))
+        with client.start_session(causal_consistency=True) as session:
+            # ref_key = 'last_name'
+            ref_key = 'first_initial_last_name'
+            total = lookup[ref_key].count_documents({})
+            print(f'Performing inference across {total} documents')
+            for pair_lookup in track(lookup[ref_key].find(query, session=session,
+                                     no_cursor_timeout=True), total=total,
+                                     description='Clustering first initial last name blocks'):
+                group_id = pair_lookup['group_id']
+                group = next(subsets[ref_key].find({'_id' : group_id}))
 
-            pair_ids = pair_lookup['pair_ids']
-            match_prior = estimate_prior(pair_lookup['n'])
-            id_lookup = dict()
+                pair_ids = pair_lookup['pair_ids']
+                match_prior = estimate_prior(pair_lookup['n'])
+                id_lookup = dict()
 
-            for i, _id in enumerate(set(doc['ids'] for doc in group['group'])):
-                id_lookup[_id] = i
+                for i, _id in enumerate(set(doc['ids'] for doc in group['group'])):
+                    id_lookup[_id] = i
 
-            m = len(id_lookup)
-            if m == 1:
-                continue
+                m = len(id_lookup)
+                if m == 1:
+                    continue
 
-            table = np.full((m, m), np.nan)
-            np.fill_diagonal(table, 1.)
+                table = np.full((m, m), np.nan)
+                np.fill_diagonal(table, 1.)
 
-            cached_features = []
-            for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
-                compared = compare_pair(pair, articles)
-                features = compared['features']
-                p, r = infer_from_feature(features, interpolated, xi_ratios, match_prior)
-                assert r >= 0., f'Ratio {r} violates >0 constraint'
-                assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
-                i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
-                i, j = min(i, j), max(i, j)
-                cached_features.append((i, j, features))
-                table[i, j] = p
+                cached_features = []
+                for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
+                    compared = compare_pair(pair, articles)
+                    features = compared['features']
+                    p, r = infer_from_feature(features, interpolated, xi_ratios, match_prior)
+                    assert r >= 0., f'Ratio {r} violates >0 constraint'
+                    assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
+                    i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
+                    i, j = min(i, j), max(i, j)
+                    cached_features.append((i, j, features))
+                    table[i, j] = p
 
-            # Disable triplet violation correction, prior estimation, and recalculation
-            # Set tables and priors to unchanged values for consistency
-            fixed_table = fix_triplet_violations(table)
-            new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
-                           np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
-            new_table = np.full((m, m), np.nan)
-            np.fill_diagonal(new_table, 1.)
-            for i, j, features in cached_features: #!!!
-                p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
-                assert r >= 0., f'Ratio {r} violates >0 constraint'
-                assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
-                new_table[i, j] = p
+                # Disable triplet violation correction, prior estimation, and recalculation
+                # Set tables and priors to unchanged values for consistency
+                fixed_table = fix_triplet_violations(table)
+                new_prior   = (np.sum(np.where(fixed_table > 0.5, 1., 0.)) /
+                               np.sum(np.where(np.isnan(fixed_table), 0., 1.)))
+                new_table = np.full((m, m), np.nan)
+                np.fill_diagonal(new_table, 1.)
+                for i, j, features in cached_features: #!!!
+                    p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                    assert r >= 0., f'Ratio {r} violates >0 constraint'
+                    assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
+                    new_table[i, j] = p
 
-            print(group_id)
-            cluster_labels = custom_cluster_alg(new_table)
-            print('custom', cluster_labels)
-            binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
-            fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
-            original_probs_binary = Binary(pickle.dumps(table), subtype=128)
+                print(group_id)
+                cluster_labels = custom_cluster_alg(new_table)
+                print('custom', cluster_labels)
+                binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
+                fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
+                original_probs_binary = Binary(pickle.dumps(table), subtype=128)
 
-            try:
-                inferred[ref_key].insert_one(dict(
-                    cluster_labels={str(k) : int(cluster_labels[i])
-                                    for k, i in id_lookup.items()},
-                    probs=binary_probs,
-                    fixed_probs=fixed_probs_binary,
-                    original_probs=original_probs_binary,
-                    prior=new_prior,
-                    match_prior=match_prior,
-                    group_id=group_id))
-            except pymongo.errors.DocumentTooLarge:
-                inferred[ref_key].insert_one(dict(
-                    cluster_labels={str(k) : int(cluster_labels[i])
-                                    for k, i in id_lookup.items()},
-                    probs=binary_probs, prior=new_prior,
-                    match_prior=match_prior, group_id=group_id))
+                try:
+                    inferred[ref_key].insert_one(dict(
+                        cluster_labels={str(k) : int(cluster_labels[i])
+                                        for k, i in id_lookup.items()},
+                        probs=binary_probs,
+                        fixed_probs=fixed_probs_binary,
+                        original_probs=original_probs_binary,
+                        prior=new_prior,
+                        match_prior=match_prior,
+                        group_id=group_id))
+                except pymongo.errors.DocumentTooLarge:
+                    inferred[ref_key].insert_one(dict(
+                        cluster_labels={str(k) : int(cluster_labels[i])
+                                        for k, i in id_lookup.items()},
+                        probs=binary_probs, prior=new_prior,
+                        match_prior=match_prior, group_id=group_id))
     except KeyboardInterrupt:
         pass
 

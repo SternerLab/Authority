@@ -20,7 +20,7 @@ def make_group_pipeline(feature_dict):
                  ]
     return pipeline
 
-def generate(pairs, progress, task_name, limit=None):
+def generate(client, pairs, progress, task_name, limit=None):
     ref_key = task_name.split(' ')[-1]
     if limit is not None:
         total = limit
@@ -31,21 +31,22 @@ def generate(pairs, progress, task_name, limit=None):
         task = progress.add_task(task_name, total=total)
     accepted = 0
     rejected = 0
-    for pair in pairs.find():
-        if accepted + rejected == limit: # TODO Rejection ignored for now
-            break
-        # if accepted == limit:
-        #     break
-        mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
-        if isinstance(mesh_a, list) and isinstance(mesh_b, list):
-            accepted += 1
-        else:
-            rejected += 1
-        with progress_lock:
-            progress.update(task, advance=1)
-        yield pair
-        # TODO Rejection based on MeSH terms is intentionally ignored for now
-        print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
+    with client.start_session(causal_consistency=True) as session:
+        for pair in pairs.find(no_cursor_timeout=True, session=session):
+            if accepted + rejected == limit: # TODO Rejection ignored for now
+                break
+            # if accepted == limit:
+            #     break
+            mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
+            if isinstance(mesh_a, list) and isinstance(mesh_b, list):
+                accepted += 1
+            else:
+                rejected += 1
+            with progress_lock:
+                progress.update(task, advance=1)
+            yield pair
+            # TODO Rejection based on MeSH terms is intentionally ignored for now
+            print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
 def insert_features(ref_key, client, progress, limit=None, batch_size=128):
@@ -58,7 +59,7 @@ def insert_features(ref_key, client, progress, limit=None, batch_size=128):
     feature_groups_i = client.feature_groups_i
 
     task_name = f'Calculating features for {ref_key}'
-    generator = generate(pairs[ref_key], progress, task_name, limit)
+    generator = generate(client, pairs[ref_key], progress, task_name, limit)
     while True:
         batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:

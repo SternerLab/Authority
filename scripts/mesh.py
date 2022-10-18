@@ -54,7 +54,7 @@ def insert_mesh_output(articles, mesh_output, session=None, use_obj_ids=True):
     for mongo_id, words in mesh_output.items():
         print('Updating', mongo_id)
         pprint(words)
-        if mongo_ids:
+        if use_obj_ids:
             query = {'_id' : ObjectId(mongo_id)},
         else:
             query = {'front.article-meta.article-id.#text' : doi}
