@@ -27,8 +27,8 @@ def generate(client, pairs, progress, task_name, limit=None):
     else:
         total = pairs.count_documents({})
     print(f'Task {task_name} has upper bound of {total} pairs!')
-    with progress_lock:
-        task = progress.add_task(task_name, total=total)
+    # with progress_lock:
+    task = progress.add_task(task_name, total=total)
     accepted = 0
     rejected = 0
     with client.start_session(causal_consistency=True) as session:
@@ -42,11 +42,11 @@ def generate(client, pairs, progress, task_name, limit=None):
                 accepted += 1
             else:
                 rejected += 1
-            with progress_lock:
-                progress.update(task, advance=1)
+            # with progress_lock:
+            progress.update(task, advance=1)
             yield pair
             # TODO Rejection based on MeSH terms is intentionally ignored for now
-            print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
+            # print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
 def insert_features(ref_key, client, progress, limit=None, batch_size=128):
@@ -98,7 +98,10 @@ def run():
 
     threads = len(ref_keys)
     with Progress() as progress:
-        f = partial(insert_features, client=client, progress=progress, limit=limit)
-        with Pool(max_workers=threads) as pool:
-            results = pool.map(f, ref_keys)
-            print(list(results))
+        for ref_key in ref_keys:
+            insert_features(ref_key, client=client, progress=progress,
+                            limit=limit)
+        # f = partial(insert_features, client=client, progress=progress, limit=limit)
+        # with Pool(max_workers=threads) as pool:
+        #     results = pool.map(f, ref_keys)
+        #     print(list(results))
