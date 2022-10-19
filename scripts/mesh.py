@@ -47,6 +47,7 @@ def parse_mesh_output(content):
         if len(line.strip()) == 0 or '|' not in line:
             continue
         id_cell, *cells = line.split('|')
+        id_cell = id_cell.split(':')[-1].strip()
         mesh_output[id_cell].update(remove_stop_words(cells, 'mesh'))
     return mesh_output
 

@@ -10,10 +10,7 @@ import itertools
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
-def sample_pairs(group_doc):
-    group     = group_doc['group']
-    group_id  = group_doc['_id']
-    n         = group_doc.get('count', None)
+def sample_pairs(group):
     accepted  = 0
     rejected  = 0
     for pair in itertools.combinations(group, r=2):
@@ -22,9 +19,9 @@ def sample_pairs(group_doc):
             accepted += 1
         else:
             rejected += 1
-        print(f'Sampling rejected {rejected:6} accepted {accepted:6}')
+        # print(f'Sampling (would have) rejected {rejected:6} accepted {accepted:6} (disabled)')
         # TODO Rejection based on MeSH terms is intentionally ignored for now
-        yield dict(group_id=group_id, n=n, pair=list(pair))
+        yield dict(pair=pair) # Try to make pairs more lightweight, group_id and n was multiplied anyway and takes tons of space
 
 def sample_grouped_pairs(client, database, ref_key):
     total = database[ref_key].count_documents({})
@@ -32,13 +29,13 @@ def sample_grouped_pairs(client, database, ref_key):
         for group_doc in database[ref_key].find(session=session, no_cursor_timeout=True):
             group_id = group_doc['_id']
             n  = group_doc.get('count', None)
-            yield group_id, n, sample_pairs(group_doc)
+            yield group_id, n, sample_pairs(group_doc['group'])
 
 def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
     if ref_key == 'non_match':
         limit = reference_sets['match'].count_documents({}) # Limit to match size
-        # limit = 10000000 # Arbitrary but limited
+        # limit = 10000000 # Arbitrary
     else:
         limit = float('inf')
 
@@ -50,6 +47,10 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
     threshold = inserted + every
     for group_id, n, grouped_pairs in sample_grouped_pairs(client, reference_sets, ref_key):
         try:
+            # grouped_pairs = list(grouped_pairs)
+            # if len(grouped_pairs) == 0:
+            #     continue
+            # print(grouped_pairs)
             result = reference_sets_pairs[ref_key].insert_many(grouped_pairs)
             inserted += len(result.inserted_ids)
             reference_sets_group_lookup[ref_key].insert_one(
