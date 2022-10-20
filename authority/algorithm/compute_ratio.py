@@ -25,7 +25,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
             w: total count of feature '''
 
     match_group     = feature_groups[f'match' + suffix]
-    non_match_group = feature_groups[f'differing_last_name' + suffix]
+    non_match_group = feature_groups[f'non_match' + suffix]
 
     print('match_group', match_group.count_documents({}))
     print('non_match_group', non_match_group.count_documents({}))
@@ -38,7 +38,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
     except ZeroDivisionError:
         print('Undefined ratio for: ', feature)
         print(f'match count: {match_count} / {total_matches}')
-        print(f'non-match count: {non_match_count} / {total_non_matches}')
+        print(f'non_match count: {non_match_count} / {total_non_matches}')
         r = 0.
     key = tuple(feature.values())
     return key, r, match_count + non_match_count
@@ -59,7 +59,7 @@ def compute_ratios(features, feature_groups, suffix='', xs=None):
     if xs is None:
         xs = x_a
     total_matches     = features['match'].count_documents(filter={})
-    total_non_matches = features['differing_last_name'].count_documents(filter={})
+    total_non_matches = features['non_match'].count_documents(filter={})
 
     unique_features = OrderedDict()
     for ref_key in features.list_collection_names():
