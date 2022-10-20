@@ -14,7 +14,7 @@ def merge(aid, cid, resolved):
         if l == v:
             resolved[k] = (u, True)
         elif l > v:
-            resolved[k] = (resolved[k] - 1, m_k)
+            resolved[k] = (resolved[k][0] - 1, m_k)
 
 def resolve(cluster, self_citations):
     gid = cluster['group_id']
