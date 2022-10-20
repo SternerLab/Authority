@@ -7,13 +7,14 @@ from authority.parse.parse import parse_citations, reorder_name
 
 def merge(aid, cid, resolved):
     ''' Somewhat ugly because it accounts for edge cases.. '''
-    prev, prev_c = resolved[aid], resolved[cid]
+    # M is a boolean denoting if an entry has been merged already
+    (prev, m), (prev_c, m_c) = resolved[aid], resolved[cid]
     u, v = min(prev, prev_c), max(prev, prev_c)
-    for k, l in resolved.items():
+    for k, (l, m_k) in resolved.items():
         if l == v:
-            resolved[k] = u
+            resolved[k] = (u, True)
         elif l > v:
-            resolved[k] -= 1
+            resolved[k] = (resolved[k] - 1, m_k)
 
 def resolve(cluster, self_citations):
     gid = cluster['group_id']
@@ -22,7 +23,7 @@ def resolve(cluster, self_citations):
     print(name, key)
 
     article_ids = set(cluster['cluster_labels'].keys())
-    resolved = {aid : i for i, aid in enumerate(article_ids)}
+    resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
     print(resolved)
 
     for cite in self_citations.find({'author.key' : key}):
@@ -30,7 +31,7 @@ def resolve(cluster, self_citations):
         if aid in article_ids and cid is not None and cid in article_ids:
             print(aid, cid)
             merge(aid, cid, resolved)
-    return {k : v for k, v in resolved.items() if v is not None}
+    return {k : v for k, (v, m) in resolved.items() if m}
 
 def self_citations(blocks, articles, query={}):
     ''' Extract clusters based on self-citations '''
@@ -54,8 +55,7 @@ def self_citations(blocks, articles, query={}):
                 for author in citation['authors']:
                     # print(author['last'], last)
                     if author['last'] == last:
-                        cite_article = articles.find_one(
-                                           {'title' : citation['title']})
+                        cite_article = articles.find_one({'title' : citation['title']})
                         print('resolved self-citation:', entry['authors'])
                         yield dict(
                             author=entry['authors'],

@@ -7,6 +7,9 @@ import itertools
 
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
+class IncompleteValidation(Exception):
+    pass
+
 def pairwise_metrics(clusters, reference_clusters):
     tp, tn, fp, fn = (np.float32(v) for v in unpack(clusters, reference_clusters))
     with np.errstate(divide='ignore', invalid='ignore'):
@@ -58,7 +61,7 @@ def cluster_metrics(clusters, reference_clusters):
         total_authors    = np.int32(true_clusters)
         all_ids          = list(set().union(e for c in reference_clusters for e in c))
         if len(all_ids) == 0:
-            raise RuntimeError('Incomplete')
+            raise IncompleteValidation('Incomplete')
         correct_clusters = np.int32(0)
         for cluster in clusters:
             if cluster in reference_clusters:

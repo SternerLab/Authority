@@ -61,8 +61,8 @@ def run():
                 clusterwise['name'] = name
             except KeyboardInterrupt:
                 raise
-            # except Exception as e:
-            #     print(e)
+            except IncompleteValidation:
+                continue # pass
             long.append(clusterwise)
             running = pd.DataFrame(long)
             print(running)
