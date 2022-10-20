@@ -28,10 +28,9 @@ def run():
     self_citations.create_index('authors_id')
     self_citations.create_index('authors.key')
 
-    query = {}
-    name = 'aaagaard'
-    first_initial, *last = name
-    last = ''.join(last)
+    # name = 'amiller'
+    # first_initial, *last = name
+    # last = ''.join(last)
     # query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
     query = {}
 
@@ -62,12 +61,14 @@ def run():
                 clusterwise['name'] = name
             except KeyboardInterrupt:
                 raise
-            except Exception:
-                pass
+            # except Exception as e:
+            #     print(e)
             long.append(clusterwise)
             running = pd.DataFrame(long)
             print(running)
-            print(running.describe())
+            # print(running.describe())
             print(running.describe()[['accuracy', 'precision', 'recall', 'lumping', 'splitting']])
     except KeyboardInterrupt:
         pass
+    finally:
+        running.to_csv('authority_validation_metrics.csv')

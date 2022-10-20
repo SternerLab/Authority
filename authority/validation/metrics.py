@@ -1,5 +1,6 @@
 import pandas as pd
 from rich import print
+from rich.pretty import pprint
 from collections import namedtuple
 import numpy as np
 import itertools
@@ -117,6 +118,7 @@ def cluster_metrics(clusters, reference_clusters):
 def to_clusters(labels):
     ''' Convert labels of the form {article_id : cluster_id} to clusters of the form
         [{article_id..}..]'''
+    pprint(labels)
     clusters = []
     for k, v in sorted(labels.items(), key=lambda t : t[1]):
         if len(clusters) < v + 1:
