@@ -121,7 +121,7 @@ def cluster_metrics(clusters, reference_clusters):
 def to_clusters(labels):
     ''' Convert labels of the form {article_id : cluster_id} to clusters of the form
         [{article_id..}..]'''
-    pprint(labels)
+    print('labels', labels)
     clusters = []
     for k, v in sorted(labels.items(), key=lambda t : t[1]):
         if len(clusters) < v + 1:

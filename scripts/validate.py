@@ -7,7 +7,7 @@ import pandas as pd
 from bson.objectid import ObjectId
 
 from authority.validation.metrics import *
-from authority.validation.self_citations import resolve
+from authority.validation.self_citations import resolve, make_contiguous
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -47,9 +47,12 @@ def run():
                 name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
                 self_citation_labels = resolve(cluster, self_citations)
                 print(name)
+                print('self_cite_labels', self_citation_labels)
                 reference_clusters = to_clusters(self_citation_labels)
                 shared_predictions = {k : v for k, v in cluster['cluster_labels'].items()
                                       if k in self_citation_labels}
+                shared_predictions = make_contiguous(shared_predictions)
+                print('shared_predictions', shared_predictions)
                 predicted_clusters = to_clusters(shared_predictions)
                 clusterwise = cluster_metrics(predicted_clusters, reference_clusters)
                 pairwise    = pairwise_metrics(predicted_clusters, reference_clusters)

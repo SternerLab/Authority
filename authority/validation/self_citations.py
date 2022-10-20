@@ -16,6 +16,19 @@ def merge(aid, cid, resolved):
         elif l > v:
             resolved[k] = (resolved[k][0] - 1, m_k)
 
+def make_contiguous(cluster):
+    if not cluster:
+        return cluster
+    l = max(cluster.values()) + 1
+    not_dropped = set(cluster.values())
+    dropped = [c for c in range(l) if c not in not_dropped]
+    print('dropped', dropped)
+    update_label = lambda v : v - sum(1 for d in dropped if d < v)
+    print('pre', cluster)
+    contiguous = {k : update_label(v) for k, v in cluster.items()}
+    print('post', contiguous)
+    return contiguous
+
 def resolve(cluster, self_citations):
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
@@ -26,12 +39,27 @@ def resolve(cluster, self_citations):
     resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
     print(resolved)
 
+    # Merge clusters based on self-citation resolutions
     for cite in self_citations.find({'author.key' : key}):
         aid, cid = cite['article_id'], cite['citation_id']
         if aid in article_ids and cid is not None and cid in article_ids:
             print(aid, cid)
             merge(aid, cid, resolved)
-    return {k : v for k, (v, m) in resolved.items() if m}
+
+    # # Filter unmerged clusters and decrement cluster labels appropriately
+    # dropped = []
+    # for k, (v, m) in list(resolved.items()):
+    #     if not m:
+    #         dropped.append(v)
+    return make_contiguous({k : v for k, (v, m) in resolved.items() if m})
+    # print('dropped', dropped)
+    # print('pre', resolved)
+    # update_label = lambda v : v - sum(1 for d in dropped if d < v)
+    # resolved = {k : update_label(v) for k, (v, m) in resolved.items()
+    #             if m}
+    # print('post', resolved)
+    # return resolved
+
 
 def self_citations(blocks, articles, query={}):
     ''' Extract clusters based on self-citations '''
