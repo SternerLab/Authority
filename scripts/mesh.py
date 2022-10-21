@@ -56,7 +56,7 @@ def insert_mesh_output(articles, mesh_output, session=None, use_obj_ids=True):
         print('Updating', mongo_id)
         pprint(words)
         if use_obj_ids:
-            query = {'_id' : ObjectId(mongo_id)},
+            query = {'_id' : ObjectId(mongo_id)} # AHH
         else:
             query = {'front.article-meta.article-id.#text' : doi}
         articles.update_one(query, {'$set' : {'mesh' : list(words)}}, session=session)
@@ -96,3 +96,6 @@ def run():
                 insert_mesh_output(articles, mesh_output, session=session)
                 print('Update finished!', flush=True)
             print('Finished all batches!', flush=True)
+
+# Hardcoded mesh return for debugging
+# mesh_output = {'6337dee8f3513987bb8db357' : ['Animals', '1000', 'CT', 'MM', 'D008930', '1980', '2980', 'MH', 'D000818', 'Rodentia', '915', 'AB', 'D008800', 'D012377', 'D003411', 'Mexico']}
