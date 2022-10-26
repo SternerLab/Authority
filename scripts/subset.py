@@ -1,10 +1,13 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich.progress import track
 from bson.son import SON
 import itertools
+import math
 
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
+# https://www.mongodb.com/docs/manual/reference/operator/aggregation/match/
 
 def create_mesh_coauthor_match_set(reference_sets):
    for group_doc in reference_sets['first_initial_last_name'].find():
@@ -15,7 +18,7 @@ def create_mesh_coauthor_match_set(reference_sets):
                continue # exclude from matching
            found = False
            for new_group in new_groups:
-               for new_summary in new_group: # Ah yes nest it deep
+               for new_summary in new_group:
                    shared_mesh = set(new_summary['mesh']) & set(summary['mesh'])
                    shared_authors = (set(new_summary['authors']) &
                                      set(summary['authors']))
@@ -84,7 +87,7 @@ def run():
     client.drop_database('reference_sets')
     reference_sets = client.reference_sets
 
-    ''' Create matching based on different criteria '''
+    # ''' Create matching based on different criteria '''
 
     criteria = {
             'last_name' : ('last',),
@@ -99,6 +102,7 @@ def run():
 
     for name, fields in criteria.items():
         pipeline = [
+            {'$match': {'mesh': {'$ne': ''}}},
             {'$unwind' : '$authors'},
             {'$group': {
                 '_id'    : {k : f'$authors.{k}' for k in fields},
@@ -114,22 +118,8 @@ def run():
     # Check for matches and create the match set separately from mongodb aggregation
     # "soft" rule          : full name matches, including suffix etc
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
-    reference_sets['soft_match'].insert_many(reference_sets['full_name'].find())
+    reference_sets['soft_match'].insert_many(reference_sets['full_name'].find(
+        {'_id.suffix' : {'$ne' : ''}}))
     reference_sets['hard_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
     for m_type in ('hard', 'soft'):
         reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
-
-    ''' Create non-matching set by sampling articles with different last names '''
-    n_pairs = reference_sets['full_name'].count_documents({})
-
-    sampled_sets = [('last_name', 'non_match')]
-    for ref_key, new_key in sampled_sets:
-        samples = reference_sets[ref_key].aggregate(
-            [{'$sample' : {'size' : n_pairs}},
-             {'$unwind' : '$group'},
-             {'$bucketAuto' : {'groupBy' : '$_id', 'buckets' : n_pairs // 2,
-                 'output'   : { 'group' : {'$push' : '$group'}}
-                     }}
-             ], allowDiskUse=True
-        )
-        reference_sets[new_key].insert_many(samples)

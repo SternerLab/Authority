@@ -14,12 +14,14 @@ def run():
     #     fig = sns.displot(val_df, x=metric)
     #     fig.set_axis_labels(metric.title(), 'Frequency')
     #     fig.savefig(f'plots/{metric}_frequency.png')
+    #     # plt.show()
     #     plt.clf()
 
-    # composite = pd.read_csv('composite.csv')
-    # print(composite)
-    # sns.scatterplot(composite, x='frequency', y='accuracy')
-    # plt.show()
+    plt.clf()
+    composite = pd.read_csv('composite.csv')
+    print(composite)
+    sns.scatterplot(composite, x='frequency', y='accuracy')
+    plt.show()
 
     # val_df['frequency'] = 0
     # names_df = pd.read_csv('names.csv')
