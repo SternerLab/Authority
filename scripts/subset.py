@@ -27,7 +27,7 @@ def create_mesh_coauthor_match_set(reference_sets):
                    # VERIFIED working :)
                    shared_authors = (set(auth['key'] for auth in a_authors) &
                                      set(auth['key'] for auth in b_authors))
-                   if len(shared_mesh) >= 2 and len(shared_authors) >= 2:
+                   if len(shared_mesh) >= 2 and len(shared_authors) >= 3: # must be 3 since original author is included too
                        new_group.append(summary); found = True
                        break
            if not found:
@@ -104,7 +104,6 @@ def run():
             {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
             {'$set'  : {'coauthors' : '$authors'}}, # copy coauthor info
             {'$unwind' : '$authors'},
-            {'$limit' : 10000},
             {'$group': {
                 '_id'    : {k : f'$authors.{k}' for k in fields},
                 'count'  : {'$sum': 1},
@@ -121,7 +120,6 @@ def run():
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
     reference_sets['soft_match'].insert_many(reference_sets['full_name'].find(
         {'_id.suffix' : {'$ne' : ''}}))
-    # reference_sets.drop_collection('hard_match')
     reference_sets['hard_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
 
     for m_type in ('hard', 'soft'):

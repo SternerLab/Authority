@@ -16,13 +16,8 @@ def sample_pairs(group):
     rejected  = 0
     for pair in itertools.combinations(group, r=2):
         mesh_a, mesh_b = (p['mesh'] for p in pair)
-        if isinstance(mesh_a, list) and isinstance(mesh_b, list):
-            accepted += 1
-            yield dict(pair=pair) # Try to make pairs more lightweight, group_id and n was multiplied anyway and takes tons of space
-        else:
-            # As a sanity check, this shouldn't reject anything
-            print(f'Sampling (would have) rejected {rejected:6} accepted {accepted:6} (disabled)')
-            rejected += 1
+        assert isinstance(mesh_a, list) and isinstance(mesh_b, list), 'MeSH already processed'
+        yield dict(pair=pair)
 
 def sample_grouped_pairs(client, database, ref_key):
     total = database[ref_key].count_documents({})
@@ -30,7 +25,6 @@ def sample_grouped_pairs(client, database, ref_key):
         for group_doc in database[ref_key].find(session=session, no_cursor_timeout=True):
             group_id = group_doc['_id']
             n  = group_doc.get('count', None)
-            print(f'group: {len(group_doc["group"])} n:{n}')
             yield group_id, n, sample_pairs(group_doc['group'])
 
 def sample_non_match_pairs(a, b):
@@ -42,10 +36,11 @@ def create_non_match_pairs(client):
     reference_sets = client.reference_sets
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
-    last_name_set = reference_sets['last_name']
+    filn_set = reference_sets['first_initial_last_name']
 
     with client.start_session(causal_consistency=True) as session:
-        for a, b in itertools.combinations(last_name_set.find(session=session, no_cursor_timeout=True), r=2):
+        cursor = filn_set.find(session=session, no_cursor_timeout=True)
+        for a, b in itertools.combinations(cursor, r=2):
             n = len(a['group']) + len(b['group'])
             group_id = [a['_id'], b['_id']]
             yield group_id, n, sample_non_match_pairs(a, b)
@@ -53,10 +48,10 @@ def create_non_match_pairs(client):
 def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
     if ref_key == 'non_match':
-        limit = reference_sets['match'].count_documents({}) # Limit to match size
+        limit = reference_sets_pairs['match'].count_documents({}) # Limit to number of pairs in match set
+        limit *= 4
         generator = create_non_match_pairs(client)
-        total = reference_sets_pairs['last_name'].count_documents({})
-        total = math.comb(total, 2)
+        total = limit # Assuming we will run into the limit, which we should
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)
@@ -73,12 +68,12 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
             inserted += len(result.inserted_ids)
             reference_sets_group_lookup[ref_key].insert_one(
                     dict(group_id=group_id, pair_ids=result.inserted_ids, n=n))
-            print(f'added: {len(result.inserted_ids)}')
         except pymongo.errors.InvalidOperation:
-            pass # Only one element in group, cannot make pairs
+            pass # Only one element in group, cannot make pairs, should be filtered somehow
         except pymongo.errors.DocumentTooLarge:
             print(f'Document too large for {len(result.inserted_ids)} ids')
         if inserted > limit:
+            print(f'Reaching upper limit {limit}')
             break
         if inserted > threshold:
             print(f'{inserted:20} in {ref_key:10} ...')
@@ -92,8 +87,8 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    client.drop_database('reference_sets_pairs')
-    client.drop_database('reference_sets_group_lookup')
+    # client.drop_database('reference_sets_pairs')
+    # client.drop_database('reference_sets_group_lookup')
 
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
@@ -103,6 +98,8 @@ def run():
 
     ref_keys = reference_sets.list_collection_names()
     # ref_keys = ('first_initial_last_name', 'match', 'non_match')
+    # ref_keys = ('match', 'non_match') # Order matters
+    ref_keys = ('hard_match', 'soft_match', 'non_match',)
 
     with Progress() as progress:
         for ref_key in ref_keys:
