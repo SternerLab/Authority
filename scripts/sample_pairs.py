@@ -20,7 +20,8 @@ def sample_pairs(group):
             accepted += 1
             yield dict(pair=pair) # Try to make pairs more lightweight, group_id and n was multiplied anyway and takes tons of space
         else:
-            # print(f'Sampling (would have) rejected {rejected:6} accepted {accepted:6} (disabled)')
+            # As a sanity check, this shouldn't reject anything
+            print(f'Sampling (would have) rejected {rejected:6} accepted {accepted:6} (disabled)')
             rejected += 1
 
 def sample_grouped_pairs(client, database, ref_key):
@@ -29,6 +30,7 @@ def sample_grouped_pairs(client, database, ref_key):
         for group_doc in database[ref_key].find(session=session, no_cursor_timeout=True):
             group_id = group_doc['_id']
             n  = group_doc.get('count', None)
+            print(f'group: {len(group_doc["group"])} n:{n}')
             yield group_id, n, sample_pairs(group_doc['group'])
 
 def sample_non_match_pairs(a, b):
@@ -53,7 +55,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
     if ref_key == 'non_match':
         limit = reference_sets['match'].count_documents({}) # Limit to match size
         generator = create_non_match_pairs(client)
-        total = reference_sets['last_name'].count_documents({})
+        total = reference_sets_pairs['last_name'].count_documents({})
         total = math.comb(total, 2)
     else:
         limit = float('inf')
@@ -67,14 +69,11 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
     threshold = inserted + every
     for group_id, n, grouped_pairs in generator:
         try:
-            # grouped_pairs = list(grouped_pairs)
-            # if len(grouped_pairs) == 0:
-            #     continue
-            # print(grouped_pairs)
             result = reference_sets_pairs[ref_key].insert_many(grouped_pairs)
             inserted += len(result.inserted_ids)
             reference_sets_group_lookup[ref_key].insert_one(
                     dict(group_id=group_id, pair_ids=result.inserted_ids, n=n))
+            print(f'added: {len(result.inserted_ids)}')
         except pymongo.errors.InvalidOperation:
             pass # Only one element in group, cannot make pairs
         except pymongo.errors.DocumentTooLarge:
@@ -93,24 +92,22 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    # client.drop_database('reference_sets_pairs')
-    # client.drop_database('reference_sets_group_lookup')
+    client.drop_database('reference_sets_pairs')
+    client.drop_database('reference_sets_group_lookup')
+
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
     reference_sets = client.reference_sets
 
     total  = articles.count_documents({})
 
-    reference_sets_pairs.drop_collection('non_match')
-    reference_sets_group_lookup.drop_collection('non_match')
-
-    # ref_keys = reference_sets.list_collection_names()
+    ref_keys = reference_sets.list_collection_names()
     # ref_keys = ('first_initial_last_name', 'match', 'non_match')
-    ref_keys = ('non_match',)
-    # ref_keys = ('first_initial_last_name',)
 
     with Progress() as progress:
         for ref_key in ref_keys:
+            reference_sets_pairs.drop_collection(ref_key)
+            reference_sets_group_lookup.drop_collection(ref_key)
             sample_for_ref_key(ref_key, client=client,
                         progress=progress,
                         reference_sets=reference_sets,

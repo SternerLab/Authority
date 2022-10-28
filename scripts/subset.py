@@ -10,32 +10,30 @@ import math
 # https://www.mongodb.com/docs/manual/reference/operator/aggregation/match/
 
 def create_mesh_coauthor_match_set(reference_sets):
+   total = reference_sets['first_initial_last_name'].count_documents({})
+   print(f'checking groups from {total} total groups in FILN set')
    for group_doc in reference_sets['first_initial_last_name'].find():
        group = group_doc['group']
        new_groups = []
        for summary in group:
-           if summary['mesh'] == '':
-               continue # exclude from matching
+           assert summary['mesh'] != '', 'MeSH needs to be present, filtering done before this step'
            found = False
            for new_group in new_groups:
                for new_summary in new_group:
-                   shared_mesh = set(new_summary['mesh']) & set(summary['mesh'])
-                   shared_authors = (set(new_summary['authors']) &
-                                     set(summary['authors']))
-                   try:
-                       shared_authors = ({new_summary['authors']['key']} &
-                                         {summary['authors']['key']})
-                   except Exception as e:
-                       pprint(summary)
-                       pprint(new_summary)
-                       raise
-
+                   shared_mesh    = (set(new_summary['mesh']) &
+                                     set(summary['mesh']))
+                   a_authors = new_summary['coauthors']
+                   b_authors = summary['coauthors']
+                   # VERIFIED working :)
+                   shared_authors = (set(auth['key'] for auth in a_authors) &
+                                     set(auth['key'] for auth in b_authors))
                    if len(shared_mesh) >= 2 and len(shared_authors) >= 2:
                        new_group.append(summary); found = True
                        break
            if not found:
                new_groups.append([summary])
        group_doc.pop('_id')
+       new_groups = [new_group for new_group in new_groups if len(new_group) > 1] # filter
        new_groups = [group_doc | dict(group=new_group) for new_group in new_groups]
        yield from new_groups
 
@@ -97,22 +95,25 @@ def run():
 
     push_group = {'group' : {'$push' : {'title' : '$title',
                                         'authors' : '$authors',
+                                        'coauthors' : '$coauthors',
                                         'mesh' : '$mesh',
                                         'ids' : '$_id'}}}
 
     for name, fields in criteria.items():
         pipeline = [
-            {'$match': {'mesh': {'$ne': ''}}},
+            {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
+            {'$set'  : {'coauthors' : '$authors'}}, # copy coauthor info
             {'$unwind' : '$authors'},
+            {'$limit' : 10000},
             {'$group': {
                 '_id'    : {k : f'$authors.{k}' for k in fields},
                 'count'  : {'$sum': 1},
                 **push_group,
                 }},
-            # Sorting will eat all of your memory and make u sad :(
+            # Sorting can eat all of your memory and make u sad :(
             # {'$sort': SON([('count', -1), ('_id', -1)])}
         ]
-        # print(name)
+        print(f'Subsetting for {name}')
         reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     # Check for matches and create the match set separately from mongodb aggregation
@@ -120,6 +121,8 @@ def run():
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
     reference_sets['soft_match'].insert_many(reference_sets['full_name'].find(
         {'_id.suffix' : {'$ne' : ''}}))
+    # reference_sets.drop_collection('hard_match')
     reference_sets['hard_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
+
     for m_type in ('hard', 'soft'):
         reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
