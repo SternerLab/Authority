@@ -85,23 +85,16 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
+    # ref_keys = ('hard_match', 'soft_match', 'non_match') # Ignore others for now
+    # client.drop_database('features')
+    # client.drop_database('feature_groups_a')
+    # client.drop_database('feature_groups_i')
+    ref_keys = ('first_initial_last_name',)
     print(ref_keys)
 
-    client.drop_database('features')
-    client.drop_database('feature_groups_a')
-    client.drop_database('feature_groups_i')
-
     limit = None
-    # limit = 2000000 # Reasonable
-    # limit = 1000000 # stricter
-    # limit = 200000
 
     threads = len(ref_keys)
     with Progress() as progress:
         for ref_key in ref_keys:
-            insert_features(ref_key, client=client, progress=progress,
-                            limit=limit)
-        # f = partial(insert_features, client=client, progress=progress, limit=limit)
-        # with Pool(max_workers=threads) as pool:
-        #     results = pool.map(f, ref_keys)
-        #     print(list(results))
+            insert_features(ref_key, client=client, progress=progress, limit=limit)
