@@ -7,7 +7,7 @@ def compare(a, b):
     return {k : f(a, b) for k, f in feature_dict.items()}
 
 x_a = [3, 4, 5, 6]
-limits  = dict(x3=7, x4=1, x5=7, x6=7)
+limits  = dict(x3=9, x4=1, x5=9, x6=9) # Updated
 excluded_features = {8, 9}
 x_i = [i for i in range(1, 11) if i not in x_a and i not in excluded_features]
 
