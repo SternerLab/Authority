@@ -10,7 +10,7 @@ def objective(u, v, elements, probs, eps=1e-16):
     for i, j in itertools.product(U, V):
         i, j = min(i, j), max(i, j)
         # Ah yes more numerical stability needed :)
-        obj = (probs[i, j] / (1 - probs[i, j] + eps)) / (len(U) * len(V))
+        obj = (probs[i, j] / (1 - probs[i, j] + eps)) / ((len(U) * len(V)) + eps)
         # Enable printing for visual spam :)
         # print(f'i={i}, j={j}, U={len(U)} V={len(V)}: {obj}')
         yield obj

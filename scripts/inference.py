@@ -64,8 +64,8 @@ def run():
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
-    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    query = {}
+    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    # query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
 
