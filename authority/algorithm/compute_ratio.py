@@ -35,26 +35,25 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
     try:
-        if non_match_count == 0:
+        if use_epsilon and non_match_count == 0:
             non_match_count += 1
         top = (match_count / total_matches)
         bot = (non_match_count / total_non_matches)
-        # if use_epsilon:
-        #     bot += epsilon
         ratio = top / bot
         assert ratio >= 0., f'ratios should ALWAYS be positive, but got {ratio} from {match_count} / {total_matches} {match_type}s and {non_match_count} / {total_non_matches} non matches'
-        print(f'Well defined ratio for feature {feature}: {ratio}')
-        print(f'{match_type} count: {match_count} / {total_matches}')
-        print(f'non_match count: {non_match_count} / {total_non_matches}')
+        des = 'Well defined'
     except ZeroDivisionError:
-        print(f'Undefined ratio for feature {feature} with suffix {suffix}')
-        print(f'{match_type} count: {match_count} / {total_matches}')
-        print(f'non_match count: {non_match_count} / {total_non_matches}')
-        bot += epsilon
-        ratio = top / bot
-        print(f'Resulting epsilon-stability ratio: {ratio}')
-        # raise
-        # ratio = 0 # Maybe default value of 0 is wrong, use epsilon instead?
+        ratio = 0 # To be smoothed..
+        # bot += epsilon
+        # ratio = top / bot
+        des = 'Undefined'
+
+    print(f'{des} ratio for feature {feature}: {ratio}')
+    print(f'    {match_type} count: {match_count} / {total_matches}')
+    print(f'    non_match count: {non_match_count} / {total_non_matches}')
+    print()
+    # raise
+    # ratio = 0 # Maybe default value of 0 is wrong, use epsilon instead?
     key = tuple(feature.values())
     return key, ratio, match_count + non_match_count
 
@@ -63,13 +62,13 @@ def compute_xi_ratios(features, feature_groups, x_i, match_type='soft_match'):
     computed_xi = dict()
     for i in x_i:
         key = f'x{i}'
-        ratios = compute_ratios(features, feature_groups, suffix=f'_{key}', xs=[i], match_type=match_type)
+        ratios = compute_ratios(features, feature_groups, suffix=f'_{key}', xs=[i], match_type=match_type, use_epsilon=True)
         for value, (r, w) in ratios.items():
             assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
             computed_xi[(key, value)] = r
     return computed_xi
 
-def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='match'):
+def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='match', use_epsilon=False):
     ''' Compute ratio of match and non-match frequencies '''
     if xs is None:
         xs = x_a
@@ -97,7 +96,9 @@ def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='mat
     for i, feature in enumerate(sorted_features):
         key, r, w = compute_ratio(feature, feature_groups,
                                   total_matches,
-                                  total_non_matches, suffix=suffix, match_type=match_type)
+                                  total_non_matches, suffix=suffix,
+                                  use_epsilon=use_epsilon,
+                                  match_type=match_type)
         assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
         computed_features[key] = r, w
     if not computed_features:

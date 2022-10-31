@@ -113,6 +113,9 @@ def x10(a, b):
     else:
         b_pre = b_first; b_post = ''
 
+    if a_first == '' or b_first == '':
+        return 0
+
     if a_first == b_first and len(a_first) > 1:
         # 11: exact match
         # return 11
