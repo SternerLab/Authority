@@ -45,23 +45,24 @@ def connected_components(table, is_first=False):
     if is_first:
         # Triplets in entire set
         yield itertools.combinations(np.arange(m), r=3)
-    for i, j in itertools.combinations(np.arange(m), r=2): # Upper triangle
-        if table[i, j] > 0.5:
-            # Merge i and j from u, v -> u
-            u, v = components[i], components[j]
-            if u != v: # Check that merge is unique and needed
-                u, v = min(u, v), max(u, v) # u < v
-                for k in range(m): # merge loop
-                    if components[k] == v:
-                        components[k] = u
-                n_components -= 1
-    print(f'Connected components found {n_components} components')
-    for c in range(n_components): # Yield a generator of triplets for each component
-        component = []
-        for k in range(m):
-            if components[k] == c:
-                component.append(k)
-        yield itertools.combinations(component, r=3) # Triplets in one component
+    else:
+        for i, j in itertools.combinations(np.arange(m), r=2): # Upper triangle
+            if table[i, j] > 0.5:
+                # Merge i and j from u, v -> u
+                u, v = components[i], components[j]
+                if u != v: # Check that merge is unique and needed
+                    u, v = min(u, v), max(u, v) # u < v
+                    for k in range(m): # merge loop
+                        if components[k] == v:
+                            components[k] = u
+                    n_components -= 1
+        print(f'Connected components found {n_components} components')
+        for c in range(n_components): # Yield a generator of triplets for each component
+            component = []
+            for k in range(m):
+                if components[k] == c:
+                    component.append(k)
+            yield itertools.combinations(component, r=3) # Triplets in one component
 
 def fix_triplet_violations_step(table, eps=1e-6, is_first=False):
     ''' A single step to fix triplet violations in a probability table '''
@@ -109,7 +110,8 @@ def fix_triplet_violations(table, max_iterations=30):
     ''' Fix triplet violations using a closed-form solution,
         section 4 of the 2005 or 2009 papers '''
     for i in range(max_iterations):
-        table, violations = fix_triplet_violations_step(table, is_first=i==0)
+        # is_first = False will intentionally ALWAYS use connected components
+        table, violations = fix_triplet_violations_step(table, is_first=False)# , is_first=i==0)
         print(f'Iteration {i} of triplet violations: violations = {violations}')
         if violations == 0:
             break

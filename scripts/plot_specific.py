@@ -1,6 +1,7 @@
 import seaborn as sns
 import matplotlib.pyplot as plt
 import pandas as pd
+import numpy as np
 
 from rich.progress import track
 
@@ -8,7 +9,6 @@ from pymongo import MongoClient
 from rich.pretty   import pprint
 from rich import print
 import pickle
-import pandas as pd
 
 from bson.objectid import ObjectId
 
@@ -35,18 +35,34 @@ def run():
     print('Validating..')
     print(inferred_blocks.find({}))
 
-    # probs=binary_probs, prior=new_prior,
-    # match_prior=match_prior, group_id=group_id))
-
     for cluster in inferred_blocks.find(query):
-        probs = pickle.loads(cluster['original_probs'])
-        pprint(cluster.keys())
-        print(cluster['prior'])
-        print(probs)
-        sns.heatmap(probs)
-        plt.show()
-        plt.clf()
+        gid  = cluster['group_id']
+        name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+        key  = f'{gid["first_initial"]}{gid["last"]}'
 
-        ratios = pickle.loads(cluster['ratios'])
-        sns.heatmap(ratios)
-        plt.show()
+        print(cluster)
+        for feature_key, (p, r, rs_b, c) in cluster['feature_analysis'].items():
+            features = tuple(int(x) for x in feature_key.split(' '))
+            rs = pickle.loads(rs_b)
+            print(f'{features} {p} {r}')
+            print(rs)
+        # print(cluster['feature_analysis'])
+        # 1/0
+
+        print(cluster['match_prior'])
+        print(cluster['prior'])
+        for cluster_key, title in (('original_probs', 'Original Probabilities'),
+                                   ('fixed_probs', 'Triplet Corrected Probabilities'),
+                                   ('probs',       'Final Probabilities'),
+                                   ('ratios',      'Ratio table')):
+            data = pickle.loads(cluster[cluster_key])
+            if cluster_key == 'ratios':
+                data = np.where(data > 0., np.log(data), data)
+            print(data)
+            axe = sns.heatmap(data)
+            axe.set_title(f'{title} for {name}')
+            axe.set_xlabel('Papers')
+            axe.set_ylabel('Papers')
+            plt.savefig(f'plots/{key}_{title.replace(" ", "_").lower()}.png')
+            plt.show()
+            plt.clf()

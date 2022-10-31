@@ -33,11 +33,12 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     r_a = interpolated[x3, x4, x5, x6]
     x_i_keys = [f'x{i}' for i in x_i]
     # pprint(xi_ratios)
+    # x1, x2, x7, x10
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
                      for k in x_i_keys] + [r_a])
-    print(r_is)
+    # print(r_is)
     ratio = np.prod(r_is)
-    return inference(ratio, prior), ratio
+    return inference(ratio, prior), ratio, r_is
 
 def get_r_table_data(r_table):
     xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
@@ -97,11 +98,20 @@ def run():
                 table = np.full((m, m), np.nan)
                 np.fill_diagonal(table, 1.)
 
+                feature_analysis = dict()
                 cached_features = []
                 for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
                     compared = compare_pair(pair, articles)
                     features = compared['features']
-                    p, r = infer_from_feature(features, interpolated, xi_ratios, match_prior)
+                    feature_key = ' '.join(map(str, features.values()))
+                    print(features, feature_key)
+                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, match_prior)
+                    rs_binary = Binary(pickle.dumps(rs), subtype=128)
+                    if feature_key not in feature_analysis:
+                        feature_analysis[feature_key] = p, r, rs_binary, 1
+                    else:
+                        _, _, _, c = feature_analysis[feature_key]
+                        feature_analysis[feature_key] = p, r, rs_binary, c + 1
                     assert r >= 0., f'Ratio {r} violates >0 constraint'
                     assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
                     i, j = [id_lookup[doc['ids']] for doc in pair['pair']]
@@ -118,7 +128,7 @@ def run():
                 new_table = np.full((m, m), np.nan)
                 np.fill_diagonal(new_table, 1.)
                 for i, j, features in cached_features: #!!!
-                    p, r = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, new_prior)
                     assert r >= 0., f'Ratio {r} violates >0 constraint'
                     assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
                     new_table[i, j] = p
@@ -131,10 +141,12 @@ def run():
                 original_probs_binary = Binary(pickle.dumps(table), subtype=128)
                 ratios_binary         = Binary(pickle.dumps(ratios), subtype=128)
 
+                inferred[ref_key]
                 try:
                     inferred[ref_key].insert_one(dict(
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
+                        feature_analysis=feature_analysis,
                         probs=binary_probs,
                         fixed_probs=fixed_probs_binary,
                         original_probs=original_probs_binary,
@@ -146,6 +158,7 @@ def run():
                     inferred[ref_key].insert_one(dict(
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
+                        feature_analysis=feature_analysis,
                         probs=binary_probs, prior=new_prior,
                         ratios=ratios_binary,
                         match_prior=match_prior, group_id=group_id))

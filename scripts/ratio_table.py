@@ -45,7 +45,6 @@ def run():
     xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
     r_table.insert_one(dict(xi_ratios=xi_ratios))
     pprint(xi_ratios)
-    1/0
 
     computed_ratios = compute_ratios(features, feature_groups_a, match_type='match')
     pprint(computed_ratios)

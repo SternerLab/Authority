@@ -20,7 +20,7 @@ def get_count(group, feature):
 def compute_ratio(feature, feature_groups, # match_count, non_match_count,
                   total_matches, total_non_matches, suffix='',
                   match_type='match',
-                  epsilon=1e-10, use_epsilon=True):
+                  epsilon=1e-4, use_epsilon=False):
     ''' Compute r and w:
             key: feature as a tuple
             r: (match prob : non match prob) ratio
@@ -35,17 +35,25 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
     try:
+        if non_match_count == 0:
+            non_match_count += 1
         top = (match_count / total_matches)
         bot = (non_match_count / total_non_matches)
-        if use_epsilon:
-            bot += epsilon
+        # if use_epsilon:
+        #     bot += epsilon
         ratio = top / bot
         assert ratio >= 0., f'ratios should ALWAYS be positive, but got {ratio} from {match_count} / {total_matches} {match_type}s and {non_match_count} / {total_non_matches} non matches'
+        print(f'Well defined ratio for feature {feature}: {ratio}')
+        print(f'{match_type} count: {match_count} / {total_matches}')
+        print(f'non_match count: {non_match_count} / {total_non_matches}')
     except ZeroDivisionError:
         print(f'Undefined ratio for feature {feature} with suffix {suffix}')
         print(f'{match_type} count: {match_count} / {total_matches}')
         print(f'non_match count: {non_match_count} / {total_non_matches}')
-        raise
+        bot += epsilon
+        ratio = top / bot
+        print(f'Resulting epsilon-stability ratio: {ratio}')
+        # raise
         # ratio = 0 # Maybe default value of 0 is wrong, use epsilon instead?
     key = tuple(feature.values())
     return key, ratio, match_count + non_match_count
