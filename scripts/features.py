@@ -89,7 +89,8 @@ def run():
     # client.drop_database('features')
     # client.drop_database('feature_groups_a')
     # client.drop_database('feature_groups_i')
-    ref_keys = ('first_initial_last_name',)
+    # ref_keys = ('first_initial_last_name',)
+    ref_keys = ('match',)
     print(ref_keys)
 
     limit = None

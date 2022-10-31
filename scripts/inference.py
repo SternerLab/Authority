@@ -32,13 +32,11 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
     r_a = interpolated[x3, x4, x5, x6]
     x_i_keys = [f'x{i}' for i in x_i]
-    r_is = np.array([xi_ratios.get((k, features[k] if features[k] is not None else 0),
-                                    0.) #????? TODO should not happen, is rare.
-                                    # Observed for the case x10 = 8,
-                                    # which apparently was not observed
-                                    # enough to estimate this ratio
-                     for k in x_i_keys])
-    ratio = np.prod(r_is) * r_a
+    # pprint(xi_ratios)
+    r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
+                     for k in x_i_keys] + [r_a])
+    print(r_is)
+    ratio = np.prod(r_is)
     return inference(ratio, prior), ratio
 
 def get_r_table_data(r_table):
@@ -65,8 +63,8 @@ def run():
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
-    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    query = {}
+    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    # query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
 
@@ -95,6 +93,7 @@ def run():
                 if m == 1:
                     continue
 
+                ratios = np.full((m, m), np.nan)
                 table = np.full((m, m), np.nan)
                 np.fill_diagonal(table, 1.)
 
@@ -109,6 +108,7 @@ def run():
                     i, j = min(i, j), max(i, j)
                     cached_features.append((i, j, features))
                     table[i, j] = p
+                    ratios[i, j] = r
 
                 # Disable triplet violation correction, prior estimation, and recalculation
                 # Set tables and priors to unchanged values for consistency
@@ -129,6 +129,7 @@ def run():
                 binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
                 fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
                 original_probs_binary = Binary(pickle.dumps(table), subtype=128)
+                ratios_binary         = Binary(pickle.dumps(ratios), subtype=128)
 
                 try:
                     inferred[ref_key].insert_one(dict(
@@ -137,6 +138,7 @@ def run():
                         probs=binary_probs,
                         fixed_probs=fixed_probs_binary,
                         original_probs=original_probs_binary,
+                        ratios=ratios_binary,
                         prior=new_prior,
                         match_prior=match_prior,
                         group_id=group_id))
@@ -145,6 +147,7 @@ def run():
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
                         probs=binary_probs, prior=new_prior,
+                        ratios=ratios_binary,
                         match_prior=match_prior, group_id=group_id))
     except KeyboardInterrupt:
         pass

@@ -37,11 +37,14 @@ def correct(t, eps=1e-8):
 
 Triplet.correct = correct
 
-def connected_components(table):
+def connected_components(table, is_first=False):
     ''' Yield groups of triplets in the table which form connected components '''
     m, m = table.shape
     components = np.arange(m) # Effectively cluster labels
     n_components = m
+    if is_first:
+        # Triplets in entire set
+        yield itertools.combinations(np.arange(m), r=3)
     for i, j in itertools.combinations(np.arange(m), r=2): # Upper triangle
         if table[i, j] > 0.5:
             # Merge i and j from u, v -> u
@@ -60,14 +63,14 @@ def connected_components(table):
                 component.append(k)
         yield itertools.combinations(component, r=3) # Triplets in one component
 
-def fix_triplet_violations_step(table, eps=1e-6):
+def fix_triplet_violations_step(table, eps=1e-6, is_first=False):
     ''' A single step to fix triplet violations in a probability table '''
     working = np.zeros_like(table)
     base    = np.zeros_like(table)
     m, m = table.shape
     violations = 0
     # for i, j, k in itertools.combinations(np.arange(m), r=3):
-    for component in connected_components(table):
+    for component in connected_components(table, is_first=is_first):
         for i, j, k in component:
             t = trip(table, i, j, k)
             assert t.ij < 1. + eps, f'Probability violation in input ij: {t.ij}'
@@ -106,7 +109,7 @@ def fix_triplet_violations(table, max_iterations=30):
     ''' Fix triplet violations using a closed-form solution,
         section 4 of the 2005 or 2009 papers '''
     for i in range(max_iterations):
-        table, violations = fix_triplet_violations_step(table)
+        table, violations = fix_triplet_violations_step(table, is_first=i==0)
         print(f'Iteration {i} of triplet violations: violations = {violations}')
         if violations == 0:
             break
