@@ -64,8 +64,8 @@ def run():
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
-    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    # query = {}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
 
@@ -104,7 +104,7 @@ def run():
                     compared = compare_pair(pair, articles)
                     features = compared['features']
                     feature_key = ' '.join(map(str, features.values()))
-                    print(features, feature_key)
+                    # print(features, feature_key)
                     p, r, rs = infer_from_feature(features, interpolated, xi_ratios, match_prior)
                     rs_binary = Binary(pickle.dumps(rs), subtype=128)
                     if feature_key not in feature_analysis:

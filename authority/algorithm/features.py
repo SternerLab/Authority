@@ -159,6 +159,5 @@ def x10(a, b):
                 return 1
         except IndexError:
             return 0
-    else:
-        return 0
-    raise NotImplementedError('This should never return None..')
+    return 0
+    # raise NotImplementedError(f'This should never return None.. {a_first}, {b_first}') # What??

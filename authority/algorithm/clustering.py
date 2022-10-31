@@ -5,11 +5,15 @@ from rich.pretty import pprint
 from rich import print
 import numpy as np
 
-def objective(u, v, elements, probs):
+def objective(u, v, elements, probs, eps=1e-16):
     U, V = elements[u], elements[v]
     for i, j in itertools.product(U, V):
         i, j = min(i, j), max(i, j)
-        yield (probs[i, j] / (1 - probs[i, j])) / (len(U) * len(V))
+        # Ah yes more numerical stability needed :)
+        obj = (probs[i, j] / (1 - probs[i, j] + eps)) / (len(U) * len(V))
+        # Enable printing for visual spam :)
+        # print(f'i={i}, j={j}, U={len(U)} V={len(V)}: {obj}')
+        yield obj
 
 def merge(labels, elements, u, v, c):
     for k, l in enumerate(labels):
@@ -32,6 +36,7 @@ def cluster(probs, stop='threshold', epsilon=1e-8):
         to_merge = None
         for u, v in itertools.combinations(np.arange(c), r=2): # All cluster pairs
             obj = prod(objective(u, v, elements, probs))       # Objective
+            # print(obj)
             if obj > best:
                 best = obj
                 to_merge = u, v
