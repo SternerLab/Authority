@@ -10,3 +10,4 @@ mesh_pre_fetched_txt
 plots
 authority_validation_metrics.csv
 *.csv
+*plots*
