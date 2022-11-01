@@ -37,12 +37,16 @@ def run():
     for i, tup in track(enumerate(val_df.itertuples()), total=val_df.shape[0]):
         frequencies[i] = lookup.get(tup.name, 0)
     val_df['frequency'] = frequencies
-    val_df.sort_values(by='frequency', ascending=False, inplace=True)
+    val_df = val_df[val_df['article_count'] > 1]
+    val_df.sort_values(by='article_count', ascending=False, inplace=True)
     print(val_df.describe())
-    columns = ['name', 'frequency', 'accuracy', 'precision', 'recall', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
+    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
     print(val_df.head(30)[columns])
     print(val_df.tail(30)[columns])
+    print('top 100')
     print(val_df.head(100)[columns].describe())
+    print('bottom 100')
+    print(val_df.tail(100)[columns].describe())
     val_df.describe().to_csv('aggregate.csv')
     val_df.to_csv('composite.csv')
 

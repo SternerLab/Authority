@@ -67,11 +67,10 @@ def run():
             except IncompleteValidation:
                 continue # pass
             long.append(clusterwise)
-            running = pd.DataFrame(long)
-            print(running)
-            # print(running.describe())
-            print(running.describe()[['accuracy', 'precision', 'recall', 'lumping', 'splitting']])
     except KeyboardInterrupt:
         pass
     finally:
+        1/0
+        running = pd.DataFrame(long)
+        print(running.describe()[['accuracy', 'precision', 'recall', 'lumping', 'splitting']])
         running.to_csv('authority_validation_metrics.csv')
