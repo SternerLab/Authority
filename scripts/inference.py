@@ -24,8 +24,8 @@ from sklearn.metrics import pairwise_distances
 
 def estimate_prior(n):
     # return 0.005101839035000989
-    return 0.
-    # return 1 / (1 + 10**-1.194 * n**0.7975)
+    # return 0.
+    return 1 / (1 + 10**-1.194 * n**0.7975)
 
 def inference(ratio, prior, eps=1e-10):
     result = 1 / (1 + (1 - prior) / (prior * ratio + eps))
@@ -95,7 +95,8 @@ def run():
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last' : 'brown'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'wardle'}}
-    query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
+    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
+    query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)

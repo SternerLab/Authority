@@ -26,12 +26,15 @@ def pairwise_metrics(clusters, reference_clusters):
 
 def unpack(clusters, reference_clusters):
     # Calculate pairwise true/false positives/negatives
-    article_count    = sum(len(c) for c in clusters)
-    all_ids          = list(set().union(e for c in reference_clusters for e in c))
+    article_count = sum(len(c) for c in clusters)
+    all_ids       = list(set().union(e for c in reference_clusters for e in c))
     tp = 0
     tn = 0
     fp = 0
     fn = 0
+    s = 0
+    for i, j in itertools.combinations(all_ids, r=2):
+        s += 1
     for i, j in itertools.combinations(all_ids, r=2):
         label = False
         for ref_cluster in reference_clusters:
@@ -45,11 +48,13 @@ def unpack(clusters, reference_clusters):
                     tp += 1
                 else:
                     fp += 1
+                break
+        else:
+            if label:
+                fn += 1
             else:
-                if label:
-                    fn += 1
-                else:
-                    tn += 1
+                tn += 1
+    assert tp + fn + fp + fn == s, 'Sanity check on confusion matrix FAILED :)'
     return tp, tn, fp, fn
 
 def cluster_metrics(clusters, reference_clusters):
