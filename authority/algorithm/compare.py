@@ -11,13 +11,9 @@ limits  = dict(x3=9, x4=1, x5=9, x6=9) # Updated
 excluded_features = {8, 9}
 x_i = [i for i in range(1, 11) if i not in x_a and i not in excluded_features]
 
-def compare_pair(pair, articles):
+def compare_pair(pair):
     a, b = pair['pair']
-    doc_a = articles.find_one({'_id' : a['ids']})
-    doc_b = articles.find_one({'_id' : b['ids']})
-    doc_a.update(**a['authors'])
-    doc_b.update(**b['authors'])
-    feature_dict = compare(doc_a, doc_b)
+    feature_dict = compare(a, b)
     for k, l in limits.items():
         feature_dict[k] = min(feature_dict[k], l)
     return dict(pair=[a, b], features=feature_dict)

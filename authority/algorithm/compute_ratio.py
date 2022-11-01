@@ -19,7 +19,8 @@ def get_count(group, feature):
 
 def compute_ratio(feature, feature_groups, # match_count, non_match_count,
                   total_matches, total_non_matches, suffix='',
-                  match_type='match',
+                  match_type='name_heuristic_match_set',
+                  non_match_type='name_non_match'
                   epsilon=1e-4, use_epsilon=False):
     ''' Compute r and w:
             key: feature as a tuple
@@ -27,10 +28,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
             w: total count of feature '''
 
     match_group     = feature_groups[match_type + suffix]
-    non_match_group = feature_groups[f'non_match' + suffix]
-
-    # print(f'{match_type}_group', match_group.count_documents({}))
-    # print('non_match_group', non_match_group.count_documents({}))
+    non_match_group = feature_groups[non_match_type + suffix]
 
     match_count     = get_count(match_group, feature)
     non_match_count = get_count(non_match_group, feature)
@@ -40,7 +38,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
         top = (match_count / total_matches)
         bot = (non_match_count / total_non_matches)
         ratio = top / bot
-        assert ratio >= 0., f'ratios should ALWAYS be positive, but got {ratio} from {match_count} / {total_matches} {match_type}s and {non_match_count} / {total_non_matches} non matches'
+        assert ratio >= 0., f'ratios should ALWAYS be positive, but got {ratio} from {match_count} / {total_matches} {match_type}s and {non_match_count} / {total_non_matches} {non_match_type}'
         des = 'Well defined'
     except ZeroDivisionError:
         ratio = 0 # To be smoothed..
@@ -50,30 +48,32 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
 
     print(f'{des} ratio for feature {feature}: {ratio}')
     print(f'    {match_type} count: {match_count} / {total_matches}')
-    print(f'    non_match count: {non_match_count} / {total_non_matches}')
+    print(f'    {non_match_type} count: {non_match_count} / {total_non_matches}')
     print()
     # raise
     # ratio = 0 # Maybe default value of 0 is wrong, use epsilon instead?
     key = tuple(feature.values())
     return key, ratio, match_count + non_match_count
 
-def compute_xi_ratios(features, feature_groups, x_i, match_type='soft_match'):
+def compute_xi_ratios(features, feature_groups, x_i, match_type='mesh_coauthor_heuristic_match_set',
+                      non_match_type='article_non_match'):
     ''' Compute ratio of match and non-match frequencies '''
     computed_xi = dict()
     for i in x_i:
         key = f'x{i}'
-        ratios = compute_ratios(features, feature_groups, suffix=f'_{key}', xs=[i], match_type=match_type, use_epsilon=True)
+        ratios = compute_ratios(features, feature_groups, suffix=f'_{key}', xs=[i], match_type=match_type, non_match_type=non_match_type, use_epsilon=True)
         for value, (r, w) in ratios.items():
             assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
             computed_xi[(key, value)] = r
     return computed_xi
 
-def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='match', use_epsilon=False):
+def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='name_heuristic_match_set',
+                   non_match_type='name_non_match', use_epsilon=False):
     ''' Compute ratio of match and non-match frequencies '''
     if xs is None:
         xs = x_a
     total_matches     = features[match_type].count_documents(filter={})
-    total_non_matches = features['non_match'].count_documents(filter={})
+    total_non_matches = features[non_match_type].count_documents(filter={})
 
     unique_features = OrderedDict()
     for ref_key in features.list_collection_names():
@@ -98,7 +98,8 @@ def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='mat
                                   total_matches,
                                   total_non_matches, suffix=suffix,
                                   use_epsilon=use_epsilon,
-                                  match_type=match_type)
+                                  match_type=match_type,
+                                  non_match_type=non_match_type)
         assert r >= 0., f'ratios should ALWAYS be positive, but got {r}'
         computed_features[key] = r, w
     if not computed_features:

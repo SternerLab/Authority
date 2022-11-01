@@ -8,6 +8,8 @@ from functools import partial
 import itertools
 import math
 
+from authority.algorithm.compare import compare_pair
+
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
 
@@ -27,11 +29,11 @@ def sample_grouped_pairs(client, database, ref_key):
             n  = group_doc.get('count', None)
             yield group_id, n, sample_pairs(group_doc['group'])
 
-def sample_non_match_pairs(a, b):
+def sample_article_non_match_pairs(a, b):
     for pair in itertools.product(a['group'], b['group']):
         yield dict(pair=pair)
 
-def create_non_match_pairs(client):
+def create_article_non_match_pairs(client):
     ''' Create non-matching set by sampling articles with different last names '''
     reference_sets = client.reference_sets
     reference_sets_pairs = client.reference_sets_pairs
@@ -43,15 +45,35 @@ def create_non_match_pairs(client):
         for a, b in itertools.combinations(cursor, r=2):
             n = len(a['group']) + len(b['group'])
             group_id = [a['_id'], b['_id']]
-            yield group_id, n, sample_non_match_pairs(a, b)
+            yield group_id, n, sample_article_non_match_pairs(a, b)
+
+def filter_name_non_match_pairs(pair_generator):
+    ''' Filter on "name, language, and nothing else" '''
+    for pair in pair_generator:
+        comparison   = compare_pair(pair)
+        f            = comparison['features']
+        lang         = f['x7'] >= 2
+        nothing_else = f['x6'] == 0 and f['x5'] == 0 and f['x3'] == 0 and f['x4'] == 0
+        if lang and nothing_else:
+            yield pair
+
+def create_name_non_match_pairs(client):
+    ''' Create "name" non-matching set by sampling articles
+        with the SAME names but NO other features in common '''
+    generator = sample_grouped_pairs(client, client.reference_sets, 'first_initial_last_name')
+    for group_id, n, pair_generator in generator:
+        yield group_id, n, filter_name_non_match_pairs(pair_generator)
 
 def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
-    if ref_key == 'non_match':
-        limit = reference_sets_pairs['match'].count_documents({}) # Limit to number of pairs in match set
-        limit *= 4
-        generator = create_non_match_pairs(client)
+    if 'non_match' in ref_key:
+        if 'article' in ref_key:
+            generator = create_article_non_match_pairs(client)
+        else:
+            generator = create_name_non_match_pairs(client)
+        limit = float('inf')
         total = limit # Assuming we will run into the limit, which we should
+        total = 100 # bogus
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)
@@ -68,6 +90,8 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
             inserted += len(result.inserted_ids)
             reference_sets_group_lookup[ref_key].insert_one(
                     dict(group_id=group_id, pair_ids=result.inserted_ids, n=n))
+        except TypeError:
+            pass # "documents must be a non-empty list" -> filting removed all pairs
         except pymongo.errors.InvalidOperation:
             pass # Only one element in group, cannot make pairs, should be filtered somehow
         except pymongo.errors.DocumentTooLarge:
@@ -87,8 +111,8 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    # client.drop_database('reference_sets_pairs')
-    # client.drop_database('reference_sets_group_lookup')
+    client.drop_database('reference_sets_pairs')
+    client.drop_database('reference_sets_group_lookup')
 
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
@@ -96,10 +120,8 @@ def run():
 
     total  = articles.count_documents({})
 
-    ref_keys = reference_sets.list_collection_names()
-    # ref_keys = ('first_initial_last_name', 'match', 'non_match')
-    # ref_keys = ('match', 'non_match') # Order matters
-    ref_keys = ('hard_match', 'soft_match', 'non_match',)
+    ref_keys = tuple(reference_sets.list_collection_names())
+    ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
 
     with Progress() as progress:
         for ref_key in ref_keys:

@@ -90,13 +90,13 @@ def run():
 
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last' : 'smith'}}
-    # query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last' : 'brown'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'wardle'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
-    query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
+    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
+    query = {}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)

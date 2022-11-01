@@ -18,7 +18,7 @@ import Levenshtein as _lev
 ''' Features as individual functions '''
 def x1(a, b):
     ''' Feature based on middle initials of each author '''
-    match a['middle_initial'], b['middle_initial']:
+    match a['authors']['middle_initial'], b['authors']['middle_initial']:
         case '', '':
             return 2
         case _, '':
@@ -33,7 +33,7 @@ def x1(a, b):
 
 def x2(a, b):
     ''' Feature based on the suffixes of each author '''
-    sx_a, sx_b = a['suffix'], b['suffix']
+    sx_a, sx_b = a['authors']['suffix'], b['authors']['suffix']
     if sx_a != '' and sx_a == sx_b:
         return 1
     else:
@@ -49,8 +49,8 @@ def x4(a, b):
 
 def x5(a, b):
     ''' Feature based on intersection between coauthors '''
-    keys_a = {auth['key'] for auth in a['authors']}
-    keys_b = {auth['key'] for auth in b['authors']}
+    keys_a = {auth['key'] for auth in a['coauthors']}
+    keys_b = {auth['key'] for auth in b['coauthors']}
     return len(keys_a & keys_b) # Technically intersection between authors
 
 def _get_mesh(x):
@@ -96,8 +96,8 @@ def x9(a, b):
 
 def x10(a, b):
     clean = lambda s : s.replace(' ', '').replace('-', '')
-    a_first = a['first']
-    b_first = b['first']
+    a_first = a['authors']['first']
+    b_first = b['authors']['first']
     a_clean = clean(a_first)
     b_clean = clean(b_first)
     hyphen_a = '-' in a_first
@@ -151,7 +151,7 @@ def x10(a, b):
             # 3: name matches first part of other name and length = 2 (th vs. thomas)
             return 3
         try:
-            if a_first[0] == b_first[0] and (a['middle_initial'] == b['middle_initial']):
+            if a_first[0] == b_first[0] and (a['authors']['middle_initial'] == b['authors']['middle_initial']):
                 # This case doesn't make sense, since our first names are parsed as single or hyphenated words only, so we can check "middle" names instead
                 return 2
             if a_first[0] == b_first[0] and len(a_first) == 1 or len(b_first) == 1:
@@ -159,5 +159,4 @@ def x10(a, b):
                 return 1
         except IndexError:
             return 0
-    return 0
-    # raise NotImplementedError(f'This should never return None.. {a_first}, {b_first}') # What??
+    return 0 # This is a catch all that triggers for empty names and other edge cases

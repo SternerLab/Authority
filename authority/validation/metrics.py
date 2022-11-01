@@ -54,7 +54,7 @@ def unpack(clusters, reference_clusters):
                 fn += 1
             else:
                 tn += 1
-    assert tp + fn + fp + fn == s, 'Sanity check on confusion matrix FAILED :)'
+    assert tp + tn + fp + fn == s, f'Sanity check on confusion matrix FAILED: {tp} + {tn} + {fp} + {fn} != {s}'
     return tp, tn, fp, fn
 
 def cluster_metrics(clusters, reference_clusters):

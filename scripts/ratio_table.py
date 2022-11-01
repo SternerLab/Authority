@@ -41,12 +41,12 @@ def run():
     client.drop_database('r_table')
     r_table          = client.r_table.r_table
 
-    xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i, match_type='hard_match')
+    xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i, match_type='name_match', non_match_type='name_non_match')
     xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
     r_table.insert_one(dict(xi_ratios=xi_ratios))
     pprint(xi_ratios)
 
-    computed_ratios = compute_ratios(features, feature_groups_a, match_type='soft_match')
+    computed_ratios = compute_ratios(features, feature_groups_a, match_type='mesh_coauthor_match', non_match_type='mesh_coauthor_non_match')
     pprint(computed_ratios)
     smoothed        = smooth(computed_ratios)
     interpolated    = interpolate(smoothed)

@@ -32,7 +32,7 @@ def run():
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
-    # query = {}
+    query = {}
 
     print('Validating..')
     print(inferred_blocks.find({}))
@@ -71,7 +71,8 @@ def run():
                 raise
             except IncompleteValidation:
                 continue # pass
-            long.append(clusterwise)
+            if clusterwise['s'] > 0:
+                long.append(clusterwise)
     except KeyboardInterrupt:
         pass
     finally:

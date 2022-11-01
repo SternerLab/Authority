@@ -69,10 +69,10 @@ def run():
         LN = Last Name
         LI = Last Name
         MI = Middle Initial
-        SX = Suffix
+        SF = Suffix
 
     Entailing:
-        matches: FI-MI-LN-SX
+        matches: FI-MI-LN-SF
         blocks:  FI-LN
         As well as all other combinations of these
 
@@ -93,15 +93,13 @@ def run():
             'full_name' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
     }
 
-    push_group = {'group' : {'$push' : {'title' : '$title',
-                                        'authors' : '$authors',
-                                        'coauthors' : '$coauthors',
-                                        'mesh' : '$mesh',
-                                        'ids' : '$_id'}}}
+    attributes = ['authors', 'coauthors', 'title', 'language', 'journal', 'mesh', 'affiliation']
+    push_group = {'group' : {'$push' : {**{attr : f'${attr}' for attr in attributes}, 'ids' : '$_id'}}}
 
     for name, fields in criteria.items():
         pipeline = [
             {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
+            {'$limit' : 100000},
             {'$set'  : {'coauthors' : '$authors'}}, # copy coauthor info
             {'$unwind' : '$authors'},
             {'$group': {
@@ -118,9 +116,7 @@ def run():
     # Check for matches and create the match set separately from mongodb aggregation
     # "soft" rule          : full name matches, including suffix etc
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
-    reference_sets['soft_match'].insert_many(reference_sets['full_name'].find(
+    reference_sets['name_match'].insert_many(reference_sets['full_name'].find(
         {'_id.suffix' : {'$ne' : ''}}))
-    reference_sets['hard_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
-
-    for m_type in ('hard', 'soft'):
-        reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
+    reference_sets['mesh_coauthor_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
+    #     reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())

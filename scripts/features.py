@@ -20,36 +20,17 @@ def make_group_pipeline(feature_dict):
                  ]
     return pipeline
 
-def generate(client, pairs, progress, task_name, limit=None):
+def generate(client, pairs, progress, task_name):
     ref_key = task_name.split(' ')[-1]
-    if limit is not None:
-        total = limit
-    else:
-        total = pairs.count_documents({})
     print(f'Task {task_name} has upper bound of {total} pairs!')
-    # with progress_lock:
     task = progress.add_task(task_name, total=total)
-    accepted = 0
-    rejected = 0
     with client.start_session(causal_consistency=True) as session:
         for pair in pairs.find(no_cursor_timeout=True, session=session):
-            if accepted + rejected == limit: # TODO Rejection ignored for now
-                break
-            # if accepted == limit:
-            #     break
-            mesh_a, mesh_b = (p['mesh'] for p in pair['pair'])
-            if isinstance(mesh_a, list) and isinstance(mesh_b, list):
-                accepted += 1
-            else:
-                rejected += 1
-            # with progress_lock:
             progress.update(task, advance=1)
             yield pair
-            # TODO Rejection based on MeSH terms is intentionally ignored for now
-            # print(f'{ref_key:20} rejected {rejected:5} accepted {accepted:5}')
 
 
-def insert_features(ref_key, client, progress, limit=None, batch_size=128):
+def insert_features(ref_key, client, progress, batch_size=128):
 
     jstor_database   = client.jstor_database
     articles         = jstor_database.articles
@@ -59,12 +40,12 @@ def insert_features(ref_key, client, progress, limit=None, batch_size=128):
     feature_groups_i = client.feature_groups_i
 
     task_name = f'Calculating features for {ref_key}'
-    generator = generate(client, pairs[ref_key], progress, task_name, limit)
+    generator = generate(client, pairs[ref_key], progress, task_name)
     while True:
         batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:
             break
-        features[ref_key].insert_many(compare_pair(pair, articles) for pair in batch)
+        features[ref_key].insert_many(compare_pair(pair) for pair in batch)
 
     ''' Group by features x_a '''
     pipeline = make_group_pipeline({f'x{i}' : f'$features.x{i}' for i in x_a})
@@ -82,20 +63,17 @@ def run():
 
     client         = MongoClient('localhost', 27017)
 
-
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
     # ref_keys = ('hard_match', 'soft_match', 'non_match') # Ignore others for now
-    # client.drop_database('features')
-    # client.drop_database('feature_groups_a')
-    # client.drop_database('feature_groups_i')
     # ref_keys = ('first_initial_last_name',)
-    ref_keys = ('match',)
-    print(ref_keys)
-
-    limit = None
+    # ref_keys = ('match',)
+    # print(ref_keys)
+    client.drop_database('features')
+    client.drop_database('feature_groups_a')
+    client.drop_database('feature_groups_i')
 
     threads = len(ref_keys)
     with Progress() as progress:
         for ref_key in ref_keys:
-            insert_features(ref_key, client=client, progress=progress, limit=limit)
+            insert_features(ref_key, client=client, progress=progress)
