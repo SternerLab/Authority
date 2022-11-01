@@ -23,10 +23,13 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import pairwise_distances
 
 def estimate_prior(n):
-    return 1 / (1 + 10**-1.194 * n**0.7975)
+    return 0. # hehe
+    # return 1 / (1 + 10**-1.194 * n**0.7975)
 
 def inference(ratio, prior, eps=1e-10):
-    return 1 / (1 + (1 - prior) / (prior * ratio + eps))
+    result = 1 / (1 + (1 - prior) / (prior * ratio + eps))
+    # print(f'inference: {ratio}, {prior}, {result}')
+    return result
 
 def infer_from_feature(features, interpolated, xi_ratios, prior):
     x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
@@ -34,15 +37,33 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     x_i_keys = [f'x{i}' for i in x_i]
     # pprint(xi_ratios)
     # x1, x2, x7, x10
+    excluded = {'x10'}
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
-                     for k in x_i_keys] + [r_a])
+                     for k in x_i_keys if k not in excluded] + [r_a])
+    # r_is = np.maximum(r_is, 10.) # Clip high ratio values
+    # r_is = r_is[:3] # Skip later features
+    # r_is = r_is[-1:]
+    # r_is
     # print(r_is)
     ratio = np.prod(r_is)
     return inference(ratio, prior), ratio, r_is
 
 def get_r_table_data(r_table):
-    xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
-    xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+    # xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
+    # xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+
+    xi_ratios = {('x1', 0) : 0.01343,
+                 ('x1', 1) : 0.09295,
+                 ('x1', 2) : 2.2058,
+                 ('x1', 3) : 14.5140,
+                 ('x2', 0) : 0.9978,
+                 ('x2', 1) : 242.16,
+                 ('x7', 0) : 0.001974,
+                 ('x7', 1) : 0.08700,
+                 ('x7', 2) : 1.5211,
+                 ('x7', 3) : 3.3532
+            } # From Torvik 2005
+    # ('x1', 0): 42340.74639204525
 
     interpolated_doc = next(r_table.find(
                             {'interpolated_xa_ratios' : {'$exists' : True}}))
@@ -64,7 +85,8 @@ def run():
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
-    query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
+    query = {'group_id' : {'first_initial' : 'j', 'last' : 'smith'}}
     # query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}

@@ -28,11 +28,11 @@ def run():
     self_citations.create_index('authors_id')
     self_citations.create_index('authors.key')
 
-    # name = 'amiller'
-    # first_initial, *last = name
-    # last = ''.join(last)
-    # query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
-    query = {}
+    name = 'jsmith'
+    first_initial, *last = name
+    last = ''.join(last)
+    query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
+    # query = {}
 
     print('Validating..')
     print(inferred_blocks.find({}))

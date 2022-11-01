@@ -27,7 +27,8 @@ def run():
     articles.create_index('title')
     articles.create_index('authors.key')
 
-    name = 'ajohnson'
+    # name = 'ajohnson'
+    name = 'jsmith'
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
@@ -58,6 +59,7 @@ def run():
             data = pickle.loads(cluster[cluster_key])
             if cluster_key == 'ratios':
                 data = np.where(data > 0., np.log(data), data)
+            print(cluster_key, title)
             print(data)
             axe = sns.heatmap(data)
             axe.set_title(f'{title} for {name}')
