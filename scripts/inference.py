@@ -23,7 +23,8 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import pairwise_distances
 
 def estimate_prior(n):
-    return 0. # hehe
+    # return 0.005101839035000989
+    return 0.
     # return 1 / (1 + 10**-1.194 * n**0.7975)
 
 def inference(ratio, prior, eps=1e-10):
@@ -49,9 +50,11 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     return inference(ratio, prior), ratio, r_is
 
 def get_r_table_data(r_table):
+    # Fetch estimated xi_ratios
     # xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
     # xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
 
+    # Use torvik xi_ratios
     xi_ratios = {('x1', 0) : 0.01343,
                  ('x1', 1) : 0.09295,
                  ('x1', 2) : 2.2058,
@@ -86,10 +89,13 @@ def run():
         print('    ', collection)
 
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    query = {'group_id' : {'first_initial' : 'j', 'last' : 'smith'}}
+    # query = {'group_id' : {'first_initial' : 'j', 'last' : 'smith'}}
     # query = {}
     # budiadi
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
+    # query = {'group_id' : {'first_initial' : 'j', 'last' : 'brown'}}
+    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'wardle'}}
+    query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)

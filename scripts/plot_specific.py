@@ -28,7 +28,10 @@ def run():
     articles.create_index('authors.key')
 
     # name = 'ajohnson'
-    name = 'jsmith'
+    # name = 'jsmith'
+    # name = 'jbrown'
+    # name = 'dwardle'
+    name = 'djohnson'
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}

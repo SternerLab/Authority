@@ -13,3 +13,5 @@ def run():
     # plt.savefig('plots/name_frequencies.png')
     # plt.show()
     # plt.clf()
+
+    composite_df = pd.read_csv('composite.csv')
