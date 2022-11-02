@@ -99,7 +99,7 @@ def run():
     for name, fields in criteria.items():
         pipeline = [
             {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
-            {'$limit' : 100000},
+            # {'$limit' : 100000},
             {'$set'  : {'coauthors' : '$authors'}}, # copy coauthor info
             {'$unwind' : '$authors'},
             {'$group': {

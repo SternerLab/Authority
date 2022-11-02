@@ -20,7 +20,7 @@ def get_count(group, feature):
 def compute_ratio(feature, feature_groups, # match_count, non_match_count,
                   total_matches, total_non_matches, suffix='',
                   match_type='name_heuristic_match_set',
-                  non_match_type='name_non_match'
+                  non_match_type='name_non_match',
                   epsilon=1e-4, use_epsilon=False):
     ''' Compute r and w:
             key: feature as a tuple

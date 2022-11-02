@@ -29,11 +29,11 @@ def sample_grouped_pairs(client, database, ref_key):
             n  = group_doc.get('count', None)
             yield group_id, n, sample_pairs(group_doc['group'])
 
-def sample_article_non_match_pairs(a, b):
+def sample_mesh_coauthor_non_match_pairs(a, b):
     for pair in itertools.product(a['group'], b['group']):
         yield dict(pair=pair)
 
-def create_article_non_match_pairs(client):
+def create_mesh_coauthor_non_match_pairs(client):
     ''' Create non-matching set by sampling articles with different last names '''
     reference_sets = client.reference_sets
     reference_sets_pairs = client.reference_sets_pairs
@@ -45,7 +45,7 @@ def create_article_non_match_pairs(client):
         for a, b in itertools.combinations(cursor, r=2):
             n = len(a['group']) + len(b['group'])
             group_id = [a['_id'], b['_id']]
-            yield group_id, n, sample_article_non_match_pairs(a, b)
+            yield group_id, n, sample_mesh_coauthor_non_match_pairs(a, b)
 
 def filter_name_non_match_pairs(pair_generator):
     ''' Filter on "name, language, and nothing else" '''
@@ -54,6 +54,7 @@ def filter_name_non_match_pairs(pair_generator):
         f            = comparison['features']
         lang         = f['x7'] >= 2
         nothing_else = f['x6'] == 0 and f['x5'] == 0 and f['x3'] == 0 and f['x4'] == 0
+        print(lang and nothing_else)
         if lang and nothing_else:
             yield pair
 
@@ -67,10 +68,11 @@ def create_name_non_match_pairs(client):
 def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
     if 'non_match' in ref_key:
-        if 'article' in ref_key:
-            generator = create_article_non_match_pairs(client)
-        else:
-            generator = create_name_non_match_pairs(client)
+        match ref_key:
+            case 'mesh_coauthor_non_match':
+                generator = create_mesh_coauthor_non_match_pairs(client)
+            case 'name_non_match':
+                generator = create_name_non_match_pairs(client)
         limit = float('inf')
         total = limit # Assuming we will run into the limit, which we should
         total = 100 # bogus
@@ -90,12 +92,13 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
             inserted += len(result.inserted_ids)
             reference_sets_group_lookup[ref_key].insert_one(
                     dict(group_id=group_id, pair_ids=result.inserted_ids, n=n))
-        except TypeError:
-            pass # "documents must be a non-empty list" -> filting removed all pairs
+        # except TypeError:
+        #     pass # "documents must be a non-empty list" -> filting removed all pairs
         except pymongo.errors.InvalidOperation:
             pass # Only one element in group, cannot make pairs, should be filtered somehow
         except pymongo.errors.DocumentTooLarge:
             print(f'Document too large for {len(result.inserted_ids)} ids')
+            print(f'Group id: {group_id}')
         if inserted > limit:
             print(f'Reaching upper limit {limit}')
             break
@@ -111,8 +114,8 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    client.drop_database('reference_sets_pairs')
-    client.drop_database('reference_sets_group_lookup')
+    # client.drop_database('reference_sets_pairs')
+    # client.drop_database('reference_sets_group_lookup')
 
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
@@ -120,8 +123,12 @@ def run():
 
     total  = articles.count_documents({})
 
-    ref_keys = tuple(reference_sets.list_collection_names())
-    ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
+    # ref_keys = tuple(reference_sets.list_collection_names())
+    # ref_keys = ('name_match', 'mesh_coauthor_match')
+    # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
+    # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
+    ref_keys = ('mesh_coauthor_non_match',)
+
 
     with Progress() as progress:
         for ref_key in ref_keys:
