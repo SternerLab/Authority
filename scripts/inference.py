@@ -23,8 +23,6 @@ from sklearn.cluster import AgglomerativeClustering
 from sklearn.metrics import pairwise_distances
 
 def estimate_prior(n):
-    # return 0.005101839035000989
-    # return 0.
     return 1 / (1 + 10**-1.194 * n**0.7975)
 
 def inference(ratio, prior, eps=1e-10):
@@ -38,9 +36,11 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     x_i_keys = [f'x{i}' for i in x_i]
     # pprint(xi_ratios)
     # x1, x2, x7, x10
+    excluded = {'x10'}
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
-                     for k in x_i_keys] + [r_a])
+                     for k in x_i_keys if k not in excluded] + [r_a])
     # r_is = r_is[-1:]
+    # print(r_is)
     ratio = np.prod(r_is)
     return inference(ratio, prior), ratio, r_is
 

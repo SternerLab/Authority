@@ -47,7 +47,6 @@ def run():
     pprint(xi_ratios)
 
     computed_ratios = compute_ratios(features, feature_groups_a, match_type='mesh_coauthor_match', non_match_type='mesh_coauthor_non_match')
-    pprint(computed_ratios)
     smoothed        = smooth(computed_ratios)
     interpolated    = interpolate(smoothed)
 
