@@ -31,7 +31,8 @@ def run():
     # name = 'jsmith'
     # name = 'jbrown'
     # name = 'dwardle'
-    name = 'djohnson'
+    # name = 'djohnson'
+    name = 'adixon'
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}

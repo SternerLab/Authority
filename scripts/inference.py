@@ -38,14 +38,9 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     x_i_keys = [f'x{i}' for i in x_i]
     # pprint(xi_ratios)
     # x1, x2, x7, x10
-    # excluded = {'x10'}
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
-                     for k in x_i_keys if k not in excluded] + [r_a])
-    # r_is = np.maximum(r_is, 10.) # Clip high ratio values
-    # r_is = r_is[:3] # Skip later features
+                     for k in x_i_keys] + [r_a])
     # r_is = r_is[-1:]
-    # r_is
-    # print(r_is)
     ratio = np.prod(r_is)
     return inference(ratio, prior), ratio, r_is
 

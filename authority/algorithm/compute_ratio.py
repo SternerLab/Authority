@@ -46,12 +46,11 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
         # ratio = top / bot
         des = 'Undefined'
 
-    print(f'{des} ratio for feature {feature}: {ratio}')
-    print(f'    {match_type} count: {match_count} / {total_matches}')
-    print(f'    {non_match_type} count: {non_match_count} / {total_non_matches}')
-    print()
-    # raise
-    # ratio = 0 # Maybe default value of 0 is wrong, use epsilon instead?
+    if des == 'Well defined':
+        print(f'{des} ratio for feature {feature}: {ratio}')
+        print(f'    {match_type} count: {match_count} / {total_matches}')
+        print(f'    {non_match_type} count: {non_match_count} / {total_non_matches}')
+        print()
     key = tuple(feature.values())
     return key, ratio, match_count + non_match_count
 
@@ -77,20 +76,20 @@ def compute_ratios(features, feature_groups, suffix='', xs=None, match_type='nam
 
     unique_features = OrderedDict()
     for ref_key in features.list_collection_names():
-        print(ref_key + suffix)
+        # print(ref_key + suffix)
         for group in feature_groups[ref_key + suffix].find():
             # Replace None features with 0 here. Should happen earlier, but...
             feature = group['_id']
             key = tuple(el if el is not None else 0 for el in feature.values())
-            print(f'{feature} {group["count"]}')
+            # print(f'{feature} {group["count"]}')
             unique_features[key] = feature
-    print('unique_features')
-    pprint(unique_features)
+    # print('unique_features')
+    # pprint(unique_features)
     sorted_features = [{f'x{i}' : f for i, f in zip(xs, fs)}
                        for fs in sorted(unique_features.keys())]
 
-    print('sorted features:')
-    pprint(sorted_features)
+    # print('sorted features:')
+    # pprint(sorted_features)
 
     computed_features = OrderedDict()
     for i, feature in enumerate(sorted_features):

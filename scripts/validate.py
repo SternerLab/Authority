@@ -3,11 +3,12 @@ from rich.pretty   import pprint
 from rich import print
 import pickle
 import pandas as pd
+import pymongo
 
 from bson.objectid import ObjectId
 
 from authority.validation.metrics import *
-from authority.validation.self_citations import resolve, make_contiguous
+from authority.validation.self_citations import resolve, make_contiguous, build_self_citation_cache
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -26,7 +27,7 @@ def run():
     scholar        = val.google_scholar_doi
     self_citations = val.self_citations
     self_citations.create_index('authors_id')
-    self_citations.create_index('authors.key')
+    self_citations.create_index([('authors.key', pymongo.ASCENDING)])
 
     name = 'bjohnson'
     first_initial, *last = name
@@ -37,6 +38,10 @@ def run():
     print('Validating..')
     print(inferred_blocks.find({}))
 
+    print('Building self-citation cache')
+    self_citation_cache = build_self_citation_cache(self_citations)
+    print('Done!')
+
     try:
         long = []
         for cluster in inferred_blocks.find(query):
@@ -46,7 +51,7 @@ def run():
                     continue
                 name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
 
-                self_citation_labels = resolve(cluster, self_citations)
+                self_citation_labels = resolve(cluster, self_citation_cache)
 
                 upper_bound = len(self_citation_labels) ** 2
 

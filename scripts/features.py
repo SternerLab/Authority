@@ -46,16 +46,19 @@ def insert_features(ref_key, client, progress, batch_size=128):
         batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:
             break
+        features.drop_collection(ref_key)
         features[ref_key].insert_many(compare_pair(pair) for pair in batch)
 
     ''' Group by features x_a '''
     pipeline = make_group_pipeline({f'x{i}' : f'$features.x{i}' for i in x_a})
+    feature_groups_a.drop_collection(ref_key)
     feature_groups_a[ref_key].insert_many(
         features[ref_key].aggregate(pipeline))
 
     pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
     for i, pipeline in zip(x_i, pipelines): # Fixed!
         group_key = f'{ref_key}_x{i}'
+        feature_groups_a.drop_collection(group_key)
         feature_groups_i[group_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
@@ -66,13 +69,11 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
-    # ref_keys = ('hard_match', 'soft_match', 'non_match') # Ignore others for now
-    # ref_keys = ('first_initial_last_name',)
-    # ref_keys = ('match',)
+    ref_keys = ('name_match',)
     print(ref_keys)
-    client.drop_database('features')
-    client.drop_database('feature_groups_a')
-    client.drop_database('feature_groups_i')
+    # client.drop_database('features')
+    # client.drop_database('feature_groups_a')
+    # client.drop_database('feature_groups_i')
 
     threads = len(ref_keys)
     with Progress() as progress:

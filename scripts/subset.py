@@ -82,21 +82,23 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    client.drop_database('reference_sets')
+    # client.drop_database('reference_sets')
     reference_sets = client.reference_sets
 
     # ''' Create matching based on different criteria '''
 
     criteria = {
-            'last_name' : ('last',),
-            'first_initial_last_name' : ('first_initial', 'last'),
-            'full_name' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
+            # 'last_name' : ('last',),
+            # 'first_initial_last_name' : ('first_initial', 'last'),
+            # 'full_name' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
+            'full_name' : ('first', 'middle_initial', 'last'), # ignore suffix
     }
 
     attributes = ['authors', 'coauthors', 'title', 'language', 'journal', 'mesh', 'affiliation']
     push_group = {'group' : {'$push' : {**{attr : f'${attr}' for attr in attributes}, 'ids' : '$_id'}}}
 
     for name, fields in criteria.items():
+        reference_sets.drop_collection(name)
         pipeline = [
             {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
             # {'$limit' : 100000},
@@ -116,7 +118,10 @@ def run():
     # Check for matches and create the match set separately from mongodb aggregation
     # "soft" rule          : full name matches, including suffix etc
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
+    reference_sets.drop_collection('name_match')
     reference_sets['name_match'].insert_many(reference_sets['full_name'].find(
-        {'_id.suffix' : {'$ne' : ''}}))
-    reference_sets['mesh_coauthor_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
-    #     reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
+        # {'_id.suffix' : {'$ne' : ''}} # Shouldn't actually be relevant anymore
+        ))
+    # reference_sets.drop_collection('mesh_coauthor_match')
+    # reference_sets['mesh_coauthor_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
+    # #     reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())

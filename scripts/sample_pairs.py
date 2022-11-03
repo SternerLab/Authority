@@ -130,6 +130,7 @@ def run():
     # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('mesh_coauthor_non_match',)
     # ref_keys = ('name_non_match',)
+    ref_keys = ('name_match',)
 
 
     with Progress() as progress:

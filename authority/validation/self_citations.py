@@ -26,7 +26,15 @@ def make_contiguous(cluster):
     contiguous = {k : update_label(v) for k, v in cluster.items()}
     return contiguous
 
-def resolve(cluster, self_citations):
+def build_self_citation_cache(self_citations):
+    cache = defaultdict(list)
+    total = self_citations.count_documents({})
+    for cluster in track(self_citations.find({}), total=total, description='Building self-citation cache'):
+        key = cluster['author']['key']
+        cache[key].append(cluster)
+    return cache
+
+def resolve(cluster, self_citation_cache):
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
     key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
@@ -35,7 +43,8 @@ def resolve(cluster, self_citations):
     resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
 
     # Merge clusters based on self-citation resolutions
-    for cite in self_citations.find({'author.key' : key}):
+    # for cite in self_citations.find({'author.key' : key}):
+    for cite in self_citation_cache[key]:
         aid, cid = cite['article_id'], cite['citation_id']
         if aid in article_ids and cid is not None and cid in article_ids:
             merge(aid, cid, resolved)
