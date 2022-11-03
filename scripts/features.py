@@ -12,7 +12,8 @@ progress_lock = Lock()
 from authority.algorithm.compare import compare_pair, x_a, x_i, limits
 
 def make_group_pipeline(feature_dict):
-    pipeline = [{'$group': {
+    pipeline = [# {'$limit' : 1000},
+                {'$group': {
                  '_id'    : feature_dict,
                  'count'  : {'$sum': 1},
                  }},
@@ -20,18 +21,22 @@ def make_group_pipeline(feature_dict):
                  ]
     return pipeline
 
-def generate(client, pairs, progress, task_name):
+def generate(client, pairs, progress, task_name, limit=float('inf')):
     ref_key = task_name.split(' ')[-1]
     total = pairs.count_documents({})
     print(f'Task {task_name} has upper bound of {total} pairs!')
     task = progress.add_task(task_name, total=total)
+    count = 0
     with client.start_session(causal_consistency=True) as session:
         for pair in pairs.find(no_cursor_timeout=True, session=session):
             progress.update(task, advance=1)
-            yield pair
+            count += 1
+            if count < limit:
+                yield pair
+            else:
+                break
 
-
-def insert_features(ref_key, client, progress, batch_size=128):
+def insert_features(ref_key, client, progress, batch_size=128, limit=float('inf')):
 
     jstor_database   = client.jstor_database
     articles         = jstor_database.articles
@@ -41,7 +46,7 @@ def insert_features(ref_key, client, progress, batch_size=128):
     feature_groups_i = client.feature_groups_i
 
     task_name = f'Calculating features for {ref_key}'
-    generator = generate(client, pairs[ref_key], progress, task_name)
+    generator = generate(client, pairs[ref_key], progress, task_name, limit=limit)
     while True:
         batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:
@@ -58,7 +63,7 @@ def insert_features(ref_key, client, progress, batch_size=128):
     pipelines = [make_group_pipeline({f'x{i}' : f'$features.x{i}'}) for i in x_i]
     for i, pipeline in zip(x_i, pipelines): # Fixed!
         group_key = f'{ref_key}_x{i}'
-        feature_groups_a.drop_collection(group_key)
+        feature_groups_i.drop_collection(group_key)
         feature_groups_i[group_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
@@ -75,7 +80,9 @@ def run():
     # client.drop_database('feature_groups_a')
     # client.drop_database('feature_groups_i')
 
+    limit = float('inf')
+
     threads = len(ref_keys)
     with Progress() as progress:
         for ref_key in ref_keys:
-            insert_features(ref_key, client=client, progress=progress)
+            insert_features(ref_key, client=client, progress=progress, limit=limit)

@@ -116,10 +116,11 @@ def run():
         reference_sets[name].insert_many(articles.aggregate(pipeline, allowDiskUse=True))
 
     # Check for matches and create the match set separately from mongodb aggregation
-    # "soft" rule          : full name matches, including suffix etc
+    # "name" rule          : full name matches, including suffix etc
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
     reference_sets.drop_collection('name_match')
     reference_sets['name_match'].insert_many(reference_sets['full_name'].find(
+        {'_id.middle_initial' : {'$ne' : ''}}
         # {'_id.suffix' : {'$ne' : ''}} # Shouldn't actually be relevant anymore
         ))
     # reference_sets.drop_collection('mesh_coauthor_match')
