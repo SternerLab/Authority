@@ -37,16 +37,25 @@ def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability
     # x1, x2, x7, x10
     if excluded is None:
         excluded = set()
+    if apply_stability:
+        epsilon = 1e-2
+        r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(100), r_a + epsilon)
+        # r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(42), r_a + epsilon)
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
                      for k in x_i_keys if k not in excluded] + [r_a])
+    # print(r_is)
+    r_is = np.minimum(r_is, 20.)
+    r_is += 1e-1
+    # print(r_is)
 
-    if apply_stability:
-        epsilon = 1e-3
-        r_is = np.where(r_is > 1.0, np.log2(r_is), r_is + epsilon)
+    # if apply_stability:
+    #     epsilon = 1e-1
+    #     r_is = np.where(r_is > 1.0, np.log10(r_is), r_is + epsilon) # :)
+    #     # r_is = np.where(r_is > 1.0, np.log(r_is) / np.log(6.283185307179586476925286766559005768394338798750218857621951), r_is + epsilon) # :)
     # r_is = r_is[-1:]
     # print(r_is)
 
-    ratio = np.prod(r_is)
+    ratio = np.prod(r_is) # Could replace with np.sum() potentially
     return inference(ratio, prior), ratio, r_is
 
 def get_r_table_data(r_table, use_torvik_ratios=False):
@@ -88,7 +97,7 @@ def run():
     query = {}
 
     r_table        = client.r_table.r_table
-    xi_ratios, interpolated = get_r_table_data(r_table)
+    xi_ratios, interpolated = get_r_table_data(r_table, use_torvik_ratios=True)
     infer_kwargs = dict(excluded = {'x10'}, apply_stability=True)
     try:
         with client.start_session(causal_consistency=True) as session:
@@ -153,7 +162,7 @@ def run():
                     new_table[i, j] = p
 
                 print(group_id)
-                cluster_labels = custom_cluster_alg(new_table)
+                cluster_labels = custom_cluster_alg(new_table, epsilon=1e-2) # Won't merge low-objective clusters
                 print('custom', cluster_labels)
                 binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
                 fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
