@@ -30,41 +30,43 @@ def inference(ratio, prior, eps=1e-10):
     # print(f'inference: {ratio}, {prior}, {result}')
     return result
 
-def infer_from_feature(features, interpolated, xi_ratios, prior):
+def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability=False, excluded=None):
     x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
     r_a = interpolated[x3, x4, x5, x6]
     x_i_keys = [f'x{i}' for i in x_i]
-    # pprint(xi_ratios)
     # x1, x2, x7, x10
-    excluded = {'x10'}
+    if excluded is None:
+        excluded = set()
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
                      for k in x_i_keys if k not in excluded] + [r_a])
+
+    if apply_stability:
+        epsilon = 1e-3
+        r_is = np.where(r_is > 1.0, np.log2(r_is), r_is + epsilon)
     # r_is = r_is[-1:]
     # print(r_is)
+
     ratio = np.prod(r_is)
     return inference(ratio, prior), ratio, r_is
 
-def get_r_table_data(r_table):
-    # Fetch estimated xi_ratios
-    xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
-    xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+def get_r_table_data(r_table, use_torvik_ratios=False):
+    if use_torvik_ratios:
+        xi_ratios = {('x1', 0) : 0.01343,
+                     ('x1', 1) : 0.09295,
+                     ('x1', 2) : 2.2058,
+                     ('x1', 3) : 14.5140,
+                     ('x2', 0) : 0.9978,
+                     ('x2', 1) : 242.16,
+                     ('x7', 0) : 0.001974,
+                     ('x7', 1) : 0.08700,
+                     ('x7', 2) : 1.5211,
+                     ('x7', 3) : 3.3532 }
+    else:
+        # Fetch estimated xi_ratios
+        xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
+        xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
 
-    # Use torvik xi_ratios
-    # xi_ratios = {('x1', 0) : 0.01343,
-    #              ('x1', 1) : 0.09295,
-    #              ('x1', 2) : 2.2058,
-    #              ('x1', 3) : 14.5140,
-    #              ('x2', 0) : 0.9978,
-    #              ('x2', 1) : 242.16,
-    #              ('x7', 0) : 0.001974,
-    #              ('x7', 1) : 0.08700,
-    #              ('x7', 2) : 1.5211,
-    #              ('x7', 3) : 3.3532
-    #         } # From Torvik 2005
-    # ('x1', 0): 42340.74639204525
-
-    interpolated_doc = next(r_table.find(
-                            {'interpolated_xa_ratios' : {'$exists' : True}}))
+    interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
     interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
     return xi_ratios, interpolated
 
@@ -87,6 +89,7 @@ def run():
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table)
+    infer_kwargs = dict(excluded = {'x10'}, apply_stability=True)
     try:
         with client.start_session(causal_consistency=True) as session:
             # ref_key = 'last_name'
@@ -121,7 +124,7 @@ def run():
                     features = compared['features']
                     feature_key = ' '.join(map(str, features.values()))
                     # print(features, feature_key)
-                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, match_prior)
+                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, match_prior, **infer_kwargs)
                     rs_binary = Binary(pickle.dumps(rs), subtype=128)
                     if feature_key not in feature_analysis:
                         feature_analysis[feature_key] = p, r, rs_binary, 1
@@ -144,7 +147,7 @@ def run():
                 new_table = np.full((m, m), np.nan)
                 np.fill_diagonal(new_table, 1.)
                 for i, j, features in cached_features: #!!!
-                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, new_prior)
+                    p, r, rs = infer_from_feature(features, interpolated, xi_ratios, new_prior, **infer_kwargs)
                     assert r >= 0., f'Ratio {r} violates >0 constraint'
                     assert p >= 0. and p <= 1., f'Probability estimate {p} for features {features} violates probability laws, using ratio {r} and prior {match_prior}'
                     new_table[i, j] = p
