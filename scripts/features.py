@@ -22,6 +22,7 @@ def make_group_pipeline(feature_dict):
 
 def generate(client, pairs, progress, task_name):
     ref_key = task_name.split(' ')[-1]
+    total = pairs.count_documents({})
     print(f'Task {task_name} has upper bound of {total} pairs!')
     task = progress.add_task(task_name, total=total)
     with client.start_session(causal_consistency=True) as session:
@@ -68,7 +69,7 @@ def run():
     # ref_keys = ('hard_match', 'soft_match', 'non_match') # Ignore others for now
     # ref_keys = ('first_initial_last_name',)
     # ref_keys = ('match',)
-    # print(ref_keys)
+    print(ref_keys)
     client.drop_database('features')
     client.drop_database('feature_groups_a')
     client.drop_database('feature_groups_i')

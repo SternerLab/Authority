@@ -38,7 +38,7 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
     x_i_keys = [f'x{i}' for i in x_i]
     # pprint(xi_ratios)
     # x1, x2, x7, x10
-    excluded = {'x10'}
+    # excluded = {'x10'}
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
                      for k in x_i_keys if k not in excluded] + [r_a])
     # r_is = np.maximum(r_is, 10.) # Clip high ratio values
@@ -51,21 +51,21 @@ def infer_from_feature(features, interpolated, xi_ratios, prior):
 
 def get_r_table_data(r_table):
     # Fetch estimated xi_ratios
-    # xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
-    # xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+    xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
+    xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
 
     # Use torvik xi_ratios
-    xi_ratios = {('x1', 0) : 0.01343,
-                 ('x1', 1) : 0.09295,
-                 ('x1', 2) : 2.2058,
-                 ('x1', 3) : 14.5140,
-                 ('x2', 0) : 0.9978,
-                 ('x2', 1) : 242.16,
-                 ('x7', 0) : 0.001974,
-                 ('x7', 1) : 0.08700,
-                 ('x7', 2) : 1.5211,
-                 ('x7', 3) : 3.3532
-            } # From Torvik 2005
+    # xi_ratios = {('x1', 0) : 0.01343,
+    #              ('x1', 1) : 0.09295,
+    #              ('x1', 2) : 2.2058,
+    #              ('x1', 3) : 14.5140,
+    #              ('x2', 0) : 0.9978,
+    #              ('x2', 1) : 242.16,
+    #              ('x7', 0) : 0.001974,
+    #              ('x7', 1) : 0.08700,
+    #              ('x7', 2) : 1.5211,
+    #              ('x7', 3) : 3.3532
+    #         } # From Torvik 2005
     # ('x1', 0): 42340.74639204525
 
     interpolated_doc = next(r_table.find(
@@ -81,20 +81,12 @@ def run():
     lookup         = client.reference_sets_group_lookup
     subsets        = client.reference_sets
 
-    client.drop_database('inferred') # Careful!
-
     inferred       = client.inferred
+    inferred.drop_collection('first_initial_last_name')
     print(f'Possible collections:')
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
-    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'johnson'}}
-    # query = {'group_id' : {'first_initial' : 'j', 'last' : 'smith'}}
-    # budiadi
-    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'udiadi'}}
-    # query = {'group_id' : {'first_initial' : 'j', 'last' : 'brown'}}
-    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'wardle'}}
-    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
     query = {}
 
@@ -130,7 +122,7 @@ def run():
                 feature_analysis = dict()
                 cached_features = []
                 for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
-                    compared = compare_pair(pair, articles)
+                    compared = compare_pair(pair)
                     features = compared['features']
                     feature_key = ' '.join(map(str, features.values()))
                     # print(features, feature_key)
@@ -170,7 +162,6 @@ def run():
                 original_probs_binary = Binary(pickle.dumps(table), subtype=128)
                 ratios_binary         = Binary(pickle.dumps(ratios), subtype=128)
 
-                inferred[ref_key]
                 try:
                     inferred[ref_key].insert_one(dict(
                         cluster_labels={str(k) : int(cluster_labels[i])

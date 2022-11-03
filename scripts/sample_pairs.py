@@ -53,7 +53,7 @@ def filter_name_non_match_pairs(pair_generator):
         comparison   = compare_pair(pair)
         f            = comparison['features']
         lang         = f['x7'] >= 2
-        nothing_else = f['x6'] == 0 and f['x5'] == 0 and f['x3'] == 0 and f['x4'] == 0
+        nothing_else = f['x6'] <= 1 and f['x5'] == 0 and f['x3'] <= 1 and f['x4'] == 0
         print(lang and nothing_else)
         if lang and nothing_else:
             yield pair
@@ -123,11 +123,13 @@ def run():
 
     total  = articles.count_documents({})
 
-    # ref_keys = tuple(reference_sets.list_collection_names())
+    ref_keys = tuple(reference_sets.list_collection_names())
+    ref_keys = ('first_initial_last_name',)
     # ref_keys = ('name_match', 'mesh_coauthor_match')
     # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
-    ref_keys = ('mesh_coauthor_non_match',)
+    # ref_keys = ('mesh_coauthor_non_match',)
+    # ref_keys = ('name_non_match',)
 
 
     with Progress() as progress:
