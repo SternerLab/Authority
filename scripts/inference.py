@@ -38,14 +38,14 @@ def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability
     if excluded is None:
         excluded = set()
     if apply_stability:
-        epsilon = 1e-2
-        r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(100), r_a + epsilon)
-        # r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(42), r_a + epsilon)
+        epsilon = 1e-3
+        r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(42), r_a + epsilon)
     r_is = np.array([xi_ratios[(k, features[k] if features[k] is not None else 0)]
                      for k in x_i_keys if k not in excluded] + [r_a])
     # print(r_is)
-    r_is = np.minimum(r_is, 20.)
-    r_is += 1e-1
+    r_is = np.minimum(r_is, 10.)
+    # r_is += 1e-1
+    r_is = np.maximum(r_is, 1e-2)
     # print(r_is)
 
     # if apply_stability:

@@ -70,7 +70,8 @@ def insert_features(ref_key, client, progress, batch_size=128, limit=float('inf'
 def run():
     ''' Calculate the features for the different sets in the database '''
 
-    client         = MongoClient('localhost', 27017)
+    client = MongoClient('localhost', 27017)
+    pairs  = client.reference_sets_pairs
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
@@ -86,3 +87,4 @@ def run():
     with Progress() as progress:
         for ref_key in ref_keys:
             insert_features(ref_key, client=client, progress=progress, limit=limit)
+        assert features[ref_key].count_documents({}) == pairs[ref_key].count_documents({}), f'Number of features does not match number of pairs'
