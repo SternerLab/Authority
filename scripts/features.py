@@ -47,11 +47,11 @@ def insert_features(ref_key, client, progress, batch_size=128, limit=float('inf'
 
     task_name = f'Calculating features for {ref_key}'
     generator = generate(client, pairs[ref_key], progress, task_name, limit=limit)
+    features.drop_collection(ref_key) # Fixed! Cannot go in loop
     while True:
         batch = list(itertools.islice(generator, batch_size))
         if len(batch) == 0:
             break
-        features.drop_collection(ref_key)
         features[ref_key].insert_many(compare_pair(pair) for pair in batch)
 
     ''' Group by features x_a '''
@@ -82,8 +82,6 @@ def run():
     # client.drop_database('feature_groups_i')
 
     limit = float('inf')
-
-    threads = len(ref_keys)
     with Progress() as progress:
         for ref_key in ref_keys:
             insert_features(ref_key, client=client, progress=progress, limit=limit)
