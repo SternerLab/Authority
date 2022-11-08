@@ -85,4 +85,4 @@ def run():
     with Progress() as progress:
         for ref_key in ref_keys:
             insert_features(ref_key, client=client, progress=progress, limit=limit)
-        assert features[ref_key].count_documents({}) == pairs[ref_key].count_documents({}), f'Number of features does not match number of pairs'
+        assert client.features[ref_key].count_documents({}) == pairs[ref_key].count_documents({}), f'Number of features does not match number of pairs'

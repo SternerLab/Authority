@@ -54,7 +54,6 @@ def filter_name_non_match_pairs(pair_generator):
         f            = comparison['features']
         lang         = f['x7'] >= 2
         nothing_else = f['x6'] <= 1 and f['x5'] == 0 and f['x3'] <= 1 and f['x4'] == 0
-        print(lang and nothing_else)
         if lang and nothing_else:
             yield pair
 
@@ -75,7 +74,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
                 generator = create_name_non_match_pairs(client)
         limit = float('inf')
         total = limit # Assuming we will run into the limit, which we should
-        total = 100 # bogus
+        total = 18000000 # Since it's not obvious how to get this analytically
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)

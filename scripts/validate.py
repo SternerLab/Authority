@@ -44,7 +44,7 @@ def run():
 
     try:
         long = []
-        for cluster in inferred_blocks.find(query):
+        for i, cluster in enumerate(inferred_blocks.find(query)):
             try:
                 gid = cluster['group_id']
                 if gid["first_initial"] == '':
@@ -78,10 +78,14 @@ def run():
                 continue # pass
             if clusterwise['s'] > 0:
                 long.append(clusterwise)
+            if i % 16 == 0:
+                running = pd.DataFrame(long)
+                print(running.describe()[['accuracy', 'precision', 'recall', 'lumping', 'splitting']])
+                print(running[['tp', 'tn', 'fp', 'fn', 's']])
     except KeyboardInterrupt:
         pass
     finally:
         running = pd.DataFrame(long)
         print(running.describe()[['accuracy', 'precision', 'recall', 'lumping', 'splitting']])
         print(running[['tp', 'tn', 'fp', 'fn', 's']])
-        running.to_csv('authority_validation_metrics.csv')
+        running.to_csv('data/authority_validation_metrics.csv')
