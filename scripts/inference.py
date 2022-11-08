@@ -100,6 +100,7 @@ def run():
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table, use_torvik_ratios=True)
     excluded = {'x7'}
+    k = len(x_i) - len(excluded) + 1 # x_i features + 1 for x_a features
     infer_kwargs = dict(excluded=excluded, apply_stability=False)
     try:
         with client.start_session(causal_consistency=True) as session:
@@ -125,6 +126,7 @@ def run():
                     continue
 
                 ratios = np.full((m, m), np.nan)
+                ratios_individual = np.full((m, m, k), np.nan)
                 table = np.full((m, m), np.nan)
                 np.fill_diagonal(table, 1.)
 
@@ -149,6 +151,7 @@ def run():
                     cached_features.append((i, j, features))
                     table[i, j] = p
                     ratios[i, j] = r
+                    ratios_individual[i, j] = rs
 
                 # Disable triplet violation correction, prior estimation, and recalculation
                 # Set tables and priors to unchanged values for consistency
@@ -166,10 +169,11 @@ def run():
                 print(group_id)
                 cluster_labels = custom_cluster_alg(new_table, epsilon=1e-2) # Won't merge low-objective clusters
                 print('custom', cluster_labels)
-                binary_probs          = Binary(pickle.dumps(new_table), subtype=128)
-                fixed_probs_binary    = Binary(pickle.dumps(fixed_table), subtype=128)
-                original_probs_binary = Binary(pickle.dumps(table), subtype=128)
-                ratios_binary         = Binary(pickle.dumps(ratios), subtype=128)
+                binary_probs             = Binary(pickle.dumps(new_table), subtype=128)
+                fixed_probs_binary       = Binary(pickle.dumps(fixed_table), subtype=128)
+                original_probs_binary    = Binary(pickle.dumps(table), subtype=128)
+                ratios_binary            = Binary(pickle.dumps(ratios), subtype=128)
+                ratios_individual_binary = Binary(pickle.dumps(ratios_individual), subtype=128)
 
                 try:
                     inferred[ref_key].insert_one(dict(
@@ -180,6 +184,7 @@ def run():
                         fixed_probs=fixed_probs_binary,
                         original_probs=original_probs_binary,
                         ratios=ratios_binary,
+                        ratios_individual=ratios_individual_binary,
                         prior=new_prior,
                         match_prior=match_prior,
                         group_id=group_id))
