@@ -8,7 +8,7 @@ from authority.validation.google_scholar import get_clusters
 def run():
     client = MongoClient('localhost', 27017)
     jstor_database   = client.jstor_database
-    scholar          = client.validation.google_scholar
+    scholar           = client.validation.google_scholar_dois
     # scholar_authors  = scholar_db.authors
     articles         = jstor_database.articles
     print(scholar.count_documents({}))

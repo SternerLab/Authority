@@ -42,9 +42,12 @@ def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability
     #     r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(42), r_a + epsilon)
     r_is = np.array([xi_ratios.get((k, features[k] if features[k] is not None else 0), 0)
                      for k in x_i_keys if k not in excluded] + [r_a])
+    r_is = np.abs(r_is) # just in case?
+    # r_is = np.maximum(r_is, 1e-4)
+    # r_is = np.maximum(r_is, 1e-2)
     # print(r_is)
     # oh boy :)
-    r_is = np.minimum(np.maximum(r_is, 1e-2), 10.)
+    # r_is = np.minimum(np.maximum(r_is, 1e-2), 10.)
     # r_is += 1e-1
     # r_is = np.maximum(r_is, 1e-2)
     # print(r_is)
@@ -95,11 +98,16 @@ def run():
         print('    ', collection)
 
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
+    # query = {'group_id' : {'first_initial' : 'a'}}
+    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
     query = {}
 
     r_table        = client.r_table.r_table
-    xi_ratios, interpolated = get_r_table_data(r_table, use_torvik_ratios=True)
-    excluded = {'x7'}
+    xi_ratios, interpolated = get_r_table_data(r_table, use_torvik_ratios=False)
+    # excluded = {'x7'}
+    # excluded = {'x2'}
+    # excluded = {'x2', 'x7'}
+    excluded = set()
     k = len(x_i) - len(excluded) + 1 # x_i features + 1 for x_a features
     infer_kwargs = dict(excluded=excluded, apply_stability=False)
     try:
@@ -167,7 +175,9 @@ def run():
                     new_table[i, j] = p
 
                 print(group_id)
-                cluster_labels = custom_cluster_alg(new_table, epsilon=1e-2) # Won't merge low-objective clusters
+                # Won't merge low-objective clusters
+                cluster_labels = custom_cluster_alg(new_table, epsilon=1e-10) # Merge more (if splitting)
+
                 print('custom', cluster_labels)
                 binary_probs             = Binary(pickle.dumps(new_table), subtype=128)
                 fixed_probs_binary       = Binary(pickle.dumps(fixed_table), subtype=128)

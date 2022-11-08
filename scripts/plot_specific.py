@@ -12,6 +12,7 @@ import pickle
 
 from bson.objectid import ObjectId
 
+from authority.algorithm.compare import compare_pair, x_i, x_a
 from authority.validation.metrics import *
 from authority.validation.self_citations import resolve, make_contiguous
 
@@ -52,8 +53,6 @@ def run():
             rs = pickle.loads(rs_b)
             print(f'{features} {p} {r}')
             print(rs)
-        # print(cluster['feature_analysis'])
-        # 1/0
 
         print(cluster['match_prior'])
         print(cluster['prior'])
@@ -67,6 +66,22 @@ def run():
             print(cluster_key, title)
             print(data)
             axe = sns.heatmap(data)
+            axe.set_title(f'{title} for {name}')
+            axe.set_xlabel('Papers')
+            axe.set_ylabel('Papers')
+            plt.savefig(f'plots/{key}_{title.replace(" ", "_").lower()}.png')
+            plt.show()
+            plt.clf()
+
+        ratios_individual = pickle.loads(cluster['ratios_individual'])
+        for r_i in range(ratios_individual.shape[-1]):
+            ratio_slice = ratios_individual[:, :, r_i]
+            # excluded = {7}
+            excluded = {2}
+            x_i_filtered = [n for n in x_i if n not in excluded] + ['a']
+            title = f'Pairwise Ratios for x_{x_i_filtered[r_i]}'
+            print(title)
+            axe = sns.heatmap(ratio_slice)
             axe.set_title(f'{title} for {name}')
             axe.set_xlabel('Papers')
             axe.set_ylabel('Papers')

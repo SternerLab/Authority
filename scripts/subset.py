@@ -89,7 +89,7 @@ def run():
 
     criteria = {
             # 'last_name' : ('last',),
-            # 'first_initial_last_name' : ('first_initial', 'last'),
+            'first_initial_last_name' : ('first_initial', 'last'),
             # 'full_name_middle_initial_suffix' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
             # 'full_name_middle_initial_no_suffix' : ('first', 'middle_initial', 'last'), # ignore suffix
             'initials_last_suffix' : ('first_initial', 'middle_initial', 'last', 'suffix'), # seems more robust
@@ -102,7 +102,6 @@ def run():
         reference_sets.drop_collection(name)
         pipeline = [
             {'$match': {'mesh': {'$ne': ''}}},      # filter by MeSH presence
-            # {'$limit' : 100000},
             {'$set'  : {'coauthors' : '$authors'}}, # copy coauthor info
             {'$unwind' : '$authors'},
             {'$group': {
@@ -120,11 +119,9 @@ def run():
     # "name" rule          : full name matches, including suffix etc
     # "mesh-coauthor" rule : share one or more coauthor names AND two or more MeSH terms
     reference_sets.drop_collection('name_match')
-    # reference_sets['name_match'].insert_many(reference_sets['full_name'].find(
     reference_sets['name_match'].insert_many(reference_sets['initials_last_suffix'].find(
         {'_id.middle_initial' : {'$ne' : ''},
          '_id.suffix'         : {'$ne' : ''}
-            }))
-    # reference_sets.drop_collection('mesh_coauthor_match')
-    # reference_sets['mesh_coauthor_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))
-    # #     reference_sets['match'].insert_many(reference_sets[f'{m_type}_match'].find())
+            })) # Technically also drops names with multiple middle initials
+    reference_sets.drop_collection('mesh_coauthor_match')
+    reference_sets['mesh_coauthor_match'].insert_many(create_mesh_coauthor_match_set(reference_sets))

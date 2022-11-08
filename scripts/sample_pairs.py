@@ -53,7 +53,10 @@ def filter_name_non_match_pairs(pair_generator):
         comparison   = compare_pair(pair)
         f            = comparison['features']
         lang         = f['x7'] >= 2
-        nothing_else = f['x6'] <= 1 and f['x5'] == 0 and f['x3'] <= 1 and f['x4'] == 0
+        # nothing_else = f['x6'] <= 2 and f['x5'] == 1 and f['x3'] <= 2 and f['x4'] == 0
+        # nothing_else = f['x5'] == 0 and f['x1'] != 3 and f['x2'] == 0 and f['x4'] == 0
+        # Only consider name features, no x3, x4, x5, x6 etc
+        nothing_else = f['x1'] == 0 and f['x2'] == 0 # and f['x4'] == 0 #?
         if lang and nothing_else:
             yield pair
 
@@ -128,8 +131,8 @@ def run():
     # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('mesh_coauthor_non_match',)
-    # ref_keys = ('name_non_match',)
-    ref_keys = ('name_match',)
+    ref_keys = ('name_non_match',)
+    # ref_keys = ('name_match',)
 
 
     with Progress() as progress:
