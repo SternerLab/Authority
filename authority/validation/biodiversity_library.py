@@ -2,7 +2,7 @@ from rich.pretty import pprint
 import requests
 import json
 
-from ..process.process import process_name, construct_name, remove_stop_words
+from ..parse.parse import parse_name, construct_name, remove_stop_words
 
 author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
 metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
@@ -36,7 +36,7 @@ def parse(metadata):
 def parse_bhl_name(bhl_name):
     last, first = bhl_name.split(',')
     data = {'given-names' : first.strip(), 'surname' : last.strip()}
-    return process_name(data, order=0)
+    return parse_name(data, order=0)
 
 ''' Example JSON data
 {

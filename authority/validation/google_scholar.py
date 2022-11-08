@@ -4,7 +4,7 @@ import itertools
 from rich.pretty import pprint
 import re
 
-from ..process.process import process_name, construct_name, remove_stop_words
+from ..parse.parse import parse_name, construct_name, remove_stop_words
 
 scholar.set_timeout(5)
 
@@ -29,8 +29,8 @@ def title_close_match(a, b, threshold=2):
         score = title_words_iou_score(words_a, words_b)
         return score > iou_threshold
 
-def process_google_scholar_name(name, order=1):
-    ''' Process a name in the Google Scholar format into the common format used in
+def parse_google_scholar_name(name, order=1):
+    ''' parse a name in the Google Scholar format into the common format used in
         mongodb for JSTOR'''
     components = re.split('[ .,]+', name)
     if len(components) == 1:
@@ -63,7 +63,7 @@ def get_papers_by_author(reference_author, reference_title, author_limit=10,
     ''' Search for an author and resolve their name by matching paper title '''
     query = scholar.search_author(reference_author['full'])
     for author in itertools.islice(query, author_limit):
-        name_dict = process_name(author['name'], order=0)
+        name_dict = parse_name(author['name'], order=0)
         scholar.fill(author,
                 sections=['basics', 'indices', 'publications', 'coauthors'])
         titles = [remove_stop_words(pub['bib']['title'])
@@ -86,7 +86,7 @@ def get_papers_by_title(reference_title, reference_authors, paper_limit=10, stri
     for paper in itertools.islice(query, paper_limit):
         title   = remove_stop_words(paper['bib']['title'])
         pprint(title)
-        authors = [process_google_scholar_name(name, order=i)
+        authors = [parse_google_scholar_name(name, order=i)
                    for i, name in enumerate(paper['bib'].get('author', []))]
         pprint(authors)
         author_matches = [a['key'] == b['key']
