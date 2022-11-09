@@ -6,12 +6,14 @@ from rich import print
 from bson.son import SON
 from bson.binary import Binary
 import itertools
+import json
 import scipy
 import pickle
 import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from pathlib import Path
 
 import itertools
 
@@ -30,57 +32,63 @@ def inference(ratio, prior, eps=1e-10):
     # print(f'inference: {ratio}, {prior}, {result}')
     return result
 
-def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability=False, excluded=None):
-    x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
-    r_a = interpolated[x3, x4, x5, x6]
-    x_i_keys = [f'x{i}' for i in x_i]
-    # x1, x2, x7, x10
+def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability=False, excluded=None,
+                       ratios_from='default'):
     if excluded is None:
         excluded = set()
-    # if apply_stability:
-    #     epsilon = 1e-3
-    #     r_a = np.where(r_a > 1.0, np.log10(r_a) / np.log10(42), r_a + epsilon)
+    x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
+    if ratios_from == 'default':
+        r_a = interpolated[x3, x4, x5, x6]
+    else:
+        r_a = interpolated.get((features['x10'] + 1, x3, x4, x5, x6), 1.0)
+        excluded.add('x10')
+    x_i_keys = [f'x{i}' for i in x_i]
     r_is = np.array([xi_ratios.get((k, features[k] if features[k] is not None else 0), 0)
                      for k in x_i_keys if k not in excluded] + [r_a])
     r_is = np.abs(r_is) # just in case?
-    # r_is = np.maximum(r_is, 1e-4)
-    # r_is = np.maximum(r_is, 1e-2)
-    # print(r_is)
-    # oh boy :)
-    # r_is = np.minimum(np.maximum(r_is, 1e-2), 10.)
-    # r_is += 1e-1
-    # r_is = np.maximum(r_is, 1e-2)
-    # print(r_is)
-
-    # if apply_stability:
-    #     epsilon = 1e-1
-    #     r_is = np.where(r_is > 1.0, np.log10(r_is), r_is + epsilon) # :)
-    #     # r_is = np.where(r_is > 1.0, np.log(r_is) / np.log(6.283185307179586476925286766559005768394338798750218857621951), r_is + epsilon) # :)
-    # r_is = r_is[-1:]
-    # print(r_is)
-
+    r_is = np.minimum(r_is, 10.)
+    # r_is = np.where(r_is > 1.0, np.log10(r_is) / np.log10(42), r_is + epsilon)
     ratio = np.prod(r_is) # Could replace with np.sum() potentially
     return inference(ratio, prior), ratio, r_is
 
-def get_r_table_data(r_table, use_torvik_ratios=False):
-    if use_torvik_ratios:
-        xi_ratios = {('x1', 0) : 0.01343,
-                     ('x1', 1) : 0.09295,
-                     ('x1', 2) : 2.2058,
-                     ('x1', 3) : 14.5140,
-                     ('x2', 0) : 0.9978,
-                     ('x2', 1) : 242.16,
-                     ('x7', 0) : 0.001974,
-                     ('x7', 1) : 0.08700,
-                     ('x7', 2) : 1.5211,
-                     ('x7', 3) : 3.3532 }
-    else:
-        # Fetch estimated xi_ratios
-        xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
-        xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+def parse_previous_ratios():
+    x_i_keys = [f'x{i}' for i in x_i]
+    xi_ratios = dict()
+    for x_i_key in x_i_keys:
+        path = Path(f'previous_data/r_{x_i_key}.json')
+        r_slice = json.loads(path.read_text())
+        xi_ratios.update({(x_i_key, int(v)) : r for v, r in r_slice.items()})
+    path = Path(f'previous_data/r_final.json')
+    r_interpolated = json.loads(path.read_text())
+    interpolated = {tuple(int(v.strip()) for v in s.replace('[', '').replace(']', '').split(',')) :
+                    r for s, r in r_interpolated.items()} # Ah yes..
+    return xi_ratios, interpolated
 
-    interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
-    interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
+def get_r_table_data(r_table, ratios_from='default'):
+    match ratios_from:
+        case 'torvik':
+            xi_ratios = {('x1', 0) : 0.01343,
+                         ('x1', 1) : 0.09295,
+                         ('x1', 2) : 2.2058,
+                         ('x1', 3) : 14.5140,
+                         ('x2', 0) : 0.9978,
+                         ('x2', 1) : 242.16,
+                         ('x7', 0) : 0.001974,
+                         ('x7', 1) : 0.08700,
+                         ('x7', 2) : 1.5211,
+                         ('x7', 3) : 3.3532 }
+            # Yes, this is copied :(
+            interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
+            interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
+        case 'default':
+            # Fetch estimated xi_ratios
+            xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
+            xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+            interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
+            interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
+        case 'previous':
+            xi_ratios, interpolated = parse_previous_ratios()
+
     return xi_ratios, interpolated
 
 def run():
@@ -92,24 +100,27 @@ def run():
     subsets        = client.reference_sets
 
     inferred       = client.inferred
-    inferred.drop_collection('first_initial_last_name')
+    # inferred.drop_collection('first_initial_last_name')
     print(f'Possible collections:')
     for collection in lookup.list_collection_names():
         print('    ', collection)
 
     # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'a'}}
-    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
-    query = {}
+    query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
+    # query = {}
+    ratios_from = 'previous'
 
     r_table        = client.r_table.r_table
-    xi_ratios, interpolated = get_r_table_data(r_table, use_torvik_ratios=False)
+    xi_ratios, interpolated = get_r_table_data(r_table, ratios_from=ratios_from)
     # excluded = {'x7'}
     # excluded = {'x2'}
     # excluded = {'x2', 'x7'}
     excluded = set()
     k = len(x_i) - len(excluded) + 1 # x_i features + 1 for x_a features
-    infer_kwargs = dict(excluded=excluded, apply_stability=False)
+    if ratios_from == 'previous':
+        k -= 1
+    infer_kwargs = dict(excluded=excluded, apply_stability=False, ratios_from=ratios_from)
     try:
         with client.start_session(causal_consistency=True) as session:
             # ref_key = 'last_name'

@@ -1,6 +1,7 @@
 import sqlite3
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich.progress import track
 from rich import print
 import itertools
 import pymongo
@@ -19,36 +20,32 @@ show_columns = 'PRAGMA table_info({});'
 # │   │   │   │   '#text': '23651754'
 
 def resolve(aid, articles):
-    return str(articles.find_one({'front.article-meta.article-id.#text' : aid})['_id'])
+    result = articles.find_one({'front.article-meta.article-id.#text' : aid})
+    if result is None:
+        return None
+    else:
+        return str(result['_id'])
 
 def expand_cluster(row, articles):
     first_initial_last_name, total_records, clusters, total_clusters, authors, author_count = row
-    print(first_initial_last_name)
-    # Why are they stored like thi are they stored like thiss?
+    # Why are they stored like this?
     clusters = clusters.replace('\'', '').replace('"', '').replace('[', '').replace(']', '').split(',')
     clusters = [[aid.strip() for aid in c.split(';')] for c in clusters]
-    print(clusters)
     resolved_clusters = [[resolve(aid, articles) for aid in aids] for aids in clusters]
-    return resolved_clusters
+    resolved_clusters = [[aid for aid in aids if aid is not None] for aids in resolved_clusters]
+    last, fi = first_initial_last_name.split('_')
+    key = f'{fi.lower()}{last.lower()}'
+    return dict(group_id=dict(first_initial=fi.lower(), last=last.lower()),
+                key=key,
+                cluster_labels={k : i for i, cluster in enumerate(resolved_clusters) for k in cluster})
 
-# def expand_author_row(row, articles):
-#     _, ids, full_name, scholar_id = row
-#     name = parse_google_scholar_name(full_name)
-#     pprint(name)
-#     mongo_ids = []
-#     titles    = []
-#     dois      = []
-#     for doi in ids.split(','):
-#         article = articles.find_one({'front.article-meta.article-id.#text' : doi})
-#         if article is not None:
-#             mongo_ids.append(article['_id'])
-#             titles.append(article['title'])
-#         else: # :(
-#             mongo_ids.append(None)
-#             titles.append(None)
-#         dois.append(doi)
-#     pprint(dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids))
-#     return dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids)
+def generator(sql_cursor, articles):
+    total = sql_cursor.execute(f'SELECT COUNT() FROM {table}').fetchone()[0]
+    sql_cursor.execute(show_columns.format(table))
+    print(sql_cursor.fetchall())
+    sql_cursor.execute(all_rows.format(table))
+    for row in track(sql_cursor.fetchall(), total=total, description='Parsing..'):
+        yield expand_cluster(row, articles)
 
 def run():
     mongo_client = MongoClient('localhost', 27017)
@@ -60,14 +57,8 @@ def run():
     articles          = jstor_database.articles
     articles.create_index('front.article-meta.article-id.#text')
 
+    mongo_client.drop_database('previous_inferred')
     clusters          = mongo_client.previous_inferred.previous_inferred
 
-    sql_cursor.execute(show_columns.format(table))
-    print(sql_cursor.fetchall())
-    sql_cursor.execute(all_rows.format(table))
-    for row in sql_cursor.fetchall():
-        print(row)
-        print(expand_cluster(row, articles))
-        # clusters.insert_one(expand_cluster(row))
-        break
+    clusters.insert_many(generator(sql_cursor, articles))
 

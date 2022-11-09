@@ -34,7 +34,8 @@ def run():
     # name = 'dwardle'
     # name = 'djohnson'
     # name = 'adixon'
-    name = 'bjohnson'
+    # name = 'bjohnson'
+    name = 'lbrennan'
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
@@ -77,7 +78,8 @@ def run():
         for r_i in range(ratios_individual.shape[-1]):
             ratio_slice = ratios_individual[:, :, r_i]
             # excluded = {7}
-            excluded = {2}
+            # excluded = {2}
+            excluded = set()
             x_i_filtered = [n for n in x_i if n not in excluded] + ['a']
             title = f'Pairwise Ratios for x_{x_i_filtered[r_i]}'
             print(title)
