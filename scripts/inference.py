@@ -46,7 +46,7 @@ def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability
     r_is = np.array([xi_ratios.get((k, features[k] if features[k] is not None else 0), 0)
                      for k in x_i_keys if k not in excluded] + [r_a])
     r_is = np.abs(r_is) # just in case?
-    r_is = np.minimum(r_is, 10.)
+    # r_is = np.minimum(r_is, 10.)
     # r_is = np.where(r_is > 1.0, np.log10(r_is) / np.log10(42), r_is + epsilon)
     ratio = np.prod(r_is) # Could replace with np.sum() potentially
     return inference(ratio, prior), ratio, r_is
@@ -109,7 +109,9 @@ def run():
     # query = {'group_id' : {'first_initial' : 'a'}}
     query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
     # query = {}
-    ratios_from = 'previous'
+    # ratios_from = 'previous'
+    # ratios_from = 'previous'
+    ratios_from = 'default'
 
     r_table        = client.r_table.r_table
     xi_ratios, interpolated = get_r_table_data(r_table, ratios_from=ratios_from)

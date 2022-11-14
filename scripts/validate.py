@@ -33,7 +33,7 @@ def run():
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
-    query = {}
+    # query = {}
 
     print('Validating..')
     print(inferred_blocks.find({}))
