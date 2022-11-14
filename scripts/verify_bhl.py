@@ -17,8 +17,9 @@ def run():
     for doc in bhl.find():
         # pprint(doc['author']['key'])
         if 'jstor_article_mongo_ids' in doc:
-            pprint(doc)
+            # pprint(doc)
             resolved += 1
+        #pprint(doc)
 
         # for title in doc['titles']:
         #     pprint(title)

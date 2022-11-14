@@ -13,11 +13,11 @@ def run():
     articles         = jstor_database.articles
     print(scholar.count_documents({}))
 
-    # count = 0
-    # for cluster in scholar_authors.find():
-    #     pprint(cluster)
-    #     count += 1
-    # print(f'There are {count} reference clusters in the google scholar authors collection')
+    count = 0
+    for cluster in scholar.find():
+        pprint(cluster)
+        count += 1
+    print(f'There are {count} reference clusters in the google scholar authors collection')
 
     # scholar = client.validation.google_scholar_dois
     # print('Other scholar docs')
