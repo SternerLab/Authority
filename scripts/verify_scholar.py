@@ -16,11 +16,15 @@ def run():
     # │   'author': {
     # │   │   'key': 'akurisaki',
 
-    for doc in scholar.find({'author.key' : 'acolpaert'}):
-        print(doc)
+    # for doc in scholar.find({'author.key' : 'acolpaert'}):
+    #     print(doc)
 
-    for doc in scholar.find({'mongo_ids' : ObjectId('6337e27cf3513987bb925152')}):
-        print(doc)
+    # for doc in scholar.find({'mongo_ids' : ObjectId('6337e27cf3513987bb925152')}):
+    #     print(doc)
 
     # for doc in scholar.find():
+    #     print(doc['author']['key'])
+
+    # prev_scholar = client.validation.google_scholar
+    # for doc in prev_scholar.find():
     #     print(doc)

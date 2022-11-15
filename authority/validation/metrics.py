@@ -102,25 +102,28 @@ def cluster_metrics(clusters, reference_clusters):
         b_cubed_precision = 0
         b_cubed_recall    = 0
         # for s in range(1, total_authors + 1):
-        for s in all_ids:
-            V = contained(s, clusters)
-            T = {si for si in V
-                 if contained(si, reference_clusters) == contained(s, reference_clusters)}
-            ref_precision = len(T)/len(V)
-            b_cubed_precision += ref_precision
+        try:
+            for s in all_ids:
+                V = contained(s, clusters)
+                T = {si for si in V
+                     if contained(si, reference_clusters) == contained(s, reference_clusters)}
+                ref_precision = len(T)/len(V)
+                b_cubed_precision += ref_precision
 
-            C = contained(s, reference_clusters)
-            U = {si for si in C
-                 if contained(si, clusters) == contained(s, clusters)}
-            ref_recall    = len(U)/len(C)
-            b_cubed_recall += ref_recall
-        # Don't return these
-        del s, all_ids, cluster
-        del clusters, reference_clusters, V, T, C, U, ref_recall, ref_precision, contained
+                C = contained(s, reference_clusters)
+                U = {si for si in C
+                     if contained(si, clusters) == contained(s, clusters)}
+                ref_recall    = len(U)/len(C)
+                b_cubed_recall += ref_recall
+            # Don't return these
+            del s, all_ids, cluster
+            del clusters, reference_clusters, V, T, C, U, ref_recall, ref_precision, contained
 
-        b_cubed_precision = bp =  b_cubed_precision / total_authors
-        b_cubed_recall    = br =  b_cubed_recall / total_authors
-        b_cubed_f1             = (2 * bp * br) / (bp + br)
+            b_cubed_precision = bp =  b_cubed_precision / total_authors
+            b_cubed_recall    = br =  b_cubed_recall / total_authors
+            b_cubed_f1             = (2 * bp * br) / (bp + br)
+        except IndexError:
+            raise IncompleteValidation('Incomplete')
         return dict(locals())
 
 def to_clusters(labels):

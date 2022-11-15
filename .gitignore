@@ -11,3 +11,4 @@ plots
 authority_validation_metrics.csv
 *.csv
 *plots*
+data

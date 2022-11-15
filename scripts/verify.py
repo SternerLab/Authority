@@ -8,7 +8,8 @@ def run():
     jstor_database = client.jstor_database
     collect = jstor_database.articles
 
-    pprint(collect.find_one({'authors.last' : 'heimerl'}))
+    pprint(collect.find_one({'authors.key' : 'zli'}))
+    1/0
     # 1/0
 
     n = collect.count_documents({})

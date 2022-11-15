@@ -65,7 +65,9 @@ def self_citations(client, blocks, articles, query={}):
                            description='Building self-citations'):
             for entry in block['group']:
                 source_author = entry['authors']
-                article   = articles.find_one({'_id' : entry['ids']})
+                article   = articles.find_one({'_id' : entry['ids']},
+                                              no_cursor_timeout=True,
+                                              session=session)
                 citations, new_failures, new_length = parse_citations(article)
                 failures += new_failures
                 length   += new_length
@@ -76,7 +78,7 @@ def self_citations(client, blocks, articles, query={}):
                     for cite_author in citation['authors']:
                         if (cite_author['last'] == source_author['last'] and
                             cite_author['first_initial'] == source_author['first_initial']):
-                            cite_article = articles.find_one({'title' : citation['title']})
+                            cite_article = articles.find_one({'title' : citation['title']}, no_cursor_timeout=True, session=session)
                             print('resolved self-citation:', source_author, flush=True)
                             yield dict(
                                 author=entry['authors'],

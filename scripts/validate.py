@@ -30,10 +30,11 @@ def run():
     self_citations.create_index([('authors.key', pymongo.ASCENDING)])
 
     name = 'bjohnson'
+    # name = 'zli'
     first_initial, *last = name
     last = ''.join(last)
     query = {'group_id' : {'first_initial' : first_initial, 'last' : last}}
-    # query = {}
+    #query = {}
 
     print('Validating..')
     print(inferred_blocks.find({}))
@@ -58,11 +59,13 @@ def run():
                 print(name)
                 print('self_cite_labels', self_citation_labels)
                 reference_clusters = to_clusters(self_citation_labels)
+                print(reference_clusters)
                 shared_predictions = {k : v for k, v in cluster['cluster_labels'].items()
                                       if k in self_citation_labels}
                 shared_predictions = make_contiguous(shared_predictions)
                 print('shared_predictions', shared_predictions)
                 print(len(shared_predictions))
+                1/0
                 predicted_clusters = to_clusters(shared_predictions)
                 clusterwise = cluster_metrics(predicted_clusters, reference_clusters)
                 pairwise    = pairwise_metrics(predicted_clusters, reference_clusters)

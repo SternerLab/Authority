@@ -19,4 +19,5 @@ def run():
     # TO test changes without modifying db
     # for doc in self_citations(client, blocks, articles, query=query):
     #     pprint(doc)
-    self_cites_collection.insert_many(self_citations(client, blocks, articles, query=query))
+    with client.start_session(causal_consistency=True) as session:
+        self_cites_collection.insert_many(self_citations(client, blocks, articles, query=query))

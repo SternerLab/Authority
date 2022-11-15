@@ -6,16 +6,14 @@ import itertools
 import pymongo
 from functools import partial
 
-from concurrent.futures import ThreadPoolExecutor as Pool
 
 from authority.validation.google_scholar import get_clusters
 from threading import Lock
 
-progress_lock = Lock()
 count = 0
 
 
-def parse_scholar_article(article, scholar=None, progress=None, task=None):
+def parse_scholar_article(article, scholar=None):
     pprint(article['title'])
     pprint(article['authors'])
     for cluster in get_clusters(article):
@@ -24,8 +22,6 @@ def parse_scholar_article(article, scholar=None, progress=None, task=None):
                 {'scholar_id' : cluster['scholar_id']},
                 {'$set' : {'author' : cluster['author']},
                  '$push' : {'titles' : cluster['titles']}}, True)
-        with progress_lock:
-            progress.update(task, advance=1)
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -37,10 +33,8 @@ def run():
     upper_bound = articles.count_documents({})
 
     with client.start_session(causal_consistency=True) as session:
-        with Pool(max_workers=threads) as pool:
-            with Progress() as progress:
-                task = progress.add_task('Parsing google scholar', total=upper_bound)
-                f = partial(parse_scholar_article, scholar=scholar,
-                            progress=progress, task=task)
-                article_cursor = articles.find(no_cursor_timeout=True, session=session)
-                pool.map(f, article_cursor)
+            f = partial(parse_scholar_article, scholar=scholar)
+            article_cursor = articles.find(
+                    {'authors.last' : 'bjohnson'},
+                    no_cursor_timeout=True, session=session)
+            pool.map(f, article_cursor)
