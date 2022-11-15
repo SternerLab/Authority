@@ -1,7 +1,9 @@
 from pymongo import MongoClient
 from rich.pretty import pprint
+from rich import print
 import itertools
 import pymongo
+from bson.objectid import ObjectId
 
 from authority.validation.google_scholar import get_clusters
 
@@ -9,18 +11,16 @@ def run():
     client = MongoClient('localhost', 27017)
     jstor_database   = client.jstor_database
     scholar           = client.validation.google_scholar_dois
-    # scholar_authors  = scholar_db.authors
     articles         = jstor_database.articles
-    print(scholar.count_documents({}))
 
-    count = 0
-    for cluster in scholar.find():
-        pprint(cluster)
-        count += 1
-    print(f'There are {count} reference clusters in the google scholar authors collection')
+    # │   'author': {
+    # │   │   'key': 'akurisaki',
 
-    # scholar = client.validation.google_scholar_dois
-    # print('Other scholar docs')
+    for doc in scholar.find({'author.key' : 'acolpaert'}):
+        print(doc)
+
+    for doc in scholar.find({'mongo_ids' : ObjectId('6337e27cf3513987bb925152')}):
+        print(doc)
+
     # for doc in scholar.find():
-    #     pprint(doc)
-    # print(scholar.count_documents({}))
+    #     print(doc)
