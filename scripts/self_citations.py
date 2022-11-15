@@ -12,12 +12,12 @@ def run():
     # blocks         = client.reference_sets['last'] # Much bigger
 
 
-    # client.validation.drop_collection('self_citations')
+    client.validation.drop_collection('self_citations')
 
     query = {}
     # query = {'group.authors.last' : 'bjohnson'}
 
     self_cites_collection = client.validation.self_citations
-    for doc in self_citations(blocks, articles, query=query):
-        pprint(doc)
-    # self_cites_collection.insert_many(self_citations(blocks, articles, query=query))
+    # for doc in self_citations(blocks, articles, query=query):
+    #     pprint(doc)
+    self_cites_collection.insert_many(self_citations(blocks, articles, query=query))

@@ -61,7 +61,7 @@ def self_citations(blocks, articles, query={}):
     failures = 0
     for block in track(blocks.find(query), total=total):
         for entry in block['group']:
-            last      = entry['authors']['last']
+            source_author = entry['authors']
             article   = articles.find_one({'_id' : entry['ids']})
             citations, new_failures, new_length = parse_citations(article)
             failures += new_failures
@@ -70,10 +70,11 @@ def self_citations(blocks, articles, query={}):
                 print(f'Running: {100*failures/length:4.4f}% from {failures:4}/{length:4} failures ({new_failures:3}/{new_length:3} new)')
 
             for citation in citations:
-                for author in citation['authors']:
-                    if author['last'] == last:
+                for cite_author in citation['authors']:
+                    if (cite_author['last'] == source_author['last'] and
+                        cite_author['first_initial'] == source_author['first_initial']):
                         cite_article = articles.find_one({'title' : citation['title']})
-                        print('resolved self-citation:', entry['authors'])
+                        print('resolved self-citation:', source_author, flush=True)
                         yield dict(
                             author=entry['authors'],
                             title=entry['title'],
