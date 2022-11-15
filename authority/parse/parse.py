@@ -7,7 +7,7 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 import re
 
-from namesparser import HumanNames
+from nameparser import HumanName
 
 from rich import print
 from rich.pretty import pprint
@@ -218,25 +218,24 @@ authorn_re = fr'(?P<authors>([{author}]*))'
 year_re    = r'\(?(?P<year>\d\d\d\d)\)?:?\.?'
 title_re   = r'(?P<title>([^\.]*))'
 other      = r'(?P<other>([.*?]*))'
-sep_re     = r'[;,&]'
+sep_re     = r'[;,&]|( and )'
 sep        = re.compile(sep_re)
 
 mid_year_citation_regex  = re.compile(fr'{author_re}{year_re}{title_re}\.{other}')
 post_year_citation_regex = re.compile(fr'{authorn_re}\n{title_re}{other}{year_re}\.')
 
 def parse_cited_name(name):
-    return dict(
-        surname=name.last,
-        middle=name.middle,
-        given=name.first,
-        suffix=name.suffix)
-    # print(name)
-    # try:
-    #     surname, *mid, given = name.split(' ')
-    #     return dict(surname=surname.lower(),
-    #                 given=given)
-    # except ValueError:
-    #     return dict(surname=name)
+    # Swap order so that initial is always considered the first
+    if len(name.last.replace('.', '')) <= 3:
+        last  = name.first
+        first = name.last
+    else:
+        last  = name.last
+        first = name.first
+    return {'surname': last,
+            'middle' : name.middle,
+            'given-names'  : first,
+            'suffix' : name.suffix}
 
 class CitationParseFailure(RuntimeError):
     pass
@@ -251,16 +250,16 @@ def parse_citation(citation):
     authors_parsed = result.group('authors').replace('(', '').replace('\n', ' ')
     print('Regex parsed:')
     print(authors_parsed)
-    components = re.split(sep, authors_parsed)
+    components = [c for c in re.split(sep, authors_parsed) if c is not None]
+    print('components')
     print(components)
-    authors = []
-    # 1/0
-    # # authors = HumanNames(authors_parsed)
-    # print(authors.human_names, flush=True)
-    # print('Done', flush=True)
-    # authors = [parse_name(parse_cited_name(name), i)
-    #            for i, name in enumerate(authors.human_names)]
-    # pprint(authors)
+    authors = [HumanName(c) for c in components]
+    authors = [h for h in authors if h.first != '' and h.last != '']
+    print('human names')
+    print(authors)
+    authors = [parse_name(parse_cited_name(name), i)
+               for i, name in enumerate(authors)]
+    pprint(authors)
     return dict(title=remove_stop_words(result.group('title')),
                 authors=authors, year=int(result.group('year')))
 
@@ -302,6 +301,3 @@ def parse_citations(article):
     except TypeError:
         pass
     return citations, failures, length
-
-# testing
-# parse_citation('L. Saldyt 2022. Title. Other stuff \n here')
