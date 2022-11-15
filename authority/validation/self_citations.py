@@ -44,7 +44,6 @@ def resolve(cluster, self_citation_cache):
     resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
 
     # Merge clusters based on self-citation resolutions
-    # for cite in self_citations.find({'author.key' : key}):
     for cite in self_citation_cache[key]:
         aid, cid = cite['article_id'], cite['citation_id']
         if aid in article_ids and cid is not None and cid in article_ids:
@@ -59,25 +58,29 @@ def self_citations(blocks, articles, query={}):
     total    = blocks.count_documents(query)
     length   = 0
     failures = 0
-    for block in track(blocks.find(query), total=total):
-        for entry in block['group']:
-            source_author = entry['authors']
-            article   = articles.find_one({'_id' : entry['ids']})
-            citations, new_failures, new_length = parse_citations(article)
-            failures += new_failures
-            length   += new_length
-            if length > 0 and new_failures > 0:
-                print(f'Running: {100*failures/length:4.4f}% from {failures:4}/{length:4} failures ({new_failures:3}/{new_length:3} new)')
+    with client.start_session(causal_consistency=True) as session:
+        for block in track(blocks.find(query, no_cursor_timeout=True,
+                                       session=session),
+                           total=total,
+                           description='Building self-citations'):
+            for entry in block['group']:
+                source_author = entry['authors']
+                article   = articles.find_one({'_id' : entry['ids']})
+                citations, new_failures, new_length = parse_citations(article)
+                failures += new_failures
+                length   += new_length
+                if length > 0 and new_failures > 0:
+                    print(f'Running: {100*failures/length:4.4f}% from {failures:4}/{length:4} failures ({new_failures:3}/{new_length:3} new)')
 
-            for citation in citations:
-                for cite_author in citation['authors']:
-                    if (cite_author['last'] == source_author['last'] and
-                        cite_author['first_initial'] == source_author['first_initial']):
-                        cite_article = articles.find_one({'title' : citation['title']})
-                        print('resolved self-citation:', source_author, flush=True)
-                        yield dict(
-                            author=entry['authors'],
-                            title=entry['title'],
-                            article_id=str(article['_id']),
-                            citation=citation,
-                            citation_id=str(cite_article['_id']) if cite_article is not None else None)
+                for citation in citations:
+                    for cite_author in citation['authors']:
+                        if (cite_author['last'] == source_author['last'] and
+                            cite_author['first_initial'] == source_author['first_initial']):
+                            cite_article = articles.find_one({'title' : citation['title']})
+                            print('resolved self-citation:', source_author, flush=True)
+                            yield dict(
+                                author=entry['authors'],
+                                title=entry['title'],
+                                article_id=str(article['_id']),
+                                citation=citation,
+                                citation_id=str(cite_article['_id']) if cite_article is not None else None)
