@@ -53,7 +53,7 @@ def resolve(cluster, self_citation_cache):
     return make_contiguous({k : v for k, (v, m) in resolved.items() if m})
 
 
-def self_citations(blocks, articles, query={}):
+def self_citations(client, blocks, articles, query={}):
     ''' Extract clusters based on self-citations '''
     total    = blocks.count_documents(query)
     length   = 0

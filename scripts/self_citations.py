@@ -9,8 +9,6 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     blocks         = client.reference_sets['first_initial_last_name']
-    # blocks         = client.reference_sets['last'] # Much bigger
-
 
     client.validation.drop_collection('self_citations')
 
@@ -18,6 +16,7 @@ def run():
     # query = {'group.authors.last' : 'bjohnson'}
 
     self_cites_collection = client.validation.self_citations
-    # for doc in self_citations(blocks, articles, query=query):
+    # TO test changes without modifying db
+    # for doc in self_citations(client, blocks, articles, query=query):
     #     pprint(doc)
-    self_cites_collection.insert_many(self_citations(blocks, articles, query=query))
+    self_cites_collection.insert_many(self_citations(client, blocks, articles, query=query))
