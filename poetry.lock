@@ -469,6 +469,25 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "nameparser"
+version = "1.1.2"
+description = "A simple Python module for parsing human names into their individual components."
+category = "main"
+optional = false
+python-versions = "*"
+
+[[package]]
+name = "namesparser"
+version = "1.0.0"
+description = "Complement to nameparser for parsing lists of names."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+nameparser = "*"
+
+[[package]]
 name = "nltk"
 version = "3.7"
 description = "Natural Language Toolkit"
@@ -1262,7 +1281,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.10,<3.11"
-content-hash = "54cdbcfd384febbe0d2f223fac0f0df05f65bdfe0eb50a9b9c6d932a87f4da3a"
+content-hash = "bc2414ffb8157a1e8b4122b78a9159234c398bcfcd1fd1942545842dd7391a3b"
 
 [metadata.files]
 alabaster = []
@@ -1308,6 +1327,8 @@ lxml = []
 markupsafe = []
 matplotlib = []
 mccabe = []
+nameparser = []
+namesparser = []
 nltk = []
 numpy = []
 outcome = []

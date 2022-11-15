@@ -7,6 +7,8 @@ from nltk.tokenize import word_tokenize
 from textblob import TextBlob
 import re
 
+from namesparser import HumanNames
+
 from rich import print
 from rich.pretty import pprint
 
@@ -216,18 +218,25 @@ authorn_re = fr'(?P<authors>([{author}]*))'
 year_re    = r'\(?(?P<year>\d\d\d\d)\)?:?\.?'
 title_re   = r'(?P<title>([^\.]*))'
 other      = r'(?P<other>([.*?]*))'
-sep_re     = r'[;,]'
+sep_re     = r'[;,&]'
 sep        = re.compile(sep_re)
 
 mid_year_citation_regex  = re.compile(fr'{author_re}{year_re}{title_re}\.{other}')
 post_year_citation_regex = re.compile(fr'{authorn_re}\n{title_re}{other}{year_re}\.')
 
-def reorder_name(name):
-    try:
-        surname, *mid, initial = name.split(' ')
-        return dict(surname=surname, given=initial)
-    except ValueError:
-        return dict(surname=name)
+def parse_cited_name(name):
+    return dict(
+        surname=name.last,
+        middle=name.middle,
+        given=name.first,
+        suffix=name.suffix)
+    # print(name)
+    # try:
+    #     surname, *mid, given = name.split(' ')
+    #     return dict(surname=surname.lower(),
+    #                 given=given)
+    # except ValueError:
+    #     return dict(surname=name)
 
 class CitationParseFailure(RuntimeError):
     pass
@@ -239,9 +248,19 @@ def parse_citation(citation):
             break
     else:
         raise CitationParseFailure(citation)
-    authors = re.split(sep, result.group('authors'))
-    authors = [parse_name(reorder_name(name), i)
-               for i, name in enumerate(authors)]
+    authors_parsed = result.group('authors').replace('(', '').replace('\n', ' ')
+    print('Regex parsed:')
+    print(authors_parsed)
+    components = re.split(sep, authors_parsed)
+    print(components)
+    authors = []
+    # 1/0
+    # # authors = HumanNames(authors_parsed)
+    # print(authors.human_names, flush=True)
+    # print('Done', flush=True)
+    # authors = [parse_name(parse_cited_name(name), i)
+    #            for i, name in enumerate(authors.human_names)]
+    # pprint(authors)
     return dict(title=remove_stop_words(result.group('title')),
                 authors=authors, year=int(result.group('year')))
 

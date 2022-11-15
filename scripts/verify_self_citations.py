@@ -19,7 +19,8 @@ def run():
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
 
-    key = 'aaagaard'
+    # key = 'aaagaard'
+    key = 'bjohnson'
     query = {'author.key' : key}
 
     running = 0

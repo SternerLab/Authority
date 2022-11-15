@@ -3,7 +3,7 @@ from rich.progress import track
 from rich import print
 from collections import defaultdict
 
-from authority.parse.parse import parse_citations, reorder_name
+from authority.parse.parse import parse_citations
 
 def merge(aid, cid, resolved):
     ''' Somewhat ugly because it accounts for edge cases.. '''
@@ -80,4 +80,3 @@ def self_citations(blocks, articles, query={}):
                             article_id=str(article['_id']),
                             citation=citation,
                             citation_id=str(cite_article['_id']) if cite_article is not None else None)
-                        break
