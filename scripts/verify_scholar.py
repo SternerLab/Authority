@@ -28,3 +28,16 @@ def run():
     # prev_scholar = client.validation.google_scholar
     # for doc in prev_scholar.find():
     #     print(doc)
+
+    lens = []
+
+    for doc in scholar.find():
+        # print(len(doc))
+        lens.append(len(doc['mongo_ids']))
+
+    import seaborn as sns
+    import matplotlib.pyplot as plt
+
+    sns.histplot(lens)
+    plt.show()
+    print(list(sorted(lens)))

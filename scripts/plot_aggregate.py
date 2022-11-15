@@ -6,7 +6,9 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    # val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    # val_df = pd.read_csv('scholar_metrics_nov_14_manuha.csv')
+    val_df = pd.read_csv('scholar_metrics_nov_14_lucas.csv')
     val_df.fillna(0, inplace=True)
     print(val_df)
     print(val_df.describe())
@@ -22,6 +24,7 @@ def run():
 
     names_df = pd.read_csv('data/names.csv')
     print(names_df)
+    plt.clf()
     sns.displot(names_df, x='count', log_scale=True)
     plt.show()
     plt.savefig('plots/name_frequencies.png')
@@ -62,7 +65,6 @@ def run():
         ax = sns.scatterplot(composite, x='frequency', y=metric)
         ax.set_xlabel('Name Frequency')
         ax.set_ylabel(metric.title())
-        plt.show()
         plt.savefig(f'plots/{metric}_name_frequency.png')
         plt.clf()
 
