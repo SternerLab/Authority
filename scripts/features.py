@@ -75,8 +75,10 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
+    ref_keys = ('first_initial_last_name',)
     # ref_keys = ('name_match',)
-    ref_keys = ('name_non_match',)
+    # ref_keys = ('name_non_match',)
+    # ref_keys = ('mesh_coauthor_non_match',)
     print(ref_keys)
     # client.drop_database('features')
     # client.drop_database('feature_groups_a')

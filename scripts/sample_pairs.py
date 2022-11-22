@@ -31,7 +31,9 @@ def sample_grouped_pairs(client, database, ref_key):
 
 def sample_mesh_coauthor_non_match_pairs(a, b):
     for pair in itertools.product(a['group'], b['group']):
-        yield dict(pair=pair)
+        a, b = pair
+        if a['title'] != b['title']:
+            yield dict(pair=pair)
 
 def create_mesh_coauthor_non_match_pairs(client):
     ''' Create non-matching set by sampling articles with different last names '''
@@ -134,8 +136,8 @@ def run():
     # ref_keys = ('name_match', 'mesh_coauthor_match')
     # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
-    # ref_keys = ('mesh_coauthor_non_match',)
-    ref_keys = ('name_non_match',)
+    ref_keys = ('mesh_coauthor_non_match',)
+    # ref_keys = ('name_non_match',)
     # ref_keys = ('name_match',)
 
 
