@@ -38,10 +38,10 @@ def create_mesh_coauthor_non_match_pairs(client):
     reference_sets = client.reference_sets
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
-    filn_set = reference_sets['first_initial_last_name']
+    ln_set = reference_sets['last_name'] # Less restrictive
 
     with client.start_session(causal_consistency=True) as session:
-        cursor = filn_set.find(session=session, no_cursor_timeout=True)
+        cursor = ln_set.find(session=session, no_cursor_timeout=True)
         for a, b in itertools.combinations(cursor, r=2):
             n = len(a['group']) + len(b['group'])
             group_id = [a['_id'], b['_id']]
@@ -53,10 +53,14 @@ def filter_name_non_match_pairs(pair_generator):
         comparison   = compare_pair(pair)
         f            = comparison['features']
         lang         = f['x7'] >= 2
-        # nothing_else = f['x6'] <= 2 and f['x5'] == 1 and f['x3'] <= 2 and f['x4'] == 0
+        # Only consider *article* features
+        # This means less than three MeSH terms, no coauthors, less than two title words
+        # These could be made more restrictive, or could include checking language or journal, year, etc
+        nothing_else = f['x6'] < 3 and f['x5'] == 1 and f['x3'] < 2
+        # and f['x4'] == 0
         # nothing_else = f['x5'] == 0 and f['x1'] != 3 and f['x2'] == 0 and f['x4'] == 0
         # Only consider name features, no x3, x4, x5, x6 etc
-        nothing_else = f['x1'] == 0 and f['x2'] == 0 # and f['x4'] == 0 #?
+        # nothing_else = f['x1'] == 0 and f['x2'] == 0 # and f['x4'] == 0 #?
         if lang and nothing_else:
             yield pair
 

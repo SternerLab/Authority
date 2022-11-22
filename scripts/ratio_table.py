@@ -41,6 +41,10 @@ def run():
     client.drop_database('r_table')
     r_table          = client.r_table.r_table
 
+    # x1, x2, x10 are *name* features, known as x_i here.
+    # x7 is the *language* feature, included in x_i here?
+    # x3, x4, x5, x6 are *article* features, known as x_a here.
+
     xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i, match_type='mesh_coauthor_match', non_match_type='mesh_coauthor_non_match')
     xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
     r_table.insert_one(dict(xi_ratios=xi_ratios))
