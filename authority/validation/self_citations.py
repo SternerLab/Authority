@@ -3,6 +3,8 @@ from rich.progress import track
 from rich import print
 from collections import defaultdict
 
+import itertools
+
 from authority.parse.parse import parse_citations
 
 def merge(aid, cid, resolved):
@@ -52,6 +54,13 @@ def resolve(cluster, self_citation_cache):
     # # Filter unmerged clusters and decrement cluster labels appropriately
     return make_contiguous({k : v for k, (v, m) in resolved.items() if m})
 
+def batched(generator, batch_size=32):
+    while True:
+        batch = list(itertools.islice(generator, batch_size))
+        if not batch:
+            break
+        else:
+            yield batch
 
 def self_citations(client, blocks, articles, query={}):
     ''' Extract clusters based on self-citations '''

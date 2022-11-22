@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
 
-from authority.validation.self_citations import self_citations
+from authority.validation.self_citations import self_citations, batched
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -20,4 +20,6 @@ def run():
     # for doc in self_citations(client, blocks, articles, query=query):
     #     pprint(doc)
     with client.start_session(causal_consistency=True) as session:
-        self_cites_collection.insert_many(self_citations(client, blocks, articles, query=query))
+        for batch in batched(self_citations(client, blocks, articles, query=query),
+                             batch_size=32):
+            self_cites_collection.insert_many(batch)
