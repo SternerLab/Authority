@@ -65,22 +65,38 @@ def x6(a, b):
     ''' Feature based on words in common between mesh terms '''
     return len(set(_get_mesh(a)) & set(_get_mesh(b)))
 
-def x7(a, b):
+_lang_mappings = {
+        'EN' : 'eng',
+        }
+def x7(a, b, set_based=False):
     ''' Feature based on common languages, favoring a non-english language match '''
-    la = set(a['language'])
-    lb = set(b['language'])
-    both   = la & lb
-    either = la | lb
-    non_english = {l for l in either if l != 'eng'}
+    la = {_lang_mappings.get(l, l) for l in a['language']}
+    lb = {_lang_mappings.get(l, l) for l in b['language']}
 
-    for l in non_english:
-        if l in both:
+    # This is the version of x7 as it appeared in Torvik originally
+    if set_based:
+        both   = la & lb
+        either = la | lb
+        non_english = {l for l in either if l != 'eng'}
+        for l in non_english:
+            if l in both:
+                return 3
+        if 'eng' in both:
+            return 2
+        if 'eng' in either:
+            return 1
+        return 0
+    else: # This is our experimental version of x7 that tracks bilingual articles
+        la_bi = '-'.join(sorted(la))
+        lb_bi = '-'.join(sorted(lb))
+        if la_bi == lb_bi and la_bi != 'eng':
             return 3
-    if 'eng' in both:
-        return 2
-    if 'eng' in either:
-        return 1
-    return 0
+        elif la_bi == lb_bi and la_bi == 'eng':
+            return 2
+        elif la_bi != lb_bi:
+            if la_bi == 'eng' or lb_bi == 'eng':
+                return 1
+            return 0
 
 def x8(a, b):
     ''' Feature based on words in common between affiliation.
