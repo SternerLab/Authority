@@ -25,5 +25,8 @@ def run():
 
     # Finally, validate!
     clusters = client.inferred['first_initial_last_name']
+    # To validate Manuha's clusters
+    # clusters = client.previous_inferred.previous_inferred
+
     df = validate_clusters(clusters, query, sources)
     df.to_csv('data/authority_validation_metrics.csv')
