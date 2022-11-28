@@ -7,6 +7,7 @@ import pymongo
 
 from bson.objectid import ObjectId
 
+from .utils   import *
 from .metrics import *
 from .self_citations import SelfCitationResolver
 from .google_scholar import GoogleScholarResolver
@@ -36,5 +37,35 @@ def load_sources(client, source_names):
 def validate(cluster, sources):
     ''' Validate a single cluster against multiple reference sources '''
     for source_name, source in sources.items():
-        print(source)
-        print(source.resolve(cluster))
+        try:
+            gid = cluster['group_id']
+            if gid["first_initial"] == '':
+                continue
+            name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+
+            print(name)
+            labels = source.resolve(cluster)
+            print(labels)
+
+            upper_bound = len(labels) ** 2
+
+            reference_clusters = to_clusters(labels)
+            print(reference_clusters)
+            shared_predictions = {k : v for k, v in cluster['cluster_labels'].items()
+                                  if k in labels}
+            shared_predictions = make_contiguous(shared_predictions)
+            print('shared_predictions', shared_predictions)
+            print(len(shared_predictions))
+            predicted_clusters = to_clusters(shared_predictions)
+            clusterwise = cluster_metrics(predicted_clusters, reference_clusters)
+            pairwise    = pairwise_metrics(predicted_clusters, reference_clusters)
+
+            pprint(clusterwise)
+            pprint(pairwise)
+            1/0
+        except IncompleteValidation:
+            continue
+
+def validate_clusters(inferred, query, sources):
+    for i, cluster in enumerate(inferred.find()):
+        metrics = validate(cluster, sources)

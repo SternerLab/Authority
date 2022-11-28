@@ -8,26 +8,21 @@ import pymongo
 from bson.objectid import ObjectId
 
 from authority.validation.metrics import *
-from authority.validation.validate import validate, load_sources, possible_sources
+from authority.validation.validate import validate_clusters, load_sources, possible_sources
 
 def run():
     # First connect to MongoDB and setup the databases and collections in it
-    client = MongoClient('localhost', 27017)
-
-    jstor_database = client.jstor_database
-    inferred       = client.inferred
-    inferred_blocks = inferred['first_initial_last_name']
-    inferred_blocks.create_index('group_id')
-
-    articles = jstor_database.articles
-    articles.create_index('title')
-    articles.create_index('authors.key')
+    client   = MongoClient('localhost', 27017)
+    articles = client.jstor_database.articles
 
     # Load the available validation sources and cache them in memory
     # source_names = possible_sources # To use all
     source_names = ['self_citations']
     sources = load_sources(client, source_names)
 
+    # Controls which clusters we are validating
+    query = {}
+
     # Finally, validate!
-    cluster = None # TODO for testing
-    validate(cluster, sources)
+    clusters = client.inferred['first_initial_last_name']
+    validate_clusters(clusters, query, sources)
