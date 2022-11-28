@@ -4,7 +4,7 @@ from rich.progress import track
 import requests
 import json
 
-from authority.validation.biodiversity_library import lookup, parse
+from authority.validation.biodiversity import lookup, parse
 from concurrent.futures import ThreadPoolExecutor as Pool
 
 import itertools

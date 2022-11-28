@@ -6,6 +6,11 @@ import re
 
 from ..parse.parse import parse_name, construct_name, remove_stop_words
 
+from .resolver import Resolver
+
+class GoogleScholarResolver(Resolver):
+    pass
+
 scholar.set_timeout(5)
 
 pg = scholarly.ProxyGenerator()

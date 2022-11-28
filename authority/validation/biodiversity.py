@@ -4,6 +4,11 @@ import json
 
 from ..parse.parse import parse_name, construct_name, remove_stop_words
 
+from .resolver import Resolver
+
+class BiodiversityResolver(Resolver):
+    pass
+
 author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
 metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
 

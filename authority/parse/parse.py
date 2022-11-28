@@ -300,4 +300,4 @@ def parse_citations(article):
             # print(f'No citations {e}')
     except TypeError:
         pass
-    return citations, failures, length
+    return citations
