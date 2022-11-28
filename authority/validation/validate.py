@@ -36,35 +36,36 @@ def load_sources(client, source_names):
 
 def validate(cluster, sources):
     ''' Validate a single cluster against multiple reference sources '''
+    long = []
     for source_name, source in sources.items():
         try:
             gid = cluster['group_id']
             if gid["first_initial"] == '':
                 continue
             name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
-
             print(name)
-            labels = source.resolve(cluster)
-            print(labels)
-
-            upper_bound = len(labels) ** 2
-
+            labels             = source.resolve(cluster)
             reference_clusters = to_clusters(labels)
-            print(reference_clusters)
             shared_predictions = {k : v for k, v in cluster['cluster_labels'].items()
                                   if k in labels}
             shared_predictions = make_contiguous(shared_predictions)
-            print('shared_predictions', shared_predictions)
-            print(len(shared_predictions))
             predicted_clusters = to_clusters(shared_predictions)
+
             clusterwise = cluster_metrics(predicted_clusters, reference_clusters)
             pairwise    = pairwise_metrics(predicted_clusters, reference_clusters)
+            clusterwise.update(pairwise)
+            clusterwise['name'] = name
+            clusterwise['source_name'] = name
 
             pprint(clusterwise)
-            pprint(pairwise)
-            1/0
-        except IncompleteValidation:
+            if clusterwise['s'] > 0:
+                long.append(clusterwise)
+        except IncompleteValidation: # Handle this better TODO ?
+            # Not dangerous, should just log something..
             continue
+
+    running = pd.DataFrame(long)
+    return running
 
 def validate_clusters(inferred, query, sources):
     for i, cluster in enumerate(inferred.find()):
