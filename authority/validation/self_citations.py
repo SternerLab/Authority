@@ -62,14 +62,14 @@ def batched(generator, batch_size=32):
         else:
             yield batch
 
-def self_citations(client, blocks, articles, query={}):
+def self_citations(client, blocks, articles, query={}, skip=0):
     ''' Extract clusters based on self-citations '''
     total    = blocks.count_documents(query)
     length   = 0
     failures = 0
     with client.start_session(causal_consistency=True) as session:
         for block in track(blocks.find(query, no_cursor_timeout=True,
-                                       session=session),
+                                       session=session).skip(skip),
                            total=total,
                            description='Building self-citations'):
             for entry in block['group']:
