@@ -17,6 +17,7 @@ def run():
 
     # Load the available validation sources and cache them in memory
     # source_names = possible_sources # To use all
+    # source_names = ['google_scholar', 'self_citations', 'merge_heuristic', 'split_heuristic']
     source_names = ['self_citations']
     sources = load_sources(client, source_names)
 
@@ -24,9 +25,13 @@ def run():
     query = {}
 
     # Finally, validate!
-    clusters = client.inferred['first_initial_last_name']
+    new_clusters = client.inferred['first_initial_last_name']
+    new_df = validate_clusters(new_clusters, query, sources)
+    new_df['year'] = 2022
     # To validate Manuha's clusters
-    # clusters = client.previous_inferred.previous_inferred
+    old_clusters = client.previous_inferred.previous_inferred
+    old_df = validate_clusters(new_clusters, query, sources)
+    old_df['year'] = 2021
 
-    df = validate_clusters(clusters, query, sources)
+    df = pd.concat([new_df, old_df])
     df.to_csv('data/authority_validation_metrics.csv')

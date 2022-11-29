@@ -6,9 +6,9 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    # val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    val_df = pd.read_csv('data/authority_validation_metrics.csv')
     # val_df = pd.read_csv('scholar_metrics_nov_14_manuha.csv')
-    val_df = pd.read_csv('scholar_metrics_nov_14_lucas.csv')
+    # val_df = pd.read_csv('scholar_metrics_nov_14_lucas.csv')
     val_df.fillna(0, inplace=True)
     print(val_df)
     print(val_df.describe())

@@ -9,7 +9,36 @@ from ..parse.parse import parse_name, construct_name, remove_stop_words
 from .resolver import Resolver
 
 class GoogleScholarResolver(Resolver):
-    pass
+    ''' A specialized class for resolving labels for author clusters
+        To be specifically used by google scholar '''
+    def __init__(self, client, name):
+        self.name  = name
+        self.cache = None
+        self.collection = client.validation[name + '_dois']
+
+    def resolve(self, cluster):
+        gid = cluster['group_id']
+        name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+        key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
+
+        reference_clusters = []
+        resolved = 0
+        for doc in self.collection.find({'author.key' : key}):
+            reference_clusters.append([str(_id) for _id in doc['mongo_ids']])
+            resolved += 1
+        if resolved > 0:
+            print('resolved', resolved)
+        return reference_clusters
+
+    def build_cache(self):
+        pass
+
+        # self.cache = defaultdict(list)
+        # total = self.collection.count_documents({})
+        # for cluster in track(self.collection.find({}), total=total,
+        #                      description=f'Building {self.name} cache'):
+        #     key = cluster['author']['key']
+        #     self.cache[key].append(cluster)
 
 scholar.set_timeout(5)
 

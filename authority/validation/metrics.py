@@ -64,8 +64,9 @@ def cluster_metrics(clusters, reference_clusters):
         total_clusters   = np.int32(len(clusters))
         true_clusters    = np.int32(len(reference_clusters))
         total_authors    = np.int32(true_clusters)
+
         all_ids          = list(set().union(e for c in reference_clusters for e in c))
-        if len(all_ids) == 0:
+        if len(all_ids) == 0 or true_clusters == 0 or total_clusters == 0:
             raise IncompleteValidation('Incomplete')
         correct_clusters = np.int32(0)
         for cluster in clusters:
