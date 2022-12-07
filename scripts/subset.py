@@ -32,7 +32,7 @@ def create_mesh_coauthor_match_set(reference_sets):
                        break
            if not found:
                new_groups.append([summary])
-       group_doc.pop('_id')
+       group_doc['group_id'] = group_doc.pop('_id')
        new_groups = [new_group for new_group in new_groups if len(new_group) > 1] # filter
        new_groups = [group_doc | dict(group=new_group) for new_group in new_groups]
        yield from new_groups

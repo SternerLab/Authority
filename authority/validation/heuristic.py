@@ -8,8 +8,6 @@ import itertools
 from .utils import *
 from .resolver import Resolver
 
-possible_heuristics = ['merge', 'split', 'mesh_coauthor', 'middle_initial_suffix']
-
 def merge_heuristic(cluster, client):
     keys = cluster['cluster_labels'].keys()
     labels = {k : 0 for k in keys}
@@ -20,15 +18,39 @@ def split_heuristic(cluster, client):
     labels = {k : i for k, i in zip(keys, range(len(keys)))}
     return labels
 
+def mesh_coauthor_heuristic(cluster, client):
+    group_id = cluster['group_id']
+    lookup   = client.reference_sets_group_lookup.mesh_coauthor_match
+    print(group_id)
+    result   = lookup.find_one(dict(group_id=group_id))
+    print(result)
+    if result is None:
+        return dict()
+    1/0
+
+def name_heuristic(cluster, client):
+    group_id = cluster['group_id']
+    lookup   = client.reference_sets_group_lookup.name_match
+    print(group_id)
+    result   = lookup.find_one(dict(group_id=group_id))
+    print(result)
+    if result is None:
+        return dict()
+    1/0
+
+# Each heuristic should only have one underscore
+possible_heuristics = dict(
+    merge=merge_heuristic,
+    split=split_heuristic,
+    meshcoauthor=mesh_coauthor_heuristic,
+    name=name_heuristic)
+# possible_heuristics = {f'{key}_heuristic' : h for key, h in possible_heuristics.items()}
+
 class HeuristicResolver(Resolver):
     def __init__(self, client, name):
         self.client = client
         self.name   = name
-        match name:
-            case 'merge':
-                self.heuristic = merge_heuristic
-            case 'split':
-                self.heuristic = split_heuristic
+        self.heuristic = possible_heuristics[name]
 
     def resolve(self, cluster):
         return self.heuristic(cluster, self.client)

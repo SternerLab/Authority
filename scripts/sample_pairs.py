@@ -24,8 +24,9 @@ def sample_pairs(group):
 def sample_grouped_pairs(client, database, ref_key):
     total = database[ref_key].count_documents({})
     with client.start_session(causal_consistency=True) as session:
-        for group_doc in database[ref_key].find(session=session, no_cursor_timeout=True):
-            group_id = group_doc['_id']
+        for group_doc in database[ref_key].find(session=session,
+                                                no_cursor_timeout=True):
+            group_id = group_doc.get('group_id', group_doc['_id'])
             n  = group_doc.get('count', None)
             yield group_id, n, sample_pairs(group_doc['group'])
 
@@ -136,9 +137,10 @@ def run():
     # ref_keys = ('name_match', 'mesh_coauthor_match')
     # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
-    ref_keys = ('mesh_coauthor_non_match',)
+    # ref_keys = ('mesh_coauthor_non_match',)
     # ref_keys = ('name_non_match',)
     # ref_keys = ('name_match',)
+    ref_keys = ('mesh_coauthor_match',)
 
 
     with Progress() as progress:
