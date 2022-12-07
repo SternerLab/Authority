@@ -2,16 +2,15 @@ from pymongo import MongoClient
 from rich.pretty   import pprint
 from rich.progress import track
 from rich.progress import Progress
+from functools import partial
 import itertools
 import pymongo
-from functools import partial
-
+import pandas as pd
 
 from authority.validation.google_scholar import get_clusters
 from threading import Lock
 
 count = 0
-
 
 def parse_scholar_article(article, scholar=None):
     pprint(article['title'])
@@ -29,12 +28,11 @@ def run():
     scholar          = client.validation.google_scholar
     articles         = jstor_database.articles
 
-    threads = 1
-    upper_bound = articles.count_documents({})
+    names = pd.read_csv('data/names.csv')
+    names.sort_values(by='count', ascending=False, inplace=True)
 
     with client.start_session(causal_consistency=True) as session:
-            f = partial(parse_scholar_article, scholar=scholar)
-            article_cursor = articles.find(
-                    {'authors.last' : 'bjohnson'},
-                    no_cursor_timeout=True, session=session)
-            pool.map(f, article_cursor)
+        for key in names['key']:
+            query = {'authors.key' : key}
+            article = articles.find_one(query, no_cursor_timeout=True, session=session)
+            parse_scholar_article(article, scholar=scholar)
