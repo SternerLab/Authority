@@ -33,13 +33,6 @@ class GoogleScholarResolver(Resolver):
     def build_cache(self):
         pass
 
-        # self.cache = defaultdict(list)
-        # total = self.collection.count_documents({})
-        # for cluster in track(self.collection.find({}), total=total,
-        #                      description=f'Building {self.name} cache'):
-        #     key = cluster['author']['key']
-        #     self.cache[key].append(cluster)
-
 scholar.set_timeout(5)
 
 pg = scholarly.ProxyGenerator()

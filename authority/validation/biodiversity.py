@@ -7,7 +7,29 @@ from ..parse.parse import parse_name, construct_name, remove_stop_words
 from .resolver import Resolver
 
 class BiodiversityResolver(Resolver):
-    pass
+    ''' A specialized class for resolving labels for author clusters
+        To be specifically used for biodiversity'''
+    def __init__(self, client, name):
+        self.name  = name
+        self.cache = None
+        self.collection = client.validation.bhl
+
+    def resolve(self, cluster):
+        gid = cluster['group_id']
+        name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+        key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
+
+        reference_clusters = []
+        resolved = 0
+        for doc in self.collection.find({'author.key' : key}):
+            reference_clusters.append([str(_id) for _id in doc['mongo_ids']])
+            resolved += 1
+        if resolved > 0:
+            print('resolved', resolved)
+        return reference_clusters
+
+    def build_cache(self):
+        pass
 
 author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
 metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'

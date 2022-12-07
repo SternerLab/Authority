@@ -31,8 +31,8 @@ def run():
                 ids.add(jstor_article['_id'])
 
         if ids:
-            pprint({'_id' : doc['_id'], '$push' : {'jstor_article_mongo_ids' : list(ids)}})
+            pprint({'_id' : doc['_id'], '$push' : {'mongo_ids' : list(ids)}})
 
             bhl.update_one({'_id' : doc['_id']},
-                           {'$push' : {'jstor_article_mongo_ids' : list(ids)}},
+                           {'$push' : {'mongo_ids' : list(ids)}},
                            True)

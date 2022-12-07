@@ -1,5 +1,5 @@
 from pymongo import MongoClient
-from rich.pretty   import pprint
+from rich.pretty import pprint
 from rich import print
 import pickle
 import pandas as pd
@@ -17,8 +17,9 @@ def run():
 
     # Load the available validation sources and cache them in memory
     # source_names = possible_sources # To use all
-    # source_names = ['google_scholar', 'self_citations', 'merge_heuristic', 'split_heuristic']
-    source_names = ['self_citations']
+    source_names = ['google_scholar',  # 'self_citations',
+                    # 'merge_heuristic', 'split_heuristic',
+                    'meshcoauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating

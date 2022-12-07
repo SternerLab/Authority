@@ -15,6 +15,7 @@ def run():
     print(f'Found {n} BHL clusters')
     resolved = 0
     for doc in bhl.find():
+        pprint(doc)
         # pprint(doc['author']['key'])
         if 'jstor_article_mongo_ids' in doc:
             # pprint(doc)

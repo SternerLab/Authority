@@ -9,12 +9,14 @@ from bson.objectid import ObjectId
 
 from .utils   import *
 from .metrics import *
+from .manual          import ManualResolver
 from .self_citations  import SelfCitationResolver
 from .google_scholar  import GoogleScholarResolver
 from .biodiversity    import BiodiversityResolver
 from .heuristic       import HeuristicResolver, possible_heuristics
 
-possible_sources = ['self_citations', 'google_scholar', 'biodiversity', 'manual', 'heuristic']
+possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'manual']
+                    + list(possible_heuristics.keys()))
 
 def load_sources(client, source_names):
     ''' Resolve multiple sources to their reference clusters '''
@@ -32,7 +34,7 @@ def load_sources(client, source_names):
             case _:
                 if 'heuristic' in source_name:
                     kind, _ = source_name.split('_')
-                    assert kind in possible_heuristics
+                    assert kind in possible_heuristics, f'{kind} not in possible heuristics {possible_heuristics.keys()}'
                     sources[source_name] = HeuristicResolver(client, kind)
                 else:
                     print(f'{source_name} not recognized!')
@@ -65,6 +67,8 @@ def compare_cluster_pair(pair):
     pairwise = pairwise_metrics(predicted_clusters, reference_clusters)
     metrics.update(pairwise)
     metrics['comparison'] = f'{predicted_source}(pred)x{reference_source}(ref)'
+    print(predicted_source, reference_source)
+    print(metrics)
     return metrics
 
 def validate(cluster, sources):
@@ -77,7 +81,6 @@ def validate(cluster, sources):
         try:
             metrics = compare_cluster_pair(pair)
             metrics['name'] = name
-            pprint(metrics)
             if metrics['s'] > 0:
                 long.append(metrics)
         except IncompleteValidation: # Handle this better TODO ?
