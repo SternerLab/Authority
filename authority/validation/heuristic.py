@@ -18,25 +18,25 @@ def split_heuristic(cluster, client):
     labels = {k : i for k, i in zip(keys, range(len(keys)))}
     return labels
 
-def mesh_coauthor_heuristic(cluster, client):
+def _lookup_set(client, reference_set_key, cluster):
     group_id = cluster['group_id']
-    lookup   = client.reference_sets_group_lookup.mesh_coauthor_match
-    print(group_id)
+    lookup   = client.reference_sets_group_lookup[reference_set_key]
+    pairs    = client.reference_sets_pairs[reference_set_key]
     result   = lookup.find_one(dict(group_id=group_id))
-    print(result)
     if result is None:
         return dict()
-    1/0
+    matching_pairs = pairs.find(
+            {'_id' : {'$in' : result['pair_ids']}})
+    id_pairs = ((x['ids'] for x in pair['pair']) for pair in matching_pairs)
+    labels = pairs_to_cluster_labels(id_pairs)
+    pprint(labels)
+    return labels
+
+def mesh_coauthor_heuristic(cluster, client):
+    return _lookup_set(client, 'mesh_coauthor_match', cluster)
 
 def name_heuristic(cluster, client):
-    group_id = cluster['group_id']
-    lookup   = client.reference_sets_group_lookup.name_match
-    print(group_id)
-    result   = lookup.find_one(dict(group_id=group_id))
-    print(result)
-    if result is None:
-        return dict()
-    1/0
+    return _lookup_set(client, 'name_match', cluster)
 
 # Each heuristic should only have one underscore
 possible_heuristics = dict(

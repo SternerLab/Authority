@@ -11,6 +11,15 @@ def merge(aid, cid, resolved):
         elif l > v:
             resolved[k] = (resolved[k][0] - 1, m_k)
 
+def merge_labels(a, b, labels):
+    la, lb = labels[a], labels[b]
+    u, v = min(la, lb), max(la, lb)
+    for k, l in labels.items():
+        if l == v:
+            resolved[k] = (u)
+        elif l > v:
+            resolved[k] = labels[k] - 1
+
 def make_contiguous(cluster):
     if not cluster:
         return cluster
@@ -28,3 +37,23 @@ def batched(generator, batch_size=32):
             break
         else:
             yield batch
+
+# I think I've accidentally written boilerplate like this multiple times,
+# so here is a definitive one that can replace the others..
+def pairs_to_cluster_labels(id_pairs):
+    count = 0
+    labels = dict()
+    for a, b in id_pairs:
+        if a in labels:
+            if b in labels:
+                if labels[a] != labels[b]:
+                    merge_labels(a, b, labels)
+            else:
+                labels[b] = labels[a]
+        else:
+            if b in labels:
+                labels[a] = labels[b]
+            else:
+                labels[a] = labels[b] = count
+                count += 1
+    return labels
