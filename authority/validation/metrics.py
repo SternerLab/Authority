@@ -84,7 +84,10 @@ def cluster_metrics(clusters, reference_clusters):
             for j in range(true_clusters):
                 correct   = len({k for k in clusters[i] if k in reference_clusters[j]})
                 normalize = len(clusters[i])
-                cluster_purity += correct ** 2 / normalize
+                if normalize > 0:
+                    cluster_purity += correct ** 2 / normalize
+                else:
+                    cluster_purity = 0.
         cluster_purity = cluster_purity / total_authors
 
         author_purity = 0

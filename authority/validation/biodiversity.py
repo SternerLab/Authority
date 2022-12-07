@@ -22,7 +22,8 @@ class BiodiversityResolver(Resolver):
         reference_clusters = []
         resolved = 0
         for doc in self.collection.find({'author.key' : key}):
-            reference_clusters.append([str(_id) for _id in doc['mongo_ids']])
+            ids = doc.get('mongo_ids', [[]])[0]
+            reference_clusters.append([str(_id) for _id in ids])
             resolved += 1
         if resolved > 0:
             print('resolved', resolved)
