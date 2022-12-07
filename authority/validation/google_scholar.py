@@ -26,8 +26,8 @@ class GoogleScholarResolver(Resolver):
         for doc in self.collection.find({'author.key' : key}):
             reference_clusters.append([str(_id) for _id in doc['mongo_ids']])
             resolved += 1
-        if resolved > 0:
-            print('resolved', resolved)
+        # if resolved > 0:
+        #     print('resolved', resolved)
         return reference_clusters
 
     def build_cache(self):

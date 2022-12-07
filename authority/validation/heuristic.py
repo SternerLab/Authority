@@ -29,7 +29,7 @@ def _lookup_set(client, reference_set_key, cluster):
             {'_id' : {'$in' : result['pair_ids']}})
     id_pairs = ((x['ids'] for x in pair['pair']) for pair in matching_pairs)
     labels = pairs_to_cluster_labels(id_pairs)
-    pprint(labels)
+    # pprint(labels)
     return labels
 
 def mesh_coauthor_heuristic(cluster, client):

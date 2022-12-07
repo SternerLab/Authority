@@ -14,7 +14,7 @@ class Resolver:
         gid = cluster['group_id']
         name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
         key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
-        print(f'Resolving {key} for {self.name} ')
+        # print(f'Resolving {key} for {self.name} ')
 
         article_ids = set(cluster['cluster_labels'].keys())
         resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}

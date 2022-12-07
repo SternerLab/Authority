@@ -18,7 +18,7 @@ class SelfCitationResolver(Resolver):
                 if (cite_author['last'] == source_author['last'] and
                     cite_author['first_initial'] == source_author['first_initial']):
                     cite_article = articles.find_one({'title' : citation['title']})
-                    print('resolved self-citation:', source_author, flush=True)
+                    # print('resolved self-citation:', source_author, flush=True)
                     yield dict(
                         author=entry['authors'],
                         title=entry['title'],

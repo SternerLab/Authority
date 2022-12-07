@@ -17,6 +17,7 @@ from .heuristic       import HeuristicResolver, possible_heuristics
 
 possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'manual']
                     + list(possible_heuristics.keys()))
+excluded_references = {'split_heuristic', 'merge_heuristic', 'predicted'}
 
 def load_sources(client, source_names):
     ''' Resolve multiple sources to their reference clusters '''
@@ -60,15 +61,17 @@ def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, _)),
      (reference_source, (reference_clusters, unique))) = pair
     if not isinstance(predicted_clusters, list):
-        shared_predictions = {k : v for k, v in predicted_clusters.items() if k in unique}
+        shared_predictions = {k : v for k, v in predicted_clusters.items()
+                              if unique is not None and k in unique}
         shared_predictions = make_contiguous(shared_predictions)
         predicted_clusters = to_clusters(shared_predictions)
     metrics  = cluster_metrics(predicted_clusters, reference_clusters)
     pairwise = pairwise_metrics(predicted_clusters, reference_clusters)
     metrics.update(pairwise)
-    metrics['comparison'] = f'{predicted_source}(pred)x{reference_source}(ref)'
-    print(predicted_source, reference_source)
-    print(metrics)
+    metrics['prediction_source'] = predicted_source
+    metrics['reference_source']  = reference_source
+    # print(predicted_source, reference_source)
+    # print(metrics)
     return metrics
 
 def validate(cluster, sources):
@@ -77,22 +80,26 @@ def validate(cluster, sources):
     long = []
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
-    for pair in itertools.combinations(all_clusters.items(), r=2):
+    for pair in itertools.product(all_clusters.items(), repeat=2):
+        ((predicted_source, _),
+         (reference_source, _)) = pair
+        print(predicted_source, reference_source)
+        if predicted_source == reference_source or reference_source in excluded_references:
+            continue
         try:
             metrics = compare_cluster_pair(pair)
             metrics['name'] = name
             if metrics['s'] > 0:
                 long.append(metrics)
-        except IncompleteValidation: # Handle this better TODO ?
-            # Not dangerous, should just log something..
-            continue
+        except IncompleteValidation as e:
+            print(e)
     return long
 
 def validate_clusters(inferred, query, sources):
     long = []
-    for i, cluster in enumerate(inferred.find()):
+    for i, cluster in enumerate(inferred.find(query)):
         try:
-            if cluster['group_id']["first_initial"] == '':
+            if cluster['group_id']['first_initial'] == '':
                 continue
             long.extend(validate(cluster, sources))
         except KeyboardInterrupt:
