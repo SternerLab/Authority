@@ -259,6 +259,7 @@ def parse_citation(citation):
     print(authors)
     authors = [parse_name(parse_cited_name(name), i)
                for i, name in enumerate(authors)]
+    authors = [a for a in authors if a['last'].strip() != '']
     pprint(authors)
     return dict(title=remove_stop_words(result.group('title')),
                 authors=authors, year=int(result.group('year')))

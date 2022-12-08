@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
 
-from authority.validation.self_citations import self_citations, batched
+from authority.validation.self_citations import SelfCitationResolver, batched
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -10,17 +10,13 @@ def run():
     articles       = jstor_database.articles
     blocks         = client.reference_sets['first_initial_last_name']
 
-    # client.validation.drop_collection('self_citations')
+    client.validation.drop_collection('self_citations')
+    self_cites_collection = client.validation.self_citations
 
     query = {}
-    # query = {'group.authors.last' : 'bjohnson'}
+    resolver = SelfCitationResolver(client, 'self_citations')
 
-    self_cites_collection = client.validation.self_citations
     skip = self_cites_collection.count_documents({})
-    # TO test changes without modifying db
-    # for doc in self_citations(client, blocks, articles, query=query):
-    #     pprint(doc)
-    with client.start_session(causal_consistency=True) as session:
-        for batch in batched(self_citations(client, blocks, articles, query=query, skip=skip),
-                             batch_size=32):
-            self_cites_collection.insert_many(batch)
+    for batch in batched(resolver.create(client, blocks, articles, query=query, skip=skip),
+                         batch_size=32):
+        self_cites_collection.insert_many(batch)

@@ -17,12 +17,15 @@ class SelfCitationResolver(Resolver):
             for cite_author in citation['authors']:
                 if (cite_author['last'] == source_author['last'] and
                     cite_author['first_initial'] == source_author['first_initial']):
-                    cite_article = articles.find_one({'title' : citation['title']})
-                    # print('resolved self-citation:', source_author, flush=True)
-                    yield dict(
-                        author=entry['authors'],
-                        title=entry['title'],
-                        article_id=str(article['_id']),
-                        citation=citation,
-                        citation_id=(str(cite_article['_id'])
-                                     if cite_article is not None else None))
+                    pprint(article)
+                    for cite_article in articles.find({'title' : citation['title']}):
+                        # print('resolved self-citation:', source_author, flush=True)
+                        pprint(cite_article)
+                        yield dict(
+                            author=entry['authors'],
+                            title=entry['title'],
+                            article_id=str(article['_id']),
+                            citation=citation,
+                            citation_id=(str(cite_article['_id'])
+                                         if cite_article is not None else None))
+                    1/0
