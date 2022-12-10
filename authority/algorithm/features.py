@@ -132,26 +132,31 @@ def x10(a, b):
     if a_first == '' or b_first == '':
         return 0
 
+    merge_6_to_10 = True
+
     if a_first == b_first and len(a_first) > 1:
         # 11: exact match
-        return 11 # unswapped
-    elif a_clean == b_clean:
+        if merge_6_to_10:
+            return 6 # unswapped
+        else:
+            return 11 # unswapped
+    elif not merge_6_to_10 and a_clean == b_clean:
         # 10: namewithorwithouthyphen/space(jean-francoisvs.jeanfrancois or jean-
         # francois vs. jean francois),
         return 10 # unswapped
-    elif (hyphen_a and hyphen_b and a_pre == b_pre and
+    elif not merge_6_to_10 and (hyphen_a and hyphen_b and a_pre == b_pre and
           len(a_post) > 0 and len(b_post) > 0 and b_post[0] == a_post[0]):
         # 9: hyphenated name vs. name with hyphen and initial (jean-francois vs.
         # jean-f),
         return 9
-    elif hyphen_a != hyphen_b and a_pre == b_pre:
+    elif not merge_6_to_10 and hyphen_a != hyphen_b and a_pre == b_pre:
         if 1 in {len(a_post), len(b_post)}:
             # 8: hyphenated name with initial vs. name (jean-f vs. jean),
             return 8
         else:
             # 7: hyphenated name vs. first name only (jean-francois vs. jean)
             return 7
-    elif _nickname_match(a_first, b_first):
+    elif not merge_6_to_10 and _nickname_match(a_first, b_first):
         # 6: nickname match (dave vs. david)
         return 6
     elif _lev.distance(a_first, b_first) == 1:

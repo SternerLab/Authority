@@ -82,7 +82,7 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    # client.drop_database('reference_sets')
+    client.drop_database('reference_sets')
     reference_sets = client.reference_sets
 
     # ''' Create matching based on different criteria '''

@@ -41,7 +41,8 @@ def create_mesh_coauthor_non_match_pairs(client):
     reference_sets = client.reference_sets
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
-    ln_set = reference_sets['last_name'] # Less restrictive
+    # ln_set = reference_sets['last_name'] # Less restrictive
+    ln_set = reference_sets['first_initial_last_name'] # More restrictive
 
     with client.start_session(causal_consistency=True) as session:
         cursor = ln_set.find(session=session, no_cursor_timeout=True)
@@ -83,8 +84,9 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
             case 'name_non_match':
                 generator = create_name_non_match_pairs(client)
         limit = float('inf')
+        limit = 10000000
         total = limit # Assuming we will run into the limit, which we should
-        total = 18000000 # Since it's not obvious how to get this analytically
+        total = 10000000 # Since it's not obvious how to get this analytically
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)
@@ -123,8 +125,8 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    # client.drop_database('reference_sets_pairs')
-    # client.drop_database('reference_sets_group_lookup')
+    client.drop_database('reference_sets_pairs')
+    client.drop_database('reference_sets_group_lookup')
 
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
@@ -133,15 +135,8 @@ def run():
     total  = articles.count_documents({})
 
     ref_keys = tuple(reference_sets.list_collection_names())
-    ref_keys = ('first_initial_last_name',)
-    # ref_keys = ('name_match', 'mesh_coauthor_match')
-    # ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
-    # ref_keys = ('name_non_match', 'mesh_coauthor_non_match')
-    # ref_keys = ('mesh_coauthor_non_match',)
-    # ref_keys = ('name_non_match',)
-    # ref_keys = ('name_match',)
-    ref_keys = ('mesh_coauthor_match',)
-
+    ref_keys = ('first_initial_last_name', 'mesh_coauthor_match', 'name_match')
+    ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
 
     with Progress() as progress:
         for ref_key in ref_keys:

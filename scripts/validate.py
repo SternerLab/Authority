@@ -31,10 +31,12 @@ def run():
     new_df = validate_clusters(new_clusters, query, sources)
     new_df['authority_version'] = '2.0'
     # To validate Manuha's clusters
-    # old_clusters = client.previous_inferred.previous_inferred
-    # old_df = validate_clusters(new_clusters, query, sources)
-    # old_df['authority_version'] = '1.0'
-    # df = pd.concat([new_df, old_df])
-    # df.to_csv('data/authority_validation_metrics.csv')
-    print(new_df)
-    new_df.to_csv('data/authority_validation_metrics.csv')
+    old_clusters = client.previous_inferred.previous_inferred
+    old_df = validate_clusters(new_clusters, query, sources)
+    old_df['authority_version'] = '1.0'
+
+    old_df.to_csv('data/validation_metrics_manuha.csv')
+    new_df.to_csv('data/validation_metrics_lucas.csv')
+
+    df = pd.concat([new_df, old_df])
+    df.to_csv('data/authority_validation_metrics.csv')

@@ -1,5 +1,13 @@
-from scholarly import scholarly as scholar
-import scholarly
+
+try:
+    from scholarly import scholarly as scholar
+    import scholarly
+except Exception as e:
+    print('Could not load scholarly!')
+    print(e)
+    scholar = None
+    scholarly = None
+
 import itertools
 from rich.pretty import pprint
 import re
@@ -33,10 +41,11 @@ class GoogleScholarResolver(Resolver):
     def build_cache(self):
         pass
 
-scholar.set_timeout(5)
+def setup_proxy():
+    scholar.set_timeout(5)
 
-pg = scholarly.ProxyGenerator()
-scholar.use_proxy(pg)
+    pg = scholarly.ProxyGenerator()
+    scholar.use_proxy(pg)
 
 def title_words_iou_score(words_a, words_b):
     return len(words_a & words_b) / len(words_a | words_b)
