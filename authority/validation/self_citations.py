@@ -9,23 +9,43 @@ from authority.parse.parse import parse_citations
 from .utils import *
 from .resolver import Resolver
 
+def yield_possible_self_citations(article, source_author):
+    ''' Return all citations with matching last name and first initial only '''
+    # Parse all possible citations, filtering misformatted or old citations
+    # for citation in parse_citations(article): # Used if citation parsing is updated
+    for citation in article['citations']: # If citation parsing is done already
+        # For each citation, check last name and first initial
+        # In citations, first names are not reliably included
+        for cite_author in citation['authors']:
+            if (cite_author['last'] == source_author['last'] and
+                cite_author['first_initial'] == source_author['first_initial']):
+                yield citation
+
 class SelfCitationResolver(Resolver):
     def yield_clusters(self, entry, articles):
         source_author = entry['authors']
         article   = articles.find_one({'_id' : entry['ids']})
-        for citation in parse_citations(article):
-            for cite_author in citation['authors']:
-                if (cite_author['last'] == source_author['last'] and
-                    cite_author['first_initial'] == source_author['first_initial']):
-                    pprint(article)
-                    for cite_article in articles.find({'title' : citation['title']}):
-                        # print('resolved self-citation:', source_author, flush=True)
+        for citation in yield_possible_self_citations(article, source_author):
+            # Once an author is marked as potential self citation, lookup the article
+            #   by title, and double-check it is by the same author
+            #   in this case, a full first name should be available.
+            found = False
+            for cite_article in articles.find({'title' : citation['title']}):
+                # Check each full author in the resolved article
+                for full_cite_author in cite_article['authors']:
+                    # Both first and last name should be available after lookup
+                    if (full_cite_author['first'] == source_author['first'] and
+                        full_cite_author['last'] == source_author['last']):
                         pprint(cite_article)
+                        # Sufficient information to do validation by article id
                         yield dict(
                             author=entry['authors'],
                             title=entry['title'],
                             article_id=str(article['_id']),
                             citation=citation,
-                            citation_id=(str(cite_article['_id'])
-                                         if cite_article is not None else None))
-                    1/0
+                            citation_id=str(cite_article['_id']))
+                        found = True
+                        break
+                if found: # To check multiple resolved articles with differing titles
+                    break
+
