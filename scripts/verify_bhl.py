@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
+from rich.progress import track
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -14,11 +15,11 @@ def run():
 
     print(f'Found {n} BHL clusters')
     resolved = 0
-    for doc in bhl.find():
-        # pprint(doc)
+    for doc in track(bhl.find(), total=n, description='Checking resolved BHL'):
+        pprint(doc)
         # pprint(doc['author']['key'])
         if 'mongo_ids' in doc:
-            pprint(doc)
+            # pprint(doc)
             resolved += 1
         #pprint(doc)
 

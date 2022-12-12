@@ -1,0 +1,34 @@
+from pymongo import MongoClient
+from rich.pretty import pprint
+from rich import print
+import pandas as pd
+
+def run():
+    print('Checking articles in MongoDB', flush=True)
+    client     = MongoClient('localhost', 27017)
+    val        = client.validation
+    val_types  = val.list_collection_names()
+
+    names = pd.read_csv('data/names.csv')
+    names.sort_values(by='count', ascending=False, inplace=True)
+
+    for tup in names.itertuples():
+        print(f'Considering {tup.key}, count {tup.count}')
+        missing = False
+        total_overlap = 0
+        for val_type in val_types:
+            col = val[val_type]
+            print('Sanity checking validation size', col.count_documents({}))
+            overlap = 0
+            for match in col.find({'author' : {'key' : tup.key}}):
+                overlap += 1
+            total_overlap += overlap
+            if overlap == 0:
+                print(f'No author with key {tup.key} in source {val_type}')
+                missing = True
+            else:
+                print(f'Resolved key {tup.key} in source {val_type} with overlap {overlap}')
+        if missing:
+            print(f'{tup.key} missing from at least one validation source')
+        else:
+            print(f'{tup.key} is present in all validation sources, and has count {tup.count} with {total_overlap} total overlapping entries')

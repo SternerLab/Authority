@@ -89,9 +89,9 @@ def run():
             while True:
                 print('Creating batches', flush=True)
                 batch = get_batch(article_cursor, batch_size)
+                print('Received', flush=True)
                 if len(batch) == 0:
                     break
-                print('Distributing...', flush=True)
                 mesh_output = fetch_mesh(batch)
                 insert_mesh_output(articles, mesh_output, session=session)
                 print('Update finished!', flush=True)

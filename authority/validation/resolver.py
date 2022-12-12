@@ -31,10 +31,13 @@ class Resolver:
     def yield_clusters(self, entry, articles):
         raise NotImplementedError
 
-    def create(self, client, blocks, articles, query={}, skip=0):
+    def create(self, client, query={}, skip=0):
         ''' Extract clusters based on self-citations '''
-        total = blocks.count_documents(query)
         with client.start_session(causal_consistency=True) as session:
+            blocks = client.reference_sets['first_initial_last_name']
+            jstor_database = client.jstor_database
+            articles       = jstor_database.articles
+            total = blocks.count_documents(query)
             for block in track(blocks.find(query, no_cursor_timeout=True,
                                            session=session).skip(skip),
                                total=total,

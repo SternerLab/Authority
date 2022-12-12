@@ -17,9 +17,12 @@ def run():
 
     # Load the available validation sources and cache them in memory
     # source_names = possible_sources # To use all
-    source_names = ['biodiversity', 'google_scholar', 'self_citations',
-                    'merge_heuristic', 'split_heuristic',
-                    'meshcoauthor_heuristic', 'name_heuristic']
+
+    # source_names = ['biodiversity', 'google_scholar', 'self_citations',
+    #                 'merge_heuristic', 'split_heuristic',
+    #                 'meshcoauthor_heuristic', 'name_heuristic']
+
+    source_names = ['biodiversity']
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating

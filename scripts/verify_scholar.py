@@ -13,9 +13,6 @@ def run():
     scholar           = client.validation.google_scholar_dois
     articles         = jstor_database.articles
 
-    # │   'author': {
-    # │   │   'key': 'akurisaki',
-
     # for doc in scholar.find({'author.key' : 'acolpaert'}):
     #     print(doc)
 
@@ -32,6 +29,8 @@ def run():
     lens = []
 
     for doc in scholar.find():
+        print(doc)
+        1/0
         # print(len(doc))
         lens.append(len(doc['mongo_ids']))
 
