@@ -97,12 +97,15 @@ def validate(cluster, sources):
 
 def validate_clusters(inferred, query, sources):
     long = []
-    for i, cluster in enumerate(inferred.find(query)):
+    for i, cluster in enumerate(track(inferred.find(query),
+                                      total=inferred.count_documents(query),
+                                      description='Validation')):
         try:
             if cluster['group_id']['first_initial'] == '':
                 continue
             long.extend(validate(cluster, sources))
         except KeyboardInterrupt:
+            print(f'Exited validation!')
             break
     running = pd.DataFrame(long)
     return running

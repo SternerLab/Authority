@@ -10,15 +10,18 @@ from concurrent.futures import ThreadPoolExecutor as Pool
 import itertools
 import functools
 
-def parse_article(article, key=None):
+def parse_bhl_article(article, key=None):
     print(article['title'])
     for author in article['authors']:
         print(author['key'])
+        i = 0
         for result in lookup(author['full'], key=key):
+            i += len(set(result['titles']))
             pprint(result['author_id'])
             pprint(result['author'])
             pprint(result['titles'])
             yield result
+        print(f'found {i} BHL articles for search {author["full"]}')
 
 def run():
     print('Checking articles in MongoDB', flush=True)
@@ -36,7 +39,7 @@ def run():
     api_key = credentials['api_key']
 
     threads    = 8
-    batch_size = 16
+    batch_size = 32
 
     with client.start_session(causal_consistency=True) as session:
         tracked_cursor = track(collect.find(no_cursor_timeout=True, session=session),

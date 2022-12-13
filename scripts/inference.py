@@ -45,8 +45,9 @@ def infer_from_feature(features, interpolated, xi_ratios, prior, apply_stability
     x_i_keys = [f'x{i}' for i in x_i]
     r_is = np.array([xi_ratios.get((k, features[k] if features[k] is not None else 0), 0)
                      for k in x_i_keys if k not in excluded] + [r_a])
+    assert (r_is > 0.).all()
     r_is = np.abs(r_is) # just in case?
-    r_is = np.minimum(r_is, 10.)
+    # r_is = np.minimum(r_is, 10.)
     # r_is = np.where(r_is > 1.0, np.log10(r_is) / np.log10(42), r_is + epsilon)
     ratio = np.prod(r_is) # Could replace with np.sum() potentially
     return inference(ratio, prior), ratio, r_is
@@ -100,7 +101,7 @@ def run():
     subsets        = client.reference_sets
 
     inferred       = client.inferred
-    # inferred.drop_collection('first_initial_last_name')
+    inferred.drop_collection('first_initial_last_name')
     print(f'Possible collections:')
     for collection in lookup.list_collection_names():
         print('    ', collection)

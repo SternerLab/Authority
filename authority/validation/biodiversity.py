@@ -49,8 +49,8 @@ def lookup(author, key=None):
                 for result in metadata['Result']:
                     try:
                         yield parse(result)
-                    except Exception as e:
-                        print(e)
+                    except ValueError:
+                        print(f'BHL Could not parse {result["Name"]}, resulting in {e}')
 
 
 def parse(metadata):
@@ -62,7 +62,8 @@ def parse(metadata):
     return metadata
 
 def parse_bhl_name(bhl_name):
-    last, first = bhl_name.split(',')
+    print(bhl_name)
+    last, first, *ex = bhl_name.split(',')
     data = {'given-names' : first.strip(), 'surname' : last.strip()}
     return parse_name(data, order=0)
 

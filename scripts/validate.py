@@ -22,7 +22,7 @@ def run():
     #                 'merge_heuristic', 'split_heuristic',
     #                 'meshcoauthor_heuristic', 'name_heuristic']
 
-    source_names = ['biodiversity']
+    source_names = ['biodiversity', 'merge_heuristic', 'meshcoauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating
@@ -37,7 +37,6 @@ def run():
     old_clusters = client.previous_inferred.previous_inferred
     old_df = validate_clusters(new_clusters, query, sources)
     old_df['authority_version'] = '1.0'
-
     old_df.to_csv('data/validation_metrics_manuha.csv')
     new_df.to_csv('data/validation_metrics_lucas.csv')
 
