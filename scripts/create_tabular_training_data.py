@@ -50,7 +50,7 @@ def run():
     full = True
     # full = False
 
-    headers = ['id_0', 'id_1'] + [f'x{i}' for i in range(11)] + ['label']
+    headers = ['id_0', 'id_1'] + [f'x{i}' for i in range(1, 11)] + ['label']
     if full:
         ext = '_full'
         fields = [f'{f}_{i}' for f in __fields for i in range(2)]
