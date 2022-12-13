@@ -25,7 +25,7 @@ def parse_scholar_article(article, scholar=None):
 def run():
     client = MongoClient('localhost', 27017)
     jstor_database   = client.jstor_database
-    scholar          = client.validation.google_scholar
+    scholar          = client.validation.google_scholar_dois
     articles         = jstor_database.articles
 
     names = pd.read_csv('data/names.csv')

@@ -825,7 +825,7 @@ jupyter = ["ipywidgets (>=7.5.1,<8.0.0)"]
 
 [[package]]
 name = "scholarly"
-version = "1.7.2"
+version = "1.7.5"
 description = "Simple access to Google Scholar authors and citations"
 category = "main"
 optional = false
@@ -837,7 +837,7 @@ beautifulsoup4 = "*"
 bibtexparser = "*"
 deprecated = "*"
 fake-useragent = "*"
-free-proxy = "*"
+free-proxy = "<1.1.0"
 python-dotenv = "*"
 requests = {version = "*", extras = ["socks"]}
 selenium = "*"

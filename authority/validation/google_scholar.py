@@ -1,12 +1,13 @@
 
 try:
-    from scholarly import scholarly as scholar
     import scholarly
+    from scholarly import scholarly as scholar
 except Exception as e:
     print('Could not load scholarly!')
     print(e)
     scholar = None
     scholarly = None
+    raise
 
 import itertools
 from rich.pretty import pprint
