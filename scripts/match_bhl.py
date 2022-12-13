@@ -20,7 +20,7 @@ def run():
 
         # Resolve by matching title, then author
         for title in doc['titles']:
-            pprint(title)
+            # pprint(title)
             jstor_article = articles.find_one({'title' : title})
             if (jstor_article is not None and
                 key in {a['key'] for a in jstor_article['authors']}):
@@ -31,7 +31,7 @@ def run():
                 ids.add(jstor_article['_id'])
 
         if ids:
-            pprint({'_id' : doc['_id'], '$push' : {'mongo_ids' : list(ids)}})
+            # pprint({'_id' : doc['_id'], '$push' : {'mongo_ids' : list(ids)}})
 
             bhl.update_one({'_id' : doc['_id']},
                            {'$push' : {'mongo_ids' : list(ids)}},

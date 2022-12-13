@@ -36,7 +36,9 @@ class SelfCitationResolver(Resolver):
                     # Both first and last name should be available after lookup
                     if (full_cite_author['first'] == source_author['first'] and
                         full_cite_author['last'] == source_author['last']):
-                        pprint(cite_article)
+                        # Note: Do not enable printing unless you are debugging!
+                        # This takes 13.7h when printing and 35 minutes without it!
+                        # pprint(cite_article)
                         # Sufficient information to do validation by article id
                         yield dict(
                             author=entry['authors'],
