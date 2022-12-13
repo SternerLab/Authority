@@ -26,7 +26,6 @@ class GoogleScholarResolver(Resolver):
 
 def setup_proxy():
     scholar.set_timeout(5)
-
     pg = scholarly.ProxyGenerator()
     scholar.use_proxy(pg)
 

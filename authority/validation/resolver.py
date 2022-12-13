@@ -18,24 +18,23 @@ class Resolver:
         name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
         key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
 
-        if self.cache is not None and key in self.cache:
+        if self.cache is not None:
             cursor = self.cache[key]
         else:
-            print(f'NOT using cache')
+            print(f'{self.name} is NOT using cache')
             cursor = self.collection.find({'author.key' : key})
 
         reference_clusters = []
         resolved = 0
-        for doc in self.collection.find({'author.key' : key}):
+        for doc in cursor:
             reference_clusters.append(self.extract_cluster(doc))
             resolved += 1
-        if resolved > 0:
-            print('resolved', resolved)
+        # if resolved > 0:
+        #     print('resolved', resolved)
         return reference_clusters
 
     def extract_cluster(self, doc):
-        ids = doc.get('mongo_ids', [[]])[0]
-        return [str(_id) for _id in ids]
+        return [str(_id) for _id in doc.get('mongo_ids', [])]
 
     def create(self, client, query={}, skip=0):
         ''' Extract clusters based on self-citations '''
@@ -47,7 +46,7 @@ class Resolver:
             for block in track(blocks.find(query, no_cursor_timeout=True,
                                            session=session).skip(skip),
                                total=total,
-                               description=f'Building self-citations'):
+                               description=f'Building {self.name}'):
                 for entry in block['group']:
                     yield from self.yield_clusters(entry, articles)
 

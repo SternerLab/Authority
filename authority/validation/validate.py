@@ -76,15 +76,11 @@ def compare_cluster_pair(pair):
     # print(metrics) # For debugging only
     return metrics
 
-def validate(cluster, sources):
-    ''' Validate a single cluster against multiple reference sources '''
-    all_clusters = create_labeled_clusters(cluster, sources)
-    gid = cluster['group_id']
-    name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
-    for pair in itertools.product(all_clusters.items(), repeat=2):
+def _validation_generator(pairs, name):
+    for pair in pairs:
         ((predicted_source, _),
          (reference_source, _)) = pair
-        print(predicted_source, reference_source)
+        # print(predicted_source, reference_source)
         if predicted_source == reference_source or reference_source in excluded_references:
             continue
         try:
@@ -94,17 +90,29 @@ def validate(cluster, sources):
                 yield metrics
         except IncompleteValidation as e:
             pass
-            # print(e) # For optimization
+
+def validate(cluster, sources):
+    ''' Validate a single cluster against multiple reference sources '''
+    all_clusters = create_labeled_clusters(cluster, sources)
+    gid = cluster['group_id']
+    name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+    pairs = itertools.product(all_clusters.items(), repeat=2)
+    bound = len(all_clusters) ** 2
+    return bound, _validation_generator(pairs, name)
 
 def validate_clusters(inferred, query, sources):
+    total = 0
     generator = None
-    for i, cluster in enumerate(track(inferred.find(query),
-                                      total=inferred.count_documents(query),
-                                      description='Validation')):
+    inferred_size = inferred.count_documents({})
+    for i, cluster in track(enumerate(inferred.find(query)), total=inferred_size,
+                            description='Creating validation generator'):
         try:
             if cluster['group_id']['first_initial'] == '':
                 continue
-            next_generator = validate(cluster, sources)
+            bound, next_generator = validate(cluster, sources)
+            expected = bound * inferred_size
+            print(f'{total}/{expected} : {(total / expected ):2.2%}')
+            total += bound
             if generator is None:
                 generator = next_generator
             else:
@@ -112,5 +120,7 @@ def validate_clusters(inferred, query, sources):
         except KeyboardInterrupt:
             print(f'Exited validation!')
             break
+    print(f'Finished creating validation generators')
+    generator = track(generator, total=total, description='Validation')
     running = pd.DataFrame(generator)
     return running

@@ -15,6 +15,7 @@ class BiodiversityResolver(Resolver):
         self.collection = client.validation.bhl
 
 
+
 author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
 metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
 
