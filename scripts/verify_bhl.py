@@ -14,10 +14,9 @@ def run():
     n = bhl.count_documents({})
 
     print(f'Found {n} BHL clusters')
-    return
     resolved = 0
     for doc in track(bhl.find(), total=n, description='Checking resolved BHL'):
-        pprint(doc)
+        # pprint(doc)
         # pprint(doc['author']['key'])
         if 'mongo_ids' in doc:
             # pprint(doc)

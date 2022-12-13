@@ -1,5 +1,6 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
+from rich.progress import track
 from rich import print
 import pickle
 import pandas as pd

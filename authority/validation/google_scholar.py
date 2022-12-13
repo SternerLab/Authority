@@ -7,7 +7,6 @@ except Exception as e:
     print(e)
     scholar = None
     scholarly = None
-    raise
 
 import itertools
 from rich.pretty import pprint
