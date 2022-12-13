@@ -6,6 +6,7 @@ custom_mongo.sh
 geckodriver.log
 umls_credentials.json
 bhl_credentials.json
+orcid_credentials.json
 mesh_pre_fetched_txt
 plots
 authority_validation_metrics.csv
