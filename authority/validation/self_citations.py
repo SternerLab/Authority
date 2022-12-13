@@ -51,3 +51,20 @@ class SelfCitationResolver(Resolver):
                 if found: # To check multiple resolved articles with differing titles
                     break
 
+    def resolve(self, cluster):
+        gid = cluster['group_id']
+        name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
+        key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
+        # print(f'Resolving {key} for {self.name} ')
+
+        article_ids = set(cluster['cluster_labels'].keys())
+        resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
+
+        # Merge clusters based on resolutions
+        for cite in self.cache[key]:
+            aid, cid = cite['article_id'], cite['citation_id']
+            if aid in article_ids and cid is not None and cid in article_ids:
+                merge(aid, cid, resolved)
+
+        # # Filter unmerged clusters and decrement cluster labels appropriately
+        return make_contiguous({k : v for k, (v, m) in resolved.items() if m})

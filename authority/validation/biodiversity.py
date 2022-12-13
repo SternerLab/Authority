@@ -14,23 +14,6 @@ class BiodiversityResolver(Resolver):
         self.cache = None
         self.collection = client.validation.bhl
 
-    def resolve(self, cluster):
-        gid = cluster['group_id']
-        name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
-        key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
-
-        reference_clusters = []
-        resolved = 0
-        for doc in self.collection.find({'author.key' : key}):
-            ids = doc.get('mongo_ids', [[]])[0]
-            reference_clusters.append([str(_id) for _id in ids])
-            resolved += 1
-        if resolved > 0:
-            print('resolved', resolved)
-        return reference_clusters
-
-    def build_cache(self):
-        pass
 
 author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
 metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'

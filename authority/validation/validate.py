@@ -2,6 +2,7 @@ from pymongo import MongoClient
 from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
+import itertools
 import pickle
 import pandas as pd
 import pymongo
@@ -72,13 +73,12 @@ def compare_cluster_pair(pair):
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
     # print(predicted_source, reference_source)
-    # print(metrics)
+    # print(metrics) # For debugging only
     return metrics
 
 def validate(cluster, sources):
     ''' Validate a single cluster against multiple reference sources '''
     all_clusters = create_labeled_clusters(cluster, sources)
-    long = []
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
     for pair in itertools.product(all_clusters.items(), repeat=2):
@@ -91,22 +91,26 @@ def validate(cluster, sources):
             metrics = compare_cluster_pair(pair)
             metrics['name'] = name
             if metrics['s'] > 0:
-                long.append(metrics)
+                yield metrics
         except IncompleteValidation as e:
-            print(e)
-    return long
+            pass
+            # print(e) # For optimization
 
 def validate_clusters(inferred, query, sources):
-    long = []
+    generator = None
     for i, cluster in enumerate(track(inferred.find(query),
                                       total=inferred.count_documents(query),
                                       description='Validation')):
         try:
             if cluster['group_id']['first_initial'] == '':
                 continue
-            long.extend(validate(cluster, sources))
+            next_generator = validate(cluster, sources)
+            if generator is None:
+                generator = next_generator
+            else:
+                generator = itertools.chain(generator, next_generator)
         except KeyboardInterrupt:
             print(f'Exited validation!')
             break
-    running = pd.DataFrame(long)
+    running = pd.DataFrame(generator)
     return running

@@ -69,7 +69,8 @@ def cluster_metrics(clusters, reference_clusters):
         if len(all_ids) == 0 or true_clusters == 0 or total_clusters == 0:
             raise IncompleteValidation(f'Incomplete, true: {true_clusters}, total: {total_clusters}')
         else:
-            print(f'Complete,   true: {true_clusters}, total: {total_clusters}')
+            pass
+            # print(f'Complete,   true: {true_clusters}, total: {total_clusters}')
         correct_clusters = np.int32(0)
         for cluster in clusters:
             if cluster in reference_clusters:
@@ -135,7 +136,7 @@ def cluster_metrics(clusters, reference_clusters):
 def to_clusters(labels):
     ''' Convert labels of the form {article_id : cluster_id} to clusters of the form
         [{article_id..}..]'''
-    print('labels', labels)
+    # print('labels', labels)
     clusters = []
     for k, v in sorted(labels.items(), key=lambda t : t[1]):
         if len(clusters) < v + 1:

@@ -10,26 +10,32 @@ class Resolver:
         self.cache = None
         self.collection = client.validation[name]
 
+    def yield_clusters(self, entry, articles):
+        raise NotImplementedError
+
     def resolve(self, cluster):
         gid = cluster['group_id']
         name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
         key  = f'{gid["first_initial"].lower()}{gid["last"].lower()}'
-        # print(f'Resolving {key} for {self.name} ')
 
-        article_ids = set(cluster['cluster_labels'].keys())
-        resolved = {aid : (i, False) for i, aid in enumerate(article_ids)}
+        if self.cache is not None and key in self.cache:
+            cursor = self.cache[key]
+        else:
+            print(f'NOT using cache')
+            cursor = self.collection.find({'author.key' : key})
 
-        # Merge clusters based on resolutions
-        for cite in self.cache[key]:
-            aid, cid = cite['article_id'], cite['citation_id']
-            if aid in article_ids and cid is not None and cid in article_ids:
-                merge(aid, cid, resolved)
+        reference_clusters = []
+        resolved = 0
+        for doc in self.collection.find({'author.key' : key}):
+            reference_clusters.append(self.extract_cluster(doc))
+            resolved += 1
+        if resolved > 0:
+            print('resolved', resolved)
+        return reference_clusters
 
-        # # Filter unmerged clusters and decrement cluster labels appropriately
-        return make_contiguous({k : v for k, (v, m) in resolved.items() if m})
-
-    def yield_clusters(self, entry, articles):
-        raise NotImplementedError
+    def extract_cluster(self, doc):
+        ids = doc.get('mongo_ids', [[]])[0]
+        return [str(_id) for _id in ids]
 
     def create(self, client, query={}, skip=0):
         ''' Extract clusters based on self-citations '''

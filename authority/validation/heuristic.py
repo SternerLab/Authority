@@ -60,9 +60,3 @@ class HeuristicResolver(Resolver):
 
     # Neither yield_clusters nor create will be used, since the heuristic
     # clusters already exist as "reference sets"
-
-    # def yield_clusters(self, entry, articles):
-    #     raise NotImplementedError
-
-    # def create(self, client, blocks, articles, query={}, skip=0):
-    #     pass
