@@ -49,7 +49,7 @@ def lookup(author, key=None):
                 for result in metadata['Result']:
                     try:
                         yield parse(result)
-                    except ValueError:
+                    except ValueError as e:
                         print(f'BHL Could not parse {result["Name"]}, resulting in {e}')
 
 

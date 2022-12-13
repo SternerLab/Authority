@@ -10,9 +10,12 @@ from concurrent.futures import ThreadPoolExecutor as Pool
 import itertools
 import functools
 
-def parse_bhl_article(article, key=None):
+def parse_bhl_article(article, key=None, bhl=None):
     print(article['title'])
     for author in article['authors']:
+        if bhl is not None:
+            if bhl.find_one({'author.key' : author['key']}) is None:
+                continue
         print(author['key'])
         i = 0
         for result in lookup(author['full'], key=key):
@@ -38,18 +41,10 @@ def run():
         credentials = json.load(infile)
     api_key = credentials['api_key']
 
-    threads    = 8
-    batch_size = 32
-
     with client.start_session(causal_consistency=True) as session:
-        tracked_cursor = track(collect.find(no_cursor_timeout=True, session=session),
-                               total=n)
-        mapped_func    = functools.partial(parse_article, key=api_key)
-        with Pool(max_workers=threads) as pool:
-            while True:
-                batch = list(itertools.islice(tracked_cursor, batch_size))
-                if len(batch) == 0:
-                    break
-                for results in pool.map(mapped_func, batch):
-                    for result in results:
-                        bhl.insert_one(result, session=session)
+        tracked_cursor = track(collect.find(no_cursor_timeout=True, session=session), total=n)
+        for article in tracked_cursor:
+            to_insert = list(parse_bhl_article(article, key=api_key, bhl=bhl))
+            if len(to_insert) > 0:
+                print(f'BHL resolved {len(to_insert)} JSTOR articles from article:\n {article["title"]} with authors {[a["key"] for a in article["authors"]]}')
+                bhl.insert_many(to_insert)
