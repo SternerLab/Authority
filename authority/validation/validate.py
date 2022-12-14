@@ -111,7 +111,6 @@ def validate_clusters(inferred, query, sources):
                 continue
             bound, next_generator = validate(cluster, sources)
             expected = bound * inferred_size
-            print(f'{total}/{expected} : {(total / expected ):2.2%}')
             total += bound
             if generator is None:
                 generator = next_generator
@@ -120,6 +119,9 @@ def validate_clusters(inferred, query, sources):
         except KeyboardInterrupt:
             print(f'Exited validation!')
             break
+
+        if i % 100 == 0:
+            print(f'{total}/{expected} : {(total / expected ):2.2%}')
     print(f'Finished creating validation generators')
     generator = track(generator, total=total, description='Validation')
     running = pd.DataFrame(generator)
