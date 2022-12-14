@@ -72,7 +72,7 @@ def compare_cluster_pair(pair):
     metrics.update(pairwise)
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
-    print(predicted_source, reference_source)
+    # print(predicted_source, reference_source)
     # print(metrics) # For debugging only
     return metrics
 

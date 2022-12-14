@@ -29,8 +29,8 @@ class Resolver:
         for doc in cursor:
             reference_clusters.append(self.extract_cluster(doc))
             resolved += 1
-        if resolved > 0:
-            print(reference_clusters)
+        # if resolved > 0:
+        #     print(reference_clusters)
         return reference_clusters
 
     def extract_cluster(self, doc):
@@ -61,5 +61,5 @@ class Resolver:
         for cluster in track(self.collection.find({}), total=total,
                              description=f'Building {self.name} cache'):
             key = cluster['author']['key']
-            print(cluster)
+            # print(cluster)
             self.cache[key].append(cluster)
