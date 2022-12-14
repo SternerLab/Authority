@@ -8,6 +8,7 @@ from rich.progress import track
 def run():
     # val_df = pd.read_csv('data/authority_validation_metrics.csv')
     val_df = pd.read_csv('data/validation_metrics_lucas.csv')
+    # val_df = pd.read_csv('data/validation_metrics_manuha.csv')
     # val_df = pd.read_csv('data/archive/authority_validation_metrics_dec_7.csv')
     # val_df.sort_values(by='article_count', ascending=False, inplace=True)
     print(val_df.columns)
@@ -20,8 +21,28 @@ def run():
 
     self_scholar = val_df.loc[((val_df['prediction_source'] == 'self_citations') &
                                (val_df['reference_source'] == 'google_scholar'))]
-    print(self_scholar.describe())
+    print(self_scholar[columns].describe())
 
     sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', kind='violin')
-    plt.savefig('plots/source_comparison.png', bbox_inches='tight', dpi=300)
+    plt.savefig('plots/source_comparison_violins.png', bbox_inches='tight', dpi=300)
     plt.show()
+
+    true_sources = {'google_scholar', 'self_citations', 'biodiversity'}
+    eval_sources = {'predicted', 'merge_heuristic', 'split_heuristic'}
+
+    true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
+                              (val_df['reference_source'].isin(true_sources)))]
+    print(true_val_df[columns].describe())
+
+    metrics_df = pd.melt(true_val_df, id_vars='prediction_source', value_vars=columns[2:],
+                         var_name='metric', value_name='metric_value')
+    metrics_df.dropna(inplace=True)
+    print(metrics_df)
+    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
+    for ax in fig.axes.ravel():
+        for c in ax.containers:
+            labels = [f'  {v.get_width():.2%}' for v in c]
+            ax.bar_label(c, labels=labels, label_type='edge')
+    plt.savefig('plots/multi_source_validation.png', bbox_inches='tight', dpi=300)
+    plt.show()
+

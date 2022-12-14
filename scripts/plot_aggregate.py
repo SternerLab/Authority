@@ -6,7 +6,8 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    # val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    val_df = pd.read_csv('data/validation_metrics_lucas.csv')
     val_df.fillna(0, inplace=True)
     print(val_df.describe())
 
@@ -24,23 +25,23 @@ def run():
     val_df.sort_values(by='article_count', ascending=False, inplace=True)
     val_df.to_csv('data/composite.csv')
 
-    prediction_df = val_df[val_df['prediction_source'] == 'predicted']
-    prediction_df.describe().to_csv('data/aggregate.csv')
-    print(prediction_df.describe())
+    # prediction_df = val_df[val_df['prediction_source'] == 'predicted']
+    # prediction_df.describe().to_csv('data/aggregate.csv')
+    # print(prediction_df.describe())
 
-    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
-    print('all')
-    print(prediction_df[columns].describe())
-    print('top/bottom')
-    print(prediction_df.head(30)[columns])
-    print(prediction_df.tail(30)[columns])
-    print('top 100')
-    print(prediction_df.head(100)[columns].describe())
-    print('bottom 100')
-    print(prediction_df.tail(100)[columns].describe())
-    prediction_df.sort_values(by='accuracy', ascending=True, inplace=True)
-    print(prediction_df.head(10))
-    print(prediction_df.tail(10))
+    # columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
+    # print('all')
+    # print(prediction_df[columns].describe())
+    # print('top/bottom')
+    # print(prediction_df.head(30)[columns])
+    # print(prediction_df.tail(30)[columns])
+    # print('top 100')
+    # print(prediction_df.head(100)[columns].describe())
+    # print('bottom 100')
+    # print(prediction_df.tail(100)[columns].describe())
+    # prediction_df.sort_values(by='accuracy', ascending=True, inplace=True)
+    # print(prediction_df.head(10))
+    # print(prediction_df.tail(10))
 
     metrics = ('lumping', 'splitting', 'accuracy')
     print(val_df['frequency'].describe())
@@ -52,4 +53,13 @@ def run():
         plt.savefig(f'plots/{metric}_name_frequency.png', bbox_inches='tight', dpi=300)
         plt.show()
         plt.clf()
+
+    # debug = val_df[['frequency', 'accuracy', 'prediction_source']]
+    # print(debug)
+    # debug = debug[debug['prediction_source'] == 'merge_heuristic']
+    # print(debug)
+    # print(debug['accuracy'].min())
+    # sns.scatterplot(debug, x='frequency', y='accuracy')
+    # plt.show()
+
 
