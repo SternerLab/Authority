@@ -8,6 +8,7 @@ from rich.progress import track
 def run():
     # val_df = pd.read_csv('data/authority_validation_metrics.csv')
     val_df = pd.read_csv('data/validation_metrics_lucas.csv')
+    # val_df = pd.read_csv('data/archive/authority_validation_metrics_dec_7.csv')
     # val_df.sort_values(by='article_count', ascending=False, inplace=True)
     print(val_df.columns)
     print(set(val_df['reference_source']))

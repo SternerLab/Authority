@@ -29,12 +29,17 @@ class Resolver:
         for doc in cursor:
             reference_clusters.append(self.extract_cluster(doc))
             resolved += 1
-        # if resolved > 0:
-        #     print('resolved', resolved)
+        if resolved > 0:
+            print(reference_clusters)
         return reference_clusters
 
     def extract_cluster(self, doc):
-        return [str(_id) for _id in doc.get('mongo_ids', [])]
+        ''' Needs to account for scholar-type and bhl-type clusters'''
+        clusters = doc.get('mongo_ids', [[]])
+        if isinstance(clusters[0], list):
+            return [str(_id) for cluster in clusters for _id in cluster]
+        else:
+            return [str(_id) for _id in clusters if _id is not None]
 
     def create(self, client, query={}, skip=0):
         ''' Extract clusters based on self-citations '''
@@ -56,4 +61,5 @@ class Resolver:
         for cluster in track(self.collection.find({}), total=total,
                              description=f'Building {self.name} cache'):
             key = cluster['author']['key']
+            print(cluster)
             self.cache[key].append(cluster)
