@@ -4,6 +4,7 @@ from rich.pretty import pprint
 from collections import namedtuple
 import numpy as np
 import itertools
+import sklearn.metrics.cluster as sklearn_cluster_metrics
 
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
@@ -17,12 +18,44 @@ def pairwise_metrics(clusters, reference_clusters):
         accuracy       = (tp + tn) / s
         precision = pp = tp / (tp + fp)
         recall    = pr = tp / (tp + fn)
+        neg_precision  = npp = tn / (tn + fn)
+        neg_recall     = npr = tn / (tn + fp)
         f1             = (2 * pp * pr) / (pp + pr)
         lumping        = fp / (tp + fp) # Correct? was written as (fp / (tp / fp)) in paper
         splitting      = fn / (tn + fn)
         error          = (fp + fn) / s
         del clusters, reference_clusters
         return dict(locals())
+
+def labels_to_arrays(labels):
+    ''' Turn label dicts to arrays for sklearn '''
+    return [t[1] for t in sorted(clusters.items(), key=lambda t : t[0])]
+
+def clusters_to_labels(clusters):
+    labels = dict()
+    for i, cluster in enumerate(clusters):
+        for key in cluster:
+            labels[key] = i
+    return labels
+
+__sklearn_metrics = ['rand', 'adjusted_rand', 'adjusted_mutual_info',
+                     'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
+__sklearn_indices = ['calinski_harabasz', 'silhouette', 'davies_bouldin']
+
+def sklearn_metrics(clusters, reference_clusters, data=None):
+    preds = labels_to_array(clusters_to_labels(clusters))
+    ref   = labels_to_array(clusters_to_labels(reference_clusters))
+
+    metrics = {k : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
+               for m in __sklearn_metrics}
+    for index in __sklearn_indices:
+        index_kwargs = dict()
+        if index == 'silhouette':
+            index_kwargs['metric'] = 'euclidean'
+        for source, labels in (('predictions', preds), ('reference', ref)):
+            index_fn = getattr(sklearn_cluster_metrics, f'{index}_score')
+            metrics[f'{index}_{source}'] = index_fn(data, labels, **index_kwargs)
+    return metrics
 
 def unpack(clusters, reference_clusters):
     # Calculate pairwise true/false positives/negatives
@@ -33,8 +66,6 @@ def unpack(clusters, reference_clusters):
     fp = 0
     fn = 0
     s = 0
-    for i, j in itertools.combinations(all_ids, r=2):
-        s += 1
     for i, j in itertools.combinations(all_ids, r=2):
         label = False
         for ref_cluster in reference_clusters:
@@ -48,12 +79,14 @@ def unpack(clusters, reference_clusters):
                     tp += 1
                 else:
                     fp += 1
+                s += 1
                 break
         else:
             if label:
                 fn += 1
             else:
                 tn += 1
+            s += 1
     assert tp + tn + fp + fn == s, f'Sanity check on confusion matrix FAILED: {tp} + {tn} + {fp} + {fn} != {s}'
     return tp, tn, fp, fn
 
@@ -68,9 +101,6 @@ def cluster_metrics(clusters, reference_clusters):
         all_ids          = list(set().union(e for c in reference_clusters for e in c))
         if len(all_ids) == 0 or true_clusters == 0 or total_clusters == 0:
             raise IncompleteValidation(f'Incomplete, true: {true_clusters}, total: {total_clusters}')
-        else:
-            pass
-            # print(f'Complete,   true: {true_clusters}, total: {total_clusters}')
         correct_clusters = np.int32(0)
         for cluster in clusters:
             if cluster in reference_clusters:
@@ -79,7 +109,6 @@ def cluster_metrics(clusters, reference_clusters):
         cluster_precision  = cp = np.float32(correct_clusters / total_clusters)
         cluster_recall     = cr = np.float32(correct_clusters / true_clusters)
         cluster_f1              = np.float32((2 * cp * cr) / (cp + cr))
-
         cluster_ratio           = np.float32(total_clusters / true_clusters)
 
         cluster_purity = 0
@@ -104,33 +133,35 @@ def cluster_metrics(clusters, reference_clusters):
 
         k_measure = np.sqrt(cluster_purity * author_purity)
 
-        contained = lambda s, cs : [c for c in cs if s in c][0]
+        # Leave these be for now!
+        # contained = lambda s, cs : [c for c in cs if s in c][0]
 
-        b_cubed_precision = 0
-        b_cubed_recall    = 0
-        # for s in range(1, total_authors + 1):
-        try:
-            for s in all_ids:
-                V = contained(s, clusters)
-                T = {si for si in V
-                     if contained(si, reference_clusters) == contained(s, reference_clusters)}
-                ref_precision = len(T)/len(V)
-                b_cubed_precision += ref_precision
+        # b_cubed_precision = 0
+        # b_cubed_recall    = 0
+        # # for s in range(1, total_authors + 1):
+        # try:
+        #     for s in all_ids:
+        #         V = contained(s, clusters)
+        #         T = {si for si in V
+        #              if contained(si, reference_clusters) == contained(s, reference_clusters)}
+        #         ref_precision = len(T)/len(V)
+        #         b_cubed_precision += ref_precision
 
-                C = contained(s, reference_clusters)
-                U = {si for si in C
-                     if contained(si, clusters) == contained(s, clusters)}
-                ref_recall    = len(U)/len(C)
-                b_cubed_recall += ref_recall
-            # Don't return these
-            del s, all_ids, cluster
-            del clusters, reference_clusters, V, T, C, U, ref_recall, ref_precision, contained
+        #         C = contained(s, reference_clusters)
+        #         U = {si for si in C
+        #              if contained(si, clusters) == contained(s, clusters)}
+        #         ref_recall    = len(U)/len(C)
+        #         b_cubed_recall += ref_recall
+        #     # Don't return these
+        #     del s, all_ids, cluster
+        #     del clusters, reference_clusters, V, T, C, U, ref_recall, ref_precision, contained
 
-            b_cubed_precision = bp =  b_cubed_precision / total_authors
-            b_cubed_recall    = br =  b_cubed_recall / total_authors
-            b_cubed_f1             = (2 * bp * br) / (bp + br)
-        except IndexError:
-            raise IncompleteValidation('Incomplete')
+        #     b_cubed_precision = bp =  b_cubed_precision / total_authors
+        #     b_cubed_recall    = br =  b_cubed_recall / total_authors
+        #     b_cubed_f1             = (2 * bp * br) / (bp + br)
+        # except IndexError:
+        #     raise
+        #     # raise IncompleteValidation('Incomplete')
         return dict(locals())
 
 def to_clusters(labels):

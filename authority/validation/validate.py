@@ -48,7 +48,9 @@ def load_sources(client, source_names):
     return sources
 
 def create_labeled_clusters(cluster, sources):
-    all_clusters = dict(predicted=(cluster['cluster_labels'], None))
+    pprint(cluster)
+    features = [int(x) for k in cluster['feature_analysis'].keys() for x in k.split(' ')]
+    all_clusters = dict(predicted=(cluster['cluster_labels'], None, features, None))
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
         if isinstance(labels, dict):
@@ -56,12 +58,12 @@ def create_labeled_clusters(cluster, sources):
         else:
             reference_clusters = labels
         unique = set(s for cluster in reference_clusters for s in cluster)
-        all_clusters[source_name] = (reference_clusters, unique)
+        all_clusters[source_name] = (reference_clusters, labels, features, unique)
     return all_clusters
 
 def compare_cluster_pair(pair):
-    ((predicted_source, (predicted_clusters, _)),
-     (reference_source, (reference_clusters, unique))) = pair
+    ((predicted_source, (predicted_clusters, predicted_labels, features, _)),
+     (reference_source, (reference_clusters, predicted_labels, _, unique))) = pair
     if not isinstance(predicted_clusters, list):
         shared_predictions = {k : v for k, v in predicted_clusters.items()
                               if unique is not None and k in unique}
@@ -72,6 +74,11 @@ def compare_cluster_pair(pair):
     metrics.update(pairwise)
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
+
+
+    sklearn_metrics = sklearn_metrics(predicted_clusters, reference_clusters)
+    metrics.update(sklearn_metrics)
+
     # print(predicted_source, reference_source)
     # print(metrics) # For debugging only
     return metrics

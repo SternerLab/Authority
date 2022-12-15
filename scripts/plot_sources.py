@@ -6,8 +6,8 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    # val_df = pd.read_csv('data/authority_validation_metrics.csv')
-    val_df = pd.read_csv('data/validation_metrics_lucas.csv')
+    val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    # val_df = pd.read_csv('data/validation_metrics_lucas.csv')
     # val_df = pd.read_csv('data/validation_metrics_manuha.csv')
     # val_df = pd.read_csv('data/archive/authority_validation_metrics_dec_7.csv')
     # val_df.sort_values(by='article_count', ascending=False, inplace=True)
@@ -16,14 +16,14 @@ def run():
     print(set(val_df['prediction_source']))
     print(val_df)
     print(val_df.describe())
-    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
+    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
     print(val_df[columns].describe())
 
     self_scholar = val_df.loc[((val_df['prediction_source'] == 'self_citations') &
                                (val_df['reference_source'] == 'google_scholar'))]
     print(self_scholar[columns].describe())
 
-    sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', kind='violin')
+    sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', col='authority_version', kind='violin')
     plt.savefig('plots/source_comparison_violins.png', bbox_inches='tight', dpi=300)
     plt.show()
 
@@ -32,13 +32,14 @@ def run():
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]
-    print(true_val_df[columns].describe())
+    print(true_val_df[columns + ['authority_version']].describe())
 
-    metrics_df = pd.melt(true_val_df, id_vars='prediction_source', value_vars=columns[2:],
+    metrics_df = pd.melt(true_val_df, id_vars=['prediction_source',  'authority_version'],
+                         value_vars=columns[2:],
                          var_name='metric', value_name='metric_value')
-    metrics_df.dropna(inplace=True)
+    # metrics_df.dropna(inplace=True)
     print(metrics_df)
-    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
+    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', col='authority_version', kind='bar')
     for ax in fig.axes.ravel():
         for c in ax.containers:
             labels = [f'  {v.get_width():.2%}' for v in c]

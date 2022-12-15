@@ -21,15 +21,10 @@ def run():
     source_names = ['biodiversity', 'google_scholar', 'self_citations',
                     'merge_heuristic', 'split_heuristic',
                     'meshcoauthor_heuristic', 'name_heuristic']
-    # source_names = ['biodiversity']
-    # source_names = ['google_scholar']
-
-    # source_names = ['biodiversity', 'merge_heuristic', 'meshcoauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating
     query = {}
-    # query = {'group_id' : {'first_initial' : 'b', 'last' : 'johnson'}}
 
     # Finally, validate!
     new_clusters = client.inferred['first_initial_last_name']
@@ -37,7 +32,7 @@ def run():
     new_df['authority_version'] = '2.0'
     # To validate Manuha's clusters
     old_clusters = client.previous_inferred.previous_inferred
-    old_df = validate_clusters(new_clusters, query, sources)
+    old_df = validate_clusters(old_clusters, query, sources)
     old_df['authority_version'] = '1.0'
     old_df.to_csv('data/validation_metrics_manuha.csv')
     new_df.to_csv('data/validation_metrics_lucas.csv')

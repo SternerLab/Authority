@@ -13,7 +13,7 @@ def run():
     df = df.sample(frac=1).reset_index(drop=True)
     train, test = train_test_split(df, test_size=0.3)
     print(train.head(4))
-    features = [f'x{i}' for i in range(11)]
+    features = [f'x{i}' for i in range(1, 11)]
     train_in, train_labels = train[features], train['label']
 
     clf = CategoricalNB()
