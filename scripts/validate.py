@@ -28,11 +28,11 @@ def run():
 
     # Finally, validate!
     new_clusters = client.inferred['first_initial_last_name']
-    new_df = validate_clusters(new_clusters, query, sources)
+    new_df = validate_clusters(client, new_clusters, query, sources)
     new_df['authority_version'] = '2.0'
     # To validate Manuha's clusters
     old_clusters = client.previous_inferred.previous_inferred
-    old_df = validate_clusters(old_clusters, query, sources)
+    old_df = validate_clusters(client, old_clusters, query, sources)
     old_df['authority_version'] = '1.0'
     old_df.to_csv('data/validation_metrics_manuha.csv')
     new_df.to_csv('data/validation_metrics_lucas.csv')

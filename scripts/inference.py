@@ -154,9 +154,11 @@ def run():
 
                 feature_analysis = dict()
                 cached_features = []
+                all_features = []
                 for pair in pairs[ref_key].find({'_id' : {'$in' : pair_ids}}):
                     compared = compare_pair(pair)
                     features = compared['features']
+                    all_features.append(features)
                     feature_key = ' '.join(map(str, features.values()))
                     # print(features, feature_key)
                     p, r, rs = infer_from_feature(features, interpolated, xi_ratios, match_prior, **infer_kwargs)
@@ -204,6 +206,7 @@ def run():
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
                         feature_analysis=feature_analysis,
+                        features=features,
                         probs=binary_probs,
                         fixed_probs=fixed_probs_binary,
                         original_probs=original_probs_binary,
@@ -217,6 +220,7 @@ def run():
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
                         feature_analysis=feature_analysis,
+                        features=features,
                         probs=binary_probs, prior=new_prior,
                         ratios=ratios_binary,
                         match_prior=match_prior, group_id=group_id))

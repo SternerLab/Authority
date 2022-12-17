@@ -27,9 +27,9 @@ def pairwise_metrics(clusters, reference_clusters):
         del clusters, reference_clusters
         return dict(locals())
 
-def labels_to_arrays(labels):
+def labels_to_array(labels):
     ''' Turn label dicts to arrays for sklearn '''
-    return [t[1] for t in sorted(clusters.items(), key=lambda t : t[0])]
+    return [t[1] for t in sorted(labels.items(), key=lambda t : t[0])]
 
 def clusters_to_labels(clusters):
     labels = dict()
@@ -42,19 +42,25 @@ __sklearn_metrics = ['rand', 'adjusted_rand', 'adjusted_mutual_info',
                      'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
 __sklearn_indices = ['calinski_harabasz', 'silhouette', 'davies_bouldin']
 
-def sklearn_metrics(clusters, reference_clusters, data=None):
+def sklearn_metrics(clusters, reference_clusters, features=None):
     preds = labels_to_array(clusters_to_labels(clusters))
     ref   = labels_to_array(clusters_to_labels(reference_clusters))
 
-    metrics = {k : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
+    metrics = {m : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
                for m in __sklearn_metrics}
-    for index in __sklearn_indices:
-        index_kwargs = dict()
-        if index == 'silhouette':
-            index_kwargs['metric'] = 'euclidean'
-        for source, labels in (('predictions', preds), ('reference', ref)):
-            index_fn = getattr(sklearn_cluster_metrics, f'{index}_score')
-            metrics[f'{index}_{source}'] = index_fn(data, labels, **index_kwargs)
+    if features is not None:
+        print(features)
+        features = [list(d.values()) for d in features]
+        features = np.array(features)
+        for index in __sklearn_indices:
+            index_kwargs = dict()
+            if index == 'silhouette':
+                index_kwargs['metric'] = 'euclidean'
+            for source, labels in (('predictions', preds), ('reference', ref)):
+                index_fn = getattr(sklearn_cluster_metrics, f'{index}_score')
+                metrics[f'{index}_{source}'] = index_fn(features, labels, **index_kwargs)
+    else:
+        print(f'Features was none!')
     return metrics
 
 def unpack(clusters, reference_clusters):

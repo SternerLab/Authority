@@ -47,9 +47,8 @@ def load_sources(client, source_names):
         source.build_cache()
     return sources
 
-def create_labeled_clusters(cluster, sources):
-    pprint(cluster)
-    features = [int(x) for k in cluster['feature_analysis'].keys() for x in k.split(' ')]
+def create_labeled_clusters(client, cluster, sources):
+    features = cluster.get('features')
     all_clusters = dict(predicted=(cluster['cluster_labels'], None, features, None))
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
@@ -75,12 +74,12 @@ def compare_cluster_pair(pair):
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
 
+    pprint(features)
+    sk_metrics = sklearn_metrics(predicted_clusters, reference_clusters, features)
+    metrics.update(sk_metrics)
 
-    sklearn_metrics = sklearn_metrics(predicted_clusters, reference_clusters)
-    metrics.update(sklearn_metrics)
-
-    # print(predicted_source, reference_source)
-    # print(metrics) # For debugging only
+    print(predicted_source, reference_source)
+    print(metrics)
     return metrics
 
 def _validation_generator(pairs, name):
@@ -98,16 +97,16 @@ def _validation_generator(pairs, name):
         except IncompleteValidation as e:
             pass
 
-def validate(cluster, sources):
+def validate(client, cluster, sources):
     ''' Validate a single cluster against multiple reference sources '''
-    all_clusters = create_labeled_clusters(cluster, sources)
+    all_clusters = create_labeled_clusters(client, cluster, sources)
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
     pairs = itertools.product(all_clusters.items(), repeat=2)
     bound = len(all_clusters) ** 2
     return bound, _validation_generator(pairs, name)
 
-def validate_clusters(inferred, query, sources):
+def validate_clusters(client, inferred, query, sources):
     total = 0
     generator = None
     inferred_size = inferred.count_documents({})
@@ -116,7 +115,7 @@ def validate_clusters(inferred, query, sources):
         try:
             if cluster['group_id']['first_initial'] == '':
                 continue
-            bound, next_generator = validate(cluster, sources)
+            bound, next_generator = validate(client, cluster, sources)
             expected = bound * inferred_size
             total += bound
             if generator is None:
