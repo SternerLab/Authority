@@ -206,7 +206,7 @@ def run():
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
                         feature_analysis=feature_analysis,
-                        features=features,
+                        features=all_features,
                         probs=binary_probs,
                         fixed_probs=fixed_probs_binary,
                         original_probs=original_probs_binary,
@@ -220,7 +220,7 @@ def run():
                         cluster_labels={str(k) : int(cluster_labels[i])
                                         for k, i in id_lookup.items()},
                         feature_analysis=feature_analysis,
-                        features=features,
+                        features=all_features,
                         probs=binary_probs, prior=new_prior,
                         ratios=ratios_binary,
                         match_prior=match_prior, group_id=group_id))
