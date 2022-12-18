@@ -3,7 +3,7 @@ from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
 
-from authority.parse.parse import parse_citations
+from resolution.parse.parse import parse_citations
 
 def run():
     client = MongoClient('localhost', 27017)

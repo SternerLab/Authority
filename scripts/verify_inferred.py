@@ -7,8 +7,8 @@ import pymongo
 
 from bson.objectid import ObjectId
 
-from authority.validation.metrics import *
-from authority.validation.self_citations import resolve, make_contiguous, build_self_citation_cache
+from resolution.validation.metrics import *
+from resolution.validation.self_citations import resolve, make_contiguous, build_self_citation_cache
 
 def run():
     client = MongoClient('localhost', 27017)

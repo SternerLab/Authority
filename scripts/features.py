@@ -9,7 +9,7 @@ from concurrent.futures import ThreadPoolExecutor as Pool
 from threading import Lock
 progress_lock = Lock()
 
-from authority.algorithm.compare import compare_pair, x_a, x_i, limits
+from resolution.authority.compare import compare_pair, x_a, x_i, limits
 
 def make_group_pipeline(feature_dict):
     pipeline = [# {'$limit' : 1000},

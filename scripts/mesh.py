@@ -6,7 +6,7 @@ from rich.pretty import pprint
 from rich import print
 from itertools import islice
 
-from authority.parse.parse import remove_stop_words
+from resolution.parse.parse import remove_stop_words
 import unicodedata
 from collections import defaultdict
 

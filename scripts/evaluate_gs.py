@@ -95,7 +95,7 @@ def write_to_file(data_dict,authornames_to_article_ids,clusters,_id,filename):
         json.dump(data_dict,f)
 
 def run():
-    cnx = sqlite3.connect('database/jstor-authority.db')
+    cnx = sqlite3.connect('database/jstor-resolution.db')
 
     clusters_data = pd.read_sql_query("SELECT * from clusters_all", cnx)
     search_gs_query = "select name_id, full_name, ids from google_scholar_new where lower(full_name) like '"

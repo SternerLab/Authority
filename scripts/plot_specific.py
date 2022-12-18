@@ -12,9 +12,9 @@ import pickle
 
 from bson.objectid import ObjectId
 
-from authority.algorithm.compare import compare_pair, x_i, x_a
-from authority.validation.metrics import *
-from authority.validation.self_citations import resolve, make_contiguous
+from resolution.authority.compare import compare_pair, x_i, x_a
+from resolution.validation.metrics import *
+from resolution.validation.self_citations import resolve, make_contiguous
 
 def run():
     client = MongoClient('localhost', 27017)

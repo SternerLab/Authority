@@ -5,7 +5,7 @@ import itertools
 import pymongo
 from bson.objectid import ObjectId
 
-from authority.validation.google_scholar import get_clusters
+from resolution.validation.google_scholar import get_clusters
 
 def run():
     client = MongoClient('localhost', 27017)

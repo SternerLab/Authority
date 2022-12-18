@@ -17,7 +17,7 @@ from pathlib import Path
 
 import itertools
 
-from authority.algorithm.inference import *
+from resolution.authority.inference import *
 
 def run():
     client         = MongoClient('localhost', 27017)
@@ -136,7 +136,7 @@ def run():
                                    ('final',     new_table),
                                    ('ratios',    ratios),
                                    ('ratios_individual', ratios_individual)]:
-                    np.savez(f'/workspace/authority_probs/{group_id}_{name}.npz', data)
+                    np.savez(f'/workspace/resolution_probs/{group_id}_{name}.npz', data)
     except KeyboardInterrupt:
         pass
 

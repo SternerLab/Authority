@@ -3,7 +3,7 @@ from rich.pretty import pprint
 from bson.son import SON
 import itertools
 
-from authority.algorithm.compare import compare
+from resolution.authority.compare import compare
 
 def run():
     ''' Verify that all subsets are created correctly '''

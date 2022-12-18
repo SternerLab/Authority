@@ -12,9 +12,9 @@ from . import (
     )
 
 def run():
-    print('Running end-to-end authority algorithm', flush=True)
+    print('Running end-to-end resolution authority', flush=True)
     client = MongoClient('localhost', 27017)
-    # Run the whole authority algorithm in one go!
+    # Run the whole resolution authority in one go!
     # parse.run()
     subset.run()
     sample_pairs.run()

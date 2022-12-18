@@ -6,8 +6,8 @@ from rich import print
 import itertools
 import pymongo
 import json
-from authority.validation.google_scholar import parse_google_scholar_name
-from authority.parse.parse import remove_stop_words
+from resolution.validation.google_scholar import parse_google_scholar_name
+from resolution.parse.parse import remove_stop_words
 
 
 table    = 'clusters_all'
@@ -50,7 +50,7 @@ def generator(sql_cursor, articles):
 def run():
     mongo_client = MongoClient('localhost', 27017)
 
-    sql_client   = sqlite3.connect('database/jstor-authority.db')
+    sql_client   = sqlite3.connect('database/jstor-resolution.db')
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database

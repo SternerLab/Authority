@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
 
-from authority.validation.self_citations import SelfCitationResolver, batched
+from resolution.validation.self_citations import SelfCitationResolver, batched
 
 def run():
     client = MongoClient('localhost', 27017)

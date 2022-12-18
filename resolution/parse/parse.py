@@ -118,7 +118,7 @@ def parse_authors(meta):
             except KeyError:
                 pass # This is an acceptable parsing error
                 # that occurs only when an *organization* authors a paper,
-                # and not individuals, which excludes it from authority
+                # and not individuals, which excludes it from resolution
                 # print('bad author name')
                 # pprint(author)
         if not authors:

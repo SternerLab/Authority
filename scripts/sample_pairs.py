@@ -8,7 +8,7 @@ from functools import partial
 import itertools
 import math
 
-from authority.algorithm.compare import compare_pair
+from resolution.authority.compare import compare_pair
 
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html

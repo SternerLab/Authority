@@ -7,7 +7,7 @@ import itertools
 import pymongo
 import pandas as pd
 
-from authority.validation.google_scholar import get_clusters
+from resolution.validation.google_scholar import get_clusters
 from threading import Lock
 
 count = 0

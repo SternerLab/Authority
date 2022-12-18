@@ -6,8 +6,8 @@ import itertools
 import pymongo
 from pathlib import Path
 
-from authority.parse.files import iter_xml_files
-from authority.parse.parse import parse, IncompleteEntry # hmm
+from resolution.parse.files import iter_xml_files
+from resolution.parse.parse import parse, IncompleteEntry # hmm
 
 def run():
     print('Inserting articles into MongoDB', flush=True)

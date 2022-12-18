@@ -4,7 +4,7 @@ from rich.progress import track
 import itertools
 import pymongo
 
-from authority.validation.google_scholar import get_clusters
+from resolution.validation.google_scholar import get_clusters
 
 def run():
     client = MongoClient('localhost', 27017)

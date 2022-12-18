@@ -4,8 +4,8 @@ from rich.pretty import pprint
 from rich import print
 import itertools
 import pymongo
-from authority.validation.google_scholar import parse_google_scholar_name
-from authority.parse.parse import remove_stop_words
+from resolution.validation.google_scholar import parse_google_scholar_name
+from resolution.parse.parse import remove_stop_words
 
 ''' Parse 24,763 google scholar articles from previous sqlite3 db '''
 
@@ -38,7 +38,7 @@ def expand_author_row(row, articles):
 def run():
     mongo_client = MongoClient('localhost', 27017)
 
-    sql_client   = sqlite3.connect('database/jstor-authority.db')
+    sql_client   = sqlite3.connect('database/jstor-resolution.db')
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database

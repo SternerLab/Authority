@@ -4,7 +4,7 @@ from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
 
-from authority.validation.self_citations import SelfCitationResolver, batched
+from resolution.validation.self_citations import SelfCitationResolver, batched
 
 def run():
     client = MongoClient('localhost', 27017)

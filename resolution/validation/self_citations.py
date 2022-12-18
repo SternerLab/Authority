@@ -5,7 +5,7 @@ from collections import defaultdict
 
 import itertools
 
-from authority.parse.parse import parse_citations
+from resolution.parse.parse import parse_citations
 from .utils import *
 from .resolver import Resolver
 

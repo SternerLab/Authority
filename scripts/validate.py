@@ -7,8 +7,8 @@ import pymongo
 
 from bson.objectid import ObjectId
 
-from authority.validation.metrics import *
-from authority.validation.validate import validate_clusters, load_sources, possible_sources
+from resolution.validation.metrics import *
+from resolution.validation.validate import validate_clusters, load_sources, possible_sources
 
 def run():
     # First connect to MongoDB and setup the databases and collections in it
@@ -32,14 +32,14 @@ def run():
     # Finally, validate!
     new_clusters = client.inferred['first_initial_last_name']
     new_df = validate_clusters(client, new_clusters, query, sources)
-    new_df['authority_version'] = '2.0'
+    new_df['resolution_version'] = '2.0'
     # To validate Manuha's clusters
     old_clusters = client.previous_inferred.previous_inferred
     old_df = validate_clusters(client, old_clusters, query, sources)
-    old_df['authority_version'] = '1.0'
+    old_df['resolution_version'] = '1.0'
     old_df.to_csv('data/validation_metrics_manuha.csv')
     new_df.to_csv('data/validation_metrics_lucas.csv')
 
     df = pd.concat([new_df, old_df])
-    df.to_csv('data/authority_validation_metrics.csv')
+    df.to_csv('data/resolution_validation_metrics.csv')
     print(df)

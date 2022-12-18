@@ -14,8 +14,8 @@ from collections import OrderedDict
 
 import itertools
 
-from authority.algorithm import compute_ratios, compute_xi_ratios, smooth, interpolate
-from authority.algorithm.compare import *
+from resolution.authority import compute_ratios, compute_xi_ratios, smooth, interpolate
+from resolution.authority.compare import *
 
 def run():
     ''' Calculate the features for the different sets in the database

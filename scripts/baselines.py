@@ -17,9 +17,9 @@ from pathlib import Path
 
 import itertools
 
-from authority.algorithm.compare import compare_pair, x_i, x_a
-from authority.algorithm.triplet_violations import fix_triplet_violations
-from authority.algorithm.clustering import cluster as custom_cluster_alg
+from resolution.authority.compare import compare_pair, x_i, x_a
+from resolution.authority.triplet_violations import fix_triplet_violations
+from resolution.authority.clustering import cluster as custom_cluster_alg
 
 from sklearn.cluster import AgglomerativeClustering
 
@@ -36,11 +36,11 @@ def run():
     # Baselines:
     # Naive Bayes
     # XGBoost
-    # Agglomerative Clustering directly on authority features
+    # Agglomerative Clustering directly on resolution features
     # Clustering from SciBERT Features
     # Ensemble with both XGBoost and SciBERT
 
-    # For each method, we can do either direct clustering (no triplet corrections or agglomerative clustering), or we can use the authority components
+    # For each method, we can do either direct clustering (no triplet corrections or agglomerative clustering), or we can use the resolution components
 
     query = {}
     with client.start_session(causal_consistency=True) as session:

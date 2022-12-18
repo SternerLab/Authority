@@ -7,7 +7,7 @@ def _coauthor_intersection(a, b):
 
 # Just do this globally, pretty painless
 import json as _json
-with open('authority/algorithm/nicknames.json', 'r') as _infile:
+with open('resolution/authority/nicknames.json', 'r') as _infile:
     _nicknames = {k : set(v) for k, v in _json.load(_infile).items()}
 
 def _nickname_match(a, b):
