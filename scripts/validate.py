@@ -25,6 +25,7 @@ def run():
 
     # Controls which clusters we are validating
     query = {}
+    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
 
     # Finally, validate!
     new_clusters = client.inferred['first_initial_last_name']

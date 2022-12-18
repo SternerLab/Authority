@@ -34,5 +34,5 @@ def run():
             # pprint({'_id' : doc['_id'], '$push' : {'mongo_ids' : list(ids)}})
 
             bhl.update_one({'_id' : doc['_id']},
-                           {'$push' : {'mongo_ids' : list(ids)}},
+                           {'$set' : {'mongo_ids' : [str(i) for i in ids]}},
                            True)

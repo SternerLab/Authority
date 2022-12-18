@@ -52,6 +52,7 @@ def create_labeled_clusters(client, cluster, sources):
     all_clusters = dict(predicted=(cluster['cluster_labels'], None, features, None))
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
+        # print(source_name, labels)
         if isinstance(labels, dict):
             reference_clusters = to_clusters(labels)
         else:
@@ -62,27 +63,27 @@ def create_labeled_clusters(client, cluster, sources):
 
 def to_shared_clusters(clusters_or_labels, unique):
     if not isinstance(clusters_or_labels, list):
-        print(f'Converting labels to shared clusters')
+        # print(f'Converting labels to shared clusters')
         shared_labels = {k : v for k, v in clusters_or_labels.items()
                               if k in unique}
         shared_labels = make_contiguous(shared_labels)
         shared_clusters = to_clusters(shared_labels)
-        print('result', shared_clusters)
+        # print('result', shared_clusters)
     else:
-        print(f'Converting clusters to shared clusters')
+        # print(f'Converting clusters to shared clusters')
         shared_clusters = [set(s for s in c if s in unique)
                               for c in clusters_or_labels]
         shared_clusters = [c for c in shared_clusters if len(c) > 0]
-        print('result', shared_clusters)
+        # print('result', shared_clusters)
     return shared_clusters
 
 def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, predicted_labels, features, _)),
      (reference_source, (reference_clusters, predicted_labels, _, unique))) = pair
-    print(f'sources: {predicted_source}, {reference_source}')
-    print('original predicted', predicted_clusters)
+    # print(f'sources: {predicted_source}, {reference_source}')
+    # print('original predicted', predicted_clusters)
     predicted_clusters = to_shared_clusters(predicted_clusters, unique)
-    print('original reference', reference_clusters)
+    # print('original reference', reference_clusters)
     reference_clusters = to_shared_clusters(reference_clusters, unique)
 
     metrics  = cluster_metrics(predicted_clusters, reference_clusters)

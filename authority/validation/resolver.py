@@ -36,6 +36,8 @@ class Resolver:
     def extract_cluster(self, doc):
         ''' Needs to account for scholar-type and bhl-type clusters'''
         clusters = doc.get('mongo_ids', [[]])
+        if len(clusters) == 0:
+            return []
         if isinstance(clusters[0], list):
             return [str(_id) for cluster in clusters for _id in cluster]
         else:
