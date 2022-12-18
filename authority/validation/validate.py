@@ -49,7 +49,7 @@ def load_sources(client, source_names):
 
 def create_labeled_clusters(client, cluster, sources):
     features = cluster.get('features')
-    all_clusters = dict(predicted=(cluster['cluster_labels'], None, features, None))
+    all_clusters = dict(predicted=(cluster['cluster_labels'], None, features))
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
         # print(source_name, labels)
@@ -57,34 +57,40 @@ def create_labeled_clusters(client, cluster, sources):
             reference_clusters = to_clusters(labels)
         else:
             reference_clusters = labels
-        unique = set(s for cluster in reference_clusters for s in cluster)
-        all_clusters[source_name] = (reference_clusters, labels, features, unique)
+        all_clusters[source_name] = (reference_clusters, labels, features)
     return all_clusters
 
-def to_shared_clusters(clusters_or_labels, unique):
+def to_shared_clusters(clusters_or_labels, shared):
     if not isinstance(clusters_or_labels, list):
         # print(f'Converting labels to shared clusters')
         shared_labels = {k : v for k, v in clusters_or_labels.items()
-                              if k in unique}
+                              if k in shared}
         shared_labels = make_contiguous(shared_labels)
         shared_clusters = to_clusters(shared_labels)
         # print('result', shared_clusters)
     else:
         # print(f'Converting clusters to shared clusters')
-        shared_clusters = [set(s for s in c if s in unique)
+        shared_clusters = [set(s for s in c if s in shared)
                               for c in clusters_or_labels]
         shared_clusters = [c for c in shared_clusters if len(c) > 0]
         # print('result', shared_clusters)
     return shared_clusters
 
+def get_shared_ids(pred_clusters, ref_clusters):
+    pred_unique = set(s for cluster in pred_clusters for s in cluster)
+    ref_unique  = set(s for cluster in ref_clusters for s in cluster)
+    return pred_unique & ref_unique
+
 def compare_cluster_pair(pair):
-    ((predicted_source, (predicted_clusters, predicted_labels, features, _)),
-     (reference_source, (reference_clusters, predicted_labels, _, unique))) = pair
+    ((predicted_source, (predicted_clusters, predicted_labels, features)),
+     (reference_source, (reference_clusters, predicted_labels, _))) = pair
+    shared = get_shared_ids(predicted_clusters, reference_clusters)
     # print(f'sources: {predicted_source}, {reference_source}')
     # print('original predicted', predicted_clusters)
-    predicted_clusters = to_shared_clusters(predicted_clusters, unique)
+    shared = get_shared_ids(predicted_clusters, reference_clusters)
+    predicted_clusters = to_shared_clusters(predicted_clusters, shared)
     # print('original reference', reference_clusters)
-    reference_clusters = to_shared_clusters(reference_clusters, unique)
+    reference_clusters = to_shared_clusters(reference_clusters, shared)
 
     metrics  = cluster_metrics(predicted_clusters, reference_clusters)
     pairwise = pairwise_metrics(predicted_clusters, reference_clusters)
@@ -95,15 +101,15 @@ def compare_cluster_pair(pair):
     sk_metrics = sklearn_metrics(predicted_clusters, reference_clusters, features)
     metrics.update(sk_metrics)
 
-    print(predicted_source, reference_source)
-    print(metrics)
+    # print(predicted_source, reference_source)
+    # print(metrics)
     return metrics
 
 def _validation_generator(pairs, name):
     for pair in pairs:
         ((predicted_source, _),
          (reference_source, _)) = pair
-        # print(predicted_source, reference_source)
+        # # print(predicted_source, reference_source)
         if predicted_source == reference_source or reference_source in excluded_references:
             continue
         try:
@@ -140,10 +146,10 @@ def validate_clusters(client, inferred, query, sources):
             else:
                 generator = itertools.chain(generator, next_generator)
         except KeyboardInterrupt:
-            print(f'Exited validation!')
+            # print(f'Exited validation!')
             break
 
-        if i % 100 == 0:
+        if i % 1000 == 0:
             print(f'{total}/{expected} : {(total / expected ):2.2%}')
     print(f'Finished creating validation generators')
     generator = track(generator, total=total, description='Validation')

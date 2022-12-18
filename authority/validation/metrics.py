@@ -44,17 +44,22 @@ __sklearn_metrics = ['rand', 'adjusted_rand', 'adjusted_mutual_info',
 __sklearn_indices = ['calinski_harabasz', 'silhouette', 'davies_bouldin']
 
 def sklearn_metrics(clusters, reference_clusters, features=None):
-    print(clusters)
-    print(reference_clusters)
 
     preds = labels_to_array(clusters_to_labels(clusters))
     ref   = labels_to_array(clusters_to_labels(reference_clusters))
 
-    print(preds)
-    print(ref)
-
-    metrics = {m : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
-               for m in __sklearn_metrics}
+    try:
+        metrics = {m : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
+                   for m in __sklearn_metrics}
+    except ValueError:
+        print(f'Bad metrics processing:')
+        print('Input clusters (predicted, ref)')
+        print(clusters)
+        print(reference_clusters)
+        print('Labels (predicted, ref)')
+        print(preds)
+        print(ref)
+        metrics = {m : None for m in __sklearn_metrics}
     # If we had a per-article feature vector, we could use these, but we'll skip them.
     # if features is not None:
     #     for index in __sklearn_indices:
