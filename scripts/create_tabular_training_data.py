@@ -47,8 +47,8 @@ def run():
     articles = client.jstor_database.articles
     features = client.features
 
-    full = True
-    # full = False
+    # full = True
+    full = False
 
     headers = ['id_0', 'id_1'] + [f'x{i}' for i in range(1, 11)] + ['label']
     if full:

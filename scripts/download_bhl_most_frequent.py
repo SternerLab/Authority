@@ -46,5 +46,6 @@ def run():
             if total > 1:
                 best_resolutions[key] = total
             print(f'Resolved {total} articles for key {key}')
+
             print(best_resolutions)
 
