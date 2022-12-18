@@ -60,21 +60,37 @@ def create_labeled_clusters(client, cluster, sources):
         all_clusters[source_name] = (reference_clusters, labels, features, unique)
     return all_clusters
 
+def to_shared_clusters(clusters_or_labels, unique):
+    if not isinstance(clusters_or_labels, list):
+        print(f'Converting labels to shared clusters')
+        shared_labels = {k : v for k, v in clusters_or_labels.items()
+                              if k in unique}
+        shared_labels = make_contiguous(shared_labels)
+        shared_clusters = to_clusters(shared_labels)
+        print('result', shared_clusters)
+    else:
+        print(f'Converting clusters to shared clusters')
+        shared_clusters = [set(s for s in c if s in unique)
+                              for c in clusters_or_labels]
+        shared_clusters = [c for c in shared_clusters if len(c) > 0]
+        print('result', shared_clusters)
+    return shared_clusters
+
 def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, predicted_labels, features, _)),
      (reference_source, (reference_clusters, predicted_labels, _, unique))) = pair
-    if not isinstance(predicted_clusters, list):
-        shared_predictions = {k : v for k, v in predicted_clusters.items()
-                              if unique is not None and k in unique}
-        shared_predictions = make_contiguous(shared_predictions)
-        predicted_clusters = to_clusters(shared_predictions)
+    print(f'sources: {predicted_source}, {reference_source}')
+    print('original predicted', predicted_clusters)
+    predicted_clusters = to_shared_clusters(predicted_clusters, unique)
+    print('original reference', reference_clusters)
+    reference_clusters = to_shared_clusters(reference_clusters, unique)
+
     metrics  = cluster_metrics(predicted_clusters, reference_clusters)
     pairwise = pairwise_metrics(predicted_clusters, reference_clusters)
     metrics.update(pairwise)
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
 
-    pprint(features)
     sk_metrics = sklearn_metrics(predicted_clusters, reference_clusters, features)
     metrics.update(sk_metrics)
 
