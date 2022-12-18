@@ -6,8 +6,8 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    val_df = pd.read_csv('data/authority_validation_metrics.csv')
-    # val_df = pd.read_csv('data/validation_metrics_lucas.csv')
+    # val_df = pd.read_csv('data/authority_validation_metrics.csv')
+    val_df = pd.read_csv('data/validation_metrics_lucas.csv')
     # val_df = pd.read_csv('data/validation_metrics_manuha.csv')
     # val_df = pd.read_csv('data/archive/authority_validation_metrics_dec_7.csv')
     # val_df.sort_values(by='article_count', ascending=False, inplace=True)
@@ -16,7 +16,8 @@ def run():
     print(set(val_df['prediction_source']))
     print(val_df)
     print(val_df.describe())
-    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall']
+    val_df.fillna(0., inplace=True)
+    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'neg_precision', 'neg_recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
     print(val_df[columns].describe())
 
     self_scholar = val_df.loc[((val_df['prediction_source'] == 'self_citations') &

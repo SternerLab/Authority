@@ -26,6 +26,8 @@ def run():
     # Controls which clusters we are validating
     query = {}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
+    # weidner
+    query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
 
     # Finally, validate!
     new_clusters = client.inferred['first_initial_last_name']
@@ -40,3 +42,4 @@ def run():
 
     df = pd.concat([new_df, old_df])
     df.to_csv('data/authority_validation_metrics.csv')
+    print(df)

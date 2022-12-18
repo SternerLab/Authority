@@ -48,8 +48,9 @@ def load_sources(client, source_names):
     return sources
 
 def create_labeled_clusters(client, cluster, sources):
-    features = cluster.get('features')
-    all_clusters = dict(predicted=(cluster['cluster_labels'], None, features))
+    predicted_labels   = cluster['cluster_labels']
+    predicted_clusters = to_clusters(predicted_labels)
+    all_clusters = dict(predicted=(predicted_clusters, predicted_labels))
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
         # print(source_name, labels)
@@ -57,7 +58,7 @@ def create_labeled_clusters(client, cluster, sources):
             reference_clusters = to_clusters(labels)
         else:
             reference_clusters = labels
-        all_clusters[source_name] = (reference_clusters, labels, features)
+        all_clusters[source_name] = (reference_clusters, labels)
     return all_clusters
 
 def to_shared_clusters(clusters_or_labels, shared):
@@ -82,8 +83,8 @@ def get_shared_ids(pred_clusters, ref_clusters):
     return pred_unique & ref_unique
 
 def compare_cluster_pair(pair):
-    ((predicted_source, (predicted_clusters, predicted_labels, features)),
-     (reference_source, (reference_clusters, predicted_labels, _))) = pair
+    ((predicted_source, (predicted_clusters, predicted_labels)),
+     (reference_source, (reference_clusters, predicted_labels))) = pair
     shared = get_shared_ids(predicted_clusters, reference_clusters)
     # print(f'sources: {predicted_source}, {reference_source}')
     # print('original predicted', predicted_clusters)
@@ -98,7 +99,7 @@ def compare_cluster_pair(pair):
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
 
-    sk_metrics = sklearn_metrics(predicted_clusters, reference_clusters, features)
+    sk_metrics = sklearn_metrics(predicted_clusters, reference_clusters)
     metrics.update(sk_metrics)
 
     # print(predicted_source, reference_source)
