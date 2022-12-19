@@ -3,7 +3,7 @@ from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
 import itertools
-import pickle
+import dill as pickle
 import pandas as pd
 import pymongo
 

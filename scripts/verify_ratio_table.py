@@ -5,7 +5,7 @@ from bson.son import SON
 from bson.binary import Binary
 import itertools
 import scipy
-import pickle
+import dill as pickle
 import numpy as np
 import pandas as pd
 import seaborn as sns

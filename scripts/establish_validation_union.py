@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from rich.pretty   import pprint
 from rich import print
-import pickle
+import dill as pickle
 
 from bson.objectid import ObjectId
 

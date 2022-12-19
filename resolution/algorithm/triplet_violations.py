@@ -9,6 +9,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 from ..authority.clustering import merge
+from .components import connected_components
 
 Triplet = namedtuple('Triplet', ['ij', 'jk', 'ik'])
 def trip(table, i, j, k):
@@ -36,25 +37,15 @@ def correct(t, eps=1e-8):
 
 Triplet.correct = correct
 
-def connected_components(table, is_first=False):
+def yield_components(table, is_first=False):
     ''' Yield groups of triplets in the table which form connected components '''
     m, m = table.shape
-    components = np.arange(m) # Effectively cluster labels
-    n_components = m
     if is_first:
         # Triplets in entire set
         yield itertools.combinations(np.arange(m), r=3)
     else:
-        for i, j in itertools.combinations(np.arange(m), r=2): # Upper triangle
-            if table[i, j] > 0.5:
-                # Merge i and j from u, v -> u
-                u, v = components[i], components[j]
-                if u != v: # Check that merge is unique and needed
-                    u, v = min(u, v), max(u, v) # u < v
-                    for k in range(m): # merge loop
-                        if components[k] == v:
-                            components[k] = u
-                    n_components -= 1
+        components = connected_components(table)
+        n_components = np.max(components)
         print(f'Connected components found {n_components} components')
         for c in range(n_components): # Yield a generator of triplets for each component
             component = []
@@ -70,7 +61,7 @@ def fix_triplet_violations_step(table, eps=1e-6, is_first=False):
     m, m = table.shape
     violations = 0
     # for i, j, k in itertools.combinations(np.arange(m), r=3):
-    for component in connected_components(table, is_first=is_first):
+    for component in yield_components(table, is_first=is_first):
         for i, j, k in component:
             t = trip(table, i, j, k)
             assert t.ij < 1. + eps, f'Probability violation in input ij: {t.ij}'

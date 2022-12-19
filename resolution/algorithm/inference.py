@@ -8,33 +8,35 @@ from bson.binary import Binary
 import itertools
 import json
 import scipy
-import pickle
+import dill as pickle
 import numpy as np
 from pathlib import Path
 
 import itertools
 
 from copy import deepcopy
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 from .triplet_violations import fix_triplet_violations
 
+# empty_dict = field(default_factory=lambda : dict())
+
 @dataclass
 class InferenceMethod:
-    client: 'typing.Any'
+    client: MongoClient
     name: str
     direct: bool           = False  # If the inference method gives clusters directly
     correct_triplets: bool = False # If analytic triplet correction should be applied
     reestimate: bool       = False # If the predictions should be re-estimated after triplets
-    datapath: 'typing.Any' = Path('/workspace/resolution')
-    pairwise_params: 'typing.Any'  = None
-    cluster_params:  'typing.Any'  = None
-    hyperparameters: 'typing.Any'  = None
+    datapath: Path         = Path('/workspace/resolution')
+    pairwise_params: dict  = field(default_factory=lambda : dict())
+    cluster_params:  dict  = field(default_factory=lambda : dict())
+    hyperparams:     dict  = field(default_factory=lambda : dict())
 
     def __post_init__(self):
         assert len(set(self.cluster_params.keys()) & set(self.pairwise_params.keys())) == 0, 'Cannot share keys between cluster and pairwise'
-        if self.hyperparameters is not None:
-            for k, v in self.hyperparameters.items():
+        if self.hyperparams is not None:
+            for k, v in self.hyperparams.items():
                 if k in self.cluster_params:
                     self.cluster_params[k] = v
                 elif k in self.pairwise_params:
@@ -132,6 +134,8 @@ def inference(client, methods, query=None, ref_key='first_initial_last_name'):
 
     try:
         with client.start_session(causal_consistency=True) as session:
+            for method in methods:
+                inferred.drop_collection(method.name)
             group_cache = dict()
             for doc in track(subsets.find(), total=subsets.count_documents({}),
                              description='Building group cache..'):

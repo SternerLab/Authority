@@ -14,7 +14,7 @@ def run():
     authority = AuthorityInferenceMethod(client, name='authority',
                                          correct_triplets=True,
                                          reestimate=True,
-                                         hyperparameters=dict(
+                                         hyperparams=dict(
                                              epsilon=1e-6,
                                              clip=True,
                                              ratios_from='default'))

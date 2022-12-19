@@ -35,6 +35,7 @@ transformers = "^4.25.1"
 datasets = "^2.7.1"
 hdbscan = "^0.8.29"
 scikit-learn = "^1.2.0"
+dill = "^0.3.6"
 
 [tool.poetry.dev-dependencies]
 

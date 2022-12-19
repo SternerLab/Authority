@@ -6,7 +6,7 @@ from bson.binary import Binary
 import itertools
 import json
 import scipy
-import pickle
+import dill as pickle
 import numpy as np
 from pathlib import Path
 
@@ -24,12 +24,12 @@ class AuthorityInferenceMethod(InferenceMethod):
     correct_triplets: bool = field(default=True)
     reestimate: bool       = field(default=True)
     # Authority specific fields
-    xi_ratios: 'typing.Any' = None
+    xi_ratios: dict = None
     interpolated_xa: 'typing.Any' = None # called xa_ratios in Torvik's notation
 
     # It is required that cluster and pairwise do not share keys
-    cluster_params:  'typing.Any' = field(default_factory=lambda : dict(epsilon=1e-6))
-    pairwise_params: 'typing.Any' = field(default_factory=lambda : dict(excluded=None, apply_stability=False,
+    cluster_params:  dict = field(default_factory=lambda : dict(epsilon=1e-6))
+    pairwise_params: dict = field(default_factory=lambda : dict(excluded=None, apply_stability=False,
         clip=True, ratios_from='default'))
 
     def __post_init__(self):
