@@ -8,8 +8,7 @@ from collections import namedtuple
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-from .compute_ratio import *
-from .clustering import merge
+from ..authority.clustering import merge
 
 Triplet = namedtuple('Triplet', ['ij', 'jk', 'ik'])
 def trip(table, i, j, k):
