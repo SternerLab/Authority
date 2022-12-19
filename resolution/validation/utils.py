@@ -1,4 +1,5 @@
 import itertools
+from ..utils import *
 
 def merge(aid, cid, resolved):
     ''' Somewhat ugly because it accounts for edge cases.. '''
@@ -10,25 +11,6 @@ def merge(aid, cid, resolved):
             resolved[k] = (u, True)
         elif l > v:
             resolved[k] = (resolved[k][0] - 1, m_k)
-
-def merge_labels(a, b, labels):
-    la, lb = labels[a], labels[b]
-    u, v = min(la, lb), max(la, lb)
-    for k, l in labels.items():
-        if l == v:
-            resolved[k] = (u)
-        elif l > v:
-            resolved[k] = labels[k] - 1
-
-def make_contiguous(cluster):
-    if not cluster:
-        return cluster
-    l = max(cluster.values()) + 1
-    not_dropped = set(cluster.values())
-    dropped = [c for c in range(l) if c not in not_dropped]
-    update_label = lambda v : v - sum(1 for d in dropped if d < v)
-    contiguous = {k : update_label(v) for k, v in cluster.items()}
-    return contiguous
 
 def batched(generator, batch_size=32):
     while True:

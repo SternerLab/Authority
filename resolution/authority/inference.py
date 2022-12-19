@@ -14,7 +14,7 @@ import itertools
 from dataclasses import dataclass, field
 
 
-from .compare    import x_i, x_a
+from .compare    import compare_pair, x_i, x_a
 from .clustering import cluster as custom_cluster_alg
 from ..algorithm.inference import *
 
@@ -35,13 +35,18 @@ class AuthorityInferenceMethod(InferenceMethod):
     def __post_init__(self):
         super().__post_init__()
         self.xi_ratios, self.interpolated_xa = get_r_table_data(
-                self.client.r_table, ratios_from=self.ratios_from)
+                self.client.r_table.r_table,
+                ratios_from=self.pairwise_params['ratios_from'])
 
-    def pairwise_infer(self, pair, prior=None, clip=True,
+    def pairwise_infer(self, pair, m=None, prior=None, clip=True,
                        apply_stability=False, excluded=None,
                        ratios_from='default'):
+        if prior is None:
+            assert m is not None, 'Must have m to estimate initial prior'
+            prior = estimate_prior(m)
         assert prior is not None, 'prior must be provided for each block'
-        features = pair['features']
+        compared = compare_pair(pair)
+        features = compared['features']
 
         if excluded is None:
             excluded = set()
@@ -62,7 +67,10 @@ class AuthorityInferenceMethod(InferenceMethod):
             epsilon = 1e-3
             r_is = np.where(r_is > 1.0, np.log10(r_is) / np.log10(42), r_is + epsilon)
         ratio = np.prod(r_is) # Could replace with np.sum() potentially for stability
-        return ratio_inference(ratio, prior), ratio, r_is
+        return ratio_inference(ratio, prior)
+
+    def cluster_method(self, table, **cluster_params):
+        return custom_cluster_alg(table, **cluster_params)
 
 def estimate_prior(n):
     return 1 / (1 + 10**-1.194 * n**0.7975)

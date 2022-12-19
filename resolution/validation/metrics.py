@@ -4,7 +4,7 @@ from rich.pretty import pprint
 from collections import namedtuple
 import numpy as np
 import itertools
-import sklearn.metrics.cluster as sklearn_cluster_metrics
+import sklearn.metrics.cluster as skl_cluster_metrics
 
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
@@ -49,9 +49,11 @@ def sklearn_metrics(clusters, reference_clusters, features=None):
     ref   = labels_to_array(clusters_to_labels(reference_clusters))
 
     try:
-        metrics = {m : getattr(sklearn_cluster_metrics, f'{m}_score')(ref, preds)
+        metrics = {m : max(getattr(skl_cluster_metrics, f'{m}_score')(ref, preds), 0.)
                    for m in __sklearn_metrics}
+        metrics['adjusted_mutual_info']
     except ValueError:
+        # Should never happen!
         print(f'Bad metrics processing:')
         print('Input clusters (predicted, ref)')
         print(clusters)

@@ -111,7 +111,7 @@ def fix_triplet_violations(table, max_iterations=30):
     for i in range(max_iterations):
         # is_first = False will intentionally ALWAYS use connected components
         table, violations = fix_triplet_violations_step(table, is_first=False)# , is_first=i==0)
-        print(f'Iteration {i} of triplet violations: violations = {violations}')
+        # print(f'Iteration {i} of triplet violations: violations = {violations}')
         if violations == 0:
             break
     return table

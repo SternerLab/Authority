@@ -34,31 +34,31 @@ class InferenceMethod:
     def __post_init__(self):
         assert len(set(self.cluster_params.keys()) & set(self.pairwise_params.keys())) == 0, 'Cannot share keys between cluster and pairwise'
         if self.hyperparameters is not None:
-            for k, v in self.hyperparameters:
+            for k, v in self.hyperparameters.items():
                 if k in self.cluster_params:
                     self.cluster_params[k] = v
                 elif k in self.pairwise_params:
                     self.pairwise_params[k] = v
 
 
-    def infer_clusters(self, pair_docs, group, id_lookup, **local_overrides):
+    def infer(self, pair_docs, group, id_lookup, **local_overrides):
         ''' Return cluster labels and auxillary data '''
         local_pairwise_params = deepcopy(self.pairwise_params)
         local_pairwise_params.update(**local_overrides)
-        if direct:
+        if self.direct:
             return self.infer_direct(pair_docs, group, id_lookup, **self.cluster_params)
         else:
             table = self.fill_table(pair_docs, group, id_lookup, **local_pairwise_params)
-            if correct_triplets:
+            if self.correct_triplets:
                 table = fix_triplet_violations(table)
-                if reestimate:
+                if self.reestimate:
                     new_prior = (np.sum(np.where(table > 0.5, 1., 0.)) /
                                  np.sum(np.where(np.isnan(table), 0., 1.)))
                     local_pairwise_params['prior'] = new_prior
                     table = self.fill_table(pair_docs, group, id_lookup, **local_pairwise_params)
                     table = fix_triplet_violations(table)
-            cluster_labels = self.cluster_method(new_table, **self.cluster_params)
-            return cluster_labels
+            cluster_labels = self.cluster_method(table, **self.cluster_params)
+            return cluster_labels, dict()
 
     def infer_direct(self, pair_docs, group, id_lookup, **kwargs):
         raise NotImplementedError
@@ -82,11 +82,12 @@ class InferenceMethod:
             table[i, j] = p
         for i, j in itertools.combinations(range(m), 2):
             i, j = min(i, j), max(i, j)
-            assert not table[i, j].isnan(), f'Probability table not filled at {(i, j)}'
+            assert not np.isnan(table[i, j]), f'Probability table not filled at {(i, j)}'
         return table
 
-def infer_with(*args, **kwargs):
+def infer_with(method, query, lookup, group_cache, pairs, session):
     ''' Separate function to create a generator'''
+    total = lookup.count_documents(query)
     description = f'{method.name} inference on {total} docs'
     for pair_lookup in track(lookup.find(query, session=session,
                              no_cursor_timeout=True), total=total,
@@ -104,8 +105,8 @@ def infer_with(*args, **kwargs):
             continue
 
         pair_docs = [pair for pair in pairs.find({'_id' : {'$in' : pair_ids}})]
-        clusters, aux = method.infer(pair_docs, group, id_lookup)
-        cluster_labels={str(k) : int(cluster_labels[i])
+        clusters, aux = method.infer(pair_docs, group_cache, id_lookup, m=m)
+        cluster_labels={str(k) : int(clusters[i])
                         for k, i in id_lookup.items()},
         yield dict(cluster_labels=cluster_labels, group_id=group_id, **aux)
 
@@ -118,7 +119,7 @@ def save_aux_data(group_id, aux):
     for k in to_pop:
         aux.pop(k)
 
-def inference(client, inference_methods, query=None, ref_key='first_initial_last_name'):
+def inference(client, methods, query=None, ref_key='first_initial_last_name'):
     if query is None:
         query = {}
 
@@ -132,12 +133,13 @@ def inference(client, inference_methods, query=None, ref_key='first_initial_last
     try:
         with client.start_session(causal_consistency=True) as session:
             group_cache = dict()
-            for doc in subsets.find():
+            for doc in track(subsets.find(), total=subsets.count_documents({}),
+                             description='Building group cache..'):
                 group_cache[str(doc['_id'])] = doc
 
             total = lookup.count_documents(query)
             for method in methods:
-                method_cursor = infer_with(method, lookup, group_cache, pairs, session)
+                method_cursor = infer_with(method, query, lookup, group_cache, pairs, session)
                 inferred[method.name].insert_many(method_cursor)
     except KeyboardInterrupt:
         print(f'Interrupted inference, stopping gracefully...', flush=True)
