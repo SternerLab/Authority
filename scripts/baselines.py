@@ -24,15 +24,23 @@ def run():
 
     client    = MongoClient('localhost', 27017)
 
-    methods = []
 
     # To do a basic grid search:
     # for cluster_type in ('connected', 'agglomerative'):
     #     for triplets in (True, False):
-    methods.append(Classifier(client, name='naive_bayes_components',
-        lookup_name='naive_bayes', correct_triplets=False, reestimate=False,
-        hyperparams=dict(method='components')))
+    methods = [
+
+        Classifier(client, name='naive_bayes_components',
+            lookup_name='naive_bayes', correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components')),
+
+        Classifier(client, name='xgboost_components',
+            lookup_name='xgboost', correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components'))
+        ]
 
     query = {}
-    query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
+    # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
+    # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
+    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     inference(client, methods, query=query)

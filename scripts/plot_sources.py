@@ -25,7 +25,7 @@ def run():
     plt.show()
 
     true_sources = {'google_scholar', 'self_citations', 'biodiversity'}
-    eval_sources = {'authority', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
+    eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]

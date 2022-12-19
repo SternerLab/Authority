@@ -25,14 +25,23 @@ def run():
 
     # Controls which clusters we are validating
     query = {}
+    # query = {'group_id' : {'first_initial' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
-    query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
+    # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
 
-    prediction_sources = ['authority', 'naive_bayes_components']
+    prediction_sources = ['authority', 'naive_bayes_components', 'xgboost_components']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
-    df = validate_all(client, predictions, query, sources)
-    df.to_csv('data/resolution_validation_metrics.csv')
+    stream = validate_all(client, predictions, query, sources)
+
+    first = next(stream)
+
+    # No memory issues from this method :)
+    with open('data/resolution_validation_metrics.csv', 'w') as outfile:
+        dict_writer.csv.DictWriter(outfile, first.keys())
+        dict_writer.writeheader()
+        dict_writer.writerows([first])
+        dict_writer.writerows(stream)
     print(df)

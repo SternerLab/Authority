@@ -1,5 +1,6 @@
 import itertools
 from ..utils import *
+import numpy as np
 
 def merge(aid, cid, resolved):
     ''' Somewhat ugly because it accounts for edge cases.. '''
@@ -39,3 +40,15 @@ def pairs_to_cluster_labels(id_pairs):
                 labels[a] = labels[b] = count
                 count += 1
     return labels
+
+
+def contiguous(labels_dict):
+    # print(labels_dict)
+    labels = np.array(list(labels_dict.values()))
+    # print(labels)
+    _, rename = np.unique(labels, return_inverse=True)
+    # print(rename)
+    # labels_dict = {k : rename[v] for k, v in labels_dict.items()}
+    labels_dict = {k : rename[i] for i, k in enumerate(labels_dict)}
+    # print(labels_dict)
+    return labels_dict

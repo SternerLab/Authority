@@ -6,6 +6,8 @@ import numpy as np
 import itertools
 import sklearn.metrics.cluster as skl_cluster_metrics
 
+from .utils import *
+
 # See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
 
 class IncompleteValidation(Exception):
@@ -191,6 +193,7 @@ def to_clusters(labels):
     ''' Convert labels of the form {article_id : cluster_id} to clusters of the form
         [{article_id..}..]'''
     # print('to_clusters', labels)
+    labels = contiguous(labels)
     clusters = []
     for k, v in sorted(labels.items(), key=lambda t : t[1]):
         if len(clusters) < v + 1:

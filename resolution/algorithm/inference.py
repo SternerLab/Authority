@@ -87,14 +87,15 @@ class InferenceMethod:
             assert not np.isnan(table[i, j]), f'Probability table not filled at {(i, j)}'
         return table
 
-def infer_with(method, query, lookup, group_cache, pairs, session):
+def infer_with(methods, query, lookup, group_cache, pairs, session):
     ''' Separate function to create a generator'''
     total = lookup.count_documents(query)
-    description = f'{method.name} inference on {total} docs'
+    description = f'inference on {total} docs'
     for pair_lookup in track(lookup.find(query, session=session,
                              no_cursor_timeout=True), total=total,
                              description=description):
         group_id = pair_lookup['group_id']
+        print(group_id)
         group    = group_cache[str(group_id)]
         pair_ids = pair_lookup['pair_ids']
 
@@ -107,10 +108,13 @@ def infer_with(method, query, lookup, group_cache, pairs, session):
             continue
 
         pair_docs = [pair for pair in pairs.find({'_id' : {'$in' : pair_ids}})]
-        clusters, aux = method.infer(pair_docs, group_cache, id_lookup, m=m)
-        cluster_labels={str(k) : int(clusters[i])
-                        for k, i in id_lookup.items()}
-        yield dict(cluster_labels=cluster_labels, group_id=group_id, **aux)
+
+        for method in methods:
+            clusters, aux = method.infer(pair_docs, group_cache, id_lookup, m=m)
+            cluster_labels={str(k) : int(clusters[i])
+                            for k, i in id_lookup.items()}
+            # print(cluster_labels)
+            yield method.name, dict(cluster_labels=cluster_labels, group_id=group_id, **aux)
 
 def save_aux_data(group_id, aux):
     to_pop = []
@@ -142,8 +146,7 @@ def inference(client, methods, query=None, ref_key='first_initial_last_name'):
                 group_cache[str(doc['_id'])] = doc
 
             total = lookup.count_documents(query)
-            for method in methods:
-                method_cursor = infer_with(method, query, lookup, group_cache, pairs, session)
-                inferred[method.name].insert_many(method_cursor)
+            for name, cluster in infer_with(methods, query, lookup, group_cache, pairs, session):
+                inferred[name].insert_one(cluster)
     except KeyboardInterrupt:
         print(f'Interrupted inference, stopping gracefully...', flush=True)

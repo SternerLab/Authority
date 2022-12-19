@@ -161,5 +161,4 @@ def validate_all(client, prediction_sources, query, sources):
                 print(f'{total}/{expected} : {(total / expected ):2.2%}')
     print(f'Finished creating validation generators')
     generator = track(generator, total=total, description='Validation')
-    running = pd.DataFrame(generator)
-    return running
+    return generator
