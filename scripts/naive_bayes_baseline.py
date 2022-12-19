@@ -6,7 +6,6 @@ from rich.pretty import pprint
 from rich.progress import track
 
 import sklearn
-from sklearn.model_selection import train_test_split
 import pandas as pd
 
 from sklearn.naive_bayes import CategoricalNB

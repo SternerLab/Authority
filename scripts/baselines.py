@@ -34,4 +34,5 @@ def run():
         hyperparams=dict(method='components')))
 
     query = {}
+    query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
     inference(client, methods, query=query)

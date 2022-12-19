@@ -8,7 +8,7 @@ import pymongo
 from bson.objectid import ObjectId
 
 from resolution.validation.metrics import *
-from resolution.validation.validate import validate_clusters, load_sources, possible_sources
+from resolution.validation.validate import validate_all, load_sources, possible_sources
 
 def run():
     # First connect to MongoDB and setup the databases and collections in it
@@ -27,19 +27,12 @@ def run():
     query = {}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
-    query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
+    # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
+    query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
 
-    # Finally, validate!
-    new_clusters = client.inferred['first_initial_last_name']
-    new_df = validate_clusters(client, new_clusters, query, sources)
-    new_df['resolution_version'] = '2.0'
-    # To validate Manuha's clusters
-    old_clusters = client.previous_inferred.previous_inferred
-    old_df = validate_clusters(client, old_clusters, query, sources)
-    old_df['resolution_version'] = '1.0'
-    old_df.to_csv('data/validation_metrics_manuha.csv')
-    new_df.to_csv('data/validation_metrics_lucas.csv')
-
-    df = pd.concat([new_df, old_df])
+    prediction_sources = ['authority', 'naive_bayes_components']
+    predictions = {k : client.inferred[k] for k in prediction_sources}
+    predictions['authority_legacy'] = client.previous_inferred.previous_inferred
+    df = validate_all(client, predictions, query, sources)
     df.to_csv('data/resolution_validation_metrics.csv')
     print(df)

@@ -19,7 +19,7 @@ from .heuristic       import HeuristicResolver, possible_heuristics
 
 possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'manual']
                     + list(possible_heuristics.keys()))
-excluded_references = {'split_heuristic', 'merge_heuristic', 'predicted'}
+excluded_references = {'split_heuristic', 'merge_heuristic'}
 
 def load_sources(client, source_names):
     ''' Resolve multiple sources to their reference clusters '''
@@ -47,10 +47,10 @@ def load_sources(client, source_names):
         source.build_cache()
     return sources
 
-def create_labeled_clusters(client, cluster, sources):
+def create_labeled_clusters(client, cluster, sources, prediction_source):
     predicted_labels   = cluster['cluster_labels']
     predicted_clusters = to_clusters(predicted_labels)
-    all_clusters = dict(predicted=(predicted_clusters, predicted_labels))
+    all_clusters = {prediction_source : (predicted_clusters, predicted_labels)}
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
         # print(source_name, labels)
@@ -110,7 +110,6 @@ def _validation_generator(pairs, name):
     for pair in pairs:
         ((predicted_source, _),
          (reference_source, _)) = pair
-        # # print(predicted_source, reference_source)
         if predicted_source == reference_source or reference_source in excluded_references:
             continue
         try:
@@ -121,37 +120,45 @@ def _validation_generator(pairs, name):
         except IncompleteValidation as e:
             pass
 
-def validate(client, cluster, sources):
+def validate(client, cluster, sources, prediction_source, is_first):
     ''' Validate a single cluster against multiple reference sources '''
-    all_clusters = create_labeled_clusters(client, cluster, sources)
+    all_clusters = create_labeled_clusters(client, cluster, sources, prediction_source)
     gid = cluster['group_id']
     name = f'{gid["first_initial"].title()}. {gid["last"].title()}'
     pairs = itertools.product(all_clusters.items(), repeat=2)
+    if not is_first:
+        pairs = ((a, b) for (a, b) in pairs if prediction_source in {a[0], b[0]})
     bound = len(all_clusters) ** 2
     return bound, _validation_generator(pairs, name)
 
-def validate_clusters(client, inferred, query, sources):
+def validate_all(client, prediction_sources, query, sources):
     total = 0
     generator = None
-    inferred_size = inferred.count_documents({})
-    for i, cluster in track(enumerate(inferred.find(query)), total=inferred_size,
-                            description='Creating validation generator'):
-        try:
-            if cluster['group_id']['first_initial'] == '':
-                continue
-            bound, next_generator = validate(client, cluster, sources)
-            expected = bound * inferred_size
-            total += bound
-            if generator is None:
-                generator = next_generator
-            else:
-                generator = itertools.chain(generator, next_generator)
-        except KeyboardInterrupt:
-            # print(f'Exited validation!')
-            break
+    for i, (name, inferred) in enumerate(prediction_sources.items()):
+        is_first = i == 0
+        print(f'Validating {name}!')
+        inferred_size = inferred.count_documents({})
+        for i, cluster in track(enumerate(inferred.find(query)), total=inferred_size,
+                                description='Creating validation generator'):
+            if isinstance(cluster['cluster_labels'], list):
+                cluster['cluster_labels'] = cluster['cluster_labels'][0]
+            try:
+                if cluster['group_id']['first_initial'] == '':
+                    continue
+                bound, next_generator = validate(client, cluster, sources, name,
+                                                 is_first=is_first)
+                expected = bound * inferred_size
+                total += bound
+                if generator is None:
+                    generator = next_generator
+                else:
+                    generator = itertools.chain(generator, next_generator)
+            except KeyboardInterrupt:
+                print(f'Exited validation!')
+                break
 
-        if i % 1000 == 0:
-            print(f'{total}/{expected} : {(total / expected ):2.2%}')
+            if i % 1000 == 0:
+                print(f'{total}/{expected} : {(total / expected ):2.2%}')
     print(f'Finished creating validation generators')
     generator = track(generator, total=total, description='Validation')
     running = pd.DataFrame(generator)

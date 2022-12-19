@@ -109,7 +109,7 @@ def infer_with(method, query, lookup, group_cache, pairs, session):
         pair_docs = [pair for pair in pairs.find({'_id' : {'$in' : pair_ids}})]
         clusters, aux = method.infer(pair_docs, group_cache, id_lookup, m=m)
         cluster_labels={str(k) : int(clusters[i])
-                        for k, i in id_lookup.items()},
+                        for k, i in id_lookup.items()}
         yield dict(cluster_labels=cluster_labels, group_id=group_id, **aux)
 
 def save_aux_data(group_id, aux):

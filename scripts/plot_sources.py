@@ -6,11 +6,7 @@ import numpy  as np
 from rich.progress import track
 
 def run():
-    # val_df = pd.read_csv('data/resolution_validation_metrics.csv')
-    val_df = pd.read_csv('data/validation_metrics_lucas.csv')
-    # val_df = pd.read_csv('data/validation_metrics_manuha.csv')
-    # val_df = pd.read_csv('data/archive/resolution_validation_metrics_dec_7.csv')
-    # val_df.sort_values(by='article_count', ascending=False, inplace=True)
+    val_df = pd.read_csv('data/resolution_validation_metrics.csv')
     print(val_df.columns)
     print(set(val_df['reference_source']))
     print(set(val_df['prediction_source']))
@@ -24,23 +20,23 @@ def run():
                                (val_df['reference_source'] == 'google_scholar'))]
     print(self_scholar[columns].describe())
 
-    sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', col='resolution_version', kind='violin')
+    sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', kind='violin')
     plt.savefig('plots/source_comparison_violins.png', bbox_inches='tight', dpi=300)
     plt.show()
 
     true_sources = {'google_scholar', 'self_citations', 'biodiversity'}
-    eval_sources = {'predicted', 'merge_heuristic', 'split_heuristic'}
+    eval_sources = {'authority', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]
-    print(true_val_df[columns + ['resolution_version']].describe())
+    print(true_val_df[columns].describe())
 
-    metrics_df = pd.melt(true_val_df, id_vars=['prediction_source',  'resolution_version'],
+    metrics_df = pd.melt(true_val_df, id_vars=['prediction_source'],
                          value_vars=columns[2:],
                          var_name='metric', value_name='metric_value')
     # metrics_df.dropna(inplace=True)
     print(metrics_df)
-    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', col='resolution_version', kind='bar')
+    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
     for ax in fig.axes.ravel():
         for c in ax.containers:
             labels = [f'  {v.get_width():.2%}' for v in c]
