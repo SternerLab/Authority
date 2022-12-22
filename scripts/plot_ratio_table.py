@@ -35,15 +35,15 @@ def run():
     torvik_xi_ratios, _     = get_r_table_data(r_table, ratios_from='torvik')
     prev_xi_ratios, prev_interpolated = parse_previous_ratios()
 
-    for label, ratios in [('Current', xi_ratios),
+    for label, ratios in [('Current',  xi_ratios),
                           ('Previous', prev_xi_ratios),
-                          ('Torvik', torvik_xi_ratios)]:
+                          ('Torvik',   torvik_xi_ratios)]:
         df = pd.DataFrame([(f, v, np.log(min(r,10))) for (f, v), r in ratios.items()],
                           columns=['feature', 'value', 'ratio'])
         s = sns.lineplot(df, x='value', y='ratio', hue='feature')
         s.set(xlabel='Value', ylabel='Log Ratio', title=f'{label} Log Ratio Table')
-        plt.show()
         plt.savefig(f'plots/{label.lower()}_ratio_table.png')
+        plt.show()
         plt.clf()
 
 
