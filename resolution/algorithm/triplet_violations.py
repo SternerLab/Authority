@@ -92,7 +92,7 @@ def fix_triplet_violations_step(table, eps=1e-6, is_first=False):
     for i, j in itertools.combinations(np.arange(m), r=2):
         assert np.isfinite(updated[i, j]), f'Numerical stability violation at i, j = {i, j}: {updated[i, j]}'
     bottom, top = np.nanmin(updated), np.nanmax(updated)
-    assert bottom > 0., f'minimum {bottom} violates probability laws'
+    assert bottom >= 0. - eps, f'minimum {bottom} violates probability laws'
     assert top <= 1. + eps, f'maximum {top} violates probability laws'
     return updated, violations
 

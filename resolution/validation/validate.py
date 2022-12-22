@@ -107,6 +107,7 @@ def compare_cluster_pair(pair):
     return metrics
 
 def _validation_generator(pairs, name):
+    complete = 0
     for pair in pairs:
         ((predicted_source, _),
          (reference_source, _)) = pair
@@ -117,8 +118,11 @@ def _validation_generator(pairs, name):
             metrics['name'] = name
             if metrics['s'] > 0:
                 yield metrics
+                complete += 1
         except IncompleteValidation as e:
             pass
+    if complete == 0:
+        raise IncompleteValidation()
 
 def validate(client, cluster, sources, prediction_source, is_first):
     ''' Validate a single cluster against multiple reference sources '''

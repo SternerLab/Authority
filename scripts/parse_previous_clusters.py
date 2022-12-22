@@ -50,7 +50,7 @@ def generator(sql_cursor, articles):
 def run():
     mongo_client = MongoClient('localhost', 27017)
 
-    sql_client   = sqlite3.connect('database/jstor-resolution.db')
+    sql_client   = sqlite3.connect('database/jstor-authority.db')
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database

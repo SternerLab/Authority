@@ -17,7 +17,7 @@ def objective(u, v, elements, probs, eps=1e-16):
 
 def merge(labels, elements, objectives, probs, u, v, c):
     # Cluster v is being merged
-    print(f'merge {u} {v}')
+    # print(f'merge {u} {v}')
     for k, l in enumerate(labels):
         if l == v:
             labels[k] = u # Don't make contiguous, just merge them

@@ -16,7 +16,7 @@ def run():
                                          reestimate=True,
                                          hyperparams=dict(
                                              epsilon=1e-6,
-                                             clip=True,
+                                             clip=False,
                                              ratios_from='default'))
 
     query = {}

@@ -30,16 +30,31 @@ def run():
     #     for triplets in (True, False):
     methods = [
 
-        Classifier(client, name='naive_bayes_components',
-            lookup_name='naive_bayes', correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components')),
+        # Classifier(client, name='naive_bayes_components',
+        #     lookup_name='naive_bayes',
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
 
-        Classifier(client, name='xgboost_components',
-            lookup_name='xgboost', correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components'))
+        # Classifier(client, name='xgboost_components',
+        #     lookup_name='xgboost',
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
+
+        Classifier(client, name='naive_bayes_agglomerative',
+            lookup_name='naive_bayes',
+                   correct_triplets=True, reestimate=False,
+            hyperparams=dict(method='agglomerative')),
+
+        Classifier(client, name='xgboost_agglomerative',
+            lookup_name='xgboost',
+                   correct_triplets=True, reestimate=False,
+            hyperparams=dict(method='agglomerative'))
         ]
 
     query = {}
+    # query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id.last' : 'smith'}
+    # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}

@@ -13,7 +13,10 @@ def run():
     print(val_df)
     print(val_df.describe())
     val_df.fillna(0., inplace=True)
-    columns = ['name', 'article_count', 'accuracy', 'precision', 'recall', 'neg_precision', 'neg_recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
+    all_metrics = ['accuracy', 'precision', 'recall', 'neg_precision', 'neg_recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
+    metrics = all_metrics
+    # metrics = ['adjusted_rand', 'adjusted_mutual_info']
+    columns = ['name', 'article_count'] + metrics
     print(val_df[columns].describe())
 
     self_scholar = val_df.loc[((val_df['prediction_source'] == 'self_citations') &
@@ -25,7 +28,8 @@ def run():
     plt.show()
 
     true_sources = {'google_scholar', 'self_citations', 'biodiversity'}
-    eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
+    # eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
+    eval_sources = {'authority', 'xgboost_agglomerative', 'naive_bayes_agglomerative', 'merge_heuristic', 'split_heuristic'}
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]
