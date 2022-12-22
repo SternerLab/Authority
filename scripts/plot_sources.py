@@ -29,7 +29,8 @@ def run():
 
     true_sources = {'google_scholar', 'self_citations', 'biodiversity'}
     # eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
-    eval_sources = {'authority', 'xgboost_agglomerative', 'naive_bayes_agglomerative', 'merge_heuristic', 'split_heuristic', 'meshcoauthor_heuristic', 'name_heuristic'}
+    eval_sources = {'authority', #'xgboost_agglomerative', 'naive_bayes_agglomerative',
+                    'merge_heuristic', 'split_heuristic', 'meshcoauthor_heuristic', 'name_heuristic'}
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]
