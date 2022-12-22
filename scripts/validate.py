@@ -3,6 +3,7 @@ from rich.pretty import pprint
 from rich import print
 import dill as pickle
 import pandas as pd
+import logging
 import pymongo
 import signal
 import csv
@@ -24,6 +25,8 @@ signal.signal(signal.SIGSEGV, _mongodb_segfault_handler)
 # os.kill(os.getpid(), signal.SIGSEGV) # To test the segfault handler
 
 def run():
+    log = logging.getLogger('rich')
+    log.setLevel(logging.DEBUG)
     # First connect to MongoDB and setup the databases and collections in it
     client   = MongoClient('localhost', 27017)
     articles = client.jstor_database.articles
@@ -40,17 +43,16 @@ def run():
     # query = {}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
-    query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
+    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
-    # query = {'group_id.first_initial' : 'a'}
+    query = {'group_id.first_initial' : 'a'}
 
     # prediction_sources = ['authority', 'naive_bayes_components', 'xgboost_components']
     prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
     predictions = {k : client.inferred[k] for k in prediction_sources}
-    # Leave out authority legacy for now
-    # predictions['authority_legacy'] = client.previous_inferred.previous_inferred
+    predictions['authority_legacy'] = client.previous_inferred.previous_inferred
     stream = validate_all(client, predictions, query, sources)
 
     first = next(stream)

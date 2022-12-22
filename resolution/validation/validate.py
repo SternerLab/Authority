@@ -9,6 +9,9 @@ import pymongo
 
 from bson.objectid import ObjectId
 
+import logging
+log = logging.getLogger('rich')
+
 from .utils   import *
 from .metrics import *
 from .manual          import ManualResolver
@@ -47,13 +50,15 @@ def load_sources(client, source_names):
         source.build_cache()
     return sources
 
+
 def create_labeled_clusters(client, cluster, sources, prediction_source):
     predicted_labels   = cluster['cluster_labels']
     predicted_clusters = to_clusters(predicted_labels)
     all_clusters = {prediction_source : (predicted_clusters, predicted_labels)}
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
-        # print(source_name, labels)
+        if 'meshcoauthor' in source_name or 'name' in source_name:
+            log.info(f'{source_name} resolved {labels}')
         if isinstance(labels, dict):
             reference_clusters = to_clusters(labels)
         else:

@@ -1,6 +1,7 @@
 from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
+import logging
 from collections import defaultdict
 
 import itertools
@@ -9,6 +10,7 @@ from .utils import *
 from .resolver import Resolver
 
 ''' Helper functions '''
+log = logging.getLogger('rich')
 
 def _group_id_key(doc):
     return ''.join(x[1] for x in sorted(doc['group_id'].items(), key=lambda t : t[0]))
@@ -22,20 +24,23 @@ def _build_lookup_cache(client, ref_key):
     return cache
 
 def _lookup_set(client, ref_key, cluster, cache):
+    log.info(f'Beginning lookup {ref_key}, {cluster["group_id"]}')
     group_id = cluster['group_id']
     pairs    = client.reference_sets_pairs[ref_key]
     result   = cache.get(_group_id_key(cluster))
+    log.info(f'Cached result is {result}')
     if result is None:
         return dict()
     matching_pairs = pairs.find(
             {'_id' : {'$in' : result['pair_ids']}})
-    id_pairs = ((x['ids'] for x in pair['pair']) for pair in matching_pairs)
+    # Str is important here! Won't work otherwise
+    id_pairs = ((str(x['ids']) for x in pair['pair']) for pair in matching_pairs)
     labels = pairs_to_cluster_labels(id_pairs)
+    log.info(f'Lookup found labels {labels}')
     # pprint(labels)
     return labels
 
 ''' Heuristics '''
-
 def mesh_coauthor_heuristic(cluster, client, cache):
     return _lookup_set(client, 'mesh_coauthor_match', cluster, cache)
 

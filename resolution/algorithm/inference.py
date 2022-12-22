@@ -106,11 +106,12 @@ def infer_with(methods, query, lookup, group_cache, pairs, session):
         m = len(id_lookup)
         if m == 1:  # No point in classifying a single document
             continue
+        n = pair_lookup['n']
 
         pair_docs = [pair for pair in pairs.find({'_id' : {'$in' : pair_ids}})]
 
         for method in methods:
-            clusters, aux = method.infer(pair_docs, group_cache, id_lookup, m=m)
+            clusters, aux = method.infer(pair_docs, group_cache, id_lookup, n=n)
             cluster_labels={str(k) : int(clusters[i])
                             for k, i in id_lookup.items()}
             # print(cluster_labels)

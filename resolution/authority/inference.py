@@ -38,12 +38,12 @@ class AuthorityInferenceMethod(InferenceMethod):
                 self.client.r_table.r_table,
                 ratios_from=self.pairwise_params['ratios_from'])
 
-    def pairwise_infer(self, pair, m=None, prior=None, clip=True,
+    def pairwise_infer(self, pair, n=None, prior=None, clip=True,
                        apply_stability=False, excluded=None,
                        ratios_from='default'):
         if prior is None:
             assert m is not None, 'Must have m to estimate initial prior'
-            prior = estimate_prior(m)
+            prior = estimate_prior(n)
         assert prior is not None, 'prior must be provided for each block'
         compared = compare_pair(pair)
         features = compared['features']
