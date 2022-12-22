@@ -13,12 +13,15 @@ from bson.objectid import ObjectId
 from resolution.validation.metrics import *
 from resolution.validation.validate import validate_all, load_sources, possible_sources
 
+import traceback
+
 def _mongodb_segfault_handler(signum, frame):
     # This is likely from a corrupted binary or document in mondodb, which is hard to isolate
-    print(f'MongoDB encountered a segfault while validating, {frame}')
+    print(f'MongoDB encountered a segfault while validating:')
+    traceback.print_stack(frame)
 
 signal.signal(signal.SIGSEGV, _mongodb_segfault_handler)
-os.kill(os.getpid(), signal.SIGSEGV)
+# os.kill(os.getpid(), signal.SIGSEGV) # To test the segfault handler
 
 def run():
     # First connect to MongoDB and setup the databases and collections in it
@@ -34,10 +37,10 @@ def run():
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating
-    query = {}
+    # query = {}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
-    # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
+    query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
