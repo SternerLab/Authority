@@ -30,25 +30,25 @@ def run():
     #     for triplets in (True, False):
     methods = [
 
-        # Classifier(client, name='naive_bayes_components',
-        #     lookup_name='naive_bayes',
-        #            correct_triplets=False, reestimate=False,
-        #     hyperparams=dict(method='components')),
-
-        # Classifier(client, name='xgboost_components',
-        #     lookup_name='xgboost',
-        #            correct_triplets=False, reestimate=False,
-        #     hyperparams=dict(method='components')),
-
-        Classifier(client, name='naive_bayes_agglomerative',
+        Classifier(client, name='naive_bayes',
             lookup_name='naive_bayes',
-                   correct_triplets=True, reestimate=False,
-            hyperparams=dict(method='agglomerative')),
+                   correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components')),
 
-        Classifier(client, name='xgboost_agglomerative',
+        Classifier(client, name='xgboost',
             lookup_name='xgboost',
-                   correct_triplets=True, reestimate=False,
-            hyperparams=dict(method='agglomerative'))
+                   correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components')),
+
+        # Classifier(client, name='naive_bayes_agglomerative',
+        #     lookup_name='naive_bayes',
+        #            correct_triplets=True, reestimate=False,
+        #     hyperparams=dict(method='agglomerative')),
+
+        # Classifier(client, name='xgboost_agglomerative',
+        #     lookup_name='xgboost',
+        #            correct_triplets=True, reestimate=False,
+        #     hyperparams=dict(method='agglomerative'))
         ]
 
     query = {}

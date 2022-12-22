@@ -75,6 +75,18 @@ def create_name_non_match_pairs(client):
     for group_id, n, pair_generator in generator:
         yield group_id, n, filter_name_non_match_pairs(pair_generator)
 
+def filter_first_name_non_match_pairs(pair_generator):
+    ''' Filter on "name, language, and nothing else" '''
+    for pair in pair_generator:
+        a, b = [p['authors']['first'] for p in pair['pair']]
+        if a != '' and b != '' and a == b:
+            yield pair
+
+def create_first_name_non_match_pairs(client):
+    generator = sample_grouped_pairs(client, client.reference_sets, 'first_initial_last_name')
+    for group_id, n, pair_generator in generator:
+        yield group_id, n, filter_first_name_non_match_pairs(pair_generator)
+
 def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets_group_lookup,
                        reference_sets_pairs, every=10000):
     if 'non_match' in ref_key:
@@ -83,10 +95,12 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
                 generator = create_mesh_coauthor_non_match_pairs(client)
             case 'name_non_match':
                 generator = create_name_non_match_pairs(client)
+            case 'first_name_non_match':
+                generator = create_first_name_non_match_pairs(client)
         limit = float('inf')
-        limit = 10000000
+        limit = 1000000
         total = limit # Assuming we will run into the limit, which we should
-        total = 10000000 # Since it's not obvious how to get this analytically
+        total = 1000000 # Since it's not obvious how to get this analytically
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)
@@ -137,6 +151,7 @@ def run():
     ref_keys = tuple(reference_sets.list_collection_names())
     ref_keys = ('first_initial_last_name', 'mesh_coauthor_match', 'name_match')
     ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
+    ref_keys += ('first_name_non_match',)
 
     with Progress() as progress:
         for ref_key in ref_keys:

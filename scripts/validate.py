@@ -40,14 +40,15 @@ def run():
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating
-    # query = {}
+    query = {}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
-    query = {'group_id.first_initial' : 'a'}
+    query = {'group_id' : {'first_initial' : 'a', 'last': 'smith'}}
 
     # prediction_sources = ['authority', 'naive_bayes_components', 'xgboost_components']
     prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']

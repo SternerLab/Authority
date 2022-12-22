@@ -17,7 +17,8 @@ from resolution.baselines.utils import *
 def run():
     client    = MongoClient('localhost', 27017)
 
-    training = load_training('/workspace/JSTOR_pairwise.csv.gz')
+    # training = load_training('/workspace/JSTOR_pairwise.csv.gz')
+    training = load_training('/workspace/JSTOR_self_citations_pairwise.csv.gz')
 
     features = [f'x{i}' for i in range(1, 11)]
 

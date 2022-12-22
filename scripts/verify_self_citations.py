@@ -19,22 +19,20 @@ def run():
     n = self_cites_collection.count_documents({})
     print(f'There are {n} self citation documents')
 
-    # # key = 'aaagaard'
-    # key = 'bjohnson'
-    # query = {'author.key' : key}
+    query = {}
 
-    # running = 0
-    # for doc in track(self_cites_collection.find(query), description='Checking citations', total=n):
-    #     l = sum(len(v) for k, v in doc.items() if isinstance(v, list))
-    #     pprint(doc)
-    #     for k, v in doc.items():
-    #         if k != '_id':
-    #             matching = articles.find_one({'title' : k})
-    #             if matching is not None:
-    #                 print(matching['authors'])
-    #             else:
-    #                 print('No matching article?')
-    #     running += l
-    #     print(running, 'total citations in all clusters')
+    for doc in track(self_cites_collection.find(query), description='Checking citations', total=n):
+        l = sum(len(v) for k, v in doc.items() if isinstance(v, list))
+        pprint(doc)
+        break
+        for k, v in doc.items():
+            if k != '_id':
+                matching = articles.find_one({'title' : k})
+                if matching is not None:
+                    print(matching['authors'])
+                else:
+                    print('No matching article?')
+        running += l
+        print(running, 'total citations in all clusters')
 
-    # print(f'There are {n} self citation documents')
+    print(f'There are {n} self citation documents')

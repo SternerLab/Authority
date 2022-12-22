@@ -127,7 +127,8 @@ def _validation_generator(pairs, name):
         except IncompleteValidation as e:
             pass
     if complete == 0:
-        raise IncompleteValidation()
+        log.warning(f'Source had incomplete resolution incomplete: {name}')
+        yield from []
 
 def validate(client, cluster, sources, prediction_source, is_first):
     ''' Validate a single cluster against multiple reference sources '''
@@ -165,7 +166,6 @@ def validate_all(client, prediction_sources, query, sources):
             except KeyboardInterrupt:
                 print(f'Exited validation!')
                 break
-
             if i % 1000 == 0:
                 print(f'{total}/{expected} : {(total / expected ):2.2%}')
     print(f'Finished creating validation generators')

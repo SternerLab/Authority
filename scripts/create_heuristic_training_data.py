@@ -31,25 +31,20 @@ def fetch_full_features(pair, articles):
             features.append(value)
     return features
 
-def to_table(articles, collection, ref_key, label, writer, full):
-    description = f'Converting {ref_key} to table'
-    for doc in track(collection.find(),
-                     total=collection.count_documents({}),
-                     description=description):
+def to_table_generator(articles, generator, label, writer, full):
+    for doc in generator:
         features = list(doc['features'].values())
         if full:
             features = fetch_full_features(doc, articles) + features
         ids = [str(p['ids']) for p in doc['pair']]
         writer.writerow(ids + features + [label])
 
-def run():
-    client = MongoClient('localhost', 27017)
-    articles = client.jstor_database.articles
-    features = client.features
+def to_table(articles, collection, ref_key, label, writer, full):
+    generator = track(collection.find(), total=collection.count_documents({}),
+                      description=f'Converting {ref_key} to table')
+    to_table_generator(articles, generator, label, writer, full)
 
-    # full = True
-    full = False
-
+def get_headers_and_ext(full=False):
     headers = ['id_0', 'id_1'] + [f'x{i}' for i in range(1, 11)] + ['label']
     if full:
         ext = '_full'
@@ -57,6 +52,15 @@ def run():
         headers = fields + headers
     else:
         ext = ''
+    return headers, ext
+
+def run():
+    client = MongoClient('localhost', 27017)
+    articles = client.jstor_database.articles
+    features = client.features
+
+    full = False
+    headers, ext = get_headers_and_ext(full=full)
 
     pairwise_path = Path(f'/workspace/JSTOR_pairwise{ext}.csv.gz')
     with gzip.open(pairwise_path, 'wt') as outfile:
@@ -67,5 +71,3 @@ def run():
                 continue
             is_positive = 'non_match' not in ref_key
             to_table(articles, features[ref_key], ref_key, is_positive, writer, full)
-
-
