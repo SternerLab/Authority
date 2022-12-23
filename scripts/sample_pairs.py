@@ -98,9 +98,9 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
             case 'first_name_non_match':
                 generator = create_first_name_non_match_pairs(client)
         limit = float('inf')
-        limit = 1000000
+        limit = 15000000
         total = limit # Assuming we will run into the limit, which we should
-        total = 1000000 # Since it's not obvious how to get this analytically
+        total = 15000000 # Since it's not obvious how to get this analytically
     else:
         limit = float('inf')
         generator = sample_grouped_pairs(client, reference_sets, ref_key)
@@ -150,6 +150,7 @@ def run():
 
     ref_keys = tuple(reference_sets.list_collection_names())
     ref_keys = ('first_initial_last_name', 'mesh_coauthor_match', 'name_match')
+    ref_keys = ()
     ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     ref_keys += ('first_name_non_match',)
 

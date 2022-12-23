@@ -10,12 +10,16 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
-from collections import OrderedDict
-
+from collections import OrderedDict, namedtuple
+import logging
 import itertools
+
+log = logging.getLogger('rich')
 
 from resolution.authority import compute_ratios, compute_xi_ratios, smooth, interpolate
 from resolution.authority.compare import *
+
+Split = namedtuple('Split', ['meta_pos', 'meta_neg', 'article_pos', 'article_neg'])
 
 def run():
     ''' Calculate the features for the different sets in the database
@@ -38,27 +42,50 @@ def run():
     feature_groups_a = client.feature_groups_a
     feature_groups_i = client.feature_groups_i
 
-    client.drop_database('r_table')
-    r_table          = client.r_table.r_table
+    r_table          = client.r_table
+
+    # Define the splits from Torvik 2005/2009/2014, as well as experimental ones
+    self_supervision_splits = {'torvik':
+                               Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
+                                     'name_match', 'name_non_match'),
+                               'torvik_robust' :
+                               Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
+                                     'name_match', 'first_name_non_match'),
+                               'self_citations' :
+                               Split('self_citations', 'first_name_non_match',
+                                     'self_citations',      'first_name_non_match'),
+                               'mixed' :
+                               Split('mesh_coauthor_match', 'first_name_non_match',
+                                     'self_citations',      'first_name_non_match'),
+                               }
 
     # x1, x2, x10 are *name* features, known as x_i here.
     # x7 is the *language* feature, included in x_i here?
     # x3, x4, x5, x6 are *article* features, known as x_a here.
 
-    xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i, match_type='mesh_coauthor_match', non_match_type='mesh_coauthor_non_match')
-    xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
-    r_table.insert_one(dict(xi_ratios=xi_ratios))
-    pprint(xi_ratios)
+    for name, split in self_supervision_splits.items():
+        log.info(f'Computing ratios using the split from {name}')
+        r_table.drop_collection(name)
+        split_table = r_table[name]
 
-    computed_ratios = compute_ratios(features, feature_groups_a, match_type='name_match', non_match_type='name_non_match')
-    smoothed        = smooth(computed_ratios)
-    interpolated    = interpolate(smoothed)
+        xi_ratios = compute_xi_ratios(features, feature_groups_i, x_i=x_i,
+                                      match=split.meta_pos, non_match=split.meta_neg)
+        xi_ratios = [(k, v[0], l) for (k, v), l in xi_ratios.items()]
+        split_table.insert_one(dict(xi_ratios=xi_ratios))
+        pprint(xi_ratios)
 
-    xa_ratios = [dict(key=k, value=v) for k, v in computed_ratios.items()]
-    smoothed  = [dict(key=k, value=v) for k, v in smoothed.items()]
-    r_table.insert_one(dict(xa_ratios=xa_ratios))
-    r_table.insert_one(dict(smoothed_xa_ratios=smoothed))
-    binary_interpolated = Binary(pickle.dumps(interpolated), subtype=128)
-    r_table.insert_one(dict(interpolated_xa_ratios=binary_interpolated))
+        computed_ratios = compute_ratios(features, feature_groups_a,
+                                         match=split.article_pos,
+                                         non_match=split.article_neg)
+        smoothed        = smooth(computed_ratios)
+        interpolated    = interpolate(smoothed)
+
+        xa_ratios = [dict(key=k, value=v) for k, v in computed_ratios.items()]
+        smoothed  = [dict(key=k, value=v) for k, v in smoothed.items()]
+
+        split_table.insert_one(dict(xa_ratios=xa_ratios))
+        split_table.insert_one(dict(smoothed_xa_ratios=smoothed))
+        binary_interpolated = Binary(pickle.dumps(interpolated), subtype=128)
+        split_table.insert_one(dict(interpolated_xa_ratios=binary_interpolated))
 
 

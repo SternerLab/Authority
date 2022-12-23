@@ -31,16 +31,17 @@ def find_self_citation_labeled_pairs(client, features, subsets, filn):
         fi = group['_id']['first_initial']
         ln = group['_id']['last']
         key = f'{fi}{ln}'
-        cache[key] = labels = self_citations.group_resolve(group)
+        labels = self_citations.group_resolve(group)
+        cache[key] = labels, group['_id']
 
     for cluster in track(filn.find(), description='Finding labeled pairs',
                          total=filn.count_documents({})):
         pair   = cluster['pair']
         key    = pair[0]['authors']['key']
-        labels = cache[key]
+        labels, group_id = cache[key]
         a, b   = (str(p['ids']) for p in pair)
         if a in labels and b in labels and labels[a] == labels[b]:
-            yield cluster
+            yield group_id, cluster
 
 def run():
     client = MongoClient('localhost', 27017)
@@ -48,20 +49,21 @@ def run():
     subsets  = client.reference_sets['first_initial_last_name']
     features = client.features
     filn     = features['first_initial_last_name']
-    full = False
+    full = True
 
     headers, ext = get_headers_and_ext(full=full)
 
     pairwise_path = Path(f'/workspace/JSTOR_self_citations_pairwise{ext}.csv.gz')
-    # with gzip.open(pairwise_path, 'wt') as outfile:
-    with gzip.open(pairwise_path, 'at') as outfile:
+    with gzip.open(pairwise_path, 'wt') as outfile:
+    # with gzip.open(pairwise_path, 'at') as outfile:
         writer = csv.writer(outfile)
         writer.writerow(headers)
 
         # First write the positive labels from self citations
-        # log.info('Creating tabular self citation match data')
-        # pair_gen = find_self_citation_labeled_pairs(client, features, subsets, filn)
-        # to_table_generator(articles, pair_gen, True, writer, full)
+        log.info('Creating tabular self citation match data')
+        pair_gen = find_self_citation_labeled_pairs(client, features, subsets, filn)
+        pair_docs = (c for g, c in pair_gen)
+        to_table_generator(articles, pair_docs, True, writer, full)
 
         log.info('Creating tabular non-match training data')
 

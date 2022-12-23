@@ -15,7 +15,7 @@ def run():
     val_df.fillna(0., inplace=True)
     all_metrics = ['accuracy', 'precision', 'recall', 'neg_precision', 'neg_recall', 'f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows']
     metrics = all_metrics
-    # metrics = ['adjusted_rand', 'adjusted_mutual_info']
+    # metrics = ['adjusted_mutual_info']
     columns = ['name', 'article_count'] + metrics
     print(val_df[columns].describe())
 
@@ -28,15 +28,14 @@ def run():
     plt.show()
 
     # true_sources = {'google_scholar'}#, 'self_citations', 'biodiversity'}
-    # true_sources = {'biodiversity', 'google_scholar'}
-    true_sources = {'self_citations'}
+    true_sources = {'biodiversity', 'google_scholar'}
+    # true_sources = {'self_citations'}
     # eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
     eval_sources = {'authority', 'authority_legacy',
                     'self_citations',
-                    # 'xgboost_agglomerative', 'naive_bayes_agglomerative',
-                    'merge_heuristic', 'split_heuristic', 'meshcoauthor_heuristic', 'name_heuristic'}
-    # eval_sources = {'self_citations', 'google_scholar', 'biodiversity'}
-    # eval_sources = {'self_citations'}
+                    'xgboost', 'naive_bayes',
+                    'merge_heuristic', 'split_heuristic',
+                    'meshcoauthor_heuristic', 'name_heuristic'}
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]

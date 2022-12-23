@@ -30,14 +30,19 @@ def run():
     feature_groups_a = client.feature_groups_a
     feature_groups_i = client.feature_groups_i
 
-    r_table          = client.r_table.r_table
-    xi_ratios, interpolated = get_r_table_data(r_table)
+    r_table          = client.r_table.torvik
     torvik_xi_ratios, _     = get_r_table_data(r_table, ratios_from='torvik')
     prev_xi_ratios, prev_interpolated = parse_previous_ratios()
 
-    for label, ratios in [('Current',  xi_ratios),
-                          ('Previous', prev_xi_ratios),
-                          ('Torvik',   torvik_xi_ratios)]:
+    all_ratios = [('authority_legacy', prev_xi_ratios),
+                  ('torvik_pubmed',    torvik_xi_ratios)]
+
+    # for source in ('torvik', 'torvik_robust', 'self_citations'):
+    for source in ('torvik', ):
+        xi_ratios, interpolated = get_r_table_data(client.r_table[source])
+        all_ratios.append((f'{source}_jstor', xi_ratios))
+
+    for label, ratios in all_ratios:
         df = pd.DataFrame([(f, v, np.log(min(r,10))) for (f, v), r in ratios.items()],
                           columns=['feature', 'value', 'ratio'])
         s = sns.lineplot(df, x='value', y='ratio', hue='feature')

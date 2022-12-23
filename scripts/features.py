@@ -75,10 +75,12 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
+    ref_keys = ('self_citations',)
     print(ref_keys)
-    client.drop_database('features')
-    client.drop_database('feature_groups_a')
-    client.drop_database('feature_groups_i')
+    # Don't drop databases, just drop collections to enable partially recreating
+    # client.drop_database('features')
+    # client.drop_database('feature_groups_a')
+    # client.drop_database('feature_groups_i')
 
     limit = float('inf')
     with Progress() as progress:
