@@ -47,6 +47,9 @@ def mesh_coauthor_heuristic(cluster, client, cache):
 def name_heuristic(cluster, client, cache):
     return _lookup_set(client, 'name_match', cluster, cache)
 
+def full_name_heuristic(cluster, client, cache):
+    return _lookup_set(client, 'full_name', cluster, cache)
+
 def merge_heuristic(cluster, client, cache):
     keys = cluster['cluster_labels'].keys()
     labels = {k : 0 for k in keys}

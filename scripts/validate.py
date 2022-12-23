@@ -35,7 +35,7 @@ def run():
     # source_names = possible_sources # To use all
 
     source_names = ['biodiversity', 'google_scholar', 'self_citations', 'orcid',
-                    'merge_heuristic', 'split_heuristic',
+                    'merge_heuristic', 'split_heuristic', 'full_name_heuristic',
                     'meshcoauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 

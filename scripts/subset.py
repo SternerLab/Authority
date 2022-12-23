@@ -82,16 +82,14 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    client.drop_database('reference_sets')
+    # client.drop_database('reference_sets')
     reference_sets = client.reference_sets
 
     # ''' Create matching based on different criteria '''
 
     criteria = {
-            # 'last_name' : ('last',),
             'first_initial_last_name' : ('first_initial', 'last'),
-            # 'full_name_middle_initial_suffix' : ('first', 'middle_initial', 'last', 'suffix'), # seems more robust
-            # 'full_name_middle_initial_no_suffix' : ('first', 'middle_initial', 'last'), # ignore suffix
+            'full_name' : ('first', 'middle_initial', 'last', 'suffix'), # Check suffix and middle initial, but do not ensure they are present
             'initials_last_suffix' : ('first_initial', 'middle_initial', 'last', 'suffix'), # seems more robust
     }
 
