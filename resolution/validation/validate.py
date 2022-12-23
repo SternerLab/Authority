@@ -18,9 +18,10 @@ from .manual          import ManualResolver
 from .self_citations  import SelfCitationResolver
 from .google_scholar  import GoogleScholarResolver
 from .biodiversity    import BiodiversityResolver
+from .orcid           import OrcidResolver
 from .heuristic       import HeuristicResolver, possible_heuristics
 
-possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'manual']
+possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'orcid', 'manual']
                     + list(possible_heuristics.keys()))
 excluded_references = {'split_heuristic', 'merge_heuristic'}
 
@@ -35,6 +36,8 @@ def load_sources(client, source_names):
                 sources[source_name] = GoogleScholarResolver(client, source_name)
             case 'biodiversity':
                 sources[source_name] = BiodiversityResolver(client, source_name)
+            case 'orcid':
+                sources[source_name] = OrcidResolver(client, source_name)
             case 'manual':
                 sources[source_name] = ManualResolver(client, source_name)
             case _:
