@@ -12,7 +12,8 @@ from pathlib import Path
 
 import itertools
 from dataclasses import dataclass, field
-
+import logging
+log = logging.getLogger('rich')
 
 from .compare    import compare_pair, x_i, x_a
 from .clustering import cluster as custom_cluster_alg
@@ -35,14 +36,14 @@ class AuthorityInferenceMethod(InferenceMethod):
     def __post_init__(self):
         super().__post_init__()
         self.xi_ratios, self.interpolated_xa = get_r_table_data(
-                self.client.r_table.r_table,
+                self.client.r_table,
                 ratios_from=self.pairwise_params['ratios_from'])
 
     def pairwise_infer(self, pair, n=None, prior=None, clip=True,
                        apply_stability=False, excluded=None,
                        ratios_from='default'):
         if prior is None:
-            assert m is not None, 'Must have m to estimate initial prior'
+            assert n is not None, 'Must have n to estimate initial prior'
             prior = estimate_prior(n)
         assert prior is not None, 'prior must be provided for each block'
         compared = compare_pair(pair)
@@ -60,7 +61,9 @@ class AuthorityInferenceMethod(InferenceMethod):
         x_i_keys = [f'x{i}' for i in x_i]
         r_is = np.array([self.xi_ratios.get((k, features[k]), 1.0) # Sensible default value
                          for k in x_i_keys if k not in excluded] + [r_a])
-        assert (r_is > 0.).all()
+        if not (r_is > 0.).all():
+            log.warning(f'Ratios are not greater than 0: {r_is}')
+            r_is = np.maximum(r_is, 0.)
         if clip:
             r_is = np.minimum(r_is, 10.)
         if apply_stability:
@@ -94,7 +97,7 @@ def parse_previous_ratios():
 
 def get_r_table_data(r_table, ratios_from='default'):
     match ratios_from:
-        case 'torvik':
+        case 'torvik_reported':
             xi_ratios = {('x1', 0) : 0.01343,
                          ('x1', 1) : 0.09295,
                          ('x1', 2) : 2.2058,
@@ -106,15 +109,15 @@ def get_r_table_data(r_table, ratios_from='default'):
                          ('x7', 2) : 1.5211,
                          ('x7', 3) : 3.3532 }
             # Yes, this is copied :(
-            interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
-            interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
-        case 'default':
-            # Fetch estimated xi_ratios
-            xi_ratios = next(r_table.find({'xi_ratios' : {'$exists' : True}}))
-            xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
-            interpolated_doc = next(r_table.find({'interpolated_xa_ratios' : {'$exists' : True}}))
+            interpolated_doc = next(r_table.torvik.find({'interpolated_xa_ratios' : {'$exists' : True}}))
             interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
         case 'previous':
             xi_ratios, interpolated = parse_previous_ratios()
+        case key:
+            # Fetch estimated xi_ratios
+            xi_ratios = next(r_table[key].find({'xi_ratios' : {'$exists' : True}}))
+            xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
+            interpolated_doc = next(r_table[key].find({'interpolated_xa_ratios' : {'$exists' : True}}))
+            interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
 
     return xi_ratios, interpolated

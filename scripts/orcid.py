@@ -42,12 +42,15 @@ def run():
     names.sort_values(by='count', ascending=False, inplace=True)
     best_resolutions = dict()
     with client.start_session(causal_consistency=True) as session:
-        for a in names.itertuples():
-            titles = titles_cache[a.key]
-            lookup, clusters = orcid_scraper.resolve(a, titles)
-            pprint(lookup)
-            pprint(clusters)
-            orcid_collection.insert_one(dict(author=dict(key=a.key, full_name=a.name, last=a.last, first_initial=a.first_initial),
-                                             mongo_ids=clusters))
-            orcid_lookup.insert_one(dict(key=a.key, lookup=lookup))
-            1/0
+        try:
+            for a in names.itertuples():
+                titles = titles_cache[a.key]
+                lookup, clusters = orcid_scraper.resolve(a, titles)
+                pprint(lookup)
+                pprint(clusters)
+                orcid_collection.insert_one(dict(author=dict(key=a.key, full_name=a.name, last=a.last, first_initial=a.first_initial),
+                                                 mongo_ids=clusters))
+                orcid_lookup.insert_one(dict(key=a.key, lookup=lookup))
+                print(f'Resolved a total of {len(lookup)}/{len(titles)} articles for {a.name}')
+        except KeyboardInterrupt:
+            print(f'Received interrupt, exiting')

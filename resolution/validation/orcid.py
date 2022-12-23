@@ -74,7 +74,8 @@ class OrcidScraper:
                     if _id is not None:
                         clusters[orcid_id].add(_id)
                         lookup[title] = (orcid_id, _id, doi)
-
+                        print(f'Resolved OrCID {orcid_id} {_id} {title}')
+                        print(f'Resolved {len(lookup)} JSTOR articles to OrCID entries')
         # Then, use the lookup table to build clusters and docs that "just work"
         # with existing validation code
         return lookup, [list(c) for c in clusters.values()]
