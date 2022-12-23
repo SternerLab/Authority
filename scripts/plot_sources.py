@@ -28,14 +28,20 @@ def run():
     plt.show()
 
     # true_sources = {'google_scholar'}#, 'self_citations', 'biodiversity'}
-    true_sources = {'biodiversity', 'google_scholar'}
+    # true_sources = {'biodiversity', 'google_scholar', 'orcid'}
+    true_sources = {'orcid'}
     # true_sources = {'self_citations'}
     # eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
     eval_sources = {'authority', 'authority_legacy',
-                    'self_citations',
+                    # 'self_citations',
                     'xgboost', 'naive_bayes',
                     'merge_heuristic', 'split_heuristic',
-                    'meshcoauthor_heuristic', 'name_heuristic'}
+                    'meshcoauthor_heuristic', 'name_heuristic'
+                    'authority_clipped',
+                    'authority_no_correction',
+                    'authority_mixed'
+                    }
+    # prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed', 'authority_clipped', 'authority_no_correction']
 
     true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
                               (val_df['reference_source'].isin(true_sources)))]

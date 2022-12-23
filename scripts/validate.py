@@ -41,17 +41,31 @@ def run():
 
     # Controls which clusters we are validating
     query = {}
-    # query = {'group_id.first_initial' : 'a'}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
-    query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
+    # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'smith'}}
+    # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
 
-    prediction_sources = ['authority', 'naive_bayes', 'xgboost']
+    # authority_self_citations
+    # naive_bayes
+    # naive_bayes_agglomerative
+    # authority_clipped
+    # first_initial_last_name
+    # xgboost_agglomerative
+    # naive_bayes_components
+    # authority_mixed
+    # authority
+    # xgboost
+    # xgboost_components
+    # authority_no_correction
+
+    prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed', 'authority_clipped', 'authority_no_correction']
     # prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
