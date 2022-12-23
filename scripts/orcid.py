@@ -4,6 +4,7 @@ from rich.pretty   import pprint
 from rich.progress import track
 
 from functools import partial
+import logging
 import functools
 import itertools
 import requests
@@ -11,14 +12,17 @@ import pymongo
 import pandas as pd
 import json
 
+log = logging.getLogger('rich')
+
 from resolution.validation.orcid import *
 
 def run():
     client           = MongoClient('localhost', 27017)
     articles         = client.jstor_database.articles
 
-    client.validation.drop_collection('orcid')
-    client.validation.drop_collection('orcid_lookup')
+    # Only do this to clear all OrCID entries
+    # client.validation.drop_collection('orcid')
+    # client.validation.drop_collection('orcid_lookup')
 
     orcid_collection = client.validation.orcid
     orcid_lookup     = client.validation.orcid_lookup
@@ -44,7 +48,13 @@ def run():
     with client.start_session(causal_consistency=True) as session:
         try:
             for a in names.itertuples():
-                titles = titles_cache[a.key]
+                exists = orcid_collection.find_one({'author.key' : a.key})
+                if exists is not None:
+                    continue
+                titles = titles_cache.get(a.key)
+                if titles is None:
+                    log.warning(f'Found no titles for author {a}')
+                    continue
                 lookup, clusters = orcid_scraper.resolve(a, titles)
                 pprint(lookup)
                 pprint(clusters)
