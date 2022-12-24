@@ -21,3 +21,6 @@ def run():
     data = pd.concat((self_cites, heuristic))
 
     train_classifier(client, CategoricalNB, 'naive_bayes', data)
+    filtered = heuristic[heuristic['label'] == True]
+    filtered = pd.concat((filtered, self_cites))
+    train_classifier(client, CategoricalNB, 'naive_bayes_filtered', filtered)

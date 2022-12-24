@@ -41,7 +41,7 @@ class AuthorityInferenceMethod(InferenceMethod):
 
     def pairwise_infer(self, pair, n=None, prior=None, clip=True,
                        apply_stability=False, excluded=None,
-                       ratios_from='default'):
+                       ratios_from='torvik', epsilon=False):
         if prior is None:
             assert n is not None, 'Must have n to estimate initial prior'
             prior = estimate_prior(n)
@@ -53,7 +53,7 @@ class AuthorityInferenceMethod(InferenceMethod):
             excluded = set()
         x3, x4, x5, x6 = (features[f'x{i}'] for i in x_a)
         match ratios_from:
-            case 'previous':
+            case 'authority_legacy':
                 r_a = self.interpolated_xa.get((features['x10'] + 1, x3, x4, x5, x6), 1.0)
                 excluded.add('x10')
             case _:
@@ -64,6 +64,8 @@ class AuthorityInferenceMethod(InferenceMethod):
         if not (r_is > 0.).all():
             log.warning(f'Ratios are not greater than 0: {r_is}')
             r_is = np.maximum(r_is, 0.)
+        if epsilon:
+            r_is = np.maximum(r_is, epsilon)
         if clip:
             r_is = np.minimum(r_is, 10.)
         if apply_stability:
@@ -111,7 +113,7 @@ def get_r_table_data(r_table, ratios_from='default'):
             # Yes, this is copied :(
             interpolated_doc = next(r_table.torvik.find({'interpolated_xa_ratios' : {'$exists' : True}}))
             interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
-        case 'previous':
+        case 'authority_legacy':
             xi_ratios, interpolated = parse_previous_ratios()
         case key:
             # Fetch estimated xi_ratios

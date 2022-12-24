@@ -19,5 +19,7 @@ def run():
     heuristic  = load_shuffle(heuristic)
 
     data = pd.concat((self_cites, heuristic))
-    # print(data)
     train_classifier(client, XGBClassifier, 'xgboost', data)
+    filtered = heuristic[heuristic['label'] == True]
+    filtered = pd.concat((filtered, self_cites))
+    train_classifier(client, XGBClassifier, 'xgboost_filtered', filtered)
