@@ -17,40 +17,58 @@ def run():
     #                                      hyperparams=dict(
     #                                          epsilon=1e-6,
     #                                          clip=False,
-    #                                          ratios_from='default'))
+    #                                          ratios_from='torvik'))
 
-    authority_no_correction = AuthorityInferenceMethod(client, name='authority_no_correction',
+    # authority_no_correction = AuthorityInferenceMethod(client, name='authority_no_correction',
+    #                                      correct_triplets=False,
+    #                                      reestimate=False,
+    #                                      hyperparams=dict(
+    #                                          epsilon=1e-6,
+    #                                          clip=False,
+    #                                          ratios_from='torvik'))
+
+    # authority_clipped = AuthorityInferenceMethod(client, name='authority_clipped',
+    #                                      correct_triplets=True,
+    #                                      reestimate=True,
+    #                                      hyperparams=dict(
+    #                                          epsilon=1e-6,
+    #                                          clip=True,
+    #                                          ratios_from='torvik'))
+
+    # authority_mixed = AuthorityInferenceMethod(client, name='authority_mixed',
+    #                                      correct_triplets=True,
+    #                                      reestimate=True,
+    #                                      hyperparams=dict(
+    #                                          epsilon=1e-6,
+    #                                          clip=False,
+    #                                          ratios_from='mixed'))
+
+    # authority_self = AuthorityInferenceMethod(client, name='authority_self_citations',
+    #                                      correct_triplets=True,
+    #                                      reestimate=True,
+    #                                      hyperparams=dict(
+    #                                          epsilon=1e-6,
+    #                                          clip=False,
+    #                                          ratios_from='self_citations'))
+
+    authority_no_correction_robust = AuthorityInferenceMethod(client, name='authority_no_correction_robust',
                                          correct_triplets=False,
                                          reestimate=False,
                                          hyperparams=dict(
                                              epsilon=1e-6,
                                              clip=False,
-                                             ratios_from='torvik'))
+                                             ratios_from='torvik_robust'))
 
-    authority_clipped = AuthorityInferenceMethod(client, name='authority_clipped',
-                                         correct_triplets=True,
-                                         reestimate=True,
-                                         hyperparams=dict(
-                                             epsilon=1e-6,
-                                             clip=True,
-                                             ratios_from='torvik'))
-
-    authority_mixed = AuthorityInferenceMethod(client, name='authority_mixed',
-                                         correct_triplets=True,
-                                         reestimate=True,
+    authority_mixed_no_correction = AuthorityInferenceMethod(client, name='authority_mixed_no_correction',
+                                         correct_triplets=False,
+                                         reestimate=False,
                                          hyperparams=dict(
                                              epsilon=1e-6,
                                              clip=False,
                                              ratios_from='mixed'))
 
-    authority_self = AuthorityInferenceMethod(client, name='authority_self_citations',
-                                         correct_triplets=True,
-                                         reestimate=True,
-                                         hyperparams=dict(
-                                             epsilon=1e-6,
-                                             clip=False,
-                                             ratios_from='self_citations'))
-
     query = {}
-    methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
+    # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
+    # methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
+    methods = [authority_no_correction_robust, authority_mixed_no_correction]
     inference(client, methods, query=query)

@@ -115,9 +115,17 @@ def get_r_table_data(r_table, ratios_from='default'):
             xi_ratios, interpolated = parse_previous_ratios()
         case key:
             # Fetch estimated xi_ratios
-            xi_ratios = next(r_table[key].find({'xi_ratios' : {'$exists' : True}}))
+            xi_ratios = r_table[key].find_one({'xi_ratios' : {'$exists' : True}})
+            if xi_ratios is None:
+                print(f'Could not find ratio table for {key}, but found:')
+                for doc in r_table[key].find():
+                    print(doc)
             xi_ratios = {(k, v) : l for k, v, l in xi_ratios['xi_ratios']}
-            interpolated_doc = next(r_table[key].find({'interpolated_xa_ratios' : {'$exists' : True}}))
+            interpolated_doc = r_table[key].find_one({'interpolated_xa_ratios' : {'$exists' : True}})
+            if interpolated_doc is None:
+                print(f'Could not find interpolated ratios for key {key}')
+                for doc in r_table[key].find():
+                    print(doc)
             interpolated = pickle.loads(interpolated_doc['interpolated_xa_ratios'])
 
     return xi_ratios, interpolated

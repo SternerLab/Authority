@@ -28,8 +28,9 @@ def run():
     #     for triplets in (True, False):
     methods = [
 
-        # EmbeddingClusterer(client, name='scibert_clustering',
-        #     hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased')),
+        # Both clustering methods behaved identically
+        EmbeddingClusterer(client, name='scibert_clustering',
+            hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased')),
 
         # EmbeddingClusterer(client, name='scidebert_clustering',
         #     hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
@@ -47,7 +48,7 @@ def run():
         ]
 
     query = {}
-    query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}

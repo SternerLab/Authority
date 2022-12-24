@@ -19,44 +19,34 @@ def run():
     columns = ['name', 'article_count'] + metrics
     print(val_df[columns].describe())
 
-    self_scholar = val_df.loc[((val_df['prediction_source'] == 'self_citations') &
-                               (val_df['reference_source'] == 'google_scholar'))]
-    print(self_scholar[columns].describe())
+    true_sources = {'biodiversity', 'google_scholar', 'orcid'}
 
-    sns.catplot(val_df, x='accuracy', y='prediction_source', row='reference_source', kind='violin')
-    plt.savefig('plots/source_comparison_violins.png', bbox_inches='tight', dpi=300)
-    plt.show()
+    pairings = {'meta_validation' : ({'self_citations'} | true_sources),
+                'ablation_study'  : {'authority_legacy', 'authority_clipped',
+                                     'authority_no_correction', 'authority_mixed',
+                                     'authority', 'authority_mixed_no_correction',
+                                     'authority_no_correction_robust'},
+                'heuristic_validation':  {'merge_heuristic', 'split_heuristic',
+                        'mesh_coauthor_heuristic', 'name_heuristic'
+                        'first_name_heuristic'},
+                'baselines' : {'xgboost', 'naive_bayes', 'scidebert_clustering', 'scibert_clustering'}
 
-    # true_sources = {'google_scholar'}#, 'self_citations', 'biodiversity'}
-    # true_sources = {'biodiversity', 'google_scholar', 'orcid'}
-    true_sources = {'orcid'}
-    # true_sources = {'self_citations'}
-    # eval_sources = {'authority', 'xgboost_components', 'naive_bayes_components', 'merge_heuristic', 'split_heuristic'}
-    eval_sources = {'authority', 'authority_legacy',
-                    # 'self_citations',
-                    'xgboost', 'naive_bayes',
-                    'merge_heuristic', 'split_heuristic',
-                    'meshcoauthor_heuristic', 'name_heuristic'
-                    'authority_clipped',
-                    'authority_no_correction',
-                    'authority_mixed'
-                    }
-    # prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed', 'authority_clipped', 'authority_no_correction']
+                }
+    for name, eval_sources in pairings.items():
+        true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
+                                  (val_df['reference_source'].isin(true_sources)))]
+        print(true_val_df[columns].describe())
 
-    true_val_df = val_df.loc[((val_df['prediction_source'].isin(eval_sources)) &
-                              (val_df['reference_source'].isin(true_sources)))]
-    print(true_val_df[columns].describe())
-
-    metrics_df = pd.melt(true_val_df, id_vars=['prediction_source'],
-                         value_vars=columns[2:],
-                         var_name='metric', value_name='metric_value')
-    # metrics_df.dropna(inplace=True)
-    print(metrics_df)
-    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
-    for ax in fig.axes.ravel():
-        for c in ax.containers:
-            labels = [f'  {v.get_width():.2%}' for v in c]
-            ax.bar_label(c, labels=labels, label_type='edge')
-    plt.savefig('plots/multi_source_validation.png', bbox_inches='tight', dpi=300)
-    plt.show()
+        metrics_df = pd.melt(true_val_df, id_vars=['prediction_source'],
+                             value_vars=columns[2:],
+                             var_name='metric', value_name='metric_value')
+        # metrics_df.dropna(inplace=True)
+        print(metrics_df)
+        fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
+        for ax in fig.axes.ravel():
+            for c in ax.containers:
+                labels = [f'  {v.get_width():.2%}' for v in c]
+                ax.bar_label(c, labels=labels, label_type='edge')
+        plt.savefig(f'plots/{name}_multi_source_validation.png', bbox_inches='tight', dpi=300)
+        plt.show()
 

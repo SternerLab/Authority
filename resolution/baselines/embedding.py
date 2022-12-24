@@ -33,12 +33,14 @@ class EmbeddingClusterer(InferenceMethod):
 
     def infer_direct(self, articles, pair_docs, group_id, group_cache, id_lookup, **kwargs):
         group   = group_cache[str(group_id)]
-        doc_ids = [d['ids'] for d in group['group']]
+        doc_ids = [d['ids'] for d in group['group']][:400] # Artificial limit for memory
         ordered_ids  = []
-        ordered_vecs = []
-        for article in articles.find({'_id' : {'$in' : doc_ids}}):
+        ordered_vecs = None
+
+        for i, article in enumerate(articles.find({'_id' : {'$in' : doc_ids}})):
             # Not 100% sure about using sep tokens here, it wasn't trained like this
             # But if it were, then we should..
+            print(f'{i} / {len(doc_ids)}')
             try:
                 description = (article['title'] + self.tokenizer.sep_token +
                                article['journal'] + self.tokenizer.sep_token +
@@ -50,25 +52,24 @@ class EmbeddingClusterer(InferenceMethod):
                                                          truncation=True,
                                                          padding='max_length',
                                                          max_length=512)
-                print(len(inputs['input_ids']))
                 embedding   = self.model(**inputs)
-                print(embedding['hidden_states'][-1].shape)
-                ordered_vecs.append(np.expand_dims(np.ravel(embedding['hidden_states'][-1].detach().numpy()), 0))
+
+                vec = np.ravel(embedding['hidden_states'][-1].detach().numpy())
+                if ordered_vecs is None:
+                    ordered_vecs = np.full((len(doc_ids),) + vec.shape, np.nan)
+                ordered_vecs[i, :] = vec
                 ordered_ids.append(str(article['_id']))
             except TypeError: # Some corrupted/non uniform articles don't have str abstract/title
                 pass
 
-        ordered_vec_mx = np.concatenate(ordered_vecs, axis=0)
-        print(ordered_vec_mx.shape)
-        l, w = ordered_vec_mx.shape
         log.info('Printing example pairwise cosine distances')
-        for i, j in itertools.combinations(np.arange(l), 2):
-            print(distance.cosine(ordered_vec_mx[i, :], ordered_vec_mx[j, :]))
+        for i, j in itertools.combinations(np.arange(len(doc_ids)), 2):
+            print(distance.cosine(ordered_vecs[i, :], ordered_vecs[j, :]))
         clusterer = hdbscan.HDBSCAN(min_cluster_size=2, metric=distance.cosine,
                                     allow_single_cluster=True,
                                     # Should learn or at least validate this!
-                                    cluster_selection_epsilon=0.75) # Arbitrary :)
-        clusterer.fit(ordered_vec_mx)
+                                    cluster_selection_epsilon=0.6) # Arbitrary :)
+        clusterer.fit(ordered_vecs)
         print(clusterer.labels_)
         labels   = dict()
         assigned = dict()
