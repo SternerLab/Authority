@@ -59,7 +59,7 @@ class InferenceMethod:
                     local_pairwise_params['prior'] = new_prior
                     table = self.fill_table(pair_docs, group, id_lookup, **local_pairwise_params)
                     table = fix_triplet_violations(table)
-            cluster_labels = self.cluster_method(table, **self.cluster_params)
+            cluster_labels = self.pair_cluster_method(table, **self.cluster_params)
             return cluster_labels, dict()
 
     def infer_direct(self, pair_docs, group, id_lookup, **kwargs):
@@ -68,7 +68,7 @@ class InferenceMethod:
     def pairwise_infer(self, pair, **pairwise_params): # -> cond_prob
         raise NotImplementedError
 
-    def cluster_method(self, table, **cluster_params):
+    def pair_cluster_method(self, table, **cluster_params):
         ''' Cluster from pairwise probabilities '''
         raise NotImplementedError
 

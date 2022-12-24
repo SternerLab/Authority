@@ -72,7 +72,7 @@ class AuthorityInferenceMethod(InferenceMethod):
         ratio = np.prod(r_is) # Could replace with np.sum() potentially for stability
         return ratio_inference(ratio, prior)
 
-    def cluster_method(self, table, **cluster_params):
+    def pair_cluster_method(self, table, **cluster_params):
         return custom_cluster_alg(table, **cluster_params)
 
 def estimate_prior(n):

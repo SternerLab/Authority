@@ -8,7 +8,7 @@ all_views    = "SELECT * from sqlite_master WHERE type='view'"
 show_columns = 'PRAGMA table_info({});'
 
 def run():
-    connection = sqlite3.connect('database/jstor-resolution.db')
+    connection = sqlite3.connect('database/jstor-authority.db')
     # connection = sqlite3.connect('xml_article_data/google_scholar/test3.db')
     cursor     = connection.cursor()
     views      = cursor.execute(all_views).fetchall()

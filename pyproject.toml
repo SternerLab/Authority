@@ -2,7 +2,7 @@
 name = "resolution"
 version = "2.0"
 description = "State of the art author identity resolution"
-authors = ["lucassaldyt@gmail.com"]
+authors = ["Lucas Saldyt <lucassaldyt@gmail.com>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
@@ -31,11 +31,12 @@ nameparser = "^1.1.2"
 plotly = "^5.11.0"
 xgboost = "^1.7.2"
 orcid = "^1.0.3"
-transformers = "^4.25.1"
-datasets = "^2.7.1"
 hdbscan = "^0.8.29"
 scikit-learn = "^1.2.0"
 dill = "^0.3.6"
+torch = "^1.13.1"
+transformers = "^4.25.1"
+datasets = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 

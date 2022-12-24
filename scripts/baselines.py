@@ -7,7 +7,6 @@ from pathlib import Path
 
 from resolution.algorithm.inference  import *
 from resolution.baselines.classifier import *
-from resolution.baselines.cluster    import *
 from resolution.baselines.embedding  import *
 
 def run():
@@ -15,9 +14,8 @@ def run():
     Baselines:
         Naive Bayes
         XGBoost
-        Agglomerative Clustering directly on resolution features
         Clustering from SciBERT Features
-        Ensemble with both XGBoost and SciBERT
+        Ensemble with both XGBoost, SciBERT, and Authority
 
     For each method, we can do either direct clustering (no triplet corrections or agglomerative clustering), or we can use the resolution components
     '''
@@ -30,29 +28,26 @@ def run():
     #     for triplets in (True, False):
     methods = [
 
-        Classifier(client, name='naive_bayes',
-            lookup_name='naive_bayes',
-                   correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components')),
+        EmbeddingClusterer(client, name='scibert_clustering',
+            hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased')),
 
-        Classifier(client, name='xgboost',
-            lookup_name='xgboost',
-                   correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components')),
+        EmbeddingClusterer(client, name='scidebert_clustering',
+            hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
 
-        # Classifier(client, name='naive_bayes_agglomerative',
+        # Classifier(client, name='naive_bayes',
         #     lookup_name='naive_bayes',
-        #            correct_triplets=True, reestimate=False,
-        #     hyperparams=dict(method='agglomerative')),
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
 
-        # Classifier(client, name='xgboost_agglomerative',
+        # Classifier(client, name='xgboost',
         #     lookup_name='xgboost',
-        #            correct_triplets=True, reestimate=False,
-        #     hyperparams=dict(method='agglomerative'))
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
+
         ]
 
     query = {}
-    query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
