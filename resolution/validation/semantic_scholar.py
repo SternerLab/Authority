@@ -35,8 +35,9 @@ class SemanticScholarScraper(Scraper):
             id_json = dict(ids=[hit['paperId'] for hit in response['data']])
             full = requests.post(self.fill_url + self.fields, json=id_json).json()
 
-            for hit in full['data']:
+            for hit in full:
                 if 'authors' in hit:
+                    pprint(hit)
                     for author in hit['authors']:
                         print(author)
                     1/0
