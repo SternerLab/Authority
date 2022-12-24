@@ -16,9 +16,7 @@ import csv
 import gzip
 
 from resolution.validation.self_citations import SelfCitationResolver
-
-from .create_heuristic_training_data import (to_table_generator,
-                                             to_table, get_headers_and_ext)
+from resolution.baselines.training_data import *
 
 def find_self_citation_labeled_pairs(client, features, subsets, filn):
     self_citations = SelfCitationResolver(client, 'self_citations')
@@ -52,6 +50,7 @@ def run():
     full = True
 
     headers, ext = get_headers_and_ext(full=full)
+    frequency_lookup = make_frequency_lookup(path='data/names.csv')
 
     pairwise_path = Path(f'/workspace/JSTOR_self_citations_pairwise{ext}.csv.gz')
     with gzip.open(pairwise_path, 'wt') as outfile:
@@ -63,10 +62,10 @@ def run():
         log.info('Creating tabular self citation match data')
         pair_gen = find_self_citation_labeled_pairs(client, features, subsets, filn)
         pair_docs = (c for g, c in pair_gen)
-        to_table_generator(articles, pair_docs, True, writer, full)
+        to_table_generator(articles, frequency_lookup, pair_docs, True, writer, full)
 
         log.info('Creating tabular non-match training data')
 
         # Then write only the non-match data to csv
         ref_key = 'first_name_non_match'
-        to_table(articles, features[ref_key], ref_key, False, writer, full)
+        to_table(articles, frequency_lookup, features[ref_key], ref_key, False, writer, full)
