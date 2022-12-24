@@ -30,6 +30,7 @@ class EmbeddingClusterer(InferenceMethod):
         self.tokenizer = AutoTokenizer.from_pretrained(model)
         log.info(f'Loading tokenizer {model}')
         self.model     = AutoModelForPreTraining.from_pretrained(model, output_hidden_states=True)
+        self.epsilon   = self.hyperparams['epsilon']
 
     def infer_direct(self, articles, pair_docs, group_id, group_cache, id_lookup, **kwargs):
         group   = group_cache[str(group_id)]
@@ -62,30 +63,35 @@ class EmbeddingClusterer(InferenceMethod):
             except TypeError: # Some corrupted/non uniform articles don't have str abstract/title
                 pass
 
-        log.info('Printing example pairwise cosine distances')
-        for i, j in itertools.combinations(np.arange(len(doc_ids)), 2):
-            print(distance.cosine(ordered_vecs[i, :], ordered_vecs[j, :]))
-        clusterer = hdbscan.HDBSCAN(min_cluster_size=2, metric=distance.cosine,
-                                    allow_single_cluster=True,
-                                    # Should learn or at least validate this!
-                                    cluster_selection_epsilon=0.6) # Arbitrary :)
-        clusterer.fit(ordered_vecs)
-        print(clusterer.labels_)
-        labels   = dict()
-        assigned = dict()
-        count    = 0
-        for label, mongo_id in zip(clusterer.labels_, ordered_ids):
-            if label == -1:
-                labels[mongo_id] = count
-                count += 1
-            else:
-                if label in assigned:
-                    labels[mongo_id] = assigned[label]
-                else:
-                    assigned[label] = count
+        try:
+            if len(doc_ids) < 3:
+                raise ValueError # Small hack to force merging small clusters
+            log.info('Printing example pairwise cosine distances')
+            for i, j in itertools.combinations(np.arange(len(doc_ids)), 2):
+                print(distance.cosine(ordered_vecs[i, :], ordered_vecs[j, :]))
+            clusterer = hdbscan.HDBSCAN(min_cluster_size=2, metric=distance.cosine,
+                                        allow_single_cluster=True,
+                                        # Should learn or at least validate this!
+                                        cluster_selection_epsilon=self.epsilon) # Arbitrary :)
+            clusterer.fit(ordered_vecs)
+            print(clusterer.labels_)
+            labels   = dict()
+            assigned = dict()
+            count    = 0
+            for label, mongo_id in zip(clusterer.labels_, ordered_ids):
+                if label == -1:
+                    labels[mongo_id] = count
                     count += 1
-        pprint(labels)
-        return labels
+                else:
+                    if label in assigned:
+                        labels[mongo_id] = assigned[label]
+                    else:
+                        assigned[label] = count
+                        count += 1
+            pprint(labels)
+            return labels
+        except ValueError:
+            return {str(mongo_id) : 0 for mongo_id in doc_ids}
 
     def fill_table(self, pair_docs, group_cache, id_lookup, **pairwise_params):
         raise NotImplementedError # Just in case

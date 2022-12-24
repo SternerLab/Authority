@@ -41,7 +41,8 @@ def run():
 
     # Controls which clusters we are validating
     query = {}
-    # query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
@@ -50,7 +51,7 @@ def run():
     # query = {'group_id' : {'first_initial' : 'c', 'last' : 'miller'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'smith'}}
-    query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
+    # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
 
     # authority_self_citations
     # naive_bayes
