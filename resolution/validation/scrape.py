@@ -33,10 +33,10 @@ class Scraper:
     def yield_search(self, query, key='works', desc='', max_rate=4.0):
         raise NotImplementedError
 
-    def resolve_query(self, lookup, titles, query): # Order matters for partial *args
+    def resolve_query(self, resolved_lookup, titles, query): # Order matters for partial *args
         i, query = query
         log.info(f'Thread {i} query: {query}')
-        if query not in lookup: # For efficiency, assuming is definitive
+        if query not in resolved_lookup: # For efficiency, assuming is definitive
             for source_id, works, n_requests in self.yield_search(query, key='works',
                                                                  desc=f'{query} ({i})',                                                          max_rate=self.thread_max_rate):
                 cluster = []
@@ -56,14 +56,14 @@ class Scraper:
         start = time()
 
         # First, build a lookup table mapping titles to ids, mongo ids, and DOIs
-        lookup = dict()
+        resolved_lookup = dict()
         clusters = defaultdict(set)
         queries = [author.name] + list(titles.keys())
         total_requests = 0
 
         while len(queries) > 0:
             batch = queries[:self.max_threads]; queries = queries[self.max_threads:]
-            f = partial(self.resolve_query, lookup, titles)
+            f = partial(self.resolve_query, resolved_lookup, titles)
             log.info(f'Distributing {self.name} queries across {self.max_threads} threads')
             with ThreadPoolExecutor(max_workers=self.max_threads) as exec:
                 pool_result = exec.map(f, enumerate(batch))
@@ -71,11 +71,11 @@ class Scraper:
                 for title, source_id, mongo_id, doi, n_req in resolve_gen:
                     total_requests += n_req
                     clusters[source_id].add(mongo_id)
-                    lookup[title] = (source_id, mongo_id, doi)
+                    resolved_lookup[title] = (source_id, mongo_id, doi)
                     log.info(f'Resolved {source_id} {mongo_id} {title}')
-            log.info(f'Resolved {len(lookup)} JSTOR articles to entries for {author.key}')
+            log.info(f'Resolved {len(resolved_lookup)} JSTOR articles to entries for {author.key}')
             duration = (time() - start)
-            resolution_rate = len(lookup) / duration / 60 # minutes
+            resolution_rate = len(resolved_lookup) / duration / 60 # minutes
             requests_rate = total_requests / duration # seconds
             log.info(f'Resolution Rate: {resolution_rate} articles per minute')
             log.info(f'Requests Rate: {requests_rate} articles per second')
@@ -83,7 +83,7 @@ class Scraper:
                 fix = (total_requests / self.max_rate) - duration + self.buffer
                 log.warning(f'Rate exceeded, sleeping {fix}s')
                 sleep(fix)
-        return lookup, [list(c) for c in clusters.values()]
+        return resolved_lookup, [list(c) for c in clusters.values()]
 
 def chain(data, key, default=None):
     try:
@@ -108,7 +108,7 @@ def build_title_cache(filn):
         titles_cache[key] = titles
     return titles_cache
 
-def scrape(client, scraper, name, drop=False):
+def scrape(client, scraper, name, drop=False, query=None):
     if drop:
         client.validation.drop_collection(name)
         client.validation.drop_collection(name + '_lookup')
@@ -126,6 +126,9 @@ def scrape(client, scraper, name, drop=False):
     with client.start_session(causal_consistency=True) as session:
         try:
             for a in names.itertuples():
+                if query is not None:
+                    if a.key != query:
+                        continue
                 exists = col.find_one({'author.key' : a.key})
                 if exists is not None:
                     continue

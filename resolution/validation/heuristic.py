@@ -48,7 +48,9 @@ def name_heuristic(cluster, client, cache):
     return _lookup_set(client, 'name_match', cluster, cache)
 
 def full_name_heuristic(cluster, client, cache):
-    return _lookup_set(client, 'full_name', cluster, cache)
+    labels = _lookup_set(client, 'full_name', cluster, cache)
+    log.info('Full name heuristic labels')
+    return labels
 
 def merge_heuristic(cluster, client, cache):
     keys = cluster['cluster_labels'].keys()

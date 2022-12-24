@@ -29,22 +29,22 @@ def run():
     methods = [
 
         # Both clustering methods behaved identically
-        # EmbeddingClusterer(client, name='scibert_clustering',
-        #     hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
-        #                      epsilon=0.6)),
+        EmbeddingClusterer(client, name='scibert_clustering',
+            hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
+                             epsilon=0.6)),
 
         # EmbeddingClusterer(client, name='scidebert_clustering',
         #     hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
 
-        Classifier(client, name='naive_bayes',
-            lookup_name='naive_bayes',
-                   correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components')),
+        # Classifier(client, name='naive_bayes',
+        #     lookup_name='naive_bayes',
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
 
-        Classifier(client, name='xgboost',
-            lookup_name='xgboost',
-                   correct_triplets=False, reestimate=False,
-            hyperparams=dict(method='components')),
+        # Classifier(client, name='xgboost',
+        #     lookup_name='xgboost',
+        #            correct_triplets=False, reestimate=False,
+        #     hyperparams=dict(method='components')),
 
         ]
 
@@ -56,4 +56,4 @@ def run():
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
-    inference(client, methods, query=query)
+    inference(client, methods, query=query, drop=True)

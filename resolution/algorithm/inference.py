@@ -130,7 +130,7 @@ def save_aux_data(group_id, aux):
     for k in to_pop:
         aux.pop(k)
 
-def inference(client, methods, query=None, ref_key='first_initial_last_name'):
+def inference(client, methods, query=None, ref_key='first_initial_last_name', drop=True):
     if query is None:
         query = {}
 
@@ -144,7 +144,8 @@ def inference(client, methods, query=None, ref_key='first_initial_last_name'):
     try:
         with client.start_session(causal_consistency=True) as session:
             for method in methods:
-                inferred.drop_collection(method.name)
+                if drop:
+                    inferred.drop_collection(method.name)
             group_cache = dict()
             for doc in track(subsets.find(), total=subsets.count_documents({}),
                              description='Building group cache..'):
