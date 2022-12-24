@@ -53,5 +53,5 @@ def run():
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
-    # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
+    query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
     inference(client, methods, query=query)

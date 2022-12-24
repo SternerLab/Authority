@@ -11,6 +11,8 @@ import scipy
 import dill as pickle
 import numpy as np
 from pathlib import Path
+import logging
+log = logging.getLogger('rich')
 
 import itertools
 
@@ -43,26 +45,31 @@ class InferenceMethod:
                     self.pairwise_params[k] = v
 
 
-    def infer(self, pair_docs, group, id_lookup, **local_overrides):
+    def infer(self, articles, pair_docs, group_id, group_cache, id_lookup, **local_overrides):
         ''' Return cluster labels and auxillary data '''
         local_pairwise_params = deepcopy(self.pairwise_params)
         local_pairwise_params.update(**local_overrides)
         if self.direct:
-            return self.infer_direct(pair_docs, group, id_lookup, **self.cluster_params)
+            log.info(f'Doing direct cluster inference with {self.name}')
+            labels = self.infer_direct(articles, pair_docs, group_id, group_cache, id_lookup, **self.cluster_params)
+            return labels, dict()
         else:
-            table = self.fill_table(pair_docs, group, id_lookup, **local_pairwise_params)
+            log.info(f'Doing pairwise inference with {self.name}')
+            table = self.fill_table(pair_docs, group_cache, id_lookup, **local_pairwise_params)
             if self.correct_triplets:
                 table = fix_triplet_violations(table)
                 if self.reestimate:
                     new_prior = (np.sum(np.where(table > 0.5, 1., 0.)) /
                                  np.sum(np.where(np.isnan(table), 0., 1.)))
                     local_pairwise_params['prior'] = new_prior
-                    table = self.fill_table(pair_docs, group, id_lookup, **local_pairwise_params)
+                    table = self.fill_table(pair_docs, group_cache, id_lookup, **local_pairwise_params)
                     table = fix_triplet_violations(table)
             cluster_labels = self.pair_cluster_method(table, **self.cluster_params)
+            cluster_labels = {str(k) : int(clusters[i])
+                              for k, i in id_lookup.items()}
             return cluster_labels, dict()
 
-    def infer_direct(self, pair_docs, group, id_lookup, **kwargs):
+    def infer_direct(self, pair_docs, group_cache, id_lookup, **kwargs):
         raise NotImplementedError
 
     def pairwise_infer(self, pair, **pairwise_params): # -> cond_prob
@@ -72,7 +79,7 @@ class InferenceMethod:
         ''' Cluster from pairwise probabilities '''
         raise NotImplementedError
 
-    def fill_table(self, pair_docs, group, id_lookup, **pairwise_params):
+    def fill_table(self, pair_docs, group_cache, id_lookup, **pairwise_params):
         m = len(id_lookup)
         table = np.full((m, m), np.nan)
         np.fill_diagonal(table, 1.)
@@ -87,7 +94,7 @@ class InferenceMethod:
             assert not np.isnan(table[i, j]), f'Probability table not filled at {(i, j)}'
         return table
 
-def infer_with(methods, query, lookup, group_cache, pairs, session):
+def infer_with(articles, methods, query, lookup, group_cache, pairs, session):
     ''' Separate function to create a generator'''
     total = lookup.count_documents(query)
     description = f'inference on {total} docs'
@@ -111,11 +118,8 @@ def infer_with(methods, query, lookup, group_cache, pairs, session):
         pair_docs = [pair for pair in pairs.find({'_id' : {'$in' : pair_ids}})]
 
         for method in methods:
-            clusters, aux = method.infer(pair_docs, group_cache, id_lookup, n=n)
-            cluster_labels={str(k) : int(clusters[i])
-                            for k, i in id_lookup.items()}
-            # print(cluster_labels)
-            yield method.name, dict(cluster_labels=cluster_labels, group_id=group_id, **aux)
+            labels, aux = method.infer(articles, pair_docs, group_id, group_cache, id_lookup, n=n)
+            yield method.name, dict(cluster_labels=labels, group_id=group_id, **aux)
 
 def save_aux_data(group_id, aux):
     to_pop = []
@@ -147,7 +151,7 @@ def inference(client, methods, query=None, ref_key='first_initial_last_name'):
                 group_cache[str(doc['_id'])] = doc
 
             total = lookup.count_documents(query)
-            for name, cluster in infer_with(methods, query, lookup, group_cache, pairs, session):
+            for name, cluster in infer_with(articles, methods, query, lookup, group_cache, pairs, session):
                 inferred[name].insert_one(cluster)
     except KeyboardInterrupt:
         print(f'Interrupted inference, stopping gracefully...', flush=True)
