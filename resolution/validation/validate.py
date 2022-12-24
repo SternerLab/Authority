@@ -42,7 +42,8 @@ def load_sources(client, source_names):
                 sources[source_name] = ManualResolver(client, source_name)
             case _:
                 if 'heuristic' in source_name:
-                    kind, _ = source_name.split('_')
+                    components = source_name.split('_')
+                    kind = '_'.join(components[:-1])
                     assert kind in possible_heuristics, f'{kind} not in possible heuristics {possible_heuristics.keys()}'
                     sources[source_name] = HeuristicResolver(client, kind)
                 else:
@@ -60,8 +61,6 @@ def create_labeled_clusters(client, cluster, sources, prediction_source):
     all_clusters = {prediction_source : (predicted_clusters, predicted_labels)}
     for source_name, source in sources.items():
         labels = source.resolve(cluster)
-        if 'meshcoauthor' in source_name or 'name' in source_name:
-            log.info(f'{source_name} resolved {labels}')
         if isinstance(labels, dict):
             reference_clusters = to_clusters(labels)
         else:

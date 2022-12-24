@@ -64,7 +64,8 @@ def split_heuristic(cluster, client, cache):
 possible_heuristics = dict(
     merge=merge_heuristic,
     split=split_heuristic,
-    meshcoauthor=mesh_coauthor_heuristic,
+    mesh_coauthor=mesh_coauthor_heuristic,
+    full_name=full_name_heuristic,
     name=name_heuristic)
 # possible_heuristics = {f'{key}_heuristic' : h for key, h in possible_heuristics.items()}
 
@@ -81,8 +82,10 @@ class HeuristicResolver(Resolver):
     def build_cache(self):
         if self.name == 'name':
             ref_key = 'name_match'
-        elif self.name == 'meshcoauthor':
+        elif self.name == 'mesh_coauthor':
             ref_key = 'mesh_coauthor_match'
+        elif self.name == 'full_name':
+            ref_key = 'full_name'
         else:
             return
         self.cache = _build_lookup_cache(self.client, ref_key)

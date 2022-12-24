@@ -36,7 +36,7 @@ def run():
 
     source_names = ['biodiversity', 'google_scholar', 'self_citations', 'orcid',
                     'merge_heuristic', 'split_heuristic', 'full_name_heuristic',
-                    'meshcoauthor_heuristic', 'name_heuristic']
+                    'mesh_coauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
     # Controls which clusters we are validating
@@ -65,7 +65,7 @@ def run():
     # xgboost_components
     # authority_no_correction
 
-    prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed', 'authority_clipped', 'authority_no_correction']
+    prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed', 'authority_clipped', 'authority_no_correction','scibert_clustering', 'scidebert_clustering']
     # prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred

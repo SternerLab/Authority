@@ -27,7 +27,7 @@ class Classifier(InferenceMethod):
             warnings.simplefilter("ignore")
             return self.classifier.predict_proba(features)[0, 0]
 
-    def cluster_method(self, table, **cluster_params):
+    def pair_cluster_method(self, table, **cluster_params):
         match cluster_params['method']:
             case 'components':
                 labels = connected_components(table)

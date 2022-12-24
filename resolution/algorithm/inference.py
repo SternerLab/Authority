@@ -64,8 +64,8 @@ class InferenceMethod:
                     local_pairwise_params['prior'] = new_prior
                     table = self.fill_table(pair_docs, group_cache, id_lookup, **local_pairwise_params)
                     table = fix_triplet_violations(table)
-            cluster_labels = self.pair_cluster_method(table, **self.cluster_params)
-            cluster_labels = {str(k) : int(clusters[i])
+            labels = self.pair_cluster_method(table, **self.cluster_params)
+            cluster_labels = {str(k) : int(labels[i])
                               for k, i in id_lookup.items()}
             return cluster_labels, dict()
 

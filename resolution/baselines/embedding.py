@@ -39,21 +39,24 @@ class EmbeddingClusterer(InferenceMethod):
         for article in articles.find({'_id' : {'$in' : doc_ids}}):
             # Not 100% sure about using sep tokens here, it wasn't trained like this
             # But if it were, then we should..
-            description = (article['title'] + self.tokenizer.sep_token +
-                           article['journal'] + self.tokenizer.sep_token +
-                           article['abstract'])
-            inputs      = self.tokenizer.encode_plus(description,
-                                                     add_special_tokens=True,
-                                                     return_attention_mask=True,
-                                                     return_tensors='pt',
-                                                     truncation=True,
-                                                     padding='max_length',
-                                                     max_length=512)
-            print(len(inputs['input_ids']))
-            embedding   = self.model(**inputs)
-            print(embedding['hidden_states'][-1].shape)
-            ordered_vecs.append(np.expand_dims(np.ravel(embedding['hidden_states'][-1].detach().numpy()), 0))
-            ordered_ids.append(str(article['_id']))
+            try:
+                description = (article['title'] + self.tokenizer.sep_token +
+                               article['journal'] + self.tokenizer.sep_token +
+                               article['abstract'])
+                inputs      = self.tokenizer.encode_plus(description,
+                                                         add_special_tokens=True,
+                                                         return_attention_mask=True,
+                                                         return_tensors='pt',
+                                                         truncation=True,
+                                                         padding='max_length',
+                                                         max_length=512)
+                print(len(inputs['input_ids']))
+                embedding   = self.model(**inputs)
+                print(embedding['hidden_states'][-1].shape)
+                ordered_vecs.append(np.expand_dims(np.ravel(embedding['hidden_states'][-1].detach().numpy()), 0))
+                ordered_ids.append(str(article['_id']))
+            except TypeError: # Some corrupted/non uniform articles don't have str abstract/title
+                pass
 
         ordered_vec_mx = np.concatenate(ordered_vecs, axis=0)
         print(ordered_vec_mx.shape)
@@ -63,8 +66,8 @@ class EmbeddingClusterer(InferenceMethod):
             print(distance.cosine(ordered_vec_mx[i, :], ordered_vec_mx[j, :]))
         clusterer = hdbscan.HDBSCAN(min_cluster_size=2, metric=distance.cosine,
                                     allow_single_cluster=True,
-                                    # cluster_selection_method='leaf',
-                                    cluster_selection_epsilon=0.5)
+                                    # Should learn or at least validate this!
+                                    cluster_selection_epsilon=0.75) # Arbitrary :)
         clusterer.fit(ordered_vec_mx)
         print(clusterer.labels_)
         labels   = dict()
