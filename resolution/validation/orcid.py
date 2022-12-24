@@ -74,6 +74,7 @@ class OrcidScraper:
                 print(f'{type(Exception).__name__}: {e}')
                 continue
             yield orcid_id, doc, n_requests
+            n_requests = 0 # Reset
 
     def resolve_query(self, lookup, titles, query): # Order matters for partial *args
         i, query = query
@@ -116,13 +117,13 @@ class OrcidScraper:
                     lookup[title] = (orcid_id, mongo_id, doi)
                     log.info(f'Resolved OrCID {orcid_id} {mongo_id} {title}')
             log.info(f'Resolved {len(lookup)} JSTOR articles to OrCID entries for {author.key}')
-            duration = (time() - start) / 60 # minutes
-            resolution_rate = len(lookup) / duration
-            requests_rate = total_requests / duration
-            log.info(f'Resolution Rate: {resolve_rate} articles per minute')
-            log.info(f'Requests Rate: {requests_rate} articles per minute')
+            duration = (time() - start)
+            resolution_rate = len(lookup) / duration / 60 # minutes
+            requests_rate = total_requests / duration # seconds
+            log.info(f'Resolution Rate: {resolution_rate} articles per minute')
+            log.info(f'Requests Rate: {requests_rate} articles per second')
             if requests_rate >= self.max_rate:
-                fix = (l / self.max_rate) - duration + self.buffer
+                fix = (total_requests / self.max_rate) - duration + self.buffer
                 log.warning(f'OrCID rate exceeded, sleeping {fix}s')
                 sleep(fix)
 
