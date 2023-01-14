@@ -93,11 +93,11 @@ def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, predicted_labels)),
      (reference_source, (reference_clusters, predicted_labels))) = pair
     shared = get_shared_ids(predicted_clusters, reference_clusters)
-    # print(f'sources: {predicted_source}, {reference_source}')
-    # print('original predicted', predicted_clusters)
+    print(f'sources: {predicted_source}, {reference_source}')
+    print('predicted', predicted_clusters)
     shared = get_shared_ids(predicted_clusters, reference_clusters)
     predicted_clusters = to_shared_clusters(predicted_clusters, shared)
-    # print('original reference', reference_clusters)
+    print('reference', reference_clusters)
     reference_clusters = to_shared_clusters(reference_clusters, shared)
 
     metrics  = cluster_metrics(predicted_clusters, reference_clusters)
