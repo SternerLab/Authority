@@ -24,12 +24,12 @@ def pairwise_metrics(clusters, reference_clusters):
         neg_recall     = npr = tn / (tn + fp)
         f1             = (2 * pp * pr) / (pp + pr)
         neg_f1         = (2 * npp * npr) / (npp + npr)
-        lumping        = fp / (tp + fp) # Correct? was written as (fp / (tp / fp)) in paper
-        merge_ratio    = fp / fn
-        neg_ratio      = (tn + fp) / s
-        pos_ratio      = (tp + fn) / s
+        lumping        = fp / (tp + fp)
+        alt_lumping    = 1 - neg_precision
         splitting      = fn / (tn + fn)
         error          = (fp + fn) / s
+        balanced_accuracy = (recall + neg_recall) / 2
+        adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
         del clusters, reference_clusters
         return dict(locals())
 
