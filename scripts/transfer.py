@@ -30,4 +30,5 @@ def run():
         call(f'docker cp {docker_id}:/{db_name}_dump {local_dump}', shell=True)
         print(check_output(f'{pre} /usr/bin/ls /', shell=True))
         call(f'{pre} /usr/bin/rm -rf /{db_name}_dump', shell=True)
+        print(check_output(f'{pre} /usr/bin/ls /', shell=True))
         call(f'mongorestore --uri "mongodb+srv://authorresolution.yprf1.mongodb.net" --username {username} {local_dump}', shell=True)

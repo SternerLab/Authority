@@ -39,12 +39,21 @@ def run():
                     'mesh_coauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
+    names = pd.read_csv('data/names.csv')
+    names.sort_values(by='count', ascending=False, inplace=True)
+    common_names = list(set(names['last'].iloc[:100]))
+    print(common_names)
+
     # Controls which clusters we are validating
-    query = {}
+    # query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
-    # query = {'group_id.first_initial' : 'a'}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
-    query = {'group_id.last' : 'smith'}
+    # query = {'group_id.last' : 'smith'}
+
+    # query = {'group_id.last' : {'$in' : common_names}}
+    # query = {'group_id.last' : {'$in' : ['smith']}}
+
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'd', 'last' : 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'l', 'last' : 'smith'}}

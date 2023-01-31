@@ -9,17 +9,17 @@ from rich.progress import track
 true_sources = {'biodiversity', 'google_scholar', 'orcid'}
 all_pairings = {'meta_validation' : ({'self_citations'} | true_sources),
                 'ablation_study'  : {'authority_legacy', 'authority_clipped',
-                                     # 'authority_no_correction',
-                                     # 'authority_mixed',
+                                     'authority_no_correction',
+                                     'authority_mixed',
                                      'authority',
-                                     # 'authority_mixed_no_correction',
+                                      'authority_mixed_no_correction',
                                      'authority_no_correction_robust',
                                      # 'authority_legacy_ratios',
                                      'authority_torvik_ratios'},
                 'heuristic_validation':  {'merge_heuristic', 'split_heuristic',
                         'mesh_coauthor_heuristic', 'name_heuristic'
                         'full_name_heuristic'},
-                'baselines' : {'xgboost', 'naive_bayes', 'scidebert_clustering', 'scibert_clustering'}
+                'baselines' : {'xgboost', 'naive_bayes', 'scibert_clustering'}
                 }
 
 all_metrics = ['accuracy', 'precision', 'recall', 'f1', 'neg_precision', 'neg_recall', 'neg_f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows',

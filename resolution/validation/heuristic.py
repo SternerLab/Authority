@@ -13,7 +13,11 @@ from .resolver import Resolver
 log = logging.getLogger('rich')
 
 def _group_id_key(doc):
-    return ''.join(x[1] for x in sorted(doc['group_id'].items(), key=lambda t : t[0]))
+    gid = doc['group_id']
+    if isinstance(gid, dict):
+        return ''.join(x[1] for x in sorted(gid.items(), key=lambda t : t[0]))
+    else:
+        return str(gid)
 
 def _build_lookup_cache(client, ref_key):
     cache = dict()
