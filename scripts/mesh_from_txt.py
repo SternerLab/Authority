@@ -5,7 +5,7 @@ import requests
 import itertools
 import functools
 
-from pymongo import MongoClient
+
 from bson.objectid import ObjectId
 from rich.pretty   import pprint
 from rich.progress import Progress
@@ -13,6 +13,8 @@ from rich import print
 
 from concurrent.futures import ThreadPoolExecutor as Pool
 from threading import Lock
+
+from resolution.database.client import get_client
 
 progress_lock = Lock()
 count = 0
@@ -40,7 +42,7 @@ def insert_mesh(filename, articles=None, progress=None, task=None):
 def run():
     threads = 4
 
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 

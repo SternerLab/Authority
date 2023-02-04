@@ -1,10 +1,11 @@
 import sqlite3
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 import itertools
 import pymongo
 from resolution.validation.google_scholar import parse_google_scholar_name
+from resolution.database.client import get_client
 from resolution.parse.parse import remove_stop_words
 
 ''' Parse 24,763 google scholar articles from previous sqlite3 db '''
@@ -36,7 +37,7 @@ def expand_author_row(row, articles):
     return failures, dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids)
 
 def run():
-    mongo_client = MongoClient('localhost', 27017)
+    mongo_get_client('mongo_credentials.json', local=False)
 
     sql_client   = sqlite3.connect('database/jstor-resolution.db')
     sql_cursor   = sql_client.cursor()

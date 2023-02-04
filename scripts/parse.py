@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich.progress import track
 import xmltodict, json
@@ -8,12 +8,13 @@ from pathlib import Path
 
 from resolution.parse.files import iter_xml_files
 from resolution.parse.parse import parse, IncompleteEntry # hmm
+from resolution.database.client import get_client
 
 def run():
     print('Inserting articles into MongoDB', flush=True)
     incomplete_count = 0
     xml_dir = Path('/workspace/jstor_xml_article_data/')
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     client.drop_database('jstor_database') # Be careful!
     jstor_database = client.jstor_database
 

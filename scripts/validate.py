@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 import dill as pickle
@@ -13,6 +13,7 @@ from bson.objectid import ObjectId
 
 from resolution.validation.metrics import *
 from resolution.validation.validate import validate_all, load_sources, possible_sources
+from resolution.database.client import get_client
 
 import traceback
 
@@ -28,7 +29,7 @@ def run():
     log = logging.getLogger('rich')
     log.setLevel(logging.DEBUG)
     # First connect to MongoDB and setup the databases and collections in it
-    client   = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     articles = client.jstor_database.articles
 
     # Load the available validation sources and cache them in memory

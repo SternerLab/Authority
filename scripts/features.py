@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich.progress import track, Progress
 from bson.son import SON
@@ -67,10 +67,11 @@ def insert_features(ref_key, client, progress, batch_size=128, limit=float('inf'
         feature_groups_i[group_key].insert_many(
             features[ref_key].aggregate(pipeline))
 
-def run():
-    ''' Calculate the features for the different sets in the database '''
+from resolution.database.client import get_client
 
-    client = MongoClient('localhost', 27017)
+def run():
+    client = get_client('mongo_credentials.json', local=False)
+    ''' Calculate the features for the different sets in the database '''
     pairs  = client.reference_sets_pairs
 
     ''' Create feature vectors for the pair collections '''

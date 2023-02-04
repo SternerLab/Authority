@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 from bson.son import SON
@@ -15,11 +15,12 @@ from collections import OrderedDict
 import itertools
 
 from .inference import get_r_table_data
+from resolution.database.client import get_client
 
 def run():
     ''' Verify the ratio table and visualize it '''
 
-    client         = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     subsets        = client.reference_sets

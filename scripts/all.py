@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 from rich.pretty import pprint
 
 from . import (
@@ -11,9 +10,11 @@ from . import (
     validate
     )
 
+from resolution.database.client import get_client
+
 def run():
-    print('Running end-to-end resolution authority', flush=True)
-    client = MongoClient('localhost', 27017)
+    print('Running end-to-end author resolution', flush=True)
+    client = get_client('mongo_credentials.json', local=False)
     # Run the whole resolution authority in one go!
     # parse.run()
     subset.run()

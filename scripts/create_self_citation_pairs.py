@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 import pymongo
 from pathlib import Path
 from rich.pretty import pprint
@@ -18,9 +18,10 @@ import gzip
 from resolution.validation.self_citations import SelfCitationResolver
 from .create_self_citation_training_data import *
 
+from resolution.database.client import get_client
 
 def run():
-    client = MongoClient('localhost', 27017)
+    client           = get_client('mongo_credentials.json', local=False)
     articles          = client.jstor_database.articles
     subsets           = client.reference_sets['first_initial_last_name']
     features          = client.features

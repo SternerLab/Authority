@@ -1,9 +1,11 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich.progress import track
 from bson.son import SON
 import itertools
 import math
+
+from resolution.database.client import get_client
 
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
@@ -78,7 +80,7 @@ def run():
 
     Keep in mind that the eventual goal is to fill out the r-table uniformly
     '''
-    client         = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 

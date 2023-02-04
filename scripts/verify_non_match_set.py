@@ -1,14 +1,15 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from bson.son import SON
 import itertools
 
 from resolution.authority.compare import compare
+from resolution.database.client import get_client
 
 def run():
     ''' Verify that all subsets are created correctly '''
 
-    client         = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     reference_sets_pairs = client.reference_sets_pairs

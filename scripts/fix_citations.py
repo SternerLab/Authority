@@ -1,12 +1,14 @@
-from pymongo import MongoClient
+
 from rich.pretty   import pprint
 from rich.progress import track
 from rich import print
 
 from resolution.parse.parse import parse_citations
 
+from resolution.database.client import get_client
+
 def run():
-    client = MongoClient('localhost', 27017)
+    client = get_client('mongo_credentials.json', local=False)
 
     jstor_database = client.jstor_database
     articles       = jstor_database.articles

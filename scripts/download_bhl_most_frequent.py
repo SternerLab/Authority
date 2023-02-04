@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty   import pprint
 from rich.progress import track
 from rich.progress import Progress
@@ -13,9 +13,10 @@ import json
 
 from .download_bhl import parse_bhl_article
 
+from resolution.database.client import get_client
+
 def run():
-    print('Checking articles in MongoDB', flush=True)
-    client = MongoClient('localhost', 27017)
+    client = get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles = jstor_database.articles
     n = articles.count_documents({})

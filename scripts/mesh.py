@@ -1,11 +1,12 @@
 import skr_web_api
 import json
-from pymongo import MongoClient
+
 from bson.objectid import ObjectId
 from rich.pretty import pprint
 from rich import print
 from itertools import islice
 
+from resolution.database.client import get_client
 from resolution.parse.parse import remove_stop_words
 import unicodedata
 from collections import defaultdict
@@ -81,7 +82,7 @@ def fetch_mesh(batch):
 def run():
     batch_size     = 10240
 
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     with client.start_session(causal_consistency=True) as session:
         jstor_database = client.jstor_database
         articles       = jstor_database.articles

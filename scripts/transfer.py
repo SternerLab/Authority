@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from pymongo.server_api import ServerApi
 
 from urllib.parse import quote_plus
@@ -11,6 +11,8 @@ import shlex
 db_url    = 'authorresolution.yprf1.mongodb.net'
 db_params = '/?retryWrites=true&w=majority'
 
+from resolution.database.client import get_client
+
 def run():
     raw_username  = Prompt.ask('Username')
     raw_password  = Prompt.ask('Password', password=True)
@@ -21,7 +23,7 @@ def run():
     print('Successfully connected to remote MongoDB!')
     print(check_output('docker ps', shell=True))
     docker_id = Prompt.ask('Docker image:')
-    local_client = MongoClient('localhost', 27017)
+    local_get_client('mongo_credentials.json', local=False)
     for db_name in local_client.list_database_names():
         print(f'Transferring DB: {db_name}')
         pre = f'docker exec -i {docker_id}'

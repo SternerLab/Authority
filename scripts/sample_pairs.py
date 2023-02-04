@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 import pymongo
 from rich.pretty import pprint
 from rich.progress import track, Progress
@@ -9,6 +9,7 @@ import itertools
 import math
 
 from resolution.authority.compare import compare_pair
+from resolution.database.client import get_client
 
 # See this reference on MongoDB aggregation:
 # https://pymongo.readthedocs.io/en/stable/examples/aggregation.html
@@ -135,7 +136,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
 
 def run():
     ''' Use the reference sets to create pairs of articles in a new database '''
-    client         = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 

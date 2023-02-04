@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 import itertools
@@ -6,9 +6,10 @@ import pymongo
 from bson.objectid import ObjectId
 
 from resolution.validation.google_scholar import get_clusters
+from resolution.database.client import get_client
 
 def run():
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database   = client.jstor_database
     scholar           = client.validation.google_scholar_dois
     articles         = jstor_database.articles

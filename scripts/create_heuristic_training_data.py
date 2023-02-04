@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 import pymongo
 from pathlib import Path
 from rich.pretty import pprint
@@ -11,7 +11,7 @@ import gzip
 from resolution.baselines.training_data import *
 
 def run():
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     articles = client.jstor_database.articles
     features = client.features
 

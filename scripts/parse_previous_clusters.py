@@ -1,5 +1,5 @@
 import sqlite3
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich.progress import track
 from rich import print
@@ -8,6 +8,7 @@ import pymongo
 import json
 from resolution.validation.google_scholar import parse_google_scholar_name
 from resolution.parse.parse import remove_stop_words
+from resolution.database.client import get_client
 
 
 table    = 'clusters_all'
@@ -48,7 +49,7 @@ def generator(sql_cursor, articles):
         yield expand_cluster(row, articles)
 
 def run():
-    mongo_client = MongoClient('localhost', 27017)
+    mongo_get_client('mongo_credentials.json', local=False)
 
     sql_client   = sqlite3.connect('database/jstor-authority.db')
     sql_cursor   = sql_client.cursor()

@@ -1,10 +1,11 @@
-from pymongo import MongoClient
+
 from rich.pretty   import pprint
 
 from resolution.validation.self_citations import SelfCitationResolver, batched
+from resolution.database.client import get_client
 
 def run():
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
 
     # client.validation.drop_collection('self_citations')
     self_cites_collection = client.validation.self_citations

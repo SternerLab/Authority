@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 import pymongo
 from rich.pretty import pprint
 from rich.progress import track
@@ -7,9 +7,10 @@ from pathlib import Path
 
 from resolution.authority.inference import *
 from resolution.algorithm.inference import *
+from resolution.database.client import get_client
 
 def run():
-    client    = MongoClient('localhost', 27017)
+    client = get_client('mongo_credentials.json', local=False)
 
     authority = AuthorityInferenceMethod(client, name='authority',
                                          correct_triplets=True,

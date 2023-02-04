@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 import pymongo
 from rich.pretty import pprint
 from rich.progress import track
@@ -9,7 +8,11 @@ from resolution.algorithm.inference  import *
 from resolution.baselines.classifier import *
 from resolution.baselines.embedding  import *
 
+from resolution.database.client import get_client
+
 def run():
+    client = get_client('mongo_credentials.json', local=False)
+
     '''
     Baselines:
         Naive Bayes
@@ -19,8 +22,6 @@ def run():
 
     For each method, we can do either direct clustering (no triplet corrections or agglomerative clustering), or we can use the resolution components
     '''
-
-    client    = MongoClient('localhost', 27017)
 
 
     # To do a basic grid search:

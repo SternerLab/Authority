@@ -1,4 +1,3 @@
-from pymongo import MongoClient
 import pymongo
 from pathlib import Path
 from rich.pretty import pprint

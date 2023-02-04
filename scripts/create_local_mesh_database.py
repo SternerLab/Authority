@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 # from rich.pretty import pprint
 # from rich import print
 from rich.progress import track
@@ -10,9 +10,10 @@ import xmltodict, json
 
 __mesh_files = ['desc2023.gz']
 
+from resolution.database.client import get_client
 
 def run():
-    client = MongoClient('localhost', 27017)
+    client           = get_client('mongo_credentials.json', local=False)
     client.drop_database('mesh')
     mesh_collection = client.mesh.mesh
 

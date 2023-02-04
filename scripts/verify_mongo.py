@@ -1,9 +1,10 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
+from resolution.database.client import get_client
 
 def run():
     print('Testing mongo DB', flush=True)
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
 
     database = client.test
 

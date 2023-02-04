@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 from bson.son import SON
@@ -18,6 +18,7 @@ log = logging.getLogger('rich')
 
 from resolution.authority import compute_ratios, compute_xi_ratios, smooth, interpolate
 from resolution.authority.compare import *
+from resolution.database.client import get_client
 
 Split = namedtuple('Split', ['meta_pos', 'meta_neg', 'article_pos', 'article_neg'])
 
@@ -32,7 +33,7 @@ def run():
         then, r(x_i) for all i can be computed by multiplying each component r(x_i)
     '''
 
-    client         = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     subsets        = client.reference_sets

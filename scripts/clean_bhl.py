@@ -1,10 +1,11 @@
-from pymongo import MongoClient
 from rich.progress import track
 from rich.pretty   import pprint
 from rich import print
 
+from resolution.database.client import get_client
+
 def run():
-    client = MongoClient('localhost', 27017)
+    client = get_client('mongo_credentials.json', local=False)
 
     bhl = client.validation.bhl
     n = bhl.count_documents({})

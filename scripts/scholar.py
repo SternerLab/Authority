@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 from rich.pretty   import pprint
 from rich.progress import track
 from rich.progress import Progress
@@ -8,6 +8,7 @@ import pymongo
 import pandas as pd
 
 from resolution.validation.google_scholar import get_clusters
+from resolution.database.client import get_client
 from threading import Lock
 
 count = 0
@@ -23,7 +24,7 @@ def parse_scholar_article(article, scholar=None):
                  '$push' : {'titles' : cluster['titles']}}, True)
 
 def run():
-    client = MongoClient('localhost', 27017)
+    get_client('mongo_credentials.json', local=False)
     jstor_database   = client.jstor_database
     scholar          = client.validation.google_scholar_dois
     articles         = jstor_database.articles

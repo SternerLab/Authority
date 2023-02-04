@@ -1,11 +1,12 @@
-from pymongo import MongoClient
+
 from rich.pretty import pprint
 from rich import print
 import pandas as pd
 
+from resolution.database.client import get_client
+
 def run():
-    print('Checking articles in MongoDB', flush=True)
-    client     = MongoClient('localhost', 27017)
+    client = get_client('mongo_credentials.json', local=False)
     val        = client.validation
     val_types  = val.list_collection_names()
 

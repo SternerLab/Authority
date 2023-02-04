@@ -1,4 +1,4 @@
-from pymongo import MongoClient
+
 import pymongo
 from pathlib import Path
 from rich.pretty import pprint
@@ -17,6 +17,7 @@ import gzip
 
 from resolution.validation.self_citations import SelfCitationResolver
 from resolution.baselines.training_data import *
+from resolution.database.client import get_client
 
 def find_self_citation_labeled_pairs(client, features, subsets, filn):
     self_citations = SelfCitationResolver(client, 'self_citations')
@@ -42,7 +43,7 @@ def find_self_citation_labeled_pairs(client, features, subsets, filn):
             yield group_id, cluster
 
 def run():
-    client = MongoClient('localhost', 27017)
+    client   = get_client('mongo_credentials.json', local=False)
     articles = client.jstor_database.articles
     subsets  = client.reference_sets['first_initial_last_name']
     features = client.features
