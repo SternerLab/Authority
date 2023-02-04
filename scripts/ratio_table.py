@@ -33,7 +33,7 @@ def run():
         then, r(x_i) for all i can be computed by multiplying each component r(x_i)
     '''
 
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
     subsets        = client.reference_sets
@@ -49,15 +49,15 @@ def run():
     self_supervision_splits = {'torvik':
                                Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
                                      'name_match', 'name_non_match'),
-                               # 'torvik_robust' :
-                               # Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
-                               #       'name_match', 'first_name_non_match'),
-                               # 'self_citations' :
-                               # Split('self_citations', 'first_name_non_match',
-                               #       'self_citations',      'first_name_non_match'),
-                               # 'mixed' :
-                               # Split('mesh_coauthor_match', 'first_name_non_match',
-                               #       'self_citations',      'first_name_non_match'),
+                               'torvik_robust' :
+                               Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
+                                     'name_match', 'first_name_non_match'),
+                               'self_citations' :
+                               Split('self_citations', 'first_name_non_match',
+                                     'self_citations',      'first_name_non_match'),
+                               'mixed' :
+                               Split('mesh_coauthor_match', 'first_name_non_match',
+                                     'self_citations',      'first_name_non_match'),
                                }
 
     # x1, x2, x10 are *name* features, known as x_i here.

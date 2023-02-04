@@ -10,7 +10,7 @@ from resolution.algorithm.inference import *
 from resolution.database.client import get_client
 
 def run():
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
 
     authority = AuthorityInferenceMethod(client, name='authority',
                                          correct_triplets=True,
@@ -88,5 +88,6 @@ def run():
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
     # methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
     # methods = [authority_no_correction_robust, authority_mixed_no_correction]
-    methods = [authority, authority_legacy_ratios, authority_torvik_ratios]
+    methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self]
+    # methods = [authority, authority_legacy_ratios, authority_torvik_ratios, authority_mixed]
     inference(client, methods, query=query)

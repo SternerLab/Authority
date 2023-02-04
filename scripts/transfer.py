@@ -19,7 +19,7 @@ def run():
     raw_password  = Prompt.ask('Password', password=True)
     username      = quote_plus(raw_username)
     password      = quote_plus(raw_password)
-    mongo_url     = f'mongodb+srv://{username}:<{password}>@{db_url}'
+    mongo_url     = f'mongodb+srv://{username}:{password}@{db_url}'
     remote_client = MongoClient(f'{mongo_url}{db_params}', server_api=ServerApi('1'))
     print('Successfully connected to remote MongoDB!')
     print(check_output('docker ps', shell=True))

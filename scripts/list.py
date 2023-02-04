@@ -6,6 +6,7 @@ from resolution.database.client import get_client
 
 def run():
     client = get_client('mongo_credentials.json', local=False)
+    # client = get_client('mongo_credentials.json', local=True)
     print('Listing all databases and collections in current MongoDB', flush=True)
     for database_name in client.list_database_names():
         print(f'{database_name}:')
