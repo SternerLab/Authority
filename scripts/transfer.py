@@ -1,4 +1,5 @@
 
+from pymongo import MongoClient
 from pymongo.server_api import ServerApi
 
 from urllib.parse import quote_plus
@@ -23,8 +24,7 @@ def run():
     print('Successfully connected to remote MongoDB!')
     print(check_output('docker ps', shell=True))
     docker_id = Prompt.ask('Docker image:')
-    local_get_client('mongo_credentials.json', local=False)
-    for db_name in local_client.list_database_names():
+    for db_name in remote_client.list_database_names():
         print(f'Transferring DB: {db_name}')
         pre = f'docker exec -i {docker_id}'
         local_dump = f'/workspace/mongodump_{db_name}'
