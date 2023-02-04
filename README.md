@@ -89,6 +89,7 @@ If starting from scratch, the `./run parse` script will populate the JSTOR artic
 ./run all # Run parsing, subsetting, sampling, the authority algorithm, ablations, baselines, and validation.
 # It will individually run:
 ./run parse        # Parse JSTOR articles from XML (filtering for validity)
+./run mesh_from_text # Load MeSH from text
 ./run subset       # Subset JSTOR articles into Authority blocks
 ./run sample_pairs # Sample pairs of articles to create initial training data
 ./run features     # Calculate and cache the feature vectors of article pairs
@@ -96,6 +97,18 @@ If starting from scratch, the `./run parse` script will populate the JSTOR artic
 ./run inference    # Run the Authority inference method and its ablations
 ./run baselines    # Run all baselines
 ./run validate     # Run validation with all sources
+```
+
+MeSH terms will need to be parsed from either the (very slow) NIH API, or from a cached text file:
+```
+./run mesh # Exceptionally slow (days, if ever)!!
+./run mesh_from_text # Expects a mesh_pre_fetched_txt/ directory
+```
+
+To use the NIH API from Python, create `umls_credentials.json` as follows from info at [umls website](https://documentation.uts.nlm.nih.gov/rest/home.html):
+```json
+{"email" : "myemail@domain.com",
+ "api_key" : "abcdefghi-72139"}
 ```
 
 #### Validation Sources
@@ -111,11 +124,6 @@ Validation sources are modular, and can be created independently. If using an ex
 
 Each validation source typically requires its own credentials:
 
-Create `umls_credentials.json` as follows from info at [umls website](https://documentation.uts.nlm.nih.gov/rest/home.html):
-```json
-{"email" : "myemail@domain.com",
- "api_key" : "abcdefghi-72139"}
-```
 
 Create `bhl_credentials.json` with credentials from [their website](https://www.biodiversitylibrary.org/docs/api3.html).
 ```json
@@ -157,7 +165,7 @@ Next, it will be necessary to setup MongoDB.
 The easiest method for using MongoDB is to use the web-hosted version.
 This will require credentials in `mongo_credentials.json`, which can be obtained by emailing the project authors. Simply update the `username` and `password` fields and name the file `mongo_credentials.json`, and do not change the `uri` field unless the database has been migrated elsewhere:  
 ```json
-{"uri" : "mongodb+srv://{credentials}@authorresolution.yprf1.mongodb.net",
+{"uri" : "authorresolution.yprf1.mongodb.net",
  "username" : "my-mongo-user",
  "password" : "abcdefghi-72139"}
 ```

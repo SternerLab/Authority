@@ -2,6 +2,7 @@ from rich.pretty import pprint
 
 from . import (
     parse,
+    mesh,
     subset,
     sample_pairs,
     features,
@@ -21,6 +22,7 @@ def run():
     # Run the whole resolution authority in one go!
     # Good luck!
     parse.run()
+    mesh_from_txt.run()
     subset.run()
     sample_pairs.run()
     features.run()
