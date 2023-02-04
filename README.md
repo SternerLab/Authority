@@ -2,8 +2,7 @@
 
 This is an open-source replication and extension of ["A probabilistic similarity metric for medline records"](https://asistdl.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/asi.20105?casa_token=DNyxGM6qY_EAAAAA:Z59sYoMxRI_28GiMlSwWEiVI25tMiO1XRKwlQR5AUUc-lsJbDF79LPqA9XeAK-8oJbJWgK23f4nTBTZu) and following papers. 
 
-Broadly, the repository is split into python libraries in the `resolution/` folder and python scripts in the `scripts/` folder. Scripts are invoked using [BASh](https://en.wikipedia.org/wiki/Bash_(Unix_shell)?useskin=vector), such as `./run list`, which will expand to `poetry run python main.py list`, which calls `scripts/list.py`. If BASh isn't available (such as on windows), then the scripts or `main.py` can be run independently. Note that windows users can install [git
-bash](https://git-scm.com/downloads).
+Broadly, the repository is split into python libraries in the `resolution/` folder and python scripts in the `scripts/` folder. The following sections provide an overview of the libraries and scripts in this repository. See [Installation](#Installation) for install instructions.
 
 ## Libraries
 
@@ -60,6 +59,9 @@ resolution
 
 ## Scripts
 
+Scripts are invoked using [BASh](https://en.wikipedia.org/wiki/Bash_(Unix_shell)?useskin=vector), such as `./run list`, which will expand to `poetry run python main.py list`, which calls `scripts/list.py`. If BASh isn't available (such as on windows), then the scripts or `main.py` can be run independently. Note that windows users can install [git
+bash](https://git-scm.com/downloads).
+
 #### With an Existing Database
 If starting from an existing database, the most important scripts are:
 ```
@@ -113,7 +115,7 @@ There about 70 different scripts in total, many perform one-off utilities such a
 All scripts with the `verify_` prefix print debug info or perform sanity checks to ensure that the algorithm has been executed correctly.
 
 
-## Installation
+# Installation
 
 Install [Python 3.10](https://www.python.org/downloads/).  
 Install [poetry](https://python-poetry.org/) for package management.  
