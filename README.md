@@ -1,8 +1,11 @@
-# Authority
+# Authority Replication and Evaluation
 
 This is an open-source replication and extension of ["A probabilistic similarity metric for medline records"](https://asistdl.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/asi.20105?casa_token=DNyxGM6qY_EAAAAA:Z59sYoMxRI_28GiMlSwWEiVI25tMiO1XRKwlQR5AUUc-lsJbDF79LPqA9XeAK-8oJbJWgK23f4nTBTZu) and following papers. 
 
-Broadly, the repository is split into python libraries in the `resolution/` folder and python scripts in the `scripts/` folder. Scripts are invoked using [BASh](https://en.wikipedia.org/wiki/Bash_(Unix_shell)?useskin=vector), such as `./run list`, which will expand to `poetry run python main.py list`, which calls `scripts/list.py`. If BASh isn't available (such as on windows), then the scripts or `main.py` can be run independently.
+Broadly, the repository is split into python libraries in the `resolution/` folder and python scripts in the `scripts/` folder. Scripts are invoked using [BASh](https://en.wikipedia.org/wiki/Bash_(Unix_shell)?useskin=vector), such as `./run list`, which will expand to `poetry run python main.py list`, which calls `scripts/list.py`. If BASh isn't available (such as on windows), then the scripts or `main.py` can be run independently. Note that windows users can install [git
+bash](https://git-scm.com/downloads).
+
+## Libraries
 
 The `resolution` folder includes six main libraries:  
 ```
@@ -54,6 +57,60 @@ resolution
 │       utils.py:          Various validation utilities
 │
 ```
+
+## Scripts
+
+#### With an Existing Database
+If starting from an existing database, the most important scripts are:
+```
+./run inference            # Runs the Authority algorithm and ablations
+./run validate             # Runs validation with all sources
+./run plot_sources         # Creates the main plots used in the paper
+```
+
+It may also be desirable to re-train baselines, even though their parameters are already stored in MongoDB. The SciBERT baseline is currently not trained, only evaluated:  
+```
+./run naive_bayes_baseline # Train the Naive Bayes baseline
+./run xgboost_baseline     # Train the XGBoost baseline
+./run baselines            # Run inference with all baselines
+```
+
+To experiment with the ratio table:
+```
+./run ratio_table          # Re-calculates the ratio table and saves it to the database
+```
+
+#### Replicating from Scratch
+If starting from scratch, the `./run parse` script will populate the JSTOR articles database. There is also a `./run all` script that will reproduce results from scratch
+
+```
+./run all # Run parsing, subsetting, sampling, the authority algorithm, ablations, baselines, and validation.
+# It will individually run:
+./run parse        # Parse JSTOR articles from XML (filtering for validity)
+./run subset       # Subset JSTOR articles into Authority blocks
+./run sample_pairs # Sample pairs of articles to create initial training data
+./run features     # Calculate and cache the feature vectors of article pairs
+./run ratio_table  # Calculate and save the ratio table
+./run inference    # Run the Authority inference method and its ablations
+./run baselines    # Run all baselines
+./run validate     # Run validation with all sources
+```
+
+#### Validation Sources
+Validation sources are modular, and can be created independently. If using an existing database, they will be pre-populated.
+```
+./run download_bhl_most_frequent # Recommended script for creating BHL database
+./run match_bhl                  # Run after downloading BHL to match to Authority, 
+                                 # requires that ./run parse has already run
+./run orcid          # Create the ORCID validation data
+./run self_citations # Create self citation validation data
+./run scholar        # (Try to) create the Google Scholar validation data (usually fails)
+```
+
+###### Other Scripts
+
+There about 70 different scripts in total, many perform one-off utilities such as creating plots, finding ambiguous authors or finding overlap in validation sources.
+All scripts with the `verify_` prefix print debug info or perform sanity checks to ensure that the algorithm has been executed correctly.
 
 
 ## Installation

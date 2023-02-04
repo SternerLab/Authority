@@ -18,6 +18,7 @@ from resolution.database.client import get_client
 import traceback
 
 def _mongodb_segfault_handler(signum, frame):
+    # (OLD): Only occurred once, after a database corruption (yikes!)
     # This is likely from a corrupted binary or document in mondodb, which is hard to isolate
     print(f'MongoDB encountered a segfault while validating:')
     traceback.print_stack(frame)
