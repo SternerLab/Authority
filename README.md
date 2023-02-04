@@ -4,7 +4,7 @@ This is an open-source replication and extension of ["A probabilistic similarity
 
 Broadly, the repository is split into python libraries in the `resolution/` folder and python scripts in the `scripts/` folder. The following sections provide an overview of the libraries and scripts in this repository. See [Installation](#Installation) for install instructions.
 
-## Libraries
+# Libraries
 
 The `resolution` folder includes six main libraries:  
 ```
@@ -57,7 +57,7 @@ resolution
 │
 ```
 
-## Scripts
+# Scripts
 
 Scripts are invoked using [BASh](https://en.wikipedia.org/wiki/Bash_(Unix_shell)?useskin=vector), such as `./run list`, which will expand to `poetry run python main.py list`, which calls `scripts/list.py`. If BASh isn't available (such as on windows), then the scripts or `main.py` can be run independently. Note that windows users can install [git
 bash](https://git-scm.com/downloads).
@@ -109,6 +109,19 @@ Validation sources are modular, and can be created independently. If using an ex
 ./run scholar        # (Try to) create the Google Scholar validation data (usually fails)
 ```
 
+Each validation source typically requires its own credentials:
+
+Create `umls_credentials.json` as follows from info at [umls website](https://documentation.uts.nlm.nih.gov/rest/home.html):
+```json
+{"email" : "myemail@domain.com",
+ "api_key" : "abcdefghi-72139"}
+```
+
+Create `bhl_credentials.json` with credentials from [their website](https://www.biodiversitylibrary.org/docs/api3.html).
+
+Create `orcid_credentials.json` with credentials from [their website](https://info.orcid.org/documentation/api-tutorials/).
+
+
 ###### Other Scripts
 
 There about 70 different scripts in total, many perform one-off utilities such as creating plots, finding ambiguous authors or finding overlap in validation sources.
@@ -157,17 +170,3 @@ Run `sudo docker run -d -p 27017:27017 -v ~/mongodb_data:/data/db mongo`
 You can get a manual shell with `docker exec -it mongodb bash`  
 
 If running on a supercompute cluster without docker, a viable alternative is to use [singularity](https://asurc.atlassian.net/wiki/spaces/RC/pages/54099969/Building+containers+and+using+Singularity#BuildingcontainersandusingSingularity-WhatisSingularityandwhynotDocker%3F), this guide describes the process for ASU's Agave cluster.
-
-# Scripts
-
-
-See instructions in `script\_with\_comments.ipynb` for a reference for the initial version
-
-Create `umls_credentials.json` as follows from info at [umls website](https://documentation.uts.nlm.nih.gov/rest/home.html):
-```json
-{"email" : "myemail@domain.com",
- "api_key" : "abcdefghi-72139"}
-```
-
-Create `bhl_credentials.json` with credentials from [their website](https://www.biodiversitylibrary.org/docs/api3.html).
-
