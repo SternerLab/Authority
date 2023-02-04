@@ -26,9 +26,9 @@ def run():
         print(f'Transferring DB: {db_name}')
         pre = f'docker exec -i {docker_id}'
         local_dump = f'/workspace/mongodump_{db_name}'
-        call(f'{pre} /usr/bin/mongodump --db {db_name} --out /{db_name}_dump', shell=True)
-        call(f'docker cp {docker_id}:/{db_name}_dump {local_dump}', shell=True)
-        print(check_output(f'{pre} /usr/bin/ls /', shell=True))
-        call(f'{pre} /usr/bin/rm -rf /{db_name}_dump', shell=True)
+        call(f'{pre} /usr/bin/mongodump --db {db_name} --out {local_dump}', shell=True)
+        # call(f'docker cp {docker_id}:/{db_name}_dump {local_dump}', shell=True)
+        # print(check_output(f'{pre} /usr/bin/ls /', shell=True))
+        # call(f'{pre} /usr/bin/rm -rf /{db_name}_dump', shell=True)
         print(check_output(f'{pre} /usr/bin/ls /', shell=True))
         call(f'mongorestore --uri "mongodb+srv://authorresolution.yprf1.mongodb.net" --username {username} {local_dump}', shell=True)
