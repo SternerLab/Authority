@@ -118,8 +118,15 @@ Create `umls_credentials.json` as follows from info at [umls website](https://do
 ```
 
 Create `bhl_credentials.json` with credentials from [their website](https://www.biodiversitylibrary.org/docs/api3.html).
+```json
+{"api_key" : "lettersandnumbers123"}
+```
 
 Create `orcid_credentials.json` with credentials from [their website](https://info.orcid.org/documentation/api-tutorials/).
+```json
+{"id" : "APP-MYID", "api_key" : "lettersandnumbers123"}
+```
+
 
 
 ###### Other Scripts
