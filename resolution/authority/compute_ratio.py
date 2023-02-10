@@ -43,6 +43,7 @@ def compute_ratio(feature, feature_groups, # match_count, non_match_count,
         assert ratio >= 0., f'ratios should ALWAYS be positive, but got {ratio} from {match_count} / {total_matches} {match}s and {non_match_count} / {total_non_matches} {non_match}'
         des = 'Well defined'
     except ZeroDivisionError:
+        # log.warning(f'Ratio calculation encountered divide by zero! {feature}')
         ratio = 0 # To be smoothed..
         # bot += epsilon
         # ratio = top / bot

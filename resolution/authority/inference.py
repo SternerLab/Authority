@@ -62,7 +62,7 @@ class AuthorityInferenceMethod(InferenceMethod):
         r_is = np.array([self.xi_ratios.get((k, features[k]), 1.0) # Sensible default value
                          for k in x_i_keys if k not in excluded] + [r_a])
         if not (r_is > 0.).all():
-            log.warning(f'Ratios are not greater than 0: {r_is}')
+            # log.warning(f'Ratios are not greater than 0: {r_is}')
             r_is = np.maximum(r_is, 0.)
         if epsilon:
             r_is = np.maximum(r_is, epsilon)

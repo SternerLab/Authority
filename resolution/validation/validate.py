@@ -143,11 +143,12 @@ def validate(client, cluster, sources, prediction_source, is_first):
     return bound, _validation_generator(pairs, name)
 
 def validate_all(client, prediction_sources, query, sources):
+    log.info('Beginning validation')
     total = 0
     generator = None
     for i, (name, inferred) in enumerate(prediction_sources.items()):
         is_first = i == 0
-        print(f'Validating {name}!')
+        log.info(f'Validating {name}!')
         inferred_size = inferred.count_documents({})
         for i, cluster in track(enumerate(inferred.find(query)), total=inferred_size,
                                 description='Creating validation generator'):
