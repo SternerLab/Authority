@@ -136,7 +136,7 @@ def sample_for_ref_key(ref_key, client, progress, reference_sets, reference_sets
 
 def run():
     ''' Use the reference sets to create pairs of articles in a new database '''
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 

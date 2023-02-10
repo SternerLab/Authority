@@ -26,11 +26,17 @@ def _mongodb_segfault_handler(signum, frame):
 signal.signal(signal.SIGSEGV, _mongodb_segfault_handler)
 # os.kill(os.getpid(), signal.SIGSEGV) # To test the segfault handler
 
+def get_common_names():
+    names = pd.read_csv('data/names.csv')
+    names.sort_values(by='count', ascending=False, inplace=True)
+    common_names = list(set(names['last'].iloc[:100]))
+    return common_names
+
 def run():
     log = logging.getLogger('rich')
     log.setLevel(logging.DEBUG)
     # First connect to MongoDB and setup the databases and collections in it
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     articles = client.jstor_database.articles
 
     # Load the available validation sources and cache them in memory
@@ -41,9 +47,7 @@ def run():
                     'mesh_coauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
 
-    names = pd.read_csv('data/names.csv')
-    names.sort_values(by='count', ascending=False, inplace=True)
-    common_names = list(set(names['last'].iloc[:100]))
+    common_names = get_common_names()
     print(common_names)
 
     # Controls which clusters we are validating
@@ -83,6 +87,7 @@ def run():
                           'authority_mixed_no_correction',
                           'authority_legacy_ratios',
                           'authority_torvik_ratios']
+    prediction_sources = ['naive_bayes', 'xgboost']
     # prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred

@@ -5,7 +5,7 @@ from resolution.validation.self_citations import SelfCitationResolver, batched
 from resolution.database.client import get_client
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
 
     # client.validation.drop_collection('self_citations')
     self_cites_collection = client.validation.self_citations

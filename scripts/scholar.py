@@ -24,7 +24,7 @@ def parse_scholar_article(article, scholar=None):
                  '$push' : {'titles' : cluster['titles']}}, True)
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     jstor_database   = client.jstor_database
     scholar          = client.validation.google_scholar_dois
     articles         = jstor_database.articles

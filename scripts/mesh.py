@@ -82,7 +82,7 @@ def fetch_mesh(batch):
 def run():
     batch_size     = 10240
 
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     with client.start_session(causal_consistency=True) as session:
         jstor_database = client.jstor_database
         articles       = jstor_database.articles

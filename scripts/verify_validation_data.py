@@ -5,7 +5,7 @@ from resolution.database.client import get_client
 
 def run():
     print('Checking articles in MongoDB', flush=True)
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     validation = client.validation
 
     for val_type in validation.list_collection_names():

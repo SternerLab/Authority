@@ -8,7 +8,7 @@ from resolution.validation.scrape import *
 from resolution.database.client import get_client
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     articles         = client.jstor_database.articles
     scraper          = SemanticScholarScraper()
     scrape(client, scraper, 'semantic_scholar')

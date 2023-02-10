@@ -18,7 +18,7 @@ from resolution.database.client import get_client
 
 def run():
     print('Running end-to-end author resolution', flush=True)
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     # Run the whole resolution authority in one go!
     # Good luck!
     parse.run()

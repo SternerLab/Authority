@@ -70,7 +70,7 @@ def insert_features(ref_key, client, progress, batch_size=128, limit=float('inf'
 from resolution.database.client import get_client
 
 def run():
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     ''' Calculate the features for the different sets in the database '''
     pairs  = client.reference_sets_pairs
 

@@ -21,7 +21,7 @@ from .create_self_citation_training_data import *
 from resolution.database.client import get_client
 
 def run():
-    client           = get_client('mongo_credentials.json', local=False)
+    client           = get_client('mongo_credentials.json', local=True)
     articles          = client.jstor_database.articles
     subsets           = client.reference_sets['first_initial_last_name']
     features          = client.features

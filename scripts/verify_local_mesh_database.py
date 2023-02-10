@@ -13,7 +13,7 @@ __mesh_files = ['desc2023.gz']
 from resolution.database.client import get_client
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     mesh_collection = client.mesh.mesh
 
     for mesh_entry in mesh_collection.find():

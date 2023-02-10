@@ -43,7 +43,7 @@ def find_self_citation_labeled_pairs(client, features, subsets, filn):
             yield group_id, cluster
 
 def run():
-    client   = get_client('mongo_credentials.json', local=False)
+    client   = get_client('mongo_credentials.json', local=True)
     articles = client.jstor_database.articles
     subsets  = client.reference_sets['first_initial_last_name']
     features = client.features

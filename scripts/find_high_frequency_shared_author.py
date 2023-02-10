@@ -6,7 +6,7 @@ import pandas as pd
 from resolution.database.client import get_client
 
 def run():
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     val        = client.validation
     val_types  = val.list_collection_names()
 

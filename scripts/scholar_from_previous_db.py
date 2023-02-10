@@ -37,7 +37,7 @@ def expand_author_row(row, articles):
     return failures, dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids)
 
 def run():
-    mongo_get_client('mongo_credentials.json', local=False)
+    mongo_get_client('mongo_credentials.json', local=True)
 
     sql_client   = sqlite3.connect('database/jstor-resolution.db')
     sql_cursor   = sql_client.cursor()

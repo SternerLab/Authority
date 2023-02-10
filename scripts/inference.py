@@ -9,6 +9,8 @@ from resolution.authority.inference import *
 from resolution.algorithm.inference import *
 from resolution.database.client import get_client
 
+from .validate import get_common_names
+
 def run():
     client = get_client('mongo_credentials.json', local=True)
 
@@ -84,10 +86,15 @@ def run():
                                              clip=False,
                                              ratios_from='torvik_reported'))
 
-    query = {}
+    common_names = get_common_names()
+
+    # query = {'group_id.last' : {'$in' : common_names}}
+    query = {'group_id' : {'first_initial' : 'd', 'last': 'johnson'}}
+    # query = {}
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
     # methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
     # methods = [authority_no_correction_robust, authority_mixed_no_correction]
     methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self]
+    methods = [authority]
     # methods = [authority, authority_legacy_ratios, authority_torvik_ratios, authority_mixed]
     inference(client, methods, query=query)

@@ -19,7 +19,8 @@ all_pairings = {'meta_validation' : ({'self_citations'} | true_sources),
                 'heuristic_validation':  {'merge_heuristic', 'split_heuristic',
                         'mesh_coauthor_heuristic', 'name_heuristic'
                         'full_name_heuristic'},
-                'baselines' : {'xgboost', 'naive_bayes', 'scibert_clustering'}
+                # 'baselines' : {'xgboost', 'naive_bayes', 'scibert_clustering'}
+                'baselines' : {'xgboost', 'naive_bayes'}
                 }
 
 all_metrics = ['accuracy', 'precision', 'recall', 'f1', 'neg_precision', 'neg_recall', 'neg_f1', 'lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows',
@@ -27,7 +28,8 @@ all_metrics = ['accuracy', 'precision', 'recall', 'f1', 'neg_precision', 'neg_re
 alt_metrics = ['pos_ratio', 'neg_ratio', 'merge_ratio']
 
 analysis_matrix = [# ('mutual_info', ['adjusted_mutual_info'], all_pairings),
-                   ('all', all_metrics, all_pairings),
+                   # ('all', all_metrics, all_pairings),
+                   ('all', all_metrics, dict(baselines=all_pairings['baselines'])),
                    # ('merge_ratio', ['merge_ratio'], all_pairings),
                    #('imbalance', ['pos_ratio', 'neg_ratio'], {k : v for k, v in all_pairings.items() if k in {'heuristic_validation', 'meta_validation'}} | {'authority' : {'authority'}})
                    ]

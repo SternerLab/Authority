@@ -14,7 +14,7 @@ def run():
     print('Inserting articles into MongoDB', flush=True)
     incomplete_count = 0
     xml_dir = Path('/workspace/jstor_xml_article_data/')
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     client.drop_database('jstor_database') # Be careful!
     jstor_database = client.jstor_database
 

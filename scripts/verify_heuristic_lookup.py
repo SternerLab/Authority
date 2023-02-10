@@ -9,7 +9,7 @@ from bson.objectid import ObjectId
 from resolution.database.client import get_client
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     for ref_key in ['mesh_coauthor_match', 'name_match']:
         lookup = client.reference_sets_group_lookup[ref_key]
         doc = lookup.find_one()

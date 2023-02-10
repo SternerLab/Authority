@@ -11,7 +11,7 @@ from resolution.baselines.utils import *
 from resolution.database.client import get_client
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     np.random.seed(2022)
 
     self_cites = Path('/workspace/JSTOR_self_citations_pairwise.csv.gz')

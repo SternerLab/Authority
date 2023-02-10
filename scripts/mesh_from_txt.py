@@ -42,7 +42,7 @@ def insert_mesh(filename, articles=None, progress=None, task=None):
 def run():
     threads = 4
 
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 

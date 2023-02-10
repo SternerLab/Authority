@@ -11,7 +11,7 @@ import gzip
 from resolution.baselines.training_data import *
 
 def run():
-    get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     articles = client.jstor_database.articles
     features = client.features
 

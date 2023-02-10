@@ -11,7 +11,7 @@ from resolution.baselines.embedding  import *
 from resolution.database.client import get_client
 
 def run():
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
 
     '''
     Baselines:
@@ -37,19 +37,19 @@ def run():
         # EmbeddingClusterer(client, name='scidebert_clustering',
         #     hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
 
-        # Classifier(client, name='naive_bayes',
-        #     lookup_name='naive_bayes',
-        #            correct_triplets=False, reestimate=False,
-        #     hyperparams=dict(method='components')),
+        Classifier(client, name='naive_bayes',
+            lookup_name='naive_bayes',
+                   correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components')),
 
-        # Classifier(client, name='xgboost',
-        #     lookup_name='xgboost',
-        #            correct_triplets=False, reestimate=False,
-        #     hyperparams=dict(method='components')),
+        Classifier(client, name='xgboost',
+            lookup_name='xgboost',
+                   correct_triplets=False, reestimate=False,
+            hyperparams=dict(method='components')),
 
         ]
 
-    query = {}
+    # query = {}
     # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}

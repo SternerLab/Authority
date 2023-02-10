@@ -29,7 +29,7 @@ def parse_bhl_article(article, key=None, bhl=None):
 from resolution.database.client import get_client
 
 def run():
-    client = get_client('mongo_credentials.json', local=False)
+    client = get_client('mongo_credentials.json', local=True)
     jstor_database = client.jstor_database
     collect = jstor_database.articles
     n = collect.count_documents({})
