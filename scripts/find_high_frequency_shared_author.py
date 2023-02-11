@@ -9,6 +9,8 @@ def run():
     client = get_client('mongo_credentials.json', local=True)
     val        = client.validation
     val_types  = val.list_collection_names()
+    print(val_types)
+    1/0
 
     names = pd.read_csv('data/names.csv')
     names.sort_values(by='count', ascending=False, inplace=True)

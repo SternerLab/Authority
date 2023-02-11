@@ -64,7 +64,7 @@ class EmbeddingClusterer(InferenceMethod):
                 pass
 
         try:
-            if len(doc_ids) < 3:
+            if len(doc_ids) < 3 or ordered_vecs is None:
                 raise ValueError # Small hack to force merging small clusters
             log.info('Printing example pairwise cosine distances')
             for i, j in itertools.combinations(np.arange(len(doc_ids)), 2):

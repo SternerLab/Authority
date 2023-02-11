@@ -50,7 +50,7 @@ def run():
         ]
 
     # query = {}
-    # query = {'group_id.first_initial' : 'a'}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}

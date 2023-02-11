@@ -158,9 +158,9 @@ If you prefer to install packages without poetry (either in virtualenv or global
 
 Next, it will be necessary to setup MongoDB.
 
-#### MongoDB Setup
+## MongoDB Setup
 
-###### Web-Hosted 
+### Web-Hosted 
 
 The easiest method for using MongoDB is to use the web-hosted version.
 This will require credentials in `mongo_credentials.json`, which can be obtained by emailing the project authors. Simply update the `username` and `password` fields and name the file `mongo_credentials.json`, and do not change the `uri` field unless the database has been migrated elsewhere:  
@@ -170,7 +170,7 @@ This will require credentials in `mongo_credentials.json`, which can be obtained
  "password" : "abcdefghi-72139"}
 ```
 
-###### Local Database
+### Local Database
 
 **If mongoDB has been setup to connect to web hosting, ignore this section.**
 
@@ -178,10 +178,15 @@ Alternatively, mongodb can be setup locally, either natively, or with a containe
 
 Install `mongodb` using the [official instructions](https://www.mongodb.com/docs/manual/installation/).  
 
-###### With Docker
+#### With Docker
 MongoDB can be finicky to set up correctly, so an alternative is to install [`docker`](https://www.docker.com/).  
 If on MacOS, an alternative is [colima](https://github.com/abiosoft/colima).  
 Run `sudo docker run -d -p 27017:27017 -v ~/mongodb_data:/data/db mongo`  
 You can get a manual shell with `docker exec -it mongodb bash`  
 
 If running on a supercompute cluster without docker, a viable alternative is to use [singularity](https://asurc.atlassian.net/wiki/spaces/RC/pages/54099969/Building+containers+and+using+Singularity#BuildingcontainersandusingSingularity-WhatisSingularityandwhynotDocker%3F), this guide describes the process for ASU's Agave cluster.
+
+### MongoDB structure
+
+The database structure can be seen using `./run list`.  
+To see the number of documents in each collection, use `./run counts`. This can be used to sanity check behavior, and to report numbers for publication.  

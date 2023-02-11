@@ -37,16 +37,16 @@ def expand_author_row(row, articles):
     return failures, dict(author=name, title=titles, dois=dois, mongo_ids=mongo_ids)
 
 def run():
-    mongo_get_client('mongo_credentials.json', local=True)
+    mongo_client = get_client('mongo_credentials.json', local=True)
 
     sql_client   = sqlite3.connect('database/jstor-resolution.db')
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database
-    mongo_client.validation.drop_collection('google_scholar_dois')
-    scholar           = mongo_client.validation.google_scholar_dois
+    mongo_client.validation.drop_collection('google_scholar')
+    scholar           = mongo_client.validation.google_scholar
     articles          = jstor_database.articles
-    articles.create_index([('front.article-meta.article-id.#text', pymongo.TEXT)])
+    # articles.create_index([('front.article-meta.article-id.#text', pymongo.TEXT)])
 
     failures = 0
 
