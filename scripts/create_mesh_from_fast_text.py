@@ -1,4 +1,4 @@
-from .mesh import parse_mesh_output
+from .create_mesh_from_fast_text import parse_mesh_output
 from pathlib import Path
 import json
 import requests

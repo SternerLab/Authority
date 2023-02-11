@@ -4,7 +4,7 @@ from bson.son import SON
 import itertools
 from collections import defaultdict
 
-from .features import compare_pair
+from .authority_features import compare_pair
 from resolution.database.client import get_client
 
 def run():

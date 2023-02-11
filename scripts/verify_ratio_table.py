@@ -14,7 +14,7 @@ from collections import OrderedDict
 
 import itertools
 
-from .inference import get_r_table_data
+from .authority_inference import get_r_table_data
 from resolution.database.client import get_client
 
 def run():

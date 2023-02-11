@@ -15,7 +15,7 @@ from collections import OrderedDict
 
 import itertools
 
-from .inference import get_r_table_data, parse_previous_ratios
+from .authority_inference import get_r_table_data, parse_previous_ratios
 
 def run():
     ''' Verify the ratio table and visualize it '''
