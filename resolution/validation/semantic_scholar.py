@@ -5,12 +5,12 @@ import json
 from ..parse.parse import parse_name, construct_name, remove_stop_words
 
 from .resolver import Resolver
-from .scrape import *
+from .builder import *
 
-class SemanticScholarResolver(ScrapedResolver): # Use defaults
+class SemanticScholarResolver(DefaultBuiltResolver): # Use defaults
     pass
 
-class SemanticScholarScraper(Scraper):
+class SemanticScholarBuilder(Builder):
     def __init__(self, max_threads=2, max_rate=20, buffer=1):
         self.search_url = 'https://api.semanticscholar.org/graph/v1/paper/search?query='
         self.fill_url = 'https://api.semanticscholar.org/graph/v1/paper/batch?'

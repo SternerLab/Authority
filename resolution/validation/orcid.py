@@ -17,9 +17,9 @@ from concurrent.futures import ThreadPoolExecutor
 
 from resolution.parse.parse import remove_stop_words
 from .resolver import Resolver
-from .scrape import *
+from .builder import *
 
-class OrcidResolver(ScrapedResolver): # Use defaults
+class OrcidResolver(DefaultBuiltResolver): # Use defaults
     pass
 
 ''' OrCID API Notes
@@ -29,7 +29,7 @@ class OrcidResolver(ScrapedResolver): # Use defaults
 'external-id-type' : 'doi'
 'external-id-value' : '10.4018...'
 '''
-class OrcidScraper(Scraper):
+class OrcidBuilder(Builder):
     def __init__(self, creds_path, max_threads=2, max_rate=24., buffer=1.):
         with open(creds_path, 'r') as infile:
             credentials = json.load(infile) # don't save :)

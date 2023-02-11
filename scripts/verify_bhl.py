@@ -18,7 +18,7 @@ def run():
     print(f'Found {n} BHL clusters')
     resolved = 0
     for doc in track(bhl.find(), total=n, description='Checking resolved BHL'):
-        # pprint(doc)
+        pprint(doc)
         # pprint(doc['author']['key'])
         if 'mongo_ids' in doc:
             # pprint(doc)
@@ -36,3 +36,5 @@ def run():
         #     pprint(jstor_article['title'])
         #     pprint(jstor_article['authors'])
     print(f'Out of {n} BHL documents, {resolved} were resolved to their JSTOR ids')
+
+    # client.validation.drop_collection('bhl')

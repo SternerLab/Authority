@@ -19,7 +19,7 @@ from resolution.parse.parse import remove_stop_words
 from .resolver import Resolver
 from .utils import chain
 
-class ScrapedResolver(Resolver):
+class DefaultBuiltResolver(Resolver):
     ''' A specialized class for resolving labels for author clusters '''
     def __init__(self, client, name):
         self.name  = name
@@ -27,7 +27,7 @@ class ScrapedResolver(Resolver):
         self.collection = client.validation[name]
         # Use default resolve(), build_cache(), etc
 
-class Scraper:
+class Builder:
     def yield_works(self, works):
         raise NotImplementedError
 
@@ -59,7 +59,10 @@ class Scraper:
         # First, build a lookup table mapping titles to ids, mongo ids, and DOIs
         resolved_lookup = dict()
         clusters = defaultdict(set)
-        queries = [author.name] + list(titles.keys())
+        if author is None:
+            queries = list(titles.keys())
+        else:
+            queries = [author.name] + list(titles.keys())
         total_requests = 0
 
         while len(queries) > 0:
@@ -74,7 +77,7 @@ class Scraper:
                     clusters[source_id].add(mongo_id)
                     resolved_lookup[title] = (source_id, mongo_id, doi)
                     log.info(f'Resolved {source_id} {mongo_id} {title}')
-            log.info(f'Resolved {len(resolved_lookup)} JSTOR articles to entries for {author.key}')
+            log.info(f'Resolved {len(resolved_lookup)} JSTOR articles to entries for {author}')
             duration = (time() - start)
             resolution_rate = len(resolved_lookup) / duration / 60 # minutes
             requests_rate = total_requests / duration # seconds
@@ -86,7 +89,8 @@ class Scraper:
                 sleep(fix)
         return resolved_lookup, [list(c) for c in clusters.values()]
 
-    def scrape(self, client, drop=False, query=None):
+    def build(self, client, drop=False, restrict_query=None, query_titles=False,
+              query_authors=True):
         if drop:
             client.validation.drop_collection(self.name)
             client.validation.drop_collection(self.name + '_lookup')
@@ -104,23 +108,30 @@ class Scraper:
         with client.start_session(causal_consistency=True) as session:
             try:
                 for a in names.itertuples():
-                    if query is not None:
-                        if a.key != query:
+                    if restrict_query is not None:
+                        if a.key != restrict_query:
                             continue
                     exists = col.find_one({'author.key' : a.key})
                     if exists is not None:
                         continue
-                    titles = titles_cache.get(a.key)
+                    if query_titles:
+                        titles = titles_cache.get(a.key)
+                    else:
+                        titles = dict()
                     if titles is None:
                         log.warning(f'Found no titles for author {a}')
                         continue
-                    lookup, clusters = self.resolve(a, titles)
-                    pprint(lookup)
+                    if query_authors:
+                        author_query = a
+                    else:
+                        author_query = None
+                    resolved_lookup, clusters = self.resolve(author_query, titles)
+                    pprint(resolved_lookup)
                     pprint(clusters)
                     col.insert_one(dict(author=dict(key=a.key, full_name=a.name, last=a.last, first_initial=a.first_initial),
                                                      mongo_ids=clusters))
-                    lookup.insert_one(dict(key=a.key, lookup=lookup))
-                    print(f'Resolved a total of {len(lookup)}/{len(titles)} articles for {a.name}')
+                    lookup.insert_one(dict(key=a.key, lookup=resolved_lookup))
+                    print(f'Resolved a total of {len(resolved_lookup)}/{1 + len(titles)} articles for {a.name}')
             except KeyboardInterrupt:
                 print(f'Received interrupt, exiting')
 

@@ -15,20 +15,21 @@ from collections import defaultdict
 log = logging.getLogger('rich')
 
 from .resolver import Resolver
-from .scrape import *
+from .builder import *
 from ..parse.parse import parse_name, construct_name, remove_stop_words
 
-author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
-metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
 
-class BiodiversityResolver(ScrapedResolver): # Use defaults
+class BiodiversityResolver(DefaultBuiltResolver): # Use defaults
     pass
 
-class BiodiversityScraper(Scraper):
-    def __init__(self, creds_path, max_threads=8, max_rate=120., buffer=0.):
+class BiodiversityBuilder(Builder):
+    def __init__(self, creds_path, max_threads=16, max_rate=240., buffer=0.):
         with open(creds_path, 'r') as infile:
             credentials = json.load(infile) # save :)
             self.api_key = credentials['api_key']
+        self.author_search_url = 'https://www.biodiversitylibrary.org/api3?op=AuthorSearch&authorname={author}&apikey={key}&format=json'
+        self.metadata_url = 'https://www.biodiversitylibrary.org/api3?op=GetAuthorMetadata&id={idn}&pubs=t&apikey={key}&format=json'
+        self.publication_search_url= 'https://www.biodiversitylibrary.org/api3?op=PublicationSearch&searchterm={query}&apikey={key}&format=json'
         self.max_threads = max_threads
         self.max_rate = max_rate
         self.thread_max_rate = max_rate / max_threads
@@ -37,31 +38,52 @@ class BiodiversityScraper(Scraper):
 
     def yield_works(self, bhl_author):
         author_id = bhl_author['AuthorID']
-        metadata = requests.get(metadata_url.format(key=key, idn=author_id)).json()
+        metadata = requests.get(self.metadata_url.format(key=self.api_key, idn=author_id)).json()
         if metadata['Status'] == 'ok':
             for result in metadata['Result']:
                 try:
                     titles = [remove_stop_words(pub['Title'])
-                              for pub in metadata['Publications']]
+                              for pub in result['Publications']]
+                    log.info(f'Titles: {titles}')
                     for title in titles:
                         yield title, ''
-                except ValueError as e:
+                except (ValueError, KeyError) as e:
                     print(f'BHL Could not parse {result["Name"]}, resulting in {e}')
 
     def yield_search(self, query, key='', desc='', max_rate=4.0):
         del key, desc # These aren't relevant to BHL, key is a JSON key
-        first, *rest = query
-        author = f'{first.upper}. {" ".join(rest).title()}'
-
         # yield id, doc, n_requests
+        log.info(f'Biodiversity query: {query}')
         n_requests = 1
-        url = author_search_url.format(key=self.api_key, author=author)
+        url = self.author_search_url.format(key=self.api_key, author=query)
         response = requests.get(url).json()
         if response['Status'] == 'ok':
+            log.info(f'Got normal response.. parsing')
             for bhl_author in response['Result']:
+                log.info(f'Author: {bhl_author}')
                 author_id = bhl_author['AuthorID']
                 n_requests += 1
                 yield author_id, bhl_author, n_requests
+        else:
+            log.info(f'Got {response["Status"]}')
+
+class BiodiversityTitleBuilder(BiodiversityBuilder):
+    def yield_works(self, publications):
+        for pub in publications:
+            title = remove_stop_words(pub['Title'])
+            yield title, ''
+
+    def yield_search(self, query, key='', desc='', max_rate=4.0):
+        del key, desc # These aren't relevant to BHL, key is a JSON key
+        log.info(f'Biodiversity query: {query}')
+        n_requests = 1
+        url = self.publication_search_url.format(key=self.api_key, query=query)
+        response = requests.get(url).json()
+        if response['Status'] == 'ok':
+            log.info(f'Got normal response.. parsing')
+            yield None, response['Result'], n_requests
+        else:
+            log.info(f'Got {response["Status"]}')
 
 # If we'd like to compare against BHL names
 # def parse_bhl_name(bhl_name):
