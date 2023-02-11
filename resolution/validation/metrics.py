@@ -4,6 +4,7 @@ from rich.pretty import pprint
 from collections import namedtuple
 import numpy as np
 import itertools
+import logging
 import sklearn.metrics.cluster as skl_cluster_metrics
 
 from .utils import *
@@ -12,6 +13,8 @@ from .utils import *
 
 class IncompleteValidation(Exception):
     pass
+
+log = logging.getLogger('rich')
 
 def pairwise_metrics(clusters, reference_clusters):
     tp, tn, fp, fn = (np.float32(v) for v in unpack(clusters, reference_clusters))
@@ -28,8 +31,17 @@ def pairwise_metrics(clusters, reference_clusters):
         alt_lumping    = 1 - neg_precision
         splitting      = fn / (tn + fn)
         error          = (fp + fn) / s
+        tn_ratio       = tn / (tn + tp)
         balanced_accuracy = (recall + neg_recall) / 2
         adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
+        if len(reference_clusters) == 1:
+            log.warn(f'Since there is only a single reference cluster, negative class metrics have been set to NaN')
+            neg_precision = np.nan
+            neg_recall    = np.nan
+            neg_f1        = np.nan
+            alt_lumping   = np.nan
+            balanced_accuracy = np.nan
+            adjusted_balanced_accuracy = np.nan
         del clusters, reference_clusters
         return dict(locals())
 

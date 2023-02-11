@@ -22,7 +22,7 @@ class GoogleScholarResolver(Resolver):
     def __init__(self, client, name):
         self.name  = name
         self.cache = None
-        self.collection = client.validation[name + '_dois']
+        self.collection = client.validation[name]
 
 def setup_proxy():
     scholar.set_timeout(5)

@@ -30,7 +30,7 @@ class OrcidResolver(DefaultBuiltResolver): # Use defaults
 'external-id-value' : '10.4018...'
 '''
 class OrcidBuilder(Builder):
-    def __init__(self, creds_path, max_threads=2, max_rate=24., buffer=1.):
+    def __init__(self, creds_path, max_threads=8, max_rate=24., buffer=1.):
         with open(creds_path, 'r') as infile:
             credentials = json.load(infile) # don't save :)
         self.api   = orcid.PublicAPI(credentials['id'], credentials['api_key'])

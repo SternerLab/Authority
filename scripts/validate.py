@@ -87,7 +87,7 @@ def run():
                           'authority_mixed_no_correction',
                           'authority_legacy_ratios',
                           'authority_torvik_ratios']
-    prediction_sources = ['naive_bayes', 'xgboost']
+    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_robust',  'authority_torvik_ratios']
     # prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
