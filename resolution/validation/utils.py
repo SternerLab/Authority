@@ -52,3 +52,14 @@ def contiguous(labels_dict):
     labels_dict = {k : rename[i] for i, k in enumerate(labels_dict)}
     # print(labels_dict)
     return labels_dict
+
+def chain(data, key, default=None):
+    try:
+        keys = key.split('.')
+        for key in keys:
+            data = data[key]
+        return data
+    except KeyError:
+        if default is None:
+            raise
+        return default

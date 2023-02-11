@@ -17,6 +17,7 @@ import pandas as pd
 
 from resolution.parse.parse import remove_stop_words
 from .resolver import Resolver
+from .utils import chain
 
 class ScrapedResolver(Resolver):
     ''' A specialized class for resolving labels for author clusters '''
@@ -85,16 +86,44 @@ class Scraper:
                 sleep(fix)
         return resolved_lookup, [list(c) for c in clusters.values()]
 
-def chain(data, key, default=None):
-    try:
-        keys = key.split('.')
-        for key in keys:
-            data = data[key]
-        return data
-    except KeyError:
-        if default is None:
-            raise
-        return default
+    def scrape(self, client, drop=False, query=None):
+        if drop:
+            client.validation.drop_collection(self.name)
+            client.validation.drop_collection(self.name + '_lookup')
+        col    = client.validation[self.name]
+        lookup = client.validation[self.name + '_lookup']
+
+        filn = client.reference_sets.first_initial_last_name
+
+        titles_cache = build_title_cache(filn)
+
+
+        names = pd.read_csv('data/names.csv')
+        names.sort_values(by='count', ascending=False, inplace=True)
+        best_resolutions = dict()
+        with client.start_session(causal_consistency=True) as session:
+            try:
+                for a in names.itertuples():
+                    if query is not None:
+                        if a.key != query:
+                            continue
+                    exists = col.find_one({'author.key' : a.key})
+                    if exists is not None:
+                        continue
+                    titles = titles_cache.get(a.key)
+                    if titles is None:
+                        log.warning(f'Found no titles for author {a}')
+                        continue
+                    lookup, clusters = self.resolve(a, titles)
+                    pprint(lookup)
+                    pprint(clusters)
+                    col.insert_one(dict(author=dict(key=a.key, full_name=a.name, last=a.last, first_initial=a.first_initial),
+                                                     mongo_ids=clusters))
+                    lookup.insert_one(dict(key=a.key, lookup=lookup))
+                    print(f'Resolved a total of {len(lookup)}/{len(titles)} articles for {a.name}')
+            except KeyboardInterrupt:
+                print(f'Received interrupt, exiting')
+
 
 def build_title_cache(filn):
     titles_cache = dict()
@@ -107,41 +136,3 @@ def build_title_cache(filn):
             titles[doc['title']] = str(doc['ids'])
         titles_cache[key] = titles
     return titles_cache
-
-def scrape(client, scraper, name, drop=False, query=None):
-    if drop:
-        client.validation.drop_collection(name)
-        client.validation.drop_collection(name + '_lookup')
-    col    = client.validation[name]
-    lookup = client.validation[name + '_lookup']
-
-    filn = client.reference_sets.first_initial_last_name
-
-    titles_cache = build_title_cache(filn)
-
-
-    names = pd.read_csv('data/names.csv')
-    names.sort_values(by='count', ascending=False, inplace=True)
-    best_resolutions = dict()
-    with client.start_session(causal_consistency=True) as session:
-        try:
-            for a in names.itertuples():
-                if query is not None:
-                    if a.key != query:
-                        continue
-                exists = col.find_one({'author.key' : a.key})
-                if exists is not None:
-                    continue
-                titles = titles_cache.get(a.key)
-                if titles is None:
-                    log.warning(f'Found no titles for author {a}')
-                    continue
-                lookup, clusters = scraper.resolve(a, titles)
-                pprint(lookup)
-                pprint(clusters)
-                col.insert_one(dict(author=dict(key=a.key, full_name=a.name, last=a.last, first_initial=a.first_initial),
-                                                 mongo_ids=clusters))
-                lookup.insert_one(dict(key=a.key, lookup=lookup))
-                print(f'Resolved a total of {len(lookup)}/{len(titles)} articles for {a.name}')
-        except KeyboardInterrupt:
-            print(f'Received interrupt, exiting')

@@ -39,7 +39,7 @@ def expand_author_row(row, articles):
 def run():
     mongo_client = get_client('mongo_credentials.json', local=True)
 
-    sql_client   = sqlite3.connect('database/jstor-resolution.db')
+    sql_client   = sqlite3.connect('database/jstor-authority.db')
     sql_cursor   = sql_client.cursor()
 
     jstor_database    = mongo_client.jstor_database

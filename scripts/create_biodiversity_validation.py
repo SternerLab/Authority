@@ -3,47 +3,24 @@ from rich import print
 from rich.pretty   import pprint
 from rich.progress import track
 
-from resolution.validation.orcid  import *
-from resolution.validation.scrape import *
+from resolution.validation.biodiversity import *
+from resolution.validation.scrape       import *
 from resolution.database.client import get_client
 
 def run():
     client = get_client('mongo_credentials.json', local=True)
-    articles         = client.jstor_database.articles
-    orcid_scraper    = OrcidScraper('orcid_credentials.json')
-    scrape(client, orcid_scraper, 'orcid', query='djohnson')
+    articles             = client.jstor_database.articles
+    biodiversity_scraper = BiodiversityScraper('orcid_credentials.json')
+    biodiversity_scraper.scrape(client, query='djohnson')
 
-# from functools import partial
-# import functools
-# import itertools
-# import requests
-# import pymongo
-# import pandas as pd
-# import json
-#
-# from .download_bhl import parse_bhl_article
-#
-# from resolution.database.client import get_client
-#
-#
-# def run():
-#     client = get_client('mongo_credentials.json', local=True)
-#     jstor_database = client.jstor_database
-#     articles = jstor_database.articles
-#     n = articles.count_documents({})
-#
-#     bhl_database = client.bhl_database
-#     bhl = bhl_database.bhl
-#     bhl = client.validation.bhl
-#
-#     with open('bhl_credentials.json', 'r') as infile:
-#         credentials = json.load(infile)
-#     api_key = credentials['api_key']
-#
 #     names = pd.read_csv('data/names.csv')
 #     names.sort_values(by='count', ascending=False, inplace=True)
 #
-#     best_resolutions = dict()
+#     with client.start_session(causal_consistency=True) as session:
+#         for key in names['key']:
+
+#     names = pd.read_csv('data/names.csv')
+#     names.sort_values(by='count', ascending=False, inplace=True)
 #
 #     with client.start_session(causal_consistency=True) as session:
 #         for key in names['key']:
