@@ -62,6 +62,14 @@ def run():
                                              clip=False,
                                              ratios_from='torvik_robust'))
 
+    authority_reversed = AuthorityInferenceMethod(client, name='authority_reversed',
+                                         correct_triplets=True,
+                                         reestimate=True,
+                                         hyperparams=dict(
+                                             epsilon=1e-6,
+                                             clip=False,
+                                             ratios_from='torvik_reversed'))
+
     authority_mixed_no_correction = AuthorityInferenceMethod(client, name='authority_mixed_no_correction',
                                          correct_triplets=False,
                                          reestimate=False,
@@ -88,13 +96,13 @@ def run():
 
     common_names = get_common_names()
 
+    query = {}
     # query = {'group_id.last' : {'$in' : common_names}}
-    query = {'group_id' : {'first_initial' : 'd', 'last': 'johnson'}}
-    # query = {}
+    # query = {'group_id' : {'first_initial' : 'd', 'last': 'johnson'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
     # methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
     # methods = [authority_no_correction_robust, authority_mixed_no_correction]
-    methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self]
-    methods = [authority]
+    methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self, authority_torvik_ratios, authority_no_correction_robust, authority_reversed]
+    # methods = [authority]
     # methods = [authority, authority_legacy_ratios, authority_torvik_ratios, authority_mixed]
     inference(client, methods, query=query)

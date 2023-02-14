@@ -30,9 +30,9 @@ def run():
     methods = [
 
         # Both clustering methods behaved identically
-        EmbeddingClusterer(client, name='scibert_clustering',
-            hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
-                             epsilon=0.6)),
+        # EmbeddingClusterer(client, name='scibert_clustering',
+        #     hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
+        #                      epsilon=0.6)),
 
         # EmbeddingClusterer(client, name='scidebert_clustering',
         #     hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
@@ -49,8 +49,8 @@ def run():
 
         ]
 
-    # query = {}
-    query = {'group_id.first_initial' : 'a'}
+    query = {}
+    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.last' : 'smith'}
     # query = {'group_id.last' : 'johnson'}
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'hedenström'}}

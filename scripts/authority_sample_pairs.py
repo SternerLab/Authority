@@ -140,10 +140,6 @@ def run():
     jstor_database = client.jstor_database
     articles       = jstor_database.articles
 
-    # Pls no more
-    # client.drop_database('reference_sets_pairs')
-    # client.drop_database('reference_sets_group_lookup')
-
     reference_sets_pairs = client.reference_sets_pairs
     reference_sets_group_lookup = client.reference_sets_group_lookup
     reference_sets = client.reference_sets
@@ -154,6 +150,7 @@ def run():
     ref_keys += ('first_initial_last_name', 'mesh_coauthor_match', 'name_match')
     ref_keys += ('name_non_match', 'mesh_coauthor_non_match')
     ref_keys += ('first_name_non_match',)
+    ref_keys += ('full_name',)
 
     with Progress() as progress:
         for ref_key in ref_keys:

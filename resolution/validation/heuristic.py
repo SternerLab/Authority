@@ -28,19 +28,20 @@ def _build_lookup_cache(client, ref_key):
     return cache
 
 def _lookup_set(client, ref_key, cluster, cache):
-    log.info(f'Beginning lookup {ref_key}, {cluster["group_id"]}')
+    # log.info(f'Beginning lookup {ref_key}, {cluster["group_id"]}')
     group_id = cluster['group_id']
+    if ref_key not in client.reference_sets_pairs.list_collection_names():
+        raise KeyError(f'Cannot lookup {ref_key}, no pairs collection created!')
     pairs    = client.reference_sets_pairs[ref_key]
     result   = cache.get(_group_id_key(cluster))
-    log.info(f'Cached result is {result}')
+    # log.info(f'Cached result is {result}')
     if result is None:
         return dict()
-    matching_pairs = pairs.find(
-            {'_id' : {'$in' : result['pair_ids']}})
+    matching_pairs = pairs.find({'_id' : {'$in' : result['pair_ids']}})
     # Str is important here! Won't work otherwise
     id_pairs = ((str(x['ids']) for x in pair['pair']) for pair in matching_pairs)
     labels = pairs_to_cluster_labels(id_pairs)
-    log.info(f'Lookup found labels {labels}')
+    # log.info(f'Lookup found labels {labels}')
     # pprint(labels)
     return labels
 
@@ -52,8 +53,9 @@ def name_heuristic(cluster, client, cache):
     return _lookup_set(client, 'name_match', cluster, cache)
 
 def full_name_heuristic(cluster, client, cache):
+    # log.warn(f'Called full name heuristic with {cluster} {cache}')
     labels = _lookup_set(client, 'full_name', cluster, cache)
-    log.info('Full name heuristic labels')
+    # log.info(f'Full name heuristic labels {labels}')
     return labels
 
 def merge_heuristic(cluster, client, cache):

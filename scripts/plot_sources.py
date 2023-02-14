@@ -24,7 +24,7 @@ all_pairings = {'meta_validation' : ({'self_citations'} | true_sources),
                             'authority_robust', 'authority_mixed', 'self_citations'}
                 }
 
-all_metrics = ['accuracy', 'adjusted_balanced_accuracy', 'precision', 'recall', 'f1', 'neg_precision', 'neg_recall', 'neg_f1', 'lumping', 'alt_lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows',
+all_metrics = ['tn_ratio', 'accuracy', 'adjusted_balanced_accuracy', 'precision', 'recall', 'f1', 'neg_precision', 'neg_recall', 'neg_f1', 'lumping', 'alt_lumping', 'splitting', 'cluster_precision', 'cluster_recall', 'adjusted_rand', 'adjusted_mutual_info', 'homogeneity', 'completeness', 'v_measure', 'fowlkes_mallows',
            ]
 alt_metrics = ['pos_ratio', 'neg_ratio', 'merge_ratio']
 

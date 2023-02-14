@@ -32,6 +32,8 @@ def pairwise_metrics(clusters, reference_clusters):
         splitting      = fn / (tn + fn)
         error          = (fp + fn) / s
         tn_ratio       = tn / (tn + tp)
+        pos_ratio      = (tp + fp) / s
+        neg_ratio      = (tn + fn) / s
         balanced_accuracy = (recall + neg_recall) / 2
         adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
         if len(reference_clusters) == 1:
@@ -42,6 +44,7 @@ def pairwise_metrics(clusters, reference_clusters):
             alt_lumping   = np.nan
             balanced_accuracy = np.nan
             adjusted_balanced_accuracy = np.nan
+            tn_ratio = np.nan
         del clusters, reference_clusters
         return dict(locals())
 

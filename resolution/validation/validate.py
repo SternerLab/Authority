@@ -20,7 +20,8 @@ from .biodiversity    import BiodiversityResolver
 from .orcid           import OrcidResolver
 from .heuristic       import HeuristicResolver, possible_heuristics
 
-possible_sources = (['self_citations', 'google_scholar', 'biodiversity', 'orcid', 'manual']
+ideal_sources = ['google_scholar', 'biodiversity', 'orcid']
+possible_sources = (['self_citations'] + ideal_sources
                     + list(possible_heuristics.keys()))
 excluded_references = {'split_heuristic', 'merge_heuristic'}
 
@@ -90,7 +91,7 @@ def get_shared_ids(pred_clusters, ref_clusters):
 
 def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, predicted_labels)),
-     (reference_source, (reference_clusters, predicted_labels))) = pair
+     (reference_source, (reference_clusters, reference_labels))) = pair
     shared = get_shared_ids(predicted_clusters, reference_clusters)
     print(f'sources: {predicted_source}, {reference_source}')
     print('predicted', predicted_clusters)
@@ -115,10 +116,15 @@ def compare_cluster_pair(pair):
 def _validation_generator(pairs, name):
     complete = 0
     for pair in pairs:
-        ((predicted_source, _),
-         (reference_source, _)) = pair
+        ((predicted_source, (predicted_clusters, predicted_labels)),
+         (reference_source, (reference_clusters, reference_labels))) = pair
         if predicted_source == reference_source or reference_source in excluded_references:
             continue
+        if len(reference_clusters) == 1:
+            metrics['strict'] = False
+        elif reference_source in ideal_sources:
+            log.info(f'FOUND multi-author labelled cluster for {name} in {ideal_sources}')
+            metrics['strict'] = True
         try:
             metrics = compare_cluster_pair(pair)
             metrics['name'] = name
@@ -155,7 +161,7 @@ def validate_all(client, prediction_sources, query, sources):
             if isinstance(cluster['cluster_labels'], list):
                 cluster['cluster_labels'] = cluster['cluster_labels'][0]
             try:
-                if cluster['group_id']['first_initial'] == '':
+                if cluster['group_id']['first_initial'] == '': # Skip authors with no first initial
                     continue
                 bound, next_generator = validate(client, cluster, sources, name,
                                                  is_first=is_first)

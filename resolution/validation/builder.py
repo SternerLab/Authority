@@ -107,7 +107,9 @@ class Builder:
         best_resolutions = dict()
         with client.start_session(causal_consistency=True) as session:
             try:
-                for a in names.itertuples():
+                for i, a in enumerate(names.itertuples()):
+                    if i == 0:
+                        continue
                     if restrict_query is not None:
                         if a.key != restrict_query:
                             continue

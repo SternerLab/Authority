@@ -51,9 +51,9 @@ def run():
     print(common_names)
 
     # Controls which clusters we are validating
-    # query = {}
+    query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
-    query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
 
@@ -81,18 +81,20 @@ def run():
     # xgboost_components
     # authority_no_correction
 
-    prediction_sources = ['authority', 'naive_bayes', 'xgboost', #'authority_mixed',
-                          'authority_clipped', #'authority_no_correction',
+    prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed',
+                          'authority_clipped', 'authority_no_correction',
                           'scibert_clustering',  'authority_no_correction_robust',
-                          'authority_mixed_no_correction',
-                          'authority_legacy_ratios',
+                          # 'authority_mixed_no_correction',
+                          'authority_self',
+                          'authority_reversed'
+                          # 'authority_legacy_ratios',
                           'authority_torvik_ratios']
-    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_robust',  'authority_torvik_ratios']
-    # prediction_sources = ['authority', 'naive_bayes_agglomerative', 'xgboost_agglomerative']
+    # methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self, authority_torvik_ratios, authority_no_correction_robust, authority_reversed]
+    prediction_sources = ['naive_bayes', 'xgboost', 'authority']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
-    stream = validate_all(client, predictions, query, sources)
 
+    stream = validate_all(client, predictions, query, sources)
     first = next(stream)
 
     # No memory issues from this method :)

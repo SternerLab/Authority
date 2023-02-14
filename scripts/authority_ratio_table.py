@@ -46,18 +46,21 @@ def run():
     r_table          = client.r_table
 
     # Define the splits from Torvik 2005/2009/2014, as well as experimental ones
-    self_supervision_splits = {'torvik':
-                               Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
-                                     'name_match', 'name_non_match'),
-                               'torvik_robust' :
-                               Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
-                                     'name_match', 'first_name_non_match'),
-                               'self_citations' :
-                               Split('self_citations', 'first_name_non_match',
-                                     'self_citations',      'first_name_non_match'),
-                               'mixed' :
-                               Split('mesh_coauthor_match', 'first_name_non_match',
-                                     'self_citations',      'first_name_non_match'),
+    self_supervision_splits = {# 'torvik':
+                               # Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
+                               #       'name_match', 'name_non_match'),
+                               'torvik_reversed':
+                               Split('name_match', 'name_non_match',
+                                     'mesh_coauthor_match', 'mesh_coauthor_non_match'),
+                               # 'torvik_robust' :
+                               # Split('mesh_coauthor_match', 'mesh_coauthor_non_match',
+                               #       'name_match', 'first_name_non_match'),
+                               # 'self_citations' :
+                               # Split('self_citations', 'first_name_non_match',
+                               #       'self_citations',      'first_name_non_match'),
+                               # 'mixed' :
+                               # Split('mesh_coauthor_match', 'first_name_non_match',
+                               #       'self_citations',      'first_name_non_match'),
                                }
 
     # x1, x2, x10 are *name* features, known as x_i here.

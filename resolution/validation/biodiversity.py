@@ -37,18 +37,21 @@ class BiodiversityBuilder(Builder):
         self.name = 'biodiversity'
 
     def yield_works(self, bhl_author):
-        author_id = bhl_author['AuthorID']
-        metadata = requests.get(self.metadata_url.format(key=self.api_key, idn=author_id)).json()
-        if metadata['Status'] == 'ok':
-            for result in metadata['Result']:
-                try:
-                    titles = [remove_stop_words(pub['Title'])
-                              for pub in result['Publications']]
-                    log.info(f'Titles: {titles}')
-                    for title in titles:
-                        yield title, ''
-                except (ValueError, KeyError) as e:
-                    print(f'BHL Could not parse {result["Name"]}, resulting in {e}')
+        try:
+            author_id = bhl_author['AuthorID']
+            metadata = requests.get(self.metadata_url.format(key=self.api_key, idn=author_id)).json()
+            if metadata['Status'] == 'ok':
+                for result in metadata['Result']:
+                    try:
+                        titles = [remove_stop_words(pub['Title'])
+                                  for pub in result['Publications']]
+                        log.info(f'Titles: {titles}')
+                        for title in titles:
+                            yield title, ''
+                    except (ValueError, KeyError) as e:
+                        print(f'BHL Could not parse {result["Name"]}, resulting in {e}')
+        except:
+            pass
 
     def yield_search(self, query, key='', desc='', max_rate=4.0):
         del key, desc # These aren't relevant to BHL, key is a JSON key
