@@ -51,9 +51,10 @@ def run():
     print(common_names)
 
     # Controls which clusters we are validating
-    query = {}
+    # query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
-    # query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id' : {'first_initial' : 'a', 'last' : 'baker'}}
+    query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
 
@@ -68,31 +69,18 @@ def run():
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'smith'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
 
-    # authority_self_citations
-    # naive_bayes
-    # naive_bayes_agglomerative
-    # authority_clipped
-    # first_initial_last_name
-    # xgboost_agglomerative
-    # naive_bayes_components
-    # authority_mixed
-    # authority
-    # xgboost
-    # xgboost_components
-    # authority_no_correction
-
-    prediction_sources = ['authority', 'naive_bayes', 'xgboost', 'authority_mixed',
-                          'authority_clipped', 'authority_no_correction',
-                          'scibert_clustering',  'authority_no_correction_robust',
-                          # 'authority_mixed_no_correction',
+    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'scibert_clustering',
+                          'authority_clipped',
+                          'authority_no_correction',
+                          'authority_mixed',
                           'authority_self',
-                          'authority_reversed'
-                          # 'authority_legacy_ratios',
-                          'authority_torvik_ratios']
-    # methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self, authority_torvik_ratios, authority_no_correction_robust, authority_reversed]
-    prediction_sources = ['naive_bayes', 'xgboost', 'authority']
+                          'authority_torvik_ratios',
+                          'authority_no_correction_robust',
+                          'authority_reversed']
+    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_clipped']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
+
 
     stream = validate_all(client, predictions, query, sources)
     first = next(stream)

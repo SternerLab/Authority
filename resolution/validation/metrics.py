@@ -23,28 +23,27 @@ def pairwise_metrics(clusters, reference_clusters):
         accuracy       = (tp + tn) / s
         precision = pp = tp / (tp + fp)
         recall    = pr = tp / (tp + fn)
-        neg_precision  = npp = tn / (tn + fn)
-        neg_recall     = npr = tn / (tn + fp)
         f1             = (2 * pp * pr) / (pp + pr)
-        neg_f1         = (2 * npp * npr) / (npp + npr)
         lumping        = fp / (tp + fp)
-        alt_lumping    = 1 - neg_precision
         splitting      = fn / (tn + fn)
+        alt_lumping    = 1 - neg_precision
         error          = (fp + fn) / s
-        tn_ratio       = tn / (tn + tp)
         pos_ratio      = (tp + fp) / s
         neg_ratio      = (tn + fn) / s
-        balanced_accuracy = (recall + neg_recall) / 2
-        adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
-        if len(reference_clusters) == 1:
-            log.warn(f'Since there is only a single reference cluster, negative class metrics have been set to NaN')
+        if len(reference_clusters) > 1:
+            tn_ratio       = tn / (tn + tp)
+            neg_f1         = (2 * npp * npr) / (npp + npr)
+            neg_precision  = npp = tn / (tn + fn)
+            neg_recall     = npr = tn / (tn + fp)
+            balanced_accuracy = (recall + neg_recall) / 2
+            adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
+        else:
+            tn_ratio = np.nan
+            neg_f1 = np.nan
             neg_precision = np.nan
-            neg_recall    = np.nan
-            neg_f1        = np.nan
-            alt_lumping   = np.nan
+            neg_recall = np.nan
             balanced_accuracy = np.nan
             adjusted_balanced_accuracy = np.nan
-            tn_ratio = np.nan
         del clusters, reference_clusters
         return dict(locals())
 
@@ -72,17 +71,8 @@ def sklearn_metrics(clusters, reference_clusters, features=None):
     try:
         metrics = {m : max(getattr(skl_cluster_metrics, f'{m}_score')(ref, preds), 0.)
                    for m in __sklearn_metrics}
-        metrics['adjusted_mutual_info']
     except ValueError:
-        # Should never happen!
-        print(f'Bad metrics processing:')
-        print('Input clusters (predicted, ref)')
-        print(clusters)
-        print(reference_clusters)
-        print('Labels (predicted, ref)')
-        print(preds)
-        print(ref)
-        metrics = {m : None for m in __sklearn_metrics}
+        raise
     # If we had a per-article feature vector, we could use these, but we'll skip them.
     # if features is not None:
     #     for index in __sklearn_indices:
@@ -135,6 +125,7 @@ def unpack(clusters, reference_clusters):
     return tp, tn, fp, fn
 
 def cluster_metrics(clusters, reference_clusters):
+    raise NotImplementedError('Cluster metrics deprecated in favor of sklearn metrics')
     with np.errstate(divide='ignore', invalid='ignore'):
         article_count    = np.int32(sum(len(c) for c in clusters))
         reference_count  = np.int32(sum(len(c) for c in reference_clusters))

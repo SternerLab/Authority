@@ -15,6 +15,8 @@ from collections import OrderedDict
 
 import itertools
 
+from resolution.database.client import get_client
+
 from .authority_inference import get_r_table_data, parse_previous_ratios
 
 def run():

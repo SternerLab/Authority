@@ -20,10 +20,9 @@ from .biodiversity    import BiodiversityResolver
 from .orcid           import OrcidResolver
 from .heuristic       import HeuristicResolver, possible_heuristics
 
-ideal_sources = ['google_scholar', 'biodiversity', 'orcid']
-possible_sources = (['self_citations'] + ideal_sources
+included_references = {'google_scholar', 'biodiversity', 'orcid'}
+possible_sources = (['self_citations'] + list(included_references)
                     + list(possible_heuristics.keys()))
-excluded_references = {'split_heuristic', 'merge_heuristic'}
 
 def load_sources(client, source_names):
     ''' Resolve multiple sources to their reference clusters '''
@@ -47,9 +46,9 @@ def load_sources(client, source_names):
                     assert kind in possible_heuristics, f'{kind} not in possible heuristics {possible_heuristics.keys()}'
                     sources[source_name] = HeuristicResolver(client, kind)
                 else:
-                    print(f'{source_name} not recognized!')
+                    raise ValueError(f'{source_name} not recognized!')
         if source_name not in sources:
-            print(f'Source {source_name} not in possible sources: {possible_sources}')
+            raise ValueError(f'Source {source_name} not in possible sources: {possible_sources}')
     for source in sources.values():
         source.build_cache()
     return sources
@@ -93,16 +92,15 @@ def compare_cluster_pair(pair):
     ((predicted_source, (predicted_clusters, predicted_labels)),
      (reference_source, (reference_clusters, reference_labels))) = pair
     shared = get_shared_ids(predicted_clusters, reference_clusters)
-    print(f'sources: {predicted_source}, {reference_source}')
-    print('predicted', predicted_clusters)
+    # print(f'sources: {predicted_source}, {reference_source}')
+    # print('predicted', predicted_clusters)
     shared = get_shared_ids(predicted_clusters, reference_clusters)
     predicted_clusters = to_shared_clusters(predicted_clusters, shared)
-    print('reference', reference_clusters)
+    # print('reference', reference_clusters)
     reference_clusters = to_shared_clusters(reference_clusters, shared)
 
-    metrics  = cluster_metrics(predicted_clusters, reference_clusters)
-    pairwise = pairwise_metrics(predicted_clusters, reference_clusters)
-    metrics.update(pairwise)
+    # metrics  = cluster_metrics(predicted_clusters, reference_clusters)
+    metrics = pairwise_metrics(predicted_clusters, reference_clusters)
     metrics['prediction_source'] = predicted_source
     metrics['reference_source']  = reference_source
 
@@ -118,15 +116,13 @@ def _validation_generator(pairs, name):
     for pair in pairs:
         ((predicted_source, (predicted_clusters, predicted_labels)),
          (reference_source, (reference_clusters, reference_labels))) = pair
-        if predicted_source == reference_source or reference_source in excluded_references:
+        if reference_source not in included_references or predicted_source == reference_source:
             continue
-        if len(reference_clusters) == 1:
-            metrics['strict'] = False
-        elif reference_source in ideal_sources:
-            log.info(f'FOUND multi-author labelled cluster for {name} in {ideal_sources}')
-            metrics['strict'] = True
         try:
             metrics = compare_cluster_pair(pair)
+            metrics['n_ref_clusters'] = len(reference_clusters)
+            if reference_source in included_references and len(reference_clusters) > 1:
+                log.info(f'FOUND multi-author labelled cluster for {name} in {reference_source}: {reference_labels}')
             metrics['name'] = name
             if metrics['s'] > 0:
                 yield metrics
@@ -172,10 +168,10 @@ def validate_all(client, prediction_sources, query, sources):
                 else:
                     generator = itertools.chain(generator, next_generator)
             except KeyboardInterrupt:
-                print(f'Exited validation!')
+                log.warn(f'Exited validation! Please allow a clean exit')
                 break
             if i % 1000 == 0:
-                print(f'{total}/{expected} : {(total / expected ):2.2%}')
-    print(f'Finished creating validation generators')
+                log.info(f'{total}/{expected} : {(total / expected ):2.2%}')
+    log.info(f'Finished creating validation generators')
     generator = track(generator, total=total, description='Validation')
     return generator

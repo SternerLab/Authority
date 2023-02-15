@@ -102,7 +102,8 @@ def run():
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
     # methods = [authority_clipped, authority_no_correction, authority_mixed, authority_self]
     # methods = [authority_no_correction_robust, authority_mixed_no_correction]
-    methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self, authority_torvik_ratios, authority_no_correction_robust, authority_reversed]
+    # methods = [authority, authority_clipped, authority_no_correction, authority_mixed, authority_self, authority_torvik_ratios, authority_no_correction_robust, authority_reversed]
     # methods = [authority]
     # methods = [authority, authority_legacy_ratios, authority_torvik_ratios, authority_mixed]
+    methods = [authority, authority_reversed, authority_clipped]
     inference(client, methods, query=query)
