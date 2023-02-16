@@ -121,16 +121,16 @@ def _validation_generator(pairs, name):
         try:
             metrics = compare_cluster_pair(pair)
             metrics['n_ref_clusters'] = len(reference_clusters)
-            if reference_source in included_references and len(reference_clusters) > 1:
-                log.info(f'FOUND multi-author labelled cluster for {name} in {reference_source}: {reference_labels}')
+            # if reference_source in included_references and len(reference_clusters) > 1:
+            # log.info(f'FOUND multi-author labelled cluster for {name} in {reference_source}: {reference_labels}')
             metrics['name'] = name
-            if metrics['s'] > 0:
+            if metrics['s'] > 0: # and (metrics['tp'] + metrics['fp']) > 0 and (metrics['tn'] + metrics['fn']) > 0: # Stricter!!
                 yield metrics
                 complete += 1
         except IncompleteValidation as e:
             pass
     if complete == 0:
-        log.warning(f'Source had incomplete resolution incomplete: {name}')
+        # log.warn(f'Source had incomplete resolution incomplete: {name}')
         yield from []
 
 def validate(client, cluster, sources, prediction_source, is_first):

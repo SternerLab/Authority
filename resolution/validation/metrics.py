@@ -18,34 +18,36 @@ log = logging.getLogger('rich')
 
 def pairwise_metrics(clusters, reference_clusters):
     tp, tn, fp, fn = (np.float32(v) for v in unpack(clusters, reference_clusters))
-    with np.errstate(divide='ignore', invalid='ignore'):
-        s              = tp + tn + fp + fn
-        accuracy       = (tp + tn) / s
-        precision = pp = tp / (tp + fp)
-        recall    = pr = tp / (tp + fn)
-        f1             = (2 * pp * pr) / (pp + pr)
-        lumping        = fp / (tp + fp)
-        splitting      = fn / (tn + fn)
+    # Don't ignore this!
+    # with np.errstate(divide='ignore', invalid='ignore'):
+    s         = tp + tn + fp + fn
+    accuracy  = (tp + tn) / s
+    precision = tp / (tp + fp)
+    recall    = tp / (tp + fn)
+    f1        = (2 * precision * recall) / (precision + recall)
+    lumping   = fp / (tp + fp)
+    splitting = fn / (tn + fn)
+    error     = (fp + fn) / s
+    pos_ratio = (tp + fp) / s
+    neg_ratio = (tn + fn) / s
+    if len(reference_clusters) > 1:
+        tn_ratio       = tn / (tn + tp)
+        neg_recall     = tn / (tn + fp)
+        neg_precision  = tn / (tn + fn)
+        neg_f1         = (2 * neg_precision * neg_recall) / (neg_precision + neg_recall)
         alt_lumping    = 1 - neg_precision
-        error          = (fp + fn) / s
-        pos_ratio      = (tp + fp) / s
-        neg_ratio      = (tn + fn) / s
-        if len(reference_clusters) > 1:
-            tn_ratio       = tn / (tn + tp)
-            neg_f1         = (2 * npp * npr) / (npp + npr)
-            neg_precision  = npp = tn / (tn + fn)
-            neg_recall     = npr = tn / (tn + fp)
-            balanced_accuracy = (recall + neg_recall) / 2
-            adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
-        else:
-            tn_ratio = np.nan
-            neg_f1 = np.nan
-            neg_precision = np.nan
-            neg_recall = np.nan
-            balanced_accuracy = np.nan
-            adjusted_balanced_accuracy = np.nan
-        del clusters, reference_clusters
-        return dict(locals())
+        balanced_accuracy = (recall + neg_recall) / 2
+        adjusted_balanced_accuracy = (balanced_accuracy - 0.5) / (0.5)
+    else:
+        tn_ratio = np.nan
+        neg_f1 = np.nan
+        neg_precision = np.nan
+        neg_recall = np.nan
+        balanced_accuracy = np.nan
+        adjusted_balanced_accuracy = np.nan
+        alt_lumping = np.nan
+    del clusters, reference_clusters
+    return dict(locals())
 
 def labels_to_array(labels):
     ''' Turn label dicts to arrays for sklearn '''

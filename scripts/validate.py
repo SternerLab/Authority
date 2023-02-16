@@ -42,7 +42,9 @@ def run():
     # Load the available validation sources and cache them in memory
     # source_names = possible_sources # To use all
 
-    source_names = ['biodiversity', 'google_scholar', 'self_citations', 'orcid',
+    source_names = ['biodiversity', 'google_scholar',
+                    'self_citations',
+                    'orcid',
                     'merge_heuristic', 'split_heuristic', 'full_name_heuristic',
                     'mesh_coauthor_heuristic', 'name_heuristic']
     sources = load_sources(client, source_names)
@@ -51,10 +53,10 @@ def run():
     print(common_names)
 
     # Controls which clusters we are validating
-    # query = {}
+    query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'baker'}}
-    query = {'group_id.first_initial' : 'a'}
+    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
 
@@ -77,7 +79,7 @@ def run():
                           'authority_torvik_ratios',
                           'authority_no_correction_robust',
                           'authority_reversed']
-    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_clipped']
+    # prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_clipped']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
 

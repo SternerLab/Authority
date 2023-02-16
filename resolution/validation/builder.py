@@ -115,7 +115,10 @@ class Builder:
                             continue
                     exists = col.find_one({'author.key' : a.key})
                     if exists is not None:
+                        log.info(f'The author {a} is already in validation data for {self.name}')
                         continue
+                    else:
+                        log.info(f'New author {a} being resolved for {self.name}')
                     if query_titles:
                         titles = titles_cache.get(a.key)
                     else:

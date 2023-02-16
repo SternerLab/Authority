@@ -76,7 +76,7 @@ def run():
 
     ''' Create feature vectors for the pair collections '''
     ref_keys = list(client.reference_sets_pairs.list_collection_names())
-    ref_keys = ('self_citations',)
+    # ref_keys = ('self_citations',)
     print(ref_keys)
     # Don't drop databases, just drop collections to enable partially recreating
     # client.drop_database('features')
