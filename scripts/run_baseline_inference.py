@@ -30,9 +30,9 @@ def run():
     methods = [
 
         # Both clustering methods behaved identically
-        EmbeddingClusterer(client, name='scibert_clustering',
-            hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
-                             epsilon=0.6)),
+        # EmbeddingClusterer(client, name='scibert_clustering',
+        #     hyperparams=dict(method='hdbscan', model='allenai/scibert_scivocab_uncased',
+        #                      epsilon=0.6)),
 
         # EmbeddingClusterer(client, name='scidebert_clustering',
         #     hyperparams=dict(method='hdbscan', model='KISTI-AI/scideberta')),
@@ -46,8 +46,20 @@ def run():
         #     lookup_name='xgboost',
         #            correct_triplets=False, reestimate=False,
         #     hyperparams=dict(method='components')),
-
         ]
+
+    variants = [f'_{source}{balanced}' for source in
+                ['self_citations', 'authority_heuristics', 'both']
+                for balanced in ['', '_balanced']]
+
+    for alg in ['xgboost', 'naive_bayes']:
+        for variant in variants:
+            name = alg + variant
+            methods.append(Classifier(client, name=name, lookup_name=name,
+                                      correct_triplets=False, reestimate=False, hyperparams=dict(method='components')))
+            methods.append(Classifier(client, name=f'{name}_agglomerative', lookup_name=name,
+                                      correct_triplets=True, reestimate=True, hyperparams=dict(method='agglomerative')))
+
 
     query = {}
     # query = {'group_id.first_initial' : 'a'}

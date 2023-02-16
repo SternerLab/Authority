@@ -52,37 +52,36 @@ def run():
     metrics = all_metrics
     time = datetime.now()
     time_str = time.strftime('%b_%d_%Y').lower()
-    for strict in [True, False]:
-        strict_str = '_strict' if strict else ''
-        sub_df = val_df[val_df['n_ref_clusters'] > (1 if strict else 0)]
-        for metrics_type, metrics, pairings in analysis_matrix:
-            columns = ['name'] + metrics
-            print(sub_df[columns].describe())
-            print(f'Reference cluster stats')
-            print(sub_df['n_ref_clusters'].min())
-            print(sub_df['n_ref_clusters'].max())
-            print(sub_df['n_ref_clusters'].mean())
+    sub_df = val_df # If we want to subset, do it here
+    for metrics_type, metrics, pairings in analysis_matrix:
+        columns = ['name'] + metrics
+        print(sub_df[columns].describe())
+        print(f'Reference cluster stats')
+        print(sub_df['n_ref_clusters'].min())
+        print(sub_df['n_ref_clusters'].max())
+        print(sub_df['n_ref_clusters'].mean())
 
-            for name, eval_sources in pairings.items():
-                print(name, eval_sources)
-                try:
-                    true_val_df = sub_df.loc[((sub_df['prediction_source'].isin(eval_sources)) &
-                                              (sub_df['reference_source'].isin(true_sources)))]
-                    print(true_val_df[columns].describe())
+        for name, eval_sources in pairings.items():
+            print(name, eval_sources)
+            try:
+                true_val_df = sub_df.loc[((sub_df['prediction_source'].isin(eval_sources)) &
+                                          (sub_df['reference_source'].isin(true_sources)))]
+                print(true_val_df[columns].describe())
 
-                    metrics_df = pd.melt(true_val_df, id_vars=['prediction_source'],
-                                         value_vars=columns[2:],
-                                         var_name='metric', value_name='metric_value')
-                    # metrics_df.dropna(inplace=True)
-                    print(f'Metrics DF:')
-                    print(metrics_df)
-                    fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
-                    for ax in fig.axes.ravel():
-                        for c in ax.containers:
-                            labels = [f'  {v.get_width():.2%}' for v in c]
-                            ax.bar_label(c, labels=labels, label_type='edge')
-                    plt.savefig(f'plots/{time_str}_{name}_multi_source_validation_{metrics_type}{strict_str}.png', bbox_inches='tight', dpi=300)
-                    plt.show()
-                except ValueError:
-                    log.warning(f'Could not plot {eval_sources}, no data')
+                metrics_df = pd.melt(true_val_df, id_vars=['prediction_source'],
+                                     value_vars=columns[2:],
+                                     var_name='metric', value_name='metric_value')
+                # metrics_df.dropna(inplace=True)
+                print(f'Metrics DF:')
+                print(metrics_df)
+                fig = sns.catplot(metrics_df, y='metric', x='metric_value', row='prediction_source', kind='bar')
+                for ax in fig.axes.ravel():
+                    for c in ax.containers:
+                        labels = [f'  {v.get_width():.2%}' for v in c]
+                        ax.bar_label(c, labels=labels, label_type='edge')
+                plt.savefig(f'plots/{time_str}_{name}_multi_source_validation_{metrics_type}.png',
+                            bbox_inches='tight', dpi=300)
+                plt.show()
+            except ValueError:
+                log.warning(f'Could not plot {eval_sources}, no data')
 

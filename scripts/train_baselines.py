@@ -27,7 +27,7 @@ def run():
 
     for variant, dataset in [('self_citations', self_cites),
                              ('authority_heuristics', heuristic),
-                             ('both', pd.concat(self_cites, heuristic))]:
+                             ('both', pd.concat((self_cites, heuristic)))]:
 
         for model_name, model_constructor in models.items():
             train_classifier(client, model_constructor, f'{model_name}_{variant}', dataset)

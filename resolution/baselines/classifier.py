@@ -14,11 +14,14 @@ class Classifier(InferenceMethod):
     def __post_init__(self):
         assert self.lookup_name is not None, f'Must provide a name within baselines collection'
         doc = self.client.baselines.classifiers.find_one({'name' : self.lookup_name})
-        binary = doc.get('binary')
-        if binary is None:
-            raise RuntimeError(f'No binary found in database for {self.lookup_name}')
-        self.classifier = pickle.loads(binary)
-        self.cluster_params['method'] = self.hyperparams.get('method', 'components')
+        try:
+            binary = doc.get('binary')
+            if binary is None:
+                raise RuntimeError(f'No binary found in database for {self.lookup_name}')
+            self.classifier = pickle.loads(binary)
+            self.cluster_params['method'] = self.hyperparams.get('method', 'components')
+        except:
+            raise KeyError(f'Could not find classifier with name {self.lookup_name}')
 
     def pairwise_infer(self, pair, **pairwise_params): # -> cond_prob
         compared = compare_pair(pair)

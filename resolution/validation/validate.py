@@ -112,26 +112,37 @@ def compare_cluster_pair(pair):
     return metrics
 
 def _validation_generator(pairs, name):
+    skipped  = 0
     complete = 0
+    incomplete = 0
     for pair in pairs:
         ((predicted_source, (predicted_clusters, predicted_labels)),
          (reference_source, (reference_clusters, reference_labels))) = pair
         if reference_source not in included_references or predicted_source == reference_source:
             continue
         try:
-            metrics = compare_cluster_pair(pair)
-            metrics['n_ref_clusters'] = len(reference_clusters)
-            # if reference_source in included_references and len(reference_clusters) > 1:
-            # log.info(f'FOUND multi-author labelled cluster for {name} in {reference_source}: {reference_labels}')
-            metrics['name'] = name
-            if metrics['s'] > 0: # and (metrics['tp'] + metrics['fp']) > 0 and (metrics['tn'] + metrics['fn']) > 0: # Stricter!!
+            n_labelled_clusters = len(reference_clusters)
+            max_cluster_size    = max(len(c) for c in reference_clusters)
+            if n_labelled_clusters > 1 and max_cluster_size > 1 and \
+               reference_source in included_references:
+                metrics = compare_cluster_pair(pair)
+                metrics['n_ref_clusters'] = len(reference_clusters)
+                metrics['max_cluster_size'] = max_cluster_size
+                metrics['name'] = name
                 yield metrics
                 complete += 1
+            else:
+                skipped += 1
         except IncompleteValidation as e:
-            pass
+            incomplete += 1
+        except ValueError as e:
+            skipped += 1
     if complete == 0:
         # log.warn(f'Source had incomplete resolution incomplete: {name}')
         yield from []
+    if incomplete > 0:
+        log.warn(f'After creating generator for {name}, there were {incomplete} incomplete comparisons')
+        log.warn(f'    Also, there were {skipped} skipped comparisons due to lack of validation data')
 
 def validate(client, cluster, sources, prediction_source, is_first):
     ''' Validate a single cluster against multiple reference sources '''

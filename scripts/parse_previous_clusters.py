@@ -49,7 +49,7 @@ def generator(sql_cursor, articles):
         yield expand_cluster(row, articles)
 
 def run():
-    mongo_get_client('mongo_credentials.json', local=True)
+    mongo_client = get_client('mongo_credentials.json', local=True)
 
     sql_client   = sqlite3.connect('database/jstor-authority.db')
     sql_cursor   = sql_client.cursor()
