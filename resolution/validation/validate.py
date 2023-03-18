@@ -118,21 +118,32 @@ def _validation_generator(pairs, name):
     for pair in pairs:
         ((predicted_source, (predicted_clusters, predicted_labels)),
          (reference_source, (reference_clusters, reference_labels))) = pair
-        if reference_source not in included_references or predicted_source == reference_source:
+        if (reference_source not in included_references and
+            (predicted_source == reference_source)):
             continue
         try:
             n_labelled_clusters = len(reference_clusters)
             max_cluster_size    = max(len(c) for c in reference_clusters)
-            if n_labelled_clusters > 1 and max_cluster_size > 1 and \
-               reference_source in included_references:
+            # Post process skipping!
+            if max_cluster_size > 0 and reference_source in included_references:
                 metrics = compare_cluster_pair(pair)
                 metrics['n_ref_clusters'] = len(reference_clusters)
                 metrics['max_cluster_size'] = max_cluster_size
                 metrics['name'] = name
                 yield metrics
                 complete += 1
-            else:
-                skipped += 1
+            if n_labelled_clusters == 1:
+                log.warn(f'Only one labelled cluster for {name}!')
+            # if n_labelled_clusters > 1 and max_cluster_size > 1 and \
+            #    reference_source in included_references:
+            #     metrics = compare_cluster_pair(pair)
+            #     metrics['n_ref_clusters'] = len(reference_clusters)
+            #     metrics['max_cluster_size'] = max_cluster_size
+            #     metrics['name'] = name
+            #     yield metrics
+            #     complete += 1
+            # else:
+            #     skipped += 1
         except IncompleteValidation as e:
             incomplete += 1
         except ValueError as e:

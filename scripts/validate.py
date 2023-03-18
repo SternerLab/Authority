@@ -26,10 +26,10 @@ def _mongodb_segfault_handler(signum, frame):
 signal.signal(signal.SIGSEGV, _mongodb_segfault_handler)
 # os.kill(os.getpid(), signal.SIGSEGV) # To test the segfault handler
 
-def get_common_names():
+def get_common_names(n=200):
     names = pd.read_csv('data/names.csv')
     names.sort_values(by='count', ascending=False, inplace=True)
-    common_names = list(set(names['last'].iloc[:100]))
+    common_names = list(set(names['last'].iloc[:n]))
     return common_names
 
 def run():
@@ -53,12 +53,13 @@ def run():
     print(common_names)
 
     # Controls which clusters we are validating
-    query = {}
+    # query = {}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'afton'}}
     # query = {'group_id' : {'first_initial' : 'a', 'last' : 'baker'}}
-    # query = {'group_id.first_initial' : 'a'}
     # query = {'group_id.first_initial' : 'b'}
     # query = {'group_id.last' : 'smith'}
+
+    # query = {'group_id.first_initial' : { '$in' : list('abcdefg')}}
 
     # query = {'group_id.last' : {'$in' : common_names}}
     # query = {'group_id.last' : {'$in' : ['smith']}}
@@ -71,7 +72,8 @@ def run():
     # query = {'group_id' : {'first_initial' : 'a', 'last': 'smith'}}
     # query = {'group_id' : {'first_initial' : 'j', 'last': 'smith'}}
 
-    prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'scibert_clustering',
+    prediction_sources = [
+                          'authority', 'scibert_clustering',
                           'authority_clipped',
                           'authority_no_correction',
                           'authority_mixed',
@@ -79,17 +81,32 @@ def run():
                           'authority_torvik_ratios',
                           'authority_no_correction_robust',
                           'authority_reversed']
+    for classifier in ['naive_bayes', 'xgboost']:
+        for ext in ['_self_citations', '_authority_heuristics',
+                    '_heuristics', '_heuristics_balanced',
+                    '_both', '_both_balanced']:
+            for cluster_method in ['', '_agglomerative']:
+                prediction_sources.append(
+                        f'{classifier}{ext}{cluster_method}')
+    pprint(prediction_sources)
+    1/0
     # prediction_sources = ['naive_bayes', 'xgboost', 'authority', 'authority_clipped']
     predictions = {k : client.inferred[k] for k in prediction_sources}
     predictions['authority_legacy'] = client.previous_inferred.previous_inferred
 
-
-    stream = validate_all(client, predictions, query, sources)
-    first = next(stream)
-
-    # No memory issues from this method :)
+    headers = False
     with open('data/resolution_validation_metrics.csv', 'w') as outfile:
-        dict_writer = csv.DictWriter(outfile, first.keys())
-        dict_writer.writeheader()
-        dict_writer.writerows([first])
-        dict_writer.writerows(stream)
+        for initial in 'abcdefghijklmnopqrstuvwxyz':
+            print(f'STARTING ON INITIAL: {initial}')
+            query = {'group_id.first_initial' : initial}
+
+            stream = validate_all(client, predictions, query, sources)
+            first = next(stream)
+            dict_writer = csv.DictWriter(outfile, first.keys())
+
+            # No memory issues from this method :)
+            if not headers:
+                dict_writer.writeheader()
+                headers = True
+            dict_writer.writerows([first])
+            dict_writer.writerows(stream)
