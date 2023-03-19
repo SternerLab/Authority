@@ -9,8 +9,6 @@ import sklearn.metrics.cluster as skl_cluster_metrics
 
 from .utils import *
 
-# See https://journals.sagepub.com/doi/pdf/10.1177/0165551519888605?casa_token=y1zlBGjQm_4AAAAA:y_JtVhx3ZjIJ3vUic2WLmat14KUv1aTwvmYIcq_ji7kdtAoLT0wREo5dWM25ySaTlpiGVjzeL3D_Ew
-
 class IncompleteValidation(Exception):
     pass
 
